@@ -24,60 +24,126 @@ export async function onRequestPost(context) {
       return Response.json({ error: "type (string), task (object), and answers (object) required" }, { status: 400 });
     }
 
-    let prompt, model;
-
     if (type === "sentence_transformation") {
-      model = HAIKU;
-      prompt = buildSentenceTransformationPrompt(task, answers);
+      return Response.json(await gradeSentenceTransformation(apiKey, task, answers));
     } else if (type === "grammar_gaps") {
-      model = HAIKU;
-      prompt = buildGrammarGapsPrompt(task, answers);
+      return Response.json(await gradeGrammarGaps(apiKey, task, answers));
     } else if (type === "writing") {
-      model = SONNET;
-      prompt = buildWritingPrompt(task, answers);
+      const prompt = buildWritingPrompt(task, answers);
+      const result = await callClaude(apiKey, SONNET, prompt);
+      return Response.json(result);
     } else {
       return Response.json({ error: `Unsupported type: ${type}` }, { status: 400 });
     }
-
-    const result = await callClaude(apiKey, model, prompt);
-    return Response.json(result);
   } catch (e) {
     return Response.json({ error: e.message }, { status: 500 });
   }
 }
 
-async function callClaude(apiKey, model, prompt) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      max_tokens: 2048,
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
+// ---------- Normalization & pre-check helpers ----------
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Claude API error: ${res.status} ${err}`);
-  }
-
-  const data = await res.json();
-  const text = data.content?.[0]?.text || "";
-
-  // Extract JSON from response
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error("No JSON in Claude response");
-
-  return JSON.parse(jsonMatch[0]);
+function normalize(s) {
+  return String(s || "").trim().toLowerCase().replace(/\s+/g, " ");
 }
 
-function buildSentenceTransformationPrompt(task, answers) {
-  const items = task.items.map((item) => ({
+// Canonical form of a grammar-gap answer: strip " (...)" parentheticals.
+// "had ('d) already started" -> "had already started"
+// "did not (didn't) own"      -> "did not own"
+function canonicalGapAnswer(ans) {
+  return String(ans || "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function countGaps(context) {
+  const m = String(context || "").match(/_{2,}/g);
+  return m ? m.length : 1;
+}
+
+function keywordUsed(studentAnswer, keyword) {
+  if (!keyword) return true;
+  const re = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  return re.test(String(studentAnswer || ""));
+}
+
+// ---------- Sentence transformation ----------
+
+async function gradeSentenceTransformation(apiKey, task, answers) {
+  const items = task.items || [];
+  const results = new Array(items.length);
+  const toAI = [];
+
+  items.forEach((item, idx) => {
+    const student = answers[item.id] || "";
+    const studentNorm = normalize(student);
+    const expectedNorm = normalize(item.answer);
+
+    if (!keywordUsed(student, item.keyword)) {
+      console.log(`[check] ${task.id || "?"} ${item.id} pre-checked-wrong (keyword missing)`);
+      results[idx] = {
+        id: item.id,
+        earned: 0,
+        max: 1,
+        correct: false,
+        feedback: `Keyword "${item.keyword}" not used.`,
+        correctAnswer: item.answer,
+      };
+      return;
+    }
+
+    if (studentNorm && studentNorm === expectedNorm) {
+      console.log(`[check] ${task.id || "?"} ${item.id} pre-checked-correct`);
+      results[idx] = {
+        id: item.id,
+        earned: 1,
+        max: 1,
+        correct: true,
+        feedback: "Poprawna odpowiedź.",
+        correctAnswer: item.answer,
+      };
+      return;
+    }
+
+    console.log(`[check] ${task.id || "?"} ${item.id} sent-to-ai`);
+    toAI.push({ idx, item });
+  });
+
+  if (toAI.length > 0) {
+    const prompt = buildSentenceTransformationPrompt(task, answers, toAI.map((x) => x.item));
+    const aiResult = await callClaude(apiKey, SONNET, prompt);
+    const aiById = new Map((aiResult.items || []).map((it) => [it.id, it]));
+    for (const { idx, item } of toAI) {
+      const ai = aiById.get(item.id);
+      if (ai) {
+        results[idx] = {
+          id: item.id,
+          earned: ai.earned ?? 0,
+          max: 1,
+          correct: ai.correct ?? (ai.earned === 1),
+          feedback: ai.feedback || "",
+          correctAnswer: ai.correctAnswer || item.answer,
+        };
+      } else {
+        results[idx] = {
+          id: item.id,
+          earned: 0,
+          max: 1,
+          correct: false,
+          feedback: "grading error",
+          correctAnswer: item.answer,
+        };
+      }
+    }
+  }
+
+  const earned = results.reduce((s, r) => s + (r.earned || 0), 0);
+  const max = results.reduce((s, r) => s + (r.max || 0), 0);
+  return { items: results, earned, max };
+}
+
+function buildSentenceTransformationPrompt(task, answers, itemsToGrade) {
+  const items = itemsToGrade.map((item) => ({
     id: item.id,
     original: item.original,
     keyword: item.keyword,
@@ -92,16 +158,16 @@ Each item has:
 - An original sentence
 - A keyword (must be used, unchanged)
 - A gapped sentence to complete
-- The expected answer(s)
+- The expected answer (one acceptable phrasing — alternative phrasings that preserve meaning are also acceptable)
 - The student's answer
 
-Grade each item: 1 point if correct, 0 if wrong. The student's answer is correct if:
-1. It uses the keyword exactly as given (no form changes)
+Grade each item: 1 point if correct, 0 if wrong. The student's answer is correct if ALL of these hold:
+1. The keyword appears in the completed sentence (case-insensitive, as a whole word, no form changes)
 2. The completed sentence has the same meaning as the original
 3. It is grammatically correct
 4. It fits naturally in the gap
 
-Be lenient with minor spelling errors if the grammar structure is clearly correct. Accept alternative phrasings that preserve meaning.
+Evaluate each criterion independently before deciding. Be lenient with minor spelling errors if the grammar structure is clearly correct. Accept alternative phrasings that preserve meaning.
 
 Items to grade:
 ${JSON.stringify(items, null, 2)}
@@ -109,17 +175,87 @@ ${JSON.stringify(items, null, 2)}
 Respond with ONLY this JSON (no other text):
 {
   "items": [
-    { "id": "...", "earned": 0 or 1, "max": 1, "correct": true/false, "feedback": "brief explanation", "correctAnswer": "expected answer" }
-  ],
-  "earned": total_points,
-  "max": ${task.items.length}
+    { "id": "...", "earned": 0 or 1, "max": 1, "correct": true/false, "feedback": "brief explanation in Polish", "correctAnswer": "expected answer" }
+  ]
 }`;
 }
 
-function buildGrammarGapsPrompt(task, answers) {
-  const items = task.items.map((item) => {
-    // grammar_gaps items have context with multiple blanks
-    // answers are keyed as item.id + "_0", item.id + "_1", etc. or just item.id
+// ---------- Grammar gaps ----------
+
+async function gradeGrammarGaps(apiKey, task, answers) {
+  const items = task.items || [];
+  const results = new Array(items.length);
+  const toAI = [];
+
+  items.forEach((item, idx) => {
+    const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+    const nGaps = expected.length || countGaps(item.context);
+
+    // Gather student answers per gap, with fallback to item.id for single-gap items.
+    const studentPerGap = [];
+    let allMatch = true;
+    for (let i = 0; i < nGaps; i++) {
+      const key = nGaps === 1 && answers[item.id] !== undefined ? item.id : `${item.id}_${i}`;
+      const student = answers[key] !== undefined ? answers[key] : answers[item.id] || "";
+      studentPerGap.push(student);
+      const canonical = normalize(canonicalGapAnswer(expected[i]));
+      if (!canonical || normalize(student) !== canonical) {
+        allMatch = false;
+      }
+    }
+
+    if (allMatch) {
+      console.log(`[check] ${task.id || "?"} ${item.id} pre-checked-correct (${nGaps} gaps)`);
+      results[idx] = {
+        id: item.id,
+        earned: nGaps,
+        max: nGaps,
+        correct: true,
+        feedback: "Poprawna odpowiedź.",
+        correctAnswer: expected.join("; "),
+      };
+    } else {
+      console.log(`[check] ${task.id || "?"} ${item.id} sent-to-ai (${nGaps} gaps)`);
+      toAI.push({ idx, item, nGaps });
+    }
+  });
+
+  if (toAI.length > 0) {
+    const prompt = buildGrammarGapsPrompt(task, answers, toAI.map((x) => x.item));
+    const aiResult = await callClaude(apiKey, SONNET, prompt);
+    const aiById = new Map((aiResult.items || []).map((it) => [it.id, it]));
+    for (const { idx, item, nGaps } of toAI) {
+      const ai = aiById.get(item.id);
+      const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+      if (ai) {
+        results[idx] = {
+          id: item.id,
+          earned: Math.max(0, Math.min(nGaps, ai.earned ?? 0)),
+          max: nGaps,
+          correct: ai.correct ?? (ai.earned === nGaps),
+          feedback: ai.feedback || "",
+          correctAnswer: ai.correctAnswer || expected.join("; "),
+        };
+      } else {
+        results[idx] = {
+          id: item.id,
+          earned: 0,
+          max: nGaps,
+          correct: false,
+          feedback: "grading error",
+          correctAnswer: expected.join("; "),
+        };
+      }
+    }
+  }
+
+  const earned = results.reduce((s, r) => s + (r.earned || 0), 0);
+  const max = results.reduce((s, r) => s + (r.max || 0), 0);
+  return { items: results, earned, max };
+}
+
+function buildGrammarGapsPrompt(task, answers, itemsToGrade) {
+  const items = itemsToGrade.map((item) => {
     const studentAnswers = {};
     for (const [key, val] of Object.entries(answers)) {
       if (key === item.id || key.startsWith(item.id + "_")) {
@@ -138,22 +274,36 @@ function buildGrammarGapsPrompt(task, answers) {
 
 Each item has a sentence with gaps. The student must fill in the correct grammatical forms of words given in brackets.
 
-Grade each gap: 1 point if correct, 0 if wrong. Accept answers that are grammatically correct and match the required form, even if phrased slightly differently from the expected answer. Require correct spelling.
+Notation: accepted answers may list alternative forms in parentheses. The full form of the preceding word(s) and the contracted form in parentheses are BOTH acceptable:
+- "has ('s) just passed" → accept both "has just passed" and "'s just passed"
+- "had ('d) already started" → accept both "had already started" and "'d already started"
+- "will ('ll) have finished" → accept both "will have finished" and "'ll have finished"
+- "did not (didn't) own" → accept both "did not own" and "didn't own"
+- "have ('ve) been" → accept both "have been" and "'ve been"
+In general, "X (Y) Z" means the preceding word(s) may be written as either the original form or the alternative form in parentheses.
+
+Examples:
+- Expected "had ('d) already started", student wrote "'d already started" → correct (1 point)
+- Expected "had ('d) already started", student wrote "had already start" → wrong (missing -ed)
+- Expected "arrived", student wrote "arrive" → wrong (tense)
+- Expected "arrived", student wrote "arived" → wrong (misspelled; grammar exercise requires correct spelling)
+
+Grade each gap: 1 point if correct, 0 if wrong. Require correct spelling. A student answer is correct if it is grammatically equivalent to the expected form (including any alternative in parentheses) and correctly spelled.
 
 Items to grade:
 ${JSON.stringify(items, null, 2)}
 
-Count the total number of individual gaps across all items. Each gap is worth 1 point.
+Count the total number of individual gaps across all items (one per element in expectedAnswers). Each gap is worth 1 point.
 
 Respond with ONLY this JSON (no other text):
 {
   "items": [
-    { "id": "...", "earned": points_for_this_item, "max": number_of_gaps_in_item, "correct": true/false, "feedback": "brief explanation for each gap", "correctAnswer": "expected answers joined with ; " }
-  ],
-  "earned": total_points,
-  "max": total_gaps
+    { "id": "...", "earned": points_for_this_item, "max": number_of_gaps_in_item, "correct": true/false, "feedback": "brief explanation per gap, in Polish", "correctAnswer": "expected answers joined with ; " }
+  ]
 }`;
 }
+
+// ---------- Writing ----------
 
 function buildWritingPrompt(task, answers) {
   const studentText = answers.writing || answers[task.id + "_writing"] || "";
@@ -168,27 +318,91 @@ Maximum points: ${task.points}
 Student's response:
 ${studentText}
 
-Grade the response on these criteria, allocating points from the total of ${task.points}:
-1. Task completion (did they address all required points?)
+Grade the response using this rubric. Score each criterion separately, then sum to the total (rounded to a whole number, capped at ${task.points}):
+
+1. Task completion — did they address all required content points? (share of total)
 2. Coherence and organization
 3. Vocabulary range and accuracy
 4. Grammar accuracy
 5. Appropriate register and format
 
-Be fair but rigorous — this is a competition, not a classroom exercise. Deduct for:
-- Missing required content points
-- Significant grammar errors
-- Limited vocabulary
-- Poor organization
-
-If the response is empty or completely off-topic, give 0 points.
+Be fair but rigorous — this is a competition, not a classroom exercise. Deduct for missing required content points, significant grammar errors, limited vocabulary, or poor organization. If the response is empty or completely off-topic, give 0 points.
 
 Respond with ONLY this JSON (no other text):
 {
   "items": [
-    { "id": "${task.id}", "earned": points, "max": ${task.points}, "correct": false, "feedback": "detailed feedback in Polish covering each criterion, 3-5 sentences", "correctAnswer": "n/a" }
+    {
+      "id": "${task.id}",
+      "earned": total_points,
+      "max": ${task.points},
+      "correct": false,
+      "feedback": "Per-criterion feedback in Polish: 1) Task completion: X/Y — ... 2) Coherence: X/Y — ... 3) Vocabulary: X/Y — ... 4) Grammar: X/Y — ... 5) Register: X/Y — ... Total: total_points/${task.points}",
+      "correctAnswer": "n/a"
+    }
   ],
-  "earned": points,
+  "earned": total_points,
   "max": ${task.points}
 }`;
+}
+
+// ---------- Claude call ----------
+
+async function callClaude(apiKey, model, prompt) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      model,
+      max_tokens: 4096,
+      temperature: 0,
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Claude API error: ${res.status} ${err}`);
+  }
+
+  const data = await res.json();
+  const text = data.content?.[0]?.text || "";
+  return parseJsonFromText(text);
+}
+
+// Balanced-braces scan, falling back to greedy regex.
+function parseJsonFromText(text) {
+  const start = text.indexOf("{");
+  if (start >= 0) {
+    let depth = 0;
+    let inStr = false;
+    let esc = false;
+    for (let i = start; i < text.length; i++) {
+      const c = text[i];
+      if (inStr) {
+        if (esc) esc = false;
+        else if (c === "\\") esc = true;
+        else if (c === '"') inStr = false;
+      } else {
+        if (c === '"') inStr = true;
+        else if (c === "{") depth++;
+        else if (c === "}") {
+          depth--;
+          if (depth === 0) {
+            try {
+              return JSON.parse(text.slice(start, i + 1));
+            } catch {
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+  const m = text.match(/\{[\s\S]*\}/);
+  if (!m) throw new Error("No JSON in Claude response");
+  return JSON.parse(m[0]);
 }
