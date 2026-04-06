@@ -51,15 +51,12 @@ npm run build      # Production build -> dist/
 
 ## Deployment
 
-Deploy via wrangler from the `site/` directory (no auto-deploy from git):
+Deploy via wrangler (no auto-deploy from git):
 
 ```bash
-cd site
-npm run build
-npx wrangler pages deploy dist --project-name smarten
+cd site && npm run build && cd ..
+wrangler pages deploy site/dist --project-name smarten
 ```
-
-**Must run from `site/`** so wrangler finds both `dist/` and `functions/` — running from the repo root silently skips Functions.
 
 Cloudflare secrets:
 - `ANTHROPIC_API_KEY` — Claude API key for AI grading (set via `wrangler pages secret put`)
