@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "It is the largest and deepest ocean on Earth" },
-        { "letter": "B", "text": "It is home to the Sahara, the world's largest hot desert" },
-        { "letter": "C", "text": "The Amazon rainforest covers a large part of this continent" },
-        { "letter": "D", "text": "It separates Europe from the Americas" },
-        { "letter": "E", "text": "Mount Kilimanjaro, the tallest peak in Africa, stands here" },
-        { "letter": "F", "text": "It contains the Mariana Trench, the deepest point on Earth" },
-        { "letter": "G", "text": "The Andes, the longest mountain range, runs along its west coast" },
-        { "letter": "H", "text": "The Nile, one of the longest rivers, flows through this continent" },
-        { "letter": "I", "text": "The Gulf Stream is a warm current that flows through it" },
-        { "letter": "J", "text": "It is surrounded by the Ring of Fire, an area of volcanic activity" },
-        { "letter": "K", "text": "Angel Falls, the world's highest waterfall, is found here" },
-        { "letter": "L", "text": "It is the smallest ocean, located around the North Pole" }
+        {
+          "letter": "A",
+          "text": "Angel Falls, the world's highest waterfall, is found here"
+        },
+        {
+          "letter": "B",
+          "text": "The Amazon rainforest covers a large part of this continent"
+        },
+        {
+          "letter": "C",
+          "text": "It separates Europe from the Americas"
+        },
+        {
+          "letter": "D",
+          "text": "It is the largest and deepest ocean on Earth"
+        },
+        {
+          "letter": "E",
+          "text": "It is the smallest ocean, located around the North Pole"
+        },
+        {
+          "letter": "F",
+          "text": "The Nile, one of the longest rivers, flows through this continent"
+        },
+        {
+          "letter": "G",
+          "text": "The Andes, the longest mountain range, runs along its west coast"
+        },
+        {
+          "letter": "H",
+          "text": "The Gulf Stream is a warm current that flows through it"
+        },
+        {
+          "letter": "I",
+          "text": "It contains the Mariana Trench, the deepest point on Earth"
+        },
+        {
+          "letter": "J",
+          "text": "It is surrounded by the Ring of Fire, an area of volcanic activity"
+        },
+        {
+          "letter": "K",
+          "text": "It is home to the Sahara, the world's largest hot desert"
+        },
+        {
+          "letter": "L",
+          "text": "Mount Kilimanjaro, the tallest peak in Africa, stands here"
+        }
       ],
       "items": [
-        { "id": "Africa", "answers": ["B", "E", "H"] },
-        { "id": "South America", "answers": ["C", "G", "K"] },
-        { "id": "Pacific Ocean", "answers": ["A", "F", "J"] }
+        {
+          "id": "Africa",
+          "answers": [
+            "F",
+            "K",
+            "L"
+          ]
+        },
+        {
+          "id": "South America",
+          "answers": [
+            "A",
+            "B",
+            "G"
+          ]
+        },
+        {
+          "id": "Pacific Ocean",
+          "answers": [
+            "D",
+            "I",
+            "J"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

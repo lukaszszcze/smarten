@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The bald eagle is the national bird of this country" },
-        { "letter": "B", "text": "Stonehenge is located on Salisbury Plain in this country" },
-        { "letter": "C", "text": "The Great Barrier Reef lies off the coast of this country" },
-        { "letter": "D", "text": "The Stars and Stripes is the name of this country's flag" },
-        { "letter": "E", "text": "Big Ben is a famous clock tower in this country's capital" },
-        { "letter": "F", "text": "Uluru is a sacred sandstone rock formation in this country" },
-        { "letter": "G", "text": "The Grand Canyon is one of this country's natural wonders" },
-        { "letter": "H", "text": "The Union Jack is the national flag of this country" },
-        { "letter": "I", "text": "The kangaroo and emu appear on this country's coat of arms" },
-        { "letter": "J", "text": "The Eiffel Tower is the most visited landmark in this country" },
-        { "letter": "K", "text": "The Taj Mahal is a famous marble mausoleum in this country" },
-        { "letter": "L", "text": "Niagara Falls is shared between this country and the USA" }
+        {
+          "letter": "A",
+          "text": "The Stars and Stripes is the name of this country's flag"
+        },
+        {
+          "letter": "B",
+          "text": "The bald eagle is the national bird of this country"
+        },
+        {
+          "letter": "C",
+          "text": "The Taj Mahal is a famous marble mausoleum in this country"
+        },
+        {
+          "letter": "D",
+          "text": "The kangaroo and emu appear on this country's coat of arms"
+        },
+        {
+          "letter": "E",
+          "text": "The Grand Canyon is one of this country's natural wonders"
+        },
+        {
+          "letter": "F",
+          "text": "Uluru is a sacred sandstone rock formation in this country"
+        },
+        {
+          "letter": "G",
+          "text": "Niagara Falls is shared between this country and the USA"
+        },
+        {
+          "letter": "H",
+          "text": "Stonehenge is located on Salisbury Plain in this country"
+        },
+        {
+          "letter": "I",
+          "text": "Big Ben is a famous clock tower in this country's capital"
+        },
+        {
+          "letter": "J",
+          "text": "The Great Barrier Reef lies off the coast of this country"
+        },
+        {
+          "letter": "K",
+          "text": "The Eiffel Tower is the most visited landmark in this country"
+        },
+        {
+          "letter": "L",
+          "text": "The Union Jack is the national flag of this country"
+        }
       ],
       "items": [
-        { "id": "United Kingdom", "answers": ["B", "E", "H"] },
-        { "id": "United States", "answers": ["A", "D", "G"] },
-        { "id": "Australia", "answers": ["C", "F", "I"] }
+        {
+          "id": "United Kingdom",
+          "answers": [
+            "H",
+            "I",
+            "L"
+          ]
+        },
+        {
+          "id": "United States",
+          "answers": [
+            "A",
+            "B",
+            "E"
+          ]
+        },
+        {
+          "id": "Australia",
+          "answers": [
+            "D",
+            "F",
+            "J"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

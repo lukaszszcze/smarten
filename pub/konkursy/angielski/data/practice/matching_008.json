@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "Children search for chocolate eggs hidden in the garden" },
-        { "letter": "B", "text": "People light bonfires and set off fireworks" },
-        { "letter": "C", "text": "Families pull crackers at the dinner table" },
-        { "letter": "D", "text": "It falls on the 5th of November each year" },
-        { "letter": "E", "text": "A roast turkey is the traditional main dish" },
-        { "letter": "F", "text": "Hot cross buns are eaten during this holiday" },
-        { "letter": "G", "text": "It commemorates the failed Gunpowder Plot of 1605" },
-        { "letter": "H", "text": "Children hang stockings by the fireplace" },
-        { "letter": "I", "text": "People dress up in costumes and go trick-or-treating" },
-        { "letter": "J", "text": "The date changes every year as it follows the lunar calendar" },
-        { "letter": "K", "text": "People carve faces into pumpkins and display them" },
-        { "letter": "L", "text": "A figure called the Guy is burned on top of the fire" }
+        {
+          "letter": "A",
+          "text": "Children hang stockings by the fireplace"
+        },
+        {
+          "letter": "B",
+          "text": "People dress up in costumes and go trick-or-treating"
+        },
+        {
+          "letter": "C",
+          "text": "Families pull crackers at the dinner table"
+        },
+        {
+          "letter": "D",
+          "text": "People light bonfires and set off fireworks"
+        },
+        {
+          "letter": "E",
+          "text": "A roast turkey is the traditional main dish"
+        },
+        {
+          "letter": "F",
+          "text": "A figure called the Guy is burned on top of the fire"
+        },
+        {
+          "letter": "G",
+          "text": "Hot cross buns are eaten during this holiday"
+        },
+        {
+          "letter": "H",
+          "text": "People carve faces into pumpkins and display them"
+        },
+        {
+          "letter": "I",
+          "text": "It commemorates the failed Gunpowder Plot of 1605"
+        },
+        {
+          "letter": "J",
+          "text": "Children search for chocolate eggs hidden in the garden"
+        },
+        {
+          "letter": "K",
+          "text": "The date changes every year as it follows the lunar calendar"
+        },
+        {
+          "letter": "L",
+          "text": "It falls on the 5th of November each year"
+        }
       ],
       "items": [
-        { "id": "Christmas", "answers": ["C", "E", "H"] },
-        { "id": "Bonfire Night", "answers": ["B", "D", "G"] },
-        { "id": "Easter", "answers": ["A", "F", "J"] }
+        {
+          "id": "Christmas",
+          "answers": [
+            "A",
+            "C",
+            "E"
+          ]
+        },
+        {
+          "id": "Bonfire Night",
+          "answers": [
+            "D",
+            "I",
+            "L"
+          ]
+        },
+        {
+          "id": "Easter",
+          "answers": [
+            "G",
+            "J",
+            "K"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

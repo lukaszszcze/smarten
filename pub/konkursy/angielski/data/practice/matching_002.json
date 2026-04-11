@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The Tower of London is a historic castle in this city" },
-        { "letter": "B", "text": "Central Park is a large public park in the heart of this city" },
-        { "letter": "C", "text": "The Opera House with sail-shaped roofs stands in this city" },
-        { "letter": "D", "text": "The Tube is the name of the underground railway in this city" },
-        { "letter": "E", "text": "The Statue of Liberty stands on an island near this city" },
-        { "letter": "F", "text": "Bondi Beach is one of the most famous beaches in this city" },
-        { "letter": "G", "text": "Buckingham Palace is the residence of the monarch in this city" },
-        { "letter": "H", "text": "Broadway is the world-famous theatre district in this city" },
-        { "letter": "I", "text": "The Harbour Bridge is a landmark steel arch bridge in this city" },
-        { "letter": "J", "text": "The Colosseum is an ancient amphitheatre in this city" },
-        { "letter": "K", "text": "The Golden Gate Bridge is an iconic landmark of this city" },
-        { "letter": "L", "text": "The Sagrada Familia is an unfinished basilica in this city" }
+        {
+          "letter": "A",
+          "text": "The Tower of London is a historic castle in this city"
+        },
+        {
+          "letter": "B",
+          "text": "The Harbour Bridge is a landmark steel arch bridge in this city"
+        },
+        {
+          "letter": "C",
+          "text": "Buckingham Palace is the residence of the monarch in this city"
+        },
+        {
+          "letter": "D",
+          "text": "The Sagrada Familia is an unfinished basilica in this city"
+        },
+        {
+          "letter": "E",
+          "text": "The Statue of Liberty stands on an island near this city"
+        },
+        {
+          "letter": "F",
+          "text": "Broadway is the world-famous theatre district in this city"
+        },
+        {
+          "letter": "G",
+          "text": "Bondi Beach is one of the most famous beaches in this city"
+        },
+        {
+          "letter": "H",
+          "text": "Central Park is a large public park in the heart of this city"
+        },
+        {
+          "letter": "I",
+          "text": "The Golden Gate Bridge is an iconic landmark of this city"
+        },
+        {
+          "letter": "J",
+          "text": "The Colosseum is an ancient amphitheatre in this city"
+        },
+        {
+          "letter": "K",
+          "text": "The Opera House with sail-shaped roofs stands in this city"
+        },
+        {
+          "letter": "L",
+          "text": "The Tube is the name of the underground railway in this city"
+        }
       ],
       "items": [
-        { "id": "London", "answers": ["A", "D", "G"] },
-        { "id": "New York", "answers": ["B", "E", "H"] },
-        { "id": "Sydney", "answers": ["C", "F", "I"] }
+        {
+          "id": "London",
+          "answers": [
+            "A",
+            "C",
+            "L"
+          ]
+        },
+        {
+          "id": "New York",
+          "answers": [
+            "E",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "id": "Sydney",
+          "answers": [
+            "B",
+            "G",
+            "K"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

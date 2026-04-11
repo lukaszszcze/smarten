@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Match each description (A-L) to the correct country. Three descriptions do not match any country.",
       "options": [
-        { "letter": "A", "text": "People in this country eat fish and chips as a traditional meal" },
-        { "letter": "B", "text": "The Statue of Liberty is a famous landmark in this country" },
-        { "letter": "C", "text": "Kangaroos and koalas live in the wild in this country" },
-        { "letter": "D", "text": "London is the capital city of this country" },
-        { "letter": "E", "text": "Baseball is one of the most popular sports in this country" },
-        { "letter": "F", "text": "Sydney and Melbourne are the two largest cities in this country" },
-        { "letter": "G", "text": "The Queen's Guard soldiers wear tall black hats in this country" },
-        { "letter": "H", "text": "Thanksgiving is a holiday celebrated in November in this country" },
-        { "letter": "I", "text": "The Great Barrier Reef is found near the coast of this country" },
-        { "letter": "J", "text": "Croissants are a popular breakfast food in this country" },
-        { "letter": "K", "text": "Cherry blossom festivals are a tradition in this country" },
-        { "letter": "L", "text": "The Sahara Desert covers a large part of this country" }
+        {
+          "letter": "A",
+          "text": "Kangaroos and koalas live in the wild in this country"
+        },
+        {
+          "letter": "B",
+          "text": "Cherry blossom festivals are a tradition in this country"
+        },
+        {
+          "letter": "C",
+          "text": "Baseball is one of the most popular sports in this country"
+        },
+        {
+          "letter": "D",
+          "text": "London is the capital city of this country"
+        },
+        {
+          "letter": "E",
+          "text": "The Statue of Liberty is a famous landmark in this country"
+        },
+        {
+          "letter": "F",
+          "text": "The Queen's Guard soldiers wear tall black hats in this country"
+        },
+        {
+          "letter": "G",
+          "text": "The Sahara Desert covers a large part of this country"
+        },
+        {
+          "letter": "H",
+          "text": "The Great Barrier Reef is found near the coast of this country"
+        },
+        {
+          "letter": "I",
+          "text": "People in this country eat fish and chips as a traditional meal"
+        },
+        {
+          "letter": "J",
+          "text": "Thanksgiving is a holiday celebrated in November in this country"
+        },
+        {
+          "letter": "K",
+          "text": "Croissants are a popular breakfast food in this country"
+        },
+        {
+          "letter": "L",
+          "text": "Sydney and Melbourne are the two largest cities in this country"
+        }
       ],
       "items": [
-        { "id": "United Kingdom", "answers": ["A", "D", "G"] },
-        { "id": "United States", "answers": ["B", "E", "H"] },
-        { "id": "Australia", "answers": ["C", "F", "I"] }
+        {
+          "id": "United Kingdom",
+          "answers": [
+            "D",
+            "F",
+            "I"
+          ]
+        },
+        {
+          "id": "United States",
+          "answers": [
+            "C",
+            "E",
+            "J"
+          ]
+        },
+        {
+          "id": "Australia",
+          "answers": [
+            "A",
+            "H",
+            "L"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

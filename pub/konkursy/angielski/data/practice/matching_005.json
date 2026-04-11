@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "He wrote Romeo and Juliet, a famous love tragedy" },
-        { "letter": "B", "text": "He created the character of Oliver Twist, a poor orphan boy" },
-        { "letter": "C", "text": "He wrote The Hobbit, a fantasy adventure novel" },
-        { "letter": "D", "text": "He wrote Hamlet, a play about a Danish prince" },
-        { "letter": "E", "text": "He wrote A Christmas Carol, a story about the miser Scrooge" },
-        { "letter": "F", "text": "He created the world of Middle-earth with elves and hobbits" },
-        { "letter": "G", "text": "He worked at the Globe Theatre in London in the 1600s" },
-        { "letter": "H", "text": "He wrote Great Expectations, set in Victorian England" },
-        { "letter": "I", "text": "He wrote The Lord of the Rings trilogy" },
-        { "letter": "J", "text": "She wrote Pride and Prejudice about English country society" },
-        { "letter": "K", "text": "He wrote Treasure Island about pirates and hidden gold" },
-        { "letter": "L", "text": "She wrote Frankenstein, one of the first science fiction novels" }
+        {
+          "letter": "A",
+          "text": "He worked at the Globe Theatre in London in the 1600s"
+        },
+        {
+          "letter": "B",
+          "text": "He created the world of Middle-earth with elves and hobbits"
+        },
+        {
+          "letter": "C",
+          "text": "He wrote Hamlet, a play about a Danish prince"
+        },
+        {
+          "letter": "D",
+          "text": "He wrote The Lord of the Rings trilogy"
+        },
+        {
+          "letter": "E",
+          "text": "He wrote A Christmas Carol, a story about the miser Scrooge"
+        },
+        {
+          "letter": "F",
+          "text": "She wrote Pride and Prejudice about English country society"
+        },
+        {
+          "letter": "G",
+          "text": "He created the character of Oliver Twist, a poor orphan boy"
+        },
+        {
+          "letter": "H",
+          "text": "He wrote Romeo and Juliet, a famous love tragedy"
+        },
+        {
+          "letter": "I",
+          "text": "She wrote Frankenstein, one of the first science fiction novels"
+        },
+        {
+          "letter": "J",
+          "text": "He wrote Treasure Island about pirates and hidden gold"
+        },
+        {
+          "letter": "K",
+          "text": "He wrote Great Expectations, set in Victorian England"
+        },
+        {
+          "letter": "L",
+          "text": "He wrote The Hobbit, a fantasy adventure novel"
+        }
       ],
       "items": [
-        { "id": "William Shakespeare", "answers": ["A", "D", "G"] },
-        { "id": "Charles Dickens", "answers": ["B", "E", "H"] },
-        { "id": "J.R.R. Tolkien", "answers": ["C", "F", "I"] }
+        {
+          "id": "William Shakespeare",
+          "answers": [
+            "A",
+            "C",
+            "H"
+          ]
+        },
+        {
+          "id": "Charles Dickens",
+          "answers": [
+            "E",
+            "G",
+            "K"
+          ]
+        },
+        {
+          "id": "J.R.R. Tolkien",
+          "answers": [
+            "B",
+            "D",
+            "L"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The thistle is the national flower of this country" },
-        { "letter": "B", "text": "The shamrock is the traditional symbol of this country" },
-        { "letter": "C", "text": "The kiwi bird is the national symbol of this country" },
-        { "letter": "D", "text": "Loch Ness is a famous lake known for its legendary monster" },
-        { "letter": "E", "text": "St Patrick's Day on 17 March is celebrated in this country" },
-        { "letter": "F", "text": "The haka is a traditional Maori war dance from this country" },
-        { "letter": "G", "text": "Edinburgh is the capital city of this country" },
-        { "letter": "H", "text": "The Cliffs of Moher are a famous coastal landmark here" },
-        { "letter": "I", "text": "Milford Sound is a spectacular fjord in this country" },
-        { "letter": "J", "text": "The maple leaf is the national symbol of this country" },
-        { "letter": "K", "text": "The leek is the national emblem of this country" },
-        { "letter": "L", "text": "The bald eagle appears on the Great Seal of this country" }
+        {
+          "letter": "A",
+          "text": "The thistle is the national flower of this country"
+        },
+        {
+          "letter": "B",
+          "text": "Loch Ness is a famous lake known for its legendary monster"
+        },
+        {
+          "letter": "C",
+          "text": "Edinburgh is the capital city of this country"
+        },
+        {
+          "letter": "D",
+          "text": "The Cliffs of Moher are a famous coastal landmark here"
+        },
+        {
+          "letter": "E",
+          "text": "The shamrock is the traditional symbol of this country"
+        },
+        {
+          "letter": "F",
+          "text": "The haka is a traditional Maori war dance from this country"
+        },
+        {
+          "letter": "G",
+          "text": "The bald eagle appears on the Great Seal of this country"
+        },
+        {
+          "letter": "H",
+          "text": "The maple leaf is the national symbol of this country"
+        },
+        {
+          "letter": "I",
+          "text": "The kiwi bird is the national symbol of this country"
+        },
+        {
+          "letter": "J",
+          "text": "Milford Sound is a spectacular fjord in this country"
+        },
+        {
+          "letter": "K",
+          "text": "The leek is the national emblem of this country"
+        },
+        {
+          "letter": "L",
+          "text": "St Patrick's Day on 17 March is celebrated in this country"
+        }
       ],
       "items": [
-        { "id": "Scotland", "answers": ["A", "D", "G"] },
-        { "id": "Ireland", "answers": ["B", "E", "H"] },
-        { "id": "New Zealand", "answers": ["C", "F", "I"] }
+        {
+          "id": "Scotland",
+          "answers": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "id": "Ireland",
+          "answers": [
+            "D",
+            "E",
+            "L"
+          ]
+        },
+        {
+          "id": "New Zealand",
+          "answers": [
+            "F",
+            "I",
+            "J"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

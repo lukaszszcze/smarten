@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "He described three laws of motion still taught in physics" },
-        { "letter": "B", "text": "She discovered the elements polonium and radium" },
-        { "letter": "C", "text": "He published On the Origin of Species in 1859" },
-        { "letter": "D", "text": "He explained how gravity works after observing a falling apple" },
-        { "letter": "E", "text": "She was the first person to win two Nobel Prizes" },
-        { "letter": "F", "text": "He travelled on HMS Beagle to study wildlife" },
-        { "letter": "G", "text": "He invented the first practical electric light bulb" },
-        { "letter": "H", "text": "She carried out pioneering research on radioactivity" },
-        { "letter": "I", "text": "He proposed the theory of evolution by natural selection" },
-        { "letter": "J", "text": "He developed calculus independently around the same time as Leibniz" },
-        { "letter": "K", "text": "He formulated the theory of relativity and the equation E=mc2" },
-        { "letter": "L", "text": "He invented the phonograph and held over a thousand patents" }
+        {
+          "letter": "A",
+          "text": "He proposed the theory of evolution by natural selection"
+        },
+        {
+          "letter": "B",
+          "text": "He developed calculus independently around the same time as Leibniz"
+        },
+        {
+          "letter": "C",
+          "text": "She was the first person to win two Nobel Prizes"
+        },
+        {
+          "letter": "D",
+          "text": "He published On the Origin of Species in 1859"
+        },
+        {
+          "letter": "E",
+          "text": "She discovered the elements polonium and radium"
+        },
+        {
+          "letter": "F",
+          "text": "He formulated the theory of relativity and the equation E=mc2"
+        },
+        {
+          "letter": "G",
+          "text": "She carried out pioneering research on radioactivity"
+        },
+        {
+          "letter": "H",
+          "text": "He invented the first practical electric light bulb"
+        },
+        {
+          "letter": "I",
+          "text": "He invented the phonograph and held over a thousand patents"
+        },
+        {
+          "letter": "J",
+          "text": "He travelled on HMS Beagle to study wildlife"
+        },
+        {
+          "letter": "K",
+          "text": "He described three laws of motion still taught in physics"
+        },
+        {
+          "letter": "L",
+          "text": "He explained how gravity works after observing a falling apple"
+        }
       ],
       "items": [
-        { "id": "Isaac Newton", "answers": ["A", "D", "J"] },
-        { "id": "Marie Curie", "answers": ["B", "E", "H"] },
-        { "id": "Charles Darwin", "answers": ["C", "F", "I"] }
+        {
+          "id": "Isaac Newton",
+          "answers": [
+            "B",
+            "K",
+            "L"
+          ]
+        },
+        {
+          "id": "Marie Curie",
+          "answers": [
+            "C",
+            "E",
+            "G"
+          ]
+        },
+        {
+          "id": "Charles Darwin",
+          "answers": [
+            "A",
+            "D",
+            "J"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

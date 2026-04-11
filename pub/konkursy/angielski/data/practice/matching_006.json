@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The daffodil is one of its national flowers" },
-        { "letter": "B", "text": "Home to the Giant's Causeway" },
-        { "letter": "C", "text": "Cardiff is its capital city" },
-        { "letter": "D", "text": "The red rose is its national flower" },
-        { "letter": "E", "text": "Belfast is its capital city" },
-        { "letter": "F", "text": "Home to Stonehenge and Big Ben" },
-        { "letter": "G", "text": "Edinburgh is its capital city" },
-        { "letter": "H", "text": "Its flag features a red dragon" },
-        { "letter": "I", "text": "The Highland Games are held here every year" },
-        { "letter": "J", "text": "Home to the tradition of St Patrick's Day parades" },
-        { "letter": "K", "text": "The thistle is its national emblem" },
-        { "letter": "L", "text": "The Three Lions appear on its football badge" }
+        {
+          "letter": "A",
+          "text": "Home to Stonehenge and Big Ben"
+        },
+        {
+          "letter": "B",
+          "text": "The Three Lions appear on its football badge"
+        },
+        {
+          "letter": "C",
+          "text": "Edinburgh is its capital city"
+        },
+        {
+          "letter": "D",
+          "text": "The daffodil is one of its national flowers"
+        },
+        {
+          "letter": "E",
+          "text": "Home to the tradition of St Patrick's Day parades"
+        },
+        {
+          "letter": "F",
+          "text": "The thistle is its national emblem"
+        },
+        {
+          "letter": "G",
+          "text": "The red rose is its national flower"
+        },
+        {
+          "letter": "H",
+          "text": "The Highland Games are held here every year"
+        },
+        {
+          "letter": "I",
+          "text": "Home to the Giant's Causeway"
+        },
+        {
+          "letter": "J",
+          "text": "Cardiff is its capital city"
+        },
+        {
+          "letter": "K",
+          "text": "Its flag features a red dragon"
+        },
+        {
+          "letter": "L",
+          "text": "Belfast is its capital city"
+        }
       ],
       "items": [
-        { "id": "Wales", "answers": ["A", "C", "H"] },
-        { "id": "England", "answers": ["D", "F", "L"] },
-        { "id": "Northern Ireland", "answers": ["B", "E", "J"] }
+        {
+          "id": "Wales",
+          "answers": [
+            "D",
+            "J",
+            "K"
+          ]
+        },
+        {
+          "id": "England",
+          "answers": [
+            "A",
+            "B",
+            "G"
+          ]
+        },
+        {
+          "id": "Northern Ireland",
+          "answers": [
+            "E",
+            "I",
+            "L"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Match each description (A-L) to the correct person. Three descriptions do not match any person.",
       "options": [
-        { "letter": "A", "text": "This person works in a hospital and helps people who are sick or injured get better." },
-        { "letter": "B", "text": "This person stands in front of a class every day and explains new things to young people." },
-        { "letter": "C", "text": "This person works in a kitchen and creates delicious meals for hungry customers." },
-        { "letter": "D", "text": "At the weekend, this person reads books about the human body and new medicines." },
-        { "letter": "E", "text": "In the evening, this person enjoys making worksheets and thinking of fun activities for lessons." },
-        { "letter": "F", "text": "After work, this person likes visiting food markets to discover unusual ingredients from around the world." },
-        { "letter": "G", "text": "This person sometimes works at night because patients need care at all hours." },
-        { "letter": "H", "text": "This person believes that every child can learn if you find the right way to explain things." },
-        { "letter": "I", "text": "This person once won a local competition for the best chocolate cake." },
-        { "letter": "J", "text": "This person spends most of the day outdoors, taking care of animals on a large farm." },
-        { "letter": "K", "text": "This person travels to different countries and takes photographs of old buildings." },
-        { "letter": "L", "text": "This person fixes cars and motorcycles in a small garage near the town centre." }
+        {
+          "letter": "A",
+          "text": "This person believes that every child can learn if you find the right way to explain things."
+        },
+        {
+          "letter": "B",
+          "text": "This person once won a local competition for the best chocolate cake."
+        },
+        {
+          "letter": "C",
+          "text": "After work, this person likes visiting food markets to discover unusual ingredients from around the world."
+        },
+        {
+          "letter": "D",
+          "text": "This person works in a kitchen and creates delicious meals for hungry customers."
+        },
+        {
+          "letter": "E",
+          "text": "This person travels to different countries and takes photographs of old buildings."
+        },
+        {
+          "letter": "F",
+          "text": "This person fixes cars and motorcycles in a small garage near the town centre."
+        },
+        {
+          "letter": "G",
+          "text": "This person stands in front of a class every day and explains new things to young people."
+        },
+        {
+          "letter": "H",
+          "text": "At the weekend, this person reads books about the human body and new medicines."
+        },
+        {
+          "letter": "I",
+          "text": "This person sometimes works at night because patients need care at all hours."
+        },
+        {
+          "letter": "J",
+          "text": "This person works in a hospital and helps people who are sick or injured get better."
+        },
+        {
+          "letter": "K",
+          "text": "In the evening, this person enjoys making worksheets and thinking of fun activities for lessons."
+        },
+        {
+          "letter": "L",
+          "text": "This person spends most of the day outdoors, taking care of animals on a large farm."
+        }
       ],
       "items": [
-        { "id": "Doctor", "answers": ["A", "D", "G"] },
-        { "id": "Teacher", "answers": ["B", "E", "H"] },
-        { "id": "Chef", "answers": ["C", "F", "I"] }
+        {
+          "id": "Doctor",
+          "answers": [
+            "H",
+            "I",
+            "J"
+          ]
+        },
+        {
+          "id": "Teacher",
+          "answers": [
+            "A",
+            "G",
+            "K"
+          ]
+        },
+        {
+          "id": "Chef",
+          "answers": [
+            "B",
+            "C",
+            "D"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

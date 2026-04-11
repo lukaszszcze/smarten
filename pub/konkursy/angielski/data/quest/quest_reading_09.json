@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Match each description (A-L) to the correct animal. Three descriptions do not match any animal.",
       "options": [
-        { "letter": "A", "text": "This animal is one of the smartest sea creatures and can communicate using clicks and whistles." },
-        { "letter": "B", "text": "It has amazing eyesight and can spot a small mouse from almost two kilometres away." },
-        { "letter": "C", "text": "It is the largest land animal and can weigh over five thousand kilograms." },
-        { "letter": "D", "text": "It lives in groups called pods and sometimes jumps high out of the water just for fun." },
-        { "letter": "E", "text": "It builds its nest on high cliffs or tall trees to keep its babies safe." },
-        { "letter": "F", "text": "It uses its long trunk to drink water, pick up food, and even greet other members of the herd." },
-        { "letter": "G", "text": "It can swim very fast and uses echolocation to find fish in deep, dark water." },
-        { "letter": "H", "text": "The bald variety is the national symbol of the United States of America." },
-        { "letter": "I", "text": "Baby ones stay close to their mothers for many years and learn which plants are safe to eat." },
-        { "letter": "J", "text": "This animal sleeps upside down and uses sound waves to fly in the dark." },
-        { "letter": "K", "text": "It changes the colour of its skin to hide from enemies." },
-        { "letter": "L", "text": "This insect can carry objects fifty times heavier than its own body." }
+        {
+          "letter": "A",
+          "text": "This animal is one of the smartest sea creatures and can communicate using clicks and whistles."
+        },
+        {
+          "letter": "B",
+          "text": "It lives in groups called pods and sometimes jumps high out of the water just for fun."
+        },
+        {
+          "letter": "C",
+          "text": "It changes the colour of its skin to hide from enemies."
+        },
+        {
+          "letter": "D",
+          "text": "It uses its long trunk to drink water, pick up food, and even greet other members of the herd."
+        },
+        {
+          "letter": "E",
+          "text": "It is the largest land animal and can weigh over five thousand kilograms."
+        },
+        {
+          "letter": "F",
+          "text": "Baby ones stay close to their mothers for many years and learn which plants are safe to eat."
+        },
+        {
+          "letter": "G",
+          "text": "It has amazing eyesight and can spot a small mouse from almost two kilometres away."
+        },
+        {
+          "letter": "H",
+          "text": "This insect can carry objects fifty times heavier than its own body."
+        },
+        {
+          "letter": "I",
+          "text": "It builds its nest on high cliffs or tall trees to keep its babies safe."
+        },
+        {
+          "letter": "J",
+          "text": "The bald variety is the national symbol of the United States of America."
+        },
+        {
+          "letter": "K",
+          "text": "It can swim very fast and uses echolocation to find fish in deep, dark water."
+        },
+        {
+          "letter": "L",
+          "text": "This animal sleeps upside down and uses sound waves to fly in the dark."
+        }
       ],
       "items": [
-        { "id": "Dolphin", "answers": ["A", "D", "G"] },
-        { "id": "Eagle", "answers": ["B", "E", "H"] },
-        { "id": "Elephant", "answers": ["C", "F", "I"] }
+        {
+          "id": "Dolphin",
+          "answers": [
+            "A",
+            "B",
+            "K"
+          ]
+        },
+        {
+          "id": "Eagle",
+          "answers": [
+            "G",
+            "I",
+            "J"
+          ]
+        },
+        {
+          "id": "Elephant",
+          "answers": [
+            "D",
+            "E",
+            "F"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

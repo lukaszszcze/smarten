@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The maple leaf appears on this country's national flag" },
-        { "letter": "B", "text": "Table Mountain overlooks Cape Town in this country" },
-        { "letter": "C", "text": "The Taj Mahal is a famous white marble monument in this country" },
-        { "letter": "D", "text": "Ottawa is the capital city of this country" },
-        { "letter": "E", "text": "Nelson Mandela was the first democratic president of this country" },
-        { "letter": "F", "text": "The Ganges is considered a sacred river in this country" },
-        { "letter": "G", "text": "Niagara Falls is partly located in this country" },
-        { "letter": "H", "text": "Kruger National Park is a famous wildlife reserve in this country" },
-        { "letter": "I", "text": "Bollywood is the largest film industry in this country" },
-        { "letter": "J", "text": "The kiwi is the national bird of this country" },
-        { "letter": "K", "text": "The didgeridoo is a traditional instrument from this country" },
-        { "letter": "L", "text": "Haggis is a traditional dish of this country" }
+        {
+          "letter": "A",
+          "text": "Kruger National Park is a famous wildlife reserve in this country"
+        },
+        {
+          "letter": "B",
+          "text": "Niagara Falls is partly located in this country"
+        },
+        {
+          "letter": "C",
+          "text": "Nelson Mandela was the first democratic president of this country"
+        },
+        {
+          "letter": "D",
+          "text": "The Taj Mahal is a famous white marble monument in this country"
+        },
+        {
+          "letter": "E",
+          "text": "The kiwi is the national bird of this country"
+        },
+        {
+          "letter": "F",
+          "text": "Bollywood is the largest film industry in this country"
+        },
+        {
+          "letter": "G",
+          "text": "Haggis is a traditional dish of this country"
+        },
+        {
+          "letter": "H",
+          "text": "Ottawa is the capital city of this country"
+        },
+        {
+          "letter": "I",
+          "text": "The Ganges is considered a sacred river in this country"
+        },
+        {
+          "letter": "J",
+          "text": "Table Mountain overlooks Cape Town in this country"
+        },
+        {
+          "letter": "K",
+          "text": "The didgeridoo is a traditional instrument from this country"
+        },
+        {
+          "letter": "L",
+          "text": "The maple leaf appears on this country's national flag"
+        }
       ],
       "items": [
-        { "id": "Canada", "answers": ["A", "D", "G"] },
-        { "id": "South Africa", "answers": ["B", "E", "H"] },
-        { "id": "India", "answers": ["C", "F", "I"] }
+        {
+          "id": "Canada",
+          "answers": [
+            "B",
+            "H",
+            "L"
+          ]
+        },
+        {
+          "id": "South Africa",
+          "answers": [
+            "A",
+            "C",
+            "J"
+          ]
+        },
+        {
+          "id": "India",
+          "answers": [
+            "D",
+            "F",
+            "I"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,

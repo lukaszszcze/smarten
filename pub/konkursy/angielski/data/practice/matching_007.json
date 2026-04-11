@@ -8,23 +8,80 @@
       "points": 3,
       "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
       "options": [
-        { "letter": "A", "text": "The championship game is called the Super Bowl" },
-        { "letter": "B", "text": "Players score by hitting a ball and running around bases" },
-        { "letter": "C", "text": "The NBA is the top professional league" },
-        { "letter": "D", "text": "A pitcher throws the ball to a batter" },
-        { "letter": "E", "text": "Players wear helmets and heavy padding" },
-        { "letter": "F", "text": "The game is played on a court with two hoops" },
-        { "letter": "G", "text": "A touchdown is worth six points" },
-        { "letter": "H", "text": "The World Series is its championship event" },
-        { "letter": "I", "text": "Players score goals using a stick and a puck" },
-        { "letter": "J", "text": "Slam dunk is one of the most exciting moves" },
-        { "letter": "K", "text": "Each match consists of three periods of twenty minutes" },
-        { "letter": "L", "text": "Players ride horses and use mallets to hit a ball" }
+        {
+          "letter": "A",
+          "text": "Players score by hitting a ball and running around bases"
+        },
+        {
+          "letter": "B",
+          "text": "Slam dunk is one of the most exciting moves"
+        },
+        {
+          "letter": "C",
+          "text": "The game is played on a court with two hoops"
+        },
+        {
+          "letter": "D",
+          "text": "The World Series is its championship event"
+        },
+        {
+          "letter": "E",
+          "text": "A pitcher throws the ball to a batter"
+        },
+        {
+          "letter": "F",
+          "text": "Players wear helmets and heavy padding"
+        },
+        {
+          "letter": "G",
+          "text": "A touchdown is worth six points"
+        },
+        {
+          "letter": "H",
+          "text": "Players ride horses and use mallets to hit a ball"
+        },
+        {
+          "letter": "I",
+          "text": "Players score goals using a stick and a puck"
+        },
+        {
+          "letter": "J",
+          "text": "The NBA is the top professional league"
+        },
+        {
+          "letter": "K",
+          "text": "The championship game is called the Super Bowl"
+        },
+        {
+          "letter": "L",
+          "text": "Each match consists of three periods of twenty minutes"
+        }
       ],
       "items": [
-        { "id": "Baseball", "answers": ["B", "D", "H"] },
-        { "id": "Basketball", "answers": ["C", "F", "J"] },
-        { "id": "American Football", "answers": ["A", "E", "G"] }
+        {
+          "id": "Baseball",
+          "answers": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        {
+          "id": "Basketball",
+          "answers": [
+            "B",
+            "C",
+            "J"
+          ]
+        },
+        {
+          "id": "American Football",
+          "answers": [
+            "F",
+            "G",
+            "K"
+          ]
+        }
       ],
       "scoringScheme": {
         "9": 3,
