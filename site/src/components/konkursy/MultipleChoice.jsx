@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import * as s from "./taskStyles";
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -6,25 +7,47 @@ function getItemResult(taskResult, itemId) {
   return taskResult?.items?.find((r) => r.id === itemId);
 }
 
+function shuffleItemOptions(item) {
+  const rawOpts = item.options.map((opt) => opt.replace(/^[A-D]\)\s*/, ""));
+  const order = rawOpts.map((_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  const correctOrigIdx = LETTERS.indexOf(item.answer);
+  const newCorrectIdx = order.indexOf(correctOrigIdx);
+  return {
+    ...item,
+    options: order.map((i) => rawOpts[i]),
+    answer: LETTERS[newCorrectIdx],
+    _toOriginalLetter: order.map((i) => LETTERS[i]),
+  };
+}
+
 export default function MultipleChoice({ task, answers, onChange, showResults, taskResult }) {
-  const items = task.items || [];
+  const shuffledItems = useMemo(
+    () => (task.items || []).map(shuffleItemOptions),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [task.id]
+  );
 
   return (
     <div style={s.card}>
       <p style={s.instruction}>{task.instruction}</p>
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-        {items.map((item) => {
+        {shuffledItems.map((item) => {
           const ir = getItemResult(taskResult, item.id);
           return (
             <div key={item.id}>
               <p style={{ color: "#c8c8d8", fontSize: 14, lineHeight: 1.7, marginBottom: 8, whiteSpace: "pre-wrap" }}>
                 <span style={{ color: "#7a7a90", marginRight: 8 }}>{item.id}</span>
-                {item.stem}
+                {item.stem || item.prompt}
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 4, paddingLeft: 8 }}>
                 {item.options.map((opt, i) => {
                   const letter = LETTERS[i];
-                  const selected = answers[item.id] === letter;
+                  const origLetter = item._toOriginalLetter[i];
+                  const selected = answers[item.id] === origLetter;
                   const isCorrect = letter === item.answer;
                   let style = selected ? s.radioSelected : s.radioLabel;
                   if (showResults && ir) {
@@ -36,7 +59,7 @@ export default function MultipleChoice({ task, answers, onChange, showResults, t
                     <div
                       key={letter}
                       style={style}
-                      onClick={() => !showResults && onChange(item.id, letter)}
+                      onClick={() => !showResults && onChange(item.id, origLetter)}
                     >
                       <span style={{
                         width: 18,
