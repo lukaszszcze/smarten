@@ -5,14 +5,34 @@
     {
       "id": "1",
       "type": "true_false_ni",
-      "points": 3,
+      "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Zaznacz, ktore zdania (1.1-1.4) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie odpowiedz pelnym zdaniem na pytanie 1.5.",
       "text": "THE AMAZON RAINFOREST\n\nThe Amazon rainforest is the largest tropical rainforest on Earth, covering an area of approximately 5.5 million square kilometres across nine South American countries. Brazil contains roughly 60 percent of the forest, but it also extends into Peru, Colombia, Venezuela, and several other nations. Scientists estimate that the Amazon is home to around 10 percent of all known species on the planet.\n\nThe forest plays a vital role in regulating the world's climate. The trees absorb enormous quantities of carbon dioxide from the atmosphere and release oxygen in return. For this reason, the Amazon is often referred to as 'the lungs of the Earth', although some scientists argue that this description is misleading because the forest also consumes much of the oxygen it produces through natural processes.\n\nThe Amazon River, which flows through the heart of the rainforest, is the second longest river in the world after the Nile. However, it carries more water than any other river — in fact, it accounts for roughly one-fifth of all the fresh water that flows into the world's oceans. The river is so wide in some places that during the rainy season, it is impossible to see from one bank to the other.\n\nDespite its importance, the Amazon faces serious threats. Deforestation, mainly driven by cattle ranching and soybean farming, has destroyed large areas of the forest. Between 2001 and 2020, Brazil lost approximately 26 million hectares of tree cover. While the Brazilian government has introduced measures to slow deforestation, enforcement remains a challenge, particularly in remote areas where illegal logging continues.\n\nIndigenous communities have lived in the Amazon for thousands of years and possess deep knowledge of the forest's plants and animals. Many conservation organisations now recognise that involving these communities in protection efforts is essential for the long-term survival of the rainforest.",
       "items": [
-        { "id": "1.1", "statement": "All scientists agree that calling the Amazon 'the lungs of the Earth' is an accurate description.", "answer": "F", "explanation": "FALSE — The text says 'some scientists argue that this description is misleading', so not all scientists agree." },
-        { "id": "1.2", "statement": "The Amazon River carries a greater volume of water than any other river in the world.", "answer": "T", "explanation": "TRUE — The text states the Amazon 'carries more water than any other river' and 'accounts for roughly one-fifth of all the fresh water that flows into the world's oceans'." },
-        { "id": "1.3", "statement": "Brazil's anti-deforestation laws have been largely successful in stopping illegal logging.", "answer": "F", "explanation": "FALSE — The text says 'enforcement remains a challenge, particularly in remote areas where illegal logging continues', indicating the laws have not been largely successful." },
-        { "id": "1.4", "statement": "Indigenous communities have developed medicines from plants found in the Amazon.", "answer": "NI", "explanation": "NO INFORMATION — The text mentions that indigenous communities 'possess deep knowledge of the forest's plants and animals', but says nothing about developing medicines." }
+        {
+          "id": "1.1",
+          "statement": "All scientists agree that calling the Amazon 'the lungs of the Earth' is an accurate description.",
+          "answer": "F",
+          "explanation": "FALSE — The text says 'some scientists argue that this description is misleading', so not all scientists agree."
+        },
+        {
+          "id": "1.2",
+          "statement": "The Amazon River carries a greater volume of water than any other river in the world.",
+          "answer": "T",
+          "explanation": "TRUE — The text states the Amazon 'carries more water than any other river' and 'accounts for roughly one-fifth of all the fresh water that flows into the world's oceans'."
+        },
+        {
+          "id": "1.3",
+          "statement": "Brazil's anti-deforestation laws have been largely successful in stopping illegal logging.",
+          "answer": "F",
+          "explanation": "FALSE — The text says 'enforcement remains a challenge, particularly in remote areas where illegal logging continues', indicating the laws have not been largely successful."
+        },
+        {
+          "id": "1.4",
+          "statement": "Indigenous communities have developed medicines from plants found in the Amazon.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text mentions that indigenous communities 'possess deep knowledge of the forest's plants and animals', but says nothing about developing medicines."
+        }
       ],
       "scoringScheme": {
         "4": 2,
@@ -25,7 +45,45 @@
         "modelAnswer": "Indigenous communities have lived in the Amazon for thousands of years and have deep knowledge of the forest's plants and animals, which makes their involvement essential for the long-term survival of the rainforest.",
         "points": 1,
         "skipped": true
-      }
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "extremely important or essential for something to work or survive",
+          "answer": [
+            "vital"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "giving a false or incorrect impression",
+          "answer": [
+            "misleading"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "the widespread cutting down and destruction of forests",
+          "answer": [
+            "deforestation"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "native to and naturally occurring in a particular place from the earliest times",
+          "answer": [
+            "indigenous"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "the process of ensuring that laws and rules are obeyed",
+          "answer": [
+            "enforcement"
+          ]
+        }
+      ],
+      "vocabPoints": 5
     }
   ]
 }

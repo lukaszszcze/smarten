@@ -5,14 +5,34 @@
     {
       "id": "1",
       "type": "true_false_ni",
-      "points": 3,
+      "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Zaznacz, ktore zdania (1.1-1.4) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie odpowiedz pelnym zdaniem na pytanie 1.5.",
       "text": "WILLIAM SHAKESPEARE\n\nWilliam Shakespeare is widely regarded as the greatest writer in the English language. He was born in Stratford-upon-Avon in 1564, and although details of his early life are scarce, records show that he attended the local grammar school, where he would have studied Latin, rhetoric, and classical literature.\n\nBy the early 1590s, Shakespeare had moved to London and established himself as both an actor and a playwright. He joined a theatre company called the Lord Chamberlain's Men, which later became the King's Men under the patronage of King James I. The company performed at several theatres, most famously at the Globe Theatre, which was built in 1599 on the south bank of the River Thames. The Globe was an open-air theatre that could hold up to 3,000 spectators. Wealthier audience members sat in covered galleries, while ordinary people, known as 'groundlings', stood in the yard in front of the stage and paid just one penny for admission.\n\nShakespeare wrote approximately 37 plays, which are commonly divided into three categories: comedies, tragedies, and histories. His tragedies, including Hamlet, Macbeth, Othello, and King Lear, are considered masterpieces of world literature. He also composed 154 sonnets, many of which explore themes of love, beauty, and the passage of time.\n\nOne of Shakespeare's most lasting contributions is the enormous number of words and phrases he introduced to the English language. Scholars estimate that he invented over 1,700 words, including 'lonely', 'generous', 'eyeball', and 'bedroom'. Everyday expressions such as 'break the ice', 'heart of gold', and 'wild goose chase' all originated in his works.\n\nShakespeare retired to Stratford-upon-Avon around 1613 and died on 23 April 1616, at the age of 52. His plays continue to be performed more often than those of any other playwright in history.",
       "items": [
-        { "id": "1.1", "statement": "Shakespeare's education at grammar school focused exclusively on English literature and writing.", "answer": "F", "explanation": "FALSE — The text says he 'would have studied Latin, rhetoric, and classical literature', not English literature and writing." },
-        { "id": "1.2", "statement": "The Globe Theatre offered different experiences depending on how much the audience was willing to pay.", "answer": "T", "explanation": "TRUE — Wealthier audience members 'sat in covered galleries', while ordinary people ('groundlings') 'stood in the yard' and paid just one penny." },
-        { "id": "1.3", "statement": "Shakespeare considered his tragedies to be his finest work.", "answer": "NI", "explanation": "NO INFORMATION — The text says his tragedies 'are considered masterpieces', but this is the modern view. The text does not say what Shakespeare himself thought about his own works." },
-        { "id": "1.4", "statement": "Many common English expressions that people use today were originally created by Shakespeare.", "answer": "T", "explanation": "TRUE — The text says 'everyday expressions such as «break the ice», «heart of gold», and «wild goose chase» all originated in his works'." }
+        {
+          "id": "1.1",
+          "statement": "Shakespeare's education at grammar school focused exclusively on English literature and writing.",
+          "answer": "F",
+          "explanation": "FALSE — The text says he 'would have studied Latin, rhetoric, and classical literature', not English literature and writing."
+        },
+        {
+          "id": "1.2",
+          "statement": "The Globe Theatre offered different experiences depending on how much the audience was willing to pay.",
+          "answer": "T",
+          "explanation": "TRUE — Wealthier audience members 'sat in covered galleries', while ordinary people ('groundlings') 'stood in the yard' and paid just one penny."
+        },
+        {
+          "id": "1.3",
+          "statement": "Shakespeare considered his tragedies to be his finest work.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text says his tragedies 'are considered masterpieces', but this is the modern view. The text does not say what Shakespeare himself thought about his own works."
+        },
+        {
+          "id": "1.4",
+          "statement": "Many common English expressions that people use today were originally created by Shakespeare.",
+          "answer": "T",
+          "explanation": "TRUE — The text says 'everyday expressions such as «break the ice», «heart of gold», and «wild goose chase» all originated in his works'."
+        }
       ],
       "scoringScheme": {
         "4": 2,
@@ -25,7 +45,46 @@
         "modelAnswer": "Shakespeare invented over 1,700 new words (such as 'lonely', 'generous', 'eyeball') and created many everyday expressions (such as 'break the ice', 'heart of gold') that are still used in English today.",
         "points": 1,
         "skipped": true
-      }
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "rare; difficult to find; not available in large amounts",
+          "answer": [
+            "scarce"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "financial or social support given by a wealthy or powerful person to an artist or group",
+          "answer": [
+            "patronage"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "a work of art, music, or literature considered to be the best of its kind",
+          "answer": [
+            "masterpiece",
+            "masterpieces"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "people who paid a low price to stand in the open area in front of a theatre stage",
+          "answer": [
+            "groundlings"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "began or came from a particular place or source",
+          "answer": [
+            "originated"
+          ]
+        }
+      ],
+      "vocabPoints": 5
     }
   ]
 }

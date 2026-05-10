@@ -5,14 +5,34 @@
     {
       "id": "1",
       "type": "true_false_ni",
-      "points": 3,
+      "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Zaznacz, ktore zdania (1.1-1.4) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie odpowiedz pelnym zdaniem na pytanie 1.5.",
       "text": "SPACE EXPLORATION\n\nThe history of space exploration is one of humanity's most remarkable achievements. It began in earnest on 4 October 1957, when the Soviet Union launched Sputnik, the first artificial satellite, into orbit around the Earth. The event shocked the United States and triggered the Space Race, a competition between the two superpowers to demonstrate technological superiority.\n\nThe Soviet Union scored several early victories. In 1961, Yuri Gagarin became the first human to travel into space, completing a single orbit of the Earth in a flight lasting just 108 minutes. The Americans responded by setting an ambitious goal: to land a man on the Moon before the end of the decade. On 20 July 1969, astronauts Neil Armstrong and Buzz Aldrin achieved this, while their colleague Michael Collins orbited above in the command module. Armstrong's famous words as he stepped onto the lunar surface — 'That's one small step for man, one giant leap for mankind' — were heard by an estimated 600 million television viewers worldwide.\n\nAfter the Moon landings, the focus of space exploration shifted. The United States launched the Space Shuttle programme in 1981, creating the first reusable spacecraft. The International Space Station (ISS), a joint project involving the US, Russia, Europe, Japan, and Canada, has been continuously occupied since November 2000, serving as a laboratory for scientific research in microgravity.\n\nIn recent years, private companies have transformed the space industry. SpaceX, founded by Elon Musk, developed rockets that can land themselves and be reused, dramatically reducing the cost of reaching orbit. The company has also been contracted by NASA to develop vehicles for returning astronauts to the Moon as part of the Artemis programme. Meanwhile, other companies are developing space tourism, with the first private citizens already having travelled to the edge of space.\n\nMany scientists believe that the next major milestone will be sending humans to Mars, though the challenges — including radiation exposure, psychological effects of long-duration missions, and the enormous cost — remain formidable.",
       "items": [
-        { "id": "1.1", "statement": "The United States was the first country to achieve a significant milestone in space exploration.", "answer": "F", "explanation": "FALSE — The Soviet Union scored the first milestones: launching Sputnik (the first satellite) in 1957 and sending Yuri Gagarin (the first human) into space in 1961." },
-        { "id": "1.2", "statement": "SpaceX has helped make space travel cheaper by developing technology that was not previously available.", "answer": "T", "explanation": "TRUE — The text says SpaceX 'developed rockets that can land themselves and be reused, dramatically reducing the cost of reaching orbit'." },
-        { "id": "1.3", "statement": "The Artemis programme aims to establish a permanent human settlement on the Moon.", "answer": "NI", "explanation": "NO INFORMATION — The text only says SpaceX has been contracted to 'develop vehicles for returning astronauts to the Moon as part of the Artemis programme'. It does not mention a permanent settlement." },
-        { "id": "1.4", "statement": "Scientists are confident that a crewed mission to Mars will take place within the next decade.", "answer": "NI", "explanation": "NO INFORMATION — The text says scientists believe Mars is 'the next major milestone' but describes the challenges as 'formidable'. It gives no timeline and does not say scientists are confident." }
+        {
+          "id": "1.1",
+          "statement": "The United States was the first country to achieve a significant milestone in space exploration.",
+          "answer": "F",
+          "explanation": "FALSE — The Soviet Union scored the first milestones: launching Sputnik (the first satellite) in 1957 and sending Yuri Gagarin (the first human) into space in 1961."
+        },
+        {
+          "id": "1.2",
+          "statement": "SpaceX has helped make space travel cheaper by developing technology that was not previously available.",
+          "answer": "T",
+          "explanation": "TRUE — The text says SpaceX 'developed rockets that can land themselves and be reused, dramatically reducing the cost of reaching orbit'."
+        },
+        {
+          "id": "1.3",
+          "statement": "The Artemis programme aims to establish a permanent human settlement on the Moon.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text only says SpaceX has been contracted to 'develop vehicles for returning astronauts to the Moon as part of the Artemis programme'. It does not mention a permanent settlement."
+        },
+        {
+          "id": "1.4",
+          "statement": "Scientists are confident that a crewed mission to Mars will take place within the next decade.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text says scientists believe Mars is 'the next major milestone' but describes the challenges as 'formidable'. It gives no timeline and does not say scientists are confident."
+        }
       ],
       "scoringScheme": {
         "4": 2,
@@ -25,7 +45,45 @@
         "modelAnswer": "The main challenges include radiation exposure during the journey, the psychological effects of long-duration missions on astronauts, and the enormous cost of such a mission.",
         "points": 1,
         "skipped": true
-      }
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "the state of being better or more powerful than others",
+          "answer": [
+            "superiority"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "able to be used more than once",
+          "answer": [
+            "reusable"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "an important stage or event marking a significant point in development or progress",
+          "answer": [
+            "milestone"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "inspiring great respect or fear because of being very powerful or difficult to deal with",
+          "answer": [
+            "formidable"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "officially hired to do specific work under a formal agreement",
+          "answer": [
+            "contracted"
+          ]
+        }
+      ],
+      "vocabPoints": 5
     }
   ]
 }

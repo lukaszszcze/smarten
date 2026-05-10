@@ -5,14 +5,34 @@
     {
       "id": "1",
       "type": "true_false_ni",
-      "points": 3,
+      "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Zaznacz, ktore zdania (1.1-1.4) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie odpowiedz pelnym zdaniem na pytanie 1.5.",
       "text": "THE HISTORY OF THE INTERNET\n\nThe internet as we know it today has its roots in a military research project from the 1960s. During the Cold War, the United States government was concerned that a nuclear attack could destroy its communication systems. In response, the Department of Defense funded a project called ARPANET, which aimed to create a network that could continue to function even if parts of it were damaged.\n\nThe first message ever sent over ARPANET was transmitted on 29 October 1969, from a computer at the University of California, Los Angeles (UCLA) to one at Stanford Research Institute. The message was supposed to be the word 'LOGIN', but the system crashed after just two letters, so the first message ever sent over the internet was simply 'LO'. The problem was quickly fixed, and within an hour, the full message was successfully transmitted.\n\nFor the next two decades, the network was used mainly by universities and government agencies for research purposes. It was not until 1991 that the World Wide Web was introduced by Tim Berners-Lee, a British computer scientist working at CERN in Switzerland. Berners-Lee created a system of interlinked documents that could be accessed through a browser, making the internet far more user-friendly. Crucially, he decided not to patent his invention, making it freely available to everyone.\n\nThe 1990s saw explosive growth in internet usage. The number of websites grew from just one in 1991 to over 17 million by the year 2000. Email became a common form of communication, and online shopping began to emerge. Companies like Amazon and eBay were founded during this period and quickly transformed the way people bought and sold goods.\n\nToday, over five billion people around the world use the internet, and it has become an essential part of daily life for education, work, entertainment, and social interaction.",
       "items": [
-        { "id": "1.1", "statement": "ARPANET was designed primarily to make communication between universities faster and more efficient.", "answer": "F", "explanation": "FALSE — ARPANET was a military project funded by the Department of Defense to 'create a network that could continue to function even if parts of it were damaged' during a nuclear attack, not to improve university communication." },
-        { "id": "1.2", "statement": "Tim Berners-Lee could have earned a fortune from his invention but chose to make it available for free.", "answer": "T", "explanation": "TRUE — The text says 'he decided not to patent his invention, making it freely available to everyone', implying he gave up potential financial gain." },
-        { "id": "1.3", "statement": "The majority of websites created during the 1990s were focused on online retail.", "answer": "NI", "explanation": "NO INFORMATION — The text mentions that online shopping emerged and companies like Amazon and eBay were founded, but does not say what the majority of websites were focused on." },
-        { "id": "1.4", "statement": "The first attempt to send a message over ARPANET was only partially successful.", "answer": "T", "explanation": "TRUE — The text says 'the system crashed after just two letters' — the word 'LOGIN' was intended but only 'LO' was transmitted before the crash." }
+        {
+          "id": "1.1",
+          "statement": "ARPANET was designed primarily to make communication between universities faster and more efficient.",
+          "answer": "F",
+          "explanation": "FALSE — ARPANET was a military project funded by the Department of Defense to 'create a network that could continue to function even if parts of it were damaged' during a nuclear attack, not to improve university communication."
+        },
+        {
+          "id": "1.2",
+          "statement": "Tim Berners-Lee could have earned a fortune from his invention but chose to make it available for free.",
+          "answer": "T",
+          "explanation": "TRUE — The text says 'he decided not to patent his invention, making it freely available to everyone', implying he gave up potential financial gain."
+        },
+        {
+          "id": "1.3",
+          "statement": "The majority of websites created during the 1990s were focused on online retail.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text mentions that online shopping emerged and companies like Amazon and eBay were founded, but does not say what the majority of websites were focused on."
+        },
+        {
+          "id": "1.4",
+          "statement": "The first attempt to send a message over ARPANET was only partially successful.",
+          "answer": "T",
+          "explanation": "TRUE — The text says 'the system crashed after just two letters' — the word 'LOGIN' was intended but only 'LO' was transmitted before the crash."
+        }
       ],
       "scoringScheme": {
         "4": 2,
@@ -25,7 +45,45 @@
         "modelAnswer": "He created the World Wide Web — a system of interlinked documents accessible through a browser — which made the internet much more user-friendly for ordinary people.",
         "points": 1,
         "skipped": true
-      }
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "sent from one place to another by electronic signal",
+          "answer": [
+            "transmitted"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "connected to one another so that each leads to or interacts with others",
+          "answer": [
+            "interlinked"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "to gain an official right allowing only you to make or sell your invention",
+          "answer": [
+            "patent"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "to start to appear or become known for the first time",
+          "answer": [
+            "emerge"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "very large and sudden; growing extremely fast",
+          "answer": [
+            "explosive"
+          ]
+        }
+      ],
+      "vocabPoints": 5
     }
   ]
 }

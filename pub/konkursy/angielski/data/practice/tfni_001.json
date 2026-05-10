@@ -5,14 +5,34 @@
     {
       "id": "1",
       "type": "true_false_ni",
-      "points": 3,
+      "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Zaznacz, ktore zdania (1.1-1.4) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie odpowiedz pelnym zdaniem na pytanie 1.5.",
       "text": "THE GREAT WALL OF CHINA\n\nThe Great Wall of China is one of the most famous structures in the world. It stretches across northern China for thousands of kilometres. Many people believe the Wall is one continuous structure, but in fact it is made up of many separate sections that were built at different times throughout history.\n\nThe first parts of the Wall were built over 2,000 years ago during the reign of Emperor Qin Shi Huang, who wanted to protect China from attacks by nomadic tribes from the north. However, much of the Wall that visitors see today was built during the Ming Dynasty, between the 14th and 17th centuries. The Ming emperors used millions of workers, including soldiers, peasants, and prisoners, to construct and repair the Wall.\n\nThe Wall is not just a simple wall. Along its length, there are watchtowers, guard stations, and signal towers. Soldiers used smoke signals during the day and fire signals at night to send messages quickly along the Wall. This communication system allowed warnings about enemy attacks to travel hundreds of kilometres in just a few hours.\n\nThe Wall varies in height and width depending on the section. In some places, it is up to 8 metres tall and 5 metres wide at the top — wide enough for five horses to walk side by side. It was built using different materials depending on what was available locally. In the mountains, workers used stone, while in the plains they often used packed earth and later bricks.\n\nToday, the Great Wall is a UNESCO World Heritage Site and attracts millions of tourists every year. Unfortunately, some sections of the Wall are in poor condition because of natural erosion and damage caused by visitors. The Chinese government has introduced laws to protect the Wall, making it illegal to remove bricks or write graffiti on the structure.",
       "items": [
-        { "id": "1.1", "statement": "Emperor Qin Shi Huang's original construction makes up the majority of what tourists visit today.", "answer": "F", "explanation": "FALSE — The text states that 'much of the Wall that visitors see today was built during the Ming Dynasty', not during Emperor Qin Shi Huang's reign." },
-        { "id": "1.2", "statement": "The communication system along the Wall could only be used effectively during daylight hours.", "answer": "F", "explanation": "FALSE — The text says soldiers used 'smoke signals during the day and fire signals at night', so the system worked both day and night." },
-        { "id": "1.3", "statement": "The Wall's construction methods were adapted to suit the geography of each region.", "answer": "T", "explanation": "TRUE — The text explains that 'it was built using different materials depending on what was available locally' — stone in the mountains, packed earth and bricks in the plains." },
-        { "id": "1.4", "statement": "Tourist numbers have decreased in recent years due to the poor condition of certain sections.", "answer": "NI", "explanation": "NO INFORMATION — The text mentions that the Wall 'attracts millions of tourists every year' and that some sections are in poor condition, but it does not say whether tourist numbers have decreased." }
+        {
+          "id": "1.1",
+          "statement": "Emperor Qin Shi Huang's original construction makes up the majority of what tourists visit today.",
+          "answer": "F",
+          "explanation": "FALSE — The text states that 'much of the Wall that visitors see today was built during the Ming Dynasty', not during Emperor Qin Shi Huang's reign."
+        },
+        {
+          "id": "1.2",
+          "statement": "The communication system along the Wall could only be used effectively during daylight hours.",
+          "answer": "F",
+          "explanation": "FALSE — The text says soldiers used 'smoke signals during the day and fire signals at night', so the system worked both day and night."
+        },
+        {
+          "id": "1.3",
+          "statement": "The Wall's construction methods were adapted to suit the geography of each region.",
+          "answer": "T",
+          "explanation": "TRUE — The text explains that 'it was built using different materials depending on what was available locally' — stone in the mountains, packed earth and bricks in the plains."
+        },
+        {
+          "id": "1.4",
+          "statement": "Tourist numbers have decreased in recent years due to the poor condition of certain sections.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text mentions that the Wall 'attracts millions of tourists every year' and that some sections are in poor condition, but it does not say whether tourist numbers have decreased."
+        }
       ],
       "scoringScheme": {
         "4": 2,
@@ -25,7 +45,45 @@
         "modelAnswer": "The Wall has additional structures such as watchtowers, guard stations, and signal towers along its length. It also served as a communication system, allowing soldiers to send warnings about enemy attacks over long distances.",
         "points": 1,
         "skipped": true
-      }
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "the period during which a ruler is in power",
+          "answer": [
+            "reign"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "living by moving from place to place without a permanent home",
+          "answer": [
+            "nomadic"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "the gradual wearing away of a surface by natural forces such as wind or water",
+          "answer": [
+            "erosion"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "to build or put together something large and complex",
+          "answer": [
+            "construct"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "words or drawings done illegally on walls or surfaces in public places",
+          "answer": [
+            "graffiti"
+          ]
+        }
+      ],
+      "vocabPoints": 5
     }
   ]
 }
