@@ -1,0 +1,31 @@
+{
+  "title": "T/F/NI + Vocabulary: The Fight to Save the Night Sky",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE FIGHT TO SAVE THE NIGHT SKY\n\nFor most of human history, the night sky was one of the most spectacular sights available to anyone who looked upward. The Milky Way was visible from virtually every spot on earth, and civilisations from ancient Egypt to medieval Europe navigated, farmed, and created their calendars using the stars. Today, however, more than a third of the world's population — including almost eighty percent of people living in Europe and North America — can no longer see the Milky Way from where they live. The culprit is light pollution.\n\nLight pollution refers to the excessive or misdirected use of artificial light. Streetlamps, illuminated advertising, sports facilities, and lit office buildings all contribute to a glow that hangs over urban areas and spreads far into the surrounding countryside. Astronomers were among the first to raise the alarm, as observatories near cities found their work increasingly hampered by the brightening of the sky. But in recent years, researchers have found that light pollution affects far more than just astronomy.\n\nThe impact on wildlife has proven particularly damaging. Many species rely on darkness to navigate, hunt, or reproduce. Sea turtles, for instance, are guided by moonlight to reach the ocean after hatching, but artificial coastal lighting can disorient them, causing them to head inland instead. Migratory birds use stars to navigate, and light pollution is thought to be a significant factor in the decline of many species. Even trees have been shown to respond to artificial light — those exposed to it overnight begin to bud earlier in spring, leaving them vulnerable to late frosts.\n\nFor humans, the consequences are more subtle but increasingly well-documented. Exposure to artificial light at night disrupts the body's production of melatonin, a hormone essential to healthy sleep. Long-term sleep disruption has been linked to a range of health problems, including increased risk of certain cancers, diabetes, and cardiovascular disease.\n\nDespite the scale of the problem, solutions exist and have proven effective. In 2002, the Czech Republic became the first country to pass national legislation on light pollution. Many towns and cities around the world have switched to shielded or directed lighting that points downward rather than into the sky. Dark sky reserves — protected areas where artificial light is strictly limited — have been established in several countries. And for individuals, simple actions such as turning off unnecessary lights and using warm-toned bulbs indoors can make a genuine difference.",
+      "source": "adapted from astronomy and environmental science publications",
+      "items": [
+        { "id": "1.1", "statement": "Most people living in North America can no longer see the Milky Way from their homes.", "answer": "T", "explanation": "TRUE — The text states that 'almost eighty percent of people living in Europe and North America — can no longer see the Milky Way from where they live'." },
+        { "id": "1.2", "statement": "Astronomers were among the first to raise concerns about light pollution's effect on animal life.", "answer": "F", "explanation": "FALSE — Astronomers raised the alarm because 'observatories near cities found their work increasingly hampered', meaning the concern was about their own work, not about wildlife." },
+        { "id": "1.3", "statement": "Sea turtles rely on moonlight to find their way to the sea after hatching.", "answer": "T", "explanation": "TRUE — 'Sea turtles are guided by moonlight to reach the ocean after hatching'." },
+        { "id": "1.4", "statement": "Other countries have introduced national legislation on light pollution similar to that of the Czech Republic.", "answer": "NI", "explanation": "NO INFORMATION — The text says the Czech Republic was 'the first country' and mentions towns and cities switching lighting, but does not state whether other countries have passed national legislation." },
+        { "id": "1.5", "statement": "Trees that are exposed to artificial light overnight are better protected against late frosts.", "answer": "F", "explanation": "FALSE — Artificial light causes trees to 'bud earlier in spring, leaving them vulnerable to late frosts', so they are more at risk, not better protected." },
+        { "id": "1.6", "statement": "Individual actions at home can contribute to reducing light pollution.", "answer": "T", "explanation": "TRUE — The text states that 'simple actions such as turning off unnecessary lights and using warm-toned bulbs indoors can make a genuine difference'." }
+      ],
+      "scoringScheme": { "6": 3, "5-4": 2, "3-2": 1, "0-1": 0 },
+      "vocabItems": [
+        { "id": "1.7", "definition": "a person or thing that is responsible for causing a problem", "answer": ["culprit", "the culprit"] },
+        { "id": "1.8", "definition": "to make it difficult for something to progress or succeed", "answer": ["hampered", "hamper"] },
+        { "id": "1.9", "definition": "to cause someone to lose their sense of direction or become confused about where they are", "answer": ["disorient"] },
+        { "id": "1.10", "definition": "not immediately obvious but real and significant", "answer": ["subtle"] },
+        { "id": "1.11", "definition": "exposed to the risk of being harmed or damaged", "answer": ["vulnerable"] }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}
