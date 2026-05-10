@@ -54,8 +54,7 @@ npm run build      # Production build -> dist/
 Deploy via wrangler (no auto-deploy from git):
 
 ```bash
-cd site && npm run build && cd ..
-wrangler pages deploy site/dist --project-name smarten
+cd site && npm run build && npx wrangler pages deploy dist --project-name smarten
 ```
 
 Cloudflare secrets:

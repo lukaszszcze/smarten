@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postępy Tadzio — SmartEn</title>
+<script>
+  if (!localStorage.getItem('smarten_user')) {
+    location.replace('/');
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0a12;
+    color: #e8e8f0;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    padding: 32px 24px;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    color: #7a7a9a;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #13131f;
+    border: 1px solid #1e1e30;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .card.wide {
+    grid-column: 1 / -1;
+  }
+
+  .card h2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a7a9a;
+    margin-bottom: 20px;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stat {
+    background: #13131f;
+    border: 1px solid #1e1e30;
+    border-radius: 12px;
+    padding: 20px 28px;
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: #7a7a9a;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .accent-gold { color: #f5c842; }
+  .accent-green { color: #4caf7d; }
+  .accent-blue { color: #5b9cf6; }
+  .accent-purple { color: #a78bfa; }
+  .accent-red { color: #f87171; }
+
+  .chart-wrap {
+    position: relative;
+    height: 260px;
+  }
+
+  .chart-wrap.tall {
+    height: 340px;
+  }
+
+  .chart-wrap.short {
+    height: 200px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #b0b0c8;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .last-active {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #5a5a7a;
+    text-align: right;
+  }
+
+  canvas { display: block; }
+</style>
+</head>
+<body>
+
+<div style="max-width:1200px;margin:0 auto 32px;">
+  <h1>Postępy Tadzio</h1>
+  <p class="subtitle">SmartEn · Aktualizacja: 10 maja 2026 · Dane: 24 marca – 11 kwietnia 2026</p>
+</div>
+
+<div class="stats-row">
+  <div class="stat">
+    <div class="stat-value accent-gold">277</div>
+    <div class="stat-label">Gwiazdki (max 525)</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value accent-green">68</div>
+    <div class="stat-label">Ćwiczenia ukończone</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value accent-blue">96</div>
+    <div class="stat-label">Wszystkie próby</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value accent-purple">30</div>
+    <div class="stat-label">Ćwiczenia 5★ (100%)</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value accent-red">18</div>
+    <div class="stat-label">Dni aktywności</div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- Radar: wyniki wg typu -->
+  <div class="card">
+    <h2>Wyniki wg typu ćwiczenia</h2>
+    <div class="chart-wrap">
+      <canvas id="radarChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Doughnut: gwiazdki -->
+  <div class="card">
+    <h2>Postęp gwiazdek</h2>
+    <div class="chart-wrap">
+      <canvas id="starsDonut"></canvas>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#f5c842"></div>Zdobyte: 277</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#1e1e30"></div>Pozostałe: 248</div>
+    </div>
+  </div>
+
+  <!-- Rozkład gwiazdek -->
+  <div class="card">
+    <h2>Rozkład gwiazdek (liczba ćwiczeń)</h2>
+    <div class="chart-wrap short">
+      <canvas id="starDistBar"></canvas>
+    </div>
+  </div>
+
+  <!-- Aktywność dzienna -->
+  <div class="card">
+    <h2>Aktywność dzienna (liczba prób)</h2>
+    <div class="chart-wrap short">
+      <canvas id="activityBar"></canvas>
+    </div>
+    <p class="last-active">Ostatnia aktywność: 11 kwietnia 2026</p>
+  </div>
+
+  <!-- Horizontal bar: śr. wynik wg typu -->
+  <div class="card wide">
+    <h2>Szczegółowe wyniki wg typu — średni najlepszy wynik (%)</h2>
+    <div class="chart-wrap" style="height:300px;">
+      <canvas id="typeBar"></canvas>
+    </div>
+  </div>
+
+  <!-- Scatter: wszystkie próby w czasie -->
+  <div class="card wide">
+    <h2>Wszystkie próby w czasie (wynik każdej próby)</h2>
+    <div class="chart-wrap tall">
+      <canvas id="scatterChart"></canvas>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#5b9cf6"></div>Wiedza / MC / Matching</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4caf7d"></div>Dialogi / TF/NI</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f5c842"></div>Pisownia / Tworzenie słów</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f87171"></div>Transformacje / Gramatyka / Cloze</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+Chart.defaults.color = '#7a7a9a';
+Chart.defaults.borderColor = '#1e1e30';
+Chart.defaults.font.family = 'system-ui, sans-serif';
+
+// ── 1. Radar ──────────────────────────────────────────────────────────────────
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: ['Dialogi', 'Wielokrotny\nwybór', 'Dopasowanie', 'Prawda/Fałsz', 'Wiedza', 'Tworzenie\nsłów', 'Pisownia', 'Transformacje', 'Gramatyka', 'Cloze'],
+    datasets: [{
+      label: 'Śr. najlepszy wynik (%)',
+      data: [100, 98, 91.8, 90.8, 85, 88, 76.5, 73.4, 73.2, 56],
+      backgroundColor: 'rgba(91, 156, 246, 0.15)',
+      borderColor: '#5b9cf6',
+      borderWidth: 2,
+      pointBackgroundColor: '#5b9cf6',
+      pointRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 100,
+        ticks: { stepSize: 25, color: '#5a5a7a', backdropColor: 'transparent', font: { size: 10 } },
+        grid: { color: '#1e1e30' },
+        angleLines: { color: '#1e1e30' },
+        pointLabels: { color: '#b0b0c8', font: { size: 11 } }
+      }
+    },
+    plugins: { legend: { display: false } }
+  }
+});
+
+// ── 2. Doughnut: gwiazdki ─────────────────────────────────────────────────────
+new Chart(document.getElementById('starsDonut'), {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [277, 248],
+      backgroundColor: ['#f5c842', '#1e1e30'],
+      borderWidth: 0,
+      hoverOffset: 6,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '72%',
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.label + ' ' + ctx.parsed } },
+    }
+  },
+  plugins: [{
+    id: 'centerText',
+    beforeDraw(chart) {
+      const { ctx, chartArea: { width, height, left, top } } = chart;
+      ctx.save();
+      ctx.font = 'bold 32px system-ui';
+      ctx.fillStyle = '#f5c842';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('277', left + width / 2, top + height / 2 - 12);
+      ctx.font = '13px system-ui';
+      ctx.fillStyle = '#7a7a9a';
+      ctx.fillText('/ 525 gwiazdek', left + width / 2, top + height / 2 + 18);
+      ctx.restore();
+    }
+  }]
+});
+
+// ── 3. Star distribution bar ───────────────────────────────────────────────────
+new Chart(document.getElementById('starDistBar'), {
+  type: 'bar',
+  data: {
+    labels: ['1★', '2★', '3★', '4★', '5★'],
+    datasets: [{
+      data: [1, 4, 14, 19, 30],
+      backgroundColor: ['#ef4444', '#f97316', '#eab308', '#84cc16', '#4caf7d'],
+      borderRadius: 6,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.parsed.y + ' ćwiczeń' } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#b0b0c8' } },
+      y: { grid: { color: '#1a1a28' }, ticks: { stepSize: 5, color: '#5a5a7a' } }
+    }
+  }
+});
+
+// ── 4. Activity bar ────────────────────────────────────────────────────────────
+new Chart(document.getElementById('activityBar'), {
+  type: 'bar',
+  data: {
+    labels: ['24 mar', '25 mar', '26 mar', '28 mar', '29 mar', '4 kwi', '5 kwi', '11 kwi'],
+    datasets: [{
+      data: [4, 10, 5, 23, 4, 17, 5, 28],
+      backgroundColor: '#5b9cf6',
+      borderRadius: 6,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.parsed.y + ' prób' } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#b0b0c8', font: { size: 11 } } },
+      y: { grid: { color: '#1a1a28' }, ticks: { stepSize: 5, color: '#5a5a7a' } }
+    }
+  }
+});
+
+// ── 5. Horizontal bar: type scores ────────────────────────────────────────────
+const typeLabels = ['Dialogi', 'Wielokrotny wybór', 'Dopasowanie', 'Prawda/Fałsz/NI', 'Tworzenie słów', 'Wiedza o kulturze', 'Pisownia', 'Transformacje zdań', 'Gramatyka', 'Cloze (luki)'];
+const typeAvgs   = [100, 98, 91.8, 90.8, 88, 85, 76.5, 73.4, 73.2, 56];
+const typeCounts = [10, 10, 8, 4, 1, 10, 10, 5, 5, 5];
+
+const barColors = typeAvgs.map(v =>
+  v >= 90 ? '#4caf7d' : v >= 75 ? '#5b9cf6' : v >= 60 ? '#f5c842' : '#f87171'
+);
+
+new Chart(document.getElementById('typeBar'), {
+  type: 'bar',
+  data: {
+    labels: typeLabels,
+    datasets: [{
+      data: typeAvgs,
+      backgroundColor: barColors,
+      borderRadius: 6,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ` ${ctx.parsed.x}%  (${typeCounts[ctx.dataIndex]} ćwiczeń)`
+        }
+      }
+    },
+    scales: {
+      x: {
+        min: 0, max: 100,
+        grid: { color: '#1a1a28' },
+        ticks: { color: '#7a7a9a', callback: v => v + '%' }
+      },
+      y: { grid: { display: false }, ticks: { color: '#e8e8f0', font: { size: 12 } } }
+    }
+  },
+  plugins: [{
+    id: 'valueLabels',
+    afterDatasetsDraw(chart) {
+      const { ctx } = chart;
+      chart.data.datasets[0].data.forEach((val, i) => {
+        const meta = chart.getDatasetMeta(0);
+        const bar = meta.data[i];
+        ctx.save();
+        ctx.fillStyle = '#e8e8f0';
+        ctx.font = 'bold 12px system-ui';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(val + '%', bar.x + 6, bar.y);
+        ctx.restore();
+      });
+    }
+  }]
+});
+
+// ── 6. Scatter: all attempts over time ────────────────────────────────────────
+const timeline = [
+  {d:'2026-03-24',p:0,t:'knowledge'},{d:'2026-03-24',p:0,t:'knowledge'},{d:'2026-03-24',p:10,t:'knowledge'},{d:'2026-03-24',p:80,t:'knowledge'},
+  {d:'2026-03-25',p:80,t:'knowledge'},{d:'2026-03-25',p:80,t:'knowledge'},{d:'2026-03-25',p:100,t:'knowledge'},{d:'2026-03-25',p:80,t:'knowledge'},
+  {d:'2026-03-25',p:80,t:'knowledge'},{d:'2026-03-25',p:80,t:'knowledge'},{d:'2026-03-25',p:80,t:'knowledge'},
+  {d:'2026-03-25',p:0,t:'transform'},{d:'2026-03-25',p:0,t:'transform'},{d:'2026-03-25',p:0,t:'transform'},
+  {d:'2026-03-26',p:100,t:'knowledge'},{d:'2026-03-26',p:90,t:'knowledge'},
+  {d:'2026-03-26',p:88,t:'spelling'},{d:'2026-03-26',p:50,t:'spelling'},{d:'2026-03-26',p:75,t:'spelling'},
+  {d:'2026-03-28',p:100,t:'spelling'},{d:'2026-03-28',p:75,t:'spelling'},{d:'2026-03-28',p:88,t:'spelling'},
+  {d:'2026-03-28',p:88,t:'spelling'},{d:'2026-03-28',p:75,t:'spelling'},{d:'2026-03-28',p:75,t:'spelling'},
+  {d:'2026-03-28',p:63,t:'spelling'},{d:'2026-03-28',p:38,t:'spelling'},
+  {d:'2026-03-28',p:88,t:'formation'},
+  {d:'2026-03-28',p:90,t:'mc'},{d:'2026-03-28',p:100,t:'mc'},{d:'2026-03-28',p:100,t:'mc'},
+  {d:'2026-03-28',p:100,t:'mc'},{d:'2026-03-28',p:80,t:'mc'},{d:'2026-03-28',p:100,t:'mc'},
+  {d:'2026-03-28',p:90,t:'mc'},{d:'2026-03-28',p:100,t:'mc'},{d:'2026-03-28',p:100,t:'mc'},
+  {d:'2026-03-28',p:100,t:'mc'},{d:'2026-03-28',p:90,t:'mc'},{d:'2026-03-28',p:90,t:'mc'},
+  {d:'2026-03-28',p:100,t:'mc'},{d:'2026-03-28',p:75,t:'tfni'},
+  {d:'2026-03-29',p:100,t:'tfni'},{d:'2026-03-29',p:0,t:'spelling'},{d:'2026-03-29',p:88,t:'tfni'},{d:'2026-03-29',p:100,t:'tfni'},
+  {d:'2026-04-04',p:67,t:'transform'},{d:'2026-04-04',p:50,t:'transform'},{d:'2026-04-04',p:83,t:'transform'},
+  {d:'2026-04-04',p:67,t:'transform'},{d:'2026-04-04',p:33,t:'transform'},{d:'2026-04-04',p:67,t:'transform'},
+  {d:'2026-04-04',p:50,t:'transform'},
+  {d:'2026-04-04',p:58,t:'grammar'},{d:'2026-04-04',p:67,t:'grammar'},{d:'2026-04-04',p:83,t:'grammar'},
+  {d:'2026-04-04',p:75,t:'grammar'},{d:'2026-04-04',p:83,t:'grammar'},
+  {d:'2026-04-04',p:83,t:'mc'},{d:'2026-04-04',p:83,t:'mc'},{d:'2026-04-04',p:83,t:'mc'},
+  {d:'2026-04-04',p:50,t:'mc'},{d:'2026-04-04',p:83,t:'mc'},
+  {d:'2026-04-05',p:100,t:'dialogue'},{d:'2026-04-05',p:83,t:'dialogue'},{d:'2026-04-05',p:100,t:'dialogue'},
+  {d:'2026-04-05',p:60,t:'cloze'},{d:'2026-04-05',p:60,t:'cloze'},
+  {d:'2026-04-11',p:80,t:'cloze'},{d:'2026-04-11',p:40,t:'cloze'},{d:'2026-04-11',p:40,t:'cloze'},
+  {d:'2026-04-11',p:100,t:'matching'},{d:'2026-04-11',p:100,t:'matching'},
+  {d:'2026-04-11',p:100,t:'dialogue'},{d:'2026-04-11',p:83,t:'dialogue'},{d:'2026-04-11',p:83,t:'dialogue'},
+  {d:'2026-04-11',p:83,t:'dialogue'},{d:'2026-04-11',p:100,t:'dialogue'},{d:'2026-04-11',p:100,t:'dialogue'},
+  {d:'2026-04-11',p:100,t:'dialogue'},{d:'2026-04-11',p:100,t:'dialogue'},{d:'2026-04-11',p:100,t:'dialogue'},
+  {d:'2026-04-11',p:100,t:'dialogue'},{d:'2026-04-11',p:100,t:'dialogue'},
+  {d:'2026-04-11',p:100,t:'transform'},{d:'2026-04-11',p:83,t:'transform'},{d:'2026-04-11',p:50,t:'transform'},
+  {d:'2026-04-11',p:100,t:'matching'},{d:'2026-04-11',p:100,t:'matching'},{d:'2026-04-11',p:100,t:'matching'},
+  {d:'2026-04-11',p:100,t:'matching'},{d:'2026-04-11',p:0,t:'matching'},{d:'2026-04-11',p:67,t:'matching'},
+  {d:'2026-04-11',p:67,t:'matching'},{d:'2026-04-11',p:0,t:'matching'},{d:'2026-04-11',p:67,t:'matching'},
+];
+
+const typeColorMap = {
+  knowledge: '#5b9cf6', mc: '#5b9cf6', matching: '#5b9cf6',
+  dialogue: '#4caf7d', tfni: '#4caf7d',
+  spelling: '#f5c842', formation: '#f5c842',
+  transform: '#f87171', grammar: '#f87171', cloze: '#f87171',
+};
+
+const dateToX = d => {
+  const [y, m, day] = d.split('-').map(Number);
+  return new Date(y, m-1, day).getTime();
+};
+
+// Jitter to avoid full overlap
+const jitter = () => (Math.random() - 0.5) * 3;
+
+const scatterData = timeline.map(p => ({
+  x: dateToX(p.d),
+  y: p.p + jitter(),
+  type: p.t,
+}));
+
+// Group by color
+const colorGroups = {};
+scatterData.forEach(pt => {
+  const col = typeColorMap[pt.type] || '#aaa';
+  if (!colorGroups[col]) colorGroups[col] = [];
+  colorGroups[col].push({ x: pt.x, y: pt.y });
+});
+
+const datasets = Object.entries(colorGroups).map(([color, data]) => ({
+  data,
+  backgroundColor: color + 'cc',
+  pointRadius: 5,
+  pointHoverRadius: 7,
+}));
+
+new Chart(document.getElementById('scatterChart'), {
+  type: 'scatter',
+  data: { datasets },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `${ctx.parsed.y.toFixed(0)}%`
+        }
+      }
+    },
+    scales: {
+      x: {
+        type: 'linear',
+        min: new Date(2026, 2, 22).getTime(),
+        max: new Date(2026, 3, 14).getTime(),
+        grid: { color: '#1a1a28' },
+        ticks: {
+          color: '#7a7a9a',
+          callback: v => {
+            const d = new Date(v);
+            return `${d.getDate()} ${['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'][d.getMonth()]}`;
+          },
+          maxTicksLimit: 8,
+        }
+      },
+      y: {
+        min: -5, max: 105,
+        grid: { color: '#1a1a28' },
+        ticks: {
+          color: '#7a7a9a',
+          callback: v => v < 0 || v > 100 ? '' : v + '%',
+          stepSize: 25,
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
