@@ -1,0 +1,24 @@
+{
+  "title": "Word Formation: The National Theater, Washington D.C.",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": ["AGREE", "ASSASSIN", "BEGIN", "ICON", "OPERATE", "PRODUCE", "RENOVATE", "STAGE", "SURE", "VARY"],
+      "text": "The National Theater is a historic performing arts venue located in the heart of downtown Washington, D.C. It has been presenting shows since it was founded in 1835, which makes it one of the oldest, continuously 1.1. _________ theaters in the United States.\n\nIn spite of its name, the National Theater is run by a private, non-profit organization. In the 1.2. _________, however, it was supported by some of Washington DC's wealthiest patrons, who wanted their city to have a world-class theatre.\n\nThe theater building has undergone numerous 1.3. _________ over the years. Its current structure was built in 1922 and still retains much of its original character and charm.\n\nThe theatrical institution has hosted a wide 1.4. _________ of performances, concerts, dance recitals, and more. Attending a show here is a truly unique experience. Check the theater's schedule and purchase tickets much earlier to 1.5. _________ that you get the best seats available.\n\nThe place is one of the premier venues in the country for Broadway shows. Many popular 1.6. _________ make their way to the National Theater before heading to other cities across the United States.\n\nBefore or after the show, explore the neighborhood by taking a stroll around the area to see some of the city's most 1.7. _________ landmarks, such as the White House and the Washington Monument. Another theater worth seeing in the nearby area is Ford's Theater, which is the site where President Abraham Lincoln was 1.8. _________ in 1865. It now serves as a museum and performance venue.",
+      "items": [
+        { "id": "1.1", "baseWord": "OPERATE", "answer": "operating" },
+        { "id": "1.2", "baseWord": "BEGIN", "answer": "beginning" },
+        { "id": "1.3", "baseWord": "RENOVATE", "answer": "renovations" },
+        { "id": "1.4", "baseWord": "VARY", "answer": "variety" },
+        { "id": "1.5", "baseWord": "SURE", "answer": "ensure" },
+        { "id": "1.6", "baseWord": "PRODUCE", "answer": "productions" },
+        { "id": "1.7", "baseWord": "ICON", "answer": "iconic" },
+        { "id": "1.8", "baseWord": "ASSASSIN", "answer": "assassinated" }
+      ]
+    }
+  ]
+}

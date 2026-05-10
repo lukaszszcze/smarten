@@ -1,0 +1,24 @@
+{
+  "title": "Word Formation: Technology and Work",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": ["AUTOMATE", "COMPETE", "CREATE", "DISRUPT", "EMPLOY", "EXHAUST", "FLEXIBLE", "INNOVATE", "PRODUCE", "SKILL"],
+      "text": "The rapid 1.1. _________ of industrial processes has transformed the world of work over the past century. While machines have long performed repetitive tasks, the latest wave of 1.2. _________ brought by artificial intelligence is far more profound. Economists warn that the pace of change could lead to significant 1.3. _________ in sectors where human labour is being replaced by algorithms and robots.\n\nHowever, others argue that new technologies always generate new opportunities, and that 1.4. _________ will remain a uniquely human strength. Jobs that require 1.5. _________ workers — such as engineers, data analysts, and healthcare professionals — are growing rapidly, while routine jobs face the greatest risk of replacement.\n\nThe modern workplace also demands 1.6. _________, with many employees now working remotely or on non-traditional schedules. Companies that embrace 1.7. _________ tend to outperform their rivals, putting pressure on workers to constantly update their abilities. To remain 1.8. _________ in the job market, individuals must be willing to retrain and adapt throughout their careers.",
+      "items": [
+        { "id": "1.1", "baseWord": "AUTOMATE", "answer": "automation" },
+        { "id": "1.2", "baseWord": "DISRUPT", "answer": "disruption" },
+        { "id": "1.3", "baseWord": "EMPLOY", "answer": "unemployment" },
+        { "id": "1.4", "baseWord": "CREATE", "answer": "creativity" },
+        { "id": "1.5", "baseWord": "SKILL", "answer": "skilled" },
+        { "id": "1.6", "baseWord": "FLEXIBLE", "answer": "flexibility" },
+        { "id": "1.7", "baseWord": "INNOVATE", "answer": "innovation" },
+        { "id": "1.8", "baseWord": "COMPETE", "answer": "competitive" }
+      ]
+    }
+  ]
+}

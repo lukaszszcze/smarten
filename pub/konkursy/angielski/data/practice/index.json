@@ -211,6 +211,41 @@
       "points": 8
     },
     {
+      "id": "formation_011",
+      "title": "The National Theater, Washington D.C.",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_012",
+      "title": "The Modern City",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_013",
+      "title": "Healthy Eating",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_014",
+      "title": "Environmental Issues",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_015",
+      "title": "Technology and Work",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
       "id": "cloze_001",
       "title": "The Story of Chocolate",
       "taskType": "open_cloze",
@@ -276,13 +311,6 @@
     {
       "id": "cloze_010",
       "title": "The History of Football",
-      "taskType": "open_cloze",
-      "taskCount": 1,
-      "points": 5
-    },
-    {
-      "id": "cloze_011",
-      "title": "The National Theater, Washington D.C.",
       "taskType": "open_cloze",
       "taskCount": 1,
       "points": 5

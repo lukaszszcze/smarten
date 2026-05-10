@@ -1,0 +1,24 @@
+{
+  "title": "Word Formation: The Modern City",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": ["AFFORD", "CONNECT", "CROWD", "DIVERSE", "GOVERN", "POLLUTE", "POPULATE", "SUSTAIN", "TRANSPORT", "WIDE"],
+      "text": "Modern cities face a complex set of challenges that require careful planning and 1.1. _________ by local authorities. One of the most pressing issues is 1.2. _________, as more and more people move to urban areas in search of work and better living conditions. This rapid growth puts enormous pressure on housing, with prices rising so fast that many properties become simply 1.3. _________ for ordinary families.\n\nAir 1.4. _________ is another serious concern, particularly in cities where private car ownership is high. Improving 1.5. _________ between districts — through metro systems, trams, and cycle lanes — is widely seen as an essential step towards reducing harmful emissions.\n\nDespite these difficulties, cities are also places of great opportunity. Their 1.6. _________ brings together people from many different backgrounds, creating vibrant cultural scenes. The challenge for urban planners is to develop cities in a 1.7. _________ way — one that meets the needs of today without damaging the prospects of future generations.\n\nSome of the world's most densely 1.8. _________ cities, such as Tokyo and Mumbai, have developed innovative solutions to manage the enormous demands placed on infrastructure and services.",
+      "items": [
+        { "id": "1.1", "baseWord": "GOVERN", "answer": "governance" },
+        { "id": "1.2", "baseWord": "CROWD", "answer": "overcrowding" },
+        { "id": "1.3", "baseWord": "AFFORD", "answer": "unaffordable" },
+        { "id": "1.4", "baseWord": "POLLUTE", "answer": "pollution" },
+        { "id": "1.5", "baseWord": "CONNECT", "answer": "connectivity" },
+        { "id": "1.6", "baseWord": "DIVERSE", "answer": "diversity" },
+        { "id": "1.7", "baseWord": "SUSTAIN", "answer": "sustainable" },
+        { "id": "1.8", "baseWord": "POPULATE", "answer": "populated" }
+      ]
+    }
+  ]
+}
