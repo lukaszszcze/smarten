@@ -1,0 +1,63 @@
+{
+  "title": "Open Cloze: Marie Curie",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Marie Curie was a pioneering scientist whose contributions to physics and chemistry changed the course of modern science. Born in Warsaw in 1867, she faced enormous obstacles as a woman 1.1. _________ a university education in 19th-century Poland. Women were not permitted to attend university in Russian-controlled Warsaw, so Marie moved to Paris, 1.2. _________ she enrolled at the Sorbonne and excelled in her studies.\n\nShe became the first woman to win a Nobel Prize and remains the only 1.3. _________ in history to have won Nobel Prizes in two different sciences — physics in 1903 and chemistry in 1911. Together with her husband Pierre, she discovered two new elements: polonium, 1.4. _________ she named after her home country, and radium.\n\nCurie's research 1.5. _________ the foundation for the development of X-rays, which transformed medical diagnosis. Despite her extraordinary achievements, she was denied 1.6. _________ of the French Academy of Sciences solely on the basis of her gender.\n\nHer dedication to science knew no 1.7. _________. Even during the First World War, she developed mobile X-ray units to help 1.8. _________ wounded soldiers. Marie Curie died in 1934 as a 1.9. _________ of prolonged exposure to radiation — a risk that was little understood at the time. Her legacy lives 1.10. _________ not only in scientific progress but also as an inspiration to women in science worldwide.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": ["seeking", "pursuing"]
+        },
+        {
+          "id": "1.2",
+          "answer": "where"
+        },
+        {
+          "id": "1.3",
+          "answer": "person"
+        },
+        {
+          "id": "1.4",
+          "answer": "which"
+        },
+        {
+          "id": "1.5",
+          "answer": ["laid", "formed"]
+        },
+        {
+          "id": "1.6",
+          "answer": "membership"
+        },
+        {
+          "id": "1.7",
+          "answer": ["bounds", "limits"]
+        },
+        {
+          "id": "1.8",
+          "answer": "treat"
+        },
+        {
+          "id": "1.9",
+          "answer": "result"
+        },
+        {
+          "id": "1.10",
+          "answer": "on"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Open Cloze: The History of the Internet",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Few inventions have changed the world as profoundly 1.1. _________ the Internet. What began as a small military communication network in the United States in the 1960s has grown into a global system 1.2. _________ connects billions of people and devices. The original network, known as ARPANET, was designed to allow computers to communicate with 1.3. _________ other even if part of the network was destroyed.\n\nThe Internet as we know it today took 1.4. _________ in 1991, when British scientist Tim Berners-Lee invented the World Wide Web — a system of interlinked documents accessible through a browser. This made the Internet far more 1.5. _________ to ordinary users, and its growth was explosive. By the early 2000s, the Internet had become a part of daily 1.6. _________ for hundreds of millions of people around the world.\n\nSocial 1.7. _________, streaming services, and online shopping have since transformed the way people communicate, entertain themselves, and buy goods. Today, the Internet handles enormous 1.8. _________ of data every second, from personal messages to financial transactions and live video streams.\n\nHowever, this progress has also given 1.9. _________ to serious concerns about privacy, misinformation, and digital addiction. Ensuring that the Internet remains a safe and open 1.10. _________ for all users is one of the great challenges of the 21st century.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "as"
+        },
+        {
+          "id": "1.2",
+          "answer": ["that", "which"]
+        },
+        {
+          "id": "1.3",
+          "answer": "each"
+        },
+        {
+          "id": "1.4",
+          "answer": "shape"
+        },
+        {
+          "id": "1.5",
+          "answer": ["accessible", "available"]
+        },
+        {
+          "id": "1.6",
+          "answer": "life"
+        },
+        {
+          "id": "1.7",
+          "answer": "media"
+        },
+        {
+          "id": "1.8",
+          "answer": ["amounts", "quantities"]
+        },
+        {
+          "id": "1.9",
+          "answer": "rise"
+        },
+        {
+          "id": "1.10",
+          "answer": ["space", "place", "resource", "platform"]
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

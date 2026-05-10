@@ -1,0 +1,63 @@
+{
+  "title": "Open Cloze: The Amazon Rainforest",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The Amazon Rainforest is the world's largest tropical rainforest, stretching across much of South America. It spans nine countries, 1.1. _________ which Brazil is by far the largest, containing approximately 60% of the forest. Often referred to as the 'lungs of the Earth', the Amazon plays a 1.2. _________ role in regulating the planet's climate by absorbing vast quantities of carbon dioxide.\n\nThe forest is home to an astonishing 1.3. _________ of wildlife. Scientists estimate that one in ten known species on Earth lives here, including thousands of plants, birds, mammals, and insects that have yet to be discovered. The Amazon River is equally remarkable, stretching over 6,400 kilometres and flowing into the Atlantic Ocean with such force that it pushes fresh water far 1.4. _________ to sea.\n\nIn recent years, the Amazon has faced severe threats 1.5. _________ deforestation, driven primarily by agriculture, logging, and mining. Scientists warn that if deforestation continues at its current 1.6. _________, parts of the rainforest could transform into dry savannah, with devastating 1.7. _________ for the global climate. The indigenous communities who have lived in the Amazon for thousands of years are 1.8. _________ those most affected by these changes.\n\nHowever, the story is not 1.9. _________ hopeless. International conservation efforts are under way, and new satellite technology is helping governments monitor illegal deforestation more 1.10. _________ than ever before.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "of"
+        },
+        {
+          "id": "1.2",
+          "answer": ["crucial", "key", "vital", "critical"]
+        },
+        {
+          "id": "1.3",
+          "answer": ["diversity", "variety", "range"]
+        },
+        {
+          "id": "1.4",
+          "answer": "out"
+        },
+        {
+          "id": "1.5",
+          "answer": "from"
+        },
+        {
+          "id": "1.6",
+          "answer": ["rate", "pace"]
+        },
+        {
+          "id": "1.7",
+          "answer": ["consequences", "effects", "implications"]
+        },
+        {
+          "id": "1.8",
+          "answer": "among"
+        },
+        {
+          "id": "1.9",
+          "answer": ["entirely", "completely", "wholly"]
+        },
+        {
+          "id": "1.10",
+          "answer": ["effectively", "efficiently", "accurately"]
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

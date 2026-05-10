@@ -1,0 +1,63 @@
+{
+  "title": "Open Cloze: The National Theater, Washington D.C.",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The National Theater is a historic performing arts venue located in the heart of downtown Washington, D.C. It has been presenting shows since it was founded in 1835, which makes it one of the oldest, continuously 1.1. _________ theaters in the United States.\n\nIn spite of its name, the National Theater is run by a private, non-profit organization. In the 1.2. _________, however, it was supported by some of Washington DC's wealthiest patrons, who wanted their city to have a world-class theatre.\n\nThe theater building has undergone numerous 1.3. _________ over the years. Its current structure was built in 1922 and still 1.4. _________ much of its original character and charm.\n\nThe theatrical institution has hosted a wide 1.5. _________ of performances, concerts, dance recitals, and more. Check the theater's schedule and purchase tickets well in 1.6. _________ to ensure that you get the best seats available.\n\nThe place is one of the premier venues in the country for Broadway shows. Many popular productions 1.7. _________ their way to the National Theater before heading to other cities 1.8. _________ the United States.\n\nBefore or after the show, explore the neighborhood to see some of the city's most 1.9. _________ landmarks, such as the White House and the Washington Monument. Another theater worth seeing in the area is Ford's Theater, where President Abraham Lincoln was 1.10. _________ in 1865.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": ["operating", "running"]
+        },
+        {
+          "id": "1.2",
+          "answer": ["past", "beginning"]
+        },
+        {
+          "id": "1.3",
+          "answer": ["renovations", "changes", "alterations"]
+        },
+        {
+          "id": "1.4",
+          "answer": ["retains", "preserves", "keeps"]
+        },
+        {
+          "id": "1.5",
+          "answer": ["variety", "range"]
+        },
+        {
+          "id": "1.6",
+          "answer": "advance"
+        },
+        {
+          "id": "1.7",
+          "answer": "make"
+        },
+        {
+          "id": "1.8",
+          "answer": "across"
+        },
+        {
+          "id": "1.9",
+          "answer": ["famous", "iconic", "historic"]
+        },
+        {
+          "id": "1.10",
+          "answer": ["assassinated", "shot"]
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}
