@@ -23,9 +23,9 @@
         },
         {
           "id": "1.3",
-          "statement": "ARPANET was available to the general public from the very beginning.",
-          "answer": "F",
-          "explanation": "FALSE — The text says 'at first only four universities were connected to it' and it was used 'mainly by scientists and researchers' for many years."
+          "statement": "At the start, only four universities were connected to ARPANET.",
+          "answer": "T",
+          "explanation": "TRUE — The text states that 'at first only four universities were connected to it'."
         },
         {
           "id": "1.4",

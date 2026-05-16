@@ -10,76 +10,76 @@
       "options": [
         {
           "letter": "A",
-          "text": "This city is famous for its ancient Colosseum, where gladiators once fought."
-        },
-        {
-          "letter": "B",
-          "text": "A giant green statue holding a torch welcomes visitors arriving by sea to this city."
-        },
-        {
-          "letter": "C",
           "text": "The world's most visited art museum, home to the Mona Lisa, is located in this city."
         },
         {
-          "letter": "D",
-          "text": "Cherry blossom trees around a tidal basin make this city especially beautiful in spring."
-        },
-        {
-          "letter": "E",
-          "text": "People in this city eat about 30 million croissants every day and its bakeries are world-famous."
-        },
-        {
-          "letter": "F",
-          "text": "A famous iron tower, built for a world fair in 1889, stands 330 metres tall in this city."
-        },
-        {
-          "letter": "G",
-          "text": "Kangaroos and koalas can be seen in wildlife parks near this harbour city."
-        },
-        {
-          "letter": "H",
+          "letter": "B",
           "text": "A large clock tower next to the Houses of Parliament is one of this city's most recognisable symbols."
         },
         {
-          "letter": "I",
-          "text": "This city's famous park, right in the centre, covers over 340 hectares and has its own zoo."
+          "letter": "C",
+          "text": "A giant green statue holding a torch welcomes visitors arriving by sea to this city."
         },
         {
-          "letter": "J",
+          "letter": "D",
+          "text": "This city is famous for its ancient Colosseum, where gladiators once fought."
+        },
+        {
+          "letter": "E",
           "text": "This city's underground railway, opened in 1863, was the first in the world."
         },
         {
-          "letter": "K",
+          "letter": "F",
+          "text": "Cherry blossom trees around a tidal basin make this city especially beautiful in spring."
+        },
+        {
+          "letter": "G",
+          "text": "People in this city eat about 30 million croissants every day and its bakeries are world-famous."
+        },
+        {
+          "letter": "H",
+          "text": "This city's famous park, right in the centre, covers over 340 hectares and has its own zoo."
+        },
+        {
+          "letter": "I",
+          "text": "Kangaroos and koalas can be seen in wildlife parks near this harbour city."
+        },
+        {
+          "letter": "J",
           "text": "This city has five areas called boroughs, and over 800 languages are spoken there."
         },
         {
-          "letter": "L",
+          "letter": "K",
           "text": "Every year, millions of tourists come here to watch the Changing of the Guard at a royal palace."
+        },
+        {
+          "letter": "L",
+          "text": "A famous iron tower, built for a world fair in 1889, stands 330 metres tall in this city."
         }
       ],
       "items": [
         {
           "id": "London",
           "answers": [
-            "H",
-            "J",
-            "L"
+            "B",
+            "E",
+            "K"
           ]
         },
         {
           "id": "Paris",
           "answers": [
-            "C",
-            "E",
-            "F"
+            "A",
+            "G",
+            "L"
           ]
         },
         {
           "id": "New York",
           "answers": [
-            "B",
-            "I",
-            "K"
+            "C",
+            "H",
+            "J"
           ]
         }
       ],

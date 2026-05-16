@@ -10,15 +10,15 @@
       "options": [
         {
           "letter": "A",
-          "text": "This person believes that every child can learn if you find the right way to explain things."
+          "text": "At the weekend, this person reads books about the human body and new medicines."
         },
         {
           "letter": "B",
-          "text": "This person once won a local competition for the best chocolate cake."
+          "text": "This person travels to different countries and takes photographs of old buildings."
         },
         {
           "letter": "C",
-          "text": "After work, this person likes visiting food markets to discover unusual ingredients from around the world."
+          "text": "This person believes that every child can learn if you find the right way to explain things."
         },
         {
           "letter": "D",
@@ -26,60 +26,60 @@
         },
         {
           "letter": "E",
-          "text": "This person travels to different countries and takes photographs of old buildings."
-        },
-        {
-          "letter": "F",
           "text": "This person fixes cars and motorcycles in a small garage near the town centre."
         },
         {
-          "letter": "G",
-          "text": "This person stands in front of a class every day and explains new things to young people."
-        },
-        {
-          "letter": "H",
-          "text": "At the weekend, this person reads books about the human body and new medicines."
-        },
-        {
-          "letter": "I",
+          "letter": "F",
           "text": "This person sometimes works at night because patients need care at all hours."
         },
         {
-          "letter": "J",
-          "text": "This person works in a hospital and helps people who are sick or injured get better."
+          "letter": "G",
+          "text": "This person once won a local competition for the best chocolate cake."
         },
         {
-          "letter": "K",
+          "letter": "H",
+          "text": "This person stands in front of a class every day and explains new things to young people."
+        },
+        {
+          "letter": "I",
+          "text": "This person spends most of the day outdoors, taking care of animals on a large farm."
+        },
+        {
+          "letter": "J",
           "text": "In the evening, this person enjoys making worksheets and thinking of fun activities for lessons."
         },
         {
+          "letter": "K",
+          "text": "After work, this person likes visiting food markets to discover unusual ingredients from around the world."
+        },
+        {
           "letter": "L",
-          "text": "This person spends most of the day outdoors, taking care of animals on a large farm."
+          "text": "This person works in a hospital and helps people who are sick or injured get better."
         }
       ],
       "items": [
         {
           "id": "Doctor",
           "answers": [
-            "H",
-            "I",
-            "J"
+            "A",
+            "F",
+            "L"
           ]
         },
         {
           "id": "Teacher",
           "answers": [
-            "A",
-            "G",
-            "K"
+            "C",
+            "H",
+            "J"
           ]
         },
         {
           "id": "Chef",
           "answers": [
-            "B",
-            "C",
-            "D"
+            "D",
+            "G",
+            "K"
           ]
         }
       ],

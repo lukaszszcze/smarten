@@ -8,11 +8,11 @@
     "instruction": "Choose the correct answer A, B or C.",
     "items": [
       { "id": "1.1", "stem": "Chocolate _________ from cocoa beans.", "options": ["A) makes", "B) is made", "C) made"], "answer": "B" },
-      { "id": "1.2", "stem": "The Great Wall of China _________ thousands of years ago.", "options": ["A) was built", "B) is built", "C) built"], "answer": "A" },
-      { "id": "1.3", "stem": "Oranges _________ in warm countries like Spain and Italy.", "options": ["A) grows", "B) grew", "C) are grown"], "answer": "C" },
-      { "id": "1.4", "stem": "The telephone _________ by Alexander Graham Bell in 1876.", "options": ["A) invented", "B) is invented", "C) was invented"], "answer": "C" },
+      { "id": "1.2", "stem": "The Great Wall of China _________ thousands of years ago.", "options": ["A) is built", "B) built", "C) was built"], "answer": "C" },
+      { "id": "1.3", "stem": "Oranges _________ in warm countries like Spain and Italy.", "options": ["A) are grown", "B) grows", "C) grew"], "answer": "A" },
+      { "id": "1.4", "stem": "The telephone _________ by Alexander Graham Bell in 1876.", "options": ["A) invented", "B) was invented", "C) is invented"], "answer": "B" },
       { "id": "1.5", "stem": "These pizzas _________ fresh every morning in our bakery.", "options": ["A) are made", "B) were made", "C) made"], "answer": "A" },
-      { "id": "1.6", "stem": "The first pyramids _________ in Egypt over 4,000 years ago.", "options": ["A) are built", "B) were built", "C) build"], "answer": "B" }
+      { "id": "1.6", "stem": "The first pyramids _________ in Egypt over 4,000 years ago.", "options": ["A) are built", "B) build", "C) were built"], "answer": "C" }
     ]
   }]
 }

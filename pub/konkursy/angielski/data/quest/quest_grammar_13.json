@@ -7,11 +7,11 @@
     "points": 6,
     "instruction": "Choose the correct answer A, B or C.",
     "items": [
-      { "id": "1.1", "stem": "If I _________ fly, I would visit every country in the world.", "options": ["A) can", "B) could", "C) will"], "answer": "B" },
+      { "id": "1.1", "stem": "If I _________ fly, I would visit every country in the world.", "options": ["A) could", "B) can", "C) will"], "answer": "A" },
       { "id": "1.2", "stem": "If my cat _________ talk, it would ask for food all day long.", "options": ["A) can", "B) will", "C) could"], "answer": "C" },
       { "id": "1.3", "stem": "If I were a superhero, I _________ save people from danger.", "options": ["A) will", "B) would", "C) can"], "answer": "B" },
-      { "id": "1.4", "stem": "If she _________ a dragon, she would fly over the mountains.", "options": ["A) was", "B) is", "C) were"], "answer": "C" },
-      { "id": "1.5", "stem": "I would live in a castle if I _________ a king.", "options": ["A) am", "B) were", "C) will be"], "answer": "B" },
+      { "id": "1.4", "stem": "If she _________ a dragon, she would fly over the mountains.", "options": ["A) is", "B) were", "C) was"], "answer": "B" },
+      { "id": "1.5", "stem": "I would live in a castle if I _________ a king.", "options": ["A) were", "B) am", "C) will be"], "answer": "A" },
       { "id": "1.6", "stem": "If we _________ invisible, we would sneak into the zoo at night.", "options": ["A) are", "B) will be", "C) were"], "answer": "C" }
     ]
   }]

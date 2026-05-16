@@ -11,8 +11,8 @@
         {
           "id": "1.1",
           "stem": "I saw _________ elephant at the zoo.",
-          "options": ["A) a", "B) an", "C) the"],
-          "answer": "B"
+          "options": ["A) an", "B) a", "C) the"],
+          "answer": "A"
         },
         {
           "id": "1.2",
@@ -29,8 +29,8 @@
         {
           "id": "1.4",
           "stem": "He ate _________ orange for breakfast.",
-          "options": ["A) a", "B) an", "C) the"],
-          "answer": "B"
+          "options": ["A) a", "B) the", "C) an"],
+          "answer": "C"
         },
         {
           "id": "1.5",
@@ -41,8 +41,8 @@
         {
           "id": "1.6",
           "stem": "There is _________ big park near my house.",
-          "options": ["A) a", "B) an", "C) the"],
-          "answer": "A"
+          "options": ["A) the", "B) a", "C) an"],
+          "answer": "B"
         }
       ]
     }
