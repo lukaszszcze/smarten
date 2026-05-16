@@ -193,18 +193,18 @@ function PracticeList() {
                   </div>
                 </div>
                 <div style={{ textAlign: "right", marginLeft: 16, whiteSpace: "nowrap" }}>
-                  {mastery && mastery.earned > 0 ? (
+                  {mastery && (mastery.earned > 0 || ts.completed > 0) ? (
                     <>
-                      <div style={{ fontSize: 14, fontWeight: 700, color: "#f5a623" }}>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: mastery.earned > 0 ? "#f5a623" : "#5a5a6a" }}>
                         ★ {mastery.earned}/{mastery.max}
                       </div>
                       <div style={{ fontSize: 12, color: "#7a7a90" }}>
                         {ts.completed}/{ts.total} ukonczone
                       </div>
                     </>
-                  ) : ts.completed > 0 ? (
-                    <div style={{ fontSize: 12, color: "#7a7a90" }}>
-                      {ts.completed}/{ts.total} ukonczone
+                  ) : mastery && mastery.max > 0 ? (
+                    <div style={{ fontSize: 14, fontWeight: 700, color: "#5a5a6a" }}>
+                      ★ 0/{mastery.max}
                     </div>
                   ) : (
                     <span style={{ color: "#5a5a6a", fontSize: 13 }}>
