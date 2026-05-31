@@ -130,19 +130,25 @@ function ScoreChart({ attempts }) {
 }
 
 function StarsOverTimeChart({ practices }) {
-  const sorted = [...practices].sort((a, b) => new Date(a.date) - new Date(b.date));
+  const sorted = [...practices]
+    .filter((a) => a.exerciseId && a.date)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
   const best = {};
-  const points = [];
+  // Collapse to one end-of-day point: cumulative stars are monotonic, so the
+  // last attempt of each calendar day carries that day's final total. Keyed by
+  // local day; later writes for the same day overwrite while preserving order.
+  const byDay = new Map();
   for (const a of sorted) {
-    const exId = a.exerciseId;
-    if (!exId) continue;
     const pct = clampPercentage(a.percentage);
-    const prev = best[exId];
-    if (prev === undefined || pct > prev) best[exId] = pct;
+    const prev = best[a.exerciseId];
+    if (prev === undefined || pct > prev) best[a.exerciseId] = pct;
     let stars = 0;
     for (const p of Object.values(best)) stars += percentageToStars(p);
-    points.push({ date: new Date(a.date), stars });
+    const d = new Date(a.date);
+    const dayKey = `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    byDay.set(dayKey, { date: d, stars });
   }
+  const points = [...byDay.values()];
   if (points.length < 2) return null;
 
   const W = 680, H = 240, PAD_L = 40, PAD_R = 100, PAD_T = 20, PAD_B = 32;
@@ -171,7 +177,16 @@ function StarsOverTimeChart({ practices }) {
   const pathD = xy.map((p, i) => `${i === 0 ? "M" : "L"}${p.x},${p.y}`).join(" ");
   const areaD = pathD + ` L${xy[xy.length - 1].x},${PAD_T + plotH} L${xy[0].x},${PAD_T + plotH} Z`;
 
-  const visibleMilestones = PRACTICE_TITLES.filter((m) => m.stars <= yMax);
+  // Hide the crowded low tiers: show only the current tier (and one below for
+  // context) up to the ceiling, so labels stop overlapping at the bottom.
+  let currentTierIdx = 0;
+  for (let i = PRACTICE_TITLES.length - 1; i >= 0; i--) {
+    if (maxStars >= PRACTICE_TITLES[i].stars) { currentTierIdx = i; break; }
+  }
+  const minLabelStars = PRACTICE_TITLES[Math.max(0, currentTierIdx - 1)].stars;
+  const visibleMilestones = PRACTICE_TITLES.filter(
+    (m) => m.stars <= yMax && m.stars >= minLabelStars
+  );
 
   return (
     <div style={{ marginBottom: 32 }}>
