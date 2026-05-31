@@ -29,7 +29,7 @@ function applyScoringScheme(correct, scheme) {
   return 0;
 }
 
-const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing"];
+const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing", "open_cloze", "word_formation"];
 
 function scoreTask(task, userAnswers) {
   const isAIType = AI_CHECKED_TYPES.includes(task.type);

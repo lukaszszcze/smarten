@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useDocumentHead } from "../hooks";
 import { useUser } from "../App";
-import { loadRewards, computePracticeStars, getPracticeTitle, getTypeMastery } from "../lib/practiceRewards";
+import { loadRewards, computePracticeStars, getPracticeTitle, getTypeMastery, PRACTICE_TITLES } from "../lib/practiceRewards";
+import { percentageToStars, clampPercentage } from "../lib/questStars";
 import { competitionAttempts, practiceAttempts, loadAttempts } from "../lib/resultsModel";
 import { syncAttempts, clearRemoteAttempts } from "../lib/resultsSync";
 
@@ -113,6 +114,122 @@ function ScoreChart({ attempts }) {
                   x={p.x}
                   y={PAD_T + plotH + 16}
                   textAnchor="middle"
+                  fill="#5a5a6a"
+                  fontSize={9}
+                  fontFamily="DM Sans, sans-serif"
+                >
+                  {p.date.toLocaleDateString("pl-PL", { day: "numeric", month: "short" })}
+                </text>
+              )}
+            </g>
+          ))}
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function StarsOverTimeChart({ practices }) {
+  const sorted = [...practices].sort((a, b) => new Date(a.date) - new Date(b.date));
+  const best = {};
+  const points = [];
+  for (const a of sorted) {
+    const exId = a.exerciseId;
+    if (!exId) continue;
+    const pct = clampPercentage(a.percentage);
+    const prev = best[exId];
+    if (prev === undefined || pct > prev) best[exId] = pct;
+    let stars = 0;
+    for (const p of Object.values(best)) stars += percentageToStars(p);
+    points.push({ date: new Date(a.date), stars });
+  }
+  if (points.length < 2) return null;
+
+  const W = 680, H = 240, PAD_L = 40, PAD_R = 100, PAD_T = 20, PAD_B = 32;
+  const plotW = W - PAD_L - PAD_R;
+  const plotH = H - PAD_T - PAD_B;
+
+  const maxStars = points[points.length - 1].stars;
+  // Show up to the next milestone above current, so progress is visible
+  const nextIdx = PRACTICE_TITLES.findIndex((t) => t.stars > maxStars);
+  const ceiling = nextIdx === -1
+    ? PRACTICE_TITLES[PRACTICE_TITLES.length - 1].stars
+    : PRACTICE_TITLES[nextIdx].stars;
+  const yMax = Math.max(ceiling, maxStars, 20);
+
+  const t0 = points[0].date.getTime();
+  const t1 = points[points.length - 1].date.getTime();
+  const tSpan = t1 - t0 || 1;
+
+  const xy = points.map((p) => ({
+    x: PAD_L + ((p.date.getTime() - t0) / tSpan) * plotW,
+    y: PAD_T + plotH - (p.stars / yMax) * plotH,
+    stars: p.stars,
+    date: p.date,
+  }));
+
+  const pathD = xy.map((p, i) => `${i === 0 ? "M" : "L"}${p.x},${p.y}`).join(" ");
+  const areaD = pathD + ` L${xy[xy.length - 1].x},${PAD_T + plotH} L${xy[0].x},${PAD_T + plotH} Z`;
+
+  const visibleMilestones = PRACTICE_TITLES.filter((m) => m.stars <= yMax);
+
+  return (
+    <div style={{ marginBottom: 32 }}>
+      <h2 style={styles.sectionTitle}>Gwiazdki w czasie</h2>
+      <div style={{ background: "#13131a", border: "1px solid #1e1e2e", borderRadius: 10, padding: "16px 8px", overflowX: "auto" }}>
+        <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto", display: "block" }}>
+          <defs>
+            <linearGradient id="starsAreaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#f5a623" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#f5a623" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+
+          {/* Milestone horizontal lines */}
+          {visibleMilestones.map((m) => {
+            const y = PAD_T + plotH - (m.stars / yMax) * plotH;
+            const reached = maxStars >= m.stars;
+            return (
+              <g key={m.title}>
+                <line
+                  x1={PAD_L}
+                  x2={W - PAD_R}
+                  y1={y}
+                  y2={y}
+                  stroke={reached ? "#3a2e1a" : "#1e1e2e"}
+                  strokeWidth={1}
+                  strokeDasharray="4 3"
+                />
+                <text x={PAD_L - 6} y={y + 4} textAnchor="end" fill="#5a5a6a" fontSize={10} fontFamily="DM Sans, sans-serif">
+                  {m.stars}
+                </text>
+                <text
+                  x={W - PAD_R + 6}
+                  y={y + 4}
+                  textAnchor="start"
+                  fill={reached ? "#f5a623" : "#5a5a6a"}
+                  fontSize={10}
+                  fontWeight={reached ? 700 : 400}
+                  fontFamily="DM Sans, sans-serif"
+                >
+                  {m.title}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* Stars line */}
+          <path d={areaD} fill="url(#starsAreaGrad)" />
+          <path d={pathD} fill="none" stroke="#f5a623" strokeWidth={2} strokeLinejoin="round" />
+
+          {xy.map((p, i) => (
+            <g key={i}>
+              <circle cx={p.x} cy={p.y} r={3} fill="#f5a623" stroke="#13131a" strokeWidth={1.5} />
+              {(i === 0 || i === xy.length - 1) && (
+                <text
+                  x={p.x}
+                  y={PAD_T + plotH + 16}
+                  textAnchor={i === 0 ? "start" : "end"}
                   fill="#5a5a6a"
                   fontSize={9}
                   fontFamily="DM Sans, sans-serif"
@@ -275,6 +392,9 @@ export default function Progress() {
           {/* Practice stars */}
           <PracticeStarSummary bestScores={bestScores} />
 
+          {/* Stars over time — practice only */}
+          <StarsOverTimeChart practices={practices} />
+
           {/* Score over time chart — competition only */}
           <ScoreChart attempts={competitions} />
 
@@ -286,10 +406,22 @@ export default function Progress() {
                 Posortowane od najslabszych — pracuj nad nimi!
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                {skills.map((skill) => {
-                  const mastery = exerciseIndex.length > 0
-                    ? getTypeMastery(bestScores, exerciseIndex, skill.type)
-                    : null;
+                {skills
+                  .map((skill) => ({
+                    skill,
+                    mastery: exerciseIndex.length > 0
+                      ? getTypeMastery(bestScores, exerciseIndex, skill.type)
+                      : null,
+                  }))
+                  .sort((a, b) => {
+                    // Sort by exercise (practice star) results, weakest first.
+                    // Types without a practice pool go last; ties fall back to competition pct.
+                    const am = a.mastery && a.mastery.max > 0 ? a.mastery.earned / a.mastery.max : Infinity;
+                    const bm = b.mastery && b.mastery.max > 0 ? b.mastery.earned / b.mastery.max : Infinity;
+                    if (am !== bm) return am - bm;
+                    return a.skill.pct - b.skill.pct;
+                  })
+                  .map(({ skill, mastery }) => {
                   return (
                     <div key={skill.type} style={styles.skillRow}>
                       <div style={styles.skillInfo}>

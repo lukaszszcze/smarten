@@ -28,6 +28,10 @@ export async function onRequestPost(context) {
       return Response.json(await gradeSentenceTransformation(apiKey, task, answers));
     } else if (type === "grammar_gaps") {
       return Response.json(await gradeGrammarGaps(apiKey, task, answers));
+    } else if (type === "open_cloze") {
+      return Response.json(await gradeOpenCloze(apiKey, task, answers));
+    } else if (type === "word_formation") {
+      return Response.json(await gradeWordFormation(apiKey, task, answers));
     } else if (type === "writing") {
       const prompt = buildWritingPrompt(task, answers);
       const result = await callClaude(apiKey, SONNET, prompt);
@@ -299,6 +303,226 @@ Respond with ONLY this JSON (no other text):
 {
   "items": [
     { "id": "...", "earned": points_for_this_item, "max": number_of_gaps_in_item, "correct": true/false, "feedback": "brief explanation per gap, in Polish", "correctAnswer": "expected answers joined with ; " }
+  ]
+}`;
+}
+
+// ---------- Open cloze (single-word gap fill — synonyms accepted) ----------
+
+function applyScoringScheme(correct, scheme) {
+  if (!scheme || typeof scheme !== "object") return correct;
+  for (const [range, pts] of Object.entries(scheme)) {
+    if (range.includes("-")) {
+      const [lo, hi] = range.split("-").map(Number);
+      const min = Math.min(lo, hi);
+      const max = Math.max(lo, hi);
+      if (correct >= min && correct <= max) return pts;
+    } else if (Number(range) === correct) {
+      return pts;
+    }
+  }
+  return 0;
+}
+
+async function gradeOpenCloze(apiKey, task, answers) {
+  const items = task.items || [];
+  const itemResults = new Array(items.length);
+  const toAI = [];
+
+  items.forEach((item, idx) => {
+    const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+    const student = answers[item.id] || "";
+    const studentNorm = normalize(student);
+    const acceptedExact = expected.some((a) => normalize(a) === studentNorm && studentNorm !== "");
+
+    if (acceptedExact) {
+      itemResults[idx] = {
+        id: item.id,
+        correct: true,
+        userAnswer: student,
+        correctAnswer: expected[0],
+      };
+      return;
+    }
+    if (!studentNorm) {
+      itemResults[idx] = {
+        id: item.id,
+        correct: false,
+        userAnswer: "",
+        correctAnswer: expected.join(" / "),
+      };
+      return;
+    }
+    toAI.push({ idx, item });
+  });
+
+  if (toAI.length > 0) {
+    const prompt = buildOpenClozePrompt(task, answers, toAI.map((x) => x.item));
+    const aiResult = await callClaude(apiKey, SONNET, prompt);
+    const aiById = new Map((aiResult.items || []).map((it) => [it.id, it]));
+    for (const { idx, item } of toAI) {
+      const ai = aiById.get(item.id);
+      const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+      const student = answers[item.id] || "";
+      if (ai) {
+        itemResults[idx] = {
+          id: item.id,
+          correct: !!ai.correct,
+          userAnswer: student,
+          correctAnswer: ai.correctAnswer || expected.join(" / "),
+          feedback: ai.feedback || "",
+        };
+      } else {
+        itemResults[idx] = {
+          id: item.id,
+          correct: false,
+          userAnswer: student,
+          correctAnswer: expected.join(" / "),
+          feedback: "grading error",
+        };
+      }
+    }
+  }
+
+  const correctCount = itemResults.filter((r) => r.correct).length;
+  const max = task.points || itemResults.length;
+  const earned = task.scoringScheme
+    ? applyScoringScheme(correctCount, task.scoringScheme)
+    : Math.min(correctCount, max);
+
+  return { items: itemResults, earned, max };
+}
+
+function buildOpenClozePrompt(task, answers, itemsToGrade) {
+  const items = itemsToGrade.map((item) => ({
+    id: item.id,
+    expectedAnswers: Array.isArray(item.answer) ? item.answer : [item.answer],
+    studentAnswer: answers[item.id] || "",
+  }));
+
+  return `You are grading an English open-cloze exercise for a Polish middle school competition. Each gap must be filled with a SINGLE English word that fits the context grammatically and semantically.
+
+Full text with gaps (gaps appear as e.g. "1.4. _________"):
+${task.text}
+
+For each gap below you are given a list of expected answers (the official key) and the student's answer. Award 1 point if the student's answer is:
+1. A single English word (no extra words), correctly spelled
+2. Grammatically correct in the gap
+3. Semantically appropriate in the context — i.e. it preserves the meaning of the sentence as a whole
+
+CRITICAL: accept synonyms and equivalent words that are not in the key but would be a valid completion. For example, if the key is "loss" and the student writes "degradation" or "destruction" in a sentence about habitat, both should be accepted if they fit naturally. Be reasonably lenient on synonyms, strict on grammar and spelling.
+
+Items to grade:
+${JSON.stringify(items, null, 2)}
+
+Respond with ONLY this JSON (no other text):
+{
+  "items": [
+    { "id": "...", "correct": true/false, "feedback": "brief explanation in Polish — for accepted synonyms note the synonym; for wrong answers explain why briefly", "correctAnswer": "expected answer(s) joined with ' / '" }
+  ]
+}`;
+}
+
+// ---------- Word formation (derivation — spelling/derivation variants accepted) ----------
+
+async function gradeWordFormation(apiKey, task, answers) {
+  const items = task.items || [];
+  const itemResults = new Array(items.length);
+  const toAI = [];
+
+  items.forEach((item, idx) => {
+    const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+    const student = answers[item.id] || "";
+    const studentNorm = normalize(student);
+    const acceptedExact = expected.some((a) => normalize(a) === studentNorm && studentNorm !== "");
+
+    if (acceptedExact) {
+      itemResults[idx] = {
+        id: item.id,
+        correct: true,
+        userAnswer: student,
+        correctAnswer: expected[0],
+      };
+      return;
+    }
+    if (!studentNorm) {
+      itemResults[idx] = {
+        id: item.id,
+        correct: false,
+        userAnswer: "",
+        correctAnswer: expected.join(" / "),
+      };
+      return;
+    }
+    toAI.push({ idx, item });
+  });
+
+  if (toAI.length > 0) {
+    const prompt = buildWordFormationPrompt(task, answers, toAI.map((x) => x.item));
+    const aiResult = await callClaude(apiKey, SONNET, prompt);
+    const aiById = new Map((aiResult.items || []).map((it) => [it.id, it]));
+    for (const { idx, item } of toAI) {
+      const ai = aiById.get(item.id);
+      const expected = Array.isArray(item.answer) ? item.answer : [item.answer];
+      const student = answers[item.id] || "";
+      if (ai) {
+        itemResults[idx] = {
+          id: item.id,
+          correct: !!ai.correct,
+          userAnswer: student,
+          correctAnswer: ai.correctAnswer || expected.join(" / "),
+          feedback: ai.feedback || "",
+        };
+      } else {
+        itemResults[idx] = {
+          id: item.id,
+          correct: false,
+          userAnswer: student,
+          correctAnswer: expected.join(" / "),
+          feedback: "grading error",
+        };
+      }
+    }
+  }
+
+  const correctCount = itemResults.filter((r) => r.correct).length;
+  const max = task.points || itemResults.length;
+  const earned = task.scoringScheme
+    ? applyScoringScheme(correctCount, task.scoringScheme)
+    : Math.min(correctCount, max);
+
+  return { items: itemResults, earned, max };
+}
+
+function buildWordFormationPrompt(task, answers, itemsToGrade) {
+  const items = itemsToGrade.map((item) => ({
+    id: item.id,
+    baseWord: item.baseWord,
+    expectedAnswer: Array.isArray(item.answer) ? item.answer : [item.answer],
+    studentAnswer: answers[item.id] || "",
+  }));
+
+  return `You are grading an English word-formation exercise for a Polish middle school competition. The student must transform a given base word (in CAPITALS) into the form that fits the context grammatically and semantically.
+
+Full text with gaps (gaps appear as e.g. "1.4. _________"):
+${task.text}
+
+Word bank (the words shown to the student): ${JSON.stringify(task.wordBank || [])}
+
+For each gap you are given the base word, the official expected answer, and the student's answer. Award 1 point if the student's answer is:
+1. Derived from the given base word (different word stems are wrong)
+2. Grammatically correct in the gap and semantically appropriate
+3. Correctly spelled
+
+CRITICAL: accept both British and American spelling variants (e.g. industrialisation / industrialization, organisation / organization, recognise / recognize). Accept alternative valid derivations from the same base word when they fit the context equally well (e.g. "innovation" vs "innovations" depending on number). Be strict about grammar and spelling otherwise.
+
+Items to grade:
+${JSON.stringify(items, null, 2)}
+
+Respond with ONLY this JSON (no other text):
+{
+  "items": [
+    { "id": "...", "correct": true/false, "feedback": "brief explanation in Polish — for accepted variants note that; for wrong answers explain why briefly", "correctAnswer": "expected answer" }
   ]
 }`;
 }

@@ -34,10 +34,14 @@ const SKIPPED_TYPES = [
 ];
 
 // These types have items but need AI to grade
+// (open_cloze + word_formation are AI-graded so synonyms / spelling variants
+// beyond the official answer key can be accepted.)
 export const AI_CHECKED_TYPES = [
   "sentence_transformation",
   "grammar_gaps",
   "writing",
+  "open_cloze",
+  "word_formation",
 ];
 
 export default function TaskRenderer({ task, answers, onChange, showResults, taskResult }) {

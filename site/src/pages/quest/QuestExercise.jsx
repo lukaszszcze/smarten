@@ -7,7 +7,7 @@ import { scoreTest } from "../../lib/scoring";
 import { loadProgress, saveProgress, processResult, getPlayerTitle, pushRemoteProgress } from "../../lib/questProgress";
 import { getExerciseLevel, getNextExercise } from "../../lib/questData";
 import { percentageToStars } from "../../lib/questStars";
-import TaskRenderer from "../../components/konkursy/TaskRenderer";
+import TaskRenderer, { AI_CHECKED_TYPES } from "../../components/konkursy/TaskRenderer";
 
 export default function QuestExercise() {
   const { branch, id } = useParams();
@@ -17,6 +17,7 @@ export default function QuestExercise() {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
   const [starInfo, setStarInfo] = useState(null);
+  const [aiChecking, setAiChecking] = useState(false);
 
   useDocumentHead("Quest Exercise", "SmartEn Quest exercise");
 
@@ -43,12 +44,10 @@ export default function QuestExercise() {
     setAnswers((prev) => ({ ...prev, [itemId]: value }));
   };
 
-  const handleSubmit = () => {
-    const res = scoreTest(data, answers);
-    setResult(res);
-
+  const finalize = (finalRes) => {
+    setResult(finalRes);
     const progress = loadProgress(user?.name);
-    const info = processResult(progress, branch, id, res.earned, res.max);
+    const info = processResult(progress, branch, id, finalRes.earned, finalRes.max);
     saveProgress(user?.name, progress);
     setStarInfo(info);
 
@@ -57,6 +56,60 @@ export default function QuestExercise() {
         saveProgress(user?.name, merged);
       }
     });
+  };
+
+  const handleSubmit = async () => {
+    const res = scoreTest(data, answers);
+
+    const aiTasks = data.tasks.filter(
+      (t) => AI_CHECKED_TYPES.includes(t.type) && t.items && t.items.length > 0
+    );
+
+    if (aiTasks.length === 0) {
+      finalize(res);
+      return;
+    }
+
+    // Show local results immediately, then overlay AI results
+    setResult(res);
+    setAiChecking(true);
+
+    const aiResults = await Promise.allSettled(
+      aiTasks.map((task) =>
+        fetch("/api/check", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ type: task.type, task, answers }),
+        }).then((r) => r.ok ? r.json() : null)
+      )
+    );
+
+    let updatedTasks = [...res.tasks];
+    aiTasks.forEach((task, i) => {
+      const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
+      if (!aiRes) return;
+      const idx = updatedTasks.findIndex((t) => t.taskId === task.id);
+      if (idx === -1) return;
+      updatedTasks[idx] = {
+        ...updatedTasks[idx],
+        earned: aiRes.earned,
+        max: aiRes.max,
+        skipped: false,
+        items: aiRes.items,
+      };
+    });
+
+    const earned = updatedTasks.reduce((sum, r) => sum + r.earned, 0);
+    const max = updatedTasks.filter((r) => !r.skipped).reduce((sum, r) => sum + r.max, 0);
+    const finalRes = {
+      earned,
+      max,
+      percentage: max > 0 ? Math.round((earned / max) * 100) : 0,
+      tasks: updatedTasks,
+    };
+
+    setAiChecking(false);
+    finalize(finalRes);
   };
 
   const handleRetry = () => {
@@ -158,6 +211,12 @@ export default function QuestExercise() {
       {!result && (
         <div style={{ textAlign: "center", marginTop: 32 }}>
           <button onClick={handleSubmit} style={styles.submitBtn}>Check answers</button>
+        </div>
+      )}
+
+      {aiChecking && (
+        <div style={{ textAlign: "center", marginTop: 16 }}>
+          <p style={{ color: "#7c3aed", fontSize: 14 }}>Checking with AI...</p>
         </div>
       )}
 

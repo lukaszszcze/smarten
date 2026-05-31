@@ -2,7 +2,7 @@ import { percentageToStars, clampPercentage } from "./questStars.js";
 
 // --- Title ladder ---
 
-const PRACTICE_TITLES = [
+export const PRACTICE_TITLES = [
   { stars: 0, title: "Beginner" },
   { stars: 20, title: "Trainee" },
   { stars: 50, title: "Practitioner" },
@@ -135,19 +135,35 @@ export function updateBestScore(stored, exerciseId, percentage) {
 }
 
 /**
- * Load rewards from localStorage, running migration if needed.
- * Returns the bestScores map (or empty object).
+ * Load rewards from localStorage. Self-heals by merging in any attempts that
+ * aren't yet reflected in bestScores — e.g. attempts pulled from the server by
+ * syncAttempts on another device, or legacy data from before rewards existed.
  */
 export function loadRewards(storageKey) {
   try {
     const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
-    if (stored.rewards?.bestScores) return stored.rewards.bestScores;
+    const existing = stored.rewards?.bestScores || null;
+    const fromAttempts = migrateFromAttempts(stored.attempts);
 
-    // Migration: reconstruct bestScores from attempts
-    const bestScores = migrateFromAttempts(stored.attempts);
-    stored.rewards = { bestScores };
+    if (existing) {
+      let changed = false;
+      const merged = { ...existing };
+      for (const [exId, pct] of Object.entries(fromAttempts)) {
+        if ((merged[exId] ?? -1) < pct) {
+          merged[exId] = pct;
+          changed = true;
+        }
+      }
+      if (changed) {
+        stored.rewards = { ...stored.rewards, bestScores: merged };
+        localStorage.setItem(storageKey, JSON.stringify(stored));
+      }
+      return merged;
+    }
+
+    stored.rewards = { bestScores: fromAttempts };
     localStorage.setItem(storageKey, JSON.stringify(stored));
-    return bestScores;
+    return fromAttempts;
   } catch (e) {
     console.error("Failed to load practice rewards:", e);
     return {};
