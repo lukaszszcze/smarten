@@ -497,15 +497,17 @@ async function gradeWordFormation(apiKey, task, answers) {
 function buildWordFormationPrompt(task, answers, itemsToGrade) {
   const items = itemsToGrade.map((item) => ({
     id: item.id,
-    baseWord: item.baseWord,
+    // Data uses either `baseWord` (flowing-text shape) or `wordBase` (per-sentence shape).
+    baseWord: item.baseWord || item.wordBase || null,
+    // Per-sentence shape carries the gap context on the item itself.
+    sentence: item.sentence || undefined,
     expectedAnswer: Array.isArray(item.answer) ? item.answer : [item.answer],
     studentAnswer: answers[item.id] || "",
   }));
 
   return `You are grading an English word-formation exercise for a Polish middle school competition. The student must transform a given base word (in CAPITALS) into the form that fits the context grammatically and semantically.
 
-Full text with gaps (gaps appear as e.g. "1.4. _________"):
-${task.text}
+${task.text ? `Full text with gaps (gaps appear as e.g. "1.4. _________"):\n${task.text}` : "Each item below has its own sentence with one gap."}
 
 Word bank (the words shown to the student): ${JSON.stringify(task.wordBank || [])}
 
