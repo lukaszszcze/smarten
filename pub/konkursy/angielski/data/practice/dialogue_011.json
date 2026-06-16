@@ -1,0 +1,74 @@
+{
+  "title": "Dialogue: At the Restaurant",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij kazdy z ponizszych dialogow (1.1-1.6), wybierajac odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "X: Are you ready to order, or do you need a few more minutes?\nY: _________",
+          "options": [
+            "A) Could we have a little more time, please?",
+            "B) Yes, I am ordering you now.",
+            "C) No, I don't ready the menu yet."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "X: Would you like still or sparkling water?\nY: _________",
+          "options": [
+            "A) I would like it, thank you very water.",
+            "B) Still, please. And a glass of orange juice.",
+            "C) Yes, the water is very sparkling today."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "X: How would you like your steak cooked?\nY: _________",
+          "options": [
+            "A) On the kitchen, with a chef.",
+            "B) I like it very much, thank you.",
+            "C) Medium, please."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "X: I'm afraid the salmon is off today.\nY: _________",
+          "options": [
+            "A) Oh, that's a shame. I'll have the chicken instead, then.",
+            "B) Don't worry, I will turn the salmon on.",
+            "C) Yes, the salmon smells very off."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "X: Could we have the bill, please?\nY: _________",
+          "options": [
+            "A) No, his name is not Bill.",
+            "B) Of course. I'll bring it right over.",
+            "C) Yes, please give me the bill, please."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "X: Is service included in the price?\nY: _________",
+          "options": [
+            "A) Yes, we are servicing you with the price.",
+            "B) No, the service is not in the restaurant.",
+            "C) No, it isn't, so it's up to you whether you leave a tip."
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

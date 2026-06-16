@@ -1,0 +1,67 @@
+{
+  "title": "Word Formation: Advances in Medicine",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "ABLE",
+        "CARE",
+        "DANGER",
+        "DISCOVER",
+        "MEDICINE",
+        "POSSIBLE",
+        "PROTECT",
+        "SCIENCE",
+        "SUCCESS",
+        "TREAT"
+      ],
+      "text": "Modern medicine has changed our lives in ways that once seemed 1.1. _________ . A hundred years ago, an infected wound could be deadly, but the 1.2. _________ of penicillin gave doctors a powerful new weapon against bacteria. Today, 1.3. _________ research continues to produce remarkable results. Vaccines, for example, offer strong 1.4. _________ against diseases that used to kill millions of children every year. Doctors can now 1.5. _________ treat many illnesses that were hopeless in the past, so patients who once had no chance are often 1.6. _________ to make a full recovery. Of course, no medicine is completely harmless; some drugs can be 1.7. _________ if they are taken in the wrong amount. That is why careful 1.8. _________ , combined with regular checks, remains essential for every patient.",
+      "items": [
+        {
+          "id": "1.1",
+          "baseWord": "POSSIBLE",
+          "answer": "impossible"
+        },
+        {
+          "id": "1.2",
+          "baseWord": "DISCOVER",
+          "answer": "discovery"
+        },
+        {
+          "id": "1.3",
+          "baseWord": "SCIENCE",
+          "answer": "scientific"
+        },
+        {
+          "id": "1.4",
+          "baseWord": "PROTECT",
+          "answer": "protection"
+        },
+        {
+          "id": "1.5",
+          "baseWord": "SUCCESS",
+          "answer": "successfully"
+        },
+        {
+          "id": "1.6",
+          "baseWord": "ABLE",
+          "answer": "able"
+        },
+        {
+          "id": "1.7",
+          "baseWord": "DANGER",
+          "answer": "dangerous"
+        },
+        {
+          "id": "1.8",
+          "baseWord": "TREAT",
+          "answer": "treatment"
+        }
+      ]
+    }
+  ]
+}

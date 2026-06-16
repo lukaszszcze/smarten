@@ -1,0 +1,67 @@
+{
+  "title": "Word Formation: The Power of Reading",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "ABLE",
+        "CALM",
+        "ENJOY",
+        "EXPLAIN",
+        "GROW",
+        "IMAGINE",
+        "KNOW",
+        "POWER",
+        "REGULAR",
+        "WIDE"
+      ],
+      "text": "Many people believe that reading is one of the most 1.1. _________ habits a young person can develop. Books open doors to worlds we could never visit, and they feed the 1.2. _________ of children who love inventing stories of their own. Scientists have shown that pupils who read 1.3. _________, rather than only now and then, build a much larger vocabulary than their classmates.\n\nReading also brings real 1.4. _________: it helps us understand other cultures and see life through different eyes. After a stressful day at school, a good story can be wonderfully 1.5. _________, slowing our thoughts and easing our worries.\n\nOf course, not every book suits every reader. Beginners are often 1.6. _________ to finish a long novel at first, but teachers say that even the hardest pages bring steady 1.7. _________ in confidence. So the next time someone asks you to 1.8. _________ why reading matters, simply hand them a book.",
+      "items": [
+        {
+          "id": "1.1",
+          "baseWord": "ENJOY",
+          "answer": "enjoyable"
+        },
+        {
+          "id": "1.2",
+          "baseWord": "IMAGINE",
+          "answer": "imagination"
+        },
+        {
+          "id": "1.3",
+          "baseWord": "REGULAR",
+          "answer": "regularly"
+        },
+        {
+          "id": "1.4",
+          "baseWord": "KNOW",
+          "answer": "knowledge"
+        },
+        {
+          "id": "1.5",
+          "baseWord": "CALM",
+          "answer": "calming"
+        },
+        {
+          "id": "1.6",
+          "baseWord": "ABLE",
+          "answer": "unable"
+        },
+        {
+          "id": "1.7",
+          "baseWord": "GROW",
+          "answer": "growth"
+        },
+        {
+          "id": "1.8",
+          "baseWord": "EXPLAIN",
+          "answer": "explain"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: Weather & Seasons",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "It was so f _ _ _ y this morning that we could hardly see the road in front of the car.",
+          "hint": "f _ _ _ y",
+          "answer": "foggy"
+        },
+        {
+          "id": "1.2",
+          "stem": "Leaves turn brown and fall from the trees in a _ _ _ m n.",
+          "hint": "a _ _ _ m n",
+          "answer": "autumn"
+        },
+        {
+          "id": "1.3",
+          "stem": "During the storm a bright flash of l _ _ _ t n _ _ _ lit up the whole sky.",
+          "hint": "l _ _ _ t n _ _ _",
+          "answer": "lightning"
+        },
+        {
+          "id": "1.4",
+          "stem": "The road was covered with ice, so it felt very s _ _ _ p _ _ y and we walked slowly.",
+          "hint": "s _ _ _ p _ _ y",
+          "answer": "slippery"
+        },
+        {
+          "id": "1.5",
+          "stem": "In s _ _ _ _ g the days get longer and the first flowers begin to appear.",
+          "hint": "s _ _ _ _ g",
+          "answer": "spring"
+        },
+        {
+          "id": "1.6",
+          "stem": "The wind was so strong that my umbrella turned inside out during the t _ _ _ d _ _ s _ _ _ m.",
+          "hint": "t _ _ _ d _ _ s _ _ _ m",
+          "answer": "thunderstorm"
+        },
+        {
+          "id": "1.7",
+          "stem": "We had to scrape the t _ _ n layer of frost off the windscreen before driving to school.",
+          "hint": "t _ _ n",
+          "answer": "thin"
+        },
+        {
+          "id": "1.8",
+          "stem": "The weather f _ _ _ c _ _ t said it would rain tomorrow, so take your coat.",
+          "hint": "f _ _ _ c _ _ t",
+          "answer": "forecast"
+        }
+      ]
+    }
+  ]
+}

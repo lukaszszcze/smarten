@@ -1,0 +1,74 @@
+{
+  "title": "Dialogue: Phone Conversations",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij kazdy z ponizszych dialogow (1.1-1.6), wybierajac odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "X: Hello, could I speak to Daniel, please?\nY: _________",
+          "options": [
+            "A) I'm sorry, he's not in at the moment. Can I take a message?",
+            "B) Yes, I speak to him very well, thank you.",
+            "C) No, you couldn't to speak with Daniel now."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "X: Sorry, the line's really bad. Could you speak up a bit?\nY: _________",
+          "options": [
+            "A) Yes, I close the window for the line.",
+            "B) Of course. Is this any better? Can you hear me now?",
+            "C) No, I don't speak up the bit, sorry."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "X: Who's calling, please?\nY: _________",
+          "options": [
+            "A) It's me calling for you on the phone now.",
+            "B) Yes, I am calling you please right now.",
+            "C) It's Olivia from the music school."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "X: I'm afraid Mr Brooks is in a meeting right now.\nY: _________",
+          "options": [
+            "A) Could you ask him to call me back when he's free?",
+            "B) Yes, he is afraid of the meeting very much.",
+            "C) I'm afraid him too, so I will call later please."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "X: Hi Mum, I think I've left my keys at home. Can you check?\nY: _________",
+          "options": [
+            "A) Yes, I leave your keys at home very good.",
+            "B) Hold on a second, I'll have a look on the table.",
+            "C) No, I don't check the keys you left it home."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "X: Thanks for calling. I'll see you on Saturday, then.\nY: _________",
+          "options": [
+            "A) Yes, I call you for the thanks on Saturday too.",
+            "B) No, I don't see you on Saturday for calling me.",
+            "C) Great, see you then. Bye for now!"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

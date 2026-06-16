@@ -1,0 +1,70 @@
+{
+  "title": "Open Cloze: The Story of Coffee",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Coffee is one of the most popular drinks in the world, but few people know 1.1. _________ it comes from. According to an old story, a goatherd in Ethiopia noticed that his goats became very lively after 1.2. _________ had eaten the bright red berries of a certain bush. He decided to try the berries 1.3. _________ , and soon he felt full of energy too.\n\nThe plant was later taken 1.4. _________ Arabia, where people learnt 1.5. _________ to roast the seeds, or beans, and boil them in water. By the sixteenth century, coffee was already being sold in busy cafes 1.6. _________ the Middle East. These places became 1.7. _________ popular that some of them were known as \"schools of the wise\".\n\nWhen coffee finally reached Europe, it quickly became fashionable. London had hundreds of coffee houses 1.8. _________ merchants and writers gathered to talk and exchange news. Today coffee is grown in 1.9. _________ than seventy countries, and millions of cups 1.10. _________ drunk every single day.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "where"
+        },
+        {
+          "id": "1.2",
+          "answer": "they"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "himself",
+            "out"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "to"
+        },
+        {
+          "id": "1.5",
+          "answer": "how"
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "across",
+            "throughout",
+            "in"
+          ]
+        },
+        {
+          "id": "1.7",
+          "answer": "so"
+        },
+        {
+          "id": "1.8",
+          "answer": "where"
+        },
+        {
+          "id": "1.9",
+          "answer": "more"
+        },
+        {
+          "id": "1.10",
+          "answer": "are"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

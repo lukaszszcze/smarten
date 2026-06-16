@@ -1,0 +1,17 @@
+{
+  "title": "Writing: Health & Sport",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "writing",
+      "points": 5,
+      "instruction": "Twoj angielski kolega Tom pyta, jak dbasz o zdrowie. Napisz do niego e-mail (60-110 slow), w ktorym: 1) opiszesz, jaki sport uprawiasz i jak czesto trenujesz; 2) wyjasnisz, dlaczego zdrowe jedzenie jest dla Ciebie wazne; 3) zaproponujesz Tomowi wspolny aktywny weekend.",
+      "items": [
+        {
+          "id": "1.1"
+        }
+      ]
+    }
+  ]
+}

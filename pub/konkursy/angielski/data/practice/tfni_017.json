@@ -1,0 +1,103 @@
+{
+  "title": "True/False/NI: The Rise of Urban Gardening",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE RISE OF URBAN GARDENING\n\nTen years ago, the flat roof above my office was a grey, lifeless space covered in gravel. Today it is a small farm in the middle of the city, with tomatoes climbing up wooden frames and bees buzzing between the herbs. I am one of thousands of people who have joined a movement that is quietly transforming the way our towns look and feel.\n\nUrban gardening is not a new idea, but it has grown rapidly in the past decade. When fresh vegetables became more expensive, many families decided to grow their own. Others were worried about the environment and wanted to cut down on the journeys that food makes before it reaches the shops. Whatever the reason, balconies, rooftops and forgotten patches of land are turning green again.\n\nThe benefits go far beyond a free supply of salad. Plants help to cool buildings in hot weather, which means people use less air conditioning. They also clean the air and provide a home for insects and birds that struggle to survive in concrete surroundings. Perhaps most importantly, a shared garden brings neighbours together. On my street, people who had never spoken now meet every weekend to water the plants and swap seeds.\n\nOf course, growing food in a city is not always easy. Space is limited, the soil is often poor, and a sunny spot can be hard to find between tall buildings. Some gardeners have solved these problems with clever tricks, such as growing plants in old shoes or hanging containers from walls. Others rely on shared gardens that the local council has set aside for residents.\n\nExperts believe the trend will continue. As more people move into cities, the desire for a patch of green will only become stronger. For me, the rooftop garden is more than a hobby. It is a reminder that even in the busiest place, nature can find a way to flourish.",
+      "source": "www.citygreenmagazine.co.uk",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "The author's rooftop was already full of plants ten years ago.",
+          "answer": "F",
+          "explanation": "FALSE - the text says that ten years ago the roof 'was a grey, lifeless space covered in gravel', and only today is it 'a small farm'."
+        },
+        {
+          "id": "1.2",
+          "statement": "Rising vegetable prices encouraged some families to grow their own food.",
+          "answer": "T",
+          "explanation": "TRUE - 'When fresh vegetables became more expensive, many families decided to grow their own.'"
+        },
+        {
+          "id": "1.3",
+          "statement": "Plants on buildings can reduce the need for air conditioning in hot weather.",
+          "answer": "T",
+          "explanation": "TRUE - 'Plants help to cool buildings in hot weather, which means people use less air conditioning.'"
+        },
+        {
+          "id": "1.4",
+          "statement": "The author grows more vegetables than anyone else on the street.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - the text describes shared gardening on the street but never compares how much the author grows with the neighbours."
+        },
+        {
+          "id": "1.5",
+          "statement": "Finding a sunny place is one of the difficulties of gardening in a city.",
+          "answer": "T",
+          "explanation": "TRUE - 'a sunny spot can be hard to find between tall buildings.'"
+        },
+        {
+          "id": "1.6",
+          "statement": "Experts expect interest in urban gardening to fade in the coming years.",
+          "answer": "F",
+          "explanation": "FALSE - 'Experts believe the trend will continue' and 'the desire for a patch of green will only become stronger.'"
+        }
+      ],
+      "scoringScheme": {
+        "6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "a group of people working together to change something in society",
+          "answer": [
+            "movement",
+            "a movement"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "to make less in amount or to reduce something",
+          "answer": [
+            "cut down on",
+            "cut down",
+            "to cut down on",
+            "to cut down"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "to exchange one thing for another with someone",
+          "answer": [
+            "swap",
+            "to swap"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "a small area or piece of ground",
+          "answer": [
+            "patch",
+            "a patch"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "to grow and develop in a very healthy and successful way",
+          "answer": [
+            "flourish",
+            "to flourish"
+          ]
+        }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}

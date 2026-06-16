@@ -1,0 +1,17 @@
+{
+  "title": "Writing: Friends & Family",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "writing",
+      "points": 5,
+      "instruction": "Twoja angielska kolezanka Emma pyta Cie o Twoja rodzine i przyjaciol. Napisz do niej e-mail (60-110 slow), w ktorym: opiszesz jednego czlonka swojej rodziny (jak wyglada i jaki ma charakter); napiszesz, co lubisz robic ze swoim najlepszym przyjacielem lub przyjaciolka; zaprosisz Emme, aby odwiedzila Cie w wakacje i podasz jeden powod, dlaczego warto przyjechac.",
+      "items": [
+        {
+          "id": "1.1"
+        }
+      ]
+    }
+  ]
+}

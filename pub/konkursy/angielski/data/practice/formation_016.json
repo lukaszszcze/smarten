@@ -1,0 +1,67 @@
+{
+  "title": "Word Formation: The History of Photography",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "BRIGHT",
+        "CHEMISTRY",
+        "DIFFICULT",
+        "DISCOVER",
+        "EXPOSE",
+        "INVENT",
+        "PHOTOGRAPH",
+        "POPULAR",
+        "PRESS",
+        "REPLACE"
+      ],
+      "text": "People have always wanted to capture the world around them, but for centuries this was impossible. The 1.1. _________ of photography in the early nineteenth century finally changed that. A French 1.2. _________ named Joseph Nicephore Niepce produced the first lasting image around 1826, though it required an extremely long 1.3. _________ of about eight hours. His partner, Louis Daguerre, made the process far quicker and turned it into a 1.4. _________ technique that spread across Europe. Early cameras were big and heavy, so they were 1.5. _________ to carry from place to place. Capturing a clear picture also depended on the 1.6. _________ of the light, because dim rooms gave dull results. Later, glass plates were 1.7. _________ by flexible film, which was much lighter and simpler to use. The 1.8. _________ that light could leave a permanent mark on certain surfaces lay behind every step of this remarkable story.",
+      "items": [
+        {
+          "id": "1.1",
+          "baseWord": "INVENT",
+          "answer": "invention"
+        },
+        {
+          "id": "1.2",
+          "baseWord": "CHEMISTRY",
+          "answer": "chemist"
+        },
+        {
+          "id": "1.3",
+          "baseWord": "EXPOSE",
+          "answer": "exposure"
+        },
+        {
+          "id": "1.4",
+          "baseWord": "POPULAR",
+          "answer": "popular"
+        },
+        {
+          "id": "1.5",
+          "baseWord": "DIFFICULT",
+          "answer": "difficult"
+        },
+        {
+          "id": "1.6",
+          "baseWord": "BRIGHT",
+          "answer": "brightness"
+        },
+        {
+          "id": "1.7",
+          "baseWord": "REPLACE",
+          "answer": "replaced"
+        },
+        {
+          "id": "1.8",
+          "baseWord": "DISCOVER",
+          "answer": "discovery"
+        }
+      ]
+    }
+  ]
+}

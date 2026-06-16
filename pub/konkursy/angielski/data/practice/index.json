@@ -832,6 +832,475 @@
       "taskType": "writing",
       "taskCount": 1,
       "points": 5
+    },
+    {
+      "id": "knowledge_011",
+      "title": "British Cities & Counties",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "knowledge_012",
+      "title": "American Geography & Landmarks",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "knowledge_013",
+      "title": "Currencies, Flags & Symbols",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "knowledge_014",
+      "title": "Literature & Authors",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "knowledge_015",
+      "title": "Science & Inventions",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "knowledge_016",
+      "title": "Music, Film & Television",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "spelling_011",
+      "title": "Weather & Seasons",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_012",
+      "title": "Animals & Wildlife",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_013",
+      "title": "House & Home",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_014",
+      "title": "Clothes & Fashion",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_015",
+      "title": "City & Public Places",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_016",
+      "title": "Money & Shopping",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_016",
+      "title": "The History of Photography",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_017",
+      "title": "Volunteering and Community",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_018",
+      "title": "The World of Sport",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_019",
+      "title": "Advances in Medicine",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_020",
+      "title": "The Power of Reading",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "cloze_016",
+      "title": "The Great Barrier Reef",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_017",
+      "title": "The Invention of the Telephone",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_018",
+      "title": "Climbing Mount Everest",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_019",
+      "title": "The Story of Coffee",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_020",
+      "title": "How Honey Bees Live",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_021",
+      "title": "The Northern Lights",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "tfni_016",
+      "title": "A Young Astronomer",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_017",
+      "title": "The Rise of Urban Gardening",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_018",
+      "title": "Life as a Wildlife Photographer",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_019",
+      "title": "The Comeback of Vinyl Records",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_020",
+      "title": "A Year Volunteering Abroad",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "mc_011",
+      "title": "Reported Speech",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "mc_012",
+      "title": "Relative Clauses",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "mc_013",
+      "title": "Quantifiers & Countability",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "mc_014",
+      "title": "Comparatives & Superlatives",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "mc_015",
+      "title": "Idioms & Fixed Expressions",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "mc_016",
+      "title": "Mixed Vocabulary",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_011",
+      "title": "The History of Tea",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_012",
+      "title": "How Volcanoes Work",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_013",
+      "title": "The Life of Charles Dickens",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_014",
+      "title": "The Science of Sleep",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_015",
+      "title": "The Story of Blue Jeans",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "gapfill_016",
+      "title": "Saving the Coral Reefs",
+      "taskType": "gap_fill_sentences",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_011",
+      "title": "At the Restaurant",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_012",
+      "title": "Making Plans with Friends",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_013",
+      "title": "At the Doctor",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_014",
+      "title": "Asking for Directions",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_015",
+      "title": "Phone Conversations",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "dialogue_016",
+      "title": "Mixed Everyday English",
+      "taskType": "dialogue_choice",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_011",
+      "title": "Rivers, Mountains & Lakes",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "matching_012",
+      "title": "Inventors & Inventions",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "matching_013",
+      "title": "Authors & Their Books",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "matching_014",
+      "title": "Capital Cities of the World",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "matching_015",
+      "title": "National Symbols & Emblems",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "matching_016",
+      "title": "World Festivals",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 3
+    },
+    {
+      "id": "transform_006",
+      "title": "Modals & Obligation",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_007",
+      "title": "Causative & Passive",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_008",
+      "title": "Reported Speech in Depth",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_009",
+      "title": "Conditionals & Time Clauses",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_010",
+      "title": "Mixed Structures II",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "grammar_006",
+      "title": "Tenses Review",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "grammar_007",
+      "title": "Conditionals & Wishes",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "grammar_008",
+      "title": "Passive & Causative II",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "grammar_009",
+      "title": "Reported Speech",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "grammar_010",
+      "title": "Mixed Grammar II",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "writing_006",
+      "title": "Free Time & Hobbies",
+      "taskType": "writing",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "writing_007",
+      "title": "Health & Sport",
+      "taskType": "writing",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "writing_008",
+      "title": "Friends & Family",
+      "taskType": "writing",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "writing_009",
+      "title": "Holidays & Celebrations",
+      "taskType": "writing",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "writing_010",
+      "title": "Future Plans",
+      "taskType": "writing",
+      "taskCount": 1,
+      "points": 5
     }
   ]
 }

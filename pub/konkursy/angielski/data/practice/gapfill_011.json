@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: The History of Tea",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "THE HISTORY OF TEA\n\nTea is one of the most popular drinks in the world, and only water is consumed more often. _________ (1.1) According to a famous legend, the Chinese emperor Shen Nung discovered it by accident around 2737 BC, when a few leaves blew into his pot of boiling water. He liked the taste so much that he decided to study the plant carefully.\n\nFor hundreds of years, tea remained a Chinese secret. _________ (1.2) The Japanese, however, learned about it from Buddhist monks who had travelled to China to study. These monks brought tea seeds home and began to grow the plant in their own gardens. _________ (1.3) During this ceremony, every movement is slow and deliberate, and silence is considered a sign of respect.\n\nTea did not reach Europe until the seventeenth century, when Dutch and Portuguese traders brought small amounts back by ship. _________ (1.4) In Britain, the drink became fashionable after Catherine of Braganza, a Portuguese princess, married King Charles II in 1662. She loved tea and made it popular among the wealthy. _________ (1.5) As a result, the price slowly fell, and ordinary families could finally afford to buy it.\n\nToday tea is grown in many countries, especially India, Kenya and Sri Lanka. _________ (1.6) Whether it is served hot with milk or poured over ice on a summer afternoon, this ancient drink continues to bring people together all over the world.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At first it was extremely expensive, so only rich people could afford to drink it."
+        },
+        {
+          "letter": "B",
+          "text": "Coffee, on the other hand, is grown mainly in South America and Africa."
+        },
+        {
+          "letter": "C",
+          "text": "Nobody is completely certain when people first started drinking it."
+        },
+        {
+          "letter": "D",
+          "text": "Over time, they developed a special tea ceremony that is still performed today."
+        },
+        {
+          "letter": "E",
+          "text": "Later, large plantations were created in India, which made tea much cheaper to produce."
+        },
+        {
+          "letter": "F",
+          "text": "Anyone who broke this rule could be punished very severely by the emperor."
+        },
+        {
+          "letter": "G",
+          "text": "The plant was so valuable that exporting its seeds was strictly forbidden."
+        },
+        {
+          "letter": "H",
+          "text": "Each region produces leaves with its own particular flavour and colour."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "answer": "G"
+        },
+        {
+          "id": "1.3",
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "answer": "E"
+        },
+        {
+          "id": "1.6",
+          "answer": "H"
+        }
+      ]
+    }
+  ]
+}

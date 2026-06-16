@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: Saving the Coral Reefs",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "SAVING THE CORAL REEFS\n\nCoral reefs are among the most colourful and crowded places in the ocean. _________ (1.1) For this reason, scientists often call them the rainforests of the sea. The biggest reef of all, the Great Barrier Reef, stretches for more than 2,000 kilometres along the coast of Australia.\n\nMany people are surprised to learn what coral actually is. _________ (1.2) Each tiny animal builds a hard outer skeleton, and over hundreds of years millions of these skeletons join together to form a reef. The bright colours come from tiny plants called algae that live inside the coral and share food with it.\n\nUnfortunately, reefs around the world are now in serious danger. _________ (1.3) When the sea becomes too warm, the coral pushes out its algae and slowly turns white. _________ (1.4) Scientists call this process bleaching, and a badly bleached reef can take many years to recover.\n\nLuckily, people are working hard to protect these underwater forests. _________ (1.5) Divers also remove rubbish and replant healthy coral on damaged reefs, much as gardeners plant seedlings in a garden. _________ (1.6) Switching off unused lights and walking instead of driving may seem small, but together such actions help to keep the oceans cool enough for coral to survive.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They are home to a quarter of all sea creatures, even though they cover less than one per cent of the ocean floor."
+        },
+        {
+          "letter": "B",
+          "text": "Without the algae, the coral has almost no food and can easily die."
+        },
+        {
+          "letter": "C",
+          "text": "Although it looks like a strange rock or plant, it is really a colony of thousands of tiny animals."
+        },
+        {
+          "letter": "D",
+          "text": "In several countries, governments have created marine parks where fishing and building are forbidden."
+        },
+        {
+          "letter": "E",
+          "text": "The main threat is rising sea temperatures caused by climate change."
+        },
+        {
+          "letter": "F",
+          "text": "Even children far from the sea can help by saving energy at home."
+        },
+        {
+          "letter": "G",
+          "text": "Most sharks prefer to hunt alone in the cold, dark water near the bottom of the sea."
+        },
+        {
+          "letter": "H",
+          "text": "These ancient ships had sailed across the ocean for many months before reaching the harbour."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "answer": "E"
+        },
+        {
+          "id": "1.4",
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "answer": "F"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Open Cloze: The Great Barrier Reef",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The Great Barrier Reef is the largest living structure 1.1. _________ Earth. It lies off the coast of Queensland, 1.2. _________ is a state in north-eastern Australia. The reef stretches 1.3. _________ more than 2,300 kilometres and can even 1.4. _________ seen from space. It is not a single reef but a system made 1.5. _________ of thousands of smaller reefs and hundreds of islands. The reef 1.6. _________ home to an enormous variety of life, including colourful fish, turtles and dolphins. Although it looks like rock, the reef 1.7. _________ actually built by tiny animals called coral polyps over millions of years. Today the reef is 1.8. _________ danger because the sea is becoming warmer. When the water gets too hot, the coral loses its colour, a process 1.9. _________ scientists call bleaching. For 1.10. _________ reason, many people are working hard to protect this natural wonder for future generations.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "on"
+        },
+        {
+          "id": "1.2",
+          "answer": "which"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "for",
+            "over"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "be"
+        },
+        {
+          "id": "1.5",
+          "answer": "up"
+        },
+        {
+          "id": "1.6",
+          "answer": "is"
+        },
+        {
+          "id": "1.7",
+          "answer": "was"
+        },
+        {
+          "id": "1.8",
+          "answer": "in"
+        },
+        {
+          "id": "1.9",
+          "answer": [
+            "that",
+            "which"
+          ]
+        },
+        {
+          "id": "1.10",
+          "answer": "this"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

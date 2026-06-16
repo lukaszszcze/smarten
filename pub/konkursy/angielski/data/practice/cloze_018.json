@@ -1,0 +1,66 @@
+{
+  "title": "Open Cloze: Climbing Mount Everest",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Mount Everest, which stands on the border between Nepal and Tibet, is the highest mountain 1.1. _________ Earth. Its summit reaches about 8,849 metres above sea level, and the air there is so thin 1.2. _________ most climbers must carry bottles of oxygen to survive.\n\nThe first people to reach the top were Edmund Hillary, a beekeeper from New Zealand, 1.3. _________ Tenzing Norgay, a Sherpa guide from Nepal. They made their famous climb in 1953, and 1.4. _________ then thousands of others have followed in their footsteps. Reaching the summit, however, is far 1.5. _________ easy. The journey can take many weeks, because climbers need time to get 1.6. _________ to the lack of oxygen at high altitude.\n\nThe weather on the mountain is extremely dangerous, 1.7. _________ temperatures often falling below minus thirty degrees. Strong winds and sudden storms 1.8. _________ killed many experienced climbers over the years. For 1.9. _________ reason, expeditions usually attempt the final push to the top during a short period in May, when conditions are calmer.\n\nToday Everest attracts hundreds of visitors each season. Sadly, this popularity 1.10. _________ created new problems, such as overcrowding and large amounts of rubbish left behind on the slopes.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "on"
+        },
+        {
+          "id": "1.2",
+          "answer": "that"
+        },
+        {
+          "id": "1.3",
+          "answer": "and"
+        },
+        {
+          "id": "1.4",
+          "answer": "since"
+        },
+        {
+          "id": "1.5",
+          "answer": "from"
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "used",
+            "accustomed"
+          ]
+        },
+        {
+          "id": "1.7",
+          "answer": "with"
+        },
+        {
+          "id": "1.8",
+          "answer": "have"
+        },
+        {
+          "id": "1.9",
+          "answer": "this"
+        },
+        {
+          "id": "1.10",
+          "answer": "has"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

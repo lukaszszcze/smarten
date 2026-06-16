@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: Money & Shopping",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The trainers were too expensive, so I asked the shop assistant if there was a c _ _ _ p e r pair.",
+          "hint": "c _ _ _ p e r",
+          "answer": "cheaper"
+        },
+        {
+          "id": "1.2",
+          "stem": "I paid with a twenty-pound note, and the cashier handed me my c _ _ n g e and the receipt.",
+          "hint": "c _ _ n g e",
+          "answer": "change"
+        },
+        {
+          "id": "1.3",
+          "stem": "In the January sale every jacket had a fifty per cent d i _ _ o u _ t, so prices were really low.",
+          "hint": "d i _ _ o u _ t",
+          "answer": "discount"
+        },
+        {
+          "id": "1.4",
+          "stem": "You should always keep the r _ _ e i _ t in case you want to return the item to the shop.",
+          "hint": "r _ _ e i _ t",
+          "answer": "receipt"
+        },
+        {
+          "id": "1.5",
+          "stem": "Instead of paying with cash, my dad usually pays for the shopping with his credit c _ _ d.",
+          "hint": "c _ _ d",
+          "answer": "card"
+        },
+        {
+          "id": "1.6",
+          "stem": "I can't buy that game now because I simply cannot a _ _ o _ d it on my pocket money.",
+          "hint": "a _ _ o _ d",
+          "answer": "afford"
+        },
+        {
+          "id": "1.7",
+          "stem": "She saves a little money every week and keeps it safely in her w _ _ l e t.",
+          "hint": "w _ _ l e t",
+          "answer": "wallet"
+        },
+        {
+          "id": "1.8",
+          "stem": "At the till the c _ s _ i e r scanned all the items and told me the total price.",
+          "hint": "c _ s _ i e r",
+          "answer": "cashier"
+        }
+      ]
+    }
+  ]
+}

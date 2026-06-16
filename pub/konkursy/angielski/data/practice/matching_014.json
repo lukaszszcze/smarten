@@ -1,0 +1,94 @@
+{
+  "title": "Matching: Capital Cities of the World",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 3,
+      "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "This European capital stands on the River Seine and is famous for the Eiffel Tower."
+        },
+        {
+          "letter": "B",
+          "text": "This European capital lies on the River Tiber and surrounds the tiny state of Vatican City."
+        },
+        {
+          "letter": "C",
+          "text": "This European capital sits on the River Thames, where Big Ben and the Houses of Parliament stand."
+        },
+        {
+          "letter": "D",
+          "text": "This Asian capital is one of the most populous cities in the world and hosts an Imperial Palace."
+        },
+        {
+          "letter": "E",
+          "text": "This Asian capital lies beside the Han River and is the largest city in South Korea."
+        },
+        {
+          "letter": "F",
+          "text": "This Asian capital is home to the Forbidden City and the famous Tiananmen Square."
+        },
+        {
+          "letter": "G",
+          "text": "This is the largest city in the United States, though it is not the national capital today."
+        },
+        {
+          "letter": "H",
+          "text": "This Brazilian city, famous for its Sugarloaf Mountain, is not the country's capital."
+        },
+        {
+          "letter": "I",
+          "text": "This Australian city is home to a famous Opera House and Harbour Bridge, but it is not the country's capital."
+        },
+        {
+          "letter": "J",
+          "text": "The Brandenburg Gate and the remains of a famous wall stand in this German capital."
+        },
+        {
+          "letter": "K",
+          "text": "Red Square and the Kremlin lie at the heart of this Russian capital."
+        },
+        {
+          "letter": "L",
+          "text": "The famous canals and the Anne Frank House can be found in this Dutch capital."
+        }
+      ],
+      "items": [
+        {
+          "id": "European capitals standing on a named river",
+          "answers": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "id": "Capital cities in Asia",
+          "answers": [
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "id": "Famous cities that are NOT their country's capital",
+          "answers": [
+            "G",
+            "H",
+            "I"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "9": 3,
+        "7-8": 2,
+        "5-6": 1,
+        "0-4": 0
+      }
+    }
+  ]
+}

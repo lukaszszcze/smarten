@@ -1,0 +1,56 @@
+{
+  "title": "Sentence Transformation: Causative & Passive",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 6,
+      "instruction": "Przeczytaj zdania. Wykorzystując wyrazy podane wielkimi literami, uzupełnij każde zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "A mechanic repaired our car yesterday.",
+          "keyword": "HAD",
+          "transformed": "We _________ yesterday.",
+          "answer": "had our car repaired"
+        },
+        {
+          "id": "1.2",
+          "original": "Workers are building a new bridge in our town.",
+          "keyword": "BEING",
+          "transformed": "A new bridge _________ in our town.",
+          "answer": "is being built"
+        },
+        {
+          "id": "1.3",
+          "original": "Someone has stolen my brother's phone.",
+          "keyword": "BEEN",
+          "transformed": "My brother's phone _________ stolen.",
+          "answer": "has been"
+        },
+        {
+          "id": "1.4",
+          "original": "Mum asked a hairdresser to cut Anna's hair.",
+          "keyword": "GET",
+          "transformed": "Mum decided to _________ at the salon.",
+          "answer": "get Anna's hair cut"
+        },
+        {
+          "id": "1.5",
+          "original": "They will deliver the parcel tomorrow morning.",
+          "keyword": "BE",
+          "transformed": "The parcel _________ tomorrow morning.",
+          "answer": "will be delivered"
+        },
+        {
+          "id": "1.6",
+          "original": "You must wash these dishes before dinner.",
+          "keyword": "BE",
+          "transformed": "These dishes _________ before dinner.",
+          "answer": "must be washed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Matching: World Festivals",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 3,
+      "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is the Hindu festival of lights, when people light rows of small oil lamps called diyas."
+        },
+        {
+          "letter": "B",
+          "text": "It takes place in Brazil and is famous for its huge street parties in the days before Lent."
+        },
+        {
+          "letter": "C",
+          "text": "Families clean their homes to sweep away bad luck and set off fireworks at the start of the lunar new year."
+        },
+        {
+          "letter": "D",
+          "text": "Samba schools parade through Rio de Janeiro in bright, sparkling costumes."
+        },
+        {
+          "letter": "E",
+          "text": "Hindus exchange boxes of sweets to celebrate the victory of light over darkness."
+        },
+        {
+          "letter": "F",
+          "text": "Dancers wearing tall feathered headdresses move through the streets to loud drumming."
+        },
+        {
+          "letter": "G",
+          "text": "Older relatives give children money tucked inside small red envelopes for good luck."
+        },
+        {
+          "letter": "H",
+          "text": "It is one of the most important holidays in India and is also called Deepavali."
+        },
+        {
+          "letter": "I",
+          "text": "A long cloth dragon, held up on poles by many dancers, winds through the streets."
+        },
+        {
+          "letter": "J",
+          "text": "Visitors carve scary faces into pumpkins and children go door to door asking for sweets."
+        },
+        {
+          "letter": "K",
+          "text": "People decorate a tall green tree and hang up stockings on the night of 24 December."
+        },
+        {
+          "letter": "L",
+          "text": "Athletes from many countries compete every four years for gold, silver and bronze medals."
+        }
+      ],
+      "items": [
+        {
+          "id": "Diwali",
+          "answers": [
+            "A",
+            "E",
+            "H"
+          ]
+        },
+        {
+          "id": "Rio Carnival",
+          "answers": [
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "id": "Chinese New Year",
+          "answers": [
+            "C",
+            "G",
+            "I"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "9": 3,
+        "7-8": 2,
+        "5-6": 1,
+        "0-4": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Grammar Gaps: Reported Speech",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 6,
+      "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "Tom said that he _________ (be) tired and that he _________ (go) home early.",
+          "answer": [
+            "was",
+            "would ('d) go"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "She told me she _________ (not / can) come because she _________ (lose) her keys.",
+          "answer": [
+            "could not (couldn't)",
+            "had ('d) lost"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "The teacher asked us where we _________ (live) and whether we _________ (enjoy) the trip.",
+          "answer": [
+            "lived",
+            "had enjoyed, enjoyed"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "My dad told me _________ (not / forget) my umbrella because it _________ (rain) later.",
+          "answer": [
+            "not to forget",
+            "would ('d) rain"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "Anna said that she _________ (visit) Rome the previous year and that she _________ (want) to return.",
+          "answer": [
+            "had ('d) visited",
+            "wanted"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "He asked me if I _________ (finish) my homework yet and what time I _________ (start) it.",
+          "answer": [
+            "had finished",
+            "had started"
+          ]
+        }
+      ]
+    }
+  ]
+}

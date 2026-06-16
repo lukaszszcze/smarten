@@ -1,0 +1,94 @@
+{
+  "title": "Matching: National Symbols & Emblems",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 3,
+      "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Its national flower is the rose, and its patron saint is St George."
+        },
+        {
+          "letter": "B",
+          "text": "The maple leaf appears in the centre of its red and white flag."
+        },
+        {
+          "letter": "C",
+          "text": "The kangaroo and the emu support the shield on its coat of arms."
+        },
+        {
+          "letter": "D",
+          "text": "The lion is its national animal and the three lions feature on its football badge."
+        },
+        {
+          "letter": "E",
+          "text": "The beaver is one of its official national animals, valued for the old fur trade."
+        },
+        {
+          "letter": "F",
+          "text": "The golden wattle is its official national floral emblem."
+        },
+        {
+          "letter": "G",
+          "text": "The bald eagle is its national bird, shown on the Great Seal."
+        },
+        {
+          "letter": "H",
+          "text": "Its capital city is London, on the River Thames."
+        },
+        {
+          "letter": "I",
+          "text": "The Stars and Stripes flag has fifty stars, one for each state."
+        },
+        {
+          "letter": "J",
+          "text": "Its largest cities include Sydney and Melbourne, though Canberra is the capital."
+        },
+        {
+          "letter": "K",
+          "text": "The cherry blossom is its best-known flower, and Mount Fuji its famous peak."
+        },
+        {
+          "letter": "L",
+          "text": "The rose is its national flower, named the official floral emblem in 1986."
+        }
+      ],
+      "items": [
+        {
+          "id": "United States of America",
+          "answers": [
+            "G",
+            "I",
+            "L"
+          ]
+        },
+        {
+          "id": "Australia",
+          "answers": [
+            "C",
+            "F",
+            "J"
+          ]
+        },
+        {
+          "id": "England",
+          "answers": [
+            "A",
+            "D",
+            "H"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "9": 3,
+        "7-8": 2,
+        "5-6": 1,
+        "0-4": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "title": "Music, Film & Television",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 10,
+      "instruction": "Wybierz poprawna odpowiedz A, B, C lub D.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which British band released the album 'Abbey Road' in 1969?",
+          "options": [
+            "A. The Rolling Stones",
+            "B. The Beatles",
+            "C. Queen",
+            "D. Pink Floyd"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "question": "The long-running science-fiction TV series 'Doctor Who' is made by which broadcaster?",
+          "options": [
+            "A. ITV",
+            "B. Channel 4",
+            "C. The BBC",
+            "D. Sky"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "question": "In which American city is the famous film industry district of Hollywood located?",
+          "options": [
+            "A. New York",
+            "B. Chicago",
+            "C. Miami",
+            "D. Los Angeles"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "question": "Which Irish rock band, formed in Dublin, is fronted by a singer known as Bono?",
+          "options": [
+            "A. U2",
+            "B. Coldplay",
+            "C. The Cranberries",
+            "D. Oasis"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "question": "The golden statuette given at the most famous American film awards is commonly called the:",
+          "options": [
+            "A. Grammy",
+            "B. Oscar",
+            "C. Emmy",
+            "D. Tony"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "question": "Which Australian singer is famous for the 2001 hit song 'Can't Get You Out of My Head'?",
+          "options": [
+            "A. Adele",
+            "B. Dua Lipa",
+            "C. Kylie Minogue",
+            "D. Taylor Swift"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "question": "The 'Harry Potter' films were based on novels written by which British author?",
+          "options": [
+            "A. Roald Dahl",
+            "B. J. R. R. Tolkien",
+            "C. C. S. Lewis",
+            "D. J. K. Rowling"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "question": "Which classical composer, born in Salzburg, is NOT from an English-speaking country but inspired many films?",
+          "options": [
+            "A. Mozart",
+            "B. Elton John",
+            "C. Ed Sheeran",
+            "D. Paul McCartney"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "question": "In which English city were the famous musicians The Beatles formed?",
+          "options": [
+            "A. Manchester",
+            "B. Liverpool",
+            "C. Birmingham",
+            "D. Bristol"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "question": "Which long-running American TV cartoon family lives in the town of Springfield?",
+          "options": [
+            "A. The Flintstones",
+            "B. Family Guy",
+            "C. The Simpsons",
+            "D. South Park"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

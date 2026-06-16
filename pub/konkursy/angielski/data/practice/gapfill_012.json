@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: How Volcanoes Work",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "HOW VOLCANOES WORK\n\nA volcano is an opening in the Earth's surface through which hot rock, gas and ash can escape. _________ (1.1) This layer is not solid but partly molten, which means that it behaves a little like very thick, slow-moving syrup. The molten rock, known as magma, is lighter than the solid rock around it, so it slowly rises towards the surface.\n\nAs the magma climbs, dissolved gases inside it begin to expand. _________ (1.2) When the pressure becomes too great, the magma is forced out through a weak point in the crust. _________ (1.3) From that moment on, the material is no longer called magma but lava.\n\nNot every eruption looks the same. _________ (1.4) Thick, sticky magma traps gas until it explodes violently, throwing rock and ash high into the sky. _________ (1.5) Because it flows so easily, it rarely produces a dangerous explosion.\n\nVolcanoes may seem purely destructive, yet they also bring benefits. _________ (1.6) In addition, the heat stored deep underground can be used to generate clean electricity. For these reasons, millions of people choose to live near volcanoes despite the obvious risks.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Most of this molten material comes from a deep layer called the mantle, far beneath our feet."
+        },
+        {
+          "letter": "B",
+          "text": "The shape of an eruption depends mainly on how thick the magma is and how much gas it contains."
+        },
+        {
+          "letter": "C",
+          "text": "Runny magma, on the other hand, lets gas escape gently and pours out as slow rivers of lava."
+        },
+        {
+          "letter": "D",
+          "text": "Over thousands of years, cooled lava breaks down into soil that is unusually rich and fertile."
+        },
+        {
+          "letter": "E",
+          "text": "This sudden release is what we call an eruption, and it can be quiet or extremely powerful."
+        },
+        {
+          "letter": "F",
+          "text": "They behave just like bubbles in a fizzy drink when the bottle is opened too quickly."
+        },
+        {
+          "letter": "G",
+          "text": "Scientists who study these mountains use special instruments to predict when they might wake up."
+        },
+        {
+          "letter": "H",
+          "text": "The very first map of the ocean floor was finally completed in the middle of the last century."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "answer": "F"
+        },
+        {
+          "id": "1.3",
+          "answer": "E"
+        },
+        {
+          "id": "1.4",
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}

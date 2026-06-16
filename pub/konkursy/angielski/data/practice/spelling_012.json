@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: Animals & Wildlife",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "An animal that eats only plants and never meat is called a h _ _ _ _ _ _ _ e.",
+          "hint": "h _ _ _ _ _ _ _ e",
+          "answer": "herbivore"
+        },
+        {
+          "id": "1.2",
+          "stem": "The blue whale is the largest m _ _ _ _ l on Earth, even bigger than the biggest dinosaurs.",
+          "hint": "m _ _ _ _ l",
+          "answer": "mammal"
+        },
+        {
+          "id": "1.3",
+          "stem": "A young frog that lives in water and has a tail but no legs yet is called a t _ _ _ _ l _.",
+          "hint": "t _ _ _ _ l _",
+          "answer": "tadpole"
+        },
+        {
+          "id": "1.4",
+          "stem": "Bees, ants and butterflies all belong to a group of small creatures called i _ _ _ _ _ s.",
+          "hint": "i _ _ _ _ _ s",
+          "answer": "insects"
+        },
+        {
+          "id": "1.5",
+          "stem": "A camel can survive for a long time in the d _ _ _ _ t because it stores fat in its hump.",
+          "hint": "d _ _ _ _ t",
+          "answer": "desert"
+        },
+        {
+          "id": "1.6",
+          "stem": "Snakes, lizards and crocodiles are cold-blooded animals known as r _ _ _ _ l _ s.",
+          "hint": "r _ _ _ _ l _ s",
+          "answer": "reptiles"
+        },
+        {
+          "id": "1.7",
+          "stem": "The giant p _ _ d a from China spends most of the day eating bamboo.",
+          "hint": "p _ _ d a",
+          "answer": "panda"
+        },
+        {
+          "id": "1.8",
+          "stem": "Birds build a n _ _ t out of twigs and grass to keep their eggs safe and warm.",
+          "hint": "n _ _ t",
+          "answer": "nest"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Dialogue: Mixed Everyday English",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij kazdy z ponizszych dialogow (1.1-1.6), wybierajac odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "X: Would you like another piece of cake?\nY: _________",
+          "options": [
+            "A) No, thanks. I'm full already.",
+            "B) Yes, I am very piece.",
+            "C) No, I don't like to another."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "X: I'm really sorry I broke your mug.\nY: _________",
+          "options": [
+            "A) Never mind, it doesn't matter.",
+            "B) Yes, you are very sorry me.",
+            "C) Please don't mind it me."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "X: How long does it take to get to the station?\nY: _________",
+          "options": [
+            "A) It takes about ten minutes on foot.",
+            "B) It takes since ten minutes walking.",
+            "C) About ten minutes by the foot."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "X: Could you turn the music down a bit?\nY: _________",
+          "options": [
+            "A) Yes, please turn down it more.",
+            "B) Of course, sorry it was so loud.",
+            "C) No, the music is turning me down."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "X: What does your new teacher look like?\nY: _________",
+          "options": [
+            "A) She likes reading and tennis.",
+            "B) She is looking like very kind.",
+            "C) She's tall and has short brown hair."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "X: Do you fancy going to the cinema tonight?\nY: _________",
+          "options": [
+            "A) Yes, I fancy it the cinema tonight.",
+            "B) That sounds great. What's on?",
+            "C) No, I don't fancy to go there."
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: Clothes & Fashion",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "It was freezing outside, so she wrapped a warm woollen s _ _ _ f around her neck.",
+          "hint": "s _ _ _ f",
+          "answer": "scarf"
+        },
+        {
+          "id": "1.2",
+          "stem": "These shoes are too big for me; could you bring me a smaller s _ _ e, please?",
+          "hint": "s _ _ e",
+          "answer": "size"
+        },
+        {
+          "id": "1.3",
+          "stem": "Before paying, customers can go to the fitting room to t _ _ on the clothes.",
+          "hint": "t _ _",
+          "answer": "try"
+        },
+        {
+          "id": "1.4",
+          "stem": "On rainy days I always wear my waterproof j _ _ _ e _ to stay dry.",
+          "hint": "j _ _ _ e _",
+          "answer": "jacket"
+        },
+        {
+          "id": "1.5",
+          "stem": "My favourite jeans have a small p _ _ _ e _ on the front where I keep my keys.",
+          "hint": "p _ _ _ e _",
+          "answer": "pocket"
+        },
+        {
+          "id": "1.6",
+          "stem": "She loves bright colours, so she chose a yellow dress with a green b _ _ t around the waist.",
+          "hint": "b _ _ t",
+          "answer": "belt"
+        },
+        {
+          "id": "1.7",
+          "stem": "The shirt was too long, so the tailor offered to s _ _ _ t _ n the sleeves for me.",
+          "hint": "s _ _ _ t _ n",
+          "answer": "shorten"
+        },
+        {
+          "id": "1.8",
+          "stem": "This jumper is made of pure c _ _ t _ n, so it feels soft and is easy to wash.",
+          "hint": "c _ _ t _ n",
+          "answer": "cotton"
+        }
+      ]
+    }
+  ]
+}

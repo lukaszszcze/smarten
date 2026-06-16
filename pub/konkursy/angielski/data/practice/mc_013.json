@@ -1,0 +1,74 @@
+{
+  "title": "Multiple Choice: Quantifiers & Countability",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "We don't have _________ milk left, so I'll buy some at the shop.",
+          "options": [
+            "A) many",
+            "B) much",
+            "C) few"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "There were _________ people at the concert that we couldn't find a seat.",
+          "options": [
+            "A) so many",
+            "B) so much",
+            "C) too much"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "I have only got _________ money on me, so we can't take a taxi.",
+          "options": [
+            "A) a few",
+            "B) a little",
+            "C) few"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "_________ of the homework was difficult, but I managed to finish it.",
+          "options": [
+            "A) Several",
+            "B) A number",
+            "C) A lot"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "She gave me some useful _________ about the trip before I left.",
+          "options": [
+            "A) advices",
+            "B) advice",
+            "C) an advice"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "There isn't _________ bread for everyone, so please don't take too much.",
+          "options": [
+            "A) enough",
+            "B) many",
+            "C) plenty"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

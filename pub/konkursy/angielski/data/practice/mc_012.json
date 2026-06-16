@@ -1,0 +1,74 @@
+{
+  "title": "Multiple Choice: Relative Clauses",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "That's the boy _________ won the spelling competition last week.",
+          "options": [
+            "A) which",
+            "B) who",
+            "C) whose"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "We visited a castle _________ walls were over five hundred years old.",
+          "options": [
+            "A) whose",
+            "B) who's",
+            "C) which"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "This is the museum _________ I saw the dinosaur skeleton.",
+          "options": [
+            "A) which",
+            "B) who",
+            "C) where"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "My grandfather, _________ is eighty now, still goes swimming every morning.",
+          "options": [
+            "A) which",
+            "B) who",
+            "C) what"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "The film _________ we watched on Saturday was really exciting.",
+          "options": [
+            "A) who",
+            "B) whose",
+            "C) that"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Do you remember the summer _________ we travelled to Scotland together?",
+          "options": [
+            "A) when",
+            "B) which",
+            "C) who"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

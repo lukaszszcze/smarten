@@ -1,0 +1,101 @@
+{
+  "title": "True/False/NI: A Year Volunteering Abroad",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "A YEAR VOLUNTEERING ABROAD\n\nWhen I finished school at eighteen, I was not ready to start at university straight away. My parents expected me to apply at once, but I felt that I needed a break and a real adventure first. After weeks of searching online, I signed up with a small charity that sends young people overseas to help in rural schools. Three months later, I was on a plane to Tanzania, more nervous than I had ever been in my life.\n\nThe village where I was placed had no internet and only a few hours of electricity each evening. At first this frightened me, but I soon got used to it. My main job was to assist a local teacher with English lessons for children aged six to eleven. I had imagined that I would simply stand at the front and talk, yet teaching turned out to be far harder than I expected. The pupils were eager but shy, and it took me a month to win their trust.\n\nLife in the village was not always easy. The rainy season turned the roads to thick mud, and once I was ill for a week with a stomach bug. Still, the kindness of the families I lived with made up for every difficulty. They shared their meals with me even when food was scarce, and they taught me a few words of Swahili every day.\n\nLooking back, that year was the turning point of my life. I learned that I am more independent than I believed, and I discovered that I genuinely love teaching. I am now training to become a primary school teacher in Britain, and I still write letters to two of my former pupils. Volunteering abroad did not make me rich, but it gave me something far more valuable: a clearer idea of who I want to be.",
+      "source": "www.youngvolunteers.example.org",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "The narrator decided to postpone going to university.",
+          "answer": "T",
+          "explanation": "TRUE — the narrator 'was not ready to start at university straight away' and 'felt that I needed a break and a real adventure first'."
+        },
+        {
+          "id": "1.2",
+          "statement": "The narrator's parents encouraged the idea of volunteering abroad instead of studying.",
+          "answer": "F",
+          "explanation": "FALSE — the parents 'expected me to apply at once', which contradicts encouraging a year abroad first."
+        },
+        {
+          "id": "1.3",
+          "statement": "The village where the narrator stayed had a reliable internet connection.",
+          "answer": "F",
+          "explanation": "FALSE — the village 'had no internet and only a few hours of electricity each evening'."
+        },
+        {
+          "id": "1.4",
+          "statement": "Teaching proved more difficult than the narrator had expected.",
+          "answer": "T",
+          "explanation": "TRUE — 'teaching turned out to be far harder than I expected'."
+        },
+        {
+          "id": "1.5",
+          "statement": "The narrator paid the host families for the meals they provided.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — the text says the families 'shared their meals with me even when food was scarce' but never states whether any payment was made."
+        },
+        {
+          "id": "1.6",
+          "statement": "After the year abroad, the narrator gave up the idea of becoming a teacher.",
+          "answer": "F",
+          "explanation": "FALSE — the narrator is 'now training to become a primary school teacher in Britain'."
+        }
+      ],
+      "scoringScheme": {
+        "6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "an organisation that helps people in need and is not run to make a profit",
+          "answer": [
+            "charity",
+            "a charity",
+            "a small charity"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "in or to a foreign country, across the sea",
+          "answer": [
+            "overseas",
+            "abroad"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "keen and full of enthusiasm to do something",
+          "answer": [
+            "eager"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "available only in small amounts; not enough to meet demand",
+          "answer": [
+            "scarce"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "a moment when an important change begins to happen",
+          "answer": [
+            "turning point",
+            "a turning point",
+            "the turning point"
+          ]
+        }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}

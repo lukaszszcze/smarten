@@ -1,0 +1,74 @@
+{
+  "title": "Dialogue: Asking for Directions",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij kazdy z ponizszych dialogow (1.1-1.6), wybierajac odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "X: Excuse me, how do I get to the train station?\nY: _________",
+          "options": [
+            "A) Go straight on and turn left at the bank.",
+            "B) Yes, I get there very often.",
+            "C) The station is going to me now."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "X: Is the museum far from here?\nY: _________",
+          "options": [
+            "A) No, it's just round the corner.",
+            "B) No, I don't have a museum.",
+            "C) Yes, the museum is here from far."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "X: _________\nY: Sure. Take the second turning on the right.",
+          "options": [
+            "A) When does the next bus leave?",
+            "B) Could you tell me the way to the library, please?",
+            "C) How much is a ticket to the city centre?"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "X: Should I take the bus or can I walk?\nY: _________",
+          "options": [
+            "A) It's too late, so you must walk yesterday.",
+            "B) You can easily walk - it's only five minutes away.",
+            "C) The bus walks faster than you every day."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "X: Thanks a lot for your help!\nY: _________",
+          "options": [
+            "A) No problem, have a nice day.",
+            "B) Yes, I am very welcome here.",
+            "C) Please, I help you the directions."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "X: Sorry, I think I'm lost. Where am I now?\nY: _________",
+          "options": [
+            "A) You are lost yourself very much here.",
+            "B) Me too, I am also a tourist in this town.",
+            "C) You're on Market Street, near the post office."
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: The Science of Sleep",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "THE SCIENCE OF SLEEP\n\nEvery night, your body switches off and enters one of the strangest states known to science. For a long time, people believed that sleep was simply a way of resting the body after a busy day. _________ (1.1) In fact, while you are sleeping, your brain is surprisingly active and carries out tasks that keep you healthy.\n\nScientists who study sleep have found that it is not a single, steady condition. _________ (1.2) During the deepest of these, your muscles relax completely and your breathing slows right down. Then comes a phase called REM sleep, when your eyes dart about quickly behind closed lids. _________ (1.3) This is the stage in which most of your dreams take place.\n\nSleep also helps your memory. _________ (1.4) Imagine arriving at a messy desk and tidying every paper into the correct drawer; that is roughly what your sleeping brain does with the lessons of the day. _________ (1.5) That is exactly why teachers tell students never to stay up all night before an important examination.\n\nDespite all this evidence, many young people simply do not get enough rest. Bright screens on phones and tablets trick the brain into thinking it is still daytime. _________ (1.6) Experts therefore suggest switching off devices at least an hour before bed and keeping the bedroom cool and dark.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "However, modern research has shown that this old idea is far from the whole truth."
+        },
+        {
+          "letter": "B",
+          "text": "Instead, you pass through several different stages, repeating the whole cycle a few times each night."
+        },
+        {
+          "letter": "C",
+          "text": "As a result, falling asleep becomes much harder than it should be."
+        },
+        {
+          "letter": "D",
+          "text": "Strangely, your brain is then almost as busy as it is when you are wide awake."
+        },
+        {
+          "letter": "E",
+          "text": "When this clever filing job is interrupted, the facts you revised slip away and prove far harder to recall."
+        },
+        {
+          "letter": "F",
+          "text": "Each night, it quietly sorts through everything you have experienced and decides what is worth keeping."
+        },
+        {
+          "letter": "G",
+          "text": "Most adults need around eight hours, although the exact amount changes with age."
+        },
+        {
+          "letter": "H",
+          "text": "Without these careful repairs, even a short walk would leave your bones aching for days."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "answer": "F"
+        },
+        {
+          "id": "1.5",
+          "answer": "E"
+        },
+        {
+          "id": "1.6",
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Grammar Gaps: Tenses Review",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 6,
+      "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "By the time we _________ (arrive), the film _________ (already / start).",
+          "answer": [
+            "arrived",
+            "had ('d) already started"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "Look at those clouds! I think it _________ (rain) soon, so we _________ (not go) to the park.",
+          "answer": [
+            "is ('s) going to rain",
+            "will not (won't) go"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "While my brother _________ (do) his homework, the lights suddenly _________ (go) out.",
+          "answer": [
+            "was doing",
+            "went"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "I _________ (know) Sophie since 2019, but I _________ (not see) her last month.",
+          "answer": [
+            "have ('ve) known",
+            "did not (didn't) see"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "This time next week we _________ (lie) on a beach, because our holiday _________ (begin) on Saturday.",
+          "answer": [
+            "will ('ll) be lying",
+            "begins"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "She was tired because she _________ (work) all day, and she still _________ (not finish) the report.",
+          "answer": [
+            "had been working",
+            "had not (hadn't) finished"
+          ]
+        }
+      ]
+    }
+  ]
+}

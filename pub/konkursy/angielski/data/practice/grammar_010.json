@@ -1,0 +1,62 @@
+{
+  "title": "Grammar Gaps: Mixed Grammar II",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 6,
+      "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "By the time we _________ (arrive), the film _________ (already / start).",
+          "answer": [
+            "arrived",
+            "had ('d) already started"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "If I _________ (be) you, I _________ (not / lend) him any more money.",
+          "answer": [
+            "were, was",
+            "would not (wouldn't) lend"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "She is the _________ (intelligent) student I _________ (ever / meet).",
+          "answer": [
+            "most intelligent",
+            "have ('ve) ever met"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "This bridge _________ (build) in 1890, and it _________ (use) every day since then.",
+          "answer": [
+            "was built",
+            "has ('s) been used"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "I look forward to _________ (see) you again; I wish you _________ (live) closer to us.",
+          "answer": [
+            "seeing",
+            "lived"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "While my sister _________ (cook), I _________ (lay) the table for dinner.",
+          "answer": [
+            "was cooking",
+            "laid"
+          ]
+        }
+      ]
+    }
+  ]
+}

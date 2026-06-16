@@ -1,0 +1,62 @@
+{
+  "title": "Grammar Gaps: Conditionals & Wishes",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 6,
+      "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "If you _________ (heat) ice, it _________ (melt).",
+          "answer": [
+            "heat",
+            "melts"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "I wish I _________ (not eat) so much cake yesterday, because now I _________ (feel) sick.",
+          "answer": [
+            "had not (hadn't) eaten",
+            "feel"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "If we _________ (leave) earlier this morning, we _________ (catch) the train, but now it is too late.",
+          "answer": [
+            "had left",
+            "would have ('d have) caught"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "If I _________ (be) you, I _________ (not lend) him any more money.",
+          "answer": [
+            "were",
+            "would not (wouldn't) lend"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "She wishes her brother _________ (not play) loud music every night, so that she _________ (can) study in peace.",
+          "answer": [
+            "would not (wouldn't) play",
+            "could"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "Unless it _________ (stop) raining soon, we _________ (have to) cancel the picnic.",
+          "answer": [
+            "stops",
+            "will have ('ll have) to"
+          ]
+        }
+      ]
+    }
+  ]
+}

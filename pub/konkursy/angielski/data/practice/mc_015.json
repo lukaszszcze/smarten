@@ -1,0 +1,74 @@
+{
+  "title": "Multiple Choice: Idioms & Fixed Expressions",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "I don't know the answer yet, but I'll _________ my mind by tomorrow.",
+          "options": [
+            "A) take up",
+            "B) make up",
+            "C) give up"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "The maths test was really easy - it was a piece of _________!",
+          "options": [
+            "A) cake",
+            "B) bread",
+            "C) pie"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Stop worrying about the exam. _________ your fingers and hope for the best!",
+          "options": [
+            "A) Press",
+            "B) Cross",
+            "C) Hold"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "I promise I won't tell anyone your secret. My lips are _________.",
+          "options": [
+            "A) sealed",
+            "B) locked",
+            "C) shut"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "Wake up! It's already nine o'clock and you're still _________ bed!",
+          "options": [
+            "A) on",
+            "B) at",
+            "C) in"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Learning the names was hard at first, but now I know them _________ heart.",
+          "options": [
+            "A) by",
+            "B) with",
+            "C) from"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

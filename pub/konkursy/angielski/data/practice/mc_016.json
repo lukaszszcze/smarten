@@ -1,0 +1,74 @@
+{
+  "title": "Multiple Choice: Mixed Vocabulary",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "My grandmother is very _________ ; she always offers to help everyone she meets.",
+          "options": [
+            "A) lazy",
+            "B) kind",
+            "C) rude"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "We couldn't go to the beach because the weather was terrible and it _________ all afternoon.",
+          "options": [
+            "A) poured",
+            "B) shone",
+            "C) melted"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Could you _________ the music down, please? My little brother is trying to sleep.",
+          "options": [
+            "A) make",
+            "B) put",
+            "C) turn"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "The film was so _________ that half the audience fell asleep before the end.",
+          "options": [
+            "A) exciting",
+            "B) boring",
+            "C) frightening"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "I'm not very good _________ cooking, so I usually eat sandwiches for dinner.",
+          "options": [
+            "A) at",
+            "B) on",
+            "C) for"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "You should see a doctor if your cough doesn't _________ better within a few days.",
+          "options": [
+            "A) get",
+            "B) take",
+            "C) do"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

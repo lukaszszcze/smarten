@@ -1,0 +1,67 @@
+{
+  "title": "Word Formation: The World of Sport",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "ABLE",
+        "ATHLETE",
+        "COMPETE",
+        "EXCITE",
+        "HEALTH",
+        "INJURE",
+        "POPULAR",
+        "STRONG",
+        "TRAIN",
+        "WIN"
+      ],
+      "text": "Sport plays an important part in the lives of millions of people around the world. Many young people join a club to improve their fitness and to make new friends, because regular exercise keeps both the body and the mind 1.1. _________. A good coach offers careful 1.2. _________ so that beginners learn the correct skills from the very start. Modern sport has grown enormously in 1.3. _________, and huge crowds now fill stadiums to watch their favourite teams. The atmosphere during a match can be incredibly 1.4. _________, especially when the score is close. Of course, success does not come easily. A true 1.5. _________ must work hard for many years, often waking up before dawn to practise. Players who push their bodies too far risk a serious 1.6. _________, which can end a career. The greatest 1.7. _________ are usually those who stay calm under pressure and never give up. They believe that being mentally 1.8. _________ matters just as much as natural talent.",
+      "items": [
+        {
+          "id": "1.1",
+          "baseWord": "HEALTH",
+          "answer": "healthy"
+        },
+        {
+          "id": "1.2",
+          "baseWord": "TRAIN",
+          "answer": "training"
+        },
+        {
+          "id": "1.3",
+          "baseWord": "POPULAR",
+          "answer": "popularity"
+        },
+        {
+          "id": "1.4",
+          "baseWord": "EXCITE",
+          "answer": "exciting"
+        },
+        {
+          "id": "1.5",
+          "baseWord": "ATHLETE",
+          "answer": "athlete"
+        },
+        {
+          "id": "1.6",
+          "baseWord": "INJURE",
+          "answer": "injury"
+        },
+        {
+          "id": "1.7",
+          "baseWord": "WIN",
+          "answer": "winners"
+        },
+        {
+          "id": "1.8",
+          "baseWord": "STRONG",
+          "answer": "strong"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Multiple Choice: Reported Speech",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Tom said that he _________ tired after the long journey.",
+          "options": [
+            "A) is",
+            "B) was",
+            "C) has been"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "She asked me where I _________ the previous weekend.",
+          "options": [
+            "A) have gone",
+            "B) did go",
+            "C) had gone"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "The teacher told us _________ open our books.",
+          "options": [
+            "A) to",
+            "B) that we",
+            "C) for"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "My mum asked me _________ I had finished my homework.",
+          "options": [
+            "A) that",
+            "B) what",
+            "C) whether"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "Anna said she would call me the _________ day.",
+          "options": [
+            "A) following",
+            "B) tomorrow",
+            "C) yesterday"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "The waiter asked the customers what they _________ to drink.",
+          "options": [
+            "A) do want",
+            "B) wanted",
+            "C) want"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

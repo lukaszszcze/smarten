@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: House & Home",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "We keep the car in the g _ _ _ g e next to the house.",
+          "hint": "g _ _ _ g e",
+          "answer": "garage"
+        },
+        {
+          "id": "1.2",
+          "stem": "After cooking, my mum washes the dishes in the k _ _ c h e n.",
+          "hint": "k _ _ c h e n",
+          "answer": "kitchen"
+        },
+        {
+          "id": "1.3",
+          "stem": "I sleep upstairs in my own b _ _ r o o m.",
+          "hint": "b _ _ r o o m",
+          "answer": "bedroom"
+        },
+        {
+          "id": "1.4",
+          "stem": "Please open the w _ _ d o w to let some fresh air in.",
+          "hint": "w _ _ d o w",
+          "answer": "window"
+        },
+        {
+          "id": "1.5",
+          "stem": "When it is cold, we light a fire and sit beside the f _ r e p _ a c e.",
+          "hint": "f _ r e p _ a c e",
+          "answer": "fireplace"
+        },
+        {
+          "id": "1.6",
+          "stem": "Wipe your feet on the mat before you walk across the c _ r p _ t.",
+          "hint": "c _ r p _ t",
+          "answer": "carpet"
+        },
+        {
+          "id": "1.7",
+          "stem": "We climb the s _ a _ r s to reach the bedrooms on the first floor.",
+          "hint": "s _ a _ r s",
+          "answer": "stairs"
+        },
+        {
+          "id": "1.8",
+          "stem": "In summer we have lunch outside on the b _ _ c o n y of our flat.",
+          "hint": "b _ _ c o n y",
+          "answer": "balcony"
+        }
+      ]
+    }
+  ]
+}

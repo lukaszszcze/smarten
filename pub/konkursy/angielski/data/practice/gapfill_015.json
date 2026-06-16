@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: The Story of Blue Jeans",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "THE STORY OF BLUE JEANS\n\nToday jeans are worn all over the world, but they began as simple work clothes. _________ (1.1) Miners, farmers and builders all needed trousers that would not fall apart after a few weeks of hard labour.\n\nThe man who helped solve this problem was Levi Strauss, a German businessman who moved to the United States. In the 1850s he travelled to California, where thousands of people were searching for gold. _________ (1.2) He began selling strong cotton cloth and other goods to the miners.\n\nOne of his customers was a tailor named Jacob Davis. _________ (1.3) To make the trousers last longer, he added small metal rivets at the points where the cloth was likely to tear. The idea worked extremely well, but Davis did not have enough money to protect it on his own.\n\nFor this reason, he wrote to Strauss and suggested that the two men should work together. _________ (1.4) In 1873 they received an official patent for their riveted trousers, and modern jeans were born.\n\nThe blue colour came from a natural dye called indigo. _________ (1.5) Workers liked it because the dark shade hid dirt and stains during a long day. Over time, the fabric itself became known as denim.\n\nFor many years jeans were seen only as clothing for hard physical work. _________ (1.6) Today they are a symbol of comfort and freedom, and almost everyone owns at least one pair.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "He noticed that the workers there desperately needed tough clothing that could survive difficult conditions."
+        },
+        {
+          "letter": "B",
+          "text": "In the nineteenth century, ordinary trousers simply could not survive such tough conditions."
+        },
+        {
+          "letter": "C",
+          "text": "This substance had been used to colour fabric for thousands of years before jeans existed."
+        },
+        {
+          "letter": "D",
+          "text": "He bought cloth from Strauss and used it to make sturdy trousers for local workers."
+        },
+        {
+          "letter": "E",
+          "text": "Strauss agreed at once, and together they applied to register the design."
+        },
+        {
+          "letter": "F",
+          "text": "Then, in the second half of the twentieth century, young people began to wear them simply because they liked the style."
+        },
+        {
+          "letter": "G",
+          "text": "Most miners returned home with no gold at all and very little money."
+        },
+        {
+          "letter": "H",
+          "text": "Sewing machines were already common in factories across Europe by that time."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "answer": "E"
+        },
+        {
+          "id": "1.5",
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "answer": "F"
+        }
+      ]
+    }
+  ]
+}

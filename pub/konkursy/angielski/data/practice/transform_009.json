@@ -1,0 +1,56 @@
+{
+  "title": "Sentence Transformation: Conditionals & Time Clauses",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 6,
+      "instruction": "Przeczytaj zdania. Wykorzystując wyrazy podane wielkimi literami, uzupełnij każde zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "Take an umbrella because it might rain later.",
+          "keyword": "IF",
+          "transformed": "Take an umbrella _________ later.",
+          "answer": "if it rains"
+        },
+        {
+          "id": "1.2",
+          "original": "Maybe you will see Tom; please give him my number.",
+          "keyword": "WHEN",
+          "transformed": "Please give Tom my number _________ him.",
+          "answer": "when you see"
+        },
+        {
+          "id": "1.3",
+          "original": "I am not tall enough to reach the top shelf.",
+          "keyword": "WERE",
+          "transformed": "If I _________, I could reach the top shelf.",
+          "answer": "were taller"
+        },
+        {
+          "id": "1.4",
+          "original": "Don't go out before you finish your homework.",
+          "keyword": "UNTIL",
+          "transformed": "Don't go out _________ your homework.",
+          "answer": "until you finish"
+        },
+        {
+          "id": "1.5",
+          "original": "You will miss the bus if you don't hurry up.",
+          "keyword": "UNLESS",
+          "transformed": "You will miss the bus _________ up.",
+          "answer": "unless you hurry"
+        },
+        {
+          "id": "1.6",
+          "original": "She didn't study, so she failed the exam.",
+          "keyword": "HAD",
+          "transformed": "If she _________, she would have passed the exam.",
+          "answer": "had studied"
+        }
+      ]
+    }
+  ]
+}

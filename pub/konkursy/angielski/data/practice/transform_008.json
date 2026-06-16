@@ -1,0 +1,56 @@
+{
+  "title": "Sentence Transformation: Reported Speech in Depth",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 6,
+      "instruction": "Przeczytaj zdania. Wykorzystując wyrazy podane wielkimi literami, uzupełnij każde zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "\"I have finished my homework,\" said Mia.",
+          "keyword": "HAD",
+          "transformed": "Mia said that she _________ her homework.",
+          "answer": "had finished"
+        },
+        {
+          "id": "1.2",
+          "original": "\"Don't touch the wet paint,\" the teacher told us.",
+          "keyword": "NOT",
+          "transformed": "The teacher told us _________ the wet paint.",
+          "answer": "not to touch"
+        },
+        {
+          "id": "1.3",
+          "original": "\"Where do you live?\" Tom asked me.",
+          "keyword": "LIVED",
+          "transformed": "Tom asked me where I _________.",
+          "answer": "lived"
+        },
+        {
+          "id": "1.4",
+          "original": "\"Will you help me tomorrow?\" she asked him.",
+          "keyword": "WOULD",
+          "transformed": "She asked him if he _________ her the next day.",
+          "answer": "would help"
+        },
+        {
+          "id": "1.5",
+          "original": "\"You should see a doctor,\" my friend said to me.",
+          "keyword": "ADVISED",
+          "transformed": "My friend _________ a doctor.",
+          "answer": "advised me to see"
+        },
+        {
+          "id": "1.6",
+          "original": "\"I'm sorry I broke your phone,\" said Leo.",
+          "keyword": "FOR",
+          "transformed": "Leo apologised _________ my phone.",
+          "answer": "for breaking"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "title": "British Cities & Counties",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 10,
+      "instruction": "Wybierz poprawna odpowiedz A, B, C lub D.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which English city is famous for its two universities and the historic 'Bridge of Sighs', and gives its name to a county in eastern England?",
+          "options": [
+            "A. Oxford",
+            "B. Cambridge",
+            "C. Durham",
+            "D. York"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "question": "Which city is the capital of Scotland?",
+          "options": [
+            "A. Glasgow",
+            "B. Aberdeen",
+            "C. Edinburgh",
+            "D. Dundee"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "question": "The county of Cornwall is at the south-western tip of England. What is its county town?",
+          "options": [
+            "A. Exeter",
+            "B. Plymouth",
+            "C. Bristol",
+            "D. Truro"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "question": "Which Welsh city is the capital of Wales and stands at the mouth of the River Taff?",
+          "options": [
+            "A. Cardiff",
+            "B. Swansea",
+            "C. Newport",
+            "D. Bangor"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "question": "The Beatles were formed in which English city, home to the famous Mersey waterfront?",
+          "options": [
+            "A. Manchester",
+            "B. Liverpool",
+            "C. Leeds",
+            "D. Sheffield"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "question": "Which city is the capital of Northern Ireland and the place where the RMS Titanic was built?",
+          "options": [
+            "A. Dublin",
+            "B. Cork",
+            "C. Belfast",
+            "D. Londonderry"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "question": "Stratford-upon-Avon, the birthplace of the playwright William Shakespeare, lies in which English county?",
+          "options": [
+            "A. Warwickshire",
+            "B. Yorkshire",
+            "C. Kent",
+            "D. Devon"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "question": "Which English county, in the far south-east, is often called the 'Garden of England' and faces France across the Channel?",
+          "options": [
+            "A. Surrey",
+            "B. Essex",
+            "C. Kent",
+            "D. Sussex"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "question": "The Roman baths that give the city its name can be visited in which spa city in Somerset?",
+          "options": [
+            "A. Bath",
+            "B. Wells",
+            "C. Bristol",
+            "D. Salisbury"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "question": "Which northern English city has a medieval Minster and a county named after it that was historically divided into Ridings?",
+          "options": [
+            "A. Lincoln",
+            "B. York",
+            "C. Carlisle",
+            "D. Newcastle"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Word Spelling: City & Public Places",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij kazde z ponizszych zdan jednym pasujacym slowem. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow. Liczba kresek odpowiada liczbie brakujacych liter w wyrazie, a niektore litery zostaly juz podane.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "If you want to borrow a book, go to the l _ _ _ _ _ y and show your card.",
+          "hint": "l _ _ _ _ _ y",
+          "answer": "library"
+        },
+        {
+          "id": "1.2",
+          "stem": "We waited on the p _ _ _ _ _ _ m until the train slowly came in.",
+          "hint": "p _ _ _ _ _ _ m",
+          "answer": "platform"
+        },
+        {
+          "id": "1.3",
+          "stem": "There is a zebra c _ _ _ _ _ _ g where you can cross the busy road safely.",
+          "hint": "c _ _ _ _ _ _ g",
+          "answer": "crossing"
+        },
+        {
+          "id": "1.4",
+          "stem": "Cars must stop when the traffic l _ _ _ _ _ turn red.",
+          "hint": "l _ _ _ _ _",
+          "answer": "lights"
+        },
+        {
+          "id": "1.5",
+          "stem": "Children love feeding the ducks by the lake in the p _ _ k.",
+          "hint": "p _ _ k",
+          "answer": "park"
+        },
+        {
+          "id": "1.6",
+          "stem": "You can post your letters in that red p _ _ _ _ _ x on the corner.",
+          "hint": "p _ _ _ _ _ x",
+          "answer": "postbox"
+        },
+        {
+          "id": "1.7",
+          "stem": "The bus stopped at the s _ _ _ _ _ n so the passengers could catch their train.",
+          "hint": "s _ _ _ _ _ n",
+          "answer": "station"
+        },
+        {
+          "id": "1.8",
+          "stem": "We crossed the river using the old stone b _ _ _ _ e.",
+          "hint": "b _ _ _ _ e",
+          "answer": "bridge"
+        }
+      ]
+    }
+  ]
+}

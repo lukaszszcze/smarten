@@ -1,0 +1,94 @@
+{
+  "title": "Matching: Rivers, Mountains & Lakes",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 3,
+      "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is the longest river in the United Kingdom and flows through the English town of Shrewsbury."
+        },
+        {
+          "letter": "B",
+          "text": "This is the highest mountain in Africa, a snow-capped peak rising above the plains of Tanzania."
+        },
+        {
+          "letter": "C",
+          "text": "It is the largest lake in Great Britain by surface area and lies in the Scottish Highlands."
+        },
+        {
+          "letter": "D",
+          "text": "This long South American river carries more water than any other river on Earth."
+        },
+        {
+          "letter": "E",
+          "text": "It is the highest mountain on Earth, standing on the border between Nepal and China."
+        },
+        {
+          "letter": "F",
+          "text": "This deep Russian lake holds more fresh water than any other lake in the world."
+        },
+        {
+          "letter": "G",
+          "text": "It is the longest river in the world and flows north through Egypt to the Mediterranean Sea."
+        },
+        {
+          "letter": "H",
+          "text": "This is the highest mountain in the Alps, found on the border of France and Italy."
+        },
+        {
+          "letter": "I",
+          "text": "It is the largest lake in Africa and the main source of the river mentioned in this task as the longest."
+        },
+        {
+          "letter": "J",
+          "text": "This is the largest desert in the world, covering much of northern Africa."
+        },
+        {
+          "letter": "K",
+          "text": "It is the deepest ocean trench on the planet, lying in the western Pacific."
+        },
+        {
+          "letter": "L",
+          "text": "This city is the capital of Italy and stands on the banks of the Tiber."
+        }
+      ],
+      "items": [
+        {
+          "id": "Rivers",
+          "answers": [
+            "A",
+            "D",
+            "G"
+          ]
+        },
+        {
+          "id": "Mountains",
+          "answers": [
+            "B",
+            "E",
+            "H"
+          ]
+        },
+        {
+          "id": "Lakes",
+          "answers": [
+            "C",
+            "F",
+            "I"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "9": 3,
+        "7-8": 2,
+        "5-6": 1,
+        "0-4": 0
+      }
+    }
+  ]
+}

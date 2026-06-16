@@ -1,0 +1,124 @@
+{
+  "title": "Literature & Authors",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 10,
+      "instruction": "Wybierz poprawna odpowiedz A, B, C lub D.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Who wrote the play 'Romeo and Juliet'?",
+          "options": [
+            "A. Charles Dickens",
+            "B. William Shakespeare",
+            "C. Jane Austen",
+            "D. George Orwell"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "question": "Which author created the famous detective Sherlock Holmes?",
+          "options": [
+            "A. Arthur Conan Doyle",
+            "B. Agatha Christie",
+            "C. Ian Fleming",
+            "D. Bram Stoker"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "question": "Who is the author of the Harry Potter series of novels?",
+          "options": [
+            "A. Roald Dahl",
+            "B. C. S. Lewis",
+            "C. J. K. Rowling",
+            "D. Philip Pullman"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "question": "The novel 'Pride and Prejudice' was written by which English author?",
+          "options": [
+            "A. Emily Bronte",
+            "B. Mary Shelley",
+            "C. Virginia Woolf",
+            "D. Jane Austen"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "question": "Which American author wrote 'The Adventures of Tom Sawyer'?",
+          "options": [
+            "A. Mark Twain",
+            "B. Ernest Hemingway",
+            "C. Edgar Allan Poe",
+            "D. John Steinbeck"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "question": "Who wrote the children's book 'Charlie and the Chocolate Factory'?",
+          "options": [
+            "A. A. A. Milne",
+            "B. Roald Dahl",
+            "C. Beatrix Potter",
+            "D. Lewis Carroll"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "question": "Which Irish author wrote the play 'The Importance of Being Earnest'?",
+          "options": [
+            "A. James Joyce",
+            "B. Samuel Beckett",
+            "C. Oscar Wilde",
+            "D. W. B. Yeats"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "question": "The dystopian novel '1984' was written by which author?",
+          "options": [
+            "A. Aldous Huxley",
+            "B. H. G. Wells",
+            "C. Ray Bradbury",
+            "D. George Orwell"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.9",
+          "question": "Who created the fictional spy James Bond in a series of novels?",
+          "options": [
+            "A. Ian Fleming",
+            "B. John le Carre",
+            "C. Tom Clancy",
+            "D. Frederick Forsyth"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "question": "Which author wrote 'The Lord of the Rings'?",
+          "options": [
+            "A. Terry Pratchett",
+            "B. J. R. R. Tolkien",
+            "C. George R. R. Martin",
+            "D. Ursula K. Le Guin"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

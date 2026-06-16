@@ -1,0 +1,73 @@
+{
+  "title": "Gap Fill: The Life of Charles Dickens",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "gap_fill_sentences",
+      "points": 6,
+      "instruction": "Przeczytaj ponizszy tekst, z ktorego usunieto szesc zdan. Dobierz zdania oznaczone literami (A-H) tak, aby tekst byl spojny i logiczny. Dwa zdania zostaly podane dodatkowo i nie pasuja do zadnego fragmentu.",
+      "text": "THE LIFE OF CHARLES DICKENS\n\nCharles Dickens was born in 1812 in Portsmouth, on the southern coast of England. _________ (1.1) The family moved to London while he was still a small boy, hoping to improve their fortunes there.\n\nUnfortunately, things soon went badly wrong. When Charles was twelve, his father was sent to prison because he could not pay the money he owed. _________ (1.2) He pasted labels onto pots of black shoe polish for ten hours a day, and he never forgot how miserable that period had been.\n\nAfter a few months his father was released, and Charles was finally able to return to school. _________ (1.3) He taught himself shorthand and became a reporter, writing down the speeches of politicians word for word.\n\nHis first stories appeared in newspapers and magazines, and readers loved them immediately. _________ (1.4) Each new part of the story was printed in a cheap monthly magazine, so that even poor families could afford to follow the adventures of his characters.\n\n_________ (1.5) Crowds gathered at the docks in New York simply to buy the latest chapter as soon as the ship from England arrived. By then he had become the most famous writer in the English-speaking world.\n\nDickens used his novels to attack the cruelty he saw around him, especially the way that poor children were treated. _________ (1.6) He died in 1870 and was buried in Westminster Abbey, where many of England's greatest writers lie.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "His father worked as a clerk for the navy, and the family was comfortable but never rich."
+        },
+        {
+          "letter": "B",
+          "text": "As a result, the boy was taken out of school and forced to work in a dirty factory by the river."
+        },
+        {
+          "letter": "C",
+          "text": "However, he disliked reading and refused to open a single book for the rest of his life."
+        },
+        {
+          "letter": "D",
+          "text": "Before long he was publishing his famous novels one chapter at a time."
+        },
+        {
+          "letter": "E",
+          "text": "His readers lived not only in Britain but also far across the Atlantic Ocean."
+        },
+        {
+          "letter": "F",
+          "text": "Because of this concern, he helped to set up schools and homes for the very poorest."
+        },
+        {
+          "letter": "G",
+          "text": "Although he loved learning, he had to leave at fifteen and find a job to support his family."
+        },
+        {
+          "letter": "H",
+          "text": "For this reason, he decided that none of his books should ever be sold in America."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "answer": "G"
+        },
+        {
+          "id": "1.4",
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "answer": "E"
+        },
+        {
+          "id": "1.6",
+          "answer": "F"
+        }
+      ]
+    }
+  ]
+}

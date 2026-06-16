@@ -1,0 +1,17 @@
+{
+  "title": "Writing: Free Time & Hobbies",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "writing",
+      "points": 5,
+      "instruction": "Twoj angielski kolega Sam zapytal Cie o Twoje hobby. Napisz do niego e-mail (60-110 slow), w ktorym: (1) napiszesz, czym lubisz zajmowac sie w wolnym czasie i jak czesto to robisz, (2) wyjasnisz, dlaczego to hobby tak bardzo Ci sie podoba, (3) zaproponujesz Samowi, zeby sprobowal tego razem z Toba podczas wakacji.",
+      "items": [
+        {
+          "id": "1.1"
+        }
+      ]
+    }
+  ]
+}

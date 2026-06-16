@@ -1,0 +1,124 @@
+{
+  "title": "American Geography & Landmarks",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 10,
+      "instruction": "Wybierz poprawna odpowiedz A, B, C lub D.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which city is the capital of the United States?",
+          "options": [
+            "A. New York",
+            "B. Los Angeles",
+            "C. Washington, D.C.",
+            "D. Chicago"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "question": "The Statue of Liberty stands on an island in the harbour of which city?",
+          "options": [
+            "A. Boston",
+            "B. New York",
+            "C. Philadelphia",
+            "D. Miami"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "question": "Which river is the longest in the United States?",
+          "options": [
+            "A. The Colorado River",
+            "B. The Hudson River",
+            "C. The Missouri River",
+            "D. The Rio Grande"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "question": "In which U.S. state would you find the Grand Canyon?",
+          "options": [
+            "A. Arizona",
+            "B. Texas",
+            "C. Nevada",
+            "D. Utah"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "question": "Which of these is the largest U.S. state by area?",
+          "options": [
+            "A. California",
+            "B. Texas",
+            "C. Montana",
+            "D. Alaska"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "question": "Mount Rushmore, carved with the faces of four presidents, is located in which state?",
+          "options": [
+            "A. Colorado",
+            "B. South Dakota",
+            "C. Wyoming",
+            "D. Oregon"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "question": "Which famous bridge spans the entrance to San Francisco Bay?",
+          "options": [
+            "A. The Brooklyn Bridge",
+            "B. The Tower Bridge",
+            "C. The Golden Gate Bridge",
+            "D. The Bay Bridge of Maryland"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "question": "Which of the five Great Lakes lies entirely within the United States?",
+          "options": [
+            "A. Lake Erie",
+            "B. Lake Ontario",
+            "C. Lake Huron",
+            "D. Lake Michigan"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.9",
+          "question": "Yellowstone, the first national park in the United States, is famous for a geyser known by what name?",
+          "options": [
+            "A. Old Faithful",
+            "B. Niagara Falls",
+            "C. Devils Tower",
+            "D. Half Dome"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "question": "Which mountain range stretches along the eastern side of the United States?",
+          "options": [
+            "A. The Rocky Mountains",
+            "B. The Sierra Nevada",
+            "C. The Appalachian Mountains",
+            "D. The Cascade Range"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

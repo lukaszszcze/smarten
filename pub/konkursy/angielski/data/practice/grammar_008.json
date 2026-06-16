@@ -1,0 +1,62 @@
+{
+  "title": "Grammar Gaps: Passive & Causative II",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 6,
+      "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "Our roof was damaged in the storm, so next week we _________ (have) it _________ (repair).",
+          "answer": [
+            "will ('ll) have",
+            "repaired"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "This bridge _________ (build) in 1890 and it _________ (use) by thousands of people every day since then.",
+          "answer": [
+            "was built",
+            "has ('s) been used"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "Mum doesn't cut my hair herself; she always _________ (get) it _________ (cut) at the salon in town.",
+          "answer": [
+            "gets",
+            "cut"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "The thieves had already escaped by the time the alarm _________ (set off), so they _________ (never / catch).",
+          "answer": [
+            "was set off",
+            "were never caught"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "If the report _________ (write) more carefully, fewer mistakes _________ (make) by the students.",
+          "answer": [
+            "were written, was written",
+            "would be made"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "By the end of the month, the new stadium _________ (finish), and the first match _________ (play) there a week later.",
+          "answer": [
+            "will ('ll) have been finished",
+            "will ('ll) be played"
+          ]
+        }
+      ]
+    }
+  ]
+}

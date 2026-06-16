@@ -1,0 +1,124 @@
+{
+  "title": "Science & Inventions",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 10,
+      "instruction": "Wybierz poprawna odpowiedz A, B, C lub D.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which British scientist is famous for his three laws of motion and the law of gravity?",
+          "options": [
+            "A. Charles Darwin",
+            "B. Isaac Newton",
+            "C. Michael Faraday",
+            "D. Stephen Hawking"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "question": "Charles Darwin wrote a famous book that explained his theory of evolution. What is its short title?",
+          "options": [
+            "A. On the Origin of Species",
+            "B. A Brief History of Time",
+            "C. The Selfish Gene",
+            "D. Principia Mathematica"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "question": "Scottish scientist Alexander Fleming is famous for discovering which medicine in 1928?",
+          "options": [
+            "A. Aspirin",
+            "B. Insulin",
+            "C. Penicillin",
+            "D. Vaccines"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "question": "Which American inventor is credited with developing a practical electric light bulb?",
+          "options": [
+            "A. Henry Ford",
+            "B. Alexander Graham Bell",
+            "C. The Wright brothers",
+            "D. Thomas Edison"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "question": "Scottish-born inventor Alexander Graham Bell is best known for inventing the:",
+          "options": [
+            "A. telephone",
+            "B. television",
+            "C. radio",
+            "D. computer"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "question": "The American Wright brothers, Orville and Wilbur, made the first powered flight in 1903 using a:",
+          "options": [
+            "A. hot-air balloon",
+            "B. helicopter",
+            "C. aeroplane",
+            "D. rocket"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "question": "Which famous British physicist wrote the best-selling book 'A Brief History of Time'?",
+          "options": [
+            "A. Isaac Newton",
+            "B. Stephen Hawking",
+            "C. Albert Einstein",
+            "D. Tim Berners-Lee"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.8",
+          "question": "British computer scientist Tim Berners-Lee is credited with inventing the:",
+          "options": [
+            "A. mobile phone",
+            "B. video game",
+            "C. World Wide Web",
+            "D. microchip"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "question": "In 1996 scientists in Scotland created Dolly. What kind of animal was she?",
+          "options": [
+            "A. The first cloned sheep",
+            "B. The first dog in space",
+            "C. The first talking parrot",
+            "D. The first robot pet"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "question": "James Watt, who improved the steam engine, came from which country?",
+          "options": [
+            "A. Ireland",
+            "B. Australia",
+            "C. Canada",
+            "D. Scotland"
+          ],
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}

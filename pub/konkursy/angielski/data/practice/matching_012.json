@@ -1,0 +1,94 @@
+{
+  "title": "Matching: Inventors & Inventions",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 3,
+      "instruction": "Uzupelnij tabelke, dobierajac okreslenia (A-L) odpowiadajace danej kategorii. Trzy okreslenia podano dodatkowo i nie pasuja one do zadnej kategorii.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "He developed the first commercially successful incandescent light bulb."
+        },
+        {
+          "letter": "B",
+          "text": "She won Nobel Prizes in both physics and chemistry for her research."
+        },
+        {
+          "letter": "C",
+          "text": "He set up a famous laboratory at Menlo Park, where he invented the phonograph."
+        },
+        {
+          "letter": "D",
+          "text": "She discovered the elements polonium and radium together with her husband."
+        },
+        {
+          "letter": "E",
+          "text": "He held over a thousand patents, more than almost any other American inventor."
+        },
+        {
+          "letter": "F",
+          "text": "The unit of radioactivity, the curie, was named in her honour."
+        },
+        {
+          "letter": "G",
+          "text": "He built and flew the first powered, controlled aeroplane with his brother in 1903."
+        },
+        {
+          "letter": "H",
+          "text": "He and his brother ran a bicycle shop before they turned to aviation."
+        },
+        {
+          "letter": "I",
+          "text": "He made the famous first flight at Kitty Hawk in North Carolina."
+        },
+        {
+          "letter": "J",
+          "text": "She painted the portrait known as the Mona Lisa."
+        },
+        {
+          "letter": "K",
+          "text": "He patented the first practical telephone in 1876."
+        },
+        {
+          "letter": "L",
+          "text": "He composed nine symphonies despite becoming completely deaf."
+        }
+      ],
+      "items": [
+        {
+          "id": "Thomas Edison",
+          "answers": [
+            "A",
+            "C",
+            "E"
+          ]
+        },
+        {
+          "id": "Marie Curie",
+          "answers": [
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "id": "The Wright brothers",
+          "answers": [
+            "G",
+            "H",
+            "I"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "9": 3,
+        "7-8": 2,
+        "5-6": 1,
+        "0-4": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Dialogue: At the Doctor",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij kazdy z ponizszych dialogow (1.1-1.6), wybierajac odpowiedz A, B lub C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Doctor: What seems to be the problem today?\nPatient: _________",
+          "options": [
+            "A) I've had a sore throat since Monday.",
+            "B) Yes, I am the problem today.",
+            "C) The problem seems a doctor."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "Patient: How often should I take this medicine?\nDoctor: _________",
+          "options": [
+            "A) Twice every the day for food.",
+            "B) You take twice medicine a day.",
+            "C) Three times a day, after meals."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "Doctor: Does it hurt when I press here?\nPatient: _________",
+          "options": [
+            "A) Yes, it hurts a bit.",
+            "B) Yes, it hurt to press you.",
+            "C) No, I press here too."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "Patient: Do you think I need to stay in bed?\nDoctor: _________",
+          "options": [
+            "A) No, you are needing the bed.",
+            "B) Yes, for a couple of days at least.",
+            "C) Yes, I stay in your bed too."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "Doctor: Have you taken anything for the pain?\nPatient: _________",
+          "options": [
+            "A) Just some paracetamol this morning.",
+            "B) No, the pain takes anything.",
+            "C) Yes, I take the pain yesterday."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "Patient: Thank you, doctor. Shall I come back next week?\nDoctor: _________",
+          "options": [
+            "A) Only come back if you don't feel better.",
+            "B) Only if you will felt better next week.",
+            "C) Yes, you shall come back myself."
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

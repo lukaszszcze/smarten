@@ -1,0 +1,79 @@
+{
+  "title": "Open Cloze: How Honey Bees Live",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Honey bees are among the few insects 1.1. _________ live together in enormous, well-organised colonies. A single hive may contain tens of thousands of bees, and every one of them has a particular job to 1.2. _________. At the centre of the colony is the queen, the only female 1.3. _________ is able to lay eggs. She can produce more 1.4. _________ a thousand eggs in a single day during the busy summer months. Most of the other bees are workers, and they are 1.5. _________ kept extremely busy. Some clean the hive, others feed the young, and many fly out 1.6. _________ search of flowers. When a worker finds a rich source of nectar, she returns to the hive and performs a special dance 1.7. _________ tells the others exactly where the food can be found. The nectar is then turned 1.8. _________ honey, which the colony stores for the winter. 1.9. _________ the cold weather arrives, the bees huddle together to keep warm. Without their tireless work, many of the plants we depend 1.10. _________ would never be pollinated.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "that",
+            "which"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": "do"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "who",
+            "that"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "than"
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "always",
+            "constantly"
+          ]
+        },
+        {
+          "id": "1.6",
+          "answer": "in"
+        },
+        {
+          "id": "1.7",
+          "answer": [
+            "which",
+            "that"
+          ]
+        },
+        {
+          "id": "1.8",
+          "answer": "into"
+        },
+        {
+          "id": "1.9",
+          "answer": [
+            "When",
+            "Before",
+            "As"
+          ]
+        },
+        {
+          "id": "1.10",
+          "answer": "on"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

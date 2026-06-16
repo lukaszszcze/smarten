@@ -1,0 +1,87 @@
+{
+  "title": "Open Cloze: The Invention of the Telephone",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The telephone is an invention 1.1. _________ has changed the way people communicate all over the world. It is usually 1.2. _________ to a Scottish-born scientist called Alexander Graham Bell, who was working in the United States. Bell was deeply interested 1.3. _________ sound and in helping deaf people, 1.4. _________ his mother and his wife could not hear. For years he tried to find a way of sending the human voice 1.5. _________ a wire, but he 1.6. _________ not succeed at first.\n\nThen, on 10th March 1876, something remarkable happened. Bell spilt some acid on his clothes and called out 1.7. _________ his assistant, Thomas Watson, who was sitting in another room. Watson heard the words clearly through the machine and rushed back to tell Bell what 1.8. _________ happened. The first real telephone call had been made.\n\nBell soon patented his invention, and 1.9. _________ a few decades telephones had spread across the world. Today, billions of people 1.10. _________ talk to one another instantly, wherever they happen to be.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "that",
+            "which"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": [
+            "attributed",
+            "credited"
+          ]
+        },
+        {
+          "id": "1.3",
+          "answer": "in"
+        },
+        {
+          "id": "1.4",
+          "answer": [
+            "because",
+            "since",
+            "as"
+          ]
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "along",
+            "down",
+            "through",
+            "over"
+          ]
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "did",
+            "could"
+          ]
+        },
+        {
+          "id": "1.7",
+          "answer": "to"
+        },
+        {
+          "id": "1.8",
+          "answer": "had"
+        },
+        {
+          "id": "1.9",
+          "answer": [
+            "within",
+            "in"
+          ]
+        },
+        {
+          "id": "1.10",
+          "answer": [
+            "can",
+            "may"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

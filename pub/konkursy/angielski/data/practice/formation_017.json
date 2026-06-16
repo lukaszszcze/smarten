@@ -1,0 +1,67 @@
+{
+  "title": "Word Formation: Volunteering and Community",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "BELIEVE",
+        "DIFFER",
+        "FRIEND",
+        "GENEROUS",
+        "HELP",
+        "ORGANISE",
+        "POPULAR",
+        "PROUD",
+        "SUCCESS",
+        "VOLUNTEER"
+      ],
+      "text": "Across Britain, thousands of people give up their free time to help others. A 1.1. _________ is someone who works without being paid, simply because they care about their community. The amount of work these people do for free is almost 1.2. _________.\n\nLast spring, a group of students in our town set up a 1.3. _________ campaign to clean a neglected park. The local council was so impressed by its 1.4. _________ that it promised more funding for similar schemes.\n\nThe 1.5. _________ of the project, a teacher named Mr Hill, said that even small acts can make a real 1.6. _________ to people's lives. \"Our volunteers are wonderfully 1.7. _________ with their time,\" he added. \"They are friendly, kind, and 1.8. _________ of what they have achieved together.\"\n\nIf you ever feel like helping out, remember that your local area almost certainly needs you. You do not need special skills or a great deal of time to begin. A single afternoon spent painting a fence, reading to elderly neighbours, or collecting litter can bring a whole street closer together. Communities are built slowly, by ordinary people who simply decide to care.",
+      "items": [
+        {
+          "id": "1.1",
+          "baseWord": "VOLUNTEER",
+          "answer": "volunteer"
+        },
+        {
+          "id": "1.2",
+          "baseWord": "BELIEVE",
+          "answer": "unbelievable"
+        },
+        {
+          "id": "1.3",
+          "baseWord": "FRIEND",
+          "answer": "friendly"
+        },
+        {
+          "id": "1.4",
+          "baseWord": "SUCCESS",
+          "answer": "success"
+        },
+        {
+          "id": "1.5",
+          "baseWord": "ORGANISE",
+          "answer": "organiser"
+        },
+        {
+          "id": "1.6",
+          "baseWord": "DIFFER",
+          "answer": "difference"
+        },
+        {
+          "id": "1.7",
+          "baseWord": "GENEROUS",
+          "answer": "generous"
+        },
+        {
+          "id": "1.8",
+          "baseWord": "PROUD",
+          "answer": "proud"
+        }
+      ]
+    }
+  ]
+}
