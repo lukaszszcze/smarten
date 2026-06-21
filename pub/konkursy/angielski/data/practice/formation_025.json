@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: The Wonder of Forests",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "NATURE",
+        "BEAUTY",
+        "HIGH",
+        "PROTECT",
+        "IMPORTANT",
+        "CARE",
+        "LOSE",
+        "HOPE",
+        "SHADE",
+        "GREEN"
+      ],
+      "text": "Forests are among the most remarkable parts of the 1.1. _________ world. Walking beneath the tall trees, it is impossible not to be struck by how 1.2. _________ they are. Some of these giants reach an astonishing 1.3. _________, growing for hundreds of years.\n\nForests do far more than please the eye, however. They give shelter and 1.4. _________ to countless animals, and they help to clean the air that we breathe. Scientists keep reminding us of the 1.5. _________ of looking after them. Sadly, in many parts of the world trees are being cut down without any 1.6. _________ thought for the future.\n\nThe 1.7. _________ of a great forest can never truly be replaced. Even so, more and more young people are planting trees and learning to value wild places. Because of them, there is good reason to feel 1.8. _________ about the years ahead.",
+      "items": [
+        { "id": "1.1", "baseWord": "NATURE", "answer": "natural" },
+        { "id": "1.2", "baseWord": "BEAUTY", "answer": "beautiful" },
+        { "id": "1.3", "baseWord": "HIGH", "answer": "height" },
+        { "id": "1.4", "baseWord": "PROTECT", "answer": "protection" },
+        { "id": "1.5", "baseWord": "IMPORTANT", "answer": "importance" },
+        { "id": "1.6", "baseWord": "CARE", "answer": "careful" },
+        { "id": "1.7", "baseWord": "LOSE", "answer": "loss" },
+        { "id": "1.8", "baseWord": "HOPE", "answer": "hopeful" }
+      ]
+    }
+  ]
+}

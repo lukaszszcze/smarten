@@ -1,0 +1,56 @@
+{
+  "title": "Sentence Transformation: Conditionals & Wishes",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 6,
+      "instruction": "Przeczytaj zdania. Wykorzystując wyrazy podane wielkimi literami, uzupełnij każde zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "I don't have a car, so I can't drive to work.",
+          "keyword": "IF",
+          "transformed": "_________ a car, I could drive to work.",
+          "answer": "If I had"
+        },
+        {
+          "id": "1.2",
+          "original": "It's a pity I didn't study harder.",
+          "keyword": "WISH",
+          "transformed": "I _________ harder.",
+          "answer": "wish I had studied"
+        },
+        {
+          "id": "1.3",
+          "original": "You will be late unless you leave now.",
+          "keyword": "DON'T",
+          "transformed": "If you _________ now, you will be late.",
+          "answer": "don't leave"
+        },
+        {
+          "id": "1.4",
+          "original": "I'd love to be able to play the piano.",
+          "keyword": "COULD",
+          "transformed": "I wish I _________ the piano.",
+          "answer": "could play"
+        },
+        {
+          "id": "1.5",
+          "original": "Take an umbrella or you will get wet.",
+          "keyword": "IF",
+          "transformed": "You will get wet _________ an umbrella.",
+          "answer": "if you don't take"
+        },
+        {
+          "id": "1.6",
+          "original": "Without your help, I would have failed.",
+          "keyword": "HADN'T",
+          "transformed": "If you _________ me, I would have failed.",
+          "answer": "hadn't helped"
+        }
+      ]
+    }
+  ]
+}

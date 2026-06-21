@@ -1,0 +1,33 @@
+{
+  "title": "Open Cloze: The Story of Chocolate",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Chocolate is one 1.1. _________ the most popular treats in the world, but it has 1.2. _________ around for thousands of years. The ancient Maya were among the first people 1.3. _________ grew cacao trees. They did not eat chocolate 1.4. _________ we do today; instead, they made 1.5. _________ into a bitter drink. The drink was 1.6. _________ valuable that the beans were sometimes used as money. 1.7. _________ chocolate first arrived in Europe, only the rich could afford it. Sugar was later added to make it sweeter, and 1.8. _________ a result it became far more popular. Today, more 1.9. _________ four million tonnes of cacao are produced every year. Without the hard work of farmers, we 1.10. _________ not be able to enjoy our favourite chocolate bars.",
+      "items": [
+        { "id": "1.1", "answer": "of" },
+        { "id": "1.2", "answer": "been" },
+        { "id": "1.3", "answer": ["who", "that"] },
+        { "id": "1.4", "answer": ["as", "like"] },
+        { "id": "1.5", "answer": "it" },
+        { "id": "1.6", "answer": "so" },
+        { "id": "1.7", "answer": ["When", "Before"] },
+        { "id": "1.8", "answer": "as" },
+        { "id": "1.9", "answer": "than" },
+        { "id": "1.10", "answer": ["would", "could"] }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

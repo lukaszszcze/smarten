@@ -1,0 +1,33 @@
+{
+  "title": "Open Cloze: Living in Antarctica",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Antarctica is the coldest and windiest place 1.1. _________ Earth. Although no one lives there permanently, it 1.2. _________ visited by scientists who stay for months at a time to carry out their research. Life on the frozen continent is not 1.3. _________ easy as it might sound. During the long winter, the sun does not rise 1.4. _________ several months, and temperatures can drop below minus sixty degrees. The researchers 1.5. _________ to wear many layers of special clothing whenever they go outside. Fresh food is difficult 1.6. _________ get, so most of it has to be flown in. Despite 1.7. _________ these hardships, many scientists love working there. The continent is home 1.8. _________ penguins, seals and whales, 1.9. _________ are perfectly suited to the cold. Few other places on the planet are 1.10. _________ wild and beautiful.",
+      "items": [
+        { "id": "1.1", "answer": "on" },
+        { "id": "1.2", "answer": "is" },
+        { "id": "1.3", "answer": "as" },
+        { "id": "1.4", "answer": "for" },
+        { "id": "1.5", "answer": "have" },
+        { "id": "1.6", "answer": "to" },
+        { "id": "1.7", "answer": "all" },
+        { "id": "1.8", "answer": "to" },
+        { "id": "1.9", "answer": ["which", "that"] },
+        { "id": "1.10", "answer": "so" }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

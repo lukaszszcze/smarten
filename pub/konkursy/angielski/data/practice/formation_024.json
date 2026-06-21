@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: Learning a Foreign Language",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "ABLE",
+        "PATIENT",
+        "CONFIDENT",
+        "CORRECT",
+        "USE",
+        "SUCCESS",
+        "KNOW",
+        "REWARD",
+        "DIFFICULT",
+        "TRANSLATE"
+      ],
+      "text": "Learning to speak another language is a skill that almost anyone can master. The 1.1. _________ to communicate in English or Spanish opens up a whole new world of friends, books and films. Yet progress takes time, and above all it takes 1.2. _________, because nobody becomes fluent overnight.\n\nOne of the secrets is to keep speaking, even when you are afraid of getting things wrong. Every short conversation helps to build the 1.3. _________ you need. Do not worry about saying every word 1.4. _________ at first; teachers agree that making errors is simply part of learning.\n\nFinding the right materials helps too. A good app or a friendly teacher can be extremely 1.5. _________. The most 1.6. _________ students are usually those who practise a little every day. Slowly, their 1.7. _________ of grammar and vocabulary grows, until one day they realise they can follow a whole film. Few experiences are as 1.8. _________ as that.",
+      "items": [
+        { "id": "1.1", "baseWord": "ABLE", "answer": "ability" },
+        { "id": "1.2", "baseWord": "PATIENT", "answer": "patience" },
+        { "id": "1.3", "baseWord": "CONFIDENT", "answer": "confidence" },
+        { "id": "1.4", "baseWord": "CORRECT", "answer": "correctly" },
+        { "id": "1.5", "baseWord": "USE", "answer": "useful" },
+        { "id": "1.6", "baseWord": "SUCCESS", "answer": "successful" },
+        { "id": "1.7", "baseWord": "KNOW", "answer": "knowledge" },
+        { "id": "1.8", "baseWord": "REWARD", "answer": "rewarding" }
+      ]
+    }
+  ]
+}

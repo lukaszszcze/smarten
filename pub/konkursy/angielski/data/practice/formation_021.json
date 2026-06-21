@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: A Healthy Lifestyle",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "HEALTH",
+        "CHOOSE",
+        "ACTIVE",
+        "STRONG",
+        "REGULAR",
+        "DANGER",
+        "ADVISE",
+        "BENEFIT",
+        "ENERGY",
+        "NATURE"
+      ],
+      "text": "Everyone knows that staying 1.1. _________ is one of life's greatest treasures. The good news is that it does not depend on luck; instead, it is largely a 1.2. _________ we make every single day. Doctors say that taking regular physical 1.3. _________ is one of the best things we can do for our bodies. Even a short daily walk helps to build 1.4. _________ in our muscles and bones.\n\nEating well matters too. People who eat fruit and vegetables 1.5. _________, rather than only at weekends, tend to feel far better. On the other hand, too much sugar can be surprisingly 1.6. _________ to our teeth and our hearts.\n\nIf you are unsure where to begin, a doctor can give you useful 1.7. _________. Small changes, repeated over time, bring 1.8. _________ effects that last a lifetime.",
+      "items": [
+        { "id": "1.1", "baseWord": "HEALTH", "answer": "healthy" },
+        { "id": "1.2", "baseWord": "CHOOSE", "answer": "choice" },
+        { "id": "1.3", "baseWord": "ACTIVE", "answer": "activity" },
+        { "id": "1.4", "baseWord": "STRONG", "answer": "strength" },
+        { "id": "1.5", "baseWord": "REGULAR", "answer": "regularly" },
+        { "id": "1.6", "baseWord": "DANGER", "answer": "dangerous" },
+        { "id": "1.7", "baseWord": "ADVISE", "answer": "advice" },
+        { "id": "1.8", "baseWord": "BENEFIT", "answer": "beneficial" }
+      ]
+    }
+  ]
+}

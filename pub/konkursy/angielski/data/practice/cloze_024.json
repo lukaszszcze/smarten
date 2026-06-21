@@ -1,0 +1,33 @@
+{
+  "title": "Open Cloze: The First Olympic Games",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The Olympic Games began 1.1. _________ ago in ancient Greece, around the year 776 BC. They were held 1.2. _________ honour of Zeus, the king of the Greek gods. 1.3. _________ the beginning, there was only one event: a short running race. Over time, 1.4. _________ sports were added, such as wrestling, boxing and chariot racing. Only free Greek men were allowed 1.5. _________ take part, and women could not 1.6. _________ watch the games. The winners did not receive medals 1.7. _________ athletes do today; instead, they were given a crown of olive leaves. Winning was 1.8. _________ a great honour that statues were sometimes built of the champions. The ancient games continued 1.9. _________ more than a thousand years. The modern Olympics, 1.10. _________ we know them now, were revived in 1896.",
+      "items": [
+        { "id": "1.1", "answer": "long" },
+        { "id": "1.2", "answer": "in" },
+        { "id": "1.3", "answer": ["At", "In"] },
+        { "id": "1.4", "answer": ["more", "other", "new"] },
+        { "id": "1.5", "answer": "to" },
+        { "id": "1.6", "answer": "even" },
+        { "id": "1.7", "answer": ["as", "like"] },
+        { "id": "1.8", "answer": "such" },
+        { "id": "1.9", "answer": "for" },
+        { "id": "1.10", "answer": "as" }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

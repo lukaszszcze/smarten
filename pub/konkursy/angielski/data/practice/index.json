@@ -953,6 +953,48 @@
       "points": 8
     },
     {
+      "id": "formation_021",
+      "title": "A Healthy Lifestyle",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_022",
+      "title": "The History of the Bicycle",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_023",
+      "title": "Why We Need Sleep",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_024",
+      "title": "Learning a Foreign Language",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_025",
+      "title": "The Wonder of Forests",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_026",
+      "title": "Becoming a Volunteer",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
       "id": "cloze_016",
       "title": "The Great Barrier Reef",
       "taskType": "open_cloze",
@@ -990,6 +1032,48 @@
     {
       "id": "cloze_021",
       "title": "The Northern Lights",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_022",
+      "title": "The Story of Chocolate",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_023",
+      "title": "Why We Dream",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_024",
+      "title": "The First Olympic Games",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_025",
+      "title": "Living in Antarctica",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_026",
+      "title": "The Invention of the Telephone",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_027",
+      "title": "How Volcanoes Work",
       "taskType": "open_cloze",
       "taskCount": 1,
       "points": 5
@@ -1228,6 +1312,48 @@
     {
       "id": "transform_010",
       "title": "Mixed Structures II",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_011",
+      "title": "Comparatives & Superlatives",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_012",
+      "title": "Passive Voice",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_013",
+      "title": "Reported Speech",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_014",
+      "title": "Conditionals & Wishes",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_015",
+      "title": "Modals & Obligation",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "transform_016",
+      "title": "Mixed Structures III",
       "taskType": "sentence_transformation",
       "taskCount": 1,
       "points": 6

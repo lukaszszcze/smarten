@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: Becoming a Volunteer",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "HELP",
+        "KIND",
+        "DIFFER",
+        "RESPONSIBLE",
+        "FRIEND",
+        "ORGANISE",
+        "ENJOY",
+        "PRIDE",
+        "THANK",
+        "COMMUNITY"
+      ],
+      "text": "Giving up your free time to help others is one of the most 1.1. _________ things a young person can do. Acts of 1.2. _________, however small, can brighten someone's whole day. Many people are surprised to discover what a real 1.3. _________ a single volunteer can make.\n\nVolunteering also teaches important lessons. Looking after others gives you a sense of 1.4. _________ that is hard to find anywhere else. Working side by side with strangers often leads to lasting 1.5. _________ as well. Most towns have at least one 1.6. _________ that welcomes willing helpers, whether at an animal shelter, a library or a care home.\n\nBest of all, the work itself is genuinely 1.7. _________. When you look back at the end of the day and see what you have achieved, it is impossible not to feel 1.8. _________ of yourself.",
+      "items": [
+        { "id": "1.1", "baseWord": "HELP", "answer": "helpful" },
+        { "id": "1.2", "baseWord": "KIND", "answer": "kindness" },
+        { "id": "1.3", "baseWord": "DIFFER", "answer": "difference" },
+        { "id": "1.4", "baseWord": "RESPONSIBLE", "answer": "responsibility" },
+        { "id": "1.5", "baseWord": "FRIEND", "answer": "friendships" },
+        { "id": "1.6", "baseWord": "ORGANISE", "answer": "organisation" },
+        { "id": "1.7", "baseWord": "ENJOY", "answer": "enjoyable" },
+        { "id": "1.8", "baseWord": "PRIDE", "answer": "proud" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: The History of the Bicycle",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "INVENT",
+        "POPULAR",
+        "EASY",
+        "USE",
+        "SAFE",
+        "WEIGH",
+        "ENVIRONMENT",
+        "HEALTH",
+        "SPEED",
+        "DISTANCE"
+      ],
+      "text": "The bicycle was one of the most important means of transport ever created, yet its 1.1. _________ took many years. Early machines were slow and uncomfortable, so it was a long time before bicycles gained any real 1.2. _________. Once cheaper models appeared, however, ordinary people could 1.3. _________ afford them.\n\nA modern bicycle is wonderfully 1.4. _________: it can carry you to school, to work or into the countryside. Riders must still think about 1.5. _________, of course, which is why wearing a helmet is always sensible. Thanks to lighter materials, today's bikes are a fraction of the 1.6. _________ of the iron machines of the past.\n\nBest of all, cycling is good for the planet. Because bikes produce no fumes, they cause far less 1.7. _________ damage than cars. They also keep us fit, so choosing two wheels instead of four is a 1.8. _________ decision in more ways than one.",
+      "items": [
+        { "id": "1.1", "baseWord": "INVENT", "answer": "invention" },
+        { "id": "1.2", "baseWord": "POPULAR", "answer": "popularity" },
+        { "id": "1.3", "baseWord": "EASY", "answer": "easily" },
+        { "id": "1.4", "baseWord": "USE", "answer": "useful" },
+        { "id": "1.5", "baseWord": "SAFE", "answer": "safety" },
+        { "id": "1.6", "baseWord": "WEIGH", "answer": "weight" },
+        { "id": "1.7", "baseWord": "ENVIRONMENT", "answer": "environmental" },
+        { "id": "1.8", "baseWord": "HEALTH", "answer": "healthy" }
+      ]
+    }
+  ]
+}

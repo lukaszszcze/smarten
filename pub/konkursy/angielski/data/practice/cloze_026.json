@@ -1,0 +1,33 @@
+{
+  "title": "Open Cloze: The Invention of the Telephone",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "The telephone is something we 1.1. _________ for granted today, but it did not always exist. 1.2. _________ it was invented in the 1870s, people had to send letters or telegrams to communicate over long distances. Alexander Graham Bell, 1.3. _________ is usually given credit for the invention, was interested in helping deaf people to hear. The very first words ever spoken 1.4. _________ a telephone were a call for help. At first, many people did not believe that the device 1.5. _________ be useful. They thought it was little 1.6. _________ than a toy. However, 1.7. _________ a few years the telephone had spread across the whole country. The more people who owned one, the 1.8. _________ useful the network became. Today there are 1.9. _________ mobile phones in the world than there are people. It is hard to imagine 1.10. _________ life would be like without them.",
+      "items": [
+        { "id": "1.1", "answer": "take" },
+        { "id": "1.2", "answer": "Before" },
+        { "id": "1.3", "answer": "who" },
+        { "id": "1.4", "answer": ["on", "over"] },
+        { "id": "1.5", "answer": ["would", "could"] },
+        { "id": "1.6", "answer": "more" },
+        { "id": "1.7", "answer": ["within", "in"] },
+        { "id": "1.8", "answer": "more" },
+        { "id": "1.9", "answer": "more" },
+        { "id": "1.10", "answer": "what" }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "8-9": 4,
+        "6-7": 3,
+        "4-5": 2,
+        "2-3": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

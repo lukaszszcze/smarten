@@ -1,0 +1,35 @@
+{
+  "title": "Word Formation: Why We Need Sleep",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "IMPORTANT",
+        "SCIENCE",
+        "GROW",
+        "CONCENTRATE",
+        "TIRE",
+        "DANGER",
+        "HEALTH",
+        "REGULAR",
+        "PEACE",
+        "DREAM"
+      ],
+      "text": "We spend about a third of our lives asleep, which shows just how great the 1.1. _________ of rest really is. For many years 1.2. _________ have studied what happens to the body during the night. They have discovered that deep sleep is the time when most of a child's 1.3. _________ takes place.\n\nSleep also helps the mind. Pupils who rest well find that their 1.4. _________ in class improves, and they remember their lessons far better. By contrast, anyone who has had too little sleep soon begins to feel 1.5. _________ and irritable. Driving while exhausted can even be extremely 1.6. _________.\n\nThe good news is that good sleep is easy to build. Doctors recommend going to bed at a 1.7. _________ time and avoiding screens late in the evening. A 1.8. _________ routine, repeated every night, is one of the simplest ways to protect both body and mind.",
+      "items": [
+        { "id": "1.1", "baseWord": "IMPORTANT", "answer": "importance" },
+        { "id": "1.2", "baseWord": "SCIENCE", "answer": "scientists" },
+        { "id": "1.3", "baseWord": "GROW", "answer": "growth" },
+        { "id": "1.4", "baseWord": "CONCENTRATE", "answer": "concentration" },
+        { "id": "1.5", "baseWord": "TIRE", "answer": "tired" },
+        { "id": "1.6", "baseWord": "DANGER", "answer": "dangerous" },
+        { "id": "1.7", "baseWord": "REGULAR", "answer": "regular" },
+        { "id": "1.8", "baseWord": "HEALTH", "answer": "healthy" }
+      ]
+    }
+  ]
+}

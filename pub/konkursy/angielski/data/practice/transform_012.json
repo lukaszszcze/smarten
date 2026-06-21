@@ -1,0 +1,56 @@
+{
+  "title": "Sentence Transformation: Passive Voice",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 6,
+      "instruction": "Przeczytaj zdania. Wykorzystując wyrazy podane wielkimi literami, uzupełnij każde zdanie z luką tak, aby precyzyjnie oddać sens zdania wyjściowego. Nie zmieniaj formy podanych wyrazów. W każdą lukę możesz wpisać maksymalnie pięć wyrazów, wliczając w to wyraz już podany.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "Somebody has stolen my bike.",
+          "keyword": "BEEN",
+          "transformed": "My bike _________ stolen.",
+          "answer": "has been"
+        },
+        {
+          "id": "1.2",
+          "original": "They will finish the project next week.",
+          "keyword": "BE",
+          "transformed": "The project _________ next week.",
+          "answer": "will be finished"
+        },
+        {
+          "id": "1.3",
+          "original": "People speak English all over the world.",
+          "keyword": "SPOKEN",
+          "transformed": "English _________ all over the world.",
+          "answer": "is spoken"
+        },
+        {
+          "id": "1.4",
+          "original": "A famous architect designed this building.",
+          "keyword": "WAS",
+          "transformed": "This building _________ a famous architect.",
+          "answer": "was designed by"
+        },
+        {
+          "id": "1.5",
+          "original": "They are repairing the road at the moment.",
+          "keyword": "BEING",
+          "transformed": "The road _________ at the moment.",
+          "answer": "is being repaired"
+        },
+        {
+          "id": "1.6",
+          "original": "You must complete the form in ink.",
+          "keyword": "BE",
+          "transformed": "The form _________ in ink.",
+          "answer": "must be completed"
+        }
+      ]
+    }
+  ]
+}
