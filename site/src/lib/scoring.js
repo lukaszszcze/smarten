@@ -29,7 +29,15 @@ function applyScoringScheme(correct, scheme) {
   return 0;
 }
 
-const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing", "open_cloze", "word_formation"];
+// Types that have NO local scoring at all — they must be graded by the AI
+// endpoint and score 0 locally until it responds.
+//
+// open_cloze and word_formation are deliberately NOT here: they score locally
+// by exact match against the answer key (see their switch cases below), so a
+// fully-correct attempt still scores even if the AI endpoint is unavailable.
+// The AI grading layer (see the players) runs on top and can only raise the
+// score by accepting synonyms / spelling variants beyond the key.
+const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing"];
 
 function scoreTask(task, userAnswers) {
   const isAIType = AI_CHECKED_TYPES.includes(task.type);
