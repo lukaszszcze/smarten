@@ -1,5 +1,7 @@
-// Stars needed per level to unlock the next level (3 exercises × 3★ = 9 of 15 possible)
-export const STARS_TO_UNLOCK = 10;
+// Stars needed per level to unlock the next level, out of 3 exercises × 5★ = 15.
+// 9 = three exercises at 3★ (60-79%) each. At 10 a student who scored 60-79%
+// on all three was one star short and could never open the next level.
+export const STARS_TO_UNLOCK = 9;
 
 // Global titles based on total stars (max 225 = 3 branches × 5 levels × 3 exercises × 5★)
 export const STAR_TITLES = [

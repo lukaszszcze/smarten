@@ -34,6 +34,11 @@ export default function MultipleChoice({ task, answers, onChange, showResults, t
   return (
     <div style={s.card}>
       <p style={s.instruction}>{task.instruction}</p>
+      {/* Reading-comprehension tasks put the passage on the task, the same way
+          true_false_ni does; without it the questions ask about a text the
+          student never sees. */}
+      {task.title && <p style={s.passageTitle}>{task.title}</p>}
+      {task.text && <div style={s.text}>{task.text}</div>}
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
         {shuffledItems.map((item) => {
           const ir = getItemResult(taskResult, item.id);
