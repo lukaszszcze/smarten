@@ -32,7 +32,7 @@
         {
           "id": "1.4",
           "original": "He was so tired that he fell asleep during the film.",
-          "keyword": "MANAGED",
+          "keyword": "MANAGE",
           "transformed": "He did not (didn't) _________ awake during the film.",
           "answer": "manage to stay"
         },

@@ -67,10 +67,26 @@ function countGaps(context) {
   return m ? m.length : 1;
 }
 
+// Several accepted phrasings may be stored as a list. Everything downstream
+// wants either all of them or one readable line.
+function acceptedAnswers(ans) {
+  return (Array.isArray(ans) ? ans : [ans]).filter((a) => String(a || "").trim());
+}
+
+function answerText(ans) {
+  return acceptedAnswers(ans).join(" / ");
+}
+
 function keywordUsed(studentAnswer, keyword) {
   if (!keyword) return true;
-  const re = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
-  return re.test(String(studentAnswer || ""));
+  const esc = (w) => String(w).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  // A contracted keyword still counts as used — the papers' own answer keys
+  // list "needn't have bought" beside "need not have bought" for keyword NEED.
+  // Whole word, or the word carrying an "n't"; NOT covers the "n't" itself.
+  const forms = [`\\b${esc(keyword)}\\b`, `\\b${esc(keyword)}n['’]t\\b`];
+  if (/^not$/i.test(keyword)) forms.push(`\\w+n['’]t\\b`);
+  const text = String(studentAnswer || "");
+  return forms.some((f) => new RegExp(f, "i").test(text));
 }
 
 // ---------- Sentence transformation ----------
@@ -83,7 +99,7 @@ async function gradeSentenceTransformation(apiKey, task, answers) {
   items.forEach((item, idx) => {
     const student = answers[item.id] || "";
     const studentNorm = normalize(student);
-    const expectedNorm = normalize(item.answer);
+    const accepted = acceptedAnswers(item.answer);
 
     if (!keywordUsed(student, item.keyword)) {
       console.log(`[check] ${task.id || "?"} ${item.id} pre-checked-wrong (keyword missing)`);
@@ -93,12 +109,14 @@ async function gradeSentenceTransformation(apiKey, task, answers) {
         max: 1,
         correct: false,
         feedback: `Keyword "${item.keyword}" not used.`,
-        correctAnswer: item.answer,
+        correctAnswer: answerText(item.answer),
       };
       return;
     }
 
-    if (studentNorm && studentNorm === expectedNorm) {
+    // Any of the accepted phrasings scores without an AI call. Comparing the
+    // list as one value never matched, so every such item went to the AI.
+    if (studentNorm && accepted.some((a) => normalize(a) === studentNorm)) {
       console.log(`[check] ${task.id || "?"} ${item.id} pre-checked-correct`);
       results[idx] = {
         id: item.id,
@@ -106,7 +124,7 @@ async function gradeSentenceTransformation(apiKey, task, answers) {
         max: 1,
         correct: true,
         feedback: "Poprawna odpowiedź.",
-        correctAnswer: item.answer,
+        correctAnswer: answerText(item.answer),
       };
       return;
     }
@@ -128,7 +146,7 @@ async function gradeSentenceTransformation(apiKey, task, answers) {
           max: 1,
           correct: ai.correct ?? (ai.earned === 1),
           feedback: ai.feedback || "",
-          correctAnswer: ai.correctAnswer || item.answer,
+          correctAnswer: ai.correctAnswer || answerText(item.answer),
         };
       } else {
         results[idx] = {
@@ -137,7 +155,7 @@ async function gradeSentenceTransformation(apiKey, task, answers) {
           max: 1,
           correct: false,
           feedback: "grading error",
-          correctAnswer: item.answer,
+          correctAnswer: answerText(item.answer),
         };
       }
     }
@@ -154,7 +172,7 @@ function buildSentenceTransformationPrompt(task, answers, itemsToGrade) {
     original: item.original,
     keyword: item.keyword,
     gappedSentence: item.transformed,
-    expectedAnswer: item.answer,
+    expectedAnswers: acceptedAnswers(item.answer),
     studentAnswer: answers[item.id] || "",
   }));
 
@@ -164,11 +182,11 @@ Each item has:
 - An original sentence
 - A keyword (must be used, unchanged)
 - A gapped sentence to complete
-- The expected answer (one acceptable phrasing — alternative phrasings that preserve meaning are also acceptable)
+- The expected answers (every phrasing the answer key accepts — other phrasings that preserve meaning are also acceptable)
 - The student's answer
 
 Grade each item: 1 point if correct, 0 if wrong. The student's answer is correct if ALL of these hold:
-1. The keyword appears in the completed sentence (case-insensitive, as a whole word, no form changes)
+1. The keyword appears in the completed sentence (case-insensitive, as a whole word, no form changes). A contraction of the keyword counts as using it: "needn't" uses NEED, "shouldn't" uses SHOULD, and "hadn't" uses NOT.
 2. The completed sentence has the same meaning as the original
 3. It is grammatically correct
 4. It fits naturally in the gap
