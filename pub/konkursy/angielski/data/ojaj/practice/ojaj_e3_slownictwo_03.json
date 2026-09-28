@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap III: slownictwo (3)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "There's no need to set the date for the meeting, I guess because we _________ each other in the gym anyway every weekend.",
+          "options": [
+            "A) will have seen",
+            "B) have been seeing",
+            "C) see",
+            "D) will be seeing"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "stem": "If I were you I'd consult a/an _________ before trying to assemble those drawers.",
+          "options": [
+            "A) manual",
+            "B) bulletin",
+            "C) reference book",
+            "D) index"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "You _________ about the accident by now, I assume.",
+          "options": [
+            "A) aren't going to read",
+            "B) won't read",
+            "C) won't have read",
+            "D) won't be reading"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "When Jack _________ in primary school he _________ his maths homework which made his mum furious as she was a maths teacher there.",
+          "options": [
+            "A) has been / has been constantly forgetting",
+            "B) had been / was constantly forgetting",
+            "C) was / constantly forgot",
+            "D) was / was constantly forgetting"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "I really wanted to pass this exam well so my teacher insisted that _________ me with preparing for it.",
+          "options": [
+            "A) she help",
+            "B) she will help",
+            "C) she helps",
+            "D) she did help"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "When my pet rabbit died my older sister told me _________ sad and promised to get me a new one for my birthday.",
+          "options": [
+            "A) not be",
+            "B) don't be",
+            "C) to not be",
+            "D) not to be"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "Mary was looking for the post office but didn't really know _________ she should ask.",
+          "options": [
+            "A) which",
+            "B) whose",
+            "C) who",
+            "D) whom"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "Tony has been thoroughly _________ in astronomy since the field trip with his class.",
+          "options": [
+            "A) absorbed",
+            "B) disappointed",
+            "C) interested",
+            "D) occupied"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "_________ happened!",
+          "options": [
+            "A) That we wanted",
+            "B) What we wanted",
+            "C) Which we wanted",
+            "D) What did we want"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "_________ proper education is important.",
+          "options": [
+            "A) Whether a child gets",
+            "B) Does a child get",
+            "C) If a child gets",
+            "D) Should a child get"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

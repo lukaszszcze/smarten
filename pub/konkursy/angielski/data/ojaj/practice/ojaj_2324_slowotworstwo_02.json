@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ 2023/24: slowotworstwo (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "Uzupelnij kazde zdanie slowem utworzonym od wyrazu podanego wielkimi literami. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Employers have recently complained that they can't find reliable __________.",
+          "wordBase": "EMPLOY",
+          "answer": [
+            "employees"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "She is __________ for the job as she cannot swim, which is absolutely essential to become a lifeguard.",
+          "wordBase": "SUIT",
+          "answer": [
+            "unsuitable"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "I didn't pass my final exam although I had studied so hard. The only thing I felt was deep __________.",
+          "wordBase": "DISAPPOINT",
+          "answer": [
+            "disappointment"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "My new mobile is much bigger than the previous one which makes it __________. I can't put it in any of my pockets.",
+          "wordBase": "CONVENIENT",
+          "answer": [
+            "inconvenient"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Mobile phones nowadays have __________ capabilities, such as sending and receiving e-mails or using instant messaging.",
+          "wordBase": "END",
+          "answer": [
+            "endless"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "King Arthur was considered to be an exceptionally __________ leader, who feared nobody.",
+          "wordBase": "COURAGE",
+          "answer": [
+            "courageous"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "It is said that __________ killed the cat. Don't be too nosy.",
+          "wordBase": "CURIOUS",
+          "answer": [
+            "curiosity"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Airlines shouldn't employ such young and __________ people for pilot positions. It is simply irresponsible.",
+          "wordBase": "EXPERIENCE",
+          "answer": [
+            "inexperienced"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "He said he loved me and looked at me in __________.",
+          "wordBase": "AMAZE",
+          "answer": [
+            "amazement"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "I came back home after 10 years of absence. All my friends prepared for me a surprise party full of __________ and affection.",
+          "wordBase": "WARM",
+          "answer": [
+            "warmth"
+          ]
+        }
+      ]
+    }
+  ]
+}

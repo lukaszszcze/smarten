@@ -1,0 +1,125 @@
+{
+  "title": "Wielka Brytania: Londyn (pytania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania wlasne do mapy mysli OJAJ 2026/27 o Wielkiej Brytanii (nie z arkusza olimpiady). Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Who began building the Tower of London?",
+          "options": [
+            "A) Henry VIII",
+            "B) Queen Victoria",
+            "C) William the Conqueror",
+            "D) King Arthur"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "What is kept in the Tower of London and seen by millions of visitors?",
+          "options": [
+            "A) the Crown Jewels",
+            "B) the Magna Carta",
+            "C) the Rosetta Stone",
+            "D) the royal family's horses"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "What is the popular name of the Yeoman Warders of the Tower of London?",
+          "options": [
+            "A) Redcoats",
+            "B) Bobbies",
+            "C) Grenadiers",
+            "D) Beefeaters"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "What does the Monument near London Bridge commemorate?",
+          "options": [
+            "A) the Battle of Britain",
+            "B) the Great Fire of London",
+            "C) the coronation of Queen Elizabeth I",
+            "D) the Magna Carta"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "The Monument is 61 metres tall. What is special about this height?",
+          "options": [
+            "A) It is the height of the old St Paul's Cathedral.",
+            "B) It is the distance from the Monument to where the Great Fire started.",
+            "C) It is the depth of the River Thames under London Bridge.",
+            "D) It is the number of houses that survived the fire."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "Which king turned Hyde Park into a royal hunting ground in 1536?",
+          "options": [
+            "A) Charles I",
+            "B) William the Conqueror",
+            "C) George III",
+            "D) Henry VIII"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "What can people do at Speakers' Corner in Hyde Park?",
+          "options": [
+            "A) give a public speech on almost any topic",
+            "B) watch the King's Speech on a big screen",
+            "C) vote in general elections",
+            "D) meet Members of Parliament every Sunday"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "Which words are carved on the Animals in War memorial?",
+          "options": [
+            "A) Lest we forget",
+            "B) Deeds, not words",
+            "C) They had no choice",
+            "D) Keep calm and carry on"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "Who did Queen Victoria build the Albert Memorial for?",
+          "options": [
+            "A) her father, Prince Albert",
+            "B) her son, King Albert",
+            "C) her architect, Albert Scott",
+            "D) her husband, Prince Albert"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "How did the Peter Pan statue appear in Kensington Gardens in 1912?",
+          "options": [
+            "A) Children collected money for it for ten years.",
+            "B) J. M. Barrie had it put up secretly overnight, as if by magic.",
+            "C) It was moved there from Buckingham Palace.",
+            "D) It was a present from the people of Scotland."
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

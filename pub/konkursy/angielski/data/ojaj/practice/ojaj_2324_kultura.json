@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ 2023/24: Wielka Brytania",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania o kulture i historie Wielkiej Brytanii. Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "What are the national symbols of Wales?",
+          "options": [
+            "A) daffodil and shamrock",
+            "B) daffodil and rose",
+            "C) daffodil and leek",
+            "D) daffodil and thistle"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "What is the protagonist's name in Charles Dickens' Christmas Carol?",
+          "options": [
+            "A) Ebenezer Scrooge",
+            "B) Martin Chuzzlewit",
+            "C) David Copperfield",
+            "D) Alfi"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Which of the following novels was not authored by Jane Austen?",
+          "options": [
+            "A) Pride and Prejudice",
+            "B) Northanger Abbey",
+            "C) Emma",
+            "D) Jane Eyre"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "What is the nickname often used to refer to the group of ravens that reside at the Tower of London due to an ancient superstition?",
+          "options": [
+            "A) The Crown's Crows",
+            "B) The Tower's Terrors",
+            "C) The Monarch's Magpies",
+            "D) The Guardians of the Tower"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "What is the name of the circular space which stands at the heart of the British Museum, in the centre of the Great Court?",
+          "options": [
+            "A) The Roundhouse",
+            "B) The Oval Office",
+            "C) The Circular Quay",
+            "D) The Reading Room"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "stem": "What happened to the original Globe Theatre in 1613?",
+          "options": [
+            "A) It was destroyed by fire during a performance of Henry VIII.",
+            "B) It was dismantled and moved to a different location.",
+            "C) It was sold to a rival theatre company.",
+            "D) It was abandoned and fell into disrepair."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.7",
+          "stem": "What is the significance of the Magna Carta?",
+          "options": [
+            "A) It established the Church of England as the official state religion.",
+            "B) It was a treaty that ended the Hundred Years' War.",
+            "C) It was a document in English constitutional history, limiting the powers of the monarch.",
+            "D) It granted voting rights to common citizens in medieval England."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "stem": "What was the primary purpose of the Act of Supremacy passed by the English Parliament in 1534?",
+          "options": [
+            "A) To grant religious freedom to all citizens.",
+            "B) To establish the Church of England and declare the monarch as its supreme head.",
+            "C) To abolish the monarchy in England.",
+            "D) To ratify the Magna Carta."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.9",
+          "stem": "What is the nickname often used to refer to Queen Elizabeth I of England due to her long and successful reign?",
+          "options": [
+            "A) \"Bloody Mary\"",
+            "B) \"Gloriana\"",
+            "C) \"The Iron Lady\"",
+            "D) \"The Tudor Rose\""
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "Which World War II squadron, composed mainly of Polish pilots, was one of the most successful during the Battle of Britain?",
+          "options": [
+            "A) The Royal Navy Squadron",
+            "B) The Spitfire Squadron",
+            "C) The 303 Squadron",
+            "D) The Eagle Squadron"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

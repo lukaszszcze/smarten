@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap I cz. 2: formy czasownika (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "It's been five years _________ I last saw my old friend Mark.",
+          "options": [
+            "A) for",
+            "B) yet",
+            "C) since",
+            "D) until"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "'Was Susan at the party when you arrived?' 'No, she _________ home.'",
+          "options": [
+            "A) already went",
+            "B) had already gone",
+            "C) had already went",
+            "D) was already gone"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "John can't go out now. He _________ dinner at the moment.",
+          "options": [
+            "A) is having got",
+            "B) is have",
+            "C) is having",
+            "D) will be having"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "I _________ Sandra was selfish, but now I realise she's a very helpful person.",
+          "options": [
+            "A) thought",
+            "B) have been thinking",
+            "C) use to think",
+            "D) used to think"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "We _________ by train, but then we decided to go by plane instead as it was cheaper.",
+          "options": [
+            "A) were going to travel",
+            "B) were travelling",
+            "C) had been travelling",
+            "D) were going"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "'It's so stuffy in here!' ' Indeed. _________ I open the window?'",
+          "options": [
+            "A) shall",
+            "B) will",
+            "C) do",
+            "D) must"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.7",
+          "stem": "_________ I 've phoned mum to tell her I'm ok, we can go to the party.",
+          "options": [
+            "A) while",
+            "B) unless",
+            "C) when",
+            "D) though"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "stem": "The fire spread through the school building very quickly, but fortunately every student _________ escape.",
+          "options": [
+            "A) was able to",
+            "B) could",
+            "C) should",
+            "D) need to"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "There was a long queue _________ the bus stop.",
+          "options": [
+            "A) on",
+            "B) at",
+            "C) by",
+            "D) along"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "If I _________ you I would cut down on chocolate and start going to the gym.",
+          "options": [
+            "A) am",
+            "B) wasn't",
+            "C) were",
+            "D) weren't"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

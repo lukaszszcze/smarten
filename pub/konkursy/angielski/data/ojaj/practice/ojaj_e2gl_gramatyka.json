@@ -1,0 +1,65 @@
+{
+  "title": "OJAJ etap II gram.-leks.: gramatyka",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 5,
+      "instruction": "W kazdym zdaniu sa dwie luki. Wybierz pare wyrazow, ktora pasuje do obu.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "She broke her toe when she _________ _________ her bike.",
+          "options": [
+            "A) had fallen / down",
+            "B) was falling / of",
+            "C) fell / off"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "There _________ furniture in this office, we need to remove _________.",
+          "options": [
+            "A) are too many / them",
+            "B) is too many / some",
+            "C) is too much / it"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "I have a dentist appointment _________. Can you give me _________?",
+          "options": [
+            "A) tomorrow in the morning / the lift",
+            "B) tomorrow morning / a lift",
+            "C) in tomorrow's morning / the lift"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "As long as you _________ when you _________, I will meet you at the airport.",
+          "options": [
+            "A) let me know / will arrive",
+            "B) will let me know / arrive",
+            "C) let me know / arrive"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "I don't know this word. I _________ look it _________ in a dictionary.",
+          "options": [
+            "A) need / on",
+            "B) need to / on",
+            "C) need to / up"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

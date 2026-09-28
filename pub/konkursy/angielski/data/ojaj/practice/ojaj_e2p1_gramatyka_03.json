@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap II cz. 1: gramatyka (3)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "I do hope deforestation _________ a problem of the past, since we've those new regulations now.",
+          "options": [
+            "A) was lately becoming",
+            "B) is just becoming",
+            "C) would recently have become",
+            "D) will soon become"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "stem": "Watch out! You _________ right into this muddy puddle!",
+          "options": [
+            "A) would stepped",
+            "B) have stepped",
+            "C) will step",
+            "D) are going to step"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.3",
+          "stem": "This time on Tuesday we _________ our favourite series!",
+          "options": [
+            "A) will have watched",
+            "B) will be watching",
+            "C) would watch",
+            "D) are watching"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "Today's fine but you won't be able to use this room tomorrow. They _________ the room.",
+          "options": [
+            "A) will be painting",
+            "B) have been painting",
+            "C) will have painted",
+            "D) paint"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "As you _________ by now, they are planning to build a new school in the vicinity of Radom.",
+          "options": [
+            "A) will be hearing",
+            "B) heard",
+            "C) will have heard",
+            "D) have been heating"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "So this was the uniform I _________ all year round. Well, I had no choice, did I?",
+          "options": [
+            "A) were wearing",
+            "B) was to wear",
+            "C) have worn",
+            "D) will have been wearing"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "stem": "Sarah seemed to be working herself into panic. She _________ her final tests in just two weeks.",
+          "options": [
+            "A) was sitting",
+            "B) would sat",
+            "C) has been sitting",
+            "D) sat"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "Steven just _________ there for some time, doing absolutely nothing.",
+          "options": [
+            "A) lain",
+            "B) lie",
+            "C) lay",
+            "D) lied"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "The blackboards, chalk, desks, cupboards _________ idle since the school closed.",
+          "options": [
+            "A) lied",
+            "B) have laid",
+            "C) laid",
+            "D) have lain"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "The cat _________ back its ears ready to attack.",
+          "options": [
+            "A) laid",
+            "B) lain",
+            "C) lay",
+            "D) lied"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

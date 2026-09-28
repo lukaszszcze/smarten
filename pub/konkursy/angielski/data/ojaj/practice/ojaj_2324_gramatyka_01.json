@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ 2023/24: gramatyka (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "By this time next year, she _________ as an engineer for 10 years.",
+          "options": [
+            "A) will be working",
+            "B) will work",
+            "C) have worked",
+            "D) will have been working"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "stem": "Could you tell me what _________?",
+          "options": [
+            "A) time is it",
+            "B) is the time",
+            "C) time it is",
+            "D) the time"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "_________ dress does she prefer, the pink one or the red one?",
+          "options": [
+            "A) what",
+            "B) who",
+            "C) which",
+            "D) whose"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "Please pass me the salt, _________?",
+          "options": [
+            "A) do you",
+            "B) don't you",
+            "C) are you",
+            "D) will you"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "I _________ ever drink tea with lemon. I simply don't like the taste.",
+          "options": [
+            "A) hard",
+            "B) harden",
+            "C) hardiness",
+            "D) hardly"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "stem": "I don't recommend _________ this film. It's extremely boring.",
+          "options": [
+            "A) watch",
+            "B) to watch",
+            "C) watching",
+            "D) to watching"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "stem": "I leaned the bike _________ the wall and entered the building.",
+          "options": [
+            "A) of",
+            "B) to",
+            "C) on",
+            "D) against"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "Our maths teacher is married _________ a physics teacher.",
+          "options": [
+            "A) with",
+            "B) of",
+            "C) from",
+            "D) to"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.9",
+          "stem": "I am keen _________ all football matches on TV.",
+          "options": [
+            "A) on watching",
+            "B) on looking",
+            "C) to watching",
+            "D) to seeing"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "stem": "They arrived _________ the airport just in time.",
+          "options": [
+            "A) at",
+            "B) to",
+            "C) on",
+            "D) in"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

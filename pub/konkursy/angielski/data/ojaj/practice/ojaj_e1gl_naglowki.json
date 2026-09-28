@@ -1,0 +1,71 @@
+{
+  "title": "OJAJ etap I gram.-leks.: praca na lotnisku",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do kazdego akapitu dopasuj wlasciwy naglowek (A-F). Jeden naglowek jest dodatkowy - dopasuj go do ostatniego wiersza.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cleaner"
+        },
+        {
+          "letter": "B",
+          "text": "Baggage handler"
+        },
+        {
+          "letter": "C",
+          "text": "Security guard"
+        },
+        {
+          "letter": "D",
+          "text": "Engineer"
+        },
+        {
+          "letter": "E",
+          "text": "Terminal duty manager"
+        },
+        {
+          "letter": "F",
+          "text": "Waiter"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "I deal with all kinds of things - including passenger complaints, VIP and celebrities visits, air conditioning failures and terminal staff contracts. You'll see me walking around the airport and talking to people on my mobile.",
+          "answer": "E"
+        },
+        {
+          "id": "1.2",
+          "statement": "I have to be really fit doing this job, because I have to carry a lot of bags and suitcases every day and put them on the baggage trucks. I like people I work with, but I can't stand shift work - I hate working at nights.",
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "statement": "There are many different problems I have to manage - ventilation, escalators, lifts - I get really busy sometimes. I don't fix it all by myself, of course - I have to manage a team of manual workers.",
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "statement": "It's not as interesting or dangerous as people think. There are many rules and procedures I have to follow when we check people's documents and baggage. My work can be quite physical - sometimes I have to deal with passengers who are drunk or violent and that's not nice.",
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "statement": "I work shifts, but it's ok with me. We often get super busy, especially when there's a delay and many hungry and thirsty people come over to kill time and their hunger.",
+          "answer": "F"
+        },
+        {
+          "id": "1.6",
+          "statement": "This heading does not match any of the paragraphs.",
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

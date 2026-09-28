@@ -1,0 +1,75 @@
+{
+  "title": "OJAJ etap I gram.-leks.: formy czasownika",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania poprawnymi formami czasownikow podanych w nawiasach. Uzywaj pelnych form, np. does not zamiast doesn't.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "What were you doing when the boss _________ you at noon? (ring)",
+          "answer": "rang"
+        },
+        {
+          "id": "1.2",
+          "context": "When we got to the party, everybody _________ and the place was completely quiet. (already leave)",
+          "answer": "had already left"
+        },
+        {
+          "id": "1.3",
+          "context": "I don't know, why he _________ - it's so simple! (not understand)",
+          "answer": "does not understand"
+        },
+        {
+          "id": "1.4",
+          "context": "_________ Polish in our Spanish class is strictly forbidden. (speak)",
+          "answer": "Speaking"
+        },
+        {
+          "id": "1.5",
+          "context": "I _________ 4 coffees today, that's enough, thanks. (already have)",
+          "answer": "have already had"
+        },
+        {
+          "id": "1.6",
+          "context": "I didn't realize how difficult it is _________ in England. (drive)",
+          "answer": "to drive"
+        },
+        {
+          "id": "1.7",
+          "context": "Karen hates it when her husband _________ in the shower. (whistle)",
+          "answer": "whistles"
+        },
+        {
+          "id": "1.8",
+          "context": "She _________ the attic all morning and that's why she is so tired. (cleaning)",
+          "answer": "has been cleaning"
+        },
+        {
+          "id": "1.9",
+          "context": "I can't give you the soup. It _________ . (still/prepare)",
+          "answer": "is still being prepared"
+        },
+        {
+          "id": "1.10",
+          "context": "I'm sure I _________ decorating the Christmas tree by 5p.m. (finish)",
+          "answer": "will have finished"
+        },
+        {
+          "id": "1.11",
+          "context": "More and more people _________ their lifestyles, e.g. a lot of my friends have stopped eating sweets. (change)",
+          "answer": "are changing"
+        },
+        {
+          "id": "1.12",
+          "context": "I wish I _________ some rest just after I finished my exams - now I'm so tired! (have)",
+          "answer": "had had"
+        }
+      ]
+    }
+  ]
+}

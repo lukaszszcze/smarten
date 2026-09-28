@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap I gram.-leks.: slowotworstwo",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "Wstaw wyraz podany wielkimi literami w odpowiedniej formie gramatycznej, np. BIG - bigger, WATCH - watched, BEAUTY - beautiful.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "__________ speaking, I don't believe any of his promises.",
+          "wordBase": "HONEST",
+          "answer": [
+            "Honestly"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "This film is really violent, it's not __________ for children.",
+          "wordBase": "SUIT",
+          "answer": [
+            "suitable"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Three __________ paintings were stolen from The National Gallery yesterday.",
+          "wordBase": "PRICE",
+          "answer": [
+            "priceless"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "I don't really like girls with short hair, I prefer medium __________ hair.",
+          "wordBase": "LONG",
+          "answer": [
+            "length"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "He grew up without parents, it was a difficult __________.",
+          "wordBase": "CHILD",
+          "answer": [
+            "childhood"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "My cousin Laura is really good at __________.",
+          "wordBase": "SING",
+          "answer": [
+            "singing"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Our youngest son is in hospital, so we've had some __________ nights recently.",
+          "wordBase": "SLEEP",
+          "answer": [
+            "sleepless"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Would you believe that he's already had 5 __________?",
+          "wordBase": "WIFE",
+          "answer": [
+            "wives"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "It's __________ outside, you'd better put on your scarf and gloves.",
+          "wordBase": "FREEZE",
+          "answer": [
+            "freezing"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "I can't stand this __________, 42 degrees is too much for me.",
+          "wordBase": "HOT",
+          "answer": [
+            "heat"
+          ]
+        }
+      ]
+    }
+  ]
+}

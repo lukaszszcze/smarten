@@ -1,0 +1,125 @@
+{
+  "title": "Wielka Brytania: symbole (pytania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania wlasne do mapy mysli OJAJ 2026/27 o Wielkiej Brytanii (nie z arkusza olimpiady). Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Which three crosses are combined in the Union Flag (the Union Jack)?",
+          "options": [
+            "A) St George, St David and St Andrew",
+            "B) St David, St Patrick and St Andrew",
+            "C) St George, St Andrew and St Patrick",
+            "D) St George, St David and St Patrick"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "Why does Wales not appear on the Union Flag?",
+          "options": [
+            "A) Wales was already united with England when the first Union Flag was created in 1606.",
+            "B) Wales joined the United Kingdom only in the twentieth century.",
+            "C) The Welsh parliament voted to leave its symbol off the flag.",
+            "D) The Welsh dragon was thought too difficult to sew."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "When is the Royal Standard flown over a royal building?",
+          "options": [
+            "A) At half-mast, when a member of the royal family dies.",
+            "B) Every day, on all government buildings.",
+            "C) Only on the monarch's official birthday.",
+            "D) When the monarch is inside the building."
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "Which symbol represents Ireland on the Royal Standard?",
+          "options": [
+            "A) a shamrock",
+            "B) a harp",
+            "C) a red hand",
+            "D) a green lion"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "Which two animals hold up the shield on the Royal Coat of Arms?",
+          "options": [
+            "A) a lion and a dragon",
+            "B) a lion and a unicorn",
+            "C) a unicorn and an eagle",
+            "D) a stag and a horse"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "Which motto appears on the scroll at the bottom of the Royal Coat of Arms?",
+          "options": [
+            "A) Semper fidelis",
+            "B) E pluribus unum",
+            "C) Veni, vidi, vici",
+            "D) Dieu et mon droit"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "Which plant is the national emblem of Scotland?",
+          "options": [
+            "A) the thistle",
+            "B) the daffodil",
+            "C) the rose",
+            "D) the shamrock"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "Which plant is traditionally associated with Northern Ireland?",
+          "options": [
+            "A) the thistle",
+            "B) the daffodil",
+            "C) the shamrock",
+            "D) the rose"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "Who is the patron saint of Scotland?",
+          "options": [
+            "A) St Patrick",
+            "B) St David",
+            "C) St George",
+            "D) St Andrew"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "On which date is St David's Day, the national day of Wales?",
+          "options": [
+            "A) 17 March",
+            "B) 1 March",
+            "C) 23 April",
+            "D) 30 November"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

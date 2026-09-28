@@ -1,0 +1,79 @@
+{
+  "title": "OJAJ etap III: wisielec (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "When your dad was a boy people didn't use GPS but an old fashioned map and a __ __ M __ __ __ __ to find their way.",
+          "hint": "__ __ M __ __ __ __",
+          "answer": [
+            "compass"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "During this weekend we can expect over a hundred __ __ H __ __ __ T __ __ __ presenting their products at the book fair in Poznan.",
+          "hint": "__ __ H __ __ __ T __ __ __",
+          "answer": [
+            "exhibitors"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Mum brought dozens of holiday __ R __ __ __ __ R __ __ home yesterday and now we need to choose where to spend our summer vacation.",
+          "hint": "__ R __ __ __ __ R __ __",
+          "answer": [
+            "brochures"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "This running event is highly popular as it's open to professionals as well as to __ __ __ T __ U __ __ .",
+          "hint": "__ __ __ T __ U __ __",
+          "answer": [
+            "amateurs"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The young guitarist is expecting his first __ __ Y __ __ __ Y payment as his brand new CD has just been released.",
+          "hint": "__ __ Y __ __ __ Y",
+          "answer": [
+            "royalty"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "When Mary saw the exam results and realised that she failed she was on the __ __ R __ __ of tears.",
+          "hint": "__ __ R __ __",
+          "answer": [
+            "verge"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "I hope that public TV will be able to __ R __ __ __ C __ __ __ the match as I can't watch EuroSport channel at home.",
+          "hint": "__ R __ __ __ C __ __ __",
+          "answer": [
+            "broadcast"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "There are five __ U __ __ E __ __ __ boards on the walls of our school corridor. Students and teachers put there different information, pictures or posters prepared by the children.",
+          "hint": "__ U __ __ E __ __ __",
+          "answer": [
+            "bulletin"
+          ]
+        }
+      ]
+    }
+  ]
+}

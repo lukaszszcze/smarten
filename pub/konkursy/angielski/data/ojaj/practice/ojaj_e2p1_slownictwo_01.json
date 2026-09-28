@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap II cz. 1: slownictwo (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Mr Johnson arrived wearing a suit, but he put on his _________ before going into the workshop .",
+          "options": [
+            "A) overcoat",
+            "B) cardigan",
+            "C) overalls",
+            "D) dressing-gown"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "Don't go for this suit. The _________ are too wide to my taste.",
+          "options": [
+            "A) lapels",
+            "B) linings",
+            "C) collars",
+            "D) creases"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Excuse me, I'm afraid you've got your blazer on _________ .",
+          "options": [
+            "A) in reverse",
+            "B) inside out",
+            "C) upside down",
+            "D) outward"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "The names of the people who were killed cannot be released until we have informed their next of _________",
+          "options": [
+            "A) family line",
+            "B) blood",
+            "C) relatives",
+            "D) kin"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "My jet black hair is the most obvious proof that my _________ were Spanish.",
+          "options": [
+            "A) ancestors",
+            "B) predecessors",
+            "C) descendants",
+            "D) disciples"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "We do not call ourselves entrepreneurs. What we run is just a _________ business.",
+          "options": [
+            "A) mum - and- dad",
+            "B) mom - and - pop",
+            "C) me - and - you",
+            "D) dad - and – mum"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "stem": "I couldn't find two that matched, so I was forced to wear _________ socks.",
+          "options": [
+            "A) unfit",
+            "B) mixed",
+            "C) uneven",
+            "D) odd"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "Since they are not married their children are _________ .",
+          "options": [
+            "A) filial",
+            "B) legitimate",
+            "C) illegitimate",
+            "D) unfilial"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "I didn't cook anything. I was just fiddling _________ in the kitchen.",
+          "options": [
+            "A) on",
+            "B) around",
+            "C) in",
+            "D) over"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "Sue's joke was so funny that everyone just fell _________ laughing",
+          "options": [
+            "A) about",
+            "B) over",
+            "C) apart",
+            "D) in"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

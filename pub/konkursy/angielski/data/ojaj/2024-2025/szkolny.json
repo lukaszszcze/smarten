@@ -1,0 +1,427 @@
+{
+  "competition": "ojaj",
+  "year": "2024/2025",
+  "stage": "szkolny",
+  "part": "1",
+  "variant": "B",
+  "maxPoints": 45,
+  "timeMinutes": 45,
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/10/OJAJ_202425_etap_szkolny1_testB.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "W każdą z luk wpisz odpowiednie słowo przekształcając wyraz podany na końcu zdania drukowanymi literami. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: The __________ (SERVE) in this restaurant was absolutely appalling. — prawidłowa odpowiedź: SERVICE",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "He showed __________ for the warning signs and continued hiking up the mountain despite the approaching storm.",
+          "wordBase": "REGARD",
+          "answer": [
+            "disregard"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "The factory workers complained that their tasks were too __________, doing the same thing over and over again every day.",
+          "wordBase": "REPEAT",
+          "answer": [
+            "repetitive"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "The results of the experiment were __________ successful, showing no errors in any of the trials.",
+          "wordBase": "QUESTION",
+          "answer": [
+            "unquestionably"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "They've put forward a number of __________ to the problem we're currently facing, but none of them is really satisfactory.",
+          "wordBase": "SOLVE",
+          "answer": [
+            "solutions"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Being __________ wealthy, my uncle can purchase any car he desires.",
+          "wordBase": "BELIEVE",
+          "answer": [
+            "unbelievably"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The __________ spent their first week of marriage exploring a charming seaside town on their honeymoon.",
+          "wordBase": "WED",
+          "answer": [
+            "newlyweds"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "As a __________ person, she often volunteers at the local shelter and regularly donates money to various causes.",
+          "wordBase": "CHARITY",
+          "answer": [
+            "charitable"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The old lady's __________ was evident when she donated a substantial portion of her savings to support the local children's home.",
+          "wordBase": "GENEROUS",
+          "answer": [
+            "generosity"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "The noise from the construction site was loud, but with earplugs, it was __________ enough to focus on work.",
+          "wordBase": "TOLERATE",
+          "answer": [
+            "tolerable"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "As a child, she spent hours creating adventures with her __________ friend, who always helped her explore new worlds.",
+          "wordBase": "IMAGINE",
+          "answer": [
+            "imaginary"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Wpisz słowo poprawnie uzupełniające każde ze zdań. Liczba kreseczek odpowiada liczbie liter w słowie. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: She asked for a(n) __ __ e __ __ __ i __ (8) type of flower for her bouquet. — prawidłowa odpowiedź: SPECIFIC",
+      "items": [
+        {
+          "id": "2.1",
+          "sentence": "When the device started overheating, he immediately u __ __ l __ __ g __ __ (9) it from the socket to prevent any potential damage.",
+          "hint": "u __ __ l __ __ g __ __ (9)",
+          "answer": [
+            "unplugged"
+          ]
+        },
+        {
+          "id": "2.2",
+          "sentence": "The criminals threatened to harm the hostages if their demand for a hefty r __ __ __ o __ (6) was not met within 24 hours.",
+          "hint": "r __ __ __ o __ (6)",
+          "answer": [
+            "ransom"
+          ]
+        },
+        {
+          "id": "2.3",
+          "sentence": "The roller coaster rapidly rushed d __ w __ __ __ r __ __ (9), causing everyone on board to shout with excitement.",
+          "hint": "d __ w __ __ __ r __ __ (9)",
+          "answer": [
+            "downwards"
+          ]
+        },
+        {
+          "id": "2.4",
+          "sentence": "The book my teacher recommended turned out to be so t __ __ __ o __ __ (7) that I actually lost count how many times I fell asleep attempting to read it.",
+          "hint": "t __ __ __ o __ __ (7)",
+          "answer": [
+            "tedious"
+          ]
+        },
+        {
+          "id": "2.5",
+          "sentence": "The mansion, f __ __ m __ __ l __ (8) owned by a famous artist, is now a popular museum showcasing his work.",
+          "hint": "f __ __ m __ __ l __ (8)",
+          "answer": [
+            "formerly"
+          ]
+        },
+        {
+          "id": "2.6",
+          "sentence": "During the meeting, I had a sudden f __ a __ __ b __ __ __ (9) to my childhood, remembering how my father used to give similar advice.",
+          "hint": "f __ a __ __ b __ __ __ (9)",
+          "answer": [
+            "flashback"
+          ]
+        },
+        {
+          "id": "2.7",
+          "sentence": "The soldiers were instructed to protect the c __ v __ __ __ a __ __ (9) during the conflict, ensuring their safety above all else.",
+          "hint": "c __ v __ __ __ a __ __ (9)",
+          "answer": [
+            "civilians"
+          ]
+        },
+        {
+          "id": "2.8",
+          "sentence": "He showed up at the party in a c __ s __ __ __ (6) outfit, wearing jeans and a t-shirt, while everyone else was dressed formally.",
+          "hint": "c __ s __ __ __ (6)",
+          "answer": [
+            "casual"
+          ]
+        },
+        {
+          "id": "2.9",
+          "sentence": "The actor's performance on stage was f __ a __ __ __ s __ (8), earning him a standing ovation from the audience.",
+          "hint": "f __ a __ __ __ s __ (8)",
+          "answer": [
+            "flawless"
+          ]
+        },
+        {
+          "id": "2.10",
+          "sentence": "The heat during the summer was so intense that it became u __ b __ __ __ __ __ l __ (10), driving everyone indoors to seek relief.",
+          "hint": "u __ b __ __ __ __ __ l __ (10)",
+          "answer": [
+            "unbearable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "grammar_gaps",
+      "points": 10,
+      "instruction": "Uzupełnij każde ze zdań wyrazami z nawiasów w odpowiedniej formie. Nie wolno zmieniać kolejności słów w nawiasie, natomiast w niektórych przypadkach należy dodać brakujące słowo lub słowa, tak aby zdania były poprawne i logiczne. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów. Każde rozwiązanie ma od 3 do 6 słów. Formy skrócone typu: don't, isn't, that's etc. są liczone jako jedno słowo.\n\nPrzykład: She __________ (not / see) the film yet. — prawidłowa odpowiedź: hasn't seen",
+      "items": [
+        {
+          "id": "3.1",
+          "context": "I have arranged with the shop that my new _________ (furniture / deliver) flat between 6 and 7 p.m. tonight. This way I don't need to take a day-off from work.",
+          "answer": "furniture is being delivered to my"
+        },
+        {
+          "id": "3.2",
+          "context": "As I walked through the park, I _________ (see / child / play) joyfully on the swings, laughing at the top of their lungs.",
+          "answer": "could see children playing / saw children playing"
+        },
+        {
+          "id": "3.3",
+          "context": "They will consider your application, _________ (provide / you / submit) all the required documents.",
+          "answer": "provided that you submit / providing that you submit / provided you submit / providing you submit"
+        },
+        {
+          "id": "3.4",
+          "context": "This is _________ (five / time / I / be) to England and I still can't help being totally amazed by the beauty of this country.",
+          "answer": "the fifth time I have ('ve) been"
+        },
+        {
+          "id": "3.5",
+          "context": "Hearing how unfairly my teacher criticized the project I presented yesterday _________ (make / I / think / change) my school.",
+          "answer": "made me think of changing / made me think about changing / made me think I should change"
+        },
+        {
+          "id": "3.6",
+          "context": "A boy living next door _________ (rumor / steal) groceries from the corner shop for at least a month. The shop's owner is now determined to catch the suspect red-handed.",
+          "answer": "is rumored to have been stealing / is rumoured to have been stealing"
+        },
+        {
+          "id": "3.7",
+          "context": "My sister won't listen to anybody's advice so it _________ (use / try) talk her out of consuming fast food.",
+          "answer": "is no use trying to"
+        },
+        {
+          "id": "3.8",
+          "context": "If I were you, I would get aunt Betty _________ (organise / Sandra / father-in-law) farewell party because she has amazing organizational skills.",
+          "answer": "to organise Sandra's father-in-law's / to organize Sandra's father-in-law's"
+        },
+        {
+          "id": "3.9",
+          "context": "The day Ben started working in the same office as me I realized we _________ (already / bump) each other several times in the local gym.",
+          "answer": "had already bumped into"
+        },
+        {
+          "id": "3.10",
+          "context": "I'd rather you _________ (bring / girlfriend) to my party. On top of looking totally bored all the time, she had the guts to criticize the food and the music.",
+          "answer": "hadn't brought your girlfriend / had not brought your girlfriend"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Uzupełnij lukę w każdym ze zdań, wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "4.1",
+          "stem": "Your clothes are filthy! As soon as you __________ home, throw them all into the laundry.",
+          "options": [
+            "A) will have arrived",
+            "B) will arrive",
+            "C) arrived",
+            "D) arrive"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "4.2",
+          "stem": "__________ surprised the teacher the most was the top students' poor performance in the final exams.",
+          "options": [
+            "A) Which",
+            "B) That",
+            "C) What",
+            "D) Who"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "4.3",
+          "stem": "Our parents agreed to __________ us repaint the walls of our room if we use neutral colours.",
+          "options": [
+            "A) allow",
+            "B) have",
+            "C) let",
+            "D) permit"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "4.4",
+          "stem": "The more she practised speaking in public, __________ she became, until eventually she found herself looking forward to giving presentations.",
+          "options": [
+            "A) the more nervous",
+            "B) the less nervous",
+            "C) the least nervous",
+            "D) the most nervous"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "4.5",
+          "stem": "Despite the heavy traffic, we __________ reach the airport on time.",
+          "options": [
+            "A) were able to",
+            "B) could",
+            "C) have been able to",
+            "D) had been able to"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "4.6",
+          "stem": "Citizens under the age of 18 are not __________ to vote in elections.",
+          "options": [
+            "A) accessible",
+            "B) eligible",
+            "C) advisable",
+            "D) admissible"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "4.7",
+          "stem": "Marrion had a __________ escape when she had a head-on collision with a truck.",
+          "options": [
+            "A) near",
+            "B) close",
+            "C) narrow",
+            "D) tight"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "4.8",
+          "stem": "Nancy was happy that she __________ a new mobile phone and was able to save a lot of money as she had won the latest model of the I-phone in a lottery.",
+          "options": [
+            "A) didn't need to buy",
+            "B) needn't have bought",
+            "C) couldn't have bought",
+            "D) shouldn't have bought"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "4.9",
+          "stem": "__________ details concerning the tournament's opening ceremony __________ so far.",
+          "options": [
+            "A) Only a few / weren't revealed",
+            "B) Quite little / have revealed",
+            "C) Only a little / haven't been revealed",
+            "D) Very few / have been revealed"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "4.10",
+          "stem": "When the president gave his statement he asked if there were any questions. Only one journalist __________ his hand.",
+          "options": [
+            "A) raised",
+            "B) rose",
+            "C) risen",
+            "D) rise"
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "type": "knowledge_questions",
+      "points": 5,
+      "instruction": "Odpowiedz na pytania wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "5.1",
+          "question": "Which of the statements about the Act of Supremacy is false?",
+          "options": [
+            "A. It was passed by the Parliament of England in 1543.",
+            "B. The passing of the law marked the beginning of the English Reformation.",
+            "C. One of the reasons for its passing was the king's personal interest.",
+            "D. It gave the monarch an additional function he had not possessed earlier."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "5.2",
+          "question": "What actions earned Queen Mary I of England the nickname 'Bloody Mary'?",
+          "options": [
+            "A. She cursed a lot and 'bloody' was her favorite swearword.",
+            "B. She enjoyed watching bloody fights between her subjects.",
+            "C. She suffered from a disease affecting her blood vessels.",
+            "D. She gave an order to persecute Protestant heretics."
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "5.3",
+          "question": "Who is the patron saint of Wales?",
+          "options": [
+            "A. Saint Richard",
+            "B. Saint George",
+            "C. Saint David",
+            "D. Saint Steven"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "5.4",
+          "question": "Which of Henry VIII's wives outlived him?",
+          "options": [
+            "A. Catherine Howard",
+            "B. Catherine Parr",
+            "C. Anne of Cleves",
+            "D. Catherine of Aragon"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "5.5",
+          "question": "How many crosses does the Union Jack include?",
+          "options": [
+            "A. one",
+            "B. two",
+            "C. three",
+            "D. four"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

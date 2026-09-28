@@ -1,0 +1,85 @@
+{
+  "title": "OJAJ 2023/24: transformacje (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 10,
+      "instruction": "Wykorzystujac slowa podane wielkimi literami, uzupelnij luki w zdaniach tak, aby zachowac sens zdania wyjsciowego. W kazda luke mozesz wpisac do 6 wyrazow lacznie z wyrazem podanym. Nie wolno zmieniac form podanych slow. Niedopuszczalne sa formy skrocone (isn't, won't, would've itd.). Wymagana jest pelna poprawnosc gramatyczna i ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "Nobody can do all that work in one single day. It's impossible.",
+          "keyword": "CAPABLE",
+          "transformed": "Nobody _________ all that work in one single day.",
+          "answer": "is capable of doing"
+        },
+        {
+          "id": "1.2",
+          "original": "I wish I hadn't eaten so much cake.",
+          "keyword": "EATING",
+          "transformed": "I _________ much cake.",
+          "answer": "regret eating so"
+        },
+        {
+          "id": "1.3",
+          "original": "Did the teacher give you the handout yesterday?",
+          "keyword": "PROVIDE",
+          "transformed": "Did the teacher _________ the handout yesterday?",
+          "answer": "provide you with"
+        },
+        {
+          "id": "1.4",
+          "original": "I'm not interested in what you think about me.",
+          "keyword": "CARE",
+          "transformed": "I _________ your opinion of me.",
+          "answer": "do not care about"
+        },
+        {
+          "id": "1.5",
+          "original": "I can't afford to buy a new house.",
+          "keyword": "ENOUGH",
+          "transformed": "I _________ buy a new house.",
+          "answer": "do not have enough money to"
+        },
+        {
+          "id": "1.6",
+          "original": "The concert hall is close to the hotel, so we can walk there.",
+          "keyword": "FOOT",
+          "transformed": "The concert hall is close to the hotel, so we can _________.",
+          "answer": "go there on foot / get there on foot"
+        },
+        {
+          "id": "1.7",
+          "original": "She is not interested in sports.",
+          "keyword": "NO",
+          "transformed": "She _________ in sports.",
+          "answer": "has no interest"
+        },
+        {
+          "id": "1.8",
+          "original": "The podcast was too boring for me to finish.",
+          "keyword": "THAT",
+          "transformed": "The podcast was _________ finish it.",
+          "answer": "so boring that I could not / so boring that I did not"
+        },
+        {
+          "id": "1.9",
+          "original": "He didn't understand the instructions, so he made a mistake.",
+          "keyword": "HAD",
+          "transformed": "_________, he wouldn't have made a mistake.",
+          "answer": "If he had understood the instructions"
+        },
+        {
+          "id": "1.10",
+          "original": "After the show, they introduced us to the leading actor.",
+          "keyword": "WE",
+          "transformed": "After the show, _________ to the leading actor.",
+          "answer": "we were introduced"
+        }
+      ]
+    }
+  ]
+}

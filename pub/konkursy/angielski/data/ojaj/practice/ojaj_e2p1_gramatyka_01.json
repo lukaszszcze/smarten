@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap II cz. 1: gramatyka (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Wait here, please. We need another quarter of an hour. Your car _________ fixed.",
+          "options": [
+            "A) is",
+            "B) is being",
+            "C) has been",
+            "D) was"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "The homework _________ corrected by the teacher by next week.",
+          "options": [
+            "A) is going to be",
+            "B) will be",
+            "C) will have been",
+            "D) is being"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "They _________ to school by their neighbours today. That's why they're in a hurry.",
+          "options": [
+            "A) have been taken",
+            "B) are being taken",
+            "C) will be being taken",
+            "D) were taken"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "We arrived at the airport on time. However, we found out that our flight _________ due to bad weather conditions.",
+          "options": [
+            "A) is delayed",
+            "B) has been delayed",
+            "C) was delaying",
+            "D) was delayed"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "This is the first time the show _________ performed by disabled actors.",
+          "options": [
+            "A) will be",
+            "B) is being",
+            "C) has been",
+            "D) is"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "When I found my wallet, I discovered that my credit cards _________ stolen.",
+          "options": [
+            "A) had been",
+            "B) have been",
+            "C) are",
+            "D) were being"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.7",
+          "stem": "This room _________ emptied right now. Please leave all your belongings and head towards the door.",
+          "options": [
+            "A) has been",
+            "B) is",
+            "C) must have been",
+            "D) must be"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "The teacher ordered the students _________ write anything after the bell.",
+          "options": [
+            "A) to not",
+            "B) don't",
+            "C) not to",
+            "D) do not"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "Since I'm a very independent person, I hate _________ what to do.",
+          "options": [
+            "A) to be",
+            "B) being told",
+            "C) being to tell",
+            "D) telling"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "He was wondering which film _________ to watch that night.",
+          "options": [
+            "A) was she going",
+            "B) she is going",
+            "C) she was going",
+            "D) is she going"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap III: slownictwo (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "You shouldn't be surprised that I'm limping as I _________ my ankle in the mountains. I'll never go skiing again!",
+          "options": [
+            "A) used to twist",
+            "B) had twisted",
+            "C) twisted",
+            "D) have twisted"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "stem": "Teenagers caught stealing at school _________ their deeds by doing 10 hours of voluntary work.",
+          "options": [
+            "A) have made repaying",
+            "B) is made to repay",
+            "C) are made to repay",
+            "D) make the repay"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "My father _________ as an excellent science-fiction writer.",
+          "options": [
+            "A) got to be known",
+            "B) was known",
+            "C) had been known",
+            "D) might have known"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "When reading a book I usually jump straight to the first chapter but the _________ at the beginning of this book was so interesting that I read it twice!",
+          "options": [
+            "A) editorial",
+            "B) output",
+            "C) summary",
+            "D) preface"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "stem": "My mum used to be a secretary and she knows how to take notes _________",
+          "options": [
+            "A) in shorthand",
+            "B) illegibly",
+            "C) tuning in",
+            "D) by charakter"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "Mike _________ another scholarship recently only because of his high educational achievements.",
+          "options": [
+            "A) will be awarded",
+            "B) has been awarded",
+            "C) would have been awarded",
+            "D) is awarded"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "stem": "My cousin _________ the schedule the teacher prepared for him and study hard or he won't pass his exams this year.",
+          "options": [
+            "A) is to be following",
+            "B) should have followed",
+            "C) had better follow",
+            "D) would better follow"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "stem": "The manager _________ for the whole dinner.",
+          "options": [
+            "A) insisted on paying",
+            "B) insisted to pay",
+            "C) has insisted to have paid",
+            "D) has insisted on being paid"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "My aunty from New York came to visit us and I couldn't believe how many _________ with her.",
+          "options": [
+            "A) presents did she have",
+            "B) she had presents",
+            "C) presents she had",
+            "D) presents had she"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.10",
+          "stem": "Turn the music down, Len! It's so loud I can hardly hear what _________ to me!",
+          "options": [
+            "A) Greg is saying",
+            "B) is Greg saying",
+            "C) does Greg say",
+            "D) that Greg is saying"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

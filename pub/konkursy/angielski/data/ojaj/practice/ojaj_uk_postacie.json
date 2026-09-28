@@ -1,0 +1,125 @@
+{
+  "title": "Wielka Brytania: slynni Brytyjczycy (pytania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania wlasne do mapy mysli OJAJ 2026/27 o Wielkiej Brytanii (nie z arkusza olimpiady). Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "On which ship did Charles Darwin sail around the world?",
+          "options": [
+            "A) HMS Victory",
+            "B) the Mayflower",
+            "C) HMS Beagle",
+            "D) the Titanic"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "Which book by Charles Darwin set out the theory of evolution by natural selection?",
+          "options": [
+            "A) On the Origin of Species",
+            "B) A Brief History of Time",
+            "C) The Descent of the Planets",
+            "D) The Wealth of Nations"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Why is Ada Lovelace often called the first computer programmer?",
+          "options": [
+            "A) She built the first electronic computer.",
+            "B) She invented the World Wide Web.",
+            "C) She broke the Enigma code in the Second World War.",
+            "D) She wrote a program for Charles Babbage's Analytical Engine."
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "Who was Ada Lovelace's father?",
+          "options": [
+            "A) Charles Darwin",
+            "B) the poet Lord Byron",
+            "C) Charles Babbage",
+            "D) Isaac Newton"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "What did Emmeline Pankhurst fight for?",
+          "options": [
+            "A) the end of the slave trade",
+            "B) the right of women to vote",
+            "C) free schools for all children",
+            "D) independence for Scotland"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "What was the motto of the suffragettes led by Emmeline Pankhurst?",
+          "options": [
+            "A) Keep calm and carry on",
+            "B) Dieu et mon droit",
+            "C) They had no choice",
+            "D) Deeds, not words"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "Which famous detective did Arthur Conan Doyle create?",
+          "options": [
+            "A) Sherlock Holmes",
+            "B) Hercule Poirot",
+            "C) Miss Marple",
+            "D) Father Brown"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "In which city was Arthur Conan Doyle born?",
+          "options": [
+            "A) London",
+            "B) Dublin",
+            "C) Edinburgh",
+            "D) Cardiff"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "For which film did Christopher Nolan win the Oscar for Best Director?",
+          "options": [
+            "A) Inception",
+            "B) Interstellar",
+            "C) The Dark Knight",
+            "D) Oppenheimer"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "Which Christopher Nolan film tells the story of the evacuation of Allied soldiers from France in 1940?",
+          "options": [
+            "A) Tenet",
+            "B) Dunkirk",
+            "C) Memento",
+            "D) Oppenheimer"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

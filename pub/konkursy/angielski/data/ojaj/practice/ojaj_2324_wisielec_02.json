@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ 2023/24: wisielec (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Many animals are __ N __ __ __ I __ __ during the daytime and hunt during the night.",
+          "hint": "__ N __ __ __ I __ __",
+          "answer": [
+            "inactive"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "All my students were exhausted during the last lecture, so they did not understand a word of my __ X __ __ A __ A __ I __ __ of this complex theory.",
+          "hint": "__ X __ __ A __ A __ I __ __",
+          "answer": [
+            "explanation"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "The authorities __ __ __ U __ D warnings and gave instructions as how to prepare for the flood.",
+          "hint": "__ __ __ U __ D",
+          "answer": [
+            "issued"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "You usually wear very __ U __ __ colours. Why don't you start wearing bright colours for a change?",
+          "hint": "__ U __ __",
+          "answer": [
+            "dull"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "I need another lamp. I can't read in here. The light is too __ I __.",
+          "hint": "__ I __",
+          "answer": [
+            "dim"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The rise in oil prices is __ __ E __ I __ __ __ __ __ as oil supplies have been running out across the world.",
+          "hint": "__ __ E __ I __ __ __ __ __",
+          "answer": [
+            "inevitable"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "There was __ __ __ E __ chaos in the city centre during the transport strike. Many people had problems getting to work.",
+          "hint": "__ __ __ E __",
+          "answer": [
+            "utter"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Instead of going to Greece, my parents decided to go on a luxury __ __ __ I __ __ around the Mediterranean.",
+          "hint": "__ __ __ I __ __",
+          "answer": [
+            "cruise"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "My family buy __ __ __ I __ U __ furniture, restore it and then sell online.",
+          "hint": "__ __ __ I __ U __",
+          "answer": [
+            "antique"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "Recently it has been announced that crimes like __ H __ __ __ and burglary are on the increase.",
+          "hint": "__ H __ __ __",
+          "answer": [
+            "theft"
+          ]
+        }
+      ]
+    }
+  ]
+}

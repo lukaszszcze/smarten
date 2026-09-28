@@ -1,0 +1,92 @@
+{
+  "title": "OJAJ etap II gram.-leks.: slownictwo (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 7,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz poprawna odpowiedz.",
+      "items": [
+        {
+          "id": "1.9",
+          "stem": "Tom and Ann don't love each other any more. They have just _________.",
+          "options": [
+            "A) split off",
+            "B) split with",
+            "C) split up",
+            "D) split on"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.10",
+          "stem": "Water was _________ slowly from the pipe.",
+          "options": [
+            "A) filtering",
+            "B) spilling",
+            "C) gushing",
+            "D) leaking"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.11",
+          "stem": "Patrick lost his job so he couldn't pay off his _________. That's why the bank took his house.",
+          "options": [
+            "A) mortgage",
+            "B) salary",
+            "C) taxes",
+            "D) rates"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.12",
+          "stem": "When the _________ blew his whistle, he finally put an end to this embarrassing performance.",
+          "options": [
+            "A) fan",
+            "B) referee",
+            "C) judge",
+            "D) trainer"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.13",
+          "stem": "The room in our hotel was really _________. It was the size of a shoebox.",
+          "options": [
+            "A) filthy",
+            "B) humongous",
+            "C) tiny",
+            "D) moody"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.14",
+          "stem": "My dog is really wild, I must always keep it on a _________.",
+          "options": [
+            "A) line",
+            "B) cord",
+            "C) rope",
+            "D) lead"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.15",
+          "stem": "I need to see the dentist, one of my _________ has just fallen out.",
+          "options": [
+            "A) tooth",
+            "B) fillings",
+            "C) holes",
+            "D) gums"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

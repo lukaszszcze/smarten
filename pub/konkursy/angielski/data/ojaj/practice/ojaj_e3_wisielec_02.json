@@ -1,0 +1,71 @@
+{
+  "title": "OJAJ etap III: wisielec (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 7,
+      "instruction": "Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "I always check the __ __ N __ __ N __ __ page first. If it says that there are over 10 chapters in a book I don't read it - it's too long for me.",
+          "hint": "__ __ N __ __ N __ __",
+          "answer": [
+            "contents"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Haven't you got a __ __ C __ __ __ C __ you could take with you at the camp? It would be more comfortable than a suitcase as you could carry it on your shoulders.",
+          "hint": "__ __ C __ __ __ C __",
+          "answer": [
+            "rucksack"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "'You have points taken away for both __ __ N __ __ U __ T __ __ __ and spelling mistakes, so if you forget to put a colon you'll lose priceless points.'",
+          "hint": "__ __ N __ __ U __ T __ __ __",
+          "answer": [
+            "punctuation"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Carl is a fan of __ __ B __ O __ __ __ . He enjoys reading about scandals and famous people and detests serious political news.",
+          "hint": "__ __ B __ O __ __ __",
+          "answer": [
+            "tabloids"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "'__ __ M __ __ R has it that the vice principal has been sacked!' 'I don't believe it, it's just gossip.'",
+          "hint": "__ __ M __ __ R",
+          "answer": [
+            "rumour"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "'To be or not to be, that is the question,' he __ __ O __ E __ from Shakespeare.",
+          "hint": "__ __ O __ E __",
+          "answer": [
+            "quoted"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "'Do you know the __ __ B __ __ V __ __ __ I __ __ of the phrase 'for example'?' 'Sure, it's e.g.'",
+          "hint": "__ __ B __ __ V __ __ __ I __ __",
+          "answer": [
+            "abbreviation"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "OJAJ etap I gram.-leks.: reakcje jezykowe",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Wybierz poprawna odpowiedz do zasugerowanej sytuacji.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Przepros nauczyciela za spoznienie.",
+          "options": [
+            "A) I'm sorry for I'm late.",
+            "B) I'm sorry I'm late.",
+            "C) I'm sorry to being late."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "Jestes z rodzicami u znajomych. Zasugeruj powrot do domu.",
+          "options": [
+            "A) Shall we go home now?",
+            "B) Can I ask you to me to go home now?",
+            "C) Do you think we must to go home now?"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Dzwonisz do kolegi. Odbiera jego mama - jak zaczniesz rozmowe?",
+          "options": [
+            "A) Could I speak to Daniel, please?",
+            "B) Ask Daniel to speak to me.",
+            "C) I want Daniel to speak to me."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "Chcesz dojsc na najblizszy przystanek autobusowy. Spytaj o droge.",
+          "options": [
+            "A) Can you tell me the nearest bus?",
+            "B) Can you tell me how to get to the nearest bus?",
+            "C) Where I go to the nearest bus?"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "Chcesz powiedziec, ze masz dobry kontakt ze swoja siostra.",
+          "options": [
+            "A) I get up well with my sister.",
+            "B) I get in well with my sister.",
+            "C) I get on well with my sister."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Jestes w kawiarni. Chcesz powiedziec kolezance, ze to ty placisz rachunek.",
+          "options": [
+            "A) It's on me.",
+            "B) It's for me.",
+            "C) It's by me."
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "title": "OJAJ etap I cz. 2: slownictwo (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 7,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "During the party I sat on the _________ of the chair because there was nowhere else to sit.",
+          "options": [
+            "A) hand",
+            "B) arm",
+            "C) leg",
+            "D) foot"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "When summer _________ and the sun appears it's good to use straw hats and sunglasses.",
+          "options": [
+            "A) arrives",
+            "B) brings",
+            "C) comes",
+            "D) come"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "You don't have to be afraid of this lizard, it's _________",
+          "options": [
+            "A) harmful",
+            "B) harmless",
+            "C) harming",
+            "D) charming"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "No one can do _________ water for more than two days.",
+          "options": [
+            "A) without",
+            "B) with",
+            "C) to",
+            "D) after"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "Charlie, can you _________ me a favour and babysit tonight?",
+          "options": [
+            "A) make",
+            "B) create",
+            "C) do",
+            "D) have"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "The trouble with paperback book is that the _________ often breaks.",
+          "options": [
+            "A) hand",
+            "B) top",
+            "C) leg",
+            "D) spine"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "You've got a lot of _________ to speak to me like that!",
+          "options": [
+            "A) cheek",
+            "B) chin",
+            "C) mouth",
+            "D) ear"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

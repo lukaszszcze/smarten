@@ -1,0 +1,66 @@
+{
+  "title": "OJAJ etap II cz. 1: idiomy",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 5,
+      "instruction": "Dopasuj do kazdego idiomu jego znaczenie (A-F). Jedno znaczenie jest dodatkowe i nie pasuje do zadnego idiomu.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "to talk to someone briefly"
+        },
+        {
+          "letter": "B",
+          "text": "to tell someone a secret"
+        },
+        {
+          "letter": "C",
+          "text": "to try to make someone talk about their feeling"
+        },
+        {
+          "letter": "D",
+          "text": "to agree with someone"
+        },
+        {
+          "letter": "E",
+          "text": "to refuse to talk"
+        },
+        {
+          "letter": "F",
+          "text": "to share opinions on something"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "to see eye to eye",
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "statement": "to compare notes",
+          "answer": "F"
+        },
+        {
+          "id": "1.3",
+          "statement": "to touch base with someone",
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "statement": "to draw someone out",
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "statement": "to clam up",
+          "answer": "E"
+        }
+      ]
+    }
+  ]
+}

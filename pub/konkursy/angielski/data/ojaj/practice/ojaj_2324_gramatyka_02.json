@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ 2023/24: gramatyka (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Do you expect me _________ it to you a third time?",
+          "options": [
+            "A) explaining",
+            "B) explain",
+            "C) to explain",
+            "D) having explain"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "He wishes he _________ more about basketball.",
+          "options": [
+            "A) knows",
+            "B) will know",
+            "C) known",
+            "D) knew"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.3",
+          "stem": "They worked _________ to complete the project on time.",
+          "options": [
+            "A) hardly",
+            "B) hard",
+            "C) hardily",
+            "D) harden"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "I can't find my phone. I _________ it at home.",
+          "options": [
+            "A) must leave",
+            "B) must leaving",
+            "C) must have left",
+            "D) must left"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "Susan _________ her homework when the phone rang.",
+          "options": [
+            "A) has been doing",
+            "B) done",
+            "C) was doing",
+            "D) was to be doing"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "He would visit his friend in the USA if he _________ more money.",
+          "options": [
+            "A) has",
+            "B) have",
+            "C) had",
+            "D) would have"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "stem": "Unless it _________ tomorrow, we can go to the beach.",
+          "options": [
+            "A) will rain",
+            "B) rains",
+            "C) doesn't rain",
+            "D) would rain"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.8",
+          "stem": "She's allergic _________ cats.",
+          "options": [
+            "A) in",
+            "B) on",
+            "C) at",
+            "D) to"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.9",
+          "stem": "She'll be back _________ a few hours.",
+          "options": [
+            "A) about",
+            "B) in",
+            "C) on",
+            "D) at"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "_________ car is blocking the driveway?",
+          "options": [
+            "A) Whose",
+            "B) Who",
+            "C) Whom",
+            "D) Whilst"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

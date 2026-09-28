@@ -1,0 +1,85 @@
+{
+  "title": "OJAJ: Transformacje (test przykladowy)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/OJAJ-Przykladowy-test-—-transformacje.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 10,
+      "instruction": "Wykorzystujac slowa podane wielkimi literami, uzupelnij luki w zdaniach tak, aby zachowac sens zdania wyjsciowego. W kazda luke mozesz wpisac do 6 wyrazow lacznie z wyrazem juz podanym. Nie wolno zmieniac form podanych slow. Wymagana jest pelna poprawnosc gramatyczna i ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "I could not leave the island because of the strike of air traffic controllers.",
+          "keyword": "PREVENTED",
+          "transformed": "I _________ the island because of the strike of air traffic controllers.",
+          "answer": "was prevented from leaving"
+        },
+        {
+          "id": "1.2",
+          "original": "\"They stole my recipe,\" Ann said.",
+          "keyword": "ACCUSED",
+          "transformed": "Ann _________ recipe.",
+          "answer": "accused them of stealing her"
+        },
+        {
+          "id": "1.3",
+          "original": "We will not get there in less than an hour.",
+          "keyword": "LEAST",
+          "transformed": "It _________ an hour to get there.",
+          "answer": "will take us at least"
+        },
+        {
+          "id": "1.4",
+          "original": "Despite knowing the city quite well I got lost.",
+          "keyword": "EVEN",
+          "transformed": "_________ the city quite well, I got lost.",
+          "answer": "Even though I knew"
+        },
+        {
+          "id": "1.5",
+          "original": "\"We can watch any of these films,\" she said.",
+          "keyword": "MATTER",
+          "transformed": "She told us that _________ which film we saw.",
+          "answer": "it did not (didn't) matter to her"
+        },
+        {
+          "id": "1.6",
+          "original": "Whenever I hear this song, I remember our holiday by the lake.",
+          "keyword": "REMINDS",
+          "transformed": "Whenever I hear this song, _________ our holiday by the lake.",
+          "answer": "it reminds me of"
+        },
+        {
+          "id": "1.7",
+          "original": "I watched it because you had told me it was really good.",
+          "keyword": "IF",
+          "transformed": "I _________ you had not told me it was really good.",
+          "answer": "would not (wouldn't) have watched it if"
+        },
+        {
+          "id": "1.8",
+          "original": "He did not talk to anybody before he made the decision.",
+          "keyword": "SHOULD",
+          "transformed": "He _________ before he made the decision.",
+          "answer": "should have talked to someone / should have talked to somebody"
+        },
+        {
+          "id": "1.9",
+          "original": "I cannot draw landscapes as well as they can.",
+          "keyword": "BETTER",
+          "transformed": "They are _________.",
+          "answer": "better at drawing landscapes than me / better at drawing landscapes than I am"
+        },
+        {
+          "id": "1.10",
+          "original": "The information I got from them was so unclear that I had no idea what to do.",
+          "keyword": "SUCH",
+          "transformed": "They gave me _________ information that I had no idea what to do.",
+          "answer": "such unclear"
+        }
+      ]
+    }
+  ]
+}

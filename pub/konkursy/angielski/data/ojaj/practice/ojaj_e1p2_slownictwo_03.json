@@ -1,0 +1,114 @@
+{
+  "title": "OJAJ etap I cz. 2: slownictwo (3)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 9,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Do you like this new _________ I got for peeling apples?",
+          "options": [
+            "A) issue",
+            "B) gadget",
+            "C) electric",
+            "D) gauge"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "It's unfortunate, but I'm afraid you give me no _________",
+          "options": [
+            "A) matter",
+            "B) wonder",
+            "C) choice",
+            "D) concern"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "Go home George. There's no _________ in both of us waiting here.",
+          "options": [
+            "A) way",
+            "B) point",
+            "C) means",
+            "D) matter"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "By the time the police arrived, there was no _________ of the burglars.",
+          "options": [
+            "A) trace",
+            "B) use",
+            "C) way",
+            "D) vision"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "When Judy saw our new house she was _________ with envy.",
+          "options": [
+            "A) blue",
+            "B) red",
+            "C) pink",
+            "D) green"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "stem": "Martha has made a big _________ this term. She has received best marks and the scholarship.",
+          "options": [
+            "A) effort",
+            "B) try",
+            "C) work",
+            "D) taste"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.7",
+          "stem": "Sue never comes to yoga classes now. We only see her once in a _________ moon.",
+          "options": [
+            "A) blue",
+            "B) red",
+            "C) pink",
+            "D) green"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "I'm fed up with all the cooking and cleaning and doing the laundry. I feel completely _________ off.",
+          "options": [
+            "A) blued",
+            "B) browned",
+            "C) darkened",
+            "D) blacked"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.9",
+          "stem": "All the pupils who misbehaved have been kept in _________",
+          "options": [
+            "A) prison",
+            "B) jail",
+            "C) detention",
+            "D) arrest"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

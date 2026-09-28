@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap III: slownictwo (4)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Jane asked him _________ being a well-known pianist.",
+          "options": [
+            "A) if he were enjoying",
+            "B) whether he enjoyed",
+            "C) did he enjoy",
+            "D) of enjoying"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "Mum suggested that he _________ lemon ice-cream this time.",
+          "options": [
+            "A) mustn't try",
+            "B) tries",
+            "C) try",
+            "D) would try"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "Brendan _________ too many books to read in the semester.",
+          "options": [
+            "A) complained of having",
+            "B) complained to have had",
+            "C) complained having",
+            "D) complained that he have"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "Are you really going to _________ everything I told you about this school and enroll?",
+          "options": [
+            "A) disregard",
+            "B) irregard",
+            "C) unregard",
+            "D) ilregard"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "We _________ with my brother's family until we _________ a flat of our own.",
+          "options": [
+            "A) live / buy",
+            "B) are living / buy",
+            "C) are living / will buy",
+            "D) live / will buy"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "_________ can kill even the strongest feeling, so beware!",
+          "options": [
+            "A) untrust",
+            "B) distrust",
+            "C) iltrust",
+            "D) intrust"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.7",
+          "stem": "Jackson seems completely _________ of working peacefully in a group.",
+          "options": [
+            "A) discapable",
+            "B) noncapable",
+            "C) uncapable",
+            "D) incapable"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "Many enemy soldiers got caught and _________",
+          "options": [
+            "A) disarmed",
+            "B) unarmed",
+            "C) misarmed",
+            "D) illarmed"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "The building was known _________ during the last war.",
+          "options": [
+            "A) to had been damaged",
+            "B) to being damaged",
+            "C) to have been damaged",
+            "D) to be damaged"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.10",
+          "stem": "The love letter is believed _________ by Shakespeare himself!",
+          "options": [
+            "A) to have been written",
+            "B) to write",
+            "C) being written",
+            "D) to has been written"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

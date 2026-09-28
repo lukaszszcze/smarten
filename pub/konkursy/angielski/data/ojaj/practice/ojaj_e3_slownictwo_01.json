@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap III: slownictwo (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Have you ever thought of _________ your ambition of becoming a translator, Ned?",
+          "options": [
+            "A) completing",
+            "B) following",
+            "C) realising",
+            "D) imposting"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "When the competition was over the runners took a lap of _________ waving to the crowd.",
+          "options": [
+            "A) victory",
+            "B) honour",
+            "C) winning",
+            "D) success"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "The local papers _________ the event well and hundreds of people turned up.",
+          "options": [
+            "A) forecasted",
+            "B) publicised",
+            "C) published",
+            "D) broadcasted"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "Harry's teacher made no _________ to his misbehaviour during the summer camp and the boy was truly grateful for it.",
+          "options": [
+            "A) reference",
+            "B) gesture",
+            "C) implication",
+            "D) menton"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "_________ love is the feeling we usually remember most from our teenage years.",
+          "options": [
+            "A) misrequited",
+            "B) disrequited",
+            "C) unrequited",
+            "D) irrequited"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Having friends depends on _________ time for them, not money.",
+          "options": [
+            "A) have you",
+            "B) that you have",
+            "C) whether you have",
+            "D) if have you"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "stem": "Have you really bought a/an _________ boat? But it could have been stolen!",
+          "options": [
+            "A) nonlicensed",
+            "B) unlicensed",
+            "C) illicensed",
+            "D) dislicensed"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.8",
+          "stem": "The example you gave is a very _________ one. Could you think of another one, maybe?",
+          "options": [
+            "A) atypical",
+            "B) intypical",
+            "C) mistypical",
+            "D) nontypical"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "More and more teachers _________ smartphones in their lessons.",
+          "options": [
+            "A) would use",
+            "B) use",
+            "C) are using",
+            "D) will have been using"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.10",
+          "stem": "And do you know this one about an old man who _________ to the doctor's and _________ 'Doctor, Doctor'.",
+          "options": [
+            "A) goes / says",
+            "B) is going / is saying",
+            "C) went / have said",
+            "D) has gone / said"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

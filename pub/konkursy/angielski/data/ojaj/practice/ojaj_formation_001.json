@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ: Slowotworstwo (test przykladowy)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/OJAJ-Przykladowy-test-—-slowotworstwo.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "Dla kazdego ze zdan utworz slowo pochodne od slowa bazowego zapisanego wielkimi literami. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "He __________ ignored the speed limit sign and had to pay a huge fine.",
+          "wordBase": "CARE",
+          "answer": [
+            "carelessly"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "__________ twins have to share every aspect of their life, including working together.",
+          "wordBase": "SEPARATE",
+          "answer": [
+            "inseparable"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "__________, a natural response of your body to stress, is a feeling of fear or apprehension about future events.",
+          "wordBase": "ANXIOUS",
+          "answer": [
+            "anxiety"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "\"Not in a million years\" — the idiom is used to talk about something which is __________ to happen.",
+          "wordBase": "LIKE",
+          "answer": [
+            "unlikely"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Children and teenagers have a natural __________ about things related to science.",
+          "wordBase": "CURIOUS",
+          "answer": [
+            "curiosity"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "An entirely vegan diet is claimed to be __________ better for the environment than the Mediterranean one.",
+          "wordBase": "SIGNIFY",
+          "answer": [
+            "significantly"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "What is the most __________ building you have ever visited?",
+          "wordBase": "IMPRESS",
+          "answer": [
+            "impressive"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Being a highly __________ person, she hardly ever gets bored.",
+          "wordBase": "IMAGINE",
+          "answer": [
+            "imaginative"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "Our calculations are based on the __________ that the prices will rise.",
+          "wordBase": "ASSUME",
+          "answer": [
+            "assumption"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "A serious __________ of cybersecurity experts might result in enormous losses of many companies.",
+          "wordBase": "SHORT",
+          "answer": [
+            "shortage"
+          ]
+        }
+      ]
+    }
+  ]
+}

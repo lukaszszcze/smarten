@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap III: slownictwo (5)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "'I honestly don't need your _________ advice! Will you please leave me alone?'",
+          "options": [
+            "A) desolicited",
+            "B) irsolicited",
+            "C) imsolicited",
+            "D) unsolicited"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.2",
+          "stem": "Our school volunteer club has recently decided to _________ for animal charity.",
+          "options": [
+            "A) earn",
+            "B) raise",
+            "C) rise",
+            "D) rose"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "Those types of phone use an optical zoom _________ with a 3X5 range.",
+          "options": [
+            "A) lense",
+            "B) lenses",
+            "C) len",
+            "D) lens"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "The mechanic reached for a heavy _________ to undo a really tight fitting nut.",
+          "options": [
+            "A) pliers",
+            "B) tongs",
+            "C) spanner",
+            "D) screwdriver"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "Are you completely _________ !? Stop playing this those matches! .",
+          "options": [
+            "A) imsane",
+            "B) non-sane",
+            "C) insane",
+            "D) unsane"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "The ending of her story sounded too _________ for all of us and we looked at her with mistrust and disbelief.",
+          "options": [
+            "A) outproven",
+            "B) outright",
+            "C) outlaying",
+            "D) outlandish"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "The story of a Loch Ness monster has been a/an _________ mystery for years now.",
+          "options": [
+            "A) perilous",
+            "B) baffling",
+            "C) unsetting",
+            "D) trustworthy"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.8",
+          "stem": "The teacher frowned at the _________ of my email. Well, I had no choice but to rewrite it.",
+          "options": [
+            "A) layout",
+            "B) outline",
+            "C) outlooks",
+            "D) lookout"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "When Nick became the _________ of the zoo his job was to show people around and give talks on endangered species.",
+          "options": [
+            "A) guard",
+            "B) curator",
+            "C) principal",
+            "D) exhibitor"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "stem": "After hearing Keith's _________ reply I felt sorry for him. The boy needed a teacher, and fast.",
+          "options": [
+            "A) disarticulate",
+            "B) inarticulate",
+            "C) unarticulate",
+            "D) nonarticulate"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

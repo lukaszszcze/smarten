@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap III: slowotworstwo",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Zestaw-I-z-kluczami.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "Uzupelnij kazde zdanie slowem utworzonym od wyrazu podanego wielkimi literami. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Jessica has never even imagined she could be working as a/an __________ for the FBI.",
+          "wordBase": "INFORM",
+          "answer": [
+            "informant"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Every time my cat breaks something I see this __________ grin on its mouth - I swear!",
+          "wordBase": "DEVIL",
+          "answer": [
+            "devilish"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "When I asked my dad if I could stay out late on Saturday night his answer was a/an __________ 'no'.",
+          "wordBase": "DECIDE",
+          "answer": [
+            "decisive"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The tradition of dressing a Christmas Tree __________ in Germany, right?",
+          "wordBase": "ORIGIN",
+          "answer": [
+            "originated"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Diane finally found __________ when she appeared in a film made by a famous Hollywood producer.",
+          "wordBase": "FAMOUS",
+          "answer": [
+            "fame"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Since flu is so highly __________ you should get vaccinated.",
+          "wordBase": "INFECTION",
+          "answer": [
+            "infectious"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Can you please make sure that all the electrical __________ in the kitchen are turned off?",
+          "wordBase": "APPLY",
+          "answer": [
+            "appliances"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "I've never liked carrot cake and I knew it would taste __________ even before I tried it.",
+          "wordBase": "HORROR",
+          "answer": [
+            "horrible"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "Joe wrote a __________ essay but the teacher rejected as saying it contained too many details.",
+          "wordBase": "LONG",
+          "answer": [
+            "lengthy"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "The teacher tried really hard but the new students wasn't very __________ and didn't answer any of the questions.",
+          "wordBase": "RESPOND",
+          "answer": [
+            "responsive"
+          ]
+        }
+      ]
+    }
+  ]
+}

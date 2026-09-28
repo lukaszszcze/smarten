@@ -1,0 +1,125 @@
+{
+  "title": "Wielka Brytania: parlament (pytania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania wlasne do mapy mysli OJAJ 2026/27 o Wielkiej Brytanii (nie z arkusza olimpiady). Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "What are the three components of the UK Parliament?",
+          "options": [
+            "A) the House of Commons, the House of Lords and the Prime Minister",
+            "B) the House of Commons, the Supreme Court and the monarch",
+            "C) the House of Commons, the House of Lords and the monarch",
+            "D) the Cabinet, the House of Lords and the Prime Minister"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "How many Members of Parliament (MPs) sit in the House of Commons?",
+          "options": [
+            "A) 650",
+            "B) 435",
+            "C) 100",
+            "D) 800"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "How do most members of the House of Lords get their seats?",
+          "options": [
+            "A) They are elected every five years.",
+            "B) They all inherit their seats from their fathers.",
+            "C) They are chosen by lot from ordinary citizens.",
+            "D) They are appointed, not elected."
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "What is one of the jobs of the Serjeant at Arms?",
+          "options": [
+            "A) writing the monarch's speech",
+            "B) keeping order in the House of Commons and carrying the Mace",
+            "C) counting the votes in general elections",
+            "D) choosing the Prime Minister"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "What happens when Black Rod comes to call MPs to the State Opening of Parliament?",
+          "options": [
+            "A) Black Rod reads the monarch's speech in the House of Commons.",
+            "B) The door of the Commons is slammed shut, and Black Rod knocks on it three times.",
+            "C) MPs throw their order papers at Black Rod.",
+            "D) Black Rod locks the MPs inside until the ceremony is over."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "Why is the official sometimes called \"Lady Usher of the Black Rod\"?",
+          "options": [
+            "A) The post was created for a queen.",
+            "B) The job has always been done by a woman.",
+            "C) It is the title used only in the House of Commons.",
+            "D) Since 2018 the post has been held by a woman."
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "What does the Mace in the House of Commons represent?",
+          "options": [
+            "A) the authority of the monarch, without which the House cannot meet or pass laws",
+            "B) the power of the Prime Minister over the Cabinet",
+            "C) the victory of Parliament in the Falklands War",
+            "D) the right of MPs to carry weapons"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "What is the Woolsack?",
+          "options": [
+            "A) the bag in which MPs' votes are collected",
+            "B) the Speaker's chair in the House of Commons",
+            "C) the seat of the Lord Speaker in the House of Lords",
+            "D) the monarch's throne in Westminster Abbey"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "What does the monarch do at the State Opening of Parliament?",
+          "options": [
+            "A) chooses the new Speaker of the House of Commons",
+            "B) votes on the first new law of the year",
+            "C) opens the doors of the House of Commons in person",
+            "D) reads a speech, written by the government, setting out its plans"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "What is devolution in the UK?",
+          "options": [
+            "A) the system in which the monarch chooses the Prime Minister",
+            "B) passing some powers from the UK Parliament to Scotland, Wales and Northern Ireland",
+            "C) the gradual change of the Labour Party into the Conservative Party",
+            "D) the division of London into boroughs"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

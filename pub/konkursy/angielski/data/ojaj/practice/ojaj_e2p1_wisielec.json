@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap II cz. 1: wisielec",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Doesn't Brian look __ __ E __ __ these days? He's really fat! Look at his double chin, chubby cheeks and plump hands.",
+          "hint": "__ __ E __ __",
+          "answer": [
+            "obese"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "'Carl's a __ __ D __ __ T.' 'True! He's not even 1.20m! All of his classmates are much taller.'",
+          "hint": "__ __ D __ __ T",
+          "answer": [
+            "midget"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Mr Todd __ __ R __ __ D his lips tightly in a small circle, thinking. He always did this to show his doubt or disapproval.",
+          "hint": "__ __ R __ __ D",
+          "answer": [
+            "pursed"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The detective identified the woman by a small __ __ R __ __ M __ __ __ she had since she was born on her left shoulder.",
+          "hint": "__ __ R __ __ M __ __ __",
+          "answer": [
+            "birthmark"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "If dad's going bald at that speed I guess he'll soon get himself a small __ O __ __ E __! He'll look hilarious!",
+          "hint": "__ O __ __ E __",
+          "answer": [
+            "toupee"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Alice smoothed the __ R __ A __ __ __ from her skirt and entered the office.",
+          "hint": "__ R __ A __ __ __",
+          "answer": [
+            "creases"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "You must wear a __ L __ __ under this dress. It's almost transparent.",
+          "hint": "__ L __ __",
+          "answer": [
+            "slip"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Although she couldn't have her own children, she was the best __ O __ T __ __ mother ever.",
+          "hint": "__ O __ T __ __",
+          "answer": [
+            "foster"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "I've always known you as Mrs Smith. What's your __ __ __ D __ N name?",
+          "hint": "__ __ __ D __ N",
+          "answer": [
+            "maiden"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "I'm getting married in three months. Luke, will you be my __ E __ __ __ A __?",
+          "hint": "__ E __ __ __ A __",
+          "answer": [
+            "bestman"
+          ]
+        }
+      ]
+    }
+  ]
+}

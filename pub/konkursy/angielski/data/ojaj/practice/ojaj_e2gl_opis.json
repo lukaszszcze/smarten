@@ -1,0 +1,66 @@
+{
+  "title": "OJAJ etap II gram.-leks.: opis zdjecia",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 5,
+      "instruction": "Ponizszy opis dotyczy zdjecia, na ktorym dziewczynka bawi sie z dwoma psami nad strumieniem. Uzupelnij opis tak, aby byl poprawny gramatycznie i logiczny.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The dog _________ the girl is white.",
+          "options": [
+            "A) next",
+            "B) close",
+            "C) nearest"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "... and is wearing a blue _________.",
+          "options": [
+            "A) necklace",
+            "B) leash",
+            "C) collar"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "_________ dog is black.",
+          "options": [
+            "A) The other",
+            "B) Another",
+            "C) A"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "Neither dog _________ standing on all four legs.",
+          "options": [
+            "A) are",
+            "B) has been",
+            "C) is"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "The dogs are trying to get the stick the girl is holding in _________ hand.",
+          "options": [
+            "A) the",
+            "B) her",
+            "C) a"
+          ],
+          "answer": "B"
+        }
+      ],
+      "text": "In this photo there are two dogs and a girl playing. The dog 1. _________ the girl is white and is wearing a blue 2. _________. 3. _________ dog is black. Neither dog 4. _________ standing on all four legs. The dogs are trying to get the stick the girl is holding in 5. _________ hand."
+    }
+  ]
+}

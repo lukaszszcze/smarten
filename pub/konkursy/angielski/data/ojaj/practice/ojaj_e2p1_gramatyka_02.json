@@ -1,0 +1,114 @@
+{
+  "title": "OJAJ etap II cz. 1: gramatyka (2)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 9,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Sue asked Pam where _________ such a lovely necklace.",
+          "options": [
+            "A) she had bought",
+            "B) did she buy",
+            "C) has she bought",
+            "D) had she bought"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "On their very first date Tony told Samantha that he _________ her.",
+          "options": [
+            "A) has loved",
+            "B) loved",
+            "C) would have loved",
+            "D) must have loved"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "My cousin used to boast _________ the best optician ever.",
+          "options": [
+            "A) to be",
+            "B) to have been",
+            "C) about being",
+            "D) on being"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "I intended to leave the party early, but the hosts insisted _________ a bit longer.",
+          "options": [
+            "A) on my staying",
+            "B) on having stayed",
+            "C) with my staying",
+            "D) about my staying"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "More and more people _________ these days. It's ever so common!",
+          "options": [
+            "A) have run",
+            "B) run",
+            "C) are running",
+            "D) will have been running"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Pete and Barbara _________ new bookshelves in the lounge now. They won't have time for a quick meeting in the cafe.",
+          "options": [
+            "A) are fitting",
+            "B) fit",
+            "C) have been fitting",
+            "D) are fitted"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.7",
+          "stem": "It's only Wednesday and she _________ two exams this week. She still has three to sit.",
+          "options": [
+            "A) will have taken",
+            "B) is taking",
+            "C) has taken",
+            "D) have been taking"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.8",
+          "stem": "Brian's really confused. He _________ to solve this puzzle for hours now!",
+          "options": [
+            "A) has been trying",
+            "B) is trying",
+            "C) tries",
+            "D) has tried"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "Grace Kelly _________ wonderfully in this musical. I simply love watching her!",
+          "options": [
+            "A) acts",
+            "B) is acting",
+            "C) have been acting",
+            "D) would act"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "OJAJ etap I cz. 2: idiomy z 'do'",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 10,
+      "instruction": "Dopasuj do kazdego zdania jego znaczenie (A-J). Kazde znaczenie pasuje do dokladnie jednego zdania.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "She is unsatisfactory for the job."
+        },
+        {
+          "letter": "B",
+          "text": "The dog is quite safe."
+        },
+        {
+          "letter": "C",
+          "text": "He will help you."
+        },
+        {
+          "letter": "D",
+          "text": "He can manage, don't worry."
+        },
+        {
+          "letter": "E",
+          "text": "He talks all the time."
+        },
+        {
+          "letter": "F",
+          "text": "I need one of those."
+        },
+        {
+          "letter": "G",
+          "text": "It's his party on Saturday."
+        },
+        {
+          "letter": "H",
+          "text": "His hobby is fixing his own house."
+        },
+        {
+          "letter": "I",
+          "text": "It shows how good he is."
+        },
+        {
+          "letter": "J",
+          "text": "She was driving extremely fast."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "He'll do you a favour.",
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "statement": "It does him credit.",
+          "answer": "I"
+        },
+        {
+          "id": "1.3",
+          "statement": "John is having a do.",
+          "answer": "G"
+        },
+        {
+          "id": "1.4",
+          "statement": "Susan just won't do.",
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "statement": "Mary was doing over a hundred.",
+          "answer": "J"
+        },
+        {
+          "id": "1.6",
+          "statement": "Jack does go on.",
+          "answer": "E"
+        },
+        {
+          "id": "1.7",
+          "statement": "He'll make do.",
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "statement": "Sam likes do-it-yourself.",
+          "answer": "H"
+        },
+        {
+          "id": "1.9",
+          "statement": "Spiky won't do you any harm.",
+          "answer": "B"
+        },
+        {
+          "id": "1.10",
+          "statement": "I could do with one.",
+          "answer": "F"
+        }
+      ]
+    }
+  ]
+}

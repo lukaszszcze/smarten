@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap II cz. 1: czasowniki zlozone",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Six -year-old girls simply love to boss people _________ .",
+          "options": [
+            "A) out",
+            "B) about",
+            "C) over",
+            "D) through"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "If you're not satisfied with the situation, why don't you try bringing _________ some changes?",
+          "options": [
+            "A) out",
+            "B) forward",
+            "C) in",
+            "D) about"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.3",
+          "stem": "I'm sure you're right, but I'm afraid it'll take you ages to get your point _________ .",
+          "options": [
+            "A) out with",
+            "B) off with",
+            "C) across",
+            "D) by"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "They've split up! How did that come _________ ?",
+          "options": [
+            "A) out",
+            "B) about",
+            "C) around",
+            "D) apart"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "Look at Tony. He really takes _________ his father.",
+          "options": [
+            "A) after",
+            "B) on",
+            "C) along",
+            "D) over"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "Dan said goodbye and hung _________",
+          "options": [
+            "A) off",
+            "B) in",
+            "C) up",
+            "D) over"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "stem": "You shouldn't be afraid to own _________ to your mistakes as they can teach you more.",
+          "options": [
+            "A) down",
+            "B) up",
+            "C) in",
+            "D) over"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.8",
+          "stem": "Studying has been taking _________ all of my time recently.",
+          "options": [
+            "A) up",
+            "B) over",
+            "C) in",
+            "D) with"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.9",
+          "stem": "It was raining heavily but we didn't have to wait long as the car drew _________ at the front entrance within minutes.",
+          "options": [
+            "A) in",
+            "B) over",
+            "C) down",
+            "D) up"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "The girl came _________ high fever quite unexpectedly and had to be rushed to the nearest hospital.",
+          "options": [
+            "A) off",
+            "B) down with",
+            "C) in",
+            "D) up with"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

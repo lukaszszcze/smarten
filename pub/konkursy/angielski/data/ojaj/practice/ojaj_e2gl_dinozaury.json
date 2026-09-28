@@ -1,0 +1,46 @@
+{
+  "title": "OJAJ etap II gram.-leks.: park dinozaurow",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 5,
+      "instruction": "Przeczytaj reklame parku dinozaurow. Zdecyduj, czy ponizsze zdania sa prawdziwe (T) czy falszywe (F).",
+      "options": [
+        "T",
+        "F"
+      ],
+      "title": "DINOSAUR PARK - A MONSTER DAY OUT",
+      "text": "Come face to face with life size dinosaurs both great and small lurking in the woods on our Trail. Help our ranger discover how many T-Rex roam the woodland, using our radio and lookout towers to accomplish your mission. Pretending to be an archaeologist with brush in hand, enjoy unearthing the dinosaur fossil and discover which dinosaur you think it is. Have fun climbing, sliding, swinging and scrambling in our fantastic adventure play area set in parkland. There's plenty for all ages including our Tiny 'Terror'saurs for the under 5's. For a small additional charge, climb aboard and get close to our deer herd on our fascinating guided safari (subject to availability).",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "The Dinosaur Park is only for children above 5 years of age.",
+          "answer": "F"
+        },
+        {
+          "id": "1.2",
+          "statement": "There are a lot of activities and tasks for children to accomplish.",
+          "answer": "T"
+        },
+        {
+          "id": "1.3",
+          "statement": "There is a special area with a playground just outside the park.",
+          "answer": "F"
+        },
+        {
+          "id": "1.4",
+          "statement": "You can go on a guided safari and see a herd of deer for free.",
+          "answer": "F"
+        },
+        {
+          "id": "1.5",
+          "statement": "The guided safari may not be available if there are too many people signing up for this activity.",
+          "answer": "T"
+        }
+      ]
+    }
+  ]
+}

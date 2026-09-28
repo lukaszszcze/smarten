@@ -1,0 +1,65 @@
+{
+  "title": "OJAJ etap II gram.-leks.: formy czasownika",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 10,
+      "instruction": "Uzupelnij zdania poprawnymi formami czasownikow podanych w nawiasach. Uzywaj pelnych form, np. does not zamiast doesn't.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "I'm used to _________ on the left because I've lived in England for some time. (drive)",
+          "answer": "driving"
+        },
+        {
+          "id": "1.2",
+          "context": "She tried to be serious but she couldn't help _________. (laugh)",
+          "answer": "laughing"
+        },
+        {
+          "id": "1.3",
+          "context": "I wish I _________ something to read. It's so boring sitting in this waiting-room with nothing to do. (have)",
+          "answer": "had"
+        },
+        {
+          "id": "1.4",
+          "context": "My parents never let me _________ after 10. (stay out)",
+          "answer": "stay out"
+        },
+        {
+          "id": "1.5",
+          "context": "It's high time you _________ a job. I'm fed up with supporting you! (find)",
+          "answer": "found"
+        },
+        {
+          "id": "1.6",
+          "context": "I had great difficulty _________ a good nanny for my two-year-old. (find)",
+          "answer": "finding"
+        },
+        {
+          "id": "1.7",
+          "context": "What _________ like? Is he tall? (he/look)",
+          "answer": "does he look"
+        },
+        {
+          "id": "1.8",
+          "context": "If I _________ about the meeting, I'd definitely have attended it. (inform)",
+          "answer": "had been informed"
+        },
+        {
+          "id": "1.9",
+          "context": "It's time we stopped _________ about our next move. We need to have a clear plan. (think)",
+          "answer": "to think"
+        },
+        {
+          "id": "1.10",
+          "context": "Byron is said to _________ on vinegar and potatoes. (live)",
+          "answer": "have lived"
+        }
+      ]
+    }
+  ]
+}

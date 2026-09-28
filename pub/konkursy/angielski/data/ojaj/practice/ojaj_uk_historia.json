@@ -1,0 +1,125 @@
+{
+  "title": "Wielka Brytania: historia (pytania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Pytania wlasne do mapy mysli OJAJ 2026/27 o Wielkiej Brytanii (nie z arkusza olimpiady). Z podanych odpowiedzi wybierz poprawna. Tylko jedna jest prawidlowa.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Which king put his seal on the Magna Carta in 1215?",
+          "options": [
+            "A) Richard the Lionheart",
+            "B) Henry VIII",
+            "C) King John",
+            "D) Edward I"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "Where was the Magna Carta sealed?",
+          "options": [
+            "A) at Runnymede, beside the River Thames",
+            "B) in the Tower of London",
+            "C) at Stonehenge",
+            "D) in Westminster Abbey"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Which king was made head of the Church of England by the Act of Supremacy in 1534?",
+          "options": [
+            "A) Henry VII",
+            "B) Charles I",
+            "C) Edward VI",
+            "D) Henry VIII"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.4",
+          "stem": "Why did the king break with the Pope in Rome before the Act of Supremacy?",
+          "options": [
+            "A) The Pope refused to crown him king.",
+            "B) The Pope would not annul his marriage to Catherine of Aragon.",
+            "C) The Pope had supported Spain in a war against England.",
+            "D) The Pope demanded that England pay higher taxes to Rome."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "Where did the Great Fire of London of 1666 start?",
+          "options": [
+            "A) in the Tower of London",
+            "B) in a bakery in Pudding Lane",
+            "C) in the Globe Theatre",
+            "D) in St Paul's Cathedral"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "Which famous building was destroyed in the Great Fire and rebuilt by Sir Christopher Wren?",
+          "options": [
+            "A) Westminster Abbey",
+            "B) Buckingham Palace",
+            "C) the Tower of London",
+            "D) St Paul's Cathedral"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "What started the Suez Crisis in 1956?",
+          "options": [
+            "A) Egypt's President Nasser took control of the Suez Canal.",
+            "B) Britain tried to build a second canal next to Suez.",
+            "C) The Suez Canal was closed by a storm for a year.",
+            "D) Israel bought the Suez Canal from France."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "How did the Suez Crisis end for Britain?",
+          "options": [
+            "A) Britain won control of the canal for another fifty years.",
+            "B) Britain shared the canal with Egypt until 2000.",
+            "C) Britain and France had to withdraw, mainly under pressure from the USA.",
+            "D) Britain bought the canal back from Egypt."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "Which country invaded the Falkland Islands in 1982?",
+          "options": [
+            "A) Chile",
+            "B) Spain",
+            "C) Brazil",
+            "D) Argentina"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "Who was the British Prime Minister during the Falklands War?",
+          "options": [
+            "A) Winston Churchill",
+            "B) Margaret Thatcher",
+            "C) Tony Blair",
+            "D) Anthony Eden"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

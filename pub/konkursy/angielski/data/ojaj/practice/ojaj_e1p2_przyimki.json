@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap I cz. 2: przyimki i czasowniki zlozone",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The Smith's must be having a renovation. I saw two ladders leaning _________ the house wall.",
+          "options": [
+            "A) over",
+            "B) on",
+            "C) against",
+            "D) at"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "stem": "I can't get _________ to Sara. I think she's switched off her mobile.",
+          "options": [
+            "A) over",
+            "B) on",
+            "C) throughout",
+            "D) through"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.3",
+          "stem": "It's so unfair! Susan does less and she earns twice _________ me.",
+          "options": [
+            "A) too much as",
+            "B) as much as",
+            "C) so much as",
+            "D) many than"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "The new management of the company does not allow _________ on the premises.",
+          "options": [
+            "A) to smoking",
+            "B) smoking",
+            "C) to smoke",
+            "D) smoke"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "The suspect was seen _________ the pub at 3 a.m. and drive away.",
+          "options": [
+            "A) left",
+            "B) leave",
+            "C) to leave",
+            "D) to leaving"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "Even though the police went _________ the burglars they didn't catch them.",
+          "options": [
+            "A) for",
+            "B) against",
+            "C) away",
+            "D) after"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "America's national symbol is that great bird which _________ as the bald eagle.",
+          "options": [
+            "A) is know",
+            "B) knew",
+            "C) is knew",
+            "D) is known"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "The Netherlands _________ to be one of the most beautiful countries in Europe.",
+          "options": [
+            "A) says",
+            "B) is said",
+            "C) is saying",
+            "D) saying"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.9",
+          "stem": "Susan hopes her new house _________ by December 2017.",
+          "options": [
+            "A) will have been built",
+            "B) will be build",
+            "C) would being build",
+            "D) will being built"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "stem": "Brian, if you _________ your homework, you won't be allowed to go out tonight.",
+          "options": [
+            "A) won't do",
+            "B) don't do",
+            "C) wouldn't do",
+            "D) didn't do"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

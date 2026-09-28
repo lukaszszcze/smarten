@@ -1,0 +1,58 @@
+{
+  "title": "OJAJ etap I gram.-leks.: list do kolegi",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 5,
+      "instruction": "Uzupelnij list wyrazami z ramki. Kilka wyrazow jest dodatkowych i nie pasuje do zadnej luki.",
+      "wordBank": [
+        "SEARCH",
+        "FROM",
+        "LOOKING",
+        "ONE",
+        "FOR",
+        "IN",
+        "SOME",
+        "AWAY",
+        "ABOUT",
+        "AN"
+      ],
+      "text": "Dear Max,\nI'm writing to you to ask 1. __________ advice. I have been 2. __________ for a job for 2 months but the only one I've found is 3. __________ L.A. It will mean moving far 4. __________ here. I really don't know what to do, I need 5. __________ advice from you as soon as possible.\nPlease, help me.\nAnn",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "for"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": [
+            "looking"
+          ]
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "in"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": [
+            "from"
+          ]
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "some"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "OJAJ etap I gram.-leks.: slowka po angielsku",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 5,
+      "instruction": "Podaj angielski odpowiednik podanego slowa. Kazda kreska odpowiada jednej literze, a podane litery stoja na swoich miejscach.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "fiołek - V __ __ __ __ __",
+          "hint": "V __ __ __ __ __",
+          "answer": [
+            "violet"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "stokrotka - D __ __ __ Y",
+          "hint": "D __ __ __ Y",
+          "answer": [
+            "daisy"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "trawnik - __ __ W __",
+          "hint": "__ __ W __",
+          "answer": [
+            "lawn"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "łąka - M __ __ __ __ __",
+          "hint": "M __ __ __ __ __",
+          "answer": [
+            "meadow"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "widelec - __ __ R __",
+          "hint": "__ __ R __",
+          "answer": [
+            "fork"
+          ]
+        }
+      ]
+    }
+  ]
+}

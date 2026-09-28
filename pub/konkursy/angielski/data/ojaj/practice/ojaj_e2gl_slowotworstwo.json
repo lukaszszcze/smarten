@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap II gram.-leks.: slowotworstwo",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "Wstaw wyraz podany wielkimi literami w odpowiedniej formie gramatycznej, np. BIG - bigger, WATCH - watched. Wyrazu nie mozna wstawic w formie niezmienionej.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "I try to speak English fluently and build sentences that are __________ correct.",
+          "wordBase": "GRAMMAR",
+          "answer": [
+            "grammatically"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "The words in the dictionary are in the __________ order.",
+          "wordBase": "ALPHABET",
+          "answer": [
+            "alphabetical"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "In __________ with Tokyo, life in Warsaw and Prague is cheap.",
+          "wordBase": "COMPARE",
+          "answer": [
+            "comparison"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The headmaster's speech was so long that I almost died of __________.",
+          "wordBase": "BORE",
+          "answer": [
+            "boredom"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Paula and Jack have three children. Paula also has a daughter from a previous __________.",
+          "wordBase": "MARRY",
+          "answer": [
+            "marriage"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "It is __________ in Poland to sell alcohol to people under 18.",
+          "wordBase": "LEGAL",
+          "answer": [
+            "illegal"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "She didn't realize that __________ films from the Internet is illegal.",
+          "wordBase": "DOWNLOAD",
+          "answer": [
+            "downloading"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Mark is very __________. He wants to be the best at everything.",
+          "wordBase": "COMPETE",
+          "answer": [
+            "competitive"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "The last Batman movie was so __________ - you knew exactly how it was going to end.",
+          "wordBase": "PREDICT",
+          "answer": [
+            "predictable"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "You can __________ your tea with honey instead of sugar.",
+          "wordBase": "SWEET",
+          "answer": [
+            "sweeten"
+          ]
+        }
+      ]
+    }
+  ]
+}

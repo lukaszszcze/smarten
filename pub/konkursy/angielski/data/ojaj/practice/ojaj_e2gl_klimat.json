@@ -1,0 +1,56 @@
+{
+  "title": "OJAJ etap II gram.-leks.: zmiany klimatu",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-gramatyczno-leksykalny-etap-II.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 4,
+      "instruction": "Przeczytaj tekst, a nastepnie wybierz poprawna odpowiedz.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "According to the article the warnings presented by top scientists:",
+          "options": [
+            "A) are exaggerated.",
+            "B) should be taken seriously.",
+            "C) have been misinterpreted by the media."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "Climate change has been caused mainly by:",
+          "options": [
+            "A) people's actions.",
+            "B) Intergovernmental Panel on Climate Change.",
+            "C) the existence of too many forests."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "Increased production of greenhouse gasses has resulted in:",
+          "options": [
+            "A) disappearance of fossil fuels.",
+            "B) higher temperatures all over the world.",
+            "C) local changes in the amount of carbon dioxide."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "Scientists predict that the changes in atmosphere:",
+          "options": [
+            "A) were most dangerous 250 years ago.",
+            "B) will take place at a slower rate.",
+            "C) will remain a major problem in years to come."
+          ],
+          "answer": "C"
+        }
+      ],
+      "text": "The world's top scientists have concluded that our climate is changing and they have issued urgent warnings about our future we can't afford to ignore. The IPCC (Intergovernmental Panel on Climate Change) reports leave no room for doubt: global warming is a fact. And human activity including the burning of fossil fuels, industrial emissions, and deforestation are the main cause of climate change and its most dangerous side effects. The dramatic rise in greenhouse gases over the last 250 years, particularly carbon dioxide, has caused temperatures to rise across the globe and this warming is projected to accelerate at an alarming and dangerous pace. Science is a powerful witness. Our world is undergoing a dramatic transformation. Dangerous atmospheric changes already observed and measured will continue for decades.\n\nA fragment of \"A Way Forward: Facing Climate Change\" - a video produced by the National Geographic Society."
+    }
+  ]
+}

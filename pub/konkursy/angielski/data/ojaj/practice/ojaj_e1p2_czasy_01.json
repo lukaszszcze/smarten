@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap I cz. 2: formy czasownika (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Over thirty million hamburgers _________ by the British each year.",
+          "options": [
+            "A) are eaten",
+            "B) eat",
+            "C) are eating",
+            "D) are being eaten"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "We were in a very difficult position. We _________ what to do.",
+          "options": [
+            "A) wasn't know",
+            "B) weren't known",
+            "C) didn't know",
+            "D) hadn't know"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "The river _________ very fast today, much faster than usual.",
+          "options": [
+            "A) is flowing",
+            "B) flows",
+            "C) will be flowing",
+            "D) is following"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "I can't understand why Sue _________ so selfish. She isn't usually like that.",
+          "options": [
+            "A) is being",
+            "B) was been",
+            "C) were",
+            "D) being"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "John is on holidays. He _________ Spain.",
+          "options": [
+            "A) has been to",
+            "B) was gone to",
+            "C) was going to",
+            "D) has gone to"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "stem": "In September Susan _________ at this company for 40 years and she's finally retiring on th her 70 birthday.",
+          "options": [
+            "A) will be",
+            "B) will have be",
+            "C) will have been",
+            "D) would have be"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.7",
+          "stem": "_________ I'd read the instructions, I found it easy to assemble the bookcase.",
+          "options": [
+            "A) once",
+            "B) twice",
+            "C) for",
+            "D) from"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "It was more than a month _________ I realized what had happened.",
+          "options": [
+            "A) until",
+            "B) before",
+            "C) for",
+            "D) till"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.9",
+          "stem": "Sam! What on earth _________ ? You're all covered in mud!",
+          "options": [
+            "A) you did",
+            "B) you've done",
+            "C) you have been doing",
+            "D) have you been doing"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "Ms Watson has been teaching Maths _________ ten years now.",
+          "options": [
+            "A) since",
+            "B) yet",
+            "C) for",
+            "D) during"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

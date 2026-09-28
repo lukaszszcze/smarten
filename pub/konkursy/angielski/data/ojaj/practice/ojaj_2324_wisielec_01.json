@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ 2023/24: wisielec (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/Test-A-—-6.11.2023-bez-hasa.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "__ O __ __ of the bikes broke at the same time, so we couldn't finish the race.",
+          "hint": "__ O __ __",
+          "answer": [
+            "both"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "He M __ __ __ N __ __ R __ __ __ __ __ the instructions and didn't complete the task.",
+          "hint": "M __ __ __ N __ __ R __ __ __ __ __",
+          "answer": [
+            "misunderstood"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Susan, have you gone __ __ R __ __ __ __ any painful experience in your life recently?",
+          "hint": "__ __ R __ __ __ __",
+          "answer": [
+            "through"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "__ __ I __ __ E __ of my parents likes my girl-friend. It makes me feel depressed.",
+          "hint": "__ __ I __ __ E __",
+          "answer": [
+            "neither"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "My __ I __ __ __ __ - __ __ - __ A __ is amazing. She married my brother only a month ago but we are already getting on very well.",
+          "hint": "__ I __ __ __ __ - __ __ - __ A __",
+          "answer": [
+            "sister-in-law"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "__ __ __ E of the guests arrived on time. Everybody was late.",
+          "hint": "__ __ __ E",
+          "answer": [
+            "none"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Her __ M __ __ E __ __ I __ __ speech left a lasting impact on the audience.",
+          "hint": "__ M __ __ E __ __ I __ __",
+          "answer": [
+            "impressive"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Don't worry. I'm sure you'll make __ __ __ S meet.",
+          "hint": "__ __ __ S",
+          "answer": [
+            "ends"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "During the pandemic remember to wash your hands with soap and wear D __ __ __ O __ A __ __ __ gloves.",
+          "hint": "D __ __ __ O __ A __ __ __",
+          "answer": [
+            "disposable"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "Mark's __ __ N __ __ I __ __ __ I __ __ to the project was priceless. We wouldn't have done it without him.",
+          "hint": "__ __ N __ __ I __ __ __ I __ __",
+          "answer": [
+            "contribution"
+          ]
+        }
+      ]
+    }
+  ]
+}

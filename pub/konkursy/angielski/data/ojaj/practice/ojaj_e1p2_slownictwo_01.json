@@ -1,0 +1,103 @@
+{
+  "title": "OJAJ etap I cz. 2: slownictwo (1)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 8,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "_________ John and Mark are the best students in our class.",
+          "options": [
+            "A) all",
+            "B) both",
+            "C) two",
+            "D) every"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "Hurry up! They'll be arriving _________ , and we're not ready yet.",
+          "options": [
+            "A) any minute now",
+            "B) now",
+            "C) a while",
+            "D) as of today"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "My football team won the first _________ of the two – match tie.",
+          "options": [
+            "A) arm",
+            "B) leg",
+            "C) wrist",
+            "D) foot"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "You can't fool Sue, she's an old _________ at this game!",
+          "options": [
+            "A) arm",
+            "B) leg",
+            "C) hand",
+            "D) foot"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "stem": "The villa lies in the _________ of the French countryside.",
+          "options": [
+            "A) heart",
+            "B) mouth",
+            "C) liver",
+            "D) foot"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "The village lay at the _________ of the mountain beside the lake.",
+          "options": [
+            "A) mouth",
+            "B) hand",
+            "C) knee",
+            "D) foot"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "My cat is bizarre. He follows me _________ I go. He never leaves my side.",
+          "options": [
+            "A) whenever",
+            "B) where",
+            "C) places",
+            "D) wherever"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.8",
+          "stem": "Look at _________ hot air balloons in the sky! Aren't they spectacular?",
+          "options": [
+            "A) those",
+            "B) these",
+            "C) that",
+            "D) this"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

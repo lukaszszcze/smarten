@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ: Wisielec (test przykladowy)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/OJAJ-Przykladowy-test-—-wisielec.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Przeczytaj zdania i uzupelnij brakujace litery w wyrazach. Liczba kreseczek odpowiada liczbie brakujacych liter. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "__ L __ __ __ chocolate, also called dark chocolate, contains 65% to 99% cocoa mass and 1% to 40% sugar.",
+          "hint": "__ L __ __ __",
+          "answer": [
+            "plain"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "A gamer can be G __ __ __ D to the screen for hours, but gets tired of reading after a few minutes.",
+          "hint": "G __ __ __ D",
+          "answer": [
+            "glued"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "You must let your friends know that you can be __ __ L I __ __ upon not to gossip behind their backs.",
+          "hint": "__ __ L I __ __",
+          "answer": [
+            "relied"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Decorators should never I __ __ I __ __ on throwing out everything the client has. Even when they are far from perfect, loved possessions add personality. (Billy Baldwin, a furniture advisor)",
+          "hint": "I __ __ I __ __",
+          "answer": [
+            "insist"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "If you have ever had food P __ __ S __ __ __ __ __ when eating out, any slightly undercooked meat will horrify you.",
+          "hint": "P __ __ S __ __ __ __ __",
+          "answer": [
+            "poisoning"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "She has D __ __ __ her hair blue. Her fans love her new look.",
+          "hint": "D __ __ __",
+          "answer": [
+            "dyed"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Footballers or runners have human opponents. If you do an __ __ __ __ __ M __ sport, danger is your opponent.",
+          "hint": "__ __ __ __ __ M __",
+          "answer": [
+            "extreme"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The mountain is definitely worth the long trek. The view from the __ __ M __ __ __ is breathtaking.",
+          "hint": "__ __ M __ __ __",
+          "answer": [
+            "summit"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "The model is an economical vehicle suitable for everyday C __ __ M __ __ __ __ S.",
+          "hint": "C __ __ M __ __ __ __ S",
+          "answer": [
+            "commuters"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "I overslept and __ __ __ S __ __ an important meeting because the battery on my mobile died.",
+          "hint": "__ __ __ S __ __",
+          "answer": [
+            "missed"
+          ]
+        }
+      ]
+    }
+  ]
+}

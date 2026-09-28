@@ -1,0 +1,107 @@
+{
+  "title": "OJAJ etap I cz. 2: idiomy z 'head'",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-I-czesc-II-1.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 10,
+      "instruction": "Dopasuj do kazdego zdania idiom, ktory znaczy to samo (A-J). Kazdy idiom pasuje do dokladnie jednego zdania.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "I always keep my head."
+        },
+        {
+          "letter": "B",
+          "text": "It never entered my head."
+        },
+        {
+          "letter": "C",
+          "text": "I brought matters to a head."
+        },
+        {
+          "letter": "D",
+          "text": "My head is in the clouds."
+        },
+        {
+          "letter": "E",
+          "text": "I can't make head or tail of it."
+        },
+        {
+          "letter": "F",
+          "text": "I'm in way over my head."
+        },
+        {
+          "letter": "G",
+          "text": "I could do it standing on my head."
+        },
+        {
+          "letter": "H",
+          "text": "It's completely gone to my head."
+        },
+        {
+          "letter": "I",
+          "text": "I'm off my head."
+        },
+        {
+          "letter": "J",
+          "text": "I keep my head down."
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "I never even thought of it.",
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "statement": "I avoid attracting attention.",
+          "answer": "J"
+        },
+        {
+          "id": "1.3",
+          "statement": "I made sure that something had to be decided.",
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "statement": "I'm not a practically minded person.",
+          "answer": "D"
+        },
+        {
+          "id": "1.5",
+          "statement": "I'm involved so far that it's out of my control.",
+          "answer": "F"
+        },
+        {
+          "id": "1.6",
+          "statement": "I don't understand it at all.",
+          "answer": "E"
+        },
+        {
+          "id": "1.7",
+          "statement": "I've gone mad.",
+          "answer": "I"
+        },
+        {
+          "id": "1.8",
+          "statement": "I've let my feelings get out of control.",
+          "answer": "H"
+        },
+        {
+          "id": "1.9",
+          "statement": "I never lose control of my emotions.",
+          "answer": "A"
+        },
+        {
+          "id": "1.10",
+          "statement": "I find it really easy.",
+          "answer": "G"
+        }
+      ]
+    }
+  ]
+}

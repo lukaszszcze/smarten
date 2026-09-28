@@ -1,0 +1,508 @@
+{
+  "competition": {
+    "id": "ojaj",
+    "name": "Olimpiada Jezyka Angielskiego dla Juniorow",
+    "shortName": "OJAJ",
+    "level": "B2-C1+",
+    "url": "https://ojaj.wsjo.pl/"
+  },
+  "editions": [
+    {
+      "year": "2022/2023",
+      "yearPath": "2022-2023",
+      "stages": [
+        {
+          "stage": "szkolny-a",
+          "label": "Etap szkolny, cz. 1 (grupa A)",
+          "part": "1",
+          "variant": "A",
+          "maxPoints": 60,
+          "timeMinutes": 60
+        },
+        {
+          "stage": "szkolny-b",
+          "label": "Etap szkolny, cz. 1 (grupa B)",
+          "part": "1",
+          "variant": "B",
+          "maxPoints": 60,
+          "timeMinutes": 60
+        }
+      ]
+    },
+    {
+      "year": "2024/2025",
+      "yearPath": "2024-2025",
+      "stages": [
+        {
+          "stage": "szkolny",
+          "part": "1",
+          "variant": "B",
+          "maxPoints": 45,
+          "timeMinutes": 45
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ojaj_formation_001",
+      "title": "OJAJ: Slowotworstwo (test przykladowy)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "ojaj_spelling_001",
+      "title": "OJAJ: Wisielec (test przykladowy)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "ojaj_transform_001",
+      "title": "OJAJ: Transformacje (test przykladowy)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "ojaj_choice_001",
+      "title": "OJAJ: Test jednokrotnego wyboru (test przykladowy)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "ojaj_e1p2_czasy_01",
+      "title": "OJAJ etap I cz. 2: formy czasownika (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_czasy_02",
+      "title": "OJAJ etap I cz. 2: formy czasownika (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_idiomy_do",
+      "title": "OJAJ etap I cz. 2: idiomy z 'do'",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_slownictwo_01",
+      "title": "OJAJ etap I cz. 2: slownictwo (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 8,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_slownictwo_02",
+      "title": "OJAJ etap I cz. 2: slownictwo (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 7,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_przyimki",
+      "title": "OJAJ etap I cz. 2: przyimki i czasowniki zlozone",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_idiomy_head",
+      "title": "OJAJ etap I cz. 2: idiomy z 'head'",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1p2_slownictwo_03",
+      "title": "OJAJ etap I cz. 2: slownictwo (3)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 9,
+      "group": "Etap I, czesc 2 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_idiomy",
+      "title": "OJAJ etap II cz. 1: idiomy",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_gramatyka_01",
+      "title": "OJAJ etap II cz. 1: gramatyka (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_gramatyka_02",
+      "title": "OJAJ etap II cz. 1: gramatyka (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 9,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_gramatyka_03",
+      "title": "OJAJ etap II cz. 1: gramatyka (3)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_slownictwo_01",
+      "title": "OJAJ etap II cz. 1: slownictwo (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_slownictwo_02",
+      "title": "OJAJ etap II cz. 1: czasowniki zlozone",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_slownictwo_03",
+      "title": "OJAJ etap II cz. 1: cialo i wyglad",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e2p1_wisielec",
+      "title": "OJAJ etap II cz. 1: wisielec",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap II, czesc 1 - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slowotworstwo",
+      "title": "OJAJ etap III: slowotworstwo",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slownictwo_01",
+      "title": "OJAJ etap III: slownictwo (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slownictwo_02",
+      "title": "OJAJ etap III: slownictwo (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slownictwo_03",
+      "title": "OJAJ etap III: slownictwo (3)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slownictwo_04",
+      "title": "OJAJ etap III: slownictwo (4)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_slownictwo_05",
+      "title": "OJAJ etap III: slownictwo (5)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_wisielec_01",
+      "title": "OJAJ etap III: wisielec (1)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e3_wisielec_02",
+      "title": "OJAJ etap III: wisielec (2)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 7,
+      "group": "Etap III - test przykladowy"
+    },
+    {
+      "id": "ojaj_e1gl_list",
+      "title": "OJAJ etap I gram.-leks.: list do kolegi",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_slowka",
+      "title": "OJAJ etap I gram.-leks.: slowka po angielsku",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_naglowki",
+      "title": "OJAJ etap I gram.-leks.: praca na lotnisku",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_reakcje",
+      "title": "OJAJ etap I gram.-leks.: reakcje jezykowe",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 6,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_czasowniki",
+      "title": "OJAJ etap I gram.-leks.: formy czasownika",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_gramatyka",
+      "title": "OJAJ etap I gram.-leks.: gramatyka",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_slowotworstwo",
+      "title": "OJAJ etap I gram.-leks.: slowotworstwo",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e1gl_odpowiedzi",
+      "title": "OJAJ etap I gram.-leks.: pytania i odpowiedzi",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6,
+      "group": "Test gramatyczno-leksykalny, etap I"
+    },
+    {
+      "id": "ojaj_e2gl_dinozaury",
+      "title": "OJAJ etap II gram.-leks.: park dinozaurow",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_klimat",
+      "title": "OJAJ etap II gram.-leks.: zmiany klimatu",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 4,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_opis",
+      "title": "OJAJ etap II gram.-leks.: opis zdjecia",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_slowotworstwo",
+      "title": "OJAJ etap II gram.-leks.: slowotworstwo",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_slownictwo_01",
+      "title": "OJAJ etap II gram.-leks.: slownictwo (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 8,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_slownictwo_02",
+      "title": "OJAJ etap II gram.-leks.: slownictwo (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 7,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_czasowniki",
+      "title": "OJAJ etap II gram.-leks.: formy czasownika",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_e2gl_gramatyka",
+      "title": "OJAJ etap II gram.-leks.: gramatyka",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 5,
+      "group": "Test gramatyczno-leksykalny, etap II"
+    },
+    {
+      "id": "ojaj_2324_gramatyka_01",
+      "title": "OJAJ 2023/24: gramatyka (1)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_gramatyka_02",
+      "title": "OJAJ 2023/24: gramatyka (2)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_wisielec_01",
+      "title": "OJAJ 2023/24: wisielec (1)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_wisielec_02",
+      "title": "OJAJ 2023/24: wisielec (2)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_slowotworstwo_01",
+      "title": "OJAJ 2023/24: slowotworstwo (1)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_slowotworstwo_02",
+      "title": "OJAJ 2023/24: slowotworstwo (2)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_transformacje_01",
+      "title": "OJAJ 2023/24: transformacje (1)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_transformacje_02",
+      "title": "OJAJ 2023/24: transformacje (2)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_2324_kultura",
+      "title": "OJAJ 2023/24: Wielka Brytania",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2023/24"
+    },
+    {
+      "id": "ojaj_uk_symbole",
+      "title": "Wielka Brytania: symbole (pytania wlasne)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    },
+    {
+      "id": "ojaj_uk_parlament",
+      "title": "Wielka Brytania: parlament (pytania wlasne)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    },
+    {
+      "id": "ojaj_uk_historia",
+      "title": "Wielka Brytania: historia (pytania wlasne)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    },
+    {
+      "id": "ojaj_uk_londyn",
+      "title": "Wielka Brytania: Londyn (pytania wlasne)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    },
+    {
+      "id": "ojaj_uk_postacie",
+      "title": "Wielka Brytania: slynni Brytyjczycy (pytania wlasne)",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    }
+  ]
+}

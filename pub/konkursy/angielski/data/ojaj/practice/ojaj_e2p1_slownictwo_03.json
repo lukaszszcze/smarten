@@ -1,0 +1,125 @@
+{
+  "title": "OJAJ etap II cz. 1: cialo i wyglad",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2025/06/etap-II-czesc-I.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "W kazdym zdaniu znajduje sie luka. Wybierz jedyna poprawna odpowiedz sposrod czterech podanych.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Aromatherapy may be a controversial treatment but it helped Francis and I'm not going to run it _________",
+          "options": [
+            "A) down",
+            "B) off",
+            "C) over",
+            "D) in"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "His sudden illness made him stand _________ as a candidate for the committee member.",
+          "options": [
+            "A) off",
+            "B) in to",
+            "C) under",
+            "D) down"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.3",
+          "stem": "'I wish to dye my hair auburn. What do you think?' ' _________ ?! You'd look terrible!'",
+          "options": [
+            "A) Reddish brown",
+            "B) Dark blond",
+            "C) Light grey",
+            "D) Pitch black"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "I can see you've got a fresh _________ on your eyelid. My granny would say to rub it with a silver ring.",
+          "options": [
+            "A) stye",
+            "B) wart",
+            "C) sore",
+            "D) scar"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "How many piercings can you have in one _________ Johnny?",
+          "options": [
+            "A) pimple",
+            "B) lobe",
+            "C) gum",
+            "D) mole"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "While skating I _________ one of my front teeth and now need to visit the dentist.",
+          "options": [
+            "A) scalded",
+            "B) singed",
+            "C) grazed",
+            "D) chipped"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.7",
+          "stem": "Look out Len! Don't _________ yourself with that mug. It's full of hot coffee.",
+          "options": [
+            "A) scald",
+            "B) acute",
+            "C) endure",
+            "D) tumb"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.8",
+          "stem": "Those shoes won't fit. My _________ is just too high and I rather need a pair with shoelaces.",
+          "options": [
+            "A) sole",
+            "B) shin",
+            "C) instep",
+            "D) tendon"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.9",
+          "stem": "One part of the spine is called a/an _________",
+          "options": [
+            "A) artebra",
+            "B) artebre",
+            "C) vartebra",
+            "D) vertebra"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "1.10",
+          "stem": "Are you going to the toilet again? Gosh, your _________ is really small!",
+          "options": [
+            "A) pelvis",
+            "B) appendix",
+            "C) intestine",
+            "D) bladder"
+          ],
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}

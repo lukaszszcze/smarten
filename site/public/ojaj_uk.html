@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tadzio's UK Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root {
+  --bg: #f5f6fb;
+  --paper: #ffffff;
+  --ink: #1c2140;
+  --muted: #5a6082;
+  --line: #dfe2ef;
+  --hub: #d8d5fb;
+  --hub-ink: #3d3699;
+  --yellow: #c99a00;
+  --yellow-soft: #fff6d1;
+  --pink: #cf1f68;
+  --pink-soft: #fde6ef;
+  --orange: #d27a00;
+  --orange-soft: #fff0da;
+  --green: #2f8f2a;
+  --green-soft: #e4f5e1;
+  --shadow: 0 1px 2px rgba(28,33,64,.06), 0 6px 20px rgba(28,33,64,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #12142a; --paper: #1b1e38; --ink: #e8eaf8; --muted: #a2a7c9; --line: #2e3257;
+    --hub: #34307a; --hub-ink: #d8d5fb;
+    --yellow: #f2c94c; --yellow-soft: #2e2a14;
+    --pink: #ff6fa6; --pink-soft: #3a1a2a;
+    --orange: #ffab40; --orange-soft: #36260f;
+    --green: #7bd66f; --green-soft: #17301a;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12142a; --paper: #1b1e38; --ink: #e8eaf8; --muted: #a2a7c9; --line: #2e3257;
+  --hub: #34307a; --hub-ink: #d8d5fb;
+  --yellow: #f2c94c; --yellow-soft: #2e2a14;
+  --pink: #ff6fa6; --pink-soft: #3a1a2a;
+  --orange: #ffab40; --orange-soft: #36260f;
+  --green: #7bd66f; --green-soft: #17301a;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  font-size: 17px; line-height: 1.6;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 18px; padding-block: 28px 64px; }
+h1, h2, h3 { font-family: "Bricolage Grotesque", "Atkinson Hyperlegible", system-ui, sans-serif; text-wrap: balance; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; margin: 0 0 .4rem; letter-spacing: -.01em; }
+h2 { font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 800; margin: 0; }
+h3 { font-size: 1.2rem; font-weight: 600; margin: 1.6rem 0 .4rem; }
+p { margin: .5rem 0; max-width: 68ch; }
+a { color: var(--hub-ink); }
+a:focus-visible, summary:focus-visible, input:focus-visible { outline: 3px solid var(--hub-ink); outline-offset: 2px; border-radius: 4px; }
+.lede { color: var(--muted); max-width: 62ch; }
+.eyebrow { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+
+/* overview map */
+.map { margin: 26px 0 8px; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.hub { grid-column: 1 / -1; background: var(--hub); color: var(--hub-ink); border-radius: 18px; padding: 12px 16px; font-weight: 700; text-align: center; font-family: "Bricolage Grotesque", sans-serif; }
+.node { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--ink); background: var(--paper); border: 2px solid var(--c); border-radius: 14px; padding: 10px 14px; }
+.node strong { color: var(--c); font-family: "Bricolage Grotesque", sans-serif; font-size: 1.05rem; }
+.node span { font-size: .88rem; color: var(--muted); line-height: 1.4; }
+.node .done { font-size: .8rem; color: var(--c); font-weight: 700; }
+.node:hover { background: var(--soft); }
+
+.howto { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-top: 18px; }
+.howto ol { margin: .4rem 0 0; padding-left: 1.3rem; }
+
+/* sections */
+section.branch { margin-top: 48px; padding-top: 8px; border-top: 4px solid var(--c); }
+.branch-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; margin: 14px 0 6px; }
+.branch-head h2 { color: var(--c); }
+.learnt { display: inline-flex; align-items: center; gap: 8px; font-size: .92rem; color: var(--muted); cursor: pointer; }
+.learnt input { width: 20px; height: 20px; accent-color: var(--c); }
+
+.fact { background: var(--paper); border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); padding: 4px 18px 12px; margin: 14px 0; }
+.fact ul { margin: .3rem 0; padding-left: 1.2rem; }
+.fact li { margin: .25rem 0; }
+
+.remember { background: var(--soft); border-radius: 14px; padding: 12px 18px; margin: 18px 0; }
+.remember .eyebrow { color: var(--c); }
+.remember dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 8px 0 0; }
+.remember dt { font-weight: 700; font-variant-numeric: tabular-nums; }
+.remember dd { margin: 0; }
+
+.words { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 10px 0; padding: 0; list-style: none; }
+.words li { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 2px 12px; font-size: .9rem; }
+.words b { font-weight: 700; }
+.words i { color: var(--muted); }
+
+.check { margin: 18px 0 6px; }
+.check details { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 8px 14px; margin: 8px 0; }
+.check summary { cursor: pointer; font-weight: 700; }
+.check summary::marker { color: var(--c); }
+.check details p { margin: .4rem 0 .2rem; color: var(--ink); }
+.quiz { display: inline-block; margin-top: 10px; background: var(--c); color: var(--paper); text-decoration: none; font-weight: 700; padding: 8px 16px; border-radius: 999px; }
+:root[data-theme="dark"] .quiz { color: #12142a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .quiz { color: #12142a; } }
+
+.tip { font-size: .92rem; color: var(--muted); font-style: italic; }
+
+.y { --c: var(--yellow); --soft: var(--yellow-soft); }
+.p { --c: var(--pink); --soft: var(--pink-soft); }
+.o { --c: var(--orange); --soft: var(--orange-soft); }
+.g { --c: var(--green); --soft: var(--green-soft); }
+
+.timeline { overflow-x: auto; }
+.timeline table { border-collapse: collapse; width: 100%; min-width: 480px; background: var(--paper); border-radius: 12px; overflow: hidden; }
+.timeline td, .timeline th { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.timeline td:first-child { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.timeline th { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+footer { margin-top: 48px; font-size: .9rem; color: var(--muted); }
+@media (max-width: 480px) { body { font-size: 16px; } .remember dl { grid-template-columns: 1fr; gap: 0 0; } .remember dt { margin-top: 6px; } }
+</style>
+
+<style>body{margin:0}</style>
+</head>
+<body>
+<div class="wrap">
+  <p><a href="/ojaj">&larr; Powrot do OJAJ</a></p>
+  <p class="eyebrow">OJAJ 2026/27 · culture part · United Kingdom</p>
+  <h1>Tadzio's UK Notebook</h1>
+  <p class="lede">Everything on the official OJAJ mind map of the United Kingdom, explained in plain English. Each section follows one branch of the map, in the map's own colours. Hard words have their Polish meaning next to them.</p>
+
+  <nav class="map" aria-label="Branches of the mind map">
+    <div class="hub">The United Kingdom of Great Britain and Northern Ireland</div>
+    <a class="node y" href="#symbols"><strong>Symbols of the UK</strong><span>Union Jack, Royal Standard, Royal Coat of Arms</span><span class="done" data-for="symbols"></span></a>
+    <a class="node p" href="#nations"><strong>The four countries</strong><span>Plants and patron saints</span><span class="done" data-for="nations"></span></a>
+    <a class="node o" href="#parliament"><strong>Political life</strong><span>Parliament, officials, Mace, Woolsack, State Opening, devolution, parties</span><span class="done" data-for="parliament"></span></a>
+    <a class="node g" href="#history"><strong>Historical events</strong><span>1215 · 1534 · 1666 · 1956 · 1982</span><span class="done" data-for="history"></span></a>
+    <a class="node o" href="#britons"><strong>Notable Britons</strong><span>Darwin, Lovelace, Pankhurst, Conan Doyle, Nolan</span><span class="done" data-for="britons"></span></a>
+    <a class="node p" href="#landmarks"><strong>Landmarks of London</strong><span>The Monument, Tower of London</span><span class="done" data-for="landmarks"></span></a>
+    <a class="node g" href="#parks"><strong>London's Royal Parks</strong><span>Hyde Park, Kensington Gardens</span><span class="done" data-for="parks"></span></a>
+  </nav>
+
+  <div class="howto">
+    <strong>How to use this notebook</strong>
+    <ol>
+      <li>Read one section a day. Say the facts in the "Remember" box out loud.</li>
+      <li>Answer the "Check yourself" questions before you open them.</li>
+      <li>Do the SmartEn quiz for that section. Tick "I've learnt this" when you score well.</li>
+    </ol>
+  </div>
+
+  <!-- ============ SYMBOLS ============ -->
+  <section class="branch y" id="symbols">
+    <div class="branch-head">
+      <h2>Symbols of the UK</h2>
+      <label class="learnt"><input type="checkbox" id="done-symbols" data-key="symbols"> I've learnt this</label>
+    </div>
+
+    <h3>Flags: the Union Jack</h3>
+    <div class="fact">
+      <p>The national flag of the UK is officially called the <em>Union Flag</em>, but most people call it the <em>Union Jack</em>. Both names are correct. It is made of three crosses laid on top of each other:</p>
+      <ul>
+        <li>the <b>cross of St George</b> (England): a red cross on white,</li>
+        <li>the <b>cross of St Andrew</b> (Scotland): a white diagonal cross (a <i>saltire</i>) on blue,</li>
+        <li>the <b>cross of St Patrick</b> (Ireland): a red diagonal cross on white.</li>
+      </ul>
+      <p>The first version (England + Scotland) appeared in 1606, when James VI of Scotland had also become King of England. St Patrick's cross was added in 1801, when Ireland joined the union. That is the flag we still use.</p>
+      <p><b>Wales is not on the flag.</b> By 1606 Wales had already been joined to England, so it was not treated as a separate kingdom. Wales has its own flag with a red dragon.</p>
+    </div>
+
+    <h3>Flags: the Royal Standard</h3>
+    <div class="fact">
+      <p>The Royal Standard is the personal flag of the monarch, now King Charles III. It is not a national flag. It flies over a building only when the King is inside, for example over Buckingham Palace. When he leaves, it comes down.</p>
+      <ul>
+        <li>It is divided into four quarters: <b>three gold lions</b> for England (twice), <b>a red lion standing on its back legs</b> for Scotland, and <b>a gold harp</b> for Ireland.</li>
+        <li>It is <b>never flown at half-mast</b>, even when a monarch dies, because there is always a monarch. The moment one dies, the next one is king or queen.</li>
+        <li>Wales is again not shown.</li>
+      </ul>
+    </div>
+
+    <h3>The Royal Coat of Arms</h3>
+    <div class="fact">
+      <p>The coat of arms is the official sign of the monarch and the state. You can see it on British passports, in courts and on government documents.</p>
+      <ul>
+        <li>In the middle is a shield with the same design as the Royal Standard (lions and harp).</li>
+        <li>The shield is held by two animals called <i>supporters</i>: a crowned <b>lion</b> for England on the left and a chained <b>unicorn</b> for Scotland on the right.</li>
+        <li>At the bottom is the motto in French, <b>"Dieu et mon droit"</b> ("God and my right"). French was the language of the English kings for centuries after the Normans conquered England in 1066.</li>
+        <li>Around the shield is a belt (the Garter) with another French motto: "Honi soit qui mal y pense" ("Shame on anyone who thinks badly of it").</li>
+      </ul>
+    </div>
+
+    <ul class="words">
+      <li><b>saltire</b> <i>krzyż ukośny (jak X)</i></li>
+      <li><b>at half-mast</b> <i>w połowie masztu</i></li>
+      <li><b>monarch</b> <i>monarcha</i></li>
+      <li><b>coat of arms</b> <i>herb</i></li>
+      <li><b>supporters</b> <i>trzymacze herbu</i></li>
+      <li><b>unicorn</b> <i>jednorożec</i></li>
+      <li><b>harp</b> <i>harfa</i></li>
+      <li><b>motto</b> <i>dewiza</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>3 crosses</dt><dd>George (England), Andrew (Scotland), Patrick (Ireland)</dd>
+        <dt>1606 / 1801</dt><dd>first Union Flag / St Patrick's cross added</dd>
+        <dt>Royal Standard</dt><dd>flown only where the monarch is; never at half-mast</dd>
+        <dt>Coat of arms</dt><dd>lion + unicorn, "Dieu et mon droit"</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Why is there no Welsh symbol on the Union Jack?</summary><p>Wales had already been united with England before the first Union Flag was made in 1606.</p></details>
+      <details><summary>You see the Royal Standard above Windsor Castle. What does it tell you?</summary><p>The King is in the castle at that moment.</p></details>
+      <details><summary>Which animal on the coat of arms stands for Scotland?</summary><p>The unicorn.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_symbole" target="_blank" rel="noopener">SmartEn quiz: symbols →</a>
+    </div>
+  </section>
+
+  <!-- ============ FOUR NATIONS ============ -->
+  <section class="branch p" id="nations">
+    <div class="branch-head">
+      <h2>The four countries of the UK</h2>
+      <label class="learnt"><input type="checkbox" id="done-nations" data-key="nations"> I've learnt this</label>
+    </div>
+    <p>The UK is made of four countries: <b>England</b> (capital London), <b>Scotland</b> (Edinburgh), <b>Wales</b> (Cardiff) and <b>Northern Ireland</b> (Belfast). Great Britain is the big island with England, Scotland and Wales. Northern Ireland is on the island of Ireland, so the full name is "the United Kingdom of Great Britain <em>and</em> Northern Ireland".</p>
+
+    <h3>Symbols of the four nations</h3>
+    <div class="fact" style="overflow-x:auto">
+      <table style="border-collapse:collapse;width:100%;min-width:520px">
+        <thead><tr style="text-align:left"><th style="padding:8px 8px 8px 0">Country</th><th style="padding:8px">Plant</th><th style="padding:8px">Patron saint</th><th style="padding:8px">Saint's day</th></tr></thead>
+        <tbody>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:8px 8px 8px 0"><b>England</b></td><td style="padding:8px">rose (the red and white Tudor rose)</td><td style="padding:8px">St George</td><td style="padding:8px">23 April</td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:8px 8px 8px 0"><b>Scotland</b></td><td style="padding:8px">thistle</td><td style="padding:8px">St Andrew</td><td style="padding:8px">30 November</td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:8px 8px 8px 0"><b>Wales</b></td><td style="padding:8px">daffodil and leek</td><td style="padding:8px">St David</td><td style="padding:8px">1 March</td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:8px 8px 8px 0"><b>Northern Ireland</b></td><td style="padding:8px">shamrock</td><td style="padding:8px">St Patrick</td><td style="padding:8px">17 March</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The saints and their stories</h3>
+    <div class="fact">
+      <ul>
+        <li><b>St George</b> was a Roman soldier. The famous legend says he killed a dragon to save a princess. His red cross is England's flag.</li>
+        <li><b>St Andrew</b> was one of Jesus's apostles (fisherman, brother of St Peter). He was killed on an X-shaped cross, which is why Scotland's flag is a white X on blue.</li>
+        <li><b>St David</b> was a Welsh bishop in the 6th century. His last words are said to have been "Do the little things". On 1 March Welsh people wear daffodils or leeks.</li>
+        <li><b>St Patrick</b> brought Christianity to Ireland. A legend says he used the three-leaved shamrock to explain the Holy Trinity. St Patrick's Day is celebrated all over the world with green clothes and parades.</li>
+      </ul>
+      <p>The rose became England's flower after the Wars of the Roses (1455–1487), fought between two families: York (white rose) and Lancaster (red rose). Henry VII joined the two roses into the <b>Tudor rose</b>. The thistle is linked to a legend about barefoot Viking attackers who stepped on thistles and cried out, which woke the Scots.</p>
+    </div>
+
+    <ul class="words">
+      <li><b>patron saint</b> <i>święty patron</i></li>
+      <li><b>thistle</b> <i>oset</i></li>
+      <li><b>daffodil</b> <i>żonkil</i></li>
+      <li><b>leek</b> <i>por</i></li>
+      <li><b>shamrock</b> <i>koniczyna (trójlistna)</i></li>
+      <li><b>apostle</b> <i>apostoł</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>England</dt><dd>rose · St George · 23 April</dd>
+        <dt>Scotland</dt><dd>thistle · St Andrew · 30 November</dd>
+        <dt>Wales</dt><dd>daffodil, leek · St David · 1 March</dd>
+        <dt>N. Ireland</dt><dd>shamrock · St Patrick · 17 March</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Which saint's day is 1 March, and what do people wear?</summary><p>St David's Day (Wales). People wear a daffodil or a leek.</p></details>
+      <details><summary>Why is St Andrew's cross shaped like an X?</summary><p>He was killed on an X-shaped cross.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_symbole" target="_blank" rel="noopener">SmartEn quiz: symbols →</a>
+    </div>
+  </section>
+
+  <!-- ============ PARLIAMENT ============ -->
+  <section class="branch o" id="parliament">
+    <div class="branch-head">
+      <h2>Political life: the UK Parliament</h2>
+      <label class="learnt"><input type="checkbox" id="done-parliament" data-key="parliament"> I've learnt this</label>
+    </div>
+    <p>The UK is a <b>constitutional monarchy</b>: there is a king, but the country is governed by Parliament and the government. Parliament meets in the <b>Palace of Westminster</b> in London, the building with the clock tower called Elizabeth Tower, home of the bell Big Ben.</p>
+
+    <h3>The three components: composition and roles</h3>
+    <div class="fact">
+      <ul>
+        <li><b>The House of Commons</b>: 650 <i>MPs</i> (Members of Parliament). Each is elected in one area called a <i>constituency</i>. General elections take place at least every five years. The Commons is the most powerful part: it makes laws, controls taxes and spending, and questions the government. The <b>Speaker</b> runs the debates and calls "Order! Order!"</li>
+        <li><b>The House of Lords</b>: members are <b>not elected</b>. Most are appointed for life (life peers), there are also bishops of the Church of England and a small group who inherited their seats. The Lords check and improve new laws and can delay them, but they cannot stop the Commons in the end. Its debates are run by the <b>Lord Speaker</b>.</li>
+        <li><b>The monarch</b>: a new law needs <b>Royal Assent</b> (the King's agreement). This is now only a formality. The last monarch to refuse was Queen Anne in 1708.</li>
+      </ul>
+      <p>The party with the most MPs forms the government, and its leader becomes <b>Prime Minister</b>, who lives at 10 Downing Street.</p>
+    </div>
+
+    <h3>Parliamentary officials</h3>
+    <div class="fact">
+      <ul>
+        <li><b>The Serjeant at Arms</b> (House of Commons) keeps order and security in the Commons. Every day they carry the Mace in the Speaker's procession into the chamber. If the Speaker orders an MP to leave, the Serjeant can remove them.</li>
+        <li><b>Black Rod</b> is the senior official of the House of Lords, named after the black ebony rod they carry. Their best-known job is at the State Opening of Parliament (see below). Since 2018 the post has been held by a woman, Sarah Clarke, so the title is now <b>Lady Usher of the Black Rod</b>.</li>
+      </ul>
+    </div>
+
+    <h3>Parliamentary symbols and ceremonies</h3>
+    <div class="fact">
+      <p><b>The Mace</b> is a large silver-gilt club, the symbol of the monarch's authority. The House of Commons cannot meet or pass laws unless the Mace is lying on the table in front of the Speaker. Grabbing the Mace is a serious offence, and MPs who did it in protest have been suspended.</p>
+      <p><b>The Woolsack</b> is the seat of the Lord Speaker in the House of Lords: a big red cushion stuffed with wool. It dates from the 14th century, when King Edward III wanted to show that wool was England's most important trade and source of wealth.</p>
+      <p><b>The State Opening of Parliament</b> marks the start of a new session of Parliament. It is the biggest ceremony of the political year:</p>
+      <ul>
+        <li>Before it starts, the Yeomen of the Guard search the cellars, a tradition since the Gunpowder Plot of 1605, when Guy Fawkes tried to blow up Parliament.</li>
+        <li>The King rides from Buckingham Palace in a carriage and sits on the throne in the <b>House of Lords</b>, wearing the Imperial State Crown.</li>
+        <li>Black Rod is sent to call the MPs. The door of the Commons is <b>slammed in Black Rod's face</b>, and Black Rod knocks on it <b>three times</b> with the rod before being let in. This shows that the Commons are independent of the monarch. It goes back to 1642, when King Charles I burst into the Commons to arrest five MPs. No monarch has entered the Commons since.</li>
+        <li>The MPs walk to the Lords and listen to the <b>King's Speech</b>. The King reads it, but <b>the government writes it</b>. It lists the laws the government plans to pass.</li>
+      </ul>
+    </div>
+
+    <h3>Devolution</h3>
+    <div class="fact">
+      <p><i>Devolution</i> means that the UK Parliament passed some of its powers to the other nations. After votes (referendums) in 1997 and the Good Friday Agreement in 1998, three bodies started work in 1999:</p>
+      <ul>
+        <li>the <b>Scottish Parliament</b> in Edinburgh (building called Holyrood),</li>
+        <li>the <b>Senedd</b> (Welsh Parliament) in Cardiff,</li>
+        <li>the <b>Northern Ireland Assembly</b> in Belfast (at Stormont).</li>
+      </ul>
+      <p>They decide things like health, schools and transport. Defence and foreign policy stay with Westminster. England has no parliament of its own; its laws are made by the UK Parliament. In 2014 Scotland voted in a referendum on independence: 55% said No.</p>
+    </div>
+
+    <h3>Two major political parties</h3>
+    <div class="fact">
+      <ul>
+        <li><b>The Labour Party</b> (centre-left, colour red, symbol a red rose) was founded in 1900 by trade unions and socialist groups to represent working people. Famous Labour governments: Clement Attlee's after 1945 created the <b>NHS</b> (National Health Service, 1948); Tony Blair (1997–2007). Keir Starmer became Prime Minister in July 2024.</li>
+        <li><b>The Conservative Party</b> (centre-right, colour blue), nicknamed the <b>Tories</b>. It grew out of the old Tory party and took the name "Conservative" in the 1830s. Famous Conservative Prime Ministers: Winston Churchill (World War II), <b>Margaret Thatcher</b> (1979–1990, the first woman PM, "the Iron Lady"), David Cameron, Boris Johnson.</li>
+      </ul>
+      <p>Other parties exist, such as the Liberal Democrats, the Scottish National Party and Reform UK, but for about a hundred years the Prime Minister has come from Labour or the Conservatives.</p>
+    </div>
+
+    <ul class="words">
+      <li><b>MP</b> <i>poseł</i></li>
+      <li><b>constituency</b> <i>okręg wyborczy</i></li>
+      <li><b>peer</b> <i>par, członek Izby Lordów</i></li>
+      <li><b>bill</b> <i>projekt ustawy</i></li>
+      <li><b>Royal Assent</b> <i>zgoda królewska</i></li>
+      <li><b>mace</b> <i>buława</i></li>
+      <li><b>woolsack</b> <i>worek wełny</i></li>
+      <li><b>to slam a door</b> <i>trzasnąć drzwiami</i></li>
+      <li><b>devolution</b> <i>przekazanie władzy regionom</i></li>
+      <li><b>trade union</b> <i>związek zawodowy</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>3 parts</dt><dd>House of Commons (650 MPs, elected), House of Lords (not elected), monarch</dd>
+        <dt>Commons</dt><dd>Speaker, Serjeant at Arms, the Mace</dd>
+        <dt>Lords</dt><dd>Lord Speaker on the Woolsack, Black Rod</dd>
+        <dt>1642</dt><dd>Charles I enters the Commons: why the door is slammed on Black Rod</dd>
+        <dt>1999</dt><dd>devolved parliaments start in Scotland, Wales, Northern Ireland</dd>
+        <dt>Parties</dt><dd>Labour (red, 1900) and Conservatives / Tories (blue)</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Who writes the King's Speech?</summary><p>The government. The King only reads it.</p></details>
+      <details><summary>What happens when Black Rod comes to the House of Commons?</summary><p>The door is slammed shut; Black Rod knocks three times with the rod and is then let in to call the MPs to the House of Lords.</p></details>
+      <details><summary>Why is the Lord Speaker's seat filled with wool?</summary><p>In the 14th century wool was England's most important trade; Edward III wanted to show this.</p></details>
+      <details><summary>What can the Commons not do without the Mace?</summary><p>It cannot meet or pass laws.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_parlament" target="_blank" rel="noopener">SmartEn quiz: Parliament →</a>
+    </div>
+  </section>
+
+  <!-- ============ HISTORY ============ -->
+  <section class="branch g" id="history">
+    <div class="branch-head">
+      <h2>Selected historical events</h2>
+      <label class="learnt"><input type="checkbox" id="done-history" data-key="history"> I've learnt this</label>
+    </div>
+    <p>The map asks about each event's <b>origins</b> (why it happened) and its <b>significance</b> (why it matters). Learn both halves.</p>
+
+    <h3>Magna Carta (1215)</h3>
+    <div class="fact">
+      <p><b>Origins.</b> King John was very unpopular. He lost English lands in France, including Normandy, quarrelled with the Pope and made the barons pay very high taxes. The barons rebelled and captured London.</p>
+      <p><b>What happened.</b> On 15 June 1215, at <b>Runnymede</b>, a meadow by the River Thames, John was forced to put his seal on the Magna Carta ("Great Charter", written in Latin). The Pope cancelled it a few weeks later, but it was issued again several times after John's death.</p>
+      <p><b>Significance.</b> For the first time the king himself was under the law. The most famous rule says that no free man can be put in prison or punished except by the lawful judgement of his equals or the law of the land. It inspired the American Constitution and modern human rights. Four original copies survive.</p>
+    </div>
+
+    <h3>The Act of Supremacy (1534)</h3>
+    <div class="fact">
+      <p><b>Origins.</b> Henry VIII wanted a son to inherit the throne. His wife <b>Catherine of Aragon</b> had given him only a daughter, Mary. He asked the Pope to annul the marriage so he could marry <b>Anne Boleyn</b>, but the Pope refused.</p>
+      <p><b>What happened.</b> Parliament passed the Act of Supremacy, which made the king the <b>Supreme Head of the Church of England</b>. England broke away from the Pope in Rome.</p>
+      <p><b>Significance.</b> It began the English Reformation and created the Church of England, which still exists; the monarch is still its head (now called "Supreme Governor"). Henry closed the monasteries and took their land and money. People who refused to accept the Act, such as Sir Thomas More, were executed.</p>
+    </div>
+
+    <h3>The Great Fire of London (1666)</h3>
+    <div class="fact">
+      <p><b>Origins.</b> On 2 September 1666 a fire started in a <b>bakery in Pudding Lane</b>, owned by Thomas Farriner. The summer had been hot and dry, a strong wind was blowing, and houses were made of wood and built very close together.</p>
+      <p><b>What happened.</b> The fire burned for about four days. It destroyed around 13,000 houses, 87 churches and old <b>St Paul's Cathedral</b>. Only a few deaths were recorded. Samuel Pepys described it in his famous diary (he even buried his cheese to save it).</p>
+      <p><b>Significance.</b> London was rebuilt in brick and stone instead of wood. The architect <b>Sir Christopher Wren</b> designed the new St Paul's Cathedral and many churches. The first fire insurance companies appeared. The Monument was built to remember the fire (see Landmarks).</p>
+    </div>
+
+    <h3>The Suez Crisis (1956)</h3>
+    <div class="fact">
+      <p><b>Origins.</b> The Suez Canal in Egypt connects the Mediterranean with the Red Sea and was the key route for oil from the Middle East. In July 1956 Egypt's president <b>Gamal Abdel Nasser</b> <i>nationalised</i> the canal company, which was owned mostly by British and French shareholders.</p>
+      <p><b>What happened.</b> Britain and France made a secret plan with Israel. Israel attacked Egypt, and British and French troops landed near the canal. The <b>United States</b> strongly opposed the attack and put financial pressure on Britain; the Soviet Union protested too. Britain and France had to <b>withdraw</b>, and a UN force took over.</p>
+      <p><b>Significance.</b> It was a humiliation for Britain. It showed that Britain was no longer a superpower and could not act against the USA. Prime Minister <b>Anthony Eden</b> resigned in January 1957. It speeded up the end of the British Empire.</p>
+    </div>
+
+    <h3>The Falklands War (1982)</h3>
+    <div class="fact">
+      <p><b>Origins.</b> The Falkland Islands in the South Atlantic are a British territory, but <b>Argentina</b> claims them and calls them Las Malvinas. Argentina's military government hoped a victory would make it popular at home.</p>
+      <p><b>What happened.</b> Argentina invaded on 2 April 1982. Prime Minister <b>Margaret Thatcher</b> sent a naval task force about 13,000 km (8,000 miles) south. After about ten weeks of fighting, Argentina surrendered on 14 June 1982. About 650 Argentine and 255 British servicemen died, and three islanders.</p>
+      <p><b>Significance.</b> Thatcher became much more popular and won the 1983 election. In Argentina the military government fell and democracy returned. The islands are still British; in 2013 almost all islanders voted to stay British.</p>
+    </div>
+
+    <ul class="words">
+      <li><b>baron</b> <i>baron</i></li>
+      <li><b>seal</b> <i>pieczęć</i></li>
+      <li><b>charter</b> <i>karta, przywilej</i></li>
+      <li><b>to annul a marriage</b> <i>unieważnić małżeństwo</i></li>
+      <li><b>heir</b> <i>następca, dziedzic</i></li>
+      <li><b>monastery</b> <i>klasztor</i></li>
+      <li><b>to nationalise</b> <i>znacjonalizować</i></li>
+      <li><b>to withdraw</b> <i>wycofać się</i></li>
+      <li><b>task force</b> <i>zespół bojowy (flota)</i></li>
+      <li><b>to surrender</b> <i>poddać się</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>1215</dt><dd>King John, barons, Runnymede: the king is under the law</dd>
+        <dt>1534</dt><dd>Henry VIII, Catherine of Aragon: head of the Church of England, break with Rome</dd>
+        <dt>1666</dt><dd>Pudding Lane bakery: London rebuilt in stone, Wren's St Paul's</dd>
+        <dt>1956</dt><dd>Nasser nationalises the canal: US pressure, withdrawal, Eden resigns</dd>
+        <dt>1982</dt><dd>Argentina invades: Thatcher's task force wins in 10 weeks</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Why did Henry VIII break with Rome?</summary><p>The Pope refused to annul his marriage to Catherine of Aragon, and Henry wanted to marry Anne Boleyn to have a son.</p></details>
+      <details><summary>Give three reasons the Great Fire spread so fast.</summary><p>A dry summer, a strong wind, and wooden houses built close together.</p></details>
+      <details><summary>Why did Britain have to stop the Suez operation?</summary><p>The United States opposed it and put financial pressure on Britain.</p></details>
+      <details><summary>Who was the British Prime Minister during the Falklands War?</summary><p>Margaret Thatcher.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_historia" target="_blank" rel="noopener">SmartEn quiz: history →</a>
+    </div>
+  </section>
+
+  <!-- ============ BRITONS ============ -->
+  <section class="branch o" id="britons">
+    <div class="branch-head">
+      <h2>Notable Britons</h2>
+      <label class="learnt"><input type="checkbox" id="done-britons" data-key="britons"> I've learnt this</label>
+    </div>
+
+    <h3>Charles Robert Darwin (1809–1882)</h3>
+    <div class="fact">
+      <p>A naturalist (a scientist who studies nature). As a young man he sailed around the world on the ship <b>HMS Beagle</b> (1831–1836). On the <b>Galápagos Islands</b> he noticed that finches and tortoises were slightly different on each island.</p>
+      <p>This led him to the theory of <b>evolution by natural selection</b>: living things that are best suited to their environment survive and have young, so species slowly change. He published it in <b><i>On the Origin of Species</i></b> (1859). He is buried in Westminster Abbey.</p>
+    </div>
+
+    <h3>Ada Lovelace (1815–1852)</h3>
+    <div class="fact">
+      <p>A mathematician and the daughter of the poet <b>Lord Byron</b>. She worked with the inventor Charles Babbage on his <b>Analytical Engine</b>, a design for a mechanical computer that was never finished.</p>
+      <p>In 1843 she wrote notes with a step-by-step method for the machine to calculate numbers. This is often called <b>the first computer program</b>, so she is called the first computer programmer. She also guessed that such machines could one day work with music and pictures, not just numbers. A programming language, Ada, is named after her.</p>
+    </div>
+
+    <h3>Emmeline Pankhurst (1858–1928)</h3>
+    <div class="fact">
+      <p>The leader of the <b>suffragettes</b>, women who fought for the right to vote. Born in Manchester, she founded the Women's Social and Political Union in 1903. Its motto was <b>"Deeds, not words"</b>.</p>
+      <p>The suffragettes broke windows, chained themselves to railings and went on hunger strike in prison. Pankhurst was arrested many times. In 1918 some women over 30 got the vote. In 1928, a few weeks after she died, women got the vote on the same terms as men (from age 21). Her statue stands next to the Houses of Parliament.</p>
+    </div>
+
+    <h3>Arthur Conan Doyle (1859–1930)</h3>
+    <div class="fact">
+      <p>A writer and doctor, <b>born in Edinburgh</b>, Scotland. He created the detective <b>Sherlock Holmes</b> and his friend <b>Dr Watson</b>, who live at <b>221B Baker Street</b> in London. The first story was <i>A Study in Scarlet</i> (1887); the most famous novel is <i>The Hound of the Baskervilles</i>. Holmes was partly based on Joseph Bell, one of Doyle's teachers at medical school, who could guess a lot about patients just by looking at them.</p>
+      <p>Doyle got bored with Holmes and "killed" him at the Reichenbach Falls in 1893, but readers were so upset that he brought him back. He also wrote <i>The Lost World</i> about dinosaurs surviving in South America.</p>
+    </div>
+
+    <h3>Christopher Nolan (born 1970)</h3>
+    <div class="fact">
+      <p>A film director born in London. His films are known for complicated stories told out of time order and for filming real effects instead of computer graphics. Famous films: the Batman trilogy (<i>The Dark Knight</i>), <i>Inception</i>, <i>Interstellar</i>, <i>Dunkirk</i> (about the rescue of British soldiers from France in 1940) and <i>Oppenheimer</i> (2023), about the scientist who led the building of the atomic bomb. <i>Oppenheimer</i> won the <b>Oscars for Best Picture and Best Director</b>. He was knighted in 2024, so he is now Sir Christopher Nolan.</p>
+    </div>
+
+    <ul class="words">
+      <li><b>naturalist</b> <i>przyrodnik</i></li>
+      <li><b>natural selection</b> <i>dobór naturalny</i></li>
+      <li><b>species</b> <i>gatunek</i></li>
+      <li><b>engine</b> <i>maszyna (tu: obliczeniowa)</i></li>
+      <li><b>suffragette</b> <i>sufrażystka</i></li>
+      <li><b>hunger strike</b> <i>strajk głodowy</i></li>
+      <li><b>detective</b> <i>detektyw</i></li>
+      <li><b>to be knighted</b> <i>otrzymać tytuł szlachecki (Sir)</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>Darwin</dt><dd>HMS Beagle, Galápagos, <i>On the Origin of Species</i> (1859)</dd>
+        <dt>Lovelace</dt><dd>Byron's daughter, Babbage's Analytical Engine, first program</dd>
+        <dt>Pankhurst</dt><dd>suffragettes, "Deeds, not words", votes for women</dd>
+        <dt>Conan Doyle</dt><dd>born in Edinburgh, Sherlock Holmes, 221B Baker Street</dd>
+        <dt>Nolan</dt><dd><i>Dunkirk</i>, <i>Oppenheimer</i> (Oscars)</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Who was Ada Lovelace's father?</summary><p>The poet Lord Byron.</p></details>
+      <details><summary>Which city was Arthur Conan Doyle born in?</summary><p>Edinburgh.</p></details>
+      <details><summary>What was the suffragettes' motto?</summary><p>"Deeds, not words".</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_postacie" target="_blank" rel="noopener">SmartEn quiz: famous Britons →</a>
+    </div>
+  </section>
+
+  <!-- ============ LANDMARKS ============ -->
+  <section class="branch p" id="landmarks">
+    <div class="branch-head">
+      <h2>Landmarks of London</h2>
+      <label class="learnt"><input type="checkbox" id="done-landmarks" data-key="landmarks"> I've learnt this</label>
+    </div>
+
+    <h3>The Monument</h3>
+    <div class="fact">
+      <p>Its full name is the Monument to the Great Fire of London. It was designed by <b>Christopher Wren</b> and the scientist <b>Robert Hooke</b> and built in the 1670s.</p>
+      <ul>
+        <li>It is a stone column <b>61 metres</b> (202 feet) tall.</li>
+        <li>It stands <b>61 metres from the place in Pudding Lane where the fire started</b>. If it fell over towards the east, its top would land about where the bakery was.</li>
+        <li>On top is a golden urn with flames, the symbol of the fire.</li>
+        <li>You can climb <b>311 steps</b> to a viewing platform and get a certificate at the bottom.</li>
+      </ul>
+    </div>
+
+    <h3>The Tower of London</h3>
+    <div class="fact">
+      <p>A castle by the River Thames, started by <b>William the Conqueror</b> after he conquered England in 1066. The oldest part is the <b>White Tower</b>.</p>
+      <ul>
+        <li>Over the centuries it has been a royal palace, a fortress, a <b>prison</b> and a place of execution (Anne Boleyn was beheaded there in 1536), and even a zoo.</li>
+        <li>It keeps the <b>Crown Jewels</b>, the crowns and other treasures used at coronations.</li>
+        <li>It is guarded by the <b>Yeoman Warders</b>, known as <b>Beefeaters</b>, in red and dark-blue uniforms.</li>
+        <li>At least six <b>ravens</b> live there. A legend says that if the ravens ever leave, the kingdom will fall.</li>
+      </ul>
+    </div>
+
+    <ul class="words">
+      <li><b>column</b> <i>kolumna</i></li>
+      <li><b>urn</b> <i>urna</i></li>
+      <li><b>fortress</b> <i>twierdza</i></li>
+      <li><b>execution</b> <i>egzekucja</i></li>
+      <li><b>Crown Jewels</b> <i>klejnoty koronne</i></li>
+      <li><b>raven</b> <i>kruk</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>Monument</dt><dd>61 m tall, 61 m from the fire's start, Wren and Hooke, 311 steps</dd>
+        <dt>Tower</dt><dd>William the Conqueror, Crown Jewels, Beefeaters, ravens</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>Why is the Monument exactly 61 metres tall?</summary><p>That is its distance from the spot in Pudding Lane where the Great Fire started.</p></details>
+      <details><summary>What are the guards of the Tower of London called?</summary><p>Yeoman Warders, or Beefeaters.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_londyn" target="_blank" rel="noopener">SmartEn quiz: London →</a>
+    </div>
+  </section>
+
+  <!-- ============ PARKS ============ -->
+  <section class="branch g" id="parks">
+    <div class="branch-head">
+      <h2>London's Royal Parks</h2>
+      <label class="learnt"><input type="checkbox" id="done-parks" data-key="parks"> I've learnt this</label>
+    </div>
+    <p>London has eight Royal Parks. They used to belong to the kings and queens, mostly as hunting grounds, and are now open to everyone. Two are on the map, and they lie next to each other in the centre of London.</p>
+
+    <h3>Hyde Park: history</h3>
+    <div class="fact">
+      <p>In <b>1536</b> <b>Henry VIII</b> took the land from the monks of Westminster Abbey (when he closed the monasteries) and made it a <b>deer-hunting ground</b>. King Charles I opened it to the public in 1637. In the 18th century a long lake, the <b>Serpentine</b>, was made. In <b>1851</b> the Great Exhibition was held in the park, in a huge glass building called the Crystal Palace.</p>
+    </div>
+
+    <h3>Hyde Park: attractions</h3>
+    <div class="fact">
+      <p><b>Speakers' Corner</b> (the map spells it "Speaker's Corner") is in the north-east corner of the park, near Marble Arch. Since the 19th century anyone can come and give a speech there on any subject, often standing on a box. Famous people such as Karl Marx and George Orwell went there. It is a symbol of free speech.</p>
+      <p><b>The Animals in War memorial</b> stands at the edge of the park, on Park Lane. It was opened in 2004 and remembers the animals that served and died in wars: horses, dogs, pigeons, mules, elephants and many others. It shows two mules carrying heavy loads through a gap in a wall, with a horse and a dog on the other side. Its message is <b>"They had no choice"</b>.</p>
+    </div>
+
+    <h3>Kensington Gardens: history</h3>
+    <div class="fact">
+      <p>Kensington Gardens used to be the western part of Hyde Park. In 1689 King William III and Queen Mary II bought a house nearby and turned it into <b>Kensington Palace</b>, and the gardens became the palace gardens. In the 1720s Queen Caroline, wife of George II, redesigned them. Later they were opened to the public. Queen Victoria was born in Kensington Palace, and Princess Diana lived there.</p>
+    </div>
+
+    <h3>Kensington Gardens: attractions</h3>
+    <div class="fact">
+      <p><b>The Albert Memorial</b> was built by <b>Queen Victoria</b> in memory of her husband, <b>Prince Albert</b>, who died in 1861. It was designed by George Gilbert Scott and opened in 1872. It is a very tall, richly decorated gothic canopy with a golden statue of Albert sitting under it. He holds the catalogue of the Great Exhibition of 1851, which he helped to organise. Around it are sculptures representing four continents. It faces the Royal Albert Hall.</p>
+      <p><b>The Peter Pan statue</b> shows Peter Pan, the boy who never grows up, on a tree stump with fairies, rabbits and squirrels. The author <b>J. M. Barrie</b> lived nearby, walked his dog in the gardens and set Peter's first adventures there. He paid for the statue and had it put up <b>secretly during the night</b> of 30 April 1912, so children would find it as a surprise on the morning of 1 May. It stands on the spot where Peter lands in the story.</p>
+    </div>
+
+    <ul class="words">
+      <li><b>hunting ground</b> <i>teren łowiecki</i></li>
+      <li><b>deer</b> <i>jeleń, jelenie</i></li>
+      <li><b>free speech</b> <i>wolność słowa</i></li>
+      <li><b>memorial</b> <i>pomnik (upamiętniający)</i></li>
+      <li><b>mule</b> <i>muł</i></li>
+      <li><b>pigeon</b> <i>gołąb</i></li>
+      <li><b>canopy</b> <i>baldachim</i></li>
+      <li><b>tree stump</b> <i>pniak</i></li>
+    </ul>
+
+    <div class="remember">
+      <div class="eyebrow">Remember</div>
+      <dl>
+        <dt>1536</dt><dd>Henry VIII takes Hyde Park for hunting deer</dd>
+        <dt>Speakers' Corner</dt><dd>anyone can speak on any subject, free speech</dd>
+        <dt>Animals in War</dt><dd>2004, mules, "They had no choice"</dd>
+        <dt>Albert Memorial</dt><dd>Queen Victoria for Prince Albert, faces the Royal Albert Hall</dd>
+        <dt>1912</dt><dd>Peter Pan statue, put up secretly by J. M. Barrie</dd>
+      </dl>
+    </div>
+
+    <div class="check">
+      <div class="eyebrow">Check yourself</div>
+      <details><summary>What was Hyde Park used for in Henry VIII's time?</summary><p>Deer hunting for the king.</p></details>
+      <details><summary>What do the words "They had no choice" refer to?</summary><p>The animals that served and died in wars (the Animals in War memorial).</p></details>
+      <details><summary>How did the Peter Pan statue appear in Kensington Gardens?</summary><p>J. M. Barrie had it put up secretly at night in 1912 as a May Day surprise for children.</p></details>
+      <a class="quiz" href="https://smarten.pages.dev/ojaj/cwiczenia/ojaj_uk_londyn" target="_blank" rel="noopener">SmartEn quiz: London →</a>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="branch" id="timeline" style="--c: var(--hub-ink); --soft: var(--hub)">
+    <div class="branch-head"><h2>All the dates in order</h2></div>
+    <p class="tip">A quick revision list before the competition.</p>
+    <div class="timeline">
+      <table>
+        <thead><tr><th>Year</th><th>What happened</th></tr></thead>
+        <tbody>
+          <tr><td>1066</td><td>William the Conqueror conquers England, starts the Tower of London</td></tr>
+          <tr><td>1215</td><td>Magna Carta sealed by King John at Runnymede</td></tr>
+          <tr><td>1534</td><td>Act of Supremacy: Henry VIII head of the Church of England</td></tr>
+          <tr><td>1536</td><td>Henry VIII takes Hyde Park as a hunting ground</td></tr>
+          <tr><td>1606</td><td>First Union Flag (England + Scotland)</td></tr>
+          <tr><td>1642</td><td>Charles I enters the Commons (origin of the Black Rod door ceremony)</td></tr>
+          <tr><td>1666</td><td>Great Fire of London</td></tr>
+          <tr><td>1670s</td><td>The Monument built</td></tr>
+          <tr><td>1801</td><td>St Patrick's cross added to the Union Flag</td></tr>
+          <tr><td>1843</td><td>Ada Lovelace's notes on the Analytical Engine</td></tr>
+          <tr><td>1851</td><td>Great Exhibition in Hyde Park</td></tr>
+          <tr><td>1859</td><td>Darwin publishes <i>On the Origin of Species</i></td></tr>
+          <tr><td>1872</td><td>Albert Memorial opened</td></tr>
+          <tr><td>1887</td><td>First Sherlock Holmes story</td></tr>
+          <tr><td>1900</td><td>Labour Party founded</td></tr>
+          <tr><td>1903</td><td>Emmeline Pankhurst founds the suffragette union</td></tr>
+          <tr><td>1912</td><td>Peter Pan statue appears in Kensington Gardens</td></tr>
+          <tr><td>1918 / 1928</td><td>Some women get the vote / equal votes for women</td></tr>
+          <tr><td>1956</td><td>Suez Crisis</td></tr>
+          <tr><td>1982</td><td>Falklands War</td></tr>
+          <tr><td>1999</td><td>Devolved parliaments in Scotland, Wales and Northern Ireland</td></tr>
+          <tr><td>2004</td><td>Animals in War memorial opened</td></tr>
+          <tr><td>2018</td><td>First Lady Usher of the Black Rod</td></tr>
+          <tr><td>2024</td><td><i>Oppenheimer</i> wins the Oscars</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>Based on the official OJAJ 2026/27 mind map: <a href="https://ojaj.wsjo.pl/wp-content/uploads/2026/08/OJAJ-2026_2027-The-UK.pdf" target="_blank" rel="noopener">OJAJ-2026_2027-The-UK.pdf</a>. The ticks are saved only on this device.</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var KEY = "uk-notebook-learnt";
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { state = {}; }
+  function paint() {
+    document.querySelectorAll(".done").forEach(function (el) {
+      el.textContent = state[el.getAttribute("data-for")] ? "✓ learnt" : "";
+    });
+  }
+  document.querySelectorAll(".learnt input").forEach(function (box) {
+    var k = box.getAttribute("data-key");
+    box.checked = !!state[k];
+    box.addEventListener("change", function () {
+      state[k] = box.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+      paint();
+    });
+  });
+  paint();
+})();
+</script>
+</body>
+</html>
