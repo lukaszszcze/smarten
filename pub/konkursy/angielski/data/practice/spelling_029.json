@@ -1,0 +1,62 @@
+{
+  "title": "Pogoda i klimat (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.8.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa pierwsze litery lub wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The three-month _ _ _ u _ _ _ destroyed most of the harvest.",
+          "hint": "_ _ _ u _ _ _",
+          "answer": "drought"
+        },
+        {
+          "id": "1.2",
+          "stem": "The heat itself was bearable, but the _ _ m _ _ _ _ _ made it unpleasant.",
+          "hint": "_ _ m _ _ _ _ _",
+          "answer": "humidity"
+        },
+        {
+          "id": "1.3",
+          "stem": "The weather _ _ r _ _ _ _ _ promised sunshine for the whole weekend.",
+          "hint": "_ _ r _ _ _ _ _",
+          "answer": "forecast"
+        },
+        {
+          "id": "1.4",
+          "stem": "The _ _ _ z _ _ _ _ closed every road in the region for two days.",
+          "hint": "_ _ _ z _ _ _ _",
+          "answer": "blizzard"
+        },
+        {
+          "id": "1.5",
+          "stem": "Heavy rain caused severe _ _ _ o _ _ _ _ along the river.",
+          "hint": "_ _ _ o _ _ _ _",
+          "answer": "flooding"
+        },
+        {
+          "id": "1.6",
+          "stem": "_ _ _ _ e _ _ _ _ r _ _ are expected to drop below freezing tonight.",
+          "hint": "_ _ _ _ e _ _ _ _ r _ _",
+          "answer": "temperatures"
+        },
+        {
+          "id": "1.7",
+          "stem": "It was not proper rain, just a light _ _ _ z _ _ _ all afternoon.",
+          "hint": "_ _ _ z _ _ _",
+          "answer": "drizzle"
+        },
+        {
+          "id": "1.8",
+          "stem": "_ _ _ l _ _ _ _ _ _ the size of golf balls damaged dozens of parked cars.",
+          "hint": "_ _ _ l _ _ _ _ _ _",
+          "answer": "hailstones"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Modals, Deduction and Obligation (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "You _________ (not / tell) him the secret - now everyone knows. You _________ (keep) it to yourself.",
+          "answer": [
+            "should not (shouldn't) have told",
+            "should have kept"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "She is not answering. She _________ (be) in a meeting, or she _________ (leave) her phone at home.",
+          "answer": [
+            "must be / might be",
+            "may have left / might have left"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "We _________ (not / book) a table after all - the restaurant was half empty. It _________ (be) a waste of time.",
+          "answer": [
+            "need not (needn't) have booked",
+            "was"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "At my old school we _________ (have) to wear a uniform, and we _________ (not / allow) to wear trainers.",
+          "answer": [
+            "had",
+            "were not (weren't) allowed"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "You _________ (not / worry) about the exam - you _________ (study) very hard for weeks.",
+          "answer": [
+            "do not (don't) have to worry / need not (needn't) worry",
+            "have ('ve) been studying"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "He _________ (not / steal) it - he was with me all evening. Somebody else _________ (do) it.",
+          "answer": [
+            "cannot (can't) have stolen",
+            "must have done"
+          ]
+        }
+      ]
+    }
+  ]
+}

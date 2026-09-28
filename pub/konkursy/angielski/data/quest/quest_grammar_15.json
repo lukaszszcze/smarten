@@ -7,37 +7,43 @@
       "type": "open_cloze",
       "points": 6,
       "instruction": "Read the text below. Fill in each gap (1.1-1.6) with one word to make the text correct.",
-      "text": "Last summer, my class visited a museum. The building 1.1. _________ built over 200 years ago, and it is still visited by thousands of people every year. Our guide told us that the oldest painting in the museum 1.2. _________ painted by a famous artist in 1750. I thought it was amazing! If I 1.3. _________ a painter, I would create pictures of dragons and magical forests. My friend Tom said he 1.4. _________ like to be a sculptor instead. Right now, new rooms 1.5. _________ being added to the museum, so next year there will be even more art to see. We 1.6. _________ go back soon — our teacher has already promised us another trip!",
+      "text": "Every year, thousands of people take part in a race 1.1. _________ is often described as the toughest in Europe. It is not the distance that makes it hard, 1.2. _________ the weather: competitors set off in the dark and finish, if they finish 1.3. _________ all, well after midnight.\n\nEntries are limited, and applicants are chosen 1.4. _________ the basis of previous results rather than in the order they apply. Organisers say this is done in 1.5. _________ to keep everyone safe. Even so, roughly one runner 1.6. _________ four drops out before the halfway point.",
       "items": [
         {
           "id": "1.1",
-          "answer": "was"
+          "answer": [
+            "which",
+            "that"
+          ]
         },
         {
           "id": "1.2",
-          "answer": "was"
+          "answer": [
+            "but"
+          ]
         },
         {
           "id": "1.3",
           "answer": [
-            "were",
-            "was"
+            "at"
           ]
         },
         {
           "id": "1.4",
-          "answer": "would"
+          "answer": [
+            "on"
+          ]
         },
         {
           "id": "1.5",
-          "answer": "are"
+          "answer": [
+            "order"
+          ]
         },
         {
           "id": "1.6",
           "answer": [
-            "must",
-            "should",
-            "will"
+            "in"
           ]
         }
       ],

@@ -1,48 +1,74 @@
 {
-  "title": "Present or Past?",
+  "title": "Present Perfect or Past?",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "multiple_choice",
-    "points": 6,
-    "instruction": "Choose the correct answer A, B or C.",
-    "items": [
-      {
-        "id": "1.1",
-        "stem": "My dad _________ coffee every morning, but yesterday he _________ tea.",
-        "options": ["A) drinks / drank", "B) drank / drinks", "C) drinks / drinks"],
-        "answer": "A"
-      },
-      {
-        "id": "1.2",
-        "stem": "We usually _________ to school by bus, but last Friday we _________.",
-        "options": ["A) went / walk", "B) go / walked", "C) go / go"],
-        "answer": "B"
-      },
-      {
-        "id": "1.3",
-        "stem": "She _________ English very well. She _________ it when she was five.",
-        "options": ["A) spoke / speaks", "B) speaks / started", "C) speak / started"],
-        "answer": "B"
-      },
-      {
-        "id": "1.4",
-        "stem": "I _________ pizza for lunch every day, but on my birthday I _________ sushi.",
-        "options": ["A) ate / have", "B) have / have", "C) have / had"],
-        "answer": "C"
-      },
-      {
-        "id": "1.5",
-        "stem": "Tom _________ football after school yesterday.",
-        "options": ["A) plays", "B) played", "C) play"],
-        "answer": "B"
-      },
-      {
-        "id": "1.6",
-        "stem": "My cat _________ on the sofa right now. This morning it _________ under the bed.",
-        "options": ["A) sleeps / slept", "B) slept / sleeps", "C) sleeps / sleeps"],
-        "answer": "A"
-      }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the correct answer A, B or C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "I _________ my keys, so I cannot get into the flat.",
+          "options": [
+            "A) lost",
+            "B) have lost",
+            "C) had lost"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "She _________ in Madrid for six years before she moved to Lisbon.",
+          "options": [
+            "A) has lived",
+            "B) lived",
+            "C) has been living"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "'_________ you ever eaten sushi?' 'Yes, last summer in Warsaw.'",
+          "options": [
+            "A) Did",
+            "B) Have",
+            "C) Had"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "stem": "We _________ each other since we were at primary school.",
+          "options": [
+            "A) know",
+            "B) have known",
+            "C) are knowing"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "He _________ for three hours when the rescue team finally found him.",
+          "options": [
+            "A) has been walking",
+            "B) had been walking",
+            "C) was walking"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "By the time the film started, we _________ all the popcorn.",
+          "options": [
+            "A) ate",
+            "B) have eaten",
+            "C) had eaten"
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
 }

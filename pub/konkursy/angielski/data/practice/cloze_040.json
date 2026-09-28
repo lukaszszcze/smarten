@@ -1,0 +1,69 @@
+{
+  "title": "Open Cloze: How Chewing Gum Conquered the World (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "People have been chewing things for pleasure for the 1.1. _________ part of nine thousand years. Lumps of birch tar with children's teeth marks still in them have been dug 1.2. _________ in Scandinavia, and Greek writers mention a resin that was chewed to keep the breath sweet.\n\nModern chewing gum, however, began 1.3. _________ an accident. In the 1860s an American inventor named Thomas Adams was trying to turn a Mexican tree gum called chicle 1.4. _________ a cheap substitute for rubber. Every single experiment failed. Adams was on the 1.5. _________ of giving up altogether when he remembered that the Mexican general who had supplied him with the chicle used to chew the stuff, and he decided to sell it for exactly what it was.\n\nThe product that really took 1.6. _________ was invented a few decades later by William Wrigley, who was not a chemist at all but a salesman. Wrigley added flavour, and then gave enormous quantities of gum 1.7. _________ free to anybody who might advertise it for him. He once posted a sample to every household listed in the American telephone directory, which at the time was most of them.\n\nGum has been in trouble more or less ever 1.8. _________. It is banned outright in Singapore, prohibited in thousands of schools, and cities spend a great deal of public money scraping it 1.9. _________ pavements. Manufacturers have been promising a version that simply dissolves in the rain for at 1.10. _________ twenty years. It has yet to appear in a single shop.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "best"
+        },
+        {
+          "id": "1.2",
+          "answer": "up"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "with",
+            "by"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "into"
+        },
+        {
+          "id": "1.5",
+          "answer": "point"
+        },
+        {
+          "id": "1.6",
+          "answer": "off"
+        },
+        {
+          "id": "1.7",
+          "answer": [
+            "away",
+            "out"
+          ]
+        },
+        {
+          "id": "1.8",
+          "answer": "since"
+        },
+        {
+          "id": "1.9",
+          "answer": "off"
+        },
+        {
+          "id": "1.10",
+          "answer": "least"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

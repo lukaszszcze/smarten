@@ -1,5 +1,5 @@
 {
-  "title": "The New Neighbour",
+  "title": "The Longest Day",
   "type": "practice",
   "tasks": [
     {
@@ -7,31 +7,31 @@
       "type": "true_false_ni",
       "points": 3,
       "instruction": "Read the text below. Decide if each sentence (1.1-1.4) is True (T), False (F), or if the information is Not In the text (NI).",
-      "text": "THE NEW NEIGHBOUR\n\nLast Saturday, a big lorry stopped in front of the empty house next to ours. A family was moving in. I watched from my bedroom window as two men carried boxes and furniture inside. Then I saw a boy who looked about my age. He was holding a skateboard and wearing a T-shirt with a dinosaur on it. I have the same T-shirt!\n\nMum said we should bring them some cake, so we walked over together. The boy's name was Tom. He seemed a bit shy at first because he only smiled and didn't say much. But when he noticed my football in the garden, his eyes lit up. We played until it got dark. He was really good — much better than me! I think we are going to be great friends.",
+      "text": "THE LONGEST DAY\n\nEvery June our school organises a sponsored walk along the coast path, and this year I finally signed up. My friend Kasia had done it twice before and warned me that the last five kilometres were the worst, but I did not really believe her.\n\nWe set off at seven in the morning from the harbour, forty-two of us in bright yellow T-shirts. The first hour felt like a holiday. The sea was flat and grey, gulls followed us hoping for sandwiches, and Mr Nowak, our geography teacher, kept stopping to point out rock formations that nobody was interested in.\n\nBy eleven the sun was out and the path had turned uphill. Somebody's water bottle had leaked into their bag, and two people had already changed their socks. Kasia walked beside me and said nothing at all, which is how I knew she was struggling too.\n\nThe last section runs along the cliff top, and there is no shade of any kind. I remember thinking that if I stopped I would never start again, so I did not stop. We reached the lighthouse at twenty past four, which was slower than the school record but faster than last year's group.\n\nBetween us we raised enough money to buy new instruments for the school orchestra. I am not in the orchestra and I have no plans to join it, but I have already written my name down for next June. Kasia says I will regret it. She is probably right.",
       "items": [
         {
           "id": "1.1",
-          "statement": "The narrator and Tom are probably the same age.",
-          "answer": "T",
-          "explanation": "TRUE — The text says the boy 'looked about my age', so this is true."
+          "statement": "The narrator had walked the coast path with the school in an earlier year.",
+          "answer": "F",
+          "explanation": "FALSE - the narrator says 'this year I finally signed up'. It was Kasia who had done it twice before."
         },
         {
           "id": "1.2",
-          "statement": "Tom brought a football with him to the new house.",
+          "statement": "Kasia found the walk easy this time.",
           "answer": "F",
-          "explanation": "FALSE — Tom was holding a skateboard. The football belonged to the narrator and was already in the garden."
+          "explanation": "FALSE - she 'said nothing at all, which is how I knew she was struggling too'."
         },
         {
           "id": "1.3",
-          "statement": "Tom was nervous about meeting new people.",
+          "statement": "The money raised will be spent on musical instruments.",
           "answer": "T",
-          "explanation": "TRUE — The text says Tom 'seemed a bit shy at first' and 'only smiled and didn't say much', which implies he was nervous."
+          "explanation": "TRUE - 'we raised enough money to buy new instruments for the school orchestra'."
         },
         {
           "id": "1.4",
-          "statement": "Tom moved from another city.",
+          "statement": "Mr Nowak is the teacher who organises the walk each year.",
           "answer": "NI",
-          "explanation": "NOT IN THE TEXT — The text says a family moved into the house next door but does not mention where they came from."
+          "explanation": "NOT IN THE TEXT - the school organises the walk and Mr Nowak is on it, but the text never says who organises it."
         }
       ],
       "scoringScheme": {

@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Przeczenia: un- i in- (krok 2: przedrostki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Kazde zdanie potrzebuje przedrostka, ktory odwraca znaczenie wyrazu. Wymagana jest calkowita poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Germs are __________ to the naked eye.",
+          "wordBase": "VISIBLE",
+          "answer": [
+            "invisible"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Three of your answers were __________, so try them again.",
+          "wordBase": "CORRECT",
+          "answer": [
+            "incorrect"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "The ending of the film was completely __________.",
+          "wordBase": "EXPECTED",
+          "answer": [
+            "unexpected"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "I am afraid I am __________ to help you this afternoon.",
+          "wordBase": "ABLE",
+          "answer": [
+            "unable"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The meeting was __________, so nobody wore a suit.",
+          "wordBase": "FORMAL",
+          "answer": [
+            "informal"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "It was __________ of him to laugh at her mistake.",
+          "wordBase": "KIND",
+          "answer": [
+            "unkind"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "The flight was __________ - we had to change in Paris.",
+          "wordBase": "DIRECT",
+          "answer": [
+            "indirect"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The children were __________ with their new school.",
+          "wordBase": "HAPPY",
+          "answer": [
+            "unhappy"
+          ]
+        }
+      ]
+    }
+  ]
+}

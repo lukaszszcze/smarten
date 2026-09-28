@@ -1,0 +1,62 @@
+{
+  "title": "Podroze i transport (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.8.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa pierwsze litery lub wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The price of the tour includes flights and _ _ c _ _ _ _ d _ _ _ _ _ for seven nights.",
+          "hint": "_ _ c _ _ _ _ d _ _ _ _ _",
+          "answer": "accommodation"
+        },
+        {
+          "id": "1.2",
+          "stem": "The pilot warned the passengers about _ _ _ b _ _ _ _ _ _ over the mountains.",
+          "hint": "_ _ _ b _ _ _ _ _ _",
+          "answer": "turbulence"
+        },
+        {
+          "id": "1.3",
+          "stem": "Our guide handed out a detailed _ _ i _ _ _ _ _ _ for the whole week.",
+          "hint": "_ _ i _ _ _ _ _ _",
+          "answer": "itinerary"
+        },
+        {
+          "id": "1.4",
+          "stem": "Traffic _ _ _ g _ _ _ _ _ _ in the city centre is worst at eight in the morning.",
+          "hint": "_ _ _ g _ _ _ _ _ _",
+          "answer": "congestion"
+        },
+        {
+          "id": "1.5",
+          "stem": "His daily _ _ m _ _ _ _ to the office takes almost two hours each way.",
+          "hint": "_ _ m _ _ _ _",
+          "answer": "commute"
+        },
+        {
+          "id": "1.6",
+          "stem": "The main road was closed, so we had to make a long _ _ t _ _ _.",
+          "hint": "_ _ t _ _ _",
+          "answer": "detour"
+        },
+        {
+          "id": "1.7",
+          "stem": "The Antarctic _ _ _ e _ _ _ _ _ _ lasted for more than three months.",
+          "hint": "_ _ _ e _ _ _ _ _ _",
+          "answer": "expedition"
+        },
+        {
+          "id": "1.8",
+          "stem": "All international _ _ _ _ r _ _ _ _ _ leave from the second terminal.",
+          "hint": "_ _ _ _ r _ _ _ _ _",
+          "answer": "departures"
+        }
+      ]
+    }
+  ]
+}

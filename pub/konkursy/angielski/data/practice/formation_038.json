@@ -1,0 +1,79 @@
+{
+  "title": "Word Formation: Czasowniki i przyslowki (krok 1: koncowki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Wymagana jest calkowita poprawnosc ortograficzna. W tym cwiczeniu wystarczy dodac koncowke - zaden wyraz nie potrzebuje przedrostka.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Could you __________ the rules of cricket for me?",
+          "wordBase": "CLEAR",
+          "answer": [
+            "clarify"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "The school plans to __________ all of its computer rooms.",
+          "wordBase": "MODERN",
+          "answer": [
+            "modernise",
+            "modernize"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Regular exercise will __________ your heart and your legs.",
+          "wordBase": "STRONG",
+          "answer": [
+            "strengthen"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The council wants to __________ the road outside the school.",
+          "wordBase": "WIDE",
+          "answer": [
+            "widen"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "__________, nobody was hurt when the roof came down.",
+          "wordBase": "FORTUNATE",
+          "answer": [
+            "Fortunately"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "She read the instructions __________ before starting.",
+          "wordBase": "CARE",
+          "answer": [
+            "carefully"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "The temperature dropped __________ during the night.",
+          "wordBase": "SUDDEN",
+          "answer": [
+            "suddenly"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Scientists are trying to __________ the water supply.",
+          "wordBase": "PURE",
+          "answer": [
+            "purify"
+          ]
+        }
+      ]
+    }
+  ]
+}

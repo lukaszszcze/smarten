@@ -6,43 +6,67 @@
       "id": "1",
       "type": "multiple_choice",
       "points": 6,
-      "instruction": "Choose the correct answer A, B or C.",
+      "instruction": "Read each sentence and choose what the phrase in it means.",
       "items": [
         {
           "id": "1.1",
-          "stem": "We can't go to the park \u2014 it's raining cats and dogs! What does this mean?",
-          "options": ["A) Animals are falling from the sky.", "B) It is raining very heavily.", "C) There are cats and dogs in the park."],
-          "answer": "B"
+          "stem": "We were left in the dark about the changes until the very last day. What does this mean?",
+          "options": [
+            "A) Nobody told us what was happening.",
+            "B) The meeting was held in the evening.",
+            "C) We were not invited to the meeting."
+          ],
+          "answer": "A"
         },
         {
           "id": "1.2",
-          "stem": "The new boy told a joke to break the ice. What does this mean?",
-          "options": ["A) He broke something made of ice.", "B) He wanted everyone to feel cold.", "C) He wanted to start a friendly conversation."],
-          "answer": "C"
-        },
-        {
-          "id": "1.3",
-          "stem": "Don't worry about the test \u2014 it's a piece of cake! What does this mean?",
-          "options": ["A) The teacher will bring cake.", "B) It is very easy.", "C) It is very short."],
+          "stem": "Learning to drive was a steep learning curve for me. What does this mean?",
+          "options": [
+            "A) I practised on hills.",
+            "B) I had to learn a great deal very quickly.",
+            "C) I gave up after a few lessons."
+          ],
           "answer": "B"
         },
         {
+          "id": "1.3",
+          "stem": "My brother and I do not see eye to eye about politics. What does this mean?",
+          "options": [
+            "A) We are not the same height.",
+            "B) We never discuss politics.",
+            "C) We disagree about it."
+          ],
+          "answer": "C"
+        },
+        {
           "id": "1.4",
-          "stem": "Tom is feeling under the weather today, so he's staying in bed. What does this mean?",
-          "options": ["A) He is feeling ill.", "B) He doesn't like the weather.", "C) He is hiding from the rain."],
+          "stem": "The teacher told us to take his advice with a pinch of salt. What does this mean?",
+          "options": [
+            "A) Not to believe all of it.",
+            "B) To write it down carefully.",
+            "C) To follow it exactly."
+          ],
           "answer": "A"
         },
         {
           "id": "1.5",
-          "stem": "Oh no, I let the cat out of the bag about the surprise party! What does this mean?",
-          "options": ["A) I lost my cat.", "B) I opened a bag.", "C) I accidentally told the secret."],
-          "answer": "C"
+          "stem": "After the argument, Anna decided to bury the hatchet. What does this mean?",
+          "options": [
+            "A) To hide what she had done.",
+            "B) To end the quarrel and be friends again.",
+            "C) To leave and never come back."
+          ],
+          "answer": "B"
         },
         {
           "id": "1.6",
-          "stem": "I have a big exam tomorrow, so I need to hit the books tonight. What does this mean?",
-          "options": ["A) I need to throw my books away.", "B) I need to study hard.", "C) I need to buy new books."],
-          "answer": "B"
+          "stem": "The new school rules went down like a lead balloon. What does this mean?",
+          "options": [
+            "A) They were explained very slowly.",
+            "B) They were difficult to understand.",
+            "C) They were received very badly."
+          ],
+          "answer": "C"
         }
       ]
     }

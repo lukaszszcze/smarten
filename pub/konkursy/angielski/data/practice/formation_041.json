@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Przeczenia: im-, ir- i il- (krok 2: przedrostki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Kazde zdanie potrzebuje przedrostka, ktory odwraca znaczenie wyrazu. Wymagana jest calkowita poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "It is __________ to breathe underwater without equipment.",
+          "wordBase": "POSSIBLE",
+          "answer": [
+            "impossible"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Don't be so __________ - the bus will come eventually.",
+          "wordBase": "PATIENT",
+          "answer": [
+            "impatient"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "His heartbeat was __________, so they sent him for tests.",
+          "wordBase": "REGULAR",
+          "answer": [
+            "irregular"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Leaving a fire burning in a forest is deeply __________.",
+          "wordBase": "RESPONSIBLE",
+          "answer": [
+            "irresponsible"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Parking in front of the hospital entrance is __________.",
+          "wordBase": "LEGAL",
+          "answer": [
+            "illegal"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Your argument is __________ - those two facts cannot both be true.",
+          "wordBase": "LOGICAL",
+          "answer": [
+            "illogical"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "It is __________ to interrupt someone in the middle of a sentence.",
+          "wordBase": "POLITE",
+          "answer": [
+            "impolite"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The judge said the evidence was __________ to this case.",
+          "wordBase": "RELEVANT",
+          "answer": [
+            "irrelevant"
+          ]
+        }
+      ]
+    }
+  ]
+}

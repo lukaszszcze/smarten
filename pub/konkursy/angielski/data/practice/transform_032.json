@@ -1,0 +1,70 @@
+{
+  "title": "Mixed Exam Practice (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 8,
+      "instruction": "Przeczytaj zdania (1.1.-1.8.). Wykorzystujac wyrazy podane wielkimi literami, uzupelnij kazde zdanie z luka tak, aby precyzyjnie oddac sens zdania wyjsciowego. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna wpisywanych fragmentow zdan. Uwaga: nie zmieniaj formy podanych wyrazow. W kazda luke mozesz wpisac maksymalnie piec wyrazow, wliczajac w to wyraz juz podany. Formy skrocone (np. needn't, they're) sa liczone jako dwa wyrazy.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "Someone is repairing my bike at the moment.",
+          "keyword": "HAVING",
+          "transformed": "I _________ at the moment.",
+          "answer": "am having my bike repaired"
+        },
+        {
+          "id": "1.2",
+          "original": "They think the thief escaped through the window.",
+          "keyword": "THOUGHT",
+          "transformed": "The thief _________ through the window.",
+          "answer": "is thought to have escaped"
+        },
+        {
+          "id": "1.3",
+          "original": "I have never eaten such delicious food.",
+          "keyword": "MOST",
+          "transformed": "This is _________ I have ever eaten.",
+          "answer": "the most delicious food"
+        },
+        {
+          "id": "1.4",
+          "original": "You should not have told her the secret.",
+          "keyword": "KEPT",
+          "transformed": "You _________ to yourself.",
+          "answer": "should have kept the secret"
+        },
+        {
+          "id": "1.5",
+          "original": "Nobody has cleaned this room for weeks.",
+          "keyword": "BEEN",
+          "transformed": "This room _________ for weeks.",
+          "answer": "has not (hasn't) been cleaned"
+        },
+        {
+          "id": "1.6",
+          "original": "He did not remember to lock the door.",
+          "keyword": "FORGOT",
+          "transformed": "He _________ before leaving.",
+          "answer": "forgot to lock the door"
+        },
+        {
+          "id": "1.7",
+          "original": "The teacher made us rewrite the essay.",
+          "keyword": "WERE",
+          "transformed": "We _________ the essay by the teacher.",
+          "answer": "were made to rewrite"
+        },
+        {
+          "id": "1.8",
+          "original": "It is a pity I did not accept the offer.",
+          "keyword": "ONLY",
+          "transformed": "If _________ the offer!",
+          "answer": "only I had accepted"
+        }
+      ]
+    }
+  ]
+}

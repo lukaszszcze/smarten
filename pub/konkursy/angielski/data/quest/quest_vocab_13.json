@@ -1,5 +1,5 @@
 {
-  "title": "Make or Do?",
+  "title": "Make, Do or Take?",
   "type": "practice",
   "tasks": [
     {
@@ -10,38 +10,62 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "I need to _________ my homework before I can go out.",
-          "options": ["A) make", "B) do", "C) take"],
-          "answer": "B"
+          "stem": "She was determined to _________ a good impression on her new team.",
+          "options": [
+            "A) make",
+            "B) do",
+            "C) take"
+          ],
+          "answer": "A"
         },
         {
           "id": "1.2",
-          "stem": "Can you _________ a photo of us in front of the castle?",
-          "options": ["A) make", "B) do", "C) take"],
-          "answer": "C"
+          "stem": "The new evidence _________ serious doubt on his version of events.",
+          "options": [
+            "A) threw",
+            "B) cast",
+            "C) put"
+          ],
+          "answer": "B"
         },
         {
           "id": "1.3",
-          "stem": "It's hard to _________ a decision when both options are good.",
-          "options": ["A) make", "B) do", "C) have"],
-          "answer": "A"
-        },
-        {
-          "id": "1.4",
-          "stem": "We should _________ exercise every day to stay healthy.",
-          "options": ["A) make", "B) have", "C) do"],
+          "stem": "Nobody was hurt, but the storm _________ considerable damage to the roof.",
+          "options": [
+            "A) made",
+            "B) took",
+            "C) did"
+          ],
           "answer": "C"
         },
         {
-          "id": "1.5",
-          "stem": "She always _________ friends easily at summer camp.",
-          "options": ["A) makes", "B) does", "C) gets"],
+          "id": "1.4",
+          "stem": "He _________ a fortune selling handmade jewellery online.",
+          "options": [
+            "A) made",
+            "B) did",
+            "C) took"
+          ],
           "answer": "A"
         },
         {
+          "id": "1.5",
+          "stem": "The committee will _________ your proposal into consideration next week.",
+          "options": [
+            "A) make",
+            "B) take",
+            "C) bring"
+          ],
+          "answer": "B"
+        },
+        {
           "id": "1.6",
-          "stem": "Come and _________ a look at this amazing butterfly!",
-          "options": ["A) do", "B) make", "C) have"],
+          "stem": "He _________ no attention to the warning signs and swam out too far.",
+          "options": [
+            "A) gave",
+            "B) made",
+            "C) paid"
+          ],
           "answer": "C"
         }
       ]

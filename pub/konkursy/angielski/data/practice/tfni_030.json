@@ -1,0 +1,102 @@
+{
+  "title": "T/F/NI + Vocabulary: The People Who Count the Trees (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE PEOPLE WHO COUNT THE TREES\n\nThere is a spreadsheet in a municipal office in Melbourne that lists, individually, every one of the city's seventy thousand public trees. Each has a number, a species, a measured trunk diameter and - the entry that startles visitors - an estimated date of death. The council began compiling it after a drought lasting more than a decade left a great many of the older elms and planes visibly failing, and it wanted to know, tree by tree, how much of its canopy it was about to lose.\n\nThe answer was alarming. On the first assessment, around forty per cent of the trees were expected to be gone within twenty years. Publishing that figure was itself a decision. Councils tend to keep bad news of this kind in-house, on the reasonable assumption that residents do not want to be told their street is dying. Melbourne did the opposite and put the whole inventory online, with a map, and then - almost as an afterthought - gave each tree an email address so that damage could be reported.\n\nWhat happened next was not in the plan. People began writing to the trees. Not to report a broken branch, though some of that came too, but to tell an elm about their day, to apologise to a fig for a bicycle chained to it, to ask whether the weather was to its liking. Thousands of messages arrived, first from Melbourne and then from everywhere else, and the staff, after some discussion, started replying in the voice of the tree. The scheme was written up around the world as a charming accident, which it was, but it also achieved something the maps and the figures had not: it made a slow, statistical problem feel personal.\n\nThe underlying work carried on. Melbourne set itself the target of doubling its canopy cover by 2040, planting three thousand trees a year and deliberately mixing species so that a single disease or a single hot decade cannot take out an entire street the way the elm planting of the nineteenth century once did. Trees that thrive in the current climate are being chosen alongside those expected to cope with a hotter, drier one. Some of the new planting will look wrong to residents who liked things as they were, and the council has said as much.\n\nThe argument for all of this is no longer mainly about beauty. A mature tree in a city street is a piece of infrastructure: it shades the asphalt, cools the air around it by several degrees on the worst days, intercepts rainfall that would otherwise overwhelm the drains, and - on the evidence of a growing pile of studies - is associated with measurably better health among the people who live within sight of it. Heat is the part that concentrates official minds. Extreme heat kills more people in Australian cities than any other natural hazard, and it does not do so evenly.\n\nDozens of cities have since copied the inventory, if not the email addresses. What none of them can copy is time. The trees Melbourne is planting now will not do the work being asked of them until the 2050s, by which point the officers making the decisions will have retired and the residents complaining about the choice of species will have moved. It is an unusual kind of public spending - one whose benefits arrive long after everybody responsible for it has gone - and the fact that it happens at all says something about what a city believes it is for.",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "The inventory was drawn up because the council needed to know how much of its tree cover it was likely to lose.",
+          "answer": "T",
+          "explanation": "TRUE - It was compiled after the drought because the council 'wanted to know, tree by tree, how much of its canopy it was about to lose'."
+        },
+        {
+          "id": "1.2",
+          "statement": "The council chose not to make its findings public.",
+          "answer": "F",
+          "explanation": "FALSE - 'Melbourne did the opposite and put the whole inventory online, with a map'."
+        },
+        {
+          "id": "1.3",
+          "statement": "Council staff began writing back to the people who sent messages to trees.",
+          "answer": "T",
+          "explanation": "TRUE - 'The staff, after some discussion, started replying in the voice of the tree'."
+        },
+        {
+          "id": "1.4",
+          "statement": "The scheme has been introduced in schools to teach children about trees.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text describes messages from the public and from abroad, but says nothing about schools."
+        },
+        {
+          "id": "1.5",
+          "statement": "The council accepts that some residents will dislike the species it is now planting.",
+          "answer": "T",
+          "explanation": "TRUE - 'Some of the new planting will look wrong to residents who liked things as they were, and the council has said as much'."
+        },
+        {
+          "id": "1.6",
+          "statement": "The tree inventory is brought up to date once a year.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text describes the first assessment and the published map, but never states how often the list is revised."
+        }
+      ],
+      "scoringScheme": {
+        "6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "the cover formed above the ground by the leaves and branches of trees",
+          "answer": [
+            "canopy",
+            "its canopy",
+            "canopy cover"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "kept inside an organisation instead of being made public",
+          "answer": [
+            "in-house"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "something added or done later, which was not part of the original plan",
+          "answer": [
+            "as an afterthought",
+            "an afterthought",
+            "afterthought"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "to grow strongly and be healthy",
+          "answer": [
+            "thrive",
+            "to thrive"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "to continue in spite of the difficulties or the interruption",
+          "answer": [
+            "carried on",
+            "carry on",
+            "to carry on"
+          ]
+        }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}

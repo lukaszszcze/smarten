@@ -1,0 +1,73 @@
+{
+  "title": "Quantity, Measurement and Degree (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 8,
+      "instruction": "Przeczytaj zdania (1.1.-1.8.). Wykorzystujac wyrazy podane wielkimi literami, uzupelnij kazde zdanie z luka tak, aby precyzyjnie oddac sens zdania wyjsciowego. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna wpisywanych fragmentow zdan. Uwaga: nie zmieniaj formy podanych wyrazow. W kazda luke mozesz wpisac maksymalnie piec wyrazow, wliczajac w to wyraz juz podany. Formy skrocone (np. needn't, they're) sa liczone jako dwa wyrazy.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "The tower measures about 90 metres.",
+          "keyword": "HEIGHT",
+          "transformed": "The tower is about _________.",
+          "answer": "90 metres in height"
+        },
+        {
+          "id": "1.2",
+          "original": "There were very few people at the concert.",
+          "keyword": "HARDLY",
+          "transformed": "There _________ at the concert.",
+          "answer": [
+            "was hardly anyone",
+            "were hardly any people"
+          ]
+        },
+        {
+          "id": "1.3",
+          "original": "This is the most boring book I have ever read.",
+          "keyword": "MORE",
+          "transformed": "I have never read _________ this one.",
+          "answer": "a more boring book than"
+        },
+        {
+          "id": "1.4",
+          "original": "We do not have enough chairs for everyone.",
+          "keyword": "SHORT",
+          "transformed": "We _________ for everyone.",
+          "answer": "are short of chairs"
+        },
+        {
+          "id": "1.5",
+          "original": "The journey took us six hours.",
+          "keyword": "TOOK",
+          "transformed": "It _________ complete the journey.",
+          "answer": "took us six hours to"
+        },
+        {
+          "id": "1.6",
+          "original": "Almost nobody applied for the job.",
+          "keyword": "SCARCELY",
+          "transformed": "_________ for the job.",
+          "answer": "Scarcely anyone applied"
+        },
+        {
+          "id": "1.7",
+          "original": "The film was so good that we watched it twice.",
+          "keyword": "SUCH",
+          "transformed": "It _________ that we watched it twice.",
+          "answer": "was such a good film"
+        },
+        {
+          "id": "1.8",
+          "original": "My sister earns twice what I earn.",
+          "keyword": "AS",
+          "transformed": "My sister earns twice _________ I do.",
+          "answer": "as much as"
+        }
+      ]
+    }
+  ]
+}

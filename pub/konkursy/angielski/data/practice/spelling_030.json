@@ -1,0 +1,62 @@
+{
+  "title": "Sport i rywalizacja (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.8.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa pierwsze litery lub wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "She studied her _ _ p _ _ _ _ _ carefully before the final.",
+          "hint": "_ _ p _ _ _ _ _",
+          "answer": "opponent"
+        },
+        {
+          "id": "1.2",
+          "stem": "Sixteen teams from across Europe entered the _ _ _ r _ _ _ _ _ _.",
+          "hint": "_ _ _ r _ _ _ _ _ _",
+          "answer": "tournament"
+        },
+        {
+          "id": "1.3",
+          "stem": "The _ _ f _ _ _ _ awarded a penalty in the very last minute.",
+          "hint": "_ _ f _ _ _ _",
+          "answer": "referee"
+        },
+        {
+          "id": "1.4",
+          "stem": "He has won the national _ _ _ _ p _ _ _ _ h _ _ three times in a row.",
+          "hint": "_ _ _ _ p _ _ _ _ h _ _",
+          "answer": "championship"
+        },
+        {
+          "id": "1.5",
+          "stem": "Over forty thousand _ _ _ c _ _ _ _ _ _ filled the stadium for the derby.",
+          "hint": "_ _ _ c _ _ _ _ _ _",
+          "answer": "spectators"
+        },
+        {
+          "id": "1.6",
+          "stem": "It was their first _ _ f _ _ _ of the entire season.",
+          "hint": "_ _ f _ _ _",
+          "answer": "defeat"
+        },
+        {
+          "id": "1.7",
+          "stem": "Only the top two runners _ _ _ l _ _ _ _ _ for the final.",
+          "hint": "_ _ _ l _ _ _ _ _",
+          "answer": "qualified"
+        },
+        {
+          "id": "1.8",
+          "stem": "Marathon running demands enormous _ _ _ u _ _ _ _ _ rather than raw speed.",
+          "hint": "_ _ _ u _ _ _ _ _",
+          "answer": "endurance"
+        }
+      ]
+    }
+  ]
+}

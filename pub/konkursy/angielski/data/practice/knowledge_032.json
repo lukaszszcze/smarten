@@ -1,0 +1,68 @@
+{
+  "title": "English Traditions and Idioms (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Odpowiedz na pytania (1.1.-1.5.) dotyczace wiedzy o krajach anglojezycznych. Odpowiadaj po angielsku. W pytaniach oznaczonych 2 pkt nalezy podac dwie informacje.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "What is the name of the traditional English folk dance performed with sticks, bells and handkerchiefs?",
+          "answer": [
+            "Morris dancing",
+            "Morris dance",
+            "the Morris dance"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "What does the idiom 'to let the cat out of the bag' mean?",
+          "answer": [
+            "to reveal a secret",
+            "to tell a secret",
+            "reveal a secret",
+            "tell a secret"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Which night do British people celebrate on 5th November? Which man does it commemorate?",
+          "answer": [
+            "Bonfire Night",
+            "Guy Fawkes Night",
+            "Fireworks Night"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Guy Fawkes",
+            "Fawkes"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "What is the name for the variety of English spoken in the East End of London, famous for its rhyming slang?",
+          "answer": [
+            "Cockney"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "What is the name of the traditional meal eaten in British homes on a Sunday afternoon?",
+          "answer": [
+            "Sunday roast",
+            "a Sunday roast",
+            "roast dinner",
+            "the Sunday roast"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

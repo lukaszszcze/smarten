@@ -1,5 +1,5 @@
 {
-  "title": "What Happened Yesterday?",
+  "title": "Tense Challenge",
   "type": "practice",
   "tasks": [
     {
@@ -10,39 +10,63 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "She _________ to school by bus yesterday.",
-          "options": ["A) goes", "B) went", "C) goed"],
-          "answer": "B"
-        },
-        {
-          "id": "1.2",
-          "stem": "We _________ a really good film last Saturday.",
-          "options": ["A) watched", "B) watch", "C) watchd"],
-          "answer": "A"
-        },
-        {
-          "id": "1.3",
-          "stem": "Tom _________ his homework after dinner.",
-          "options": ["A) does", "B) doed", "C) did"],
+          "stem": "I _________ this book for two weeks and I still haven't finished it.",
+          "options": [
+            "A) read",
+            "B) am reading",
+            "C) have been reading"
+          ],
           "answer": "C"
         },
         {
+          "id": "1.2",
+          "stem": "If it _________ tomorrow, we'll have the party inside.",
+          "options": [
+            "A) will rain",
+            "B) rains",
+            "C) is raining"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "By the time we got to the cinema, the film _________ already _________.",
+          "options": [
+            "A) has ... started",
+            "B) had ... started",
+            "C) was ... starting"
+          ],
+          "answer": "B"
+        },
+        {
           "id": "1.4",
-          "stem": "I _________ football with my friends in the park.",
-          "options": ["A) played", "B) plaied", "C) plays"],
+          "stem": "When I was young, we _________ visit our grandparents every Sunday.",
+          "options": [
+            "A) used to",
+            "B) were used to",
+            "C) use to"
+          ],
           "answer": "A"
         },
         {
           "id": "1.5",
-          "stem": "They _________ a sandcastle on the beach last summer.",
-          "options": ["A) builded", "B) build", "C) built"],
+          "stem": "She asked me if I _________ her new haircut.",
+          "options": [
+            "A) have noticed",
+            "B) notice",
+            "C) had noticed"
+          ],
           "answer": "C"
         },
         {
           "id": "1.6",
-          "stem": "My mum _________ a delicious cake for my birthday.",
-          "options": ["A) maked", "B) made", "C) makes"],
-          "answer": "B"
+          "stem": "This time next week, we _________ on a beach in Spain!",
+          "options": [
+            "A) will be lying",
+            "B) will lie",
+            "C) are lying"
+          ],
+          "answer": "A"
         }
       ]
     }

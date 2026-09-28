@@ -1,5 +1,5 @@
 {
-  "title": "Homework: Yes or No?",
+  "title": "The Volunteer",
   "type": "practice",
   "tasks": [
     {
@@ -7,65 +7,65 @@
       "type": "multiple_choice",
       "points": 6,
       "instruction": "Read the text below. Choose the correct answer A, B or C for each question.",
-      "text": "HOMEWORK: YES OR NO?\n\nSome students hate homework, but I actually think it is useful — if there is not too much of it. A little homework every day helps me remember what I learned in class. For example, when I practise maths problems at home, I understand them much better the next day.\n\nHowever, I believe teachers sometimes give us too much. Last week, I had homework in five subjects on the same evening. I spent three hours at my desk and had no time to play outside. That is not fair.\n\nIn my view, the best solution is short homework — about thirty minutes a day. This way, students can revise the material and still have free time for sports, hobbies, or just relaxing with their family. Teachers should also talk to each other so they do not all give homework on the same day.",
+      "text": "THE VOLUNTEER\n\nI started at the animal shelter because of a school requirement. Every student in our year had to complete twenty hours of community work before the end of May, and by April I had done none of them. The shelter was the only place that answered my email.\n\nI had imagined the work would involve playing with puppies. In practice my first three shifts consisted almost entirely of cleaning. There is a great deal of cleaning in an animal shelter, and none of it appears in the photographs on their website. Ewa, who has run the place for eleven years, watched me scrubbing a floor on the second day and remarked, without looking up, that most people leave after the second day.\n\nI stayed, partly out of stubbornness. By the fourth week I had been trusted with the evening feed, which means remembering which of forty animals is on which diet, and which of them will pretend to be starving whatever you give them. I got it wrong twice. Ewa corrected me both times without the slightest suggestion that I was an idiot, which I now understand is a skill.\n\nThe part nobody warns you about is the leaving. A dog called Borys had been at the shelter for over a year, long enough that the staff had stopped expecting anything. In my second month a family came for him. I was pleased in a way that surprised me, and also, quite unreasonably, annoyed. Ewa said that feeling never entirely goes away, and that it is the reason the work is worth doing rather than a reason to stop.\n\nMy twenty hours finished in the middle of May. I have done another sixty since, and I no longer count them. What I would say to anyone thinking about it is this: do not go for the puppies. Go because you will be more useful than you expect, and because somebody will assume you are competent slightly before you actually are, which turns out to be how people become competent.",
       "items": [
         {
           "id": "1.1",
-          "stem": "What does the author think about homework in general?",
+          "stem": "Why did the writer first go to the shelter?",
           "options": [
-            "A) It is always a waste of time.",
-            "B) It is helpful when there is not too much.",
-            "C) It is only useful for maths."
+            "A) A friend had recommended it.",
+            "B) It was the only place that replied.",
+            "C) The writer had always wanted to work with animals."
           ],
           "answer": "B"
         },
         {
           "id": "1.2",
-          "stem": "Why does the author mention maths problems?",
+          "stem": "What was the writer's first impression of the work?",
           "options": [
-            "A) To show that maths is the hardest subject.",
-            "B) To give an example of how homework helps learning.",
-            "C) To explain why maths teachers give too much work."
+            "A) It was mostly cleaning rather than playing with animals.",
+            "B) It was better organised than expected.",
+            "C) It was too difficult for a beginner."
           ],
-          "answer": "B"
+          "answer": "A"
         },
         {
           "id": "1.3",
-          "stem": "What happened to the author last week?",
+          "stem": "What does Ewa's remark on the second day suggest?",
           "options": [
-            "A) The author failed a maths test.",
-            "B) The author had too much homework in one evening.",
-            "C) The author forgot to do homework for five subjects."
+            "A) She wanted the writer to leave.",
+            "B) She did not expect the writer to stay.",
+            "C) She thought the floor had been badly cleaned."
           ],
           "answer": "B"
         },
         {
           "id": "1.4",
-          "stem": "How long does the author think homework should take each day?",
+          "stem": "How did the writer feel when Borys was adopted?",
           "options": [
-            "A) About half an hour.",
-            "B) About one hour.",
-            "C) About three hours."
-          ],
-          "answer": "A"
-        },
-        {
-          "id": "1.5",
-          "stem": "What does the author suggest teachers should do?",
-          "options": [
-            "A) Stop giving homework completely.",
-            "B) Give homework only at weekends.",
-            "C) Communicate with each other about homework days."
+            "A) Entirely happy.",
+            "B) Mainly relieved.",
+            "C) Pleased and, unexpectedly, resentful at the same time."
           ],
           "answer": "C"
         },
         {
-          "id": "1.6",
-          "stem": "Which sentence best describes the author's opinion?",
+          "id": "1.5",
+          "stem": "What does the writer say about the twenty required hours?",
           "options": [
-            "A) Homework is important but it needs to be limited.",
-            "B) Students should decide how much homework they do.",
-            "C) Homework should only be given in subjects you enjoy."
+            "A) They were completed later than the deadline.",
+            "B) They stopped mattering.",
+            "C) The school reduced them."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "What is the writer's main advice to future volunteers?",
+          "options": [
+            "A) Expect to be given responsibility and to grow into it.",
+            "B) Choose a shelter with fewer animals.",
+            "C) Be prepared to work only with dogs."
           ],
           "answer": "A"
         }

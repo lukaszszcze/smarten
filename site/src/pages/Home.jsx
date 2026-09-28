@@ -10,8 +10,9 @@ import {
 } from "../lib/practiceRewards";
 import { loadAttempts } from "../lib/resultsModel";
 import { syncAttempts } from "../lib/resultsSync";
-import { loadProgress, getPlayerTitle } from "../lib/questProgress";
-import { percentageToStars } from "../lib/questStars";
+import { loadProgress } from "../lib/questProgress";
+import { TRACK_IDS, MAX_LEVEL } from "../lib/questLevels";
+import { OJAJ_ACCENT, isOjajAttempt } from "../lib/ojaj";
 import ProgressTrendChart from "../components/ProgressTrendChart";
 
 const STAGE_LABELS = { szkolny: "Etap szkolny", rejonowy: "Etap rejonowy", wojewodzki: "Etap wojewodzki" };
@@ -41,13 +42,14 @@ const MASTERY_COLORS = {
   5: "#a78bfa",
 };
 
-const QUEST_BRANCHES = [
-  { id: "vocabulary", label: "Vocabulary", color: "#f59e0b" },
+// The quest section carries a level per track rather than a star count. Kept in
+// the same order and colours as the quest home screen.
+const QUEST_TRACKS = [
+  { id: "reading", label: "Reading", color: "#38bdf8" },
+  { id: "vocabulary", label: "Vocab", color: "#f59e0b" },
   { id: "grammar", label: "Grammar", color: "#8b5cf6" },
-  { id: "reading", label: "Reading", color: "#3b82f6" },
+  { id: "spelling", label: "Spelling", color: "#34d399" },
 ];
-const QUEST_BRANCH_MAX_STARS = 75; // 5 levels × 3 exercises × 5★
-const QUEST_TOTAL_MAX_STARS = 225;
 
 function PracticeTitleCard() {
   const user = useUser();
@@ -108,8 +110,13 @@ function todayKey() {
 function computeStats(all) {
   if (all.length === 0) return null;
 
-  const competitions = all.filter((a) => a.kind === "competition");
-  const practice = all.filter((a) => a.kind === "practice");
+  // OJAJ is a different competition at a different level (B2-C1+ against
+  // B1-C1), so its scores are kept out of the kuratoryjny figures here and
+  // reported in the OJAJ card instead. An attempt saved before OJAJ existed
+  // carries no `competition`, which is what kuratoryjny means.
+  const competitions = all.filter((a) => a.kind === "competition" && !isOjajAttempt(a));
+  const practice = all.filter((a) => a.kind === "practice" && !isOjajAttempt(a));
+  const ojaj = all.filter(isOjajAttempt);
 
   // Per-type stats from all attempts (competitions + practice)
   const byType = {};
@@ -139,6 +146,16 @@ function computeStats(all) {
   const today = todayKey();
   const todayCount = all.filter((a) => typeof a.date === "string" && a.date.startsWith(today)).length;
 
+  // Best percentage on each OJAJ paper, for the OJAJ card's summary.
+  const ojajTests = ojaj.filter((a) => a.kind === "competition");
+  const ojajBests = {};
+  for (const a of ojajTests) {
+    if (!(a.testId in ojajBests) || a.percentage > ojajBests[a.testId]) {
+      ojajBests[a.testId] = a.percentage;
+    }
+  }
+  const ojajBestList = Object.values(ojajBests);
+
   return {
     totalAttempts: all.length,
     competitionsDone: new Set(competitions.map((a) => a.testId)).size,
@@ -146,6 +163,12 @@ function computeStats(all) {
     overallAvg,
     bestByCompetition,
     todayCount,
+    ojaj: {
+      testsDone: ojajBestList.length,
+      avg: ojajBestList.length > 0
+        ? Math.round(ojajBestList.reduce((s, v) => s + v, 0) / ojajBestList.length)
+        : null,
+    },
   };
 }
 
@@ -313,61 +336,86 @@ function TypeMasteryGrid({ bestScores, exerciseList }) {
   );
 }
 
+function OjajCard({ stats }) {
+  const done = stats?.testsDone || 0;
+  const avg = stats?.avg;
+
+  return (
+    <Link to="/ojaj" style={{
+      display: "block", background: "#13131a", border: "1px solid #1e1e2e",
+      borderRadius: 12, padding: "16px 20px", marginBottom: 12, textDecoration: "none",
+      transition: "border-color 0.2s",
+    }}
+      onMouseEnter={(e) => { e.currentTarget.style.borderColor = OJAJ_ACCENT + "66"; }}
+      onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#1e1e2e"; }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
+        <span style={{ color: OJAJ_ACCENT, fontWeight: 700, fontSize: 15 }}>
+          OJAJ
+        </span>
+        {avg !== null && avg !== undefined && (
+          <span style={{
+            fontSize: 13, fontWeight: 800,
+            color: avg >= 70 ? "#50d890" : avg >= 40 ? "#f5a623" : "#e05050",
+          }}>
+            {avg}%
+          </span>
+        )}
+      </div>
+      <span style={{ color: "#7a7a90", fontSize: 13, display: "block", marginTop: 4 }}>
+        {done > 0
+          ? `Olimpiada dla juniorow - rozwiazane testy: ${done} →`
+          : "Olimpiada dla juniorow, poziom B2-C1+ →"}
+      </span>
+    </Link>
+  );
+}
+
 function QuestSnapshot({ progress }) {
-  if (!progress) {
+  const placed = progress?.placement && TRACK_IDS.every((id) => progress.tracks?.[id]);
+  const cardStyle = {
+    display: "block", background: "#13131a", border: "1px solid #1e1e2e",
+    borderRadius: 12, padding: "16px 20px", marginBottom: 12, textDecoration: "none",
+    transition: "border-color 0.2s",
+  };
+  const hoverOn = (e) => { e.currentTarget.style.borderColor = "#a78bfa66"; };
+  const hoverOff = (e) => { e.currentTarget.style.borderColor = "#1e1e2e"; };
+
+  if (!placed) {
     return (
-      <Link to="/quest" style={{
-        display: "block", background: "#13131a", border: "1px solid #1e1e2e",
-        borderRadius: 10, padding: "16px 20px", marginBottom: 12, textDecoration: "none",
-        transition: "border-color 0.2s",
-      }}
-        onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#a78bfa66"; }}
-        onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#1e1e2e"; }}
-      >
+      <Link to="/quest" style={cardStyle} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
         <span style={{ color: "#a78bfa", fontWeight: 700, fontSize: 15 }}>Quest</span>
         <span style={{ color: "#7a7a90", fontSize: 13, display: "block", marginTop: 4 }}>
-          Fun English practice &rarr;
+          Practice pitched at your level &rarr;
         </span>
       </Link>
     );
   }
 
-  const titleInfo = getPlayerTitle(progress.stars || 0);
-  const overallPct = Math.round(((progress.stars || 0) / QUEST_TOTAL_MAX_STARS) * 100);
+  const done = (progress.attempts || []).length;
 
   return (
-    <Link to="/quest" style={{
-      display: "block", background: "#13131a", border: "1px solid #1e1e2e",
-      borderRadius: 12, padding: "16px 20px", marginBottom: 12, textDecoration: "none",
-      transition: "border-color 0.2s",
-    }}
-      onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#a78bfa66"; }}
-      onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#1e1e2e"; }}
-    >
+    <Link to="/quest" style={cardStyle} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-        <span style={{ color: "#a78bfa", fontWeight: 700, fontSize: 15 }}>
-          Quest: {titleInfo.title}
-        </span>
+        <span style={{ color: "#a78bfa", fontWeight: 700, fontSize: 15 }}>Quest</span>
         <span style={{ color: "#c8c8d8", fontSize: 13 }}>
-          ★ {progress.stars || 0}/{QUEST_TOTAL_MAX_STARS}
+          {done} exercise{done === 1 ? "" : "s"}
         </span>
       </div>
       <div style={{ display: "flex", gap: 10 }}>
-        {QUEST_BRANCHES.map((b) => {
-          const scores = progress.branches?.[b.id]?.bestScores || {};
-          const branchStars = Object.values(scores).reduce((s, p) => s + percentageToStars(p), 0);
-          const pct = Math.round((branchStars / QUEST_BRANCH_MAX_STARS) * 100);
+        {QUEST_TRACKS.map((t) => {
+          const level = progress.tracks[t.id].level;
           return (
-            <div key={b.id} style={{ flex: 1 }}>
+            <div key={t.id} style={{ flex: 1 }}>
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, marginBottom: 3 }}>
-                <span style={{ color: b.color, fontWeight: 700 }}>{b.label}</span>
-                <span style={{ color: "#7a7a90" }}>{branchStars}★</span>
+                <span style={{ color: t.color, fontWeight: 700 }}>{t.label}</span>
+                <span style={{ color: "#7a7a90" }}>L{level}</span>
               </div>
               <div style={{ height: 4, background: "#1e1e2e", borderRadius: 2, overflow: "hidden" }}>
                 <div style={{
                   height: "100%",
-                  width: `${pct}%`,
-                  background: b.color,
+                  width: `${(level / MAX_LEVEL) * 100}%`,
+                  background: t.color,
                   transition: "width 0.5s",
                 }} />
               </div>
@@ -375,11 +423,6 @@ function QuestSnapshot({ progress }) {
           );
         })}
       </div>
-      {titleInfo.starsForNext > 0 && overallPct < 100 && (
-        <div style={{ color: "#7a7a90", fontSize: 11, marginTop: 8 }}>
-          {titleInfo.starsForNext - titleInfo.starsInLevel}★ do tytulu nastepnego poziomu
-        </div>
-      )}
     </Link>
   );
 }
@@ -475,9 +518,11 @@ export default function Home() {
 
       <PracticeTitleCard />
 
-      <ProgressTrendChart attempts={attempts} />
+      <ProgressTrendChart attempts={attempts.filter((a) => !isOjajAttempt(a))} />
 
       <TypeMasteryGrid bestScores={bestScores} exerciseList={exerciseList} />
+
+      <OjajCard stats={dashboard?.ojaj} />
 
       <QuestSnapshot progress={questProgress} />
 

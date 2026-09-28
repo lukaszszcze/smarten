@@ -1,5 +1,5 @@
 {
-  "title": "A Letter from London",
+  "title": "A Letter from Edinburgh",
   "type": "practice",
   "tasks": [
     {
@@ -7,67 +7,67 @@
       "type": "multiple_choice",
       "points": 6,
       "instruction": "Read the text below. Choose the correct answer A, B or C for each question.",
-      "text": "A LETTER FROM LONDON\n\nHi Zosia!\n\nI'm having an amazing time in London! We arrived on Monday and it's already Wednesday — the days are flying by. Yesterday, we visited the Tower of London. Did you know it's almost a thousand years old? We saw the Crown Jewels there, and they were absolutely stunning. The guard told us that ravens have lived at the Tower for centuries because people believe that if they ever leave, the kingdom will fall.\n\nToday we went on the London Eye. I was a bit scared at first because the wheel is 135 metres tall, but once we were at the top, the view was incredible. I could see Big Ben, the Thames, and even tiny boats far below. After that, we had fish and chips near the river — Mum says it's the most British meal you can eat!\n\nTomorrow we're going to the Natural History Museum. My brother is desperate to see the dinosaur skeletons. I'm more excited about the gemstone collection, but don't tell him that!\n\nWish you were here!\nKasia",
+      "text": "A LETTER FROM EDINBURGH\n\nDear Marta,\n\nI promised I would write properly rather than just sending photographs, so here it is.\n\nWe arrived on Thursday, and my first impression was that the city is built on hills that nobody had warned me about. Our flat is at the bottom of one and everything worth seeing is at the top. By Saturday my legs had stopped complaining, which I am told is the local rite of passage.\n\nThe castle sits on a rock that was once a volcano, which explains both why it was so hard to attack and why it is so exhausting to walk up to. From the walls you can see the whole city and, on a clear day, the water beyond it. Our guide was a woman of about seventy who told the history of four centuries without once looking at a note, and who clearly enjoyed the grislier parts most.\n\nRunning downhill from the castle is a street called the Royal Mile, which ends at the palace where the King stays when he is in Scotland. It is beautiful, and it is also completely full of shops selling the same tartan scarf. Mum bought three of them.\n\nThe part I did not expect to like was Arthur's Seat, a hill in the middle of the city which is also an old volcano. You can walk up it in an hour in ordinary shoes. We went early, before the crowds, and at the top there was a wind strong enough to lean on. I have never seen a city look so small from inside itself.\n\nWe are here in August, which I now realise was either very clever or a serious mistake. The whole place is taken over by a festival: there are performances in theatres, in pubs, in church halls and, twice that I saw, on the pavement. Anybody at all can take part, which means the quality ranges from genuinely excellent to unwatchable, occasionally within the same show. We saw four things. Two were wonderful. I am choosing not to describe the other two.\n\nOne more thing. There is a small statue of a dog near a churchyard, and the story attached to it is that he waited by his owner's grave for years after the owner died. Half the guidebooks say it is true and half say it has been improved over time. I have decided not to look it up, because I prefer it the way the guide told it.\n\nCome with us next time. Bring better shoes than I did.\n\nLove,\nZofia",
       "items": [
         {
           "id": "1.1",
-          "stem": "When did Kasia arrive in London?",
+          "stem": "What does Zofia mean by 'the local rite of passage'?",
           "options": [
-            "A) On Wednesday.",
-            "B) On Monday.",
-            "C) On Tuesday."
+            "A) A ceremony that visitors to the city attend.",
+            "B) Getting used to the hills is something every newcomer goes through.",
+            "C) A particular walking route through the old town."
           ],
           "answer": "B"
         },
         {
           "id": "1.2",
-          "stem": "Why do ravens live at the Tower of London?",
+          "stem": "Why was the castle hard to attack?",
           "options": [
-            "A) Because the guards feed them every day.",
-            "B) Because they have always lived near rivers.",
-            "C) Because there is a belief that the kingdom will fall if they leave."
+            "A) Its walls were unusually thick.",
+            "B) It stands on a steep rock.",
+            "C) It cannot be seen from the city."
           ],
-          "answer": "C"
+          "answer": "B"
         },
         {
           "id": "1.3",
-          "stem": "How did Kasia feel at first on the London Eye?",
+          "stem": "What is Zofia's opinion of the Royal Mile?",
           "options": [
-            "A) She felt a bit frightened.",
-            "B) She felt very excited.",
-            "C) She felt bored."
+            "A) Beautiful, but the shops all sell the same thing.",
+            "B) Disappointing and not worth the walk.",
+            "C) The best part of the whole trip."
           ],
           "answer": "A"
         },
         {
           "id": "1.4",
-          "stem": "What could Kasia see from the top of the London Eye?",
+          "stem": "What surprised Zofia about Arthur's Seat?",
           "options": [
-            "A) The Tower of London and the Crown Jewels.",
-            "B) Big Ben, the river, and boats.",
-            "C) The Natural History Museum and dinosaurs."
+            "A) That it is an old volcano.",
+            "B) How much she enjoyed it.",
+            "C) That climbing it takes a whole day."
           ],
           "answer": "B"
         },
         {
           "id": "1.5",
-          "stem": "What does Kasia's mum think about fish and chips?",
+          "stem": "What does she say about the festival performances?",
           "options": [
-            "A) It is too expensive to eat near the river.",
-            "B) It is a very traditional British dish.",
-            "C) It is not as good as Polish food."
+            "A) They are all of a high standard.",
+            "B) Only professional performers may take part.",
+            "C) The standard varies enormously."
           ],
-          "answer": "B"
+          "answer": "C"
         },
         {
           "id": "1.6",
-          "stem": "What is Kasia most looking forward to at the museum?",
+          "stem": "Why has she decided not to check the story about the dog?",
           "options": [
-            "A) The dinosaur skeletons.",
-            "B) The gift shop.",
-            "C) The gemstone collection."
+            "A) She is certain it is untrue.",
+            "B) She would rather keep the version she was told.",
+            "C) The guidebooks disagree too much to be any use."
           ],
-          "answer": "C"
+          "answer": "B"
         }
       ]
     }

@@ -46,7 +46,9 @@ export default function WordFormation({ task, answers, onChange, showResults, ta
 
 function GapInput({ id, answers, onChange, showResults, taskResult }) {
   const ir = taskResult?.items?.find((r) => r.id === id);
-  const inputStyle = showResults && ir ? (ir.correct ? s.inputCorrect : s.inputWrong) : s.input;
+  const inputStyle = showResults && ir
+    ? (ir.nearMiss ? s.inputNearMiss : ir.correct ? s.inputCorrect : s.inputWrong)
+    : s.input;
   return (
     <span style={{ display: "inline-flex", alignItems: "center", margin: "0 2px" }}>
       <span style={{ color: "#7a7a90", fontSize: 11, marginRight: 2 }}>{id}</span>
@@ -57,6 +59,11 @@ function GapInput({ id, answers, onChange, showResults, taskResult }) {
         disabled={showResults}
       />
       {showResults && ir && !ir.correct && <span style={{ ...s.correctAnswer, marginLeft: 4 }}>{ir.correctAnswer}</span>}
+      {showResults && ir?.nearMiss && (
+        <span style={{ ...s.correctAnswer, marginLeft: 4, color: "#f0a020" }}>
+          nearly — {ir.correctAnswer}
+        </span>
+      )}
     </span>
   );
 }

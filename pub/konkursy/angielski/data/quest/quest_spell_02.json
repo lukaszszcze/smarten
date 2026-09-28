@@ -1,0 +1,47 @@
+{
+  "title": "Letters You Cannot Hear",
+  "type": "practice",
+  "questTrack": "spelling",
+  "questLevel": 3,
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 6,
+      "exactSpelling": true,
+      "instruction": "Every word below has a letter in it that you do not say out loud. Write the whole word. The dashes show you how long it is.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "A soldier in armour who rides a horse is a _ _ _ _ _ _ .",
+          "answer": "knight"
+        },
+        {
+          "id": "1.2",
+          "stem": "A piece of land with water all around it is an _ _ _ _ _ _ .",
+          "answer": "island"
+        },
+        {
+          "id": "1.3",
+          "stem": "You blow a _ _ _ _ _ _ _ to start the match.",
+          "answer": "whistle"
+        },
+        {
+          "id": "1.4",
+          "stem": "Someone who never tells lies is _ _ _ _ _ _ .",
+          "answer": "honest"
+        },
+        {
+          "id": "1.5",
+          "stem": "You use a _ _ _ _ _ _ every time you lift something heavy.",
+          "answer": "muscle"
+        },
+        {
+          "id": "1.6",
+          "stem": "A big stone building where a king or queen used to live is a _ _ _ _ _ _ .",
+          "answer": "castle"
+        }
+      ]
+    }
+  ]
+}

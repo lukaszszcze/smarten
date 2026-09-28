@@ -1,10 +1,19 @@
 // GET /api/quest-progress?user=Lidia  — fetch quest progress from KV
 // PUT /api/quest-progress             — merge and store quest progress
 //   body: { user, progress }
+//
+// The stored shape is version 2: a level per track, no star count. A version 1
+// blob left in KV is returned as null so the client starts from the placement
+// test, and the first version 2 write replaces it.
 
-import { computeTotalStars, clampPercentage } from "../../src/lib/questStars.js";
+import { TRACK_IDS, MIN_LEVEL, MAX_LEVEL } from "../../src/lib/questLevels.js";
 
 const ALLOWED_USERS = ["Tadzio", "Zosia", "Lidia"];
+const PROGRESS_VERSION = 2;
+
+// Exercise ids come from three folders now (quest_vocab_01, tfni_024,
+// ojaj_formation_001), so the old quest-only pattern would reject most of them.
+const EXERCISE_ID = /^[a-z][a-z0-9_]{1,48}$/;
 
 export async function onRequestGet(context) {
   const url = new URL(context.request.url);
@@ -13,10 +22,8 @@ export async function onRequestGet(context) {
     return Response.json({ error: "invalid user" }, { status: 400 });
   }
   const raw = await context.env.RESULTS.get(`quest:${user}`, "json");
-  if (!raw) return Response.json(null);
-  const normalized = normalizeProgress(raw);
-  normalized.stars = computeTotalStars(normalized);
-  return Response.json(normalized);
+  if (!raw || raw.version !== PROGRESS_VERSION) return Response.json(null);
+  return Response.json(normalise(raw));
 }
 
 export async function onRequestPut(context) {
@@ -26,22 +33,15 @@ export async function onRequestPut(context) {
     if (!user || !ALLOWED_USERS.includes(user)) {
       return Response.json({ error: "invalid user" }, { status: 400 });
     }
-    if (!body.progress?.branches) {
+    if (body.progress?.version !== PROGRESS_VERSION || !body.progress?.tracks) {
       return Response.json({ error: "invalid progress" }, { status: 400 });
     }
 
-    // Normalize incoming payload
-    const incoming = normalizeProgress(body.progress);
-
+    const incoming = normalise(body.progress);
     const key = `quest:${user}`;
-    const rawExisting = await context.env.RESULTS.get(key, "json");
-    const existing = rawExisting ? normalizeProgress(rawExisting) : null;
-
-    // Server-side merge: highest bestScore wins, attempts unioned by ID
-    const merged = mergeProgress(existing, incoming);
-
-    // Recompute stars server-side (never trust client)
-    merged.stars = computeTotalStars(merged);
+    const stored = await context.env.RESULTS.get(key, "json");
+    const existing = stored?.version === PROGRESS_VERSION ? normalise(stored) : null;
+    const merged = merge(existing, incoming);
 
     await context.env.RESULTS.put(key, JSON.stringify(merged));
     return Response.json(merged);
@@ -50,72 +50,107 @@ export async function onRequestPut(context) {
   }
 }
 
-function normalizeProgress(raw) {
-  const progress = { branches: {}, attempts: [], stars: 0 };
+function pct(v) {
+  const n = Math.round(Number(v));
+  return Number.isFinite(n) ? Math.max(0, Math.min(100, n)) : 0;
+}
 
-  // Normalize branches and bestScores
-  for (const [branchId, branchData] of Object.entries(raw?.branches || {})) {
-    if (!/^[a-z]+$/.test(branchId)) continue;
+function level(v) {
+  const n = Math.round(Number(v));
+  return Number.isFinite(n) ? Math.max(MIN_LEVEL, Math.min(MAX_LEVEL, n)) : MIN_LEVEL;
+}
 
-    const bestScores = {};
-    for (const [exId, score] of Object.entries(branchData?.bestScores || {})) {
-      if (!/^quest_[a-z]+_\d+$/.test(exId)) continue;
-      const pct = Number(score);
-      if (!Number.isFinite(pct)) continue;
-      bestScores[exId] = Math.max(0, Math.min(100, Math.round(pct)));
+function isoDate(v) {
+  return typeof v === "string" && !Number.isNaN(Date.parse(v)) ? v : new Date().toISOString();
+}
+
+function normalise(raw) {
+  const out = { version: PROGRESS_VERSION, placement: null, tracks: {}, attempts: [] };
+
+  for (const id of TRACK_IDS) {
+    const t = raw?.tracks?.[id] || {};
+    const seen = {};
+    for (const [exId, s] of Object.entries(t.seen || {})) {
+      if (!EXERCISE_ID.test(exId)) continue;
+      seen[exId] = {
+        first: pct(s?.first),
+        best: pct(s?.best),
+        attempts: Math.max(1, Math.round(Number(s?.attempts)) || 1),
+        lastDate: isoDate(s?.lastDate),
+      };
     }
-    progress.branches[branchId] = { bestScores };
+    out.tracks[id] = { level: level(t.level), seen };
   }
 
-  // Normalize attempts
-  for (const attempt of raw?.attempts || []) {
-    if (!attempt?.exerciseId || !attempt?.branch) continue;
-    if (!/^quest_[a-z]+_\d+$/.test(attempt.exerciseId)) continue;
-
-    progress.attempts.push({
-      attemptId: typeof attempt.attemptId === "string" ? attempt.attemptId : crypto.randomUUID(),
-      exerciseId: attempt.exerciseId,
-      branch: attempt.branch,
-      date: typeof attempt.date === "string" ? attempt.date : new Date().toISOString(),
-      score: Number(attempt.score) || 0,
-      maxScore: Number(attempt.maxScore) || 0,
-      percentage: Math.max(0, Math.min(100, Math.round(Number(attempt.percentage) || 0))),
-      starsEarned: Number(attempt.starsEarned) || 0,
+  for (const a of raw?.attempts || []) {
+    if (!EXERCISE_ID.test(a?.exerciseId || "")) continue;
+    if (!TRACK_IDS.includes(a?.track)) continue;
+    out.attempts.push({
+      attemptId: typeof a.attemptId === "string" ? a.attemptId : crypto.randomUUID(),
+      exerciseId: a.exerciseId,
+      track: a.track,
+      level: level(a.level),
+      date: isoDate(a.date),
+      score: Number(a.score) || 0,
+      maxScore: Number(a.maxScore) || 0,
+      percentage: pct(a.percentage),
+      isFirst: !!a.isFirst,
+      levelBefore: level(a.levelBefore),
+      levelAfter: level(a.levelAfter),
     });
   }
 
-  return progress;
+  if (raw?.placement?.levels) {
+    const levels = {};
+    for (const id of TRACK_IDS) levels[id] = level(raw.placement.levels[id]);
+    out.placement = { date: isoDate(raw.placement.date), levels, scores: {} };
+    for (const [k, v] of Object.entries(raw.placement.scores || {})) {
+      if (/^[a-z]+_[0-9]$/.test(k)) out.placement.scores[k] = pct(v);
+    }
+  }
+
+  // Carried through untouched: the version 1 blob, kept as a record.
+  if (raw?.archived) out.archived = raw.archived;
+
+  return out;
 }
 
-function mergeProgress(existing, incoming) {
+/** Same rule as the client: best score per exercise, attempts unioned by id, and
+ *  a track's level taken from whichever copy has seen more of that track. */
+function merge(existing, incoming) {
   if (!existing) return incoming;
+  const merged = structuredClone(incoming);
 
-  const merged = JSON.parse(JSON.stringify(incoming));
-
-  // Merge bestScores: highest score per exercise wins
-  for (const branchId of Object.keys(existing.branches || {})) {
-    if (!merged.branches[branchId]) {
-      merged.branches[branchId] = existing.branches[branchId];
-      continue;
+  for (const id of TRACK_IDS) {
+    const mine = merged.tracks[id];
+    const theirs = existing.tracks[id];
+    for (const [exId, s] of Object.entries(theirs.seen)) {
+      const have = mine.seen[exId];
+      mine.seen[exId] = have
+        ? {
+            first: have.first,
+            best: Math.max(have.best, s.best),
+            attempts: Math.max(have.attempts, s.attempts),
+            lastDate: have.lastDate > s.lastDate ? have.lastDate : s.lastDate,
+          }
+        : s;
     }
-    const existingScores = existing.branches[branchId].bestScores || {};
-    const mergedScores = merged.branches[branchId].bestScores || {};
-    for (const [exId, score] of Object.entries(existingScores)) {
-      if ((mergedScores[exId] ?? -1) < score) {
-        mergedScores[exId] = score;
-      }
-    }
-    merged.branches[branchId].bestScores = mergedScores;
-  }
-
-  // Merge attempts: union by attemptId
-  const seenAttempts = new Set((merged.attempts || []).map((a) => a.attemptId));
-  for (const attempt of existing.attempts || []) {
-    if (attempt.attemptId && !seenAttempts.has(attempt.attemptId)) {
-      merged.attempts.push(attempt);
-      seenAttempts.add(attempt.attemptId);
+    if (Object.keys(theirs.seen).length > Object.keys(incoming.tracks[id].seen).length) {
+      mine.level = theirs.level;
     }
   }
+
+  const seenAttempts = new Set(merged.attempts.map((a) => a.attemptId));
+  for (const a of existing.attempts) {
+    if (a.attemptId && !seenAttempts.has(a.attemptId)) {
+      merged.attempts.push(a);
+      seenAttempts.add(a.attemptId);
+    }
+  }
+  merged.attempts.sort((a, b) => (a.date < b.date ? -1 : 1));
+
+  if (!merged.placement && existing.placement) merged.placement = existing.placement;
+  if (!merged.archived && existing.archived) merged.archived = existing.archived;
 
   return merged;
 }

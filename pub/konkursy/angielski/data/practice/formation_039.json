@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Ludzie i zawody (krok 1: koncowki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Wymagana jest calkowita poprawnosc ortograficzna. W tym cwiczeniu wystarczy dodac koncowke - zaden wyraz nie potrzebuje przedrostka.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Marie Curie was the first __________ to win two Nobel Prizes.",
+          "wordBase": "SCIENCE",
+          "answer": [
+            "scientist"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "My sister is a __________ - she plays the cello.",
+          "wordBase": "MUSIC",
+          "answer": [
+            "musician"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "The __________ of the telephone was Alexander Graham Bell.",
+          "wordBase": "INVENT",
+          "answer": [
+            "inventor"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The book was so good that the __________ won a prize too.",
+          "wordBase": "TRANSLATE",
+          "answer": [
+            "translator"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "A wildlife __________ waited three days for that one picture.",
+          "wordBase": "PHOTOGRAPH",
+          "answer": [
+            "photographer"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "No __________ was willing to answer the journalist's question.",
+          "wordBase": "POLITICS",
+          "answer": [
+            "politician"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "The __________ helped me find the books I needed.",
+          "wordBase": "LIBRARY",
+          "answer": [
+            "librarian"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Every __________ in the gallery had a room of their own.",
+          "wordBase": "ART",
+          "answer": [
+            "artist"
+          ]
+        }
+      ]
+    }
+  ]
+}

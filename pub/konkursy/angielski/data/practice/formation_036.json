@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Od rzeczownika do przymiotnika (krok 1: koncowki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Wymagana jest calkowita poprawnosc ortograficzna. W tym cwiczeniu wystarczy dodac koncowke - zaden wyraz nie potrzebuje przedrostka.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "My grandmother is eighty but she is still very __________.",
+          "wordBase": "HEALTH",
+          "answer": [
+            "healthy"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Swimming here is __________ because of the strong currents.",
+          "wordBase": "DANGER",
+          "answer": [
+            "dangerous"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Plastic bags are extremely __________ to sea animals.",
+          "wordBase": "HARM",
+          "answer": [
+            "harmful"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Big Ben is one of the most __________ buildings in the world.",
+          "wordBase": "ICON",
+          "answer": [
+            "iconic"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "They carried out a __________ study of the whole forest.",
+          "wordBase": "SCIENCE",
+          "answer": [
+            "scientific"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The engine is quiet, but the old one was very __________.",
+          "wordBase": "NOISE",
+          "answer": [
+            "noisy"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Most of the city's __________ areas were built in the 1960s.",
+          "wordBase": "INDUSTRY",
+          "answer": [
+            "industrial"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The park looks wild, but almost nothing there is __________.",
+          "wordBase": "NATURE",
+          "answer": [
+            "natural"
+          ]
+        }
+      ]
+    }
+  ]
+}

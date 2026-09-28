@@ -1,0 +1,73 @@
+{
+  "title": "Ability, Chance and Possibility (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 8,
+      "instruction": "Przeczytaj zdania (1.1.-1.8.). Wykorzystujac wyrazy podane wielkimi literami, uzupelnij kazde zdanie z luka tak, aby precyzyjnie oddac sens zdania wyjsciowego. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna wpisywanych fragmentow zdan. Uwaga: nie zmieniaj formy podanych wyrazow. W kazda luke mozesz wpisac maksymalnie piec wyrazow, wliczajac w to wyraz juz podany. Formy skrocone (np. needn't, they're) sa liczone jako dwa wyrazy.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "It is possible that she missed the train.",
+          "keyword": "MAY",
+          "transformed": "She _________ the train.",
+          "answer": "may have missed"
+        },
+        {
+          "id": "1.2",
+          "original": "I managed to finish the report before midnight.",
+          "keyword": "SUCCEEDED",
+          "transformed": "I _________ the report before midnight.",
+          "answer": "succeeded in finishing"
+        },
+        {
+          "id": "1.3",
+          "original": "There is no chance that he will change his mind.",
+          "keyword": "WAY",
+          "transformed": "There _________ change his mind.",
+          "answer": "is no way he will"
+        },
+        {
+          "id": "1.4",
+          "original": "I am not able to help you at the moment.",
+          "keyword": "POSITION",
+          "transformed": "I _________ to help you at the moment.",
+          "answer": "am in no position"
+        },
+        {
+          "id": "1.5",
+          "original": "Perhaps they forgot about the meeting.",
+          "keyword": "MIGHT",
+          "transformed": "They _________ about the meeting.",
+          "answer": "might have forgotten"
+        },
+        {
+          "id": "1.6",
+          "original": "She is certainly not the person who stole it.",
+          "keyword": "CANNOT",
+          "transformed": "She _________ who stole it.",
+          "answer": "cannot be the person"
+        },
+        {
+          "id": "1.7",
+          "original": "When he was young, he could run very fast.",
+          "keyword": "ABLE",
+          "transformed": "When he was young, he _________ very fast.",
+          "answer": "was able to run"
+        },
+        {
+          "id": "1.8",
+          "original": "It was difficult for us to find the address.",
+          "keyword": "TROUBLE",
+          "transformed": "We _________ the address.",
+          "answer": [
+            "had trouble finding",
+            "had some trouble finding"
+          ]
+        }
+      ]
+    }
+  ]
+}

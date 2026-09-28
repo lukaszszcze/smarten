@@ -1,5 +1,5 @@
 {
-  "title": "Should Kids Have Phones?",
+  "title": "Should School Start Later?",
   "type": "practice",
   "tasks": [
     {
@@ -7,31 +7,31 @@
       "type": "true_false_ni",
       "points": 3,
       "instruction": "Read the text below. Decide if each sentence (1.1-1.4) is True (T), False (F), or if the information is Not In the text (NI).",
-      "text": "SHOULD KIDS HAVE PHONES?\n\nI am eleven years old, and I believe children my age should have their own phones. Many people say phones are bad for kids, but I disagree. First, a phone helps you stay safe. When I walk home from school, I can call my mum if anything goes wrong. Last winter, my bus was late and I used my phone to let her know. Without it, she would have been really worried.\n\nSecond, phones are great for learning. I use mine to look up words in English and watch educational videos. Of course, parents should set some rules — for example, no phone during dinner or after nine o'clock at night. I follow these rules at home and I still have plenty of time to use my phone.\n\nIn my opinion, if children use phones responsibly, there is nothing wrong with having one.",
+      "text": "SHOULD SCHOOL START LATER?\n\nAsk any teenager whether school begins too early and you will get the same answer. What is more interesting is that a good deal of research appears to agree with them.\n\nDuring adolescence the body clock shifts. Teenagers naturally become sleepy later in the evening and, left to themselves, would wake later in the morning. This is not laziness; it is a biological change, and it reverses again in adulthood. The problem is that most schools were built around adult routines, and adults are usually awake by seven.\n\nSeveral districts in the United States have experimented with pushing the first lesson back by an hour. The results reported were encouraging: attendance improved, fewer students fell asleep in lessons, and in some places the number of road accidents involving young drivers went down. Teachers noticed that morning lessons were calmer than they had been.\n\nBut a later start is not free. Parents who leave for work at half past seven cannot drop their children off at nine. Sports fixtures, music lessons and part-time jobs all happen after school, and pushing the school day back squeezes them into the evening. Bus companies that serve several schools with the same vehicles would need more buses, or a completely new timetable. In small towns that is often the argument that ends the discussion.\n\nThere is also a question nobody can answer in advance. A later start only helps if students actually use the extra hour for sleep. If the phone simply stays on for another hour at night, the school has rearranged its whole day and gained nothing. The districts that reported the clearest improvements were the ones that changed the timetable and talked to families about bedtimes at the same time, which suggests the timetable was only half of the answer.\n\nMy own view is that the evidence is strong enough to take seriously, but that a single national rule would be a mistake. What works in a city with buses every ten minutes may be impossible in a village with one bus a day. Schools should be allowed to try it, to report honestly on what happens, and to change their minds if it does not work. That is a slower answer than either side of the argument wants, and it is probably the right one.",
       "items": [
         {
           "id": "1.1",
-          "statement": "The author thinks children should not have phones until they are teenagers.",
-          "answer": "F",
-          "explanation": "FALSE — The author is eleven and clearly states that children his age should have their own phones."
+          "statement": "Research tends to support what teenagers say about early starts.",
+          "answer": "T",
+          "explanation": "TRUE - 'a good deal of research appears to agree with them'."
         },
         {
           "id": "1.2",
-          "statement": "The author once used his phone to contact his mother when the bus was delayed.",
-          "answer": "T",
-          "explanation": "TRUE — The text says 'my bus was late and I used my phone to let her know'."
+          "statement": "The change in teenagers' sleep patterns lasts for the rest of their lives.",
+          "answer": "F",
+          "explanation": "FALSE - the text says the change 'reverses again in adulthood'."
         },
         {
           "id": "1.3",
-          "statement": "The author's school does not allow phones in class.",
+          "statement": "The writer's own school has discussed changing its timetable.",
           "answer": "NI",
-          "explanation": "NOT IN THE TEXT — The text mentions rules at home but says nothing about school rules on phones."
+          "explanation": "NOT IN THE TEXT - the writer gives an opinion but never mentions their own school."
         },
         {
           "id": "1.4",
-          "statement": "The author believes parents should set rules about phone use.",
+          "statement": "The writer thinks each school should be free to decide for itself.",
           "answer": "T",
-          "explanation": "TRUE — The text says 'parents should set some rules' and gives examples like no phone during dinner or after nine o'clock."
+          "explanation": "TRUE - 'Schools should be allowed to try it' and a national rule 'would be a mistake'."
         }
       ],
       "scoringScheme": {

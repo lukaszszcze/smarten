@@ -1,5 +1,5 @@
 {
-  "title": "Tricky Prepositions",
+  "title": "A, An or The?",
   "type": "practice",
   "tasks": [
     {
@@ -10,38 +10,62 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "The teacher told us to look _________ any new words in the dictionary.",
-          "options": ["A) for", "B) up", "C) after"],
-          "answer": "B"
+          "stem": "I saw _________ elephant at the zoo.",
+          "options": [
+            "A) an",
+            "B) a",
+            "C) the"
+          ],
+          "answer": "A"
         },
         {
           "id": "1.2",
-          "stem": "I couldn't put _________ with the noise from the building site any longer.",
-          "options": ["A) on", "B) off", "C) up"],
+          "stem": "Can you close _________ window, please? It's cold.",
+          "options": [
+            "A) a",
+            "B) an",
+            "C) the"
+          ],
           "answer": "C"
         },
         {
           "id": "1.3",
-          "stem": "Nobody could work _________ how the magician did the trick.",
-          "options": ["A) out", "B) up", "C) off"],
+          "stem": "My sister wants to be _________ doctor when she grows up.",
+          "options": [
+            "A) a",
+            "B) an",
+            "C) the"
+          ],
           "answer": "A"
         },
         {
           "id": "1.4",
-          "stem": "She takes _________ her mother — they have the same smile and laugh.",
-          "options": ["A) up", "B) after", "C) on"],
-          "answer": "B"
+          "stem": "He ate _________ orange for breakfast.",
+          "options": [
+            "A) a",
+            "B) the",
+            "C) an"
+          ],
+          "answer": "C"
         },
         {
           "id": "1.5",
-          "stem": "We had to call _________ the school trip because of the storm.",
-          "options": ["A) off", "B) out", "C) up"],
-          "answer": "A"
+          "stem": "Look! _________ sun is shining today.",
+          "options": [
+            "A) A",
+            "B) An",
+            "C) The"
+          ],
+          "answer": "C"
         },
         {
           "id": "1.6",
-          "stem": "It took me ages to come _________ with a good idea for my project.",
-          "options": ["A) out", "B) up", "C) along"],
+          "stem": "There is _________ big park near my house.",
+          "options": [
+            "A) the",
+            "B) a",
+            "C) an"
+          ],
           "answer": "B"
         }
       ]

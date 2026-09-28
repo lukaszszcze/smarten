@@ -1,6 +1,6 @@
 import * as s from "./taskStyles";
 
-const OPTIONS = ["T", "F", "NI"];
+const DEFAULT_OPTIONS = ["T", "F", "NI"];
 
 function getItemResult(taskResult, itemId) {
   return taskResult?.items?.find((r) => r.id === itemId);
@@ -9,6 +9,9 @@ function getItemResult(taskResult, itemId) {
 export default function TrueFalseNI({ task, answers, onChange, showResults, taskResult }) {
   const items = task.items || [];
   const vocabItems = task.vocabItems || [];
+  // Most papers offer T, F and "not in the text"; some offer only T and F, and
+  // showing a column that is never the answer changes what the task asks.
+  const OPTIONS = task.options || DEFAULT_OPTIONS;
 
   return (
     <div style={s.card}>

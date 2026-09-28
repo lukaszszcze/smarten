@@ -1,0 +1,62 @@
+{
+  "title": "Mixed Exam Practice (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "If it _________ (not / be) for your help, I _________ (never / finish) the project on time.",
+          "answer": [
+            "had not (hadn't) been",
+            "would ('d) never have finished"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "The house _________ (look) after by neighbours while the family _________ (be) abroad.",
+          "answer": [
+            "is being looked",
+            "is"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "Hardly _________ (the film / begin) when the power _________ (cut) off.",
+          "answer": [
+            "had the film begun",
+            "was cut"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "I would rather you _________ (not / mention) this to anyone until the deal _________ (sign).",
+          "answer": [
+            "did not (didn't) mention",
+            "is signed / has been signed"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "By next summer they _________ (live) in this village for thirty years, and they still _________ (not / plan) to move.",
+          "answer": [
+            "will ('ll) have been living / will ('ll) have lived",
+            "do not (don't) plan"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "She is thought _________ (leave) the country, although nobody _________ (see) her go.",
+          "answer": [
+            "to have left",
+            "saw"
+          ]
+        }
+      ]
+    }
+  ]
+}

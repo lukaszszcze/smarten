@@ -1,20 +1,68 @@
 {
   "title": "Complete the Story",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "open_cloze",
-    "points": 6,
-    "instruction": "Read the text below. Fill in each gap (1.1-1.6) with one word to make the text correct.",
-    "text": "Last summer, my family 1.1. _________ to a small village in the mountains. We 1.2. _________ in a wooden house near a lake. Every morning I 1.3. _________ up early and went swimming with my older brother. The water was cold, but 1.4. _________ loved it! One day we found a hidden path behind 1.5. _________ house. It led to a beautiful waterfall. That was the 1.6. _________ day of the whole holiday.",
-    "items": [
-      { "id": "1.1", "answer": ["went", "travelled", "drove"] },
-      { "id": "1.2", "answer": ["stayed", "lived", "slept"] },
-      { "id": "1.3", "answer": ["woke", "got"] },
-      { "id": "1.4", "answer": ["we"] },
-      { "id": "1.5", "answer": ["the", "our"] },
-      { "id": "1.6", "answer": ["best", "greatest"] }
-    ],
-    "scoringScheme": { "6": 6, "5": 5, "4": 4, "3": 3, "2": 2, "1": 1, "0": 0 }
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 6,
+      "instruction": "Read the text below. Fill in each gap (1.1-1.6) with one word to make the text correct.",
+      "text": "Two years ago my uncle decided to cycle from Warsaw to the Baltic coast. He had never ridden 1.1. _________ than twenty kilometres in one day, so nobody in the family took him seriously. He set 1.2. _________ on a Monday morning with a tent, a map and far too much food.\n\nThe first three days went well. 1.3. _________ the fourth day it started to rain, and it did not stop 1.4. _________ he reached Gdansk. By then his tent was soaked and he had run out 1.5. _________ dry socks. He still says it was the best holiday of his life, 1.6. _________ he has never done it again.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "more",
+            "further",
+            "farther"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": [
+            "off",
+            "out"
+          ]
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "On"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": [
+            "until",
+            "till",
+            "before"
+          ]
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "of"
+          ]
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "but",
+            "although",
+            "though",
+            "yet"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "6": 6,
+        "5": 5,
+        "4": 4,
+        "3": 3,
+        "2": 2,
+        "1": 1,
+        "0": 0
+      }
+    }
+  ]
 }

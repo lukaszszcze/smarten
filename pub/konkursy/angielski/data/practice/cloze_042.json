@@ -1,0 +1,70 @@
+{
+  "title": "Open Cloze: The Longest Wall in the World (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "The Great Wall of China is not, and never was, a single wall. It is a collection of fortifications built in the 1.1. _________ of more than two thousand years by a long series of dynasties, some of the sections joined together and a great many of them not. Estimates of its total length vary enormously, 1.2. _________ is hardly surprising when so much depends on which pieces you agree to count.\n\nNor is the wall as old as most visitors assume. The stone-faced sections that appear on every postcard date 1.3. _________ the Ming dynasty, which makes them younger than a good number of European cathedrals. The earlier walls were built of packed earth, and long stretches of those have simply worn 1.4. _________.\n\nThe wall never worked especially well 1.5. _________ a barrier. It was far too long to defend properly, and any determined army could get 1.6. _________ it by going round the end, by waiting for the winter, or by paying a guard. What it did do was control movement in peacetime. It made moving goods or animals difficult without passing a checkpoint, and collecting duty at those checkpoints was arguably the 1.7. _________ idea.\n\nOne thing that everybody knows about the wall turns 1.8. _________ to be false. It cannot be seen from the moon with the naked eye, and astronauts have said 1.9. _________ repeatedly and with some irritation. A wall a few metres wide is invisible from orbit for much the same reason that a single human hair cannot be picked 1.10. _________ from the far end of a football pitch.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "course"
+        },
+        {
+          "id": "1.2",
+          "answer": "which"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "from",
+            "to"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "away"
+        },
+        {
+          "id": "1.5",
+          "answer": "as"
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "past",
+            "round",
+            "around"
+          ]
+        },
+        {
+          "id": "1.7",
+          "answer": "whole"
+        },
+        {
+          "id": "1.8",
+          "answer": "out"
+        },
+        {
+          "id": "1.9",
+          "answer": "so"
+        },
+        {
+          "id": "1.10",
+          "answer": "out"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

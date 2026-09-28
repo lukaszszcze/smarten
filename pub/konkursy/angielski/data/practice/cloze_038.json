@@ -1,0 +1,66 @@
+{
+  "title": "Open Cloze: The Story of Denim Jeans (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "There can be few garments 1.1. _________ have travelled further from their origins than a pair of jeans. They started life as workwear for miners in California, and they are now worn by something close to half the planet on a daily basis.\n\nThe story usually begins with Levi Strauss, a merchant who had moved 1.2. _________ Bavaria to San Francisco during the gold rush. Strauss, however, sold cloth; he did not make trousers. It was a tailor named Jacob Davis who came 1.3. _________ with the idea that made them famous: putting small metal rivets at the corners of the pockets, which were the first places to give 1.4. _________ under the weight of a miner's tools. Davis could not afford the cost of a patent on his 1.5. _________, so in 1873 the two men took one 1.6. _________ together.\n\nFor the next seventy years jeans stayed exactly what they had been designed to be, which is to say tough clothes for people who worked with their hands. What changed everything was the cinema. Once cowboys on screen were wearing them, teenagers wanted them too, and by the 1950s jeans had become a symbol of rebellion serious 1.7. _________ to be banned by a number of American schools.\n\nToday the same trousers are made in factories all 1.8. _________ the world, and the industry has an uncomfortable secret. Producing a single pair uses several thousand litres of water, most of it for growing the cotton and dyeing the cloth. Manufacturers have been promising for years to bring that figure 1.9. _________, and so 1.10. _________ they have very little to show for it.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "that",
+            "which"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": "from"
+        },
+        {
+          "id": "1.3",
+          "answer": "up"
+        },
+        {
+          "id": "1.4",
+          "answer": "way"
+        },
+        {
+          "id": "1.5",
+          "answer": "own"
+        },
+        {
+          "id": "1.6",
+          "answer": "out"
+        },
+        {
+          "id": "1.7",
+          "answer": "enough"
+        },
+        {
+          "id": "1.8",
+          "answer": "over"
+        },
+        {
+          "id": "1.9",
+          "answer": "down"
+        },
+        {
+          "id": "1.10",
+          "answer": "far"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Suggestion, Preference and Complaint (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 8,
+      "instruction": "Przeczytaj zdania (1.1.-1.8.). Wykorzystujac wyrazy podane wielkimi literami, uzupelnij kazde zdanie z luka tak, aby precyzyjnie oddac sens zdania wyjsciowego. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna wpisywanych fragmentow zdan. Uwaga: nie zmieniaj formy podanych wyrazow. W kazda luke mozesz wpisac maksymalnie piec wyrazow, wliczajac w to wyraz juz podany. Formy skrocone (np. needn't, they're) sa liczone jako dwa wyrazy.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "Why don't we eat out tonight?",
+          "keyword": "ABOUT",
+          "transformed": "How _________ in that new place tonight?",
+          "answer": "about eating out"
+        },
+        {
+          "id": "1.2",
+          "original": "I would prefer you not to smoke in here.",
+          "keyword": "RATHER",
+          "transformed": "I would _________ in here.",
+          "answer": "rather you did not (didn't) smoke"
+        },
+        {
+          "id": "1.3",
+          "original": "It is time for us to leave.",
+          "keyword": "WENT",
+          "transformed": "It is time _________.",
+          "answer": "we went"
+        },
+        {
+          "id": "1.4",
+          "original": "She complained that the soup was cold.",
+          "keyword": "COMPLAINT",
+          "transformed": "She _________ the cold soup.",
+          "answer": "made a complaint about"
+        },
+        {
+          "id": "1.5",
+          "original": "I suggest that you should see a doctor.",
+          "keyword": "BETTER",
+          "transformed": "You _________ a doctor.",
+          "answer": "had ('d) better see"
+        },
+        {
+          "id": "1.6",
+          "original": "Would you mind if I opened the window?",
+          "keyword": "OBJECTION",
+          "transformed": "Would you have _________ the window?",
+          "answer": [
+            "any objection to my opening",
+            "any objection to me opening"
+          ]
+        },
+        {
+          "id": "1.7",
+          "original": "He regrets not having studied harder.",
+          "keyword": "WISHES",
+          "transformed": "He _________ harder.",
+          "answer": "wishes he had studied"
+        },
+        {
+          "id": "1.8",
+          "original": "I prefer tea to coffee.",
+          "keyword": "SOONER",
+          "transformed": "I _________ coffee.",
+          "answer": "would sooner have tea than"
+        }
+      ]
+    }
+  ]
+}

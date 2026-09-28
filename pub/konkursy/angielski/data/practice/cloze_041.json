@@ -1,0 +1,66 @@
+{
+  "title": "Open Cloze: The Invention of the Barcode (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "Almost every object you buy carries a pattern of black lines that somebody had to invent. The idea came 1.1. _________ two American students in 1948, after one of them overheard a shop owner complaining that there was no way of keeping 1.2. _________ of what he had sold.\n\nTheir first design was not a row of lines 1.3. _________ all but a set of circles, on the perfectly reasonable grounds that a circle can be read from any direction. It worked. Unfortunately the technology needed to read it quickly and cheaply did not yet exist, and the pair eventually sold their patent for a few thousand dollars, which turned 1.4. _________ to be one of the worse decisions of the century.\n\nTwenty-five years later the problem was taken 1.5. _________ again, this time by a committee representing the American grocery trade. Lasers and computers had both arrived in the 1.6. _________, and the circular design had been replaced 1.7. _________ the familiar rectangle of thin and thick bars. The first item ever scanned in a shop, in Ohio in June 1974, was a packet of chewing gum, chosen deliberately rather than at 1.8. _________ because the committee wanted to prove that the system could cope with something small.\n\nThe barcode changed shops far more than customers ever noticed. It made the self-service checkout possible, it allowed a company to know exactly what was 1.9. _________ its shelves at any given moment, and it is the only reason a supermarket can stock forty thousand different products 1.10. _________ losing track of them entirely.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "to"
+        },
+        {
+          "id": "1.2",
+          "answer": "track"
+        },
+        {
+          "id": "1.3",
+          "answer": "at"
+        },
+        {
+          "id": "1.4",
+          "answer": "out"
+        },
+        {
+          "id": "1.5",
+          "answer": "up"
+        },
+        {
+          "id": "1.6",
+          "answer": "meantime"
+        },
+        {
+          "id": "1.7",
+          "answer": [
+            "by",
+            "with"
+          ]
+        },
+        {
+          "id": "1.8",
+          "answer": "random"
+        },
+        {
+          "id": "1.9",
+          "answer": "on"
+        },
+        {
+          "id": "1.10",
+          "answer": "without"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

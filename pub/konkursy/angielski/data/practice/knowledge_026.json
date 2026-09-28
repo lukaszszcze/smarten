@@ -1,0 +1,68 @@
+{
+  "title": "British Institutions and the Media (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Odpowiedz na pytania (1.1.-1.5.) dotyczace wiedzy o krajach anglojezycznych. Odpowiadaj po angielsku. W pytaniach oznaczonych 2 pkt nalezy podac dwie informacje.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "What do the letters BBC stand for?",
+          "answer": [
+            "British Broadcasting Corporation",
+            "the British Broadcasting Corporation"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "What is the address of the official residence of the British Prime Minister?",
+          "answer": [
+            "10 Downing Street",
+            "Ten Downing Street",
+            "Downing Street"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "What is the name of the elected house of the UK Parliament? What is the name of the other house?",
+          "answer": [
+            "the House of Commons",
+            "House of Commons",
+            "the Commons"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "the House of Lords",
+            "House of Lords",
+            "the Lords"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "Which British newspaper has the nickname 'The Thunderer'?",
+          "answer": [
+            "The Times",
+            "Times"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "What is the name of the UK's public health service, founded in 1948?",
+          "answer": [
+            "the NHS",
+            "NHS",
+            "the National Health Service",
+            "National Health Service"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { loadRewards, computePracticeStars, getPracticeTitle, getTypeMastery, PR
 import { percentageToStars, clampPercentage } from "../lib/questStars";
 import { competitionAttempts, practiceAttempts, loadAttempts } from "../lib/resultsModel";
 import { syncAttempts, clearRemoteAttempts } from "../lib/resultsSync";
+import { OJAJ_ACCENT, isOjajAttempt } from "../lib/ojaj";
 
 const STAGE_LABELS = { szkolny: "Etap szkolny", rejonowy: "Etap rejonowy", wojewodzki: "Etap wojewodzki" };
 const STAGE_COLORS = { szkolny: "#50d890", rejonowy: "#42b4f5", wojewodzki: "#a78bfa" };
@@ -357,13 +358,18 @@ export default function Progress() {
     }
   };
 
-  const skills = getSkillStats(competitions);
-  const totalTests = competitions.length;
+  // The summary figures, the chart and the per-type breakdown describe the
+  // kuratoryjny competition. An OJAJ paper is marked out of a different scale,
+  // so averaging the two would describe neither; the OJAJ section reports its
+  // own. The history list below still lists every attempt.
+  const kuratoryjne = competitions.filter((a) => !isOjajAttempt(a));
+  const skills = getSkillStats(kuratoryjne);
+  const totalTests = kuratoryjne.length;
   const avgScore = totalTests > 0
-    ? Math.round(competitions.reduce((s, a) => s + a.percentage, 0) / totalTests)
+    ? Math.round(kuratoryjne.reduce((s, a) => s + a.percentage, 0) / totalTests)
     : 0;
   const bestScore = totalTests > 0
-    ? Math.max(...competitions.map((a) => a.percentage))
+    ? Math.max(...kuratoryjne.map((a) => a.percentage))
     : 0;
   const hasAnyData = competitions.length > 0 || practices.length > 0;
 
@@ -408,10 +414,10 @@ export default function Progress() {
           <PracticeStarSummary bestScores={bestScores} />
 
           {/* Stars over time — practice only */}
-          <StarsOverTimeChart practices={practices} />
+          <StarsOverTimeChart practices={practices.filter((a) => !isOjajAttempt(a))} />
 
           {/* Score over time chart — competition only */}
-          <ScoreChart attempts={competitions} />
+          <ScoreChart attempts={kuratoryjne} />
 
           {/* Skill breakdown — competition only */}
           {skills.length > 0 && (
@@ -474,12 +480,13 @@ export default function Progress() {
                 {[...competitions].reverse().map((attempt, i) => {
                   const stg = attempt.stage;
                   const yr = attempt.year;
+                  const isOjaj = isOjajAttempt(attempt);
                   const color = STAGE_COLORS[stg] || "#50d890";
                   const pctColor = attempt.percentage >= 70 ? "#50d890" : attempt.percentage >= 40 ? "#f5a623" : "#e05050";
                   return (
                     <Link
                       key={attempt.attemptId || i}
-                      to={`/${yr}/${stg}`}
+                      to={attempt.testId ? `/${attempt.testId}` : `/${yr}/${stg}`}
                       style={{ ...styles.historyRow, textDecoration: "none" }}
                     >
                       <div style={{ flex: 1 }}>
@@ -490,6 +497,17 @@ export default function Progress() {
                           <span style={{ color: "#c8c8d8", fontSize: 14, fontWeight: 600 }}>
                             {yr}
                           </span>
+                          {isOjaj && (
+                            <span style={{
+                              fontSize: 10, fontWeight: 800, letterSpacing: 0.5,
+                              color: OJAJ_ACCENT,
+                              background: OJAJ_ACCENT + "1f",
+                              border: `1px solid ${OJAJ_ACCENT}40`,
+                              borderRadius: 999, padding: "2px 7px",
+                            }}>
+                              OJAJ
+                            </span>
+                          )}
                         </div>
                         <span style={{ color: "#5a5a6a", fontSize: 12 }}>
                           {new Date(attempt.date).toLocaleDateString("pl-PL", {
@@ -525,17 +543,24 @@ export default function Progress() {
                   const exId = attempt.exerciseId || "";
                   const exMeta = exerciseIndex.find((e) => e.id === exId);
                   const exType = attempt.exerciseType || exMeta?.taskType || "";
+                  const isOjaj = isOjajAttempt(attempt);
                   const pctColor = attempt.percentage >= 70 ? "#50d890" : attempt.percentage >= 40 ? "#f5a623" : "#e05050";
                   return (
                     <Link
                       key={attempt.attemptId || i}
-                      to={exType ? `/cwiczenia/${exType}/${exId}` : "/cwiczenia"}
+                      to={isOjaj
+                        ? `/ojaj/cwiczenia/${exId}`
+                        : exType ? `/cwiczenia/${exType}/${exId}` : "/cwiczenia"}
                       style={{ ...styles.historyRow, textDecoration: "none" }}
                     >
                       <div style={{ flex: 1 }}>
                         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
-                          <span style={{ ...styles.stageBadge, background: "#f5a62320", color: "#f5a623" }}>
-                            Cwiczenie
+                          <span style={{
+                            ...styles.stageBadge,
+                            background: (isOjaj ? OJAJ_ACCENT : "#f5a623") + "20",
+                            color: isOjaj ? OJAJ_ACCENT : "#f5a623",
+                          }}>
+                            {isOjaj ? "OJAJ" : "Cwiczenie"}
                           </span>
                           <span style={{ color: "#c8c8d8", fontSize: 14, fontWeight: 600 }}>
                             {PRACTICE_TYPE_LABELS[exType] || exType || exId}

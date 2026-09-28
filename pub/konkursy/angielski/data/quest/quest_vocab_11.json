@@ -1,48 +1,74 @@
 {
   "title": "Opposites",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "multiple_choice",
-    "points": 6,
-    "instruction": "Choose the word that means the OPPOSITE of the word in bold.",
-    "items": [
-      {
-        "id": "1.1",
-        "stem": "What is the opposite of **polite**?",
-        "options": ["A) kind", "B) rude", "C) quiet"],
-        "answer": "B"
-      },
-      {
-        "id": "1.2",
-        "stem": "What is the opposite of **brave**?",
-        "options": ["A) cowardly", "B) strong", "C) angry"],
-        "answer": "A"
-      },
-      {
-        "id": "1.3",
-        "stem": "What is the opposite of **generous**?",
-        "options": ["A) friendly", "B) clever", "C) selfish"],
-        "answer": "C"
-      },
-      {
-        "id": "1.4",
-        "stem": "What is the opposite of **patient**?",
-        "options": ["A) impatient", "B) unhappy", "C) careful"],
-        "answer": "A"
-      },
-      {
-        "id": "1.5",
-        "stem": "What is the opposite of **honest**?",
-        "options": ["A) shy", "B) lazy", "C) dishonest"],
-        "answer": "C"
-      },
-      {
-        "id": "1.6",
-        "stem": "What is the opposite of **ancient**?",
-        "options": ["A) modern", "B) tiny", "C) heavy"],
-        "answer": "A"
-      }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the word that means the OPPOSITE of the word in capitals.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "What is the opposite of TEMPORARY?",
+          "options": [
+            "A) modern",
+            "B) permanent",
+            "C) occasional"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "What is the opposite of ARTIFICIAL?",
+          "options": [
+            "A) natural",
+            "B) expensive",
+            "C) ancient"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "stem": "What is the opposite of RELUCTANT?",
+          "options": [
+            "A) careless",
+            "B) nervous",
+            "C) willing"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "stem": "What is the opposite of SHALLOW?",
+          "options": [
+            "A) narrow",
+            "B) deep",
+            "C) empty"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "What is the opposite of GUILTY?",
+          "options": [
+            "A) harmless",
+            "B) honest",
+            "C) innocent"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "What is the opposite of TIGHTEN?",
+          "options": [
+            "A) loosen",
+            "B) fasten",
+            "C) stretch"
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
 }

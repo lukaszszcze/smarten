@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Od czasownika do rzeczownika (krok 1: koncowki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Wymagana jest calkowita poprawnosc ortograficzna. W tym cwiczeniu wystarczy dodac koncowke - zaden wyraz nie potrzebuje przedrostka.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "The city needs better __________ if it wants to solve these problems.",
+          "wordBase": "GOVERN",
+          "answer": [
+            "governance"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "After years of __________, she finally won her first medal.",
+          "wordBase": "PERSEVERE",
+          "answer": [
+            "perseverance"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "The old bridge is closed for __________ until the end of May.",
+          "wordBase": "MAINTAIN",
+          "answer": [
+            "maintenance"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The __________ of the factory cost hundreds of workers their jobs.",
+          "wordBase": "AUTOMATE",
+          "answer": [
+            "automation"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "This __________ could change the way we travel forever.",
+          "wordBase": "INNOVATE",
+          "answer": [
+            "innovation"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The storm caused serious __________ to the train timetable.",
+          "wordBase": "DISRUPT",
+          "answer": [
+            "disruption"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Wearing a helmet gives you good __________ against head injuries.",
+          "wordBase": "PROTECT",
+          "answer": [
+            "protection"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Air __________ in big cities is getting worse every year.",
+          "wordBase": "POLLUTE",
+          "answer": [
+            "pollution"
+          ]
+        }
+      ]
+    }
+  ]
+}

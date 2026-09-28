@@ -1,5 +1,5 @@
 {
-  "title": "Fix the Mistakes",
+  "title": "Joining It Up",
   "type": "practice",
   "tasks": [
     {
@@ -7,46 +7,46 @@
       "type": "open_cloze",
       "points": 6,
       "instruction": "Read the text below. Fill in each gap (1.1-1.6) with one word to make the text correct.",
-      "text": "Our class is planning a school party next Friday. We 1.1. _________ buy decorations and snacks before Thursday. If the weather 1.2. _________ nice, we will have the party in the garden. Tom 1.3. _________ play the guitar because he is really good at it. Our teacher said we 1.4. _________ invite students from other classes too. If we 1.5. _________ sell enough tickets, we won't have money for the DJ. Everyone is excited 1.6. _________ the party. It will be great!",
+      "text": "The village 1.1. _________ my grandmother grew up has fewer than two hundred inhabitants. There is one shop, 1.2. _________ opens only in the mornings, and a school that closed down years ago. Nearly 1.3. _________ of the young people have moved to the city, so the population keeps falling.\n\n1.4. _________ spite of this, my grandmother refuses to leave. She says she knows every path and every tree, and that she would not be able to sleep in a place 1.5. _________ noisy. Last summer she finally agreed to visit us, 1.6. _________ she went home after only four days.",
       "items": [
         {
           "id": "1.1",
           "answer": [
-            "must",
-            "should"
+            "where"
           ]
         },
         {
           "id": "1.2",
           "answer": [
-            "is"
+            "which"
           ]
         },
         {
           "id": "1.3",
           "answer": [
-            "can",
-            "could"
+            "all"
           ]
         },
         {
           "id": "1.4",
           "answer": [
-            "should",
-            "could",
-            "can"
+            "In"
           ]
         },
         {
           "id": "1.5",
           "answer": [
-            "don't"
+            "so",
+            "that"
           ]
         },
         {
           "id": "1.6",
           "answer": [
-            "about"
+            "but",
+            "although",
+            "though",
+            "yet"
           ]
         }
       ],

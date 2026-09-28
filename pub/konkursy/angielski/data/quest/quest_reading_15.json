@@ -1,85 +1,85 @@
 {
-  "title": "Famous Places",
+  "title": "Nations of Britain",
   "type": "practice",
   "tasks": [
     {
       "id": "1",
       "type": "matching",
       "points": 3,
-      "instruction": "Read the descriptions (A-L) below. Match each description to the correct city: London, Paris, or New York. Each city has three matching descriptions. Three descriptions do not match any of these cities.",
+      "instruction": "Match each description (A-L) to the correct country. Three descriptions do not match any of them.",
       "options": [
         {
           "letter": "A",
-          "text": "The world's most visited art museum, home to the Mona Lisa, is located in this city."
+          "text": "Saint David's Day is celebrated here on the first of March."
         },
         {
           "letter": "B",
-          "text": "A large clock tower next to the Houses of Parliament is one of this city's most recognisable symbols."
+          "text": "It is the largest island in the Mediterranean Sea."
         },
         {
           "letter": "C",
-          "text": "A giant green statue holding a torch welcomes visitors arriving by sea to this city."
+          "text": "Its national flower is the thistle and its patron saint is Saint Andrew."
         },
         {
           "letter": "D",
-          "text": "This city is famous for its ancient Colosseum, where gladiators once fought."
+          "text": "Its capital city is Dublin and the shamrock is its emblem."
         },
         {
           "letter": "E",
-          "text": "This city's underground railway, opened in 1863, was the first in the world."
+          "text": "Its flag carries a red dragon, and its capital city is Cardiff."
         },
         {
           "letter": "F",
-          "text": "Cherry blossom trees around a tidal basin make this city especially beautiful in spring."
+          "text": "Its national flower is the rose and its patron saint is Saint George."
         },
         {
           "letter": "G",
-          "text": "People in this city eat about 30 million croissants every day and its bakeries are world-famous."
+          "text": "The Lake District, a national park of mountains and lakes, is here."
         },
         {
           "letter": "H",
-          "text": "This city's famous park, right in the centre, covers over 340 hectares and has its own zoo."
+          "text": "It has no coastline of its own and is entirely surrounded by other countries."
         },
         {
           "letter": "I",
-          "text": "Kangaroos and koalas can be seen in wildlife parks near this harbour city."
+          "text": "The New Year celebration held here is known as Hogmanay."
         },
         {
           "letter": "J",
-          "text": "This city has five areas called boroughs, and over 800 languages are spoken there."
+          "text": "Ben Nevis, the highest mountain in the United Kingdom, stands here."
         },
         {
           "letter": "K",
-          "text": "Every year, millions of tourists come here to watch the Changing of the Guard at a royal palace."
+          "text": "The daffodil and the leek are both national emblems here."
         },
         {
           "letter": "L",
-          "text": "A famous iron tower, built for a world fair in 1889, stands 330 metres tall in this city."
+          "text": "William Shakespeare was born here, in Stratford-upon-Avon."
         }
       ],
       "items": [
         {
-          "id": "London",
+          "id": "Scotland",
           "answers": [
-            "B",
+            "C",
+            "I",
+            "J"
+          ]
+        },
+        {
+          "id": "Wales",
+          "answers": [
+            "A",
             "E",
             "K"
           ]
         },
         {
-          "id": "Paris",
+          "id": "England",
           "answers": [
-            "A",
+            "F",
             "G",
             "L"
-          ]
-        },
-        {
-          "id": "New York",
-          "answers": [
-            "C",
-            "H",
-            "J"
           ]
         }
       ],

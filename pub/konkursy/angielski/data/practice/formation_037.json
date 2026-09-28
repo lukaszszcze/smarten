@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Od przymiotnika do rzeczownika (krok 1: koncowki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Wymagana jest calkowita poprawnosc ortograficzna. W tym cwiczeniu wystarczy dodac koncowke - zaden wyraz nie potrzebuje przedrostka.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "The campaign raised public __________ of the problem.",
+          "wordBase": "AWARE",
+          "answer": [
+            "awareness"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Gymnasts need enormous __________ in every joint.",
+          "wordBase": "FLEXIBLE",
+          "answer": [
+            "flexibility"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Art lessons are there to develop children's __________.",
+          "wordBase": "CREATIVE",
+          "answer": [
+            "creativity"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "He lifted the box easily - he has surprising __________.",
+          "wordBase": "STRONG",
+          "answer": [
+            "strength"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The __________ of plants in the rainforest is astonishing.",
+          "wordBase": "DIVERSE",
+          "answer": [
+            "diversity"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Nobody understood the __________ of the discovery at the time.",
+          "wordBase": "SIGNIFICANT",
+          "answer": [
+            "significance"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Dolphins are known for their __________ and their memory.",
+          "wordBase": "INTELLIGENT",
+          "answer": [
+            "intelligence"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "She has the __________ to become a professional musician.",
+          "wordBase": "ABLE",
+          "answer": [
+            "ability"
+          ]
+        }
+      ]
+    }
+  ]
+}

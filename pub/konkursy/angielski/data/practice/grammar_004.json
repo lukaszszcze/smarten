@@ -5,38 +5,56 @@
     {
       "id": "1",
       "type": "grammar_gaps",
-      "points": 6,
+      "points": 12,
       "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
       "items": [
         {
           "id": "1.1",
           "context": "_________ (walk) home from school, she noticed a stray dog _________ (sit) outside the bookshop, shivering in the rain.",
-          "answer": ["Walking", "sitting"]
+          "answer": [
+            "Walking",
+            "sitting"
+          ]
         },
         {
           "id": "1.2",
           "context": "I really enjoy _________ (read) historical novels, but I can never manage _________ (finish) them before the library deadline.",
-          "answer": ["reading", "to finish"]
+          "answer": [
+            "reading",
+            "to finish"
+          ]
         },
         {
           "id": "1.3",
           "context": "The teacher made us _________ (rewrite) the essay and reminded us _________ (check) for spelling mistakes.",
-          "answer": ["rewrite", "to check"]
+          "answer": [
+            "rewrite",
+            "to check"
+          ]
         },
         {
           "id": "1.4",
           "context": "_________ (exhaust) after the long journey, they decided _________ (stop) at the nearest hotel rather than drive on.",
-          "answer": ["Exhausted", "to stop"]
+          "answer": [
+            "Exhausted",
+            "to stop"
+          ]
         },
         {
           "id": "1.5",
           "context": "She admitted _________ (forget) to send the invitations and offered _________ (call) every guest personally.",
-          "answer": ["forgetting, having forgotten", "to call"]
+          "answer": [
+            "forgetting, having forgotten",
+            "to call"
+          ]
         },
         {
           "id": "1.6",
           "context": "There is no point in _________ (argue) about it now — we should focus on _________ (find) a solution before the deadline.",
-          "answer": ["arguing", "finding"]
+          "answer": [
+            "arguing",
+            "finding"
+          ]
         }
       ]
     }

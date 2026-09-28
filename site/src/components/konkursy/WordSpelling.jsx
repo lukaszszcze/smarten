@@ -14,7 +14,7 @@ export default function WordSpelling({ task, answers, onChange, showResults, tas
         {items.map((item) => {
           const ir = getItemResult(taskResult, item.id);
           const inputStyle = showResults && ir
-            ? (ir.correct ? s.inputCorrect : s.inputWrong)
+            ? (ir.nearMiss ? s.inputNearMiss : ir.correct ? s.inputCorrect : s.inputWrong)
             : s.input;
           return (
             <div key={item.id}>
@@ -35,6 +35,11 @@ export default function WordSpelling({ task, answers, onChange, showResults, tas
                 />
                 {showResults && ir && !ir.correct && (
                   <span style={s.correctAnswer}>{ir.correctAnswer}</span>
+                )}
+                {showResults && ir?.nearMiss && (
+                  <span style={{ ...s.correctAnswer, color: "#f0a020" }}>
+                    nearly — it is spelt {ir.correctAnswer}
+                  </span>
                 )}
               </div>
             </div>

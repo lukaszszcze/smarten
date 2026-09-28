@@ -1,5 +1,19 @@
 import { percentageToStars, clampPercentage } from "./questStars.js";
 
+// --- Reward pools ---
+//
+// Each pool is one independent set of best scores: which key it lives under in
+// the stored object, and which attempt testIds belong to it. The competitions
+// are scored separately because their exercises are separate — an OJAJ star is
+// earned against a B2-C1+ paper, a practice star against the Mazowieckie
+// material, and summing the two would describe neither.
+//
+// The prefixes do not overlap in either direction: "ojaj/practice/x" does not
+// start with "practice/", and "practice/x" does not start with "ojaj/".
+
+export const PRACTICE_POOL = { key: "rewards", prefix: "practice/" };
+export const OJAJ_POOL = { key: "ojajRewards", prefix: "ojaj/practice/" };
+
 // --- Title ladder ---
 
 export const PRACTICE_TITLES = [
@@ -117,18 +131,19 @@ export function getTypeMastery(bestScores, exerciseIndex, taskType) {
  * Called inside saveResult()'s read-modify-write cycle.
  * Returns { prevStars, newStars, prevPercentage } for UI feedback.
  */
-export function updateBestScore(stored, exerciseId, percentage) {
-  if (!stored.rewards) stored.rewards = { bestScores: {} };
-  if (!stored.rewards.bestScores) stored.rewards.bestScores = {};
+export function updateBestScore(stored, exerciseId, percentage, pool = PRACTICE_POOL) {
+  if (!stored[pool.key]) stored[pool.key] = { bestScores: {} };
+  if (!stored[pool.key].bestScores) stored[pool.key].bestScores = {};
 
+  const bestScores = stored[pool.key].bestScores;
   const pct = clampPercentage(percentage);
-  const prev = stored.rewards.bestScores[exerciseId];
+  const prev = bestScores[exerciseId];
   const prevPct = prev ?? -1;
   const prevStars = prevPct >= 0 ? percentageToStars(prevPct) : 0;
   const newStars = percentageToStars(pct);
 
   if (prevPct < 0 || pct > prevPct) {
-    stored.rewards.bestScores[exerciseId] = pct;
+    bestScores[exerciseId] = pct;
   }
 
   return { prevStars, newStars, isNewBest: prevPct < 0 || pct > prevPct, prevPercentage: prevPct };
@@ -139,11 +154,11 @@ export function updateBestScore(stored, exerciseId, percentage) {
  * aren't yet reflected in bestScores — e.g. attempts pulled from the server by
  * syncAttempts on another device, or legacy data from before rewards existed.
  */
-export function loadRewards(storageKey) {
+export function loadRewards(storageKey, pool = PRACTICE_POOL) {
   try {
     const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
-    const existing = stored.rewards?.bestScores || null;
-    const fromAttempts = migrateFromAttempts(stored.attempts);
+    const existing = stored[pool.key]?.bestScores || null;
+    const fromAttempts = migrateFromAttempts(stored.attempts, pool);
 
     if (existing) {
       let changed = false;
@@ -155,13 +170,13 @@ export function loadRewards(storageKey) {
         }
       }
       if (changed) {
-        stored.rewards = { ...stored.rewards, bestScores: merged };
+        stored[pool.key] = { ...stored[pool.key], bestScores: merged };
         localStorage.setItem(storageKey, JSON.stringify(stored));
       }
       return merged;
     }
 
-    stored.rewards = { bestScores: fromAttempts };
+    stored[pool.key] = { bestScores: fromAttempts };
     localStorage.setItem(storageKey, JSON.stringify(stored));
     return fromAttempts;
   } catch (e) {
@@ -174,13 +189,13 @@ export function loadRewards(storageKey) {
  * Reconstruct bestScores from an attempts array.
  * Handles: missing percentage, maxScore === 0, NaN, negative values.
  */
-export function migrateFromAttempts(attempts) {
+export function migrateFromAttempts(attempts, pool = PRACTICE_POOL) {
   const bestScores = {};
   if (!Array.isArray(attempts)) return bestScores;
 
   for (const entry of attempts) {
-    if (!entry.testId || !entry.testId.startsWith("practice/")) continue;
-    const exId = entry.testId.replace("practice/", "");
+    if (!entry.testId || !entry.testId.startsWith(pool.prefix)) continue;
+    const exId = entry.testId.slice(pool.prefix.length);
 
     let pct = entry.percentage;
     if (pct == null || !Number.isFinite(Number(pct))) {

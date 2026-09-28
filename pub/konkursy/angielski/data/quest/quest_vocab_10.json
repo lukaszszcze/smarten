@@ -1,48 +1,50 @@
 {
   "title": "Word Builders",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "word_spelling",
-    "points": 6,
-    "instruction": "Complete each sentence with one word. The dashes show you the missing letters.",
-    "items": [
-      {
-        "id": "1.1",
-        "stem": "Be c _ _ _ _ _ _ when you cross the road — always look both ways.",
-        "hint": "_ _ _ _ _ _ _",
-        "answer": "careful"
-      },
-      {
-        "id": "1.2",
-        "stem": "My grandma is always h _ _ _ _ _ _ — she helps everyone in the neighbourhood.",
-        "hint": "_ _ _ _ _ _ _",
-        "answer": "helpful"
-      },
-      {
-        "id": "1.3",
-        "stem": "The tortoise walked s _ _ _ _ _ across the garden.",
-        "hint": "_ _ _ _ _ _",
-        "answer": "slowly"
-      },
-      {
-        "id": "1.4",
-        "stem": "He was c _ _ _ _ _ _ _ and spilled juice all over his homework.",
-        "hint": "_ _ _ _ _ _ _ _",
-        "answer": "careless"
-      },
-      {
-        "id": "1.5",
-        "stem": "You can find a lot of i _ _ _ _ _ _ _ _ _ _ on the internet.",
-        "hint": "_ _ _ _ _ _ _ _ _ _ _",
-        "answer": "information"
-      },
-      {
-        "id": "1.6",
-        "stem": "The sunset over the lake was really b _ _ _ _ _ _ _ _.",
-        "hint": "_ _ _ _ _ _ _ _ _",
-        "answer": "beautiful"
-      }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 6,
+      "instruction": "Complete each sentence with one word. The dashes show you the missing letters.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "She is extremely _ _ b _ _ _ _ _ _ and wants to run her own company before she is thirty.",
+          "hint": "_ _ b _ _ _ _ _ _",
+          "answer": "ambitious"
+        },
+        {
+          "id": "1.2",
+          "stem": "Tom is completely _ _ _ i _ _ _ _: if he says six o'clock, he means six o'clock.",
+          "hint": "_ _ _ i _ _ _ _",
+          "answer": "reliable"
+        },
+        {
+          "id": "1.3",
+          "stem": "You really should _ _ o _ _ _ _ _ _ to your sister for shouting at her this morning.",
+          "hint": "_ _ o _ _ _ _ _ _",
+          "answer": "apologise"
+        },
+        {
+          "id": "1.4",
+          "stem": "Finishing the marathon was the greatest _ _ _ i _ _ _ m _ _ _ of his life.",
+          "hint": "_ _ _ i _ _ _ m _ _ _",
+          "answer": "achievement"
+        },
+        {
+          "id": "1.5",
+          "stem": "She was _ _ t _ _ _ _ n _ _ to solve the puzzle, even though it took her all weekend.",
+          "hint": "_ _ t _ _ _ _ n _ _",
+          "answer": "determined"
+        },
+        {
+          "id": "1.6",
+          "stem": "Since moving to the city he has become far more _ _ _ e _ _ _ d _ _ _ and does everything himself.",
+          "hint": "_ _ _ e _ _ _ d _ _ _",
+          "answer": "independent"
+        }
+      ]
+    }
+  ]
 }

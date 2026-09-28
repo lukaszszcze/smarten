@@ -4,11 +4,23 @@ import { useDocumentHead } from "../hooks";
 import { useUser } from "../App";
 import StarDisplay from "../components/StarDisplay";
 import TaskRenderer, { AI_CHECKED_TYPES } from "../components/konkursy/TaskRenderer";
-import { scoreTest } from "../lib/scoring";
+import { scoreTest, applyAiResults } from "../lib/scoring";
 import { percentageToStars } from "../lib/questStars";
 import { makeAttemptId } from "../lib/resultsModel";
 
 const STAGE_LABELS = { szkolny: "Etap szkolny", rejonowy: "Etap rejonowy", wojewodzki: "Etap wojewodzki" };
+
+// The Mazowieckie kuratoryjny competition, which this player served alone until
+// OJAJ was added. A second competition passes its own config; everything else
+// about playing a paper is identical.
+const KURATORYJNY = {
+  competition: null,
+  dataPath: (year, stage) => `/konkursy/angielski/data/${year}/${stage}.json`,
+  testId: (year, stage) => `${year}/${stage}`,
+  stageLabels: STAGE_LABELS,
+  backTo: "/",
+  backLabel: "Powrot do listy",
+};
 
 function getResultAccent(percentage) {
   if (percentage >= 70) return "#50d890";
@@ -16,8 +28,9 @@ function getResultAccent(percentage) {
   return "#e05050";
 }
 
-export default function KonkursTest() {
+export default function KonkursTest({ config = KURATORYJNY }) {
   const { year, stage } = useParams();
+  const stageLabels = config.stageLabels;
   const user = useUser();
   const storageKey = `smarten_konkursy_${user?.name || "default"}`;
   const [testData, setTestData] = useState(null);
@@ -28,17 +41,21 @@ export default function KonkursTest() {
   const [timeLeft, setTimeLeft] = useState(null);
   const timerRef = useRef(null);
 
+  // A year with two papers of the same stage needs two route slugs, and
+  // "szkolny-a" has no readable name to derive, so those papers name themselves.
+  const stageTitle = testData?.label || stageLabels[stage] || stage;
+
   useDocumentHead(
-    `${STAGE_LABELS[stage] || stage} ${year}`,
+    `${stageTitle} ${year}`,
     "Test konkursowy z jezyka angielskiego"
   );
 
   useEffect(() => {
-    fetch(`/konkursy/angielski/data/${year}/${stage}.json`)
+    fetch(config.dataPath(year, stage))
       .then((r) => r.json())
       .then(setTestData)
       .catch(console.error);
-  }, [year, stage]);
+  }, [year, stage, config]);
 
   const startTimer = useCallback(() => {
     if (!testData) return;
@@ -73,7 +90,8 @@ export default function KonkursTest() {
     const entry = {
       attemptId: makeAttemptId(),
       kind: "competition",
-      testId: `${year}/${stage}`,
+      testId: config.testId(year, stage),
+      ...(config.competition ? { competition: config.competition } : {}),
       year,
       stage,
       date: new Date().toISOString(),
@@ -136,29 +154,12 @@ export default function KonkursTest() {
     );
 
     // Merge AI results into the score
-    let updatedTasks = [...res.tasks];
+    const aiByTaskId = new Map();
     aiTasks.forEach((task, i) => {
       const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
-      if (!aiRes) return;
-      const idx = updatedTasks.findIndex((t) => t.taskId === task.id);
-      if (idx === -1) return;
-      updatedTasks[idx] = {
-        ...updatedTasks[idx],
-        earned: aiRes.earned,
-        max: aiRes.max,
-        skipped: false,
-        items: aiRes.items,
-      };
+      if (aiRes) aiByTaskId.set(task.id, aiRes);
     });
-
-    const earned = updatedTasks.reduce((sum, r) => sum + r.earned, 0);
-    const max = updatedTasks.filter((r) => !r.skipped).reduce((sum, r) => sum + r.max, 0);
-    const finalRes = {
-      earned,
-      max,
-      percentage: max > 0 ? Math.round((earned / max) * 100) : 0,
-      tasks: updatedTasks,
-    };
+    const finalRes = applyAiResults(res, aiByTaskId);
 
     setResult(finalRes);
     setAiChecking(false);
@@ -186,8 +187,8 @@ export default function KonkursTest() {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700;900&display=swap"
           rel="stylesheet"
         />
-        <Link to="/" style={styles.back}>&larr; Powrot do listy</Link>
-        <h1 style={styles.title}>{STAGE_LABELS[stage] || stage}</h1>
+        <Link to={config.backTo} style={styles.back}>&larr; {config.backLabel}</Link>
+        <h1 style={styles.title}>{stageTitle}</h1>
         <p style={styles.subtitle}>{testData.year}</p>
         <div style={styles.infoCard}>
           <div style={styles.infoRow}><span>Czas:</span><strong>{Math.round(testData.timeMinutes * testData.tasks.filter(t => !t.skipped).reduce((s, t) => s + t.points, 0) / testData.maxPoints)} minut</strong></div>
@@ -209,9 +210,9 @@ export default function KonkursTest() {
       />
 
       <div style={styles.stickyHeader}>
-        <Link to="/" style={{ ...styles.back, margin: 0 }}>&larr;</Link>
+        <Link to={config.backTo} style={{ ...styles.back, margin: 0 }}>&larr;</Link>
         <span style={{ color: "#c8c8d8", fontWeight: 700, fontSize: 15 }}>
-          {STAGE_LABELS[stage]} {testData.year}
+          {stageTitle} {testData.year}
         </span>
         {!result && timeLeft !== null && (
           <span style={{
@@ -290,7 +291,7 @@ export default function KonkursTest() {
 
       {result && (
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link to="/" style={styles.submitBtn}>Powrot do listy testow</Link>
+          <Link to={config.backTo} style={styles.submitBtn}>{config.backLabel}</Link>
         </div>
       )}
     </div>

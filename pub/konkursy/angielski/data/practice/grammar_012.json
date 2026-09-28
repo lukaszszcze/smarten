@@ -1,0 +1,62 @@
+{
+  "title": "Passive, Causative and Reporting (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "The bridge _________ (build) in 1902 and _________ (repair) twice since then.",
+          "answer": [
+            "was built",
+            "has been repaired"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "I never cut my own hair. I _________ (have) it _________ (cut) at the salon in town.",
+          "answer": [
+            "have",
+            "cut"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "The painting _________ (say) to be worth a fortune, but it _________ (never / value) properly.",
+          "answer": [
+            "is said",
+            "has never been valued"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "Our flat _________ (paint) at the moment, so we _________ (stay) with my parents.",
+          "answer": [
+            "is being painted",
+            "are staying"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "He told me that he _________ (see) the film the night before and that he _________ (not / enjoy) it.",
+          "answer": [
+            "had seen",
+            "had not (hadn't) enjoyed"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "The thieves _________ (believe) to have escaped by boat, but nobody _________ (catch) them yet.",
+          "answer": [
+            "are believed",
+            "has caught"
+          ]
+        }
+      ]
+    }
+  ]
+}

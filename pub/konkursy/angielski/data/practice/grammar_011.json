@@ -1,0 +1,62 @@
+{
+  "title": "Tenses in Context (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "By the time we got to the hall, the concert _________ (already / begin), so we _________ (miss) the opening song.",
+          "answer": [
+            "had already begun",
+            "missed"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "Next month I _________ (work) here for six years. I _________ (never / regret) taking the job.",
+          "answer": [
+            "will ('ll) have been working / will ('ll) have worked",
+            "have ('ve) never regretted"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "Look at those clouds - it _________ (rain). We _________ (better / take) an umbrella.",
+          "answer": [
+            "is ('s) going to rain",
+            "had ('d) better take"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "She _________ (not / speak) to me since the argument, and I _________ (not / know) why.",
+          "answer": [
+            "has not (hasn't) spoken",
+            "do not (don't) know"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "While I _________ (wait) for the bus, I _________ (realise) that I had left my keys at home.",
+          "answer": [
+            "was waiting",
+            "realised"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "This time next week we _________ (lie) on a beach. I _________ (look) forward to it for months.",
+          "answer": [
+            "will ('ll) be lying",
+            "have ('ve) been looking"
+          ]
+        }
+      ]
+    }
+  ]
+}

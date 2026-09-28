@@ -57,6 +57,14 @@ export const inputWrong = {
   background: "#e0505015",
 };
 
+// A typed word that was one letter out. Quest practice counts it right and shows
+// the spelling next to it; the competition players never produce this state.
+export const inputNearMiss = {
+  ...input,
+  borderColor: "#f0a020",
+  background: "#f0a02018",
+};
+
 export const radioLabel = {
   display: "flex",
   alignItems: "center",

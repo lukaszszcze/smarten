@@ -1,48 +1,74 @@
 {
-  "title": "Around Town",
+  "title": "Almost the Same",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "multiple_choice",
-    "points": 6,
-    "instruction": "Choose the correct place to complete each sentence.",
-    "items": [
-      {
-        "id": "1.1",
-        "stem": "I need to buy some medicine for my cold. I should go to the ___.",
-        "options": ["A) library", "B) pharmacy", "C) bakery"],
-        "answer": "B"
-      },
-      {
-        "id": "1.2",
-        "stem": "I want to borrow a book about dinosaurs. Let's go to the ___.",
-        "options": ["A) library", "B) post office", "C) cinema"],
-        "answer": "A"
-      },
-      {
-        "id": "1.3",
-        "stem": "I need to send a parcel to my cousin in Krakow. I'll go to the ___.",
-        "options": ["A) pet shop", "B) petrol station", "C) post office"],
-        "answer": "C"
-      },
-      {
-        "id": "1.4",
-        "stem": "Dad says the car needs fuel before our trip. We have to stop at the ___.",
-        "options": ["A) petrol station", "B) fire station", "C) bus station"],
-        "answer": "A"
-      },
-      {
-        "id": "1.5",
-        "stem": "There's a fire in the building! Someone call the ___!",
-        "options": ["A) police station", "B) fire station", "C) train station"],
-        "answer": "B"
-      },
-      {
-        "id": "1.6",
-        "stem": "Mum's car broke down on the way to school. She called a mechanic at the ___.",
-        "options": ["A) garage", "B) hospital", "C) museum"],
-        "answer": "A"
-      }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the word that fits the sentence. The three words are close in meaning.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Our flight was _________ for three hours because of thick fog.",
+          "options": [
+            "A) late",
+            "B) delayed",
+            "C) slowed"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "She _________ me of taking her pen, but it was on her own desk all along.",
+          "options": [
+            "A) blamed",
+            "B) complained",
+            "C) accused"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.3",
+          "stem": "It took me an hour to _________ my parents to let me go to the concert.",
+          "options": [
+            "A) convince",
+            "B) suggest",
+            "C) insist"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "The company _________ him a job as soon as he finished university.",
+          "options": [
+            "A) suggested",
+            "B) offered",
+            "C) proposed"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "My little brother is _________ of the dark and sleeps with a lamp on.",
+          "options": [
+            "A) worried",
+            "B) nervous",
+            "C) afraid"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "1.6",
+          "stem": "The guide _________ us not to swim beyond the yellow flags.",
+          "options": [
+            "A) recommended",
+            "B) advised",
+            "C) suggested"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
 }

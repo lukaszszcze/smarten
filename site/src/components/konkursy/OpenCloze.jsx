@@ -21,6 +21,13 @@ export default function OpenCloze({ task, answers, onChange, showResults, taskRe
         <div style={{ marginTop: 12 }}>
           {items.map((item) => {
             const ir = getItemResult(taskResult, item.id);
+            if (ir?.nearMiss) {
+              return (
+                <div key={item.id} style={{ ...s.correctAnswer, color: "#f0a020" }}>
+                  {item.id}: nearly — it is spelt {ir.correctAnswer}
+                </div>
+              );
+            }
             return !ir?.correct ? (
               <div key={item.id} style={s.correctAnswer}>{item.id}: {ir?.correctAnswer}</div>
             ) : null;
@@ -41,13 +48,22 @@ function renderTextWithGaps(text, items, answers, onChange, showResults, taskRes
     const id = part.id;
     const ir = taskResult?.items?.find((r) => r.id === id);
     const inputStyle = showResults && ir
-      ? (ir.correct ? s.inputCorrect : s.inputWrong)
+      ? (ir.nearMiss ? s.inputNearMiss : ir.correct ? s.inputCorrect : s.inputWrong)
       : s.input;
     return (
       <span key={i} style={{ display: "inline-flex", alignItems: "center", margin: "2px 4px", verticalAlign: "middle" }}>
         <span style={{ color: "#50d890", fontSize: 11, fontWeight: 700, marginRight: 4 }}>{id}</span>
         <input
-          style={{ ...inputStyle, width: 100, border: "2px solid #42b4f5", background: "#1a1a2e", borderRadius: 4, padding: "4px 8px" }}
+          style={{
+            ...inputStyle,
+            width: 100,
+            borderWidth: 2,
+            borderStyle: "solid",
+            borderColor: showResults && ir ? inputStyle.borderColor : "#42b4f5",
+            background: showResults && ir ? inputStyle.background : "#1a1a2e",
+            borderRadius: 4,
+            padding: "4px 8px",
+          }}
           value={answers[id] || ""}
           onChange={(e) => onChange(id, e.target.value)}
           disabled={showResults}

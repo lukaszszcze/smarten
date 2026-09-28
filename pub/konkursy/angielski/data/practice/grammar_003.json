@@ -5,38 +5,56 @@
     {
       "id": "1",
       "type": "grammar_gaps",
-      "points": 6,
+      "points": 12,
       "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
       "items": [
         {
           "id": "1.1",
           "context": "If you _________ (study) harder last semester, you _________ (pass) the entrance exam without any problems.",
-          "answer": ["had studied", "would have ('would've) passed"]
+          "answer": [
+            "had studied",
+            "would have ('would've) passed"
+          ]
         },
         {
           "id": "1.2",
           "context": "You _________ (must / eat) the whole cake — there is hardly any left! You _________ (should / ask) me first.",
-          "answer": ["must have eaten", "should have asked"]
+          "answer": [
+            "must have eaten",
+            "should have asked"
+          ]
         },
         {
           "id": "1.3",
           "context": "If she _________ (leave) home earlier, she _________ (not / miss) the last train to Warsaw.",
-          "answer": ["left", "would not (wouldn't) miss"]
+          "answer": [
+            "left",
+            "would not (wouldn't) miss"
+          ]
         },
         {
           "id": "1.4",
           "context": "He _________ (can / speak) four languages by the time he was sixteen, which meant he _________ (need / not / use) a translator abroad.",
-          "answer": ["could speak", "did not (didn't) need to use, needn't have used"]
+          "answer": [
+            "could speak",
+            "did not (didn't) need to use, needn't have used"
+          ]
         },
         {
           "id": "1.5",
           "context": "I wish I _________ (be) taller so that I _________ (can / reach) the top shelf without a ladder.",
-          "answer": ["were", "could reach"]
+          "answer": [
+            "were",
+            "could reach"
+          ]
         },
         {
           "id": "1.6",
           "context": "Provided that the weather _________ (be) fine tomorrow, we _________ (might / go) for a hike in the mountains.",
-          "answer": ["is", "might go"]
+          "answer": [
+            "is",
+            "might go"
+          ]
         }
       ]
     }

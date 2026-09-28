@@ -1,0 +1,88 @@
+{
+  "title": "T/F/NI + Vocabulary: The Language That Came Back (poziom wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 10,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.10. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE LANGUAGE THAT CAME BACK\n\nNed Maddrell died on the Isle of Man in December 1974, and the newspapers that reported it agreed on the significance: with him went the last person who had grown up speaking Manx. The language had been in retreat for two centuries. Parents who spoke it declined to pass it on, in the entirely rational belief that English was what their children would need, and by the 1950s the few remaining speakers were elderly people in fishing villages whom visiting scholars recorded on wax cylinders and, later, on tape. UNESCO would in due course list Manx as extinct.\n\nToday around two thousand people on the island claim some knowledge of it, several dozen children are educated entirely through it at a primary school in St John's, and UNESCO has revised its classification - a change reportedly prompted by a letter from pupils at that school, written in Manx, asking how a dead language could be used to write it.\n\nRecovery of this kind is rarer than the publicity suggests, and it is never simply a matter of enthusiasm. Manx had two advantages that most endangered languages lack. The first was documentation: those recordings, together with a Bible translated in the eighteenth century and a body of written material, meant that the grammar and a good deal of the vocabulary outlived the last speaker. The second was a small, defined territory with its own parliament, which could decide to fund teaching without asking anybody's permission.\n\nEven so, the early years were unpromising. The people who set about learning in the 1970s were, by their own account, an odd assortment - a few academics, some cultural nationalists, a number of people who simply liked the sound of it - and their pronunciation was reconstructed from tapes of very old men. Purists complained, then and since, that what is spoken now is not really the language Maddrell spoke: the accent has drifted towards English, some grammatical distinctions have quietly collapsed, and new words have had to be invented for everything from a computer to a wind turbine. The counter-argument is short. A language that changes is a language that is being used.\n\nThe Manx experience is now studied elsewhere, because the arithmetic of language loss is grim. Of the roughly seven thousand languages currently spoken, linguists estimate that around half will have no native speakers by the end of the century. Most will disappear the way Manx nearly did, not through prohibition but through a series of sensible individual decisions about what will be most useful to a child. Once a language stops being used casually, in shops and playgrounds rather than in classes, the decline tends to accelerate.\n\nWhat the revivalists have learned is that lessons on their own achieve very little. Manx survives because there is a school, a radio slot, road signs, a dictionary that keeps growing, and - the part nobody planned - a generation of children who use it to argue with each other in the corridor. Whether that is enough to carry it through another century, nobody involved is willing to predict. But the island has produced something unusual: a language that was officially declared dead and then, awkwardly, went on being spoken.",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "Manx stopped being passed to children mainly because the authorities forbade its use.",
+          "answer": "F",
+          "explanation": "FALSE - Parents 'declined to pass it on' by choice; languages are lost 'not through prohibition but through a series of sensible individual decisions'."
+        },
+        {
+          "id": "1.2",
+          "statement": "At the school in St John's, Manx is taught as one subject alongside the others.",
+          "answer": "F",
+          "explanation": "FALSE - Several dozen children there 'are educated entirely through it'."
+        },
+        {
+          "id": "1.3",
+          "statement": "UNESCO altered its classification of Manx after receiving a letter written by children.",
+          "answer": "T",
+          "explanation": "TRUE - The change was 'reportedly prompted by a letter from pupils at that school, written in Manx'."
+        },
+        {
+          "id": "1.4",
+          "statement": "The island's parliament now spends more on the language than it did in the 1970s.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text says the parliament could fund teaching, but gives no figures and no comparison over time."
+        },
+        {
+          "id": "1.5",
+          "statement": "Manx road signs appeared before the primary school opened.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - Road signs and the school are both listed as reasons the language survives, but their order is never given."
+        },
+        {
+          "id": "1.6",
+          "statement": "Most of those who began learning Manx in the 1970s had grown up on the island.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - They are described as an odd assortment of academics, nationalists and enthusiasts, but not by where they came from."
+        }
+      ],
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "becoming steadily weaker or less widespread",
+          "answer": [
+            "in retreat",
+            "retreat"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "to give something to a younger generation so that it continues",
+          "answer": [
+            "pass it on",
+            "pass on",
+            "to pass on"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "a mixed group made up of several different kinds of people",
+          "answer": [
+            "assortment",
+            "an assortment",
+            "an odd assortment"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "people who insist on traditional correctness and object to any change",
+          "answer": [
+            "purists",
+            "purist"
+          ]
+        }
+      ],
+      "vocabPoints": 4
+    }
+  ]
+}

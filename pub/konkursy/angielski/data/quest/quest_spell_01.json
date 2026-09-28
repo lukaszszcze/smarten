@@ -1,0 +1,53 @@
+{
+  "title": "Double or Not?",
+  "type": "practice",
+  "questTrack": "spelling",
+  "questLevel": 2,
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 6,
+      "exactSpelling": true,
+      "instruction": "Add the ending to the word in capitals. Sometimes the last letter doubles and sometimes it does not - that is the whole question here, so the spelling has to be exactly right.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "The dog kept __________ after the ball until it was too tired to move.",
+          "wordBase": "RUN",
+          "answer": "running"
+        },
+        {
+          "id": "1.2",
+          "sentence": "We __________ my grandmother every Sunday until she moved away.",
+          "wordBase": "VISIT",
+          "answer": "visited"
+        },
+        {
+          "id": "1.3",
+          "sentence": "It was only the __________ of the story and already three people had disappeared.",
+          "wordBase": "BEGIN",
+          "answer": "beginning"
+        },
+        {
+          "id": "1.4",
+          "sentence": "She __________ the door quietly so that nobody would hear her.",
+          "wordBase": "OPEN",
+          "answer": "opened"
+        },
+        {
+          "id": "1.5",
+          "sentence": "They spent the whole afternoon __________ in the lake.",
+          "wordBase": "SWIM",
+          "answer": "swimming"
+        },
+        {
+          "id": "1.6",
+          "sentence": "Nobody __________ to a word he said.",
+          "wordBase": "LISTEN",
+          "answer": "listened"
+        }
+      ]
+    }
+  ]
+}

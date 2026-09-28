@@ -10,39 +10,63 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "Can you _________ the TV? I want to watch the news.",
-          "options": ["A) turn on", "B) turn off", "C) turn up"],
+          "stem": "She _________ down the job because it meant moving abroad.",
+          "options": [
+            "A) turned",
+            "B) put",
+            "C) took"
+          ],
           "answer": "A"
         },
         {
           "id": "1.2",
-          "stem": "My grandma _________ my little sister when Mum is at work.",
-          "options": ["A) looks up", "B) looks after", "C) looks for"],
+          "stem": "I _________ into an old classmate at the station yesterday.",
+          "options": [
+            "A) went",
+            "B) ran",
+            "C) came"
+          ],
           "answer": "B"
         },
         {
           "id": "1.3",
-          "stem": "Don't _________ ! Keep trying and you will learn to ride a bike.",
-          "options": ["A) give up", "B) give back", "C) give away"],
-          "answer": "A"
-        },
-        {
-          "id": "1.4",
-          "stem": "It's cold outside. You should _________ a warm jacket before you go.",
-          "options": ["A) take off", "B) pick up", "C) put on"],
+          "stem": "Do not _________ up excuses - just tell me what really happened.",
+          "options": [
+            "A) take",
+            "B) put",
+            "C) make"
+          ],
           "answer": "C"
         },
         {
+          "id": "1.4",
+          "stem": "He _________ on very well with his new colleagues.",
+          "options": [
+            "A) gets",
+            "B) takes",
+            "C) puts"
+          ],
+          "answer": "A"
+        },
+        {
           "id": "1.5",
-          "stem": "We _________ that the shop was closed on Sundays, so we went on Monday.",
-          "options": ["A) ran out of", "B) found out", "C) picked up"],
+          "stem": "The milk has _________ off. You can smell it from here.",
+          "options": [
+            "A) run",
+            "B) gone",
+            "C) turned"
+          ],
           "answer": "B"
         },
         {
           "id": "1.6",
-          "stem": "Oh no, we've _________ milk! Can you go to the shop and buy some?",
-          "options": ["A) run out of", "B) given up", "C) turned off"],
-          "answer": "A"
+          "stem": "They let him _________ away with it because he was so young.",
+          "options": [
+            "A) go",
+            "B) take",
+            "C) get"
+          ],
+          "answer": "C"
         }
       ]
     }

@@ -141,6 +141,69 @@
       "points": 8
     },
     {
+      "id": "formation_035",
+      "title": "Od czasownika do rzeczownika (krok 1: koncowki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_036",
+      "title": "Od rzeczownika do przymiotnika (krok 1: koncowki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_037",
+      "title": "Od przymiotnika do rzeczownika (krok 1: koncowki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_038",
+      "title": "Czasowniki i przyslowki (krok 1: koncowki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_039",
+      "title": "Ludzie i zawody (krok 1: koncowki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_040",
+      "title": "Przeczenia: un- i in- (krok 2: przedrostki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_041",
+      "title": "Przeczenia: im-, ir- i il- (krok 2: przedrostki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_042",
+      "title": "Przedrostki dis-, mis-, over- i under- (krok 2: przedrostki)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "formation_043",
+      "title": "Przedrostek i koncowka naraz (krok 3)",
+      "taskType": "word_formation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
       "id": "formation_001",
       "title": "Journey to the Stars",
       "taskType": "word_formation",
@@ -768,35 +831,35 @@
       "title": "Tenses in Context",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_002",
       "title": "Passive & Causative",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_003",
       "title": "Modals & Conditionals",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_004",
       "title": "Gerunds, Infinitives & Participles",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_005",
       "title": "Mixed Grammar",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "writing_001",
@@ -927,6 +990,62 @@
     {
       "id": "knowledge_024",
       "title": "British Customs and Festivals (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_025",
+      "title": "Scotland and Wales (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_026",
+      "title": "British Institutions and the Media (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_027",
+      "title": "American History and Presidents (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_028",
+      "title": "Sport in Britain and the USA (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_029",
+      "title": "Geography of the British Isles (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_030",
+      "title": "Science, Nature and Exploration (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_031",
+      "title": "Museums, Art and Architecture (poziom rejonowy/wojewodzki)",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_032",
+      "title": "English Traditions and Idioms (poziom rejonowy/wojewodzki)",
       "taskType": "knowledge_questions",
       "taskCount": 1,
       "points": 6
@@ -1224,6 +1343,62 @@
       "taskType": "true_false_ni",
       "taskCount": 1,
       "points": 8
+    },
+    {
+      "id": "tfni_029",
+      "title": "T/F/NI + Vocabulary: The Slow Return of the Night Train (poziom rejonowy/wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_030",
+      "title": "T/F/NI + Vocabulary: The People Who Count the Trees (poziom rejonowy/wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "tfni_031",
+      "title": "T/F/NI + Vocabulary: The Language That Came Back (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "tfni_032",
+      "title": "T/F/NI + Vocabulary: The Art of Making Noise (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "tfni_033",
+      "title": "T/F/NI + Vocabulary: The Case for the Pen (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "tfni_034",
+      "title": "T/F/NI + Vocabulary: The Mall That Wanted to Be a Town (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "tfni_035",
+      "title": "T/F/NI + Vocabulary: Drilling for Memory (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
+    },
+    {
+      "id": "tfni_036",
+      "title": "T/F/NI + Vocabulary: The Woman Who Would Not Wash Up (poziom wojewodzki)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 10
     },
     {
       "id": "mc_011",
@@ -1583,39 +1758,151 @@
       "points": 8
     },
     {
+      "id": "transform_025",
+      "title": "Relative Clauses, Emphasis and Time Reference (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_026",
+      "title": "Quantity, Measurement and Degree (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_027",
+      "title": "Ability, Chance and Possibility (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_028",
+      "title": "Cause, Result and Purpose (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_029",
+      "title": "Duration, Sequence and Habit (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_030",
+      "title": "Concession, Contrast and Condition (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_031",
+      "title": "Suggestion, Preference and Complaint (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "transform_032",
+      "title": "Mixed Exam Practice (poziom rejonowy/wojewodzki)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
       "id": "grammar_006",
       "title": "Tenses Review",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_007",
       "title": "Conditionals & Wishes",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_008",
       "title": "Passive & Causative II",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_009",
       "title": "Reported Speech",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
     },
     {
       "id": "grammar_010",
       "title": "Mixed Grammar II",
       "taskType": "grammar_gaps",
       "taskCount": 1,
-      "points": 6
+      "points": 12
+    },
+    {
+      "id": "grammar_011",
+      "title": "Tenses in Context (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_012",
+      "title": "Passive, Causative and Reporting (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_013",
+      "title": "Conditionals, Wishes and the Unreal Past (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_014",
+      "title": "Modals, Deduction and Obligation (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_015",
+      "title": "Gerunds, Infinitives and Participles (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_016",
+      "title": "Inversion, Emphasis and Word Order (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_017",
+      "title": "Reported Speech and Reporting Verbs (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
+    },
+    {
+      "id": "grammar_018",
+      "title": "Mixed Exam Practice (poziom rejonowy/wojewodzki)",
+      "taskType": "grammar_gaps",
+      "taskCount": 1,
+      "points": 12
     },
     {
       "id": "writing_006",
@@ -1704,6 +1991,62 @@
     {
       "id": "spelling_024",
       "title": "Kuchnia i zycie codzienne (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_025",
+      "title": "Podroze i transport (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_026",
+      "title": "Media i technologia (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_027",
+      "title": "Zdrowie i medycyna (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_028",
+      "title": "Sztuka i kultura (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_029",
+      "title": "Pogoda i klimat (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_030",
+      "title": "Sport i rywalizacja (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_031",
+      "title": "Przymiotniki opisowe (poziom rejonowy/wojewodzki)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
+      "id": "spelling_032",
+      "title": "Handel i pieniadze (poziom rejonowy/wojewodzki)",
       "taskType": "word_spelling",
       "taskCount": 1,
       "points": 8
@@ -1816,6 +2159,62 @@
     {
       "id": "cloze_035",
       "title": "The History of Tea (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_036",
+      "title": "Open Cloze: The Origins of the Marathon (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_037",
+      "title": "Open Cloze: Why We Yawn (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_038",
+      "title": "Open Cloze: The Story of Denim Jeans (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_039",
+      "title": "Open Cloze: The Rise of the Bicycle (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_040",
+      "title": "Open Cloze: How Chewing Gum Conquered the World (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_041",
+      "title": "Open Cloze: The Invention of the Barcode (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_042",
+      "title": "Open Cloze: The Longest Wall in the World (poziom rejonowy/wojewodzki)",
+      "taskType": "open_cloze",
+      "taskCount": 1,
+      "points": 5
+    },
+    {
+      "id": "cloze_043",
+      "title": "Open Cloze: The Language of Emojis (poziom rejonowy/wojewodzki)",
       "taskType": "open_cloze",
       "taskCount": 1,
       "points": 5

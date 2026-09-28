@@ -1,5 +1,5 @@
 {
-  "title": "The Invention of the Internet",
+  "title": "The Rise of the Bicycle",
   "type": "practice",
   "tasks": [
     {
@@ -7,31 +7,31 @@
       "type": "true_false_ni",
       "points": 3,
       "instruction": "Read the text below. Decide if each sentence (1.1-1.4) is True (T), False (F), or if the information is Not In the text (NI).",
-      "text": "THE INVENTION OF THE INTERNET\n\nToday, billions of people use the internet every day, but it was not always this way. The internet began as a secret military project in the United States in the late 1960s. Scientists working for the American government wanted to create a network that could still send messages even if part of it was destroyed. They called it ARPANET, and at first only four universities were connected to it.\n\nFor many years, the internet was used mainly by scientists and researchers. Then, in 1989, a British scientist named Tim Berners-Lee invented the World Wide Web while working in Switzerland. This made it much easier for ordinary people to find and share information online. By the mid-1990s, millions of homes had internet access, and new websites appeared every day.\n\nThe internet has changed the way we learn, communicate, and even shop. It is hard to imagine life without it.",
+      "text": "THE RISE OF THE BICYCLE\n\nIt is easy to assume that the bicycle arrived more or less as we know it. In fact it took most of a century, and several of the steps along the way look distinctly uncomfortable.\n\nThe first machine a modern rider would recognise as an ancestor appeared in 1817. It had two wheels in line and a seat between them, but no pedals at all: the rider pushed along the ground with both feet and steered with a bar. It was a curiosity rather than transport, and it went out of fashion within a few years.\n\nPedals came later, fixed directly to the front wheel. Because one turn of the pedals meant exactly one turn of that wheel, the only way to travel further with each turn was to make the wheel bigger. This produced the machine most people picture when they hear the word Victorian: an enormous front wheel with a tiny one trailing behind. It was fast on smooth ground and genuinely dangerous everywhere else, since the rider sat high above the axle and almost any obstacle could throw him forward over the handlebars. Riding one was a young man's hobby, and hardly anybody else attempted it.\n\nThe change came in the 1880s, with what its makers called the safety bicycle. Its two wheels were the same modest size, the rider sat between them rather than above one of them, and a chain carried the effort back to the rear wheel. Gearing could now be chosen by the size of the sprockets instead of the size of the wheel. Within a few years the addition of air-filled tyres removed most of the remaining discomfort, and the shape settled into something that has barely changed since.\n\nWhat followed was not merely a new product but a social change. Bicycles were cheap enough for clerks and factory workers, and they made it possible to live several miles from where you worked. They also gave women a form of independent travel that needed no horse, no carriage and nobody's permission, and the clothing that riding demanded became an argument in itself. One American campaigner claimed that the bicycle had done more to free women than anything else in the world.\n\nThe craze of the 1890s eventually cooled, and the motor car took over the roads the bicycle had helped to improve. Yet more bicycles are made each year now than cars, and in several European cities the number of daily journeys made by bicycle is rising again. For a machine that began as a toy with no pedals, that is a long and unusually successful career.",
       "items": [
         {
           "id": "1.1",
-          "statement": "The internet was originally created for business purposes.",
+          "statement": "The earliest two-wheeled machine described in the text had pedals on its front wheel.",
           "answer": "F",
-          "explanation": "FALSE — The text states the internet began as 'a secret military project', not a business one."
+          "explanation": "FALSE - it had 'no pedals at all'. The rider pushed along the ground with both feet."
         },
         {
           "id": "1.2",
-          "statement": "Tim Berners-Lee was American.",
-          "answer": "F",
-          "explanation": "FALSE — The text describes him as 'a British scientist', even though he was working in Switzerland at the time."
+          "statement": "The very large front wheel existed because of the way the pedals were connected.",
+          "answer": "T",
+          "explanation": "TRUE - one turn of the pedals meant one turn of the wheel, so a bigger wheel was the only way to travel further per turn."
         },
         {
           "id": "1.3",
-          "statement": "At the start, only four universities were connected to ARPANET.",
-          "answer": "T",
-          "explanation": "TRUE — The text states that 'at first only four universities were connected to it'."
+          "statement": "The safety bicycle sold more machines in its first year than the high bicycle had.",
+          "answer": "NI",
+          "explanation": "NOT IN THE TEXT - the text describes how the safety bicycle worked but gives no sales figures."
         },
         {
           "id": "1.4",
-          "statement": "More people use the internet in the United States than in any other country.",
-          "answer": "NI",
-          "explanation": "NOT IN THE TEXT — The text mentions that the internet started in the US and that billions of people use it, but it never compares usage between countries."
+          "statement": "More bicycles than cars are produced each year today.",
+          "answer": "T",
+          "explanation": "TRUE - 'more bicycles are made each year now than cars'."
         }
       ],
       "scoringScheme": {

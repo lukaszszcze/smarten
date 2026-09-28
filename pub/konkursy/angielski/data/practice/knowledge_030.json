@@ -1,0 +1,63 @@
+{
+  "title": "Science, Nature and Exploration (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Odpowiedz na pytania (1.1.-1.5.) dotyczace wiedzy o krajach anglojezycznych. Odpowiadaj po angielsku. W pytaniach oznaczonych 2 pkt nalezy podac dwie informacje.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which British naturalist wrote 'On the Origin of Species'?",
+          "answer": [
+            "Charles Darwin",
+            "Darwin"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "Who discovered penicillin?",
+          "answer": [
+            "Alexander Fleming",
+            "Fleming"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Two scientists described the structure of DNA in 1953. Which American biologist was one of them? Which British colleague worked with him?",
+          "answer": [
+            "James Watson",
+            "Watson"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Francis Crick",
+            "Crick"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "Which British physicist wrote 'A Brief History of Time'?",
+          "answer": [
+            "Stephen Hawking",
+            "Hawking"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "Which explorer led the first expedition to reach the South Pole?",
+          "answer": [
+            "Roald Amundsen",
+            "Amundsen"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -3,12 +3,69 @@ export function normalizeAnswer(answer) {
   return answer.trim().toLowerCase();
 }
 
-function matchesAnswer(userAnswer, correctAnswer) {
-  const user = normalizeAnswer(userAnswer);
-  if (Array.isArray(correctAnswer)) {
-    return correctAnswer.some((a) => normalizeAnswer(a) === user);
+// The shortest word a one-letter slip is still recognisable in. Below this,
+// "cat" and "cut" are one letter apart and both are words, so a near miss there
+// is a wrong answer rather than a slip.
+const NEAR_MISS_MIN_LENGTH = 5;
+
+/**
+ * One edit apart, counting a swap of two neighbouring letters as one edit.
+ * Catches the slips a confident reader makes when writing a word down for the
+ * first time: a doubled letter (freezeing), a dropped one (thundr), a swapped
+ * pair (recieve).
+ */
+export function isNearMiss(user, correct) {
+  if (correct.length < NEAR_MISS_MIN_LENGTH) return false;
+  if (Math.abs(user.length - correct.length) > 1) return false;
+  if (user[0] !== correct[0]) return false;
+  if (user === correct) return false;
+
+  // Damerau-Levenshtein, stopping as soon as a second edit is needed.
+  const n = user.length, m = correct.length;
+  let prev2 = null, prev = new Array(m + 1).fill(0).map((_, j) => j);
+  for (let i = 1; i <= n; i++) {
+    const row = new Array(m + 1);
+    row[0] = i;
+    for (let j = 1; j <= m; j++) {
+      const cost = user[i - 1] === correct[j - 1] ? 0 : 1;
+      row[j] = Math.min(row[j - 1] + 1, prev[j] + 1, prev[j - 1] + cost);
+      if (i > 1 && j > 1 && user[i - 1] === correct[j - 2] && user[i - 2] === correct[j - 1]) {
+        row[j] = Math.min(row[j], prev2[j - 2] + 1);
+      }
+    }
+    if (Math.min(...row) > 1) return false;
+    prev2 = prev;
+    prev = row;
   }
-  return user === normalizeAnswer(correctAnswer);
+  return prev[m] === 1;
+}
+
+/**
+ * Does the answer count?
+ *
+ * `nearMiss` accepts a one-letter slip on a typed word. It is on for quest
+ * practice and off for the competition test players, which have to mark the way
+ * the real paper does. Marking a slip identically to a blank box is what turned
+ * a reader who knows the word into someone scoring nothing.
+ */
+function matchesAnswer(userAnswer, correctAnswer, nearMiss = false) {
+  const user = normalizeAnswer(userAnswer);
+  if (!user) return false;
+  const accepted = (Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer])
+    .map(normalizeAnswer);
+  if (accepted.includes(user)) return true;
+  return nearMiss && accepted.some((a) => isNearMiss(user, a));
+}
+
+/** True when the answer only got through on the one-letter allowance, so the
+ *  renderer can show the right spelling alongside the tick. */
+function wasNearMiss(userAnswer, correctAnswer, nearMiss) {
+  if (!nearMiss) return false;
+  const user = normalizeAnswer(userAnswer);
+  if (!user) return false;
+  const accepted = (Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer])
+    .map(normalizeAnswer);
+  return !accepted.includes(user) && accepted.some((a) => isNearMiss(user, a));
 }
 
 function countCorrect(items, userAnswers) {
@@ -39,7 +96,14 @@ function applyScoringScheme(correct, scheme) {
 // score by accepting synonyms / spelling variants beyond the key.
 const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing"];
 
-function scoreTask(task, userAnswers) {
+function scoreTask(task, userAnswers, options = {}) {
+  // Only typed-word answers get the one-letter allowance. A multiple choice or a
+  // matching answer is picked from a list, so there is no slip to forgive.
+  // `task.exactSpelling` opts an exercise out: where the whole lesson is one
+  // letter -- a doubled consonant, a silent letter -- forgiving that letter
+  // leaves nothing to practise.
+  const nearMiss = !!options.acceptNearMiss && !task.exactSpelling &&
+    ["word_spelling", "word_formation", "open_cloze"].includes(task.type);
   const isAIType = AI_CHECKED_TYPES.includes(task.type);
   const hasItems = task.items && task.items.length > 0;
 
@@ -89,7 +153,8 @@ function scoreTask(task, userAnswers) {
       }
       const itemResults = items.map((item) => ({
         id: item.id,
-        correct: matchesAnswer(userAnswers[item.id], item.answer),
+        correct: matchesAnswer(userAnswers[item.id], item.answer, nearMiss),
+        nearMiss: wasNearMiss(userAnswers[item.id], item.answer, nearMiss),
         userAnswer: userAnswers[item.id] || "",
         correctAnswer: Array.isArray(item.answer) ? item.answer[0] : item.answer,
       }));
@@ -133,7 +198,8 @@ function scoreTask(task, userAnswers) {
       const items = task.items || [];
       const itemResults = items.map((item) => ({
         id: item.id,
-        correct: matchesAnswer(userAnswers[item.id], item.answer),
+        correct: matchesAnswer(userAnswers[item.id], item.answer, nearMiss),
+        nearMiss: wasNearMiss(userAnswers[item.id], item.answer, nearMiss),
         userAnswer: userAnswers[item.id] || "",
         correctAnswer: Array.isArray(item.answer) ? item.answer[0] : item.answer,
       }));
@@ -212,9 +278,74 @@ function scoreTask(task, userAnswers) {
   return result;
 }
 
-export function scoreTest(testData, userAnswers) {
-  const taskResults = testData.tasks.map((task) => scoreTask(task, userAnswers));
+/**
+ * Mark a whole paper.
+ *
+ * `options.acceptNearMiss` forgives a one-letter slip on a typed word. The quest
+ * players pass it; the competition players do not, because a practice test has
+ * to mark the way the real paper marks.
+ */
+export function scoreTest(testData, userAnswers, options = {}) {
+  const taskResults = testData.tasks.map((task) => scoreTask(task, userAnswers, options));
+  return totalise(taskResults);
+}
+
+function totalise(taskResults) {
   const earned = taskResults.reduce((sum, r) => sum + r.earned, 0);
   const max = taskResults.filter((r) => !r.skipped).reduce((sum, r) => sum + r.max, 0);
   return { earned, max, percentage: max > 0 ? Math.round((earned / max) * 100) : 0, tasks: taskResults };
+}
+
+// The /api/check grading layer runs on top of this local answer-key marking and
+// may only ever raise a score: it sees the passage as well as the answers, so it
+// can accept a synonym or spelling variant the key does not list. A dropped
+// item, a truncated response or a model slip must never take back a point the
+// answer key itself awarded — a learner who sees five correct answers marked
+// zero stops trusting the marking, and stops finishing the exercise.
+//
+// Taking the higher of the two totals is exact here, not merely cautious: for
+// the locally-marked types (open_cloze, word_formation) check.js pre-accepts
+// every exact key match itself and only sends the rest to the model, so its
+// correct set always contains the local one; for the types with no local
+// marking at all the local total is 0.
+export function mergeAiTaskResult(localResult, aiResult) {
+  if (!aiResult) return localResult;
+
+  // A response we cannot read a score out of is treated as no response.
+  const aiEarned = aiResult.earned;
+  if (typeof aiEarned !== "number" || !Number.isFinite(aiEarned)) return localResult;
+  const aiMax = typeof aiResult.max === "number" && Number.isFinite(aiResult.max)
+    ? aiResult.max
+    : localResult.max;
+
+  const aiItems = aiResult.items || [];
+  const aiById = new Map(aiItems.map((it) => [it.id, it]));
+  const localIds = new Set((localResult.items || []).map((it) => it.id));
+
+  const items = (localResult.items || []).map((local) => {
+    const ai = aiById.get(local.id);
+    // Keeping the local item when the model disagrees drops an explanation that
+    // would contradict the tick beside it.
+    if (!ai || (local.correct && !ai.correct)) return local;
+    return { ...ai, correct: local.correct || !!ai.correct };
+  });
+  // Types with no local marking (writing) carry their items only on the response.
+  items.push(...aiItems.filter((it) => !localIds.has(it.id)));
+
+  return {
+    ...localResult,
+    earned: Math.max(localResult.earned, aiEarned),
+    max: aiMax,
+    skipped: false,
+    items,
+  };
+}
+
+// Merge every graded task back into an attempt and recompute its total.
+// `aiByTaskId` maps task id -> the /api/check response, or nothing for the
+// tasks that were never sent or whose request failed.
+export function applyAiResults(testResult, aiByTaskId) {
+  return totalise(
+    testResult.tasks.map((t) => mergeAiTaskResult(t, aiByTaskId.get(t.taskId) || null))
+  );
 }

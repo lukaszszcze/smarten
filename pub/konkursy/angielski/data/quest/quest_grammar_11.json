@@ -1,18 +1,74 @@
 {
-  "title": "If It Rains...",
+  "title": "Conditions and Wishes",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "multiple_choice",
-    "points": 6,
-    "instruction": "Choose the correct answer A, B or C.",
-    "items": [
-      { "id": "1.1", "stem": "If it _________ tomorrow, we will stay at home and play board games.", "options": ["A) will rain", "B) rains", "C) is raining"], "answer": "B" },
-      { "id": "1.2", "stem": "We won't go to the park if the weather _________ bad.", "options": ["A) will be", "B) is going to be", "C) is"], "answer": "C" },
-      { "id": "1.3", "stem": "If you _________ your homework now, you will have free time later.", "options": ["A) will finish", "B) finish", "C) are finishing"], "answer": "B" },
-      { "id": "1.4", "stem": "What will you do if the teacher _________ give us any homework?", "options": ["A) won't", "B) don't", "C) doesn't"], "answer": "C" },
-      { "id": "1.5", "stem": "If she _________ hard, she will pass the English test.", "options": ["A) studies", "B) will study", "C) is studying"], "answer": "A" },
-      { "id": "1.6", "stem": "They _________ be late if they don't leave soon.", "options": ["A) are", "B) will", "C) do"], "answer": "B" }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the correct answer A, B or C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "If I _________ you, I would tell her the truth straight away.",
+          "options": [
+            "A) was",
+            "B) were",
+            "C) am"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.2",
+          "stem": "I wish I _________ how to swim when I was younger.",
+          "options": [
+            "A) learned",
+            "B) had learned",
+            "C) would learn"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "_________ you need any help, just send me a message.",
+          "options": [
+            "A) Should",
+            "B) Would",
+            "C) Might"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "We will go ahead with the picnic _________ it rains.",
+          "options": [
+            "A) unless",
+            "B) if",
+            "C) in case"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "stem": "If she had studied harder, she _________ the exam.",
+          "options": [
+            "A) would pass",
+            "B) would have passed",
+            "C) passed"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.6",
+          "stem": "If only I _________ said anything at the meeting!",
+          "options": [
+            "A) wouldn't",
+            "B) hadn't",
+            "C) didn't"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,22 @@
+{
+  "title": "How People Say Things",
+  "type": "practice",
+  "questTrack": "vocabulary",
+  "questLevel": 2,
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the word that fits best: A, B or C.",
+      "items": [
+        { "id": "1.1", "question": "\"Don't move,\" she _________, so quietly that he almost missed it.", "options": ["A) shouted", "B) whispered", "C) announced"], "answer": "B" },
+        { "id": "1.2", "question": "He _________ something about the weather and went back to his book.", "options": ["A) muttered", "B) yelled", "C) sang"], "answer": "A" },
+        { "id": "1.3", "question": "The whole room _________ when the lights went out.", "options": ["A) whispered", "B) gasped", "C) mumbled"], "answer": "B" },
+        { "id": "1.4", "question": "\"I told you so,\" he said with a _________ on his face.", "options": ["A) frown", "B) tear", "C) grin"], "answer": "C" },
+        { "id": "1.5", "question": "She _________ at the clock and realised she was already late.", "options": ["A) stared", "B) glanced", "C) gazed"], "answer": "B" },
+        { "id": "1.6", "question": "They tried to _________ past the sleeping dog without waking it.", "options": ["A) sneak", "B) march", "C) stroll"], "answer": "A" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "title": "T/F/NI + Vocabulary: The Slow Return of the Night Train (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE SLOW RETURN OF THE NIGHT TRAIN\n\nIn 1990 a traveller could board a train in Paris after dinner and step onto a platform in Madrid, Rome or Copenhagen in time for breakfast. Twenty years later most of those services had disappeared. Low-cost airlines undercut them on price, new high-speed lines made the daytime journey faster than a night in a bunk, and the carriages themselves - costly to maintain, awkward to clean and standing idle for most of every day - were withdrawn one route at a time. In 2016 the German national operator gave up on sleepers entirely and sold a large part of its fleet.\n\nThe buyer was Austrian. The state railway there took over fifteen routes that everyone else had written off, repainted the carriages and, to a certain amount of amusement in the industry, began advertising them. Its managers had noticed something the spreadsheets missed: a night train does not compete with a two-hour flight on speed, and it never will. It competes on what the passenger does with the night. A bed on a train replaces a hotel room, a taxi to an airport built well outside the city, two hours of queuing and a morning lost to a security check. Counted that way, the arithmetic looks different.\n\nThe gamble paid off. Passenger numbers on the Austrian sleepers rose year after year, and by the early 2020s the company was ordering new carriages rather than buying second-hand ones. Others followed. A Swedish service to Hamburg, a Dutch-backed route to Vienna, a private operator running from Brussels to Berlin - each launch attracted a level of press attention that the actual number of beds hardly justified.\n\nSome of that enthusiasm has run ahead of the finances. A night train is a peculiar business. It carries perhaps three hundred passengers where a high-speed daytime train carries nine hundred; it occupies expensive track at hours when freight operators want it; and it must be assembled, split and reassembled at borders in the small hours by staff paid accordingly. Several of the newer routes have been quietly shortened or dropped, and one much-publicised start-up ran for less than two years before it folded. Ticket prices, to the annoyance of passengers who booked out of principle, are frequently higher than the equivalent flight.\n\nWhat has changed is not really the economics but the argument. Aviation's share of European emissions kept climbing through the 2010s, and in a handful of countries the idea of choosing the slower option acquired a name and a certain social weight. Sweden gave the world the word for it. Governments began to treat the sleeper as something worth subsidising rather than merely tolerating: France restored two overnight routes with public money, the Austrian expansion has been backed by climate budgets, and the European Commission has paid for studies of a continent-wide network.\n\nWhether any of that produces the network the maps promise is another matter. Rolling stock takes years to build; the handful of factories capable of making sleeping carriages have order books stretching into the 2030s; and cross-border rail in Europe remains a tangle of incompatible signalling systems and national ticketing rules that no amount of goodwill dissolves. The romance, though, is doing a surprising amount of work. Ask the people who run these trains what sells the tickets and they rarely mention carbon. They talk about waking as the train comes down through the Alps, about a corridor window at four in the morning, about arriving in the middle of a city rather than on its outskirts - the small pleasures of a form of travel that was very nearly allowed to die.",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "The decision of the German operator to abandon sleepers created an opening for a railway in another country.",
+          "answer": "T",
+          "explanation": "TRUE - Germany 'sold a large part of its fleet' in 2016 and 'the buyer was Austrian', taking over fifteen routes."
+        },
+        {
+          "id": "1.2",
+          "statement": "Austrian managers built their case on the sleeper being quicker than flying.",
+          "answer": "F",
+          "explanation": "FALSE - They argued the opposite: 'a night train does not compete with a two-hour flight on speed, and it never will'."
+        },
+        {
+          "id": "1.3",
+          "statement": "Most passengers on the Austrian night trains are travelling for work.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text reports that passenger numbers rose but never says why people were travelling."
+        },
+        {
+          "id": "1.4",
+          "statement": "Every overnight route launched since 2016 has turned out to be commercially successful.",
+          "answer": "F",
+          "explanation": "FALSE - 'Several of the newer routes have been quietly shortened or dropped', and one start-up 'folded' inside two years."
+        },
+        {
+          "id": "1.5",
+          "statement": "A shortage of manufacturing capacity is one of the obstacles to expanding the network.",
+          "answer": "T",
+          "explanation": "TRUE - The few factories able to build sleeping carriages 'have order books stretching into the 2030s'."
+        },
+        {
+          "id": "1.6",
+          "statement": "The Swedish word for choosing not to fly has been added to English dictionaries.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text says only that 'Sweden gave the world the word for it'; dictionaries are never mentioned."
+        }
+      ],
+      "scoringScheme": {
+        "6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "to decide that something is a failure and no longer worth any effort",
+          "answer": [
+            "written off",
+            "write off",
+            "to write off"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "(of a business) to close down because it is not making enough money",
+          "answer": [
+            "folded",
+            "fold",
+            "to fold"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "the engines and carriages used on a railway",
+          "answer": [
+            "rolling stock"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "the period very early in the morning, just after midnight",
+          "answer": [
+            "the small hours",
+            "in the small hours",
+            "small hours"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "the outer parts of a city, away from its centre",
+          "answer": [
+            "outskirts",
+            "the outskirts",
+            "its outskirts"
+          ]
+        }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}

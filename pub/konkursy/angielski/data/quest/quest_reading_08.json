@@ -1,5 +1,5 @@
 {
-  "title": "The Birthday Party",
+  "title": "The Bet",
   "type": "practice",
   "tasks": [
     {
@@ -7,67 +7,67 @@
       "type": "multiple_choice",
       "points": 6,
       "instruction": "Read the text below. Choose the correct answer A, B or C for each question.",
-      "text": "THE BIRTHDAY PARTY\n\nEmma was turning ten, and she wanted a special party. Her parents decided to have it at Green Hill Park because their flat was too small for all her friends. Mum made a huge chocolate cake with pink candles, and Dad prepared games like a treasure hunt and a water balloon race.\n\nFifteen children came, including Emma's cousin Leo, who travelled from another town. Emma was very happy when she opened her presents. Her favourite gift was a set of watercolour paints from her best friend Mia. She had wanted them for months!\n\nAfter the cake, it started to rain, so everyone ran to the big shelter near the playground. They kept playing games there and nobody wanted to go home. It was the best birthday Emma had ever had.",
+      "text": "THE BET\n\nFilip said he could go a whole month without sugar. He announced it at lunch on the first of March, in front of everyone, which was his first mistake. His second was letting Ola set the terms.\n\n'Nothing with sugar in it,' she said. 'Not sweets, not fizzy drinks, not biscuits, not that cereal you eat. And if you lose, you write the class newsletter for the rest of the year.'\n\n'And if I win?'\n\n'Then I write it.'\n\nNobody expected him to last a week. Filip is the person who keeps chocolate in his pencil case. But by the tenth of March he was still going, reading the back of every packet in the school shop and complaining loudly about how much sugar there is in bread.\n\nThe difficult part, he told me later, was not the sweets. It was that everything else suddenly tasted strange. Fruit seemed sweeter. Tea he had always drunk with two spoonfuls became undrinkable, then, after about two weeks, perfectly normal.\n\nOn the twenty-eighth his grandmother arrived with a cake she had made for his birthday. He ate two slices in front of the whole family and did not mention the bet to anybody.\n\nHe told Ola the truth the next morning. She looked at him for a long moment and then said she would write the newsletter anyway, because anyone who could refuse sugar for twenty-seven days and then admit to failing on the twenty-eighth had already won something.",
       "items": [
         {
           "id": "1.1",
-          "stem": "Why was the party held in a park?",
+          "stem": "Why does the narrator call announcing the bet at lunch Filip's 'first mistake'?",
           "options": [
-            "A) Emma liked parks more than anything.",
-            "B) Their flat did not have enough space.",
-            "C) The park had a swimming pool."
+            "A) He was not allowed to eat in the classroom.",
+            "B) Doing it publicly meant he could not quietly give up.",
+            "C) He forgot to agree what the prize would be."
           ],
           "answer": "B"
         },
         {
           "id": "1.2",
-          "stem": "Who made the birthday cake?",
+          "stem": "What did Filip find hardest about the month?",
           "options": [
-            "A) Emma's dad.",
-            "B) Emma's best friend.",
-            "C) Emma's mum."
+            "A) Giving up sweets and fizzy drinks.",
+            "B) Reading the labels on every packet.",
+            "C) The way familiar food began to taste different."
           ],
           "answer": "C"
         },
         {
           "id": "1.3",
-          "stem": "What can we understand about Leo?",
+          "stem": "What happened on the twenty-eighth of March?",
           "options": [
-            "A) He does not live in the same town as Emma.",
-            "B) He is Emma's classmate.",
-            "C) He gave Emma the watercolour paints."
+            "A) He broke the bet at a family celebration.",
+            "B) He admitted to Ola that he had failed.",
+            "C) His grandmother reminded him about the bet."
           ],
           "answer": "A"
         },
         {
           "id": "1.4",
-          "stem": "Why was the gift from Mia Emma's favourite?",
+          "stem": "Why did Ola decide to write the newsletter herself?",
           "options": [
-            "A) It was the most expensive present.",
-            "B) Mia was her cousin.",
-            "C) Emma had been wanting it for a long time."
-          ],
-          "answer": "C"
-        },
-        {
-          "id": "1.5",
-          "stem": "What happened after they ate the cake?",
-          "options": [
-            "A) The children went home.",
-            "B) The weather changed.",
-            "C) They opened the presents."
+            "A) She had lost the bet on a technicality.",
+            "B) She respected him for owning up.",
+            "C) She had promised his grandmother she would."
           ],
           "answer": "B"
         },
         {
-          "id": "1.6",
-          "stem": "How did the rain affect the party?",
+          "id": "1.5",
+          "stem": "What does 'had already won something' suggest?",
           "options": [
-            "A) It ruined the party completely.",
-            "B) The children stopped playing games.",
-            "C) Everyone moved to a covered area and continued having fun."
+            "A) Filip gained something other than the bet itself.",
+            "B) Filip had in fact won the bet.",
+            "C) Ola thought the terms had been unfair."
           ],
-          "answer": "C"
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "Which word best describes the narrator's attitude to Filip?",
+          "options": [
+            "A) irritated",
+            "B) amused",
+            "C) disappointed"
+          ],
+          "answer": "B"
         }
       ]
     }

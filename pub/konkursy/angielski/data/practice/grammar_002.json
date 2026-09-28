@@ -5,38 +5,56 @@
     {
       "id": "1",
       "type": "grammar_gaps",
-      "points": 6,
+      "points": 12,
       "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
       "items": [
         {
           "id": "1.1",
           "context": "The old castle _________ (build) in the 12th century and _________ (visit) by thousands of tourists every year.",
-          "answer": ["was built", "is visited"]
+          "answer": [
+            "was built",
+            "is visited"
+          ]
         },
         {
           "id": "1.2",
           "context": "We _________ (tell) to wait outside, but nobody _________ (explain) why the meeting had been postponed.",
-          "answer": ["were told", "had been explained, was explained"]
+          "answer": [
+            "were told",
+            "had been explained, was explained"
+          ]
         },
         {
           "id": "1.3",
           "context": "My laptop _________ (repair) right now, so I _________ (lend) one by my classmate until it is ready.",
-          "answer": ["is being repaired", "have ('ve) been lent"]
+          "answer": [
+            "is being repaired",
+            "have ('ve) been lent"
+          ]
         },
         {
           "id": "1.4",
           "context": "She _________ (have / her hair / cut) last Saturday and then _________ (have / her photo / take) for the school yearbook.",
-          "answer": ["had her hair cut", "had her photo taken"]
+          "answer": [
+            "had her hair cut",
+            "had her photo taken"
+          ]
         },
         {
           "id": "1.5",
           "context": "The new sports hall _________ (open) by the mayor next month, and a special ceremony _________ (already / plan).",
-          "answer": ["will be ('ll be) opened, is going to be opened", "has ('s) already been planned"]
+          "answer": [
+            "will be ('ll be) opened, is going to be opened",
+            "has ('s) already been planned"
+          ]
         },
         {
           "id": "1.6",
           "context": "He _________ (not / allow) to enter the competition because his entry form _________ (not / submit) on time.",
-          "answer": ["was not (wasn't) allowed", "had not (hadn't) been submitted"]
+          "answer": [
+            "was not (wasn't) allowed",
+            "had not (hadn't) been submitted"
+          ]
         }
       ]
     }

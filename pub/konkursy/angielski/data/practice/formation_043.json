@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Przedrostek i koncowka naraz (krok 3)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Tu potrzebne sa dwie zmiany naraz: przedrostek przeczacy ORAZ koncowka. Wymagana jest calkowita poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "The evidence is __________ - he was clearly in the room.",
+          "wordBase": "DENY",
+          "answer": [
+            "undeniable"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "The size of the universe is almost __________.",
+          "wordBase": "CONCEIVE",
+          "answer": [
+            "inconceivable"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Her handwriting was __________ even to her own teacher.",
+          "wordBase": "COMPREHEND",
+          "answer": [
+            "incomprehensible"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The twins are __________ unless you hear them speak.",
+          "wordBase": "DISTINGUISH",
+          "answer": [
+            "indistinguishable"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Her talent is __________ - no other player comes close.",
+          "wordBase": "COMPARE",
+          "answer": [
+            "incomparable"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "A good map is __________ when you are walking in the mountains.",
+          "wordBase": "DISPENSE",
+          "answer": [
+            "indispensable"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Rising __________ is the biggest worry for school leavers.",
+          "wordBase": "EMPLOY",
+          "answer": [
+            "unemployment"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "It is __________ that the earth goes round the sun.",
+          "wordBase": "QUESTION",
+          "answer": [
+            "unquestionable"
+          ]
+        }
+      ]
+    }
+  ]
+}

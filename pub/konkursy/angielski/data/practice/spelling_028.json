@@ -1,0 +1,62 @@
+{
+  "title": "Sztuka i kultura (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.8.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa pierwsze litery lub wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The _ _ _ i _ _ _ _ _ _ of Polish posters runs until the end of May.",
+          "hint": "_ _ _ i _ _ _ _ _ _",
+          "answer": "exhibition"
+        },
+        {
+          "id": "1.2",
+          "stem": "The marble _ _ _ l _ _ _ _ _ in the main square was carved in 1780.",
+          "hint": "_ _ _ l _ _ _ _ _",
+          "answer": "sculpture"
+        },
+        {
+          "id": "1.3",
+          "stem": "Critics regard this novel as his greatest _ _ _ t _ _ _ _ e _ _.",
+          "hint": "_ _ _ t _ _ _ _ e _ _",
+          "answer": "masterpiece"
+        },
+        {
+          "id": "1.4",
+          "stem": "The final _ _ _ e _ _ _ _ _ takes place the evening before the premiere.",
+          "hint": "_ _ _ e _ _ _ _ _",
+          "answer": "rehearsal"
+        },
+        {
+          "id": "1.5",
+          "stem": "She painted a _ _ r _ _ _ _ _ of her grandmother in oils.",
+          "hint": "_ _ r _ _ _ _ _",
+          "answer": "portrait"
+        },
+        {
+          "id": "1.6",
+          "stem": "The _ _ _ l _ _ _ _ lasted for a full five minutes after the last song.",
+          "hint": "_ _ _ l _ _ _ _",
+          "answer": "applause"
+        },
+        {
+          "id": "1.7",
+          "stem": "The museum specialises in _ _ _ _ e _ _ _ _ a _ _ art from the last twenty years.",
+          "hint": "_ _ _ _ e _ _ _ _ a _ _",
+          "answer": "contemporary"
+        },
+        {
+          "id": "1.8",
+          "stem": "The _ _ r _ _ _ _ chose which paintings to hang in each room.",
+          "hint": "_ _ r _ _ _ _",
+          "answer": "curator"
+        }
+      ]
+    }
+  ]
+}

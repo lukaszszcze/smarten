@@ -1,0 +1,62 @@
+{
+  "title": "Zdrowie i medycyna (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 8,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.8.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa pierwsze litery lub wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "A high temperature and a sore throat are the most common _ _ m _ _ _ _ _.",
+          "hint": "_ _ m _ _ _ _ _",
+          "answer": "symptoms"
+        },
+        {
+          "id": "1.2",
+          "stem": "You cannot buy this medicine without a _ _ _ _ c _ _ _ _ i _ _ from your doctor.",
+          "hint": "_ _ _ _ c _ _ _ _ i _ _",
+          "answer": "prescription"
+        },
+        {
+          "id": "1.3",
+          "stem": "Chickenpox is highly _ _ _ t _ _ _ _ _ _, so keep him away from the baby.",
+          "hint": "_ _ _ t _ _ _ _ _ _",
+          "answer": "contagious"
+        },
+        {
+          "id": "1.4",
+          "stem": "It took three specialists to reach the correct _ _ _ g _ _ _ _ _.",
+          "hint": "_ _ _ g _ _ _ _ _",
+          "answer": "diagnosis"
+        },
+        {
+          "id": "1.5",
+          "stem": "_ _ _ c _ _ _ _ i _ _ has almost eliminated several childhood diseases.",
+          "hint": "_ _ _ c _ _ _ _ i _ _",
+          "answer": "vaccination"
+        },
+        {
+          "id": "1.6",
+          "stem": "After the operation her _ _ c _ _ _ _ _ was surprisingly quick.",
+          "hint": "_ _ c _ _ _ _ _",
+          "answer": "recovery"
+        },
+        {
+          "id": "1.7",
+          "stem": "The school canteen serves cheap but _ _ _ r _ _ _ _ _ _ meals.",
+          "hint": "_ _ _ r _ _ _ _ _ _",
+          "answer": "nutritious"
+        },
+        {
+          "id": "1.8",
+          "stem": "His ankle was badly _ _ o _ _ _ _ after the fall and he could not walk.",
+          "hint": "_ _ o _ _ _ _",
+          "answer": "swollen"
+        }
+      ]
+    }
+  ]
+}

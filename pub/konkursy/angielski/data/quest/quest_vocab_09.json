@@ -10,39 +10,63 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "The castle was _________. It was built over five hundred years ago.",
-          "options": ["A) modern", "B) ancient", "C) tiny"],
-          "answer": "B"
+          "stem": "The film was three hours long and nothing happened - it was absolutely _________.",
+          "options": [
+            "A) dull",
+            "B) calm",
+            "C) silent"
+          ],
+          "answer": "A"
         },
         {
           "id": "1.2",
-          "stem": "Grandma's apple pie was absolutely _________. We all asked for a second piece.",
-          "options": ["A) disgusting", "B) horrible", "C) delicious"],
-          "answer": "C"
+          "stem": "Be careful with that vase. It is extremely _________ and was very expensive.",
+          "options": [
+            "A) weak",
+            "B) fragile",
+            "C) thin"
+          ],
+          "answer": "B"
         },
         {
           "id": "1.3",
-          "stem": "The elephant at the zoo was _________! It was the biggest animal I've ever seen.",
-          "options": ["A) tiny", "B) enormous", "C) narrow"],
-          "answer": "B"
+          "stem": "Her handwriting is so _________ that even the teacher cannot read it.",
+          "options": [
+            "A) ugly",
+            "B) weak",
+            "C) untidy"
+          ],
+          "answer": "C"
         },
         {
           "id": "1.4",
-          "stem": "The milk in the fridge smelled _________. I think it's gone bad.",
-          "options": ["A) delicious", "B) gorgeous", "C) disgusting"],
-          "answer": "C"
+          "stem": "The guide spoke in a _________ voice so that nobody at the back missed a word.",
+          "options": [
+            "A) clear",
+            "B) noisy",
+            "C) sharp"
+          ],
+          "answer": "A"
         },
         {
           "id": "1.5",
-          "stem": "The baby hamster was so _________ that it could sit on my hand.",
-          "options": ["A) enormous", "B) wide", "C) tiny"],
-          "answer": "C"
+          "stem": "The old bridge looked _________, so we decided to take the longer route.",
+          "options": [
+            "A) unfair",
+            "B) unsafe",
+            "C) unhappy"
+          ],
+          "answer": "B"
         },
         {
           "id": "1.6",
-          "stem": "Their new house is very _________. Everything inside is brand new and high-tech.",
-          "options": ["A) ancient", "B) modern", "C) ugly"],
-          "answer": "B"
+          "stem": "She gave a _________ answer that could have meant almost anything.",
+          "options": [
+            "A) quiet",
+            "B) short",
+            "C) vague"
+          ],
+          "answer": "C"
         }
       ]
     }

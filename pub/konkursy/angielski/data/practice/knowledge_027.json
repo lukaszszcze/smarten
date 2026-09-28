@@ -1,0 +1,63 @@
+{
+  "title": "American History and Presidents (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Odpowiedz na pytania (1.1.-1.5.) dotyczace wiedzy o krajach anglojezycznych. Odpowiadaj po angielsku. W pytaniach oznaczonych 2 pkt nalezy podac dwie informacje.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Which American President delivered the Gettysburg Address?",
+          "answer": [
+            "Abraham Lincoln",
+            "Lincoln"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "In which year did the United States declare independence?",
+          "answer": [
+            "1776"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Who was the first person to walk on the Moon? In which year did it happen?",
+          "answer": [
+            "Neil Armstrong",
+            "Armstrong"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "1969"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+          "answer": [
+            "the Mayflower",
+            "Mayflower"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "Which President was in office during the Cuban Missile Crisis of 1962?",
+          "answer": [
+            "John F. Kennedy",
+            "John Kennedy",
+            "Kennedy",
+            "JFK"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,20 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useUser } from "../../App";
-import StarDisplay from "../../components/StarDisplay";
 import { useDocumentHead } from "../../hooks";
-import { loadProgress, saveProgress, getPlayerTitle, isBranchComplete, isLevelComplete, getHighestUnlockedLevel, fetchRemoteProgress, pushRemoteProgress, mergeProgress } from "../../lib/questProgress";
-import { STARS_TO_UNLOCK, TYPE_LABELS, flattenExercises } from "../../lib/questData";
-import { percentageToStars, computeLevelStars } from "../../lib/questStars";
+import {
+  loadProgress, saveProgress, fetchRemoteProgress, pushRemoteProgress,
+  mergeProgress, recentActivity,
+} from "../../lib/questProgress";
+import {
+  LEVEL_NAMES, MIN_LEVEL, MAX_LEVEL, pickExercise, trackCounts, trackCeiling,
+} from "../../lib/questLevels";
+
+// The quest home screen: one card per track, each showing where she is and one
+// button that starts the next thing.
+//
+// There are no locked levels. The old screen had fifteen of them and her history
+// shows what that produced: stuck three exercises from the end of one branch,
+// replaying the same one seven times to earn the stars to move, and never once
+// opening the other two branches.
 
 export default function QuestHome() {
   const user = useUser();
   const [index, setIndex] = useState(null);
   const [progress, setProgress] = useState(null);
-  const [expanded, setExpanded] = useState({}); // { "vocabulary-2": true }
-  const [showHelp, setShowHelp] = useState(false);
 
-  useDocumentHead("SmartEn Quest", "Fun English practice for young learners");
+  useDocumentHead("SmartEn Quest", "English practice pitched where you are");
 
   useEffect(() => {
     document.body.style.background = "#f8f9fc";
@@ -34,413 +43,251 @@ export default function QuestHome() {
     setProgress(local);
 
     fetchRemoteProgress(user.name).then((remote) => {
-      const merged = remote ? mergeProgress(local, remote) : local;
+      const merged = mergeProgress(local, remote);
       setProgress(merged);
       saveProgress(user.name, merged);
-      pushRemoteProgress(user.name, merged).then((serverResult) => {
-        if (serverResult) {
-          setProgress(serverResult);
-          saveProgress(user.name, serverResult);
+      pushRemoteProgress(user.name, merged).then((fromServer) => {
+        if (fromServer) {
+          setProgress(fromServer);
+          saveProgress(user.name, fromServer);
         }
       });
     });
   }, [user]);
 
+  // Picked once per visit rather than per render, so the button does not point
+  // somewhere new every time the page re-draws.
+  const picks = useMemo(() => {
+    if (!index || !progress) return {};
+    const out = {};
+    for (const track of index.tracks) {
+      const t = progress.tracks[track.id];
+      out[track.id] = pickExercise(index.pool, track.id, t.level, t.seen);
+    }
+    return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, progress?.placement?.date, Object.keys(progress?.tracks || {}).length]);
+
   if (!index || !progress) {
     return <div style={styles.page}><p style={{ color: "#5a5e72" }}>Loading...</p></div>;
   }
 
-  const titleInfo = getPlayerTitle(progress.stars);
+  if (!progress.placement) {
+    return (
+      <div style={styles.page}>
+        <Fonts />
+        <div style={styles.header}>
+          <h1 style={styles.title}>SmartEn Quest</h1>
+        </div>
+        <div style={styles.panel}>
+          <h2 style={styles.panelTitle}>First, where to start you</h2>
+          <p style={styles.lead}>
+            A short test works out your level in four separate things, so reading
+            can be hard while spelling stays gentle. It takes about fifteen
+            minutes and the score is not kept.
+          </p>
+          <Link to="/quest/placement" style={styles.primaryBtn}>Take the test</Link>
+        </div>
+      </div>
+    );
+  }
+
+  const activity = recentActivity(progress, 7);
 
   return (
     <div style={styles.page}>
-      <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fredoka:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
+      <Fonts />
 
-      {/* Header */}
       <div style={styles.header}>
         <h1 style={styles.title}>SmartEn Quest</h1>
-        <p style={styles.subtitle}>Practice English, earn stars, level up!</p>
+        <p style={styles.subtitle}>
+          {activity.exercises === 0
+            ? "Pick anything below and see how it goes."
+            : `${activity.exercises} exercise${activity.exercises === 1 ? "" : "s"} in the last week, on ${activity.days} day${activity.days === 1 ? "" : "s"}.`}
+        </p>
       </div>
 
-      {/* Stars & Title Card */}
-      <div style={styles.starsCard}>
-        <div style={styles.starsTop}>
-          <span style={styles.starsTitle}>{titleInfo.title}</span>
-          <span style={styles.starsCount}>
-            <span style={{ color: "#f59e0b", fontSize: 18 }}>★</span> {progress.stars}
-          </span>
-        </div>
-        <div style={styles.starsBarOuter}>
-          <div style={{ ...styles.starsBarInner, width: `${Math.round(titleInfo.progress * 100)}%` }} />
-        </div>
-        {titleInfo.starsForNext > 0 && (
-          <div style={styles.starsNext}>{titleInfo.starsForNext - titleInfo.starsInLevel} stars to next title</div>
-        )}
-      </div>
-
-      {/* How does it work? */}
-      <button
-        onClick={() => setShowHelp((v) => !v)}
-        style={styles.helpToggle}
-      >
-        How does it work? {showHelp ? "▲" : "▼"}
-      </button>
-      {showHelp && (
-        <div style={styles.helpCard}>
-          <p style={styles.helpText}>
-            <strong>Earn stars</strong> for each exercise you complete:
-          </p>
-          <div style={styles.helpStars}>
-            <span>☆☆☆☆☆ — 0%</span>
-            <span>★☆☆☆☆ — 1–39%</span>
-            <span>★★☆☆☆ — 40–59%</span>
-            <span>★★★☆☆ — 60–79%</span>
-            <span>★★★★☆ — 80–99%</span>
-            <span>★★★★★ — 100%</span>
-          </div>
-          <p style={styles.helpText}>
-            Collect <strong>{STARS_TO_UNLOCK} stars</strong> in a level to unlock the next one.
-            The more stars you earn, the higher your title!
-          </p>
-        </div>
-      )}
-
-      {/* Branch Cards */}
-      <div style={styles.branches}>
-        {index.branches.map((branch) => {
-          const branchProgress = progress.branches[branch.id] || { bestScores: {} };
-          const allExercises = flattenExercises(branch);
-          const completedCount = allExercises.filter(
-            (ex) => ex.id in branchProgress.bestScores
-          ).length;
-          const complete = isBranchComplete(progress, branch.id, branch);
-          const highestUnlocked = getHighestUnlockedLevel(progress, branch.id, branch.levels);
-
+      <div style={styles.tracks}>
+        {index.tracks.map((track) => {
+          const state = progress.tracks[track.id];
+          const counts = trackCounts(index.pool, track.id, state.level, state.seen);
+          const pick = picks[track.id];
           return (
-            <div key={branch.id} style={{ ...styles.branchCard, borderLeftColor: branch.color }}>
-              <div style={styles.branchHeader}>
-                <h2 style={{ ...styles.branchName, color: branch.color }}>{branch.name}</h2>
-                <span style={styles.branchCount}>
-                  {completedCount}/{allExercises.length} done
-                </span>
+            <div key={track.id} style={{ ...styles.card, borderTopColor: track.colour }}>
+              <div style={styles.cardHead}>
+                <h2 style={{ ...styles.trackName, color: track.colour }}>{track.name}</h2>
+                <span style={styles.levelPill}>Level {state.level}</span>
               </div>
+              <p style={styles.blurb}>{track.blurb}</p>
 
-              {/* Levels */}
-              {branch.levels.map((lvl) => {
-                const locked = lvl.level > highestUnlocked;
-                const lvlComplete = isLevelComplete(progress, branch.id, lvl.exercises);
-                const lvlStars = computeLevelStars(branchProgress.bestScores, lvl.exercises);
-                const lvlMaxStars = lvl.exercises.length * 5;
-                const key = `${branch.id}-${lvl.level}`;
-                const isDefaultExpanded = !locked && !lvlComplete;
-                const isExpanded = expanded[key] !== undefined ? expanded[key] : isDefaultExpanded;
+              <Ladder
+                level={state.level}
+                ceiling={trackCeiling(index.pool, track.id)}
+                colour={track.colour}
+              />
+              <p style={styles.levelName}>{LEVEL_NAMES[state.level]}</p>
 
-                return (
-                  <div key={lvl.level} style={{ marginBottom: 4 }}>
-                    <button
-                      onClick={() => {
-                        if (locked) return;
-                        setExpanded((prev) => ({ ...prev, [key]: !isExpanded }));
-                      }}
-                      style={{
-                        ...styles.levelHeader,
-                        cursor: locked ? "default" : "pointer",
-                        opacity: locked ? 0.45 : 1,
-                      }}
-                    >
-                      <span style={styles.levelTitle}>
-                        {locked ? "\u{1F512} " : lvlComplete ? "\u2705 " : ""}
-                        Level {lvl.level}: {lvl.title}
-                      </span>
-                      <span style={styles.levelStars}>
-                        {!locked && (
-                          <span style={{ color: "#f59e0b", fontSize: 12, marginRight: 4 }}>
-                            ★ {lvlStars}/{lvlMaxStars}
-                          </span>
-                        )}
-                        <span style={styles.levelArrow}>
-                          {locked ? "" : isExpanded ? "▲" : "▼"}
-                        </span>
-                      </span>
-                    </button>
-
-                    {isExpanded && !locked && (
-                      <div style={styles.exerciseList}>
-                        {lvl.exercises.map((ex) => {
-                          const best = branchProgress.bestScores[ex.id];
-                          const hasBest = best !== undefined;
-                          const stars = hasBest ? percentageToStars(best) : 0;
-                          return (
-                            <Link
-                              key={ex.id}
-                              to={`/quest/${branch.id}/${ex.id}`}
-                              style={styles.exerciseRow}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.background = "#f0f2f6";
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.background = "transparent";
-                              }}
-                            >
-                              <span style={styles.exerciseTitle}>{ex.title}</span>
-                              <span style={{
-                                ...styles.exerciseScore,
-                                color: hasBest ? "#f59e0b" : "#9ca3af",
-                              }}>
-                                {hasBest ? <StarDisplay count={stars} size={14} letterSpacing={1} /> : "Not started"}
-                              </span>
-                            </Link>
-                          );
-                        })}
-                        {!lvlComplete && (
-                          <div style={styles.unlockHint}>
-                            {STARS_TO_UNLOCK - lvlStars > 0
-                              ? `${STARS_TO_UNLOCK - lvlStars} more star${STARS_TO_UNLOCK - lvlStars === 1 ? "" : "s"} to unlock the next level`
-                              : ""}
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-
-              {complete && (
-                <div style={styles.bridgeCard}>
-                  <p style={styles.bridgeText}>Ready for the real challenge?</p>
-                  <div style={styles.bridgeLinks}>
-                    {branch.bridgeTypes.map((type) => (
-                      <Link key={type} to={`/cwiczenia/${type}`} style={{ ...styles.bridgeLink, color: branch.color }}>
-                        {TYPE_LABELS[type] || type} &rarr;
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+              {pick ? (
+                <>
+                  <Link to={`/quest/${track.id}/${pick.id}`} style={styles.startBtn}>
+                    {state.seen[pick.id] ? "Practise again" : "Start"}
+                  </Link>
+                  <p style={styles.nextTitle}>{pick.title}</p>
+                </>
+              ) : (
+                <p style={styles.nextTitle}>Nothing here yet.</p>
               )}
+
+              <p style={styles.counts}>
+                {counts.done} of {counts.total} done at this level
+              </p>
             </div>
           );
         })}
+      </div>
+
+      <div style={styles.footer}>
+        <Link to="/quest/placement" style={styles.footerLink}>Take the placement test again</Link>
       </div>
     </div>
   );
 }
 
+/** The six levels as a row of blocks, so a level is a position rather than a
+ *  number she has to hold in her head. */
+function Ladder({ level, ceiling, colour }) {
+  const rungs = [];
+  for (let i = MIN_LEVEL; i <= MAX_LEVEL; i++) {
+    // A level this track has no exercises at is drawn hollow, so the ladder does
+    // not promise a step that is not there.
+    const beyondContent = i > ceiling;
+    rungs.push(
+      <div
+        key={i}
+        style={{
+          flex: 1,
+          height: 8,
+          borderRadius: 4,
+          border: beyondContent ? "1px dashed #d1d5db" : "none",
+          background: beyondContent ? "transparent"
+            : i < level ? `${colour}66` : i === level ? colour : "#e5e7eb",
+        }}
+      />
+    );
+  }
+  return <div style={{ display: "flex", gap: 4, margin: "14px 0 6px" }}>{rungs}</div>;
+}
+
+function Fonts() {
+  return (
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  );
+}
+
 const styles = {
   page: {
-    maxWidth: 640,
+    maxWidth: 900,
     margin: "0 auto",
-    padding: "24px 20px 60px",
+    padding: "20px 20px 60px",
     fontFamily: "'DM Sans', sans-serif",
   },
-  header: {
-    textAlign: "center",
-    marginBottom: 28,
-  },
+  header: { marginBottom: 24 },
   title: {
     fontFamily: "'Fredoka', sans-serif",
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: 700,
-    background: "linear-gradient(135deg, #f59e0b, #8b5cf6, #3b82f6)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
+    color: "#1a1a2e",
     marginBottom: 4,
   },
-  subtitle: {
-    fontSize: 15,
-    color: "#5a5e72",
-    fontWeight: 500,
-  },
-  starsCard: {
+  subtitle: { fontSize: 15, color: "#6b7280" },
+  panel: {
     background: "#ffffff",
-    border: "1px solid #e2e4ea",
-    borderRadius: 12,
-    padding: "16px 20px",
-    marginBottom: 16,
+    border: "1px solid #e5e7eb",
+    borderRadius: 16,
+    padding: "28px 32px",
   },
-  starsTop: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 10,
-  },
-  starsTitle: {
+  panelTitle: {
     fontFamily: "'Fredoka', sans-serif",
-    fontWeight: 600,
-    fontSize: 18,
-    color: "#8b5cf6",
-  },
-  starsCount: {
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: 700,
     color: "#1a1a2e",
-  },
-  starsBarOuter: {
-    height: 10,
-    background: "#e5e7eb",
-    borderRadius: 5,
-    overflow: "hidden",
-  },
-  starsBarInner: {
-    height: "100%",
-    background: "linear-gradient(90deg, #f59e0b, #f97316)",
-    borderRadius: 5,
-    transition: "width 0.4s ease",
-  },
-  starsNext: {
-    fontSize: 12,
-    color: "#9ca3af",
-    marginTop: 6,
-    textAlign: "right",
-  },
-  helpToggle: {
-    display: "block",
-    width: "100%",
-    background: "none",
-    border: "none",
-    padding: "8px 0",
-    fontSize: 14,
-    fontWeight: 600,
-    color: "#6b7280",
-    cursor: "pointer",
-    textAlign: "center",
-    fontFamily: "'DM Sans', sans-serif",
     marginBottom: 12,
   },
-  helpCard: {
+  lead: { fontSize: 16, lineHeight: 1.7, color: "#374151", marginBottom: 20 },
+  tracks: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+    gap: 16,
+  },
+  card: {
     background: "#ffffff",
-    border: "1px solid #e2e4ea",
-    borderRadius: 12,
-    padding: "16px 20px",
-    marginBottom: 20,
-  },
-  helpText: {
-    fontSize: 14,
-    color: "#374151",
-    lineHeight: 1.5,
-    margin: "0 0 10px",
-  },
-  helpStars: {
+    border: "1px solid #e5e7eb",
+    borderTop: "4px solid",
+    borderRadius: 14,
+    padding: "20px 22px",
     display: "flex",
     flexDirection: "column",
-    gap: 2,
-    fontSize: 13,
-    color: "#6b7280",
-    padding: "8px 12px",
-    background: "#f8f9fc",
-    borderRadius: 8,
-    marginBottom: 10,
-    fontFamily: "monospace",
   },
-  branches: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 20,
-  },
-  branchCard: {
-    background: "#ffffff",
-    border: "1px solid #e2e4ea",
-    borderLeft: "4px solid",
-    borderRadius: 12,
-    padding: "16px 20px",
-  },
-  branchHeader: {
+  cardHead: {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 12,
+    alignItems: "baseline",
+    gap: 8,
   },
-  branchName: {
+  trackName: {
     fontFamily: "'Fredoka', sans-serif",
-    fontSize: 18,
-    fontWeight: 600,
+    fontSize: 19,
+    fontWeight: 700,
     margin: 0,
   },
-  branchCount: {
+  levelPill: {
+    background: "#f3f4f6",
+    borderRadius: 20,
+    padding: "3px 12px",
     fontSize: 13,
-    fontWeight: 600,
-    color: "#6b7280",
-  },
-  levelHeader: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "100%",
-    padding: "8px 12px",
-    border: "none",
-    borderRadius: 8,
-    background: "#f8f9fc",
-    fontFamily: "'DM Sans', sans-serif",
-    fontSize: 14,
-    fontWeight: 600,
+    fontWeight: 700,
     color: "#374151",
+    whiteSpace: "nowrap",
   },
-  levelTitle: {
-    fontSize: 14,
-    fontWeight: 600,
-  },
-  levelStars: {
-    display: "flex",
-    alignItems: "center",
-    gap: 4,
-  },
-  levelArrow: {
-    fontSize: 10,
-    color: "#9ca3af",
-  },
-  exerciseList: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 2,
-    paddingLeft: 8,
-  },
-  exerciseRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 12px",
-    borderRadius: 8,
-    textDecoration: "none",
-    transition: "background 0.15s",
-  },
-  exerciseTitle: {
-    fontSize: 14,
-    fontWeight: 500,
-    color: "#1a1a2e",
-  },
-  exerciseScore: {
-    fontSize: 13,
-    fontWeight: 600,
-  },
-  unlockHint: {
-    fontSize: 12,
-    color: "#9ca3af",
+  blurb: { fontSize: 14, color: "#6b7280", marginTop: 6, lineHeight: 1.5 },
+  levelName: { fontSize: 13, color: "#6b7280", marginBottom: 16 },
+  startBtn: {
+    display: "block",
     textAlign: "center",
-    padding: "6px 0 2px",
+    background: "linear-gradient(135deg, #22c55e, #3b82f6)",
+    color: "#fff",
+    border: "none",
+    borderRadius: 10,
+    padding: "12px 20px",
+    fontSize: 15,
+    fontWeight: 700,
+    cursor: "pointer",
+    textDecoration: "none",
+    marginTop: "auto",
   },
-  bridgeCard: {
-    marginTop: 12,
-    padding: "12px 16px",
-    background: "#f0fdf4",
-    border: "1px solid #bbf7d0",
-    borderRadius: 8,
-  },
-  bridgeText: {
-    fontSize: 14,
-    fontWeight: 600,
-    color: "#16a34a",
-    marginBottom: 8,
-  },
-  bridgeLinks: {
-    display: "flex",
-    gap: 16,
-    flexWrap: "wrap",
-  },
-  bridgeLink: {
+  nextTitle: {
     fontSize: 13,
+    color: "#4b5563",
+    textAlign: "center",
+    marginTop: 8,
     fontWeight: 600,
+  },
+  counts: { fontSize: 12, color: "#9ca3af", textAlign: "center", marginTop: 6 },
+  footer: { marginTop: 28, textAlign: "center" },
+  footerLink: { fontSize: 13, color: "#6b7280", textDecoration: "underline" },
+  primaryBtn: {
+    display: "inline-block",
+    background: "linear-gradient(135deg, #22c55e, #3b82f6)",
+    color: "#fff",
+    border: "none",
+    borderRadius: 10,
+    padding: "14px 48px",
+    fontSize: 16,
+    fontWeight: 700,
+    cursor: "pointer",
     textDecoration: "none",
   },
 };

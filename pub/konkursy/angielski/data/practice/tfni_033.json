@@ -1,0 +1,85 @@
+{
+  "title": "T/F/NI + Vocabulary: The Case for the Pen (poziom wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 10,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.5.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.6.–1.10. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "THE CASE FOR THE PEN\n\nThe claim turns up every few years, usually in a headline: handwriting is dying, and something important is going with it. It is worth separating the two halves. The first is straightforwardly true in one narrow sense - adults in wealthy countries write by hand far less than their grandparents did, and a great deal of what was once written is now typed. The second is where the evidence becomes interesting, because the case for the pen has turned out to rest on something more specific than nostalgia.\n\nThe best-known study is now more than a decade old. Two American researchers gave university students the same lectures and let half take notes on laptops and half on paper. The laptop group wrote considerably more - they could, because typing is faster - and did just as well when asked to recall facts. On questions that required them to explain a concept, they did noticeably worse. The researchers' explanation was that the very slowness of handwriting forces a choice. You cannot get everything down, so you decide, continuously and largely without noticing, what matters; the laptop group were able to transcribe without deciding anything at all.\n\nThe finding has been repeated, disputed and repeated again, which is the ordinary life of a psychological result. Some attempts to reproduce it have found a smaller effect than the original, and one large study found none. What has held up better is the work on children. Learning to form letters by hand, rather than selecting them from a keyboard, appears to help beginning readers recognise those letters afterwards, and studies using brain imaging have found patterns of activity during handwriting that typing does not produce. Norway, having removed handwriting requirements from parts of its curriculum, has been publicly reconsidering.\n\nMuch of the public argument is not really about handwriting at all, but about one particular kind of it. When a country announces that it is dropping handwriting, what it generally means is the joined-up sort, which stayed in the curriculum long after the pens that made it sensible had gone. The research on early reading does not obviously support teaching it: what appears to matter is the act of forming a letter at all, not whether one letter is joined to the next. Several countries have quietly settled on a compromise, teaching printed letters carefully in the first years and leaving the joined version to those who want it. It is a smaller change than the headlines suggest, and it satisfies almost nobody.\n\nNone of this amounts to a case against keyboards, and the people conducting the research are usually careful to say so. A child with a motor difficulty, for whom forming letters is exhausting, is not helped by being made to do it; typed work is legible, searchable, and can be corrected without despair. The argument is narrower: that handwriting does something specific for memory and for early reading, and that removing it altogether on the grounds that it is old-fashioned is a decision taken without looking at the evidence.\n\nThere is a separate and much less scientific point, which the researchers tend to leave alone and everybody else makes anyway. A handwritten page is a record of a particular person on a particular day. It shows haste, hesitation, the crossing-out that a delete key erases without trace. Archivists point out, gloomily, that the correspondence of the twentieth century survives in a way that the emails of the twenty-first almost certainly will not. Whether that is a loss to literature or merely to historians is arguable. That it is a change of some kind is not.",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "In the original note-taking study, the students using laptops recorded more words than those writing by hand.",
+          "answer": "T",
+          "explanation": "TRUE - 'The laptop group wrote considerably more - they could, because typing is faster'."
+        },
+        {
+          "id": "1.2",
+          "statement": "Every later attempt to repeat the note-taking study has produced the same result as the original.",
+          "answer": "F",
+          "explanation": "FALSE - 'Some attempts to reproduce it have found a smaller effect than the original, and one large study found none'."
+        },
+        {
+          "id": "1.3",
+          "statement": "Norway is having second thoughts about reducing handwriting in its curriculum.",
+          "answer": "T",
+          "explanation": "TRUE - Norway, 'having removed handwriting requirements from parts of its curriculum, has been publicly reconsidering'."
+        },
+        {
+          "id": "1.4",
+          "statement": "The note-taking study was paid for by a company that manufactures pens and paper.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - The text describes who ran the study and what it found, but never mentions who funded it."
+        },
+        {
+          "id": "1.5",
+          "statement": "Schools in the United States now devote fewer hours to handwriting than they did in 2000.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - Adults are said to write by hand less than their grandparents, and Norway's curriculum is mentioned, but American school hours are not."
+        }
+      ],
+      "vocabItems": [
+        {
+          "id": "1.6",
+          "definition": "a fond feeling for the way things used to be",
+          "answer": [
+            "nostalgia"
+          ]
+        },
+        {
+          "id": "1.7",
+          "definition": "to remain true or convincing when it is tested again",
+          "answer": [
+            "held up",
+            "hold up",
+            "to hold up"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "clear enough to be read without difficulty",
+          "answer": [
+            "legible"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "leaving no sign at all that something ever existed",
+          "answer": [
+            "without trace"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "in a way that shows little hope about the future",
+          "answer": [
+            "gloomily"
+          ]
+        }
+      ],
+      "vocabPoints": 5
+    }
+  ]
+}

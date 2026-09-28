@@ -1,0 +1,62 @@
+{
+  "title": "Conditionals, Wishes and the Unreal Past (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "If I _________ (know) about the traffic, I _________ (leave) much earlier.",
+          "answer": [
+            "had known",
+            "would ('d) have left"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "I wish I _________ (not / say) that to her yesterday. She _________ (not / speak) to me since.",
+          "answer": [
+            "had not (hadn't) said",
+            "has not (hasn't) spoken"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "If you _________ (heat) water to 100 degrees, it _________ (boil).",
+          "answer": [
+            "heat",
+            "boils"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "It is high time you _________ (start) revising. The exam _________ (be) in three weeks.",
+          "answer": [
+            "started",
+            "is"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "Supposing you _________ (win) the lottery, what _________ (you / do) with the money?",
+          "answer": [
+            "won",
+            "would you do"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "If only she _________ (listen) to my advice, she _________ (not / be) in this mess now.",
+          "answer": [
+            "had listened",
+            "would not (wouldn't) be"
+          ]
+        }
+      ]
+    }
+  ]
+}

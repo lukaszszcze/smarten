@@ -5,38 +5,56 @@
     {
       "id": "1",
       "type": "grammar_gaps",
-      "points": 6,
+      "points": 12,
       "instruction": "Uzupełnij zdania, wstawiając wyrazy podane w nawiasach w odpowiedniej formie. Wymagana jest pełna poprawność gramatyczna i ortograficzna odpowiedzi.",
       "items": [
         {
           "id": "1.1",
           "context": "By the time we _________ (arrive) at the cinema, the film _________ (already / start), so we missed the beginning.",
-          "answer": ["arrived", "had ('d) already started"]
+          "answer": [
+            "arrived",
+            "had ('d) already started"
+          ]
         },
         {
           "id": "1.2",
           "context": "She _________ (study) Spanish for three years and _________ (just / pass) her first official exam.",
-          "answer": ["has been studying", "has ('s) just passed"]
+          "answer": [
+            "has been studying",
+            "has ('s) just passed"
+          ]
         },
         {
           "id": "1.3",
           "context": "I promise I _________ (finish) my homework before dinner and then I _________ (help) you with the dishes.",
-          "answer": ["will ('ll) have finished", "will ('ll) help"]
+          "answer": [
+            "will ('ll) have finished",
+            "will ('ll) help"
+          ]
         },
         {
           "id": "1.4",
           "context": "When my grandfather was young, he _________ (walk) to school every day because his family _________ (not / own) a car.",
-          "answer": ["walked", "did not (didn't) own"]
+          "answer": [
+            "walked",
+            "did not (didn't) own"
+          ]
         },
         {
           "id": "1.5",
           "context": "Look! The children _________ (build) a snowman in the garden. They _________ (be) outside for two hours already.",
-          "answer": ["are building", "have ('ve) been"]
+          "answer": [
+            "are building",
+            "have ('ve) been"
+          ]
         },
         {
           "id": "1.6",
           "context": "Scientists announced yesterday that they _________ (discover) a new species of frog that _________ (live) deep in the Amazon rainforest.",
-          "answer": ["had ('d) discovered", "lives"]
+          "answer": [
+            "had ('d) discovered",
+            "lives"
+          ]
         }
       ]
     }

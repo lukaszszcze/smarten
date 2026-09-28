@@ -1,0 +1,69 @@
+{
+  "title": "Open Cloze: The Language of Emojis (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "The first set of emojis was drawn in 1999 by a Japanese designer working 1.1. _________ a mobile phone company. There were one hundred and seventy-six of them, each one twelve pixels square, and they were made 1.2. _________ of so few dots that the heart looks, to modern eyes, rather more like a smudge. That original set is now 1.3. _________ display in a museum in New York.\n\nThey spread slowly at first, and the reason was chaos. Every phone company invented its 1.4. _________ and none of them matched, so a smiling face sent from one network could arrive on another 1.5. _________ an empty box, or worse, as something entirely different. The problem was solved only when an international committee agreed 1.6. _________ take charge of the list. It now decides, once a year, which new symbols the world is going to be allowed.\n\nLinguists have been arguing about what emojis actually are 1.7. _________ since. They are clearly not a language: you cannot write a shopping list in them, 1.8. _________ alone a contract, and they have nothing that behaves like grammar. What they seem to do instead is the work that tone of voice and facial expression do in speech, and which plain writing has always struggled 1.9. _________. Adding a wink to a sarcastic sentence is not decoration. It can be the difference 1.10. _________ being understood and starting an argument.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": [
+            "for",
+            "at"
+          ]
+        },
+        {
+          "id": "1.2",
+          "answer": "up"
+        },
+        {
+          "id": "1.3",
+          "answer": "on"
+        },
+        {
+          "id": "1.4",
+          "answer": "own"
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "as",
+            "like"
+          ]
+        },
+        {
+          "id": "1.6",
+          "answer": "to"
+        },
+        {
+          "id": "1.7",
+          "answer": "ever"
+        },
+        {
+          "id": "1.8",
+          "answer": "let"
+        },
+        {
+          "id": "1.9",
+          "answer": "with"
+        },
+        {
+          "id": "1.10",
+          "answer": "between"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

@@ -1,48 +1,74 @@
 {
-  "title": "Bigger and Better",
+  "title": "Comparing Things",
   "type": "practice",
-  "tasks": [{
-    "id": "1",
-    "type": "multiple_choice",
-    "points": 6,
-    "instruction": "Choose the correct answer A, B or C.",
-    "items": [
-      {
-        "id": "1.1",
-        "stem": "An elephant is _________ than a horse.",
-        "options": ["A) big", "B) bigger", "C) biggest"],
-        "answer": "B"
-      },
-      {
-        "id": "1.2",
-        "stem": "Mount Everest is the _________ mountain in the world.",
-        "options": ["A) higher", "B) more high", "C) highest"],
-        "answer": "C"
-      },
-      {
-        "id": "1.3",
-        "stem": "This book is _________ than the film.",
-        "options": ["A) gooder", "B) better", "C) best"],
-        "answer": "B"
-      },
-      {
-        "id": "1.4",
-        "stem": "English is _________ than maths for me. I don't like maths at all.",
-        "options": ["A) more interesting", "B) interestinger", "C) most interesting"],
-        "answer": "A"
-      },
-      {
-        "id": "1.5",
-        "stem": "Monday was bad, but Tuesday was even _________.",
-        "options": ["A) worst", "B) badder", "C) worse"],
-        "answer": "C"
-      },
-      {
-        "id": "1.6",
-        "stem": "She is the _________ runner in our class. Nobody can beat her.",
-        "options": ["A) faster", "B) fastest", "C) more fast"],
-        "answer": "B"
-      }
-    ]
-  }]
+  "tasks": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Choose the correct answer A, B or C.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "The more you practise, _________ you get.",
+          "options": [
+            "A) the better",
+            "B) better",
+            "C) the best"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.2",
+          "stem": "This year's exam was _________ harder than last year's.",
+          "options": [
+            "A) very",
+            "B) much",
+            "C) more"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "stem": "It was _________ the most difficult thing I have ever done.",
+          "options": [
+            "A) by far",
+            "B) far more",
+            "C) much more"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.4",
+          "stem": "He plays the guitar _________ better than I do.",
+          "options": [
+            "A) very",
+            "B) far",
+            "C) most"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "stem": "The _________ we leave, the more traffic we will meet.",
+          "options": [
+            "A) later",
+            "B) latest",
+            "C) more late"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "1.6",
+          "stem": "She is twice _________ old as her cousin.",
+          "options": [
+            "A) so",
+            "B) as",
+            "C) than"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
 }

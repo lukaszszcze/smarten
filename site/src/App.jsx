@@ -9,6 +9,9 @@ import { PracticeList, PracticeTypeList, PracticeExercise } from "./pages/Practi
 import NotFound from "./pages/NotFound";
 import QuestHome from "./pages/quest/QuestHome";
 import QuestExercise from "./pages/quest/QuestExercise";
+import QuestPlacement from "./pages/quest/QuestPlacement";
+import OjajHome from "./pages/ojaj/OjajHome";
+import { OJAJ_PRACTICE_CONFIG, OJAJ_TEST_CONFIG } from "./lib/ojaj";
 
 const USERS = [
   { name: "Tadzio", password: "smart1" },
@@ -99,7 +102,8 @@ function QuestOnlyRoutes() {
       <ScrollToTop />
       <Routes>
         <Route path="/quest" element={<QuestHome />} />
-        <Route path="/quest/:branch/:id" element={<QuestExercise />} />
+        <Route path="/quest/placement" element={<QuestPlacement />} />
+        <Route path="/quest/:track/:id" element={<QuestExercise />} />
         <Route path="*" element={<Navigate to="/quest" replace />} />
       </Routes>
     </Layout>
@@ -117,7 +121,13 @@ function FullRoutes() {
         <Route path="/cwiczenia/:type" element={<PracticeTypeList />} />
         <Route path="/cwiczenia/:type/:id" element={<PracticeExercise />} />
         <Route path="/quest" element={<QuestHome />} />
-        <Route path="/quest/:branch/:id" element={<QuestExercise />} />
+        <Route path="/quest/placement" element={<QuestPlacement />} />
+        <Route path="/quest/:track/:id" element={<QuestExercise />} />
+        {/* OJAJ, the second competition. These sit above /:year/:stage so an
+            OJAJ paper is not mistaken for a kuratoryjny year. */}
+        <Route path="/ojaj" element={<OjajHome />} />
+        <Route path="/ojaj/cwiczenia/:id" element={<PracticeExercise config={OJAJ_PRACTICE_CONFIG} />} />
+        <Route path="/ojaj/:year/:stage" element={<KonkursTest config={OJAJ_TEST_CONFIG} />} />
         <Route path="/:year/:stage" element={<KonkursTest />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

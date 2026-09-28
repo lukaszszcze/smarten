@@ -1,0 +1,66 @@
+{
+  "title": "Open Cloze: The Origins of the Marathon (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "The modern marathon owes its name 1.1. _________ a battle. In 490 BC, according 1.2. _________ the traditional story, a Greek messenger ran from the plain of Marathon to Athens to announce a victory over the Persian army, delivered his news and immediately dropped dead. Historians have never been 1.3. _________ to confirm that the run happened at all, and the earliest surviving account of it was written some six hundred years 1.4. _________ the event itself. In 1.5. _________, the story was simply too good to lose.\n\nWhen the first modern Olympic Games were organised in Athens in 1896, the founders were looking for an event 1.6. _________ would tie the new competition to the ancient world. A French scholar suggested a long race along the road from Marathon, and the idea was taken 1.7. _________ at once. The winner, a Greek water carrier who had never run the distance before, became a national hero overnight.\n\nThe distance we run today, however, has nothing to do 1.8. _________ Greece. For the first few Games it varied by several kilometres, and it was settled almost by accident. At the London Olympics of 1908 the course was measured from Windsor Castle to the royal box inside the stadium, which came to exactly 26 miles and 385 yards, and that figure was later adopted as the standard everywhere. In other words, the classic marathon distance is what it is because 1.9. _________ where a British royal family happened to be sitting. Runners have been paying for that decision 1.10. _________ since.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "to"
+        },
+        {
+          "id": "1.2",
+          "answer": "to"
+        },
+        {
+          "id": "1.3",
+          "answer": "able"
+        },
+        {
+          "id": "1.4",
+          "answer": "after"
+        },
+        {
+          "id": "1.5",
+          "answer": "fact"
+        },
+        {
+          "id": "1.6",
+          "answer": [
+            "that",
+            "which"
+          ]
+        },
+        {
+          "id": "1.7",
+          "answer": "up"
+        },
+        {
+          "id": "1.8",
+          "answer": "with"
+        },
+        {
+          "id": "1.9",
+          "answer": "of"
+        },
+        {
+          "id": "1.10",
+          "answer": "ever"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

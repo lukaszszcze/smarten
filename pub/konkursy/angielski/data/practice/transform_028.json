@@ -1,0 +1,73 @@
+{
+  "title": "Cause, Result and Purpose (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 8,
+      "instruction": "Przeczytaj zdania (1.1.-1.8.). Wykorzystujac wyrazy podane wielkimi literami, uzupelnij kazde zdanie z luka tak, aby precyzyjnie oddac sens zdania wyjsciowego. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna wpisywanych fragmentow zdan. Uwaga: nie zmieniaj formy podanych wyrazow. W kazda luke mozesz wpisac maksymalnie piec wyrazow, wliczajac w to wyraz juz podany. Formy skrocone (np. needn't, they're) sa liczone jako dwa wyrazy.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "He was late because the traffic was heavy.",
+          "keyword": "DUE",
+          "transformed": "He was late _________ traffic.",
+          "answer": "due to the heavy"
+        },
+        {
+          "id": "1.2",
+          "original": "She studied hard so that she would pass the exam.",
+          "keyword": "ORDER",
+          "transformed": "She studied hard _________ the exam.",
+          "answer": "in order to pass"
+        },
+        {
+          "id": "1.3",
+          "original": "The rain caused the match to be cancelled.",
+          "keyword": "RESULT",
+          "transformed": "The match was cancelled _________ the rain.",
+          "answer": "as a result of"
+        },
+        {
+          "id": "1.4",
+          "original": "Nobody could stop him from leaving.",
+          "keyword": "PREVENTED",
+          "transformed": "He _________ leaving by anybody.",
+          "answer": "could not (couldn't) be prevented from"
+        },
+        {
+          "id": "1.5",
+          "original": "They cancelled the trip because of the storm.",
+          "keyword": "OWING",
+          "transformed": "The trip _________ the storm.",
+          "answer": "was cancelled owing to"
+        },
+        {
+          "id": "1.6",
+          "original": "He took an umbrella because he did not want to get wet.",
+          "keyword": "AVOID",
+          "transformed": "He took an umbrella _________ wet.",
+          "answer": [
+            "in order to avoid getting",
+            "so as to avoid getting"
+          ]
+        },
+        {
+          "id": "1.7",
+          "original": "The noise was so loud that I could not sleep.",
+          "keyword": "KEPT",
+          "transformed": "The noise _________ all night.",
+          "answer": "kept me from sleeping"
+        },
+        {
+          "id": "1.8",
+          "original": "She missed the bus, so she was late for work.",
+          "keyword": "CONSEQUENCE",
+          "transformed": "She was late for work _________ missing the bus.",
+          "answer": "as a consequence of"
+        }
+      ]
+    }
+  ]
+}

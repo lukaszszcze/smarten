@@ -1,0 +1,515 @@
+{
+  "title": "Where shall we start?",
+  "type": "placement",
+  "tasks": [
+    {
+      "id": "reading_3",
+      "type": "true_false_ni",
+      "points": 3,
+      "instruction": "Read the text below. Decide if each sentence (1.1-1.4) is True (T), False (F), or if the information is Not In the text (NI).",
+      "text": "THE RISE OF THE BICYCLE\n\nIt is easy to assume that the bicycle arrived more or less as we know it. In fact it took most of a century, and several of the steps along the way look distinctly uncomfortable.\n\nThe first machine a modern rider would recognise as an ancestor appeared in 1817. It had two wheels in line and a seat between them, but no pedals at all: the rider pushed along the ground with both feet and steered with a bar. It was a curiosity rather than transport, and it went out of fashion within a few years.\n\nPedals came later, fixed directly to the front wheel. Because one turn of the pedals meant exactly one turn of that wheel, the only way to travel further with each turn was to make the wheel bigger. This produced the machine most people picture when they hear the word Victorian: an enormous front wheel with a tiny one trailing behind. It was fast on smooth ground and genuinely dangerous everywhere else, since the rider sat high above the axle and almost any obstacle could throw him forward over the handlebars. Riding one was a young man's hobby, and hardly anybody else attempted it.\n\nThe change came in the 1880s, with what its makers called the safety bicycle. Its two wheels were the same modest size, the rider sat between them rather than above one of them, and a chain carried the effort back to the rear wheel. Gearing could now be chosen by the size of the sprockets instead of the size of the wheel. Within a few years the addition of air-filled tyres removed most of the remaining discomfort, and the shape settled into something that has barely changed since.\n\nWhat followed was not merely a new product but a social change. Bicycles were cheap enough for clerks and factory workers, and they made it possible to live several miles from where you worked. They also gave women a form of independent travel that needed no horse, no carriage and nobody's permission, and the clothing that riding demanded became an argument in itself. One American campaigner claimed that the bicycle had done more to free women than anything else in the world.\n\nThe craze of the 1890s eventually cooled, and the motor car took over the roads the bicycle had helped to improve. Yet more bicycles are made each year now than cars, and in several European cities the number of daily journeys made by bicycle is rising again. For a machine that began as a toy with no pedals, that is a long and unusually successful career.",
+      "items": [
+        {
+          "id": "reading_3.1.1",
+          "statement": "The earliest two-wheeled machine described in the text had pedals on its front wheel.",
+          "answer": "F",
+          "explanation": "FALSE - it had 'no pedals at all'. The rider pushed along the ground with both feet."
+        },
+        {
+          "id": "reading_3.1.2",
+          "statement": "The very large front wheel existed because of the way the pedals were connected.",
+          "answer": "T",
+          "explanation": "TRUE - one turn of the pedals meant one turn of the wheel, so a bigger wheel was the only way to travel further per turn."
+        },
+        {
+          "id": "reading_3.1.3",
+          "statement": "The safety bicycle sold more machines in its first year than the high bicycle had.",
+          "answer": "NI",
+          "explanation": "NOT IN THE TEXT - the text describes how the safety bicycle worked but gives no sales figures."
+        },
+        {
+          "id": "reading_3.1.4",
+          "statement": "More bicycles than cars are produced each year today.",
+          "answer": "T",
+          "explanation": "TRUE - 'more bicycles are made each year now than cars'."
+        }
+      ],
+      "scoringScheme": {
+        "4": 3,
+        "3": 2,
+        "2": 1,
+        "0-1": 0
+      },
+      "track": "reading",
+      "probeLevel": 3
+    },
+    {
+      "id": "reading_5",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.–1.6.) sa zgodne z trescia tekstu (T – True), ktore sa niezgodne (F – False), a ktore zawieraja informacje niepodane w tekscie (NI – No Information). Nastepnie znajdz w tekscie wyrazy lub wyrazenia, ktore odpowiadaja definicjom podanym w punktach 1.7.–1.11. Wymagana jest calkowita poprawnosc ortograficzna odpowiedzi.",
+      "text": "WHY BOARD GAMES REFUSE TO DIE\n\nBy any sensible reading of the evidence, the board game should have been finished off some time around 2007. Here was a form of entertainment made of cardboard, requiring four willing humans, a table and an evening, arriving at exactly the moment when everybody acquired a device offering infinite entertainment for one person in any room at any hour. The obituaries were duly written.\n\nWhat happened instead is one of the odder cultural reversals of the past two decades. Global board game sales have grown almost every year since 2010. Games shops have opened in towns that lost their record shops and their bookshops. A category that the industry had spent thirty years treating as a Christmas product for families with young children turned into a hobby with conventions, a specialist press, and designers whose names appear on the box in large type.\n\nThe usual explanation begins in Germany in 1995, with a game about settling an imaginary island. Klaus Teuber's design worked differently from the games most people outside Germany had grown up with. Nobody was eliminated halfway through and left to watch. Luck mattered, but not as much as trading did, and a player who was losing badly at the start could still be in it at the end. The game acquired a cult following among people who had assumed they disliked board games, sold more than thirty million copies, and demonstrated to a generation of designers that there was an audience for something other than rolling a die and moving that many squares.\n\nThe second thing that changed was how a game gets made. A card-and-cardboard product is cheap to prototype and ruinously expensive to manufacture in small quantities, which for decades meant that a new design had to pass through a publisher who was risking a warehouse full of boxes. Crowdfunding removed that gatekeeper more or less overnight. A designer with a good prototype and a video can now find out whether four thousand people want the game before a single copy is printed, which is why a great many titles that no publisher would have touched have taken off since 2012. It is also why a great many extremely peculiar games now exist, which most enthusiasts regard as a feature rather than a problem.\n\nThen there are the cafes. The first, in Toronto, was opened in 2010 by two brothers who could not persuade a bank that the idea was serious. The model is now familiar: several hundred games on shelves, a small charge for the table, a member of staff whose actual job is to work out what four people who have never met would enjoy and then teach it to them in ten minutes. The charge for the table is what pays the rent; selling games to take home is a minor sideline, and several owners have said the shop counter exists mainly because customers kept asking.\n\nAsk designers why any of this happened and most of them end up talking about the table rather than the game. Elizabeth Hargrave, whose game about birds became one of the biggest sellers of recent years, has put it about as well as anyone: a screen is a place you go on your own even when other people are in the room, and a board game is a machine for making four people look at each other for three hours. The components matter for the same reason. Wooden pieces, thick card, the specific noise a handful of dice makes in a cup: the tactile side of it is doing real work, and the games that sell best tend to be the ones that are pleasant to handle.\n\nNone of which means the industry is safe. It is crowded, most new titles sell badly, and a hobby that produces four thousand releases a year has an obvious problem. But against the odds, the thing that was supposed to be swept away by the smartphone has instead spent fifteen years growing, and it did it by offering the one thing the smartphone is worst at.",
+      "items": [
+        {
+          "id": "reading_5.1.1",
+          "statement": "Sales of board games rose during a period when many people expected the opposite.",
+          "answer": "T",
+          "explanation": "TRUE — 'The obituaries were duly written', yet 'global board game sales have grown almost every year since 2010'."
+        },
+        {
+          "id": "reading_5.1.2",
+          "statement": "Klaus Teuber earned more from his island game than from anything else he designed.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text says the game sold more than thirty million copies but never compares his earnings from different designs."
+        },
+        {
+          "id": "reading_5.1.3",
+          "statement": "Board game cafes earn most of their money from selling games for customers to take home.",
+          "answer": "F",
+          "explanation": "FALSE — 'The charge for the table is what pays the rent; selling games to take home is a minor sideline'."
+        },
+        {
+          "id": "reading_5.1.4",
+          "statement": "The designer quoted in the text argues that the appeal lies partly in something a screen cannot provide.",
+          "answer": "T",
+          "explanation": "TRUE — Elizabeth Hargrave is quoted as saying that 'a screen is a place you go on your own even when other people are in the room', unlike a board game."
+        },
+        {
+          "id": "reading_5.1.5",
+          "statement": "Crowdfunding has made it harder for unknown designers to reach players.",
+          "answer": "F",
+          "explanation": "FALSE — Crowdfunding 'removed that gatekeeper more or less overnight', which is why many titles no publisher would have touched have succeeded."
+        },
+        {
+          "id": "reading_5.1.6",
+          "statement": "Most board game cafes are found in university towns.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION — The text describes the first cafe in Toronto and the general model, but never says where such cafes are usually located."
+        }
+      ],
+      "scoringScheme": {
+        "6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      },
+      "vocabItems": [
+        {
+          "id": "1.7",
+          "definition": "a group of people who are extremely enthusiastic about something that is not popular with most people",
+          "answer": [
+            "a cult following",
+            "cult following"
+          ]
+        },
+        {
+          "id": "1.8",
+          "definition": "in spite of great difficulties, when success seemed unlikely",
+          "answer": [
+            "against the odds",
+            "the odds"
+          ]
+        },
+        {
+          "id": "1.9",
+          "definition": "connected with the sense of touch",
+          "answer": [
+            "tactile"
+          ]
+        },
+        {
+          "id": "1.10",
+          "definition": "to suddenly become successful or popular",
+          "answer": [
+            "taken off",
+            "take off",
+            "to take off"
+          ]
+        },
+        {
+          "id": "1.11",
+          "definition": "a person or organisation that controls who is allowed to get in or take part",
+          "answer": [
+            "gatekeeper",
+            "a gatekeeper",
+            "that gatekeeper"
+          ]
+        }
+      ],
+      "vocabPoints": 5,
+      "track": "reading",
+      "probeLevel": 5
+    },
+    {
+      "id": "vocabulary_3",
+      "type": "multiple_choice",
+      "points": 6,
+      "instruction": "Read each sentence and choose what the phrase in it means.",
+      "items": [
+        {
+          "id": "vocabulary_3.1.1",
+          "stem": "We were left in the dark about the changes until the very last day. What does this mean?",
+          "options": [
+            "A) Nobody told us what was happening.",
+            "B) The meeting was held in the evening.",
+            "C) We were not invited to the meeting."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "vocabulary_3.1.2",
+          "stem": "Learning to drive was a steep learning curve for me. What does this mean?",
+          "options": [
+            "A) I practised on hills.",
+            "B) I had to learn a great deal very quickly.",
+            "C) I gave up after a few lessons."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "vocabulary_3.1.3",
+          "stem": "My brother and I do not see eye to eye about politics. What does this mean?",
+          "options": [
+            "A) We are not the same height.",
+            "B) We never discuss politics.",
+            "C) We disagree about it."
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "vocabulary_3.1.4",
+          "stem": "The teacher told us to take his advice with a pinch of salt. What does this mean?",
+          "options": [
+            "A) Not to believe all of it.",
+            "B) To write it down carefully.",
+            "C) To follow it exactly."
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "vocabulary_3.1.5",
+          "stem": "After the argument, Anna decided to bury the hatchet. What does this mean?",
+          "options": [
+            "A) To hide what she had done.",
+            "B) To end the quarrel and be friends again.",
+            "C) To leave and never come back."
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "vocabulary_3.1.6",
+          "stem": "The new school rules went down like a lead balloon. What does this mean?",
+          "options": [
+            "A) They were explained very slowly.",
+            "B) They were difficult to understand.",
+            "C) They were received very badly."
+          ],
+          "answer": "C"
+        }
+      ],
+      "track": "vocabulary",
+      "probeLevel": 3
+    },
+    {
+      "id": "vocabulary_5",
+      "type": "dialogue_choice",
+      "points": 6,
+      "instruction": "Uzupelnij ponizsze dialogi (1.1-1.6), wybierajac brakujace wyrazenie A, B lub C.",
+      "items": [
+        {
+          "id": "vocabulary_5.1.1",
+          "stem": "X: Why wasn't Tomek at training yesterday?\nY: He's ______ down with flu.",
+          "options": [
+            "A) going",
+            "B) coming",
+            "C) falling"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "vocabulary_5.1.2",
+          "stem": "X: Have you booked that dentist's appointment yet?\nY: No, I keep ______ it off.",
+          "options": [
+            "A) taking",
+            "B) leaving",
+            "C) putting"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "vocabulary_5.1.3",
+          "stem": "X: Ania has exactly the same sense of humour as her dad.\nY: I know, she really ______ after him.",
+          "options": [
+            "A) takes",
+            "B) goes",
+            "C) comes"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "vocabulary_5.1.4",
+          "stem": "X: Why did you stop halfway through the recipe?\nY: We ______ out of eggs.",
+          "options": [
+            "A) went",
+            "B) ran",
+            "C) fell"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "vocabulary_5.1.5",
+          "stem": "X: Do you think he'll be punished for copying the homework?\nY: Knowing him, he'll ______ away with it.",
+          "options": [
+            "A) take",
+            "B) run",
+            "C) get"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "vocabulary_5.1.6",
+          "stem": "X: The school trip has been cancelled again.\nY: Really? Who ______ it off this time?",
+          "options": [
+            "A) called",
+            "B) put",
+            "C) turned"
+          ],
+          "answer": "A"
+        }
+      ],
+      "track": "vocabulary",
+      "probeLevel": 5
+    },
+    {
+      "id": "grammar_3",
+      "type": "open_cloze",
+      "points": 6,
+      "instruction": "Read the text below. Fill in each gap (1.1-1.6) with one word to make the text correct.",
+      "text": "Every year, thousands of people take part in a race 1.1. _________ is often described as the toughest in Europe. It is not the distance that makes it hard, 1.2. _________ the weather: competitors set off in the dark and finish, if they finish 1.3. _________ all, well after midnight.\n\nEntries are limited, and applicants are chosen 1.4. _________ the basis of previous results rather than in the order they apply. Organisers say this is done in 1.5. _________ to keep everyone safe. Even so, roughly one runner 1.6. _________ four drops out before the halfway point.",
+      "items": [
+        {
+          "id": "grammar_3.1.1",
+          "answer": [
+            "which",
+            "that"
+          ]
+        },
+        {
+          "id": "grammar_3.1.2",
+          "answer": [
+            "but"
+          ]
+        },
+        {
+          "id": "grammar_3.1.3",
+          "answer": [
+            "at"
+          ]
+        },
+        {
+          "id": "grammar_3.1.4",
+          "answer": [
+            "on"
+          ]
+        },
+        {
+          "id": "grammar_3.1.5",
+          "answer": [
+            "order"
+          ]
+        },
+        {
+          "id": "grammar_3.1.6",
+          "answer": [
+            "in"
+          ]
+        }
+      ],
+      "scoringScheme": {
+        "6": 6,
+        "5": 5,
+        "4": 4,
+        "3": 3,
+        "2": 2,
+        "1": 1,
+        "0": 0
+      },
+      "track": "grammar",
+      "probeLevel": 3
+    },
+    {
+      "id": "grammar_5",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.10) jednym slowem, tak aby powstal spojny i poprawny logicznie oraz gramatycznie tekst.",
+      "text": "Every night, as we sleep, our minds create strange and vivid stories that we call dreams. For thousands of years, people 1.1. _________ wondered what these night-time visions actually mean. Some ancient cultures believed that dreams were messages 1.2. _________ the gods. Today, scientists have a rather different 1.3. _________ of looking at them. According 1.4. _________ many researchers, dreaming helps the brain to sort 1.5. _________ the memories of the day. Most dreams take place during a stage of sleep 1.6. _________ which the eyes move quickly behind closed lids. Although we may dream several times a night, we usually remember very 1.7. _________ of what we have seen. The harder we try to recall a dream, the 1.8. _________ quickly it seems to fade. Some people are even able to control their dreams 1.9. _________ they sleep. Whatever their true purpose, dreams remain one 1.10. _________ the great mysteries of the human mind.",
+      "items": [
+        {
+          "id": "grammar_5.1.1",
+          "answer": "have"
+        },
+        {
+          "id": "grammar_5.1.2",
+          "answer": "from"
+        },
+        {
+          "id": "grammar_5.1.3",
+          "answer": "way"
+        },
+        {
+          "id": "grammar_5.1.4",
+          "answer": "to"
+        },
+        {
+          "id": "grammar_5.1.5",
+          "answer": "out"
+        },
+        {
+          "id": "grammar_5.1.6",
+          "answer": [
+            "during",
+            "in"
+          ]
+        },
+        {
+          "id": "grammar_5.1.7",
+          "answer": "little"
+        },
+        {
+          "id": "grammar_5.1.8",
+          "answer": "more"
+        },
+        {
+          "id": "grammar_5.1.9",
+          "answer": [
+            "as",
+            "while"
+          ]
+        },
+        {
+          "id": "grammar_5.1.10",
+          "answer": "of"
+        }
+      ],
+      "scoringScheme": {
+        "0-1": 0,
+        "2-3": 1,
+        "4-5": 2,
+        "6-7": 3,
+        "8-9": 4,
+        "10": 5
+      },
+      "track": "grammar",
+      "probeLevel": 5
+    },
+    {
+      "id": "spelling_3",
+      "type": "word_spelling",
+      "points": 6,
+      "instruction": "Complete each sentence with one word. The dashes show you the missing letters.",
+      "items": [
+        {
+          "id": "spelling_3.1.1",
+          "stem": "She is extremely _ _ b _ _ _ _ _ _ and wants to run her own company before she is thirty.",
+          "hint": "_ _ b _ _ _ _ _ _",
+          "answer": "ambitious"
+        },
+        {
+          "id": "spelling_3.1.2",
+          "stem": "Tom is completely _ _ _ i _ _ _ _: if he says six o'clock, he means six o'clock.",
+          "hint": "_ _ _ i _ _ _ _",
+          "answer": "reliable"
+        },
+        {
+          "id": "spelling_3.1.3",
+          "stem": "You really should _ _ o _ _ _ _ _ _ to your sister for shouting at her this morning.",
+          "hint": "_ _ o _ _ _ _ _ _",
+          "answer": "apologise"
+        },
+        {
+          "id": "spelling_3.1.4",
+          "stem": "Finishing the marathon was the greatest _ _ _ i _ _ _ m _ _ _ of his life.",
+          "hint": "_ _ _ i _ _ _ m _ _ _",
+          "answer": "achievement"
+        },
+        {
+          "id": "spelling_3.1.5",
+          "stem": "She was _ _ t _ _ _ _ n _ _ to solve the puzzle, even though it took her all weekend.",
+          "hint": "_ _ t _ _ _ _ n _ _",
+          "answer": "determined"
+        },
+        {
+          "id": "spelling_3.1.6",
+          "stem": "Since moving to the city he has become far more _ _ _ e _ _ _ d _ _ _ and does everything himself.",
+          "hint": "_ _ _ e _ _ _ d _ _ _",
+          "answer": "independent"
+        }
+      ],
+      "track": "spelling",
+      "probeLevel": 3
+    },
+    {
+      "id": "spelling_5",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
+      "wordBank": [
+        "BEGIN",
+        "EQUIP",
+        "INVENT",
+        "INCREASE",
+        "RIDE",
+        "COMPETE",
+        "HEAVY",
+        "INTRODUCE",
+        "WHEEL",
+        "METAL"
+      ],
+      "text": "The bicycle has a surprisingly long history. In the 1.1. _________, machines known as 'hobby horses' had no pedals at all, and people simply pushed themselves along with their feet. These early models were not 1.2. _________ with brakes, which made them rather dangerous to use. Several 1.3. _________ across Europe worked to improve the design, and over the following decades bicycles became 1.4. _________ popular. Lighter frames and rubber tyres allowed 1.5. _________ to travel much faster and further than before. Today, professional 1.6. _________ race in famous events such as the Tour de France. The very first bicycles were 1.7. _________ built from solid iron and were exhausting to ride uphill. The 1.8. _________ of air-filled tyres in the 1880s finally made long journeys far more comfortable.",
+      "items": [
+        {
+          "id": "spelling_5.1.1",
+          "baseWord": "BEGIN",
+          "answer": "beginning"
+        },
+        {
+          "id": "spelling_5.1.2",
+          "baseWord": "EQUIP",
+          "answer": "equipped"
+        },
+        {
+          "id": "spelling_5.1.3",
+          "baseWord": "INVENT",
+          "answer": "inventors"
+        },
+        {
+          "id": "spelling_5.1.4",
+          "baseWord": "INCREASE",
+          "answer": "increasingly"
+        },
+        {
+          "id": "spelling_5.1.5",
+          "baseWord": "RIDE",
+          "answer": "riders"
+        },
+        {
+          "id": "spelling_5.1.6",
+          "baseWord": "COMPETE",
+          "answer": "competitors"
+        },
+        {
+          "id": "spelling_5.1.7",
+          "baseWord": "HEAVY",
+          "answer": "heavily"
+        },
+        {
+          "id": "spelling_5.1.8",
+          "baseWord": "INTRODUCE",
+          "answer": "introduction"
+        }
+      ],
+      "track": "spelling",
+      "probeLevel": 5
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "title": "Word Pairs",
+  "title": "Tricky Spellings",
   "type": "practice",
   "tasks": [
     {
@@ -10,39 +10,39 @@
       "items": [
         {
           "id": "1.1",
-          "stem": "There was h _ _ _ _ rain last night and the streets were flooded.",
-          "hint": "_ _ _ _ _",
-          "answer": "heavy"
+          "stem": "He was _ _ _ u _ _ _ _ _ to admit that he had been wrong about the whole thing.",
+          "hint": "_ _ _ u _ _ _ _ _",
+          "answer": "reluctant"
         },
         {
           "id": "1.2",
-          "stem": "Be careful! There is a s _ _ _ _ _ wind blowing today.",
-          "hint": "_ _ _ _ _ _",
-          "answer": "strong"
+          "stem": "It took me nearly an hour to _ _ _ s _ _ _ _ my parents to let me go to the concert.",
+          "hint": "_ _ _ s _ _ _ _",
+          "answer": "persuade"
         },
         {
           "id": "1.3",
-          "stem": "We had f _ _ _ food for lunch because we were in a hurry.",
-          "hint": "_ _ _ _",
-          "answer": "fast"
+          "stem": "We still meet _ _ _ a _ _ _ _ a _ _ _, usually about twice a year, and nothing has changed.",
+          "hint": "_ _ _ a _ _ _ _ a _ _ _",
+          "answer": "occasionally"
         },
         {
           "id": "1.4",
-          "stem": "In big cities, many people use p _ _ _ _ _ transport to get to work.",
-          "hint": "_ _ _ _ _ _",
-          "answer": "public"
+          "stem": "The patient was not _ _ _ _ c _ _ _ _ when the ambulance arrived, but she woke up later.",
+          "hint": "_ _ _ _ c _ _ _ _",
+          "answer": "conscious"
         },
         {
           "id": "1.5",
-          "stem": "We were late because there was a terrible t _ _ _ _ _ _ jam on the motorway.",
-          "hint": "_ _ _ _ _ _ _",
-          "answer": "traffic"
+          "stem": "The price of the school trip includes travel, meals and _ _ _ o _ _ _ _ a _ _ _ _ for four nights.",
+          "hint": "_ _ _ o _ _ _ _ a _ _ _ _",
+          "answer": "accommodation"
         },
         {
           "id": "1.6",
-          "stem": "Anna is my b _ _ _ friend \u2014 we do everything together.",
-          "hint": "_ _ _ _",
-          "answer": "best"
+          "stem": "After three attempts he _ _ e _ _ _ _ l _ _ passed his driving test last Friday.",
+          "hint": "_ _ e _ _ _ _ l _ _",
+          "answer": "eventually"
         }
       ]
     }

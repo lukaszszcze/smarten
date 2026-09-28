@@ -1,0 +1,66 @@
+{
+  "title": "Museums, Art and Architecture (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Odpowiedz na pytania (1.1.-1.5.) dotyczace wiedzy o krajach anglojezycznych. Odpowiadaj po angielsku. W pytaniach oznaczonych 2 pkt nalezy podac dwie informacje.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "In which London museum can you see the Rosetta Stone?",
+          "answer": [
+            "the British Museum",
+            "British Museum"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "Who designed St Paul's Cathedral in London?",
+          "answer": [
+            "Christopher Wren",
+            "Sir Christopher Wren",
+            "Wren"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "What is the name of the modern art gallery on the south bank of the Thames? What kind of building was it before it became a gallery?",
+          "answer": [
+            "Tate Modern",
+            "the Tate Modern"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "a power station",
+            "power station",
+            "a disused power station"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "Which prehistoric stone monument stands on Salisbury Plain?",
+          "answer": [
+            "Stonehenge"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "Which English painter is famous for 'The Fighting Temeraire'?",
+          "answer": [
+            "J. M. W. Turner",
+            "Turner",
+            "William Turner",
+            "JMW Turner"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

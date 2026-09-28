@@ -1,0 +1,69 @@
+{
+  "title": "Open Cloze: Why We Yawn (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "Everybody yawns. Babies do it before they are born, and so 1.1. _________ almost every other animal with a backbone. Yet in 1.2. _________ of how ordinary it is, scientists still cannot agree 1.3. _________ why we do it at all.\n\nThe oldest explanation, and the one most of us were taught at school, is that a yawn drags in extra oxygen at the moment when the blood is running 1.4. _________ on it. This sounds sensible, and it is almost certainly wrong. It has never stood 1.5. _________ to testing: volunteers made to breathe air unusually rich in oxygen went 1.6. _________ yawning exactly as often as everybody else.\n\nA more recent idea is that a yawn cools the brain. Opening the jaw as wide as it will go increases the flow of blood through the head, and the long breath that comes 1.7. _________ it draws in air cooler than the body. Studies have found that people yawn less on very hot days, which is what this theory predicts and what the oxygen theory cannot explain.\n\nWhat nobody disputes is that yawning is catching. Watching somebody else yawn, hearing one over the telephone, or even reading a paragraph such 1.8. _________ this one is usually enough to set it off. Curiously, the effect is strongest between people who know each other well, and it is almost absent in children under four. Some researchers take this 1.9. _________ evidence that contagious yawning has something to do with the ability to share what another person is feeling. If they are right, the least interesting thing about a yawn may be the 1.10. _________ it does for the person who started it.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "does"
+        },
+        {
+          "id": "1.2",
+          "answer": "spite"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "on",
+            "about"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "low"
+        },
+        {
+          "id": "1.5",
+          "answer": "up"
+        },
+        {
+          "id": "1.6",
+          "answer": "on"
+        },
+        {
+          "id": "1.7",
+          "answer": "with"
+        },
+        {
+          "id": "1.8",
+          "answer": "as"
+        },
+        {
+          "id": "1.9",
+          "answer": [
+            "as",
+            "for"
+          ]
+        },
+        {
+          "id": "1.10",
+          "answer": "good"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

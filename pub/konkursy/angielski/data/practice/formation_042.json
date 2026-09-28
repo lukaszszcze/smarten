@@ -1,0 +1,78 @@
+{
+  "title": "Word Formation: Przedrostki dis-, mis-, over- i under- (krok 2: przedrostki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 8,
+      "instruction": "Uzupelnij kazde zdanie jednym wyrazem, przeksztalcajac wyraz podany wielkimi literami obok luki. Kazde zdanie potrzebuje przedrostka, ktory odwraca znaczenie wyrazu. Wymagana jest calkowita poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "I completely __________ with everything he said.",
+          "wordBase": "AGREE",
+          "answer": [
+            "disagree"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "The keys always __________ when I am in a hurry.",
+          "wordBase": "APPEAR",
+          "answer": [
+            "disappear"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "It would be __________ to say the test went well.",
+          "wordBase": "HONEST",
+          "answer": [
+            "dishonest"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Please don't __________ me - I am not angry with you.",
+          "wordBase": "UNDERSTAND",
+          "answer": [
+            "misunderstand"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The trains are so __________ that people wait for the next one.",
+          "wordBase": "CROWDED",
+          "answer": [
+            "overcrowded"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Never __________ how long the journey takes in winter.",
+          "wordBase": "ESTIMATE",
+          "answer": [
+            "underestimate"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "If you __________ again, you will miss the first lesson.",
+          "wordBase": "SLEEP",
+          "answer": [
+            "oversleep"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The __________ of antibiotics is a serious medical problem.",
+          "wordBase": "USE",
+          "answer": [
+            "misuse"
+          ]
+        }
+      ]
+    }
+  ]
+}

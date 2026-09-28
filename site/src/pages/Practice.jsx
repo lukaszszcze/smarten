@@ -4,7 +4,7 @@ import { useDocumentHead } from "../hooks";
 import { useUser } from "../App";
 import StarDisplay from "../components/StarDisplay";
 import TaskRenderer, { AI_CHECKED_TYPES } from "../components/konkursy/TaskRenderer";
-import { scoreTest } from "../lib/scoring";
+import { scoreTest, applyAiResults } from "../lib/scoring";
 import {
   computePracticeStars,
   getPracticeTitle,
@@ -12,6 +12,7 @@ import {
   loadRewards,
   migrateFromAttempts,
   updateBestScore,
+  PRACTICE_POOL,
 } from "../lib/practiceRewards";
 import { percentageToStars } from "../lib/questStars";
 import { makeAttemptId, practiceAttempts } from "../lib/resultsModel";
@@ -67,14 +68,29 @@ function getResultAccent(percentage) {
   return "#e05050";
 }
 
-function useExercises() {
+// The Mazowieckie practice pool, which this player served alone until OJAJ was
+// added. A second pool passes its own config: its own files, its own testId
+// space and its own best scores, so neither pool's stars land in the other's
+// title ladder.
+const PRACTICE_CONFIG = {
+  dataPath: (id) => `/konkursy/angielski/data/practice/${id}.json`,
+  indexPath: "/konkursy/angielski/data/practice/index.json",
+  testIdPrefix: "practice",
+  competition: null,
+  pool: PRACTICE_POOL,
+  showLadder: true,
+  backTo: (type) => (type ? `/cwiczenia/${type}` : "/cwiczenia"),
+  backLabel: "Powrot do listy",
+};
+
+function useExercises(indexPath = PRACTICE_CONFIG.indexPath) {
   const [exercises, setExercises] = useState(null);
   useEffect(() => {
-    fetch("/konkursy/angielski/data/practice/index.json")
+    fetch(indexPath)
       .then((r) => r.json())
       .then(setExercises)
       .catch(console.error);
-  }, []);
+  }, [indexPath]);
   return exercises;
 }
 
@@ -332,25 +348,29 @@ function PracticeTypeList() {
   );
 }
 
-function PracticeExercise() {
+function PracticeExercise({ config = PRACTICE_CONFIG }) {
   const { type, id } = useParams();
   const user = useUser();
   const storageKey = `smarten_konkursy_${user?.name || "default"}`;
-  const exerciseIndex = useExercises();
+  const exerciseIndex = useExercises(config.indexPath);
   const [data, setData] = useState(null);
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
   const [rewardInfo, setRewardInfo] = useState(null);
   const [aiChecking, setAiChecking] = useState(false);
 
+  // The Mazowieckie routes carry the task type in the URL; the OJAJ ones do not,
+  // so fall back to the type the loaded exercise declares.
+  const exerciseType = type || data?.tasks?.[0]?.type || null;
+
   useDocumentHead("Cwiczenie", "Cwiczenie do konkursu angielskiego");
 
   useEffect(() => {
-    fetch(`/konkursy/angielski/data/practice/${id}.json`)
+    fetch(config.dataPath(id))
       .then((r) => r.json())
       .then(setData)
       .catch(console.error);
-  }, [id]);
+  }, [id, config]);
 
   const handleChange = (itemId, value) => {
     setAnswers((prev) => ({ ...prev, [itemId]: value }));
@@ -368,9 +388,10 @@ function PracticeExercise() {
     const entry = {
       attemptId: makeAttemptId(),
       kind: "practice",
-      testId: `practice/${id}`,
+      testId: `${config.testIdPrefix}/${id}`,
+      ...(config.competition ? { competition: config.competition } : {}),
       exerciseId: id,
-      exerciseType: type,
+      exerciseType,
       date: new Date().toISOString(),
       score: res.earned,
       maxScore: res.max,
@@ -386,37 +407,45 @@ function PracticeExercise() {
     };
 
     try {
+      const pool = config.pool;
       const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
       const attempts = Array.isArray(stored.attempts) ? stored.attempts : [];
-      const previousBestScores = stored.rewards?.bestScores
-        ? { ...stored.rewards.bestScores }
-        : migrateFromAttempts(attempts);
+      const previousBestScores = stored[pool.key]?.bestScores
+        ? { ...stored[pool.key].bestScores }
+        : migrateFromAttempts(attempts, pool);
 
       stored.attempts = [...attempts, entry];
-      stored.rewards = {
-        ...(stored.rewards || {}),
+      stored[pool.key] = {
+        ...(stored[pool.key] || {}),
         bestScores: { ...previousBestScores },
       };
 
-      const bestUpdate = updateBestScore(stored, id, res.percentage);
-      const totalStarsBefore = computePracticeStars(previousBestScores);
-      const totalStarsAfter = computePracticeStars(stored.rewards.bestScores);
-      const previousTitle = getPracticeTitle(totalStarsBefore);
-      const nextTitle = getPracticeTitle(totalStarsAfter);
-      const exerciseList = exerciseIndex?.exercises || [];
-      const previousMastery = exerciseList.length > 0
-        ? getTypeMastery(previousBestScores, exerciseList, type)
-        : null;
-      const nextMastery = exerciseList.length > 0
-        ? getTypeMastery(stored.rewards.bestScores, exerciseList, type)
-        : null;
+      const bestUpdate = updateBestScore(stored, id, res.percentage, pool);
 
       rewardSummary = {
         attemptStars,
         starsEarned: Math.max(0, bestUpdate.newStars - bestUpdate.prevStars),
-        masteryUp: previousMastery && nextMastery && nextMastery.level > previousMastery.level ? nextMastery : null,
-        titleUp: nextTitle.title !== previousTitle.title ? nextTitle : null,
+        masteryUp: null,
+        titleUp: null,
       };
+
+      // The title ladder and the mastery levels are calibrated against the
+      // Mazowieckie pool's size, so a pool without them reports stars only.
+      if (config.showLadder) {
+        const previousTitle = getPracticeTitle(computePracticeStars(previousBestScores));
+        const nextTitle = getPracticeTitle(computePracticeStars(stored[pool.key].bestScores));
+        const exerciseList = exerciseIndex?.exercises || [];
+        const previousMastery = exerciseList.length > 0
+          ? getTypeMastery(previousBestScores, exerciseList, exerciseType)
+          : null;
+        const nextMastery = exerciseList.length > 0
+          ? getTypeMastery(stored[pool.key].bestScores, exerciseList, exerciseType)
+          : null;
+
+        rewardSummary.masteryUp =
+          previousMastery && nextMastery && nextMastery.level > previousMastery.level ? nextMastery : null;
+        rewardSummary.titleUp = nextTitle.title !== previousTitle.title ? nextTitle : null;
+      }
 
       localStorage.setItem(storageKey, JSON.stringify(stored));
     } catch (e) {
@@ -459,29 +488,12 @@ function PracticeExercise() {
       )
     );
 
-    let updatedTasks = [...res.tasks];
+    const aiByTaskId = new Map();
     aiTasks.forEach((task, i) => {
       const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
-      if (!aiRes) return;
-      const idx = updatedTasks.findIndex((t) => t.taskId === task.id);
-      if (idx === -1) return;
-      updatedTasks[idx] = {
-        ...updatedTasks[idx],
-        earned: aiRes.earned,
-        max: aiRes.max,
-        skipped: false,
-        items: aiRes.items,
-      };
+      if (aiRes) aiByTaskId.set(task.id, aiRes);
     });
-
-    const earned = updatedTasks.reduce((sum, r) => sum + r.earned, 0);
-    const max = updatedTasks.filter((r) => !r.skipped).reduce((sum, r) => sum + r.max, 0);
-    const finalRes = {
-      earned,
-      max,
-      percentage: max > 0 ? Math.round((earned / max) * 100) : 0,
-      tasks: updatedTasks,
-    };
+    const finalRes = applyAiResults(res, aiByTaskId);
 
     setResult(finalRes);
     setAiChecking(false);
@@ -496,7 +508,7 @@ function PracticeExercise() {
     );
   }
 
-  const backTo = type ? `/cwiczenia/${type}` : "/cwiczenia";
+  const backTo = config.backTo(type);
 
   return (
     <div style={styles.page}>
@@ -505,7 +517,7 @@ function PracticeExercise() {
         rel="stylesheet"
       />
 
-      <Link to={backTo} style={styles.back}>&larr; Powrot do listy</Link>
+      <Link to={backTo} style={styles.back}>&larr; {config.backLabel}</Link>
       <h1 style={styles.title}>{data.title}</h1>
 
       {result && (
@@ -530,7 +542,7 @@ function PracticeExercise() {
 
               {rewardInfo.masteryUp && (
                 <div style={styles.rewardNotice}>
-                  Nowy poziom: {rewardInfo.masteryUp.label} w {TYPE_LABELS[type] || type}!
+                  Nowy poziom: {rewardInfo.masteryUp.label} w {TYPE_LABELS[exerciseType] || exerciseType}!
                 </div>
               )}
 
@@ -593,7 +605,7 @@ function PracticeExercise() {
           >
             Sprobuj ponownie
           </button>
-          <Link to={backTo} style={styles.submitBtn}>Powrot do listy</Link>
+          <Link to={backTo} style={styles.submitBtn}>{config.backLabel}</Link>
         </div>
       )}
     </div>

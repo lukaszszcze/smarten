@@ -1,0 +1,72 @@
+{
+  "title": "Open Cloze: The Rise of the Bicycle (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "open_cloze",
+      "points": 5,
+      "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1.-1.10.) jednym wyrazem, tak aby otrzymac spojny, logiczny i poprawny jezykowo tekst. Wymagana jest calkowita poprawnosc ortograficzna wpisywanych wyrazow.",
+      "text": "The bicycle took a surprisingly long 1.1. _________ to arrive. The wheel had been in use for thousands of years, and yet the first machine 1.2. _________ which a rider could travel any real distance did not appear until 1817. It had no pedals whatsoever: you sat on it and pushed 1.3. _________ the ground with your feet, which is exactly what a small child does on a balance bike today.\n\nPedals were added in the 1860s, fixed directly 1.4. _________ the front wheel, and that single decision is why the wheel then grew enormous. With no chain and no gears, a bigger wheel meant more ground covered 1.5. _________ every turn of the pedals. The result was the penny-farthing: fast, elegant, and dangerous enough that falling off it had its own name. It stayed in fashion for barely twenty years.\n\nWhat replaced it, in 1885, was essentially the bicycle we ride now - two wheels of equal size, pedals in the middle, and a chain carrying the power to the back. Add air-filled tyres three years later and the design was more 1.6. _________ less finished. Very few inventions have survived a century and a 1.7. _________ with so little alteration.\n\nIts social effects were far greater than anybody had expected. A bicycle cost 1.8. _________ less than a horse and needed no feeding, which meant that ordinary people could travel beyond the village they had been born in. It also, 1.9. _________ the annoyance of a good many people, gave women a freedom of movement they had never previously had. One American campaigner claimed that the bicycle had done more to free women 1.10. _________ anything else in the world.",
+      "items": [
+        {
+          "id": "1.1",
+          "answer": "time"
+        },
+        {
+          "id": "1.2",
+          "answer": "on"
+        },
+        {
+          "id": "1.3",
+          "answer": [
+            "against",
+            "off"
+          ]
+        },
+        {
+          "id": "1.4",
+          "answer": "to"
+        },
+        {
+          "id": "1.5",
+          "answer": [
+            "with",
+            "for"
+          ]
+        },
+        {
+          "id": "1.6",
+          "answer": "or"
+        },
+        {
+          "id": "1.7",
+          "answer": "half"
+        },
+        {
+          "id": "1.8",
+          "answer": [
+            "far",
+            "much"
+          ]
+        },
+        {
+          "id": "1.9",
+          "answer": "to"
+        },
+        {
+          "id": "1.10",
+          "answer": "than"
+        }
+      ],
+      "scoringScheme": {
+        "10": 5,
+        "9-8": 4,
+        "7-6": 3,
+        "5-4": 2,
+        "3-2": 1,
+        "0-1": 0
+      }
+    }
+  ]
+}

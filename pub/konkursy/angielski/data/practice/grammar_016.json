@@ -1,0 +1,62 @@
+{
+  "title": "Inversion, Emphasis and Word Order (poziom rejonowy/wojewodzki)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "grammar_gaps",
+      "points": 12,
+      "instruction": "Uzupelnij zdania (1.1.-1.6.), wykorzystujac podane w nawiasach wyrazy w odpowiedniej formie. Nie zmieniaj kolejnosci podanych wyrazow, ale w razie potrzeby dodaj inne wyrazy, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Wymagana jest pelna poprawnosc ortograficzna i gramatyczna.",
+      "items": [
+        {
+          "id": "1.1",
+          "context": "Not only _________ (he / forget) my birthday, but he also _________ (not / apologise).",
+          "answer": [
+            "did he forget",
+            "did not (didn't) apologise"
+          ]
+        },
+        {
+          "id": "1.2",
+          "context": "Never before _________ (I / see) such a crowd, and rarely _________ (a match / be) so exciting.",
+          "answer": [
+            "had I seen",
+            "had a match been"
+          ]
+        },
+        {
+          "id": "1.3",
+          "context": "No sooner _________ (we / sit) down than the fire alarm _________ (go) off.",
+          "answer": [
+            "had we sat",
+            "went"
+          ]
+        },
+        {
+          "id": "1.4",
+          "context": "Little _________ (they / realise) how dangerous it was, nor _________ (they / listen) to our warnings.",
+          "answer": [
+            "did they realise",
+            "did they listen"
+          ]
+        },
+        {
+          "id": "1.5",
+          "context": "Hardly ever _________ (she / complain) about the noise, and seldom _________ (she / ask) for help.",
+          "answer": [
+            "does she complain",
+            "does she ask"
+          ]
+        },
+        {
+          "id": "1.6",
+          "context": "Only after the guests had left _________ (we / notice) the broken vase, and only then _________ (we / understand) what had happened.",
+          "answer": [
+            "did we notice",
+            "did we understand"
+          ]
+        }
+      ]
+    }
+  ]
+}
