@@ -2,8 +2,20 @@
 // POST   /api/results              — append a single new result
 // PUT    /api/results              — merge full attempts array (sync)
 // DELETE /api/results?user=Tadzio  — clear all results for a user
+// DELETE /api/results?user=Tadzio&attemptId=ID — delete one attempt for good
 
 const ALLOWED_USERS = ["Tadzio", "Zosia", "Lidia"];
+
+// Attempts deleted one at a time. Every device keeps its own copy of the
+// attempts and sends the whole list at each sync, so a deleted attempt would
+// come back from any device that still holds it. The server therefore keeps
+// the deleted ids and refuses them; a syncing device adopts the list the
+// server returns, which drops the attempt on that device too.
+const deletedKey = (user) => `deleted:${user}`;
+
+async function loadDeleted(env, user) {
+  return new Set((await env.RESULTS.get(deletedKey(user), "json")) || []);
+}
 
 function normalizeAttempt(raw, index) {
   const a = { ...raw };
@@ -68,9 +80,10 @@ export async function onRequestPost(context) {
     const existing = await context.env.RESULTS.get(key, "json") || [];
     const normalized = normalizeAttempt(entry);
 
-    // Dedupe by attemptId
+    // Dedupe by attemptId, and never store a deleted attempt again
     const isDupe = existing.some((a) => a.attemptId && a.attemptId === normalized.attemptId);
-    if (!isDupe) {
+    const isDeleted = (await loadDeleted(context.env, user)).has(normalized.attemptId);
+    if (!isDupe && !isDeleted) {
       existing.push(normalized);
       await context.env.RESULTS.put(key, JSON.stringify(existing));
     }
@@ -98,7 +111,8 @@ export async function onRequestPut(context) {
     const rawExisting = await context.env.RESULTS.get(key, "json") || [];
     const existing = rawExisting.map ? rawExisting.map((a, i) => normalizeAttempt(a, i)) : [];
 
-    const merged = mergeAttempts(existing, incoming);
+    const deleted = await loadDeleted(context.env, user);
+    const merged = mergeAttempts(existing, incoming).filter((a) => !deleted.has(a.attemptId));
     await context.env.RESULTS.put(key, JSON.stringify(merged));
 
     return Response.json({ ok: true, attempts: merged });
@@ -113,6 +127,18 @@ export async function onRequestDelete(context) {
   if (!user || !ALLOWED_USERS.includes(user)) {
     return Response.json({ error: "invalid user" }, { status: 400 });
   }
-  await context.env.RESULTS.delete(`user:${user}`);
-  return Response.json({ ok: true });
+  const attemptId = url.searchParams.get("attemptId");
+  if (!attemptId) {
+    await context.env.RESULTS.delete(`user:${user}`);
+    return Response.json({ ok: true });
+  }
+
+  const deleted = await loadDeleted(context.env, user);
+  deleted.add(attemptId);
+  await context.env.RESULTS.put(deletedKey(user), JSON.stringify([...deleted]));
+  const key = `user:${user}`;
+  const existing = (await context.env.RESULTS.get(key, "json")) || [];
+  const kept = existing.filter((a) => a.attemptId !== attemptId);
+  await context.env.RESULTS.put(key, JSON.stringify(kept));
+  return Response.json({ ok: true, removed: existing.length - kept.length });
 }

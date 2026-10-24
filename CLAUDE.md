@@ -179,7 +179,7 @@ All inline styles, no CSS files. Dark theme (`#0a0a12` bg). Shared styles in `ta
 
 ## Auth & storage
 
-Simple password gate in App.jsx (hardcoded users). User stored in localStorage as `smarten_user`. Attempt history saved to both localStorage (`smarten_konkursy_{user}`) and Cloudflare KV via `/api/results`.
+Simple password gate in App.jsx (hardcoded users). User stored in localStorage as `smarten_user`. Attempt history saved to both localStorage (`smarten_konkursy_{user}`) and Cloudflare KV via `/api/results`. Every sync sends a device's whole list, so a single attempt is deleted for good with `DELETE /api/results?user={name}&attemptId={id}`: the server keeps the id under `deleted:{user}`, refuses it on later syncs and posts, and each device drops it when it adopts the list the server returns. There is no button for it.
 
 Quest progress stored in localStorage (`smarten_quest_{username}`) and synced to Cloudflare KV (`quest:{username}` key) via `/api/quest-progress`. Server-side merge: highest bestScore wins per exercise, attempts unioned by attemptId. Stars always recomputed from bestScores (never trusted from client). Star system: 0-5 stars per exercise based on percentage (0%→0, 1-39%→1, 40-59%→2, 60-79%→3, 80-99%→4, 100%→5). 9 stars in a level unlocks the next. Global titles from total stars. Allowed users: Tadzio, Zosia, Lidia.
 
