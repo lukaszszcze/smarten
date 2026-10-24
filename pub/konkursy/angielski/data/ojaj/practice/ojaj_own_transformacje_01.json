@@ -1,0 +1,85 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: transformacje (1) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "sentence_transformation",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Wykorzystujac slowa podane wielkimi literami, uzupelnij luki w zdaniach tak, aby zachowac sens zdania wyjsciowego. W kazda luke mozesz wpisac do 6 wyrazow lacznie z wyrazem podanym. Nie wolno zmieniac form podanych slow. Niedopuszczalne sa formy skrocone (isn't, won't, would've itd.). Wymagana jest pelna poprawnosc gramatyczna i ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "original": "It wasn't necessary for you to buy flowers.",
+          "keyword": "NEED",
+          "transformed": "You _________ flowers.",
+          "answer": "need not have bought / did not need to buy"
+        },
+        {
+          "id": "1.2",
+          "original": "I'm sure he didn't take your money.",
+          "keyword": "CANNOT",
+          "transformed": "He _________ your money.",
+          "answer": "cannot have taken"
+        },
+        {
+          "id": "1.3",
+          "original": "It's a pity I didn't go to the party.",
+          "keyword": "WISH",
+          "transformed": "I _________ to the party.",
+          "answer": "wish I had gone"
+        },
+        {
+          "id": "1.4",
+          "original": "People say that the castle is haunted.",
+          "keyword": "SAID",
+          "transformed": "The castle _________ haunted.",
+          "answer": "is said to be"
+        },
+        {
+          "id": "1.5",
+          "original": "She started learning Spanish three years ago.",
+          "keyword": "BEEN",
+          "transformed": "She _________ Spanish for three years.",
+          "answer": "has been learning / has been studying"
+        },
+        {
+          "id": "1.6",
+          "original": "I'd prefer you not to smoke in here.",
+          "keyword": "RATHER",
+          "transformed": "I _________ smoke in here.",
+          "answer": "would rather you did not"
+        },
+        {
+          "id": "1.7",
+          "original": "Perhaps Tom forgot about the meeting.",
+          "keyword": "MAY",
+          "transformed": "Tom _________ about the meeting.",
+          "answer": "may have forgotten"
+        },
+        {
+          "id": "1.8",
+          "original": "Although it was raining, we went for a walk.",
+          "keyword": "DESPITE",
+          "transformed": "We went for a walk _________ raining.",
+          "answer": "despite it / despite the fact that it was / despite the fact it was"
+        },
+        {
+          "id": "1.9",
+          "original": "A mechanic repaired my bike yesterday.",
+          "keyword": "GOT",
+          "transformed": "I _________ yesterday.",
+          "answer": "got my bike repaired"
+        },
+        {
+          "id": "1.10",
+          "original": "The last time I saw Anna was in May.",
+          "keyword": "SEEN",
+          "transformed": "I _________ May.",
+          "answer": "have not seen Anna since"
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import StarDisplay from "../../components/StarDisplay";
 import { loadRewards, OJAJ_POOL } from "../../lib/practiceRewards";
 import { loadAttempts } from "../../lib/resultsModel";
 import { percentageToStars } from "../../lib/questStars";
+import { aoeUnitForPercentage, usesAoeMarks } from "../../lib/aoeRanks";
 import {
   OJAJ_ACCENT,
   OJAJ_INDEX_PATH,
@@ -169,7 +170,13 @@ function ExerciseRow({ exercise, bestPct }) {
             <span style={{ color: "#e8e8f0", fontSize: 15, fontWeight: 600 }}>
               {TYPE_LABELS[exercise.taskType] || exercise.taskType}
             </span>
-            {stars >= 0 && <StarDisplay count={stars} size={14} color="#f5a623" letterSpacing={1} />}
+            {stars >= 0 && (usesAoeMarks(exercise.id) ? (
+              <span style={{ color: "#f5a623", fontSize: 13, fontWeight: 700 }}>
+                {aoeUnitForPercentage(bestPct).icon} {aoeUnitForPercentage(bestPct).name}
+              </span>
+            ) : (
+              <StarDisplay count={stars} size={14} color="#f5a623" letterSpacing={1} />
+            ))}
           </div>
           <div style={{ color: "#5a5a6a", fontSize: 12, marginTop: 2 }}>{exercise.title}</div>
         </div>

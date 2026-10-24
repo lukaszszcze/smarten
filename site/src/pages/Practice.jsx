@@ -4,7 +4,8 @@ import { useDocumentHead } from "../hooks";
 import { useUser } from "../App";
 import StarDisplay from "../components/StarDisplay";
 import TaskRenderer, { AI_CHECKED_TYPES } from "../components/konkursy/TaskRenderer";
-import { scoreTest, applyAiResults } from "../lib/scoring";
+import { scoreTest } from "../lib/scoring";
+import { markWithAi } from "../lib/aiMarking";
 import {
   computePracticeStars,
   getPracticeTitle,
@@ -15,6 +16,7 @@ import {
   PRACTICE_POOL,
 } from "../lib/practiceRewards";
 import { percentageToStars } from "../lib/questStars";
+import { aoeUnitForPercentage, nextAoeUnit, usesAoeMarks } from "../lib/aoeRanks";
 import { makeAttemptId, practiceAttempts } from "../lib/resultsModel";
 
 const TYPE_COLORS = {
@@ -348,6 +350,25 @@ function PracticeTypeList() {
   );
 }
 
+/** The UK quizzes mark a result with an Age of Empires II unit, not stars. */
+function AoeMark({ percentage }) {
+  const unit = aoeUnitForPercentage(percentage);
+  const next = nextAoeUnit(percentage);
+  return (
+    <div style={{ textAlign: "center" }}>
+      <div style={{ fontSize: 44, lineHeight: 1.1 }}>{unit.icon}</div>
+      <div style={{ color: "#f5a623", fontSize: 20, fontWeight: 800, marginTop: 4 }}>
+        {unit.name}
+      </div>
+      <div style={styles.rewardText}>
+        {next
+          ? `Jedna poprawna odpowiedz wiecej: ${next.icon} ${next.name}`
+          : "Najsilniejsza jednostka!"}
+      </div>
+    </div>
+  );
+}
+
 function PracticeExercise({ config = PRACTICE_CONFIG }) {
   const { type, id } = useParams();
   const user = useUser();
@@ -358,6 +379,7 @@ function PracticeExercise({ config = PRACTICE_CONFIG }) {
   const [result, setResult] = useState(null);
   const [rewardInfo, setRewardInfo] = useState(null);
   const [aiChecking, setAiChecking] = useState(false);
+  const [markingFailed, setMarkingFailed] = useState(false);
 
   // The Mazowieckie routes carry the task type in the URL; the OJAJ ones do not,
   // so fall back to the type the loaded exercise declares.
@@ -463,6 +485,7 @@ function PracticeExercise({ config = PRACTICE_CONFIG }) {
 
   const handleSubmit = async () => {
     setRewardInfo(null);
+    setMarkingFailed(false);
     const res = scoreTest(data, answers);
 
     const aiTasks = data.tasks.filter(
@@ -478,25 +501,18 @@ function PracticeExercise({ config = PRACTICE_CONFIG }) {
     setResult(res);
     setAiChecking(true);
 
-    const aiResults = await Promise.allSettled(
-      aiTasks.map((task) =>
-        fetch("/api/check", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ type: task.type, task, answers }),
-        }).then((r) => r.ok ? r.json() : null)
-      )
-    );
+    const { result: finalRes, unmarkedTaskIds } = await markWithAi(res, aiTasks, answers);
+    setAiChecking(false);
 
-    const aiByTaskId = new Map();
-    aiTasks.forEach((task, i) => {
-      const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
-      if (aiRes) aiByTaskId.set(task.id, aiRes);
-    });
-    const finalRes = applyAiResults(res, aiByTaskId);
+    // An open task the AI could not mark would be saved as 0, so nothing is
+    // saved: the answers stay on the page and the learner can check again.
+    if (unmarkedTaskIds.length > 0) {
+      setResult(null);
+      setMarkingFailed(true);
+      return;
+    }
 
     setResult(finalRes);
-    setAiChecking(false);
     setRewardInfo(saveResult(finalRes));
   };
 
@@ -532,13 +548,19 @@ function PracticeExercise({ config = PRACTICE_CONFIG }) {
 
           {!aiChecking && rewardInfo && (
             <div style={styles.rewardSummary}>
-              <div style={styles.rewardRow}>
-                <StarDisplay count={rewardInfo.attemptStars} size={24} color="#f5a623" />
-                <span style={styles.rewardText}>{rewardInfo.attemptStars}/5 gwiazdek za te probe</span>
-                {rewardInfo.starsEarned > 0 && (
-                  <span style={styles.rewardBadge}>+{rewardInfo.starsEarned}★</span>
-                )}
-              </div>
+              {usesAoeMarks(id) ? (
+                <AoeMark percentage={result.percentage} />
+              ) : (
+                <div style={styles.rewardRow}>
+                  <StarDisplay count={rewardInfo.attemptStars} size={24} color="#f5a623" />
+                  <span style={styles.rewardText}>
+                    {rewardInfo.attemptStars}/5 gwiazdek za te probe
+                  </span>
+                  {rewardInfo.starsEarned > 0 && (
+                    <span style={styles.rewardBadge}>+{rewardInfo.starsEarned}★</span>
+                  )}
+                </div>
+              )}
 
               {rewardInfo.masteryUp && (
                 <div style={styles.rewardNotice}>
@@ -587,6 +609,12 @@ function PracticeExercise({ config = PRACTICE_CONFIG }) {
 
       {!result && (
         <div style={{ textAlign: "center", marginTop: 32 }}>
+          {markingFailed && (
+            <p style={{ color: "#f87171", fontSize: 14, marginBottom: 16 }}>
+              Nie udalo sie sprawdzic zadan otwartych. Twoje odpowiedzi zostaly, a wynik
+              nie zostal zapisany. Kliknij "Sprawdz odpowiedzi", zeby sprobowac jeszcze raz.
+            </p>
+          )}
           <button onClick={handleSubmit} style={styles.submitBtn}>Sprawdz odpowiedzi</button>
         </div>
       )}

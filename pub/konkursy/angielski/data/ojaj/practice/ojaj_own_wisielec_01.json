@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (1) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "After the long drought the river was so S __ __ L __ __ W that we could walk across it.",
+          "hint": "S __ __ L __ __ W",
+          "answer": [
+            "shallow"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Please do not touch the paintings: they are P __ __ __ __ L __ __ S, and no amount of money could replace them.",
+          "hint": "P __ __ __ __ L __ __ S",
+          "answer": [
+            "priceless"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Our flight was D __ __ A __ __ D for three hours because of a storm, so we spent the whole afternoon at the airport.",
+          "hint": "D __ __ A __ __ D",
+          "answer": [
+            "delayed"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "I can't stand people who C __ __ __ L __ __ N about everything: the weather, the food, the traffic...",
+          "hint": "C __ __ __ L __ __ N",
+          "answer": [
+            "complain"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The two sisters look so A __ __ K __ that even their parents sometimes mix them up.",
+          "hint": "A __ __ K __",
+          "answer": [
+            "alike"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The court found him G __ __ __ T __ of stealing the car, and he spent two years in prison.",
+          "hint": "G __ __ __ T __",
+          "answer": [
+            "guilty"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "The teacher reminded us that using a phone during the exam would count as C __ __ A __ __ __ G.",
+          "hint": "C __ __ A __ __ __ G",
+          "answer": [
+            "cheating"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "The children were T __ __ __ I __ __ __ D when they heard a strange noise upstairs, and they hid under the blankets.",
+          "hint": "T __ __ __ I __ __ __ D",
+          "answer": [
+            "terrified"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "Thousands of people lost their homes in the giant wave, a T __ __ __ A __ I, that hit the coast after the earthquake.",
+          "hint": "T __ __ __ A __ I",
+          "answer": [
+            "tsunami"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "You must F __ __ T __ __ your seatbelt before the plane takes off.",
+          "hint": "F __ __ T __ __",
+          "answer": [
+            "fasten"
+          ]
+        }
+      ]
+    }
+  ]
+}

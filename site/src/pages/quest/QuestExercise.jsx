@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useUser } from "../../App";
 import { useDocumentHead } from "../../hooks";
-import { scoreTest, applyAiResults } from "../../lib/scoring";
+import { scoreTest } from "../../lib/scoring";
+import { markWithAi } from "../../lib/aiMarking";
 import {
   loadProgress, saveProgress, recordResult, pushRemoteProgress,
 } from "../../lib/questProgress";
@@ -25,6 +26,7 @@ export default function QuestExercise() {
   const [result, setResult] = useState(null);
   const [outcome, setOutcome] = useState(null);
   const [aiChecking, setAiChecking] = useState(false);
+  const [markingFailed, setMarkingFailed] = useState(false);
 
   useDocumentHead("Quest Exercise", "SmartEn Quest exercise");
 
@@ -77,6 +79,7 @@ export default function QuestExercise() {
     // The one-letter allowance is on here and off in the competition players:
     // this is practice, and marking a slip the same as a blank box is what
     // turned a reader who knows the word into someone scoring nothing.
+    setMarkingFailed(false);
     const res = scoreTest(data, answers, { acceptNearMiss: true });
 
     const aiTasks = data.tasks.filter(
@@ -87,23 +90,18 @@ export default function QuestExercise() {
     setResult(res);
     setAiChecking(true);
 
-    const aiResults = await Promise.allSettled(
-      aiTasks.map((task) =>
-        fetch("/api/check", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ type: task.type, task, answers }),
-        }).then((r) => (r.ok ? r.json() : null))
-      )
-    );
-    const aiByTaskId = new Map();
-    aiTasks.forEach((task, i) => {
-      const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
-      if (aiRes) aiByTaskId.set(task.id, aiRes);
-    });
-
+    const { result: finalRes, unmarkedTaskIds } = await markWithAi(res, aiTasks, answers);
     setAiChecking(false);
-    finalize(applyAiResults(res, aiByTaskId));
+
+    // An open task the AI could not mark would be recorded as 0, so nothing is
+    // recorded: the answers stay on the page and the learner can check again.
+    if (unmarkedTaskIds.length > 0) {
+      setResult(null);
+      setMarkingFailed(true);
+      return;
+    }
+
+    finalize(finalRes);
   };
 
   const handleRetry = () => {
@@ -215,6 +213,12 @@ export default function QuestExercise() {
 
       {!result && (
         <div style={{ textAlign: "center", marginTop: 32 }}>
+          {markingFailed && (
+            <p style={{ color: "#b91c1c", fontSize: 14, marginBottom: 16 }}>
+              The open answers could not be checked. Your answers are still here and
+              nothing was saved. Press "Check answers" to try again.
+            </p>
+          )}
           <button onClick={handleSubmit} style={styles.submitBtn}>Check answers</button>
         </div>
       )}

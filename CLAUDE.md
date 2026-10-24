@@ -32,6 +32,7 @@ smarten/
 │   │   │   └── taskStyles.js        # Shared inline styles
 │   │   └── lib/
 │   │       ├── scoring.js           # Auto-scoring for all task types
+│   │       ├── aiMarking.js         # Sends open tasks to /api/check; lists the ones left unmarked
 │   │       ├── questProgress.js     # Quest progress: load/save, stars, KV sync (fetch/push/merge)
 │   │       ├── questData.js         # Quest branch config, star titles, unlock thresholds
 │   │       ├── questStars.js        # Shared star computation (client + server)

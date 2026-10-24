@@ -503,6 +503,38 @@
       "taskCount": 1,
       "points": 10,
       "group": "Wielka Brytania 2026/27 - pytania wlasne do mapy mysli"
+    },
+    {
+      "id": "ojaj_own_wisielec_01",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (1) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_wisielec_02",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (2) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_transformacje_01",
+      "title": "OJAJ etap szkolny 2026/27: transformacje (1) (zadania wlasne)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_transformacje_02",
+      "title": "OJAJ etap szkolny 2026/27: transformacje (2) (zadania wlasne)",
+      "taskType": "sentence_transformation",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
     }
   ]
 }

@@ -92,9 +92,22 @@ function applyScoringScheme(correct, scheme) {
 // open_cloze and word_formation are deliberately NOT here: they score locally
 // by exact match against the answer key (see their switch cases below), so a
 // fully-correct attempt still scores even if the AI endpoint is unavailable.
-// The AI grading layer (see the players) runs on top and can only raise the
+// The AI grading layer (see aiMarking.js) runs on top and can only raise the
 // score by accepting synonyms / spelling variants beyond the key.
 const AI_CHECKED_TYPES = ["sentence_transformation", "grammar_gaps", "writing"];
+
+/**
+ * True for a task whose only marking is the AI: its local score is a
+ * placeholder 0, so it has no real score until /api/check answers.
+ */
+export function isAiOnlyTask(task) {
+  return AI_CHECKED_TYPES.includes(task.type) && !!task.items && task.items.length > 0;
+}
+
+/** True when an /api/check response carries a score that can be merged. */
+export function isUsableAiResult(aiResult) {
+  return !!aiResult && typeof aiResult.earned === "number" && Number.isFinite(aiResult.earned);
+}
 
 function scoreTask(task, userAnswers, options = {}) {
   // Only typed-word answers get the one-letter allowance. A multiple choice or a
@@ -108,7 +121,7 @@ function scoreTask(task, userAnswers, options = {}) {
   const hasItems = task.items && task.items.length > 0;
 
   // AI tasks with items: not skipped, but scored 0 locally (AI will grade them)
-  if (isAIType && hasItems) {
+  if (isAiOnlyTask(task)) {
     return { taskId: task.id, type: task.type, earned: 0, max: task.points, skipped: false, items: [] };
   }
 
@@ -309,11 +322,9 @@ function totalise(taskResults) {
 // correct set always contains the local one; for the types with no local
 // marking at all the local total is 0.
 export function mergeAiTaskResult(localResult, aiResult) {
-  if (!aiResult) return localResult;
-
   // A response we cannot read a score out of is treated as no response.
+  if (!isUsableAiResult(aiResult)) return localResult;
   const aiEarned = aiResult.earned;
-  if (typeof aiEarned !== "number" || !Number.isFinite(aiEarned)) return localResult;
   const aiMax = typeof aiResult.max === "number" && Number.isFinite(aiResult.max)
     ? aiResult.max
     : localResult.max;

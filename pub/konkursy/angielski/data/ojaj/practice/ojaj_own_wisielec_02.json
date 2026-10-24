@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (2) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Uzupelnij brakujace litery. Liczba kreseczek odpowiada liczbie liter w wyrazie. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "The firefighters managed to E __ __ C __ __ __ E everyone from the burning building just in time.",
+          "hint": "E __ __ C __ __ __ E",
+          "answer": [
+            "evacuate"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Her handwriting is so I __ __ __ G __ __ __ E that the teacher asked her to type her essays instead.",
+          "hint": "I __ __ __ G __ __ __ E",
+          "answer": [
+            "illegible"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Scientists carried out an E __ __ __ R __ __ __ N __ to find out whether the new medicine really works.",
+          "hint": "E __ __ __ R __ __ __ N __",
+          "answer": [
+            "experiment"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The volcano had been D __ __ M __ __ T for centuries, so nobody expected it to erupt.",
+          "hint": "D __ __ M __ __ T",
+          "answer": [
+            "dormant"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "He is so S __ I __ G __ that he has never once bought his friends a drink.",
+          "hint": "S __ I __ G __",
+          "answer": [
+            "stingy"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Pieces of W __ __ __ K __ __ E from the crashed plane were found many kilometres away.",
+          "hint": "W __ __ __ K __ __ E",
+          "answer": [
+            "wreckage"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Wearing a helmet is C __ __ __ U __ __ __ R __ on building sites: you cannot go in without one.",
+          "hint": "C __ __ __ U __ __ __ R __",
+          "answer": [
+            "compulsory"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "After the accident he had to learn to walk again, and his R __ __ O __ __ __ Y took almost a year.",
+          "hint": "R __ __ O __ __ __ Y",
+          "answer": [
+            "recovery"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "The new law will P __ __ H __ __ __ T plastic bags, so shops will no longer be allowed to hand them out.",
+          "hint": "P __ __ H __ __ __ T",
+          "answer": [
+            "prohibit"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "My little brother is very C __ __ I __ __ S: he always wants to know how everything works.",
+          "hint": "C __ __ I __ __ S",
+          "answer": [
+            "curious"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,8 @@ import { useDocumentHead } from "../hooks";
 import { useUser } from "../App";
 import StarDisplay from "../components/StarDisplay";
 import TaskRenderer, { AI_CHECKED_TYPES } from "../components/konkursy/TaskRenderer";
-import { scoreTest, applyAiResults } from "../lib/scoring";
+import { scoreTest } from "../lib/scoring";
+import { markWithAi } from "../lib/aiMarking";
 import { percentageToStars } from "../lib/questStars";
 import { makeAttemptId } from "../lib/resultsModel";
 
@@ -37,6 +38,7 @@ export default function KonkursTest({ config = KURATORYJNY }) {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
   const [aiChecking, setAiChecking] = useState(false);
+  const [markingFailed, setMarkingFailed] = useState(false);
   const [started, setStarted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
   const timerRef = useRef(null);
@@ -125,6 +127,7 @@ export default function KonkursTest({ config = KURATORYJNY }) {
 
   const handleSubmit = async () => {
     clearInterval(timerRef.current);
+    setMarkingFailed(false);
     const res = scoreTest(testData, answers);
 
     // Find AI tasks that have items
@@ -142,27 +145,18 @@ export default function KonkursTest({ config = KURATORYJNY }) {
     setResult(res);
     setAiChecking(true);
 
-    // Send AI tasks for grading in parallel
-    const aiResults = await Promise.allSettled(
-      aiTasks.map((task) =>
-        fetch("/api/check", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ type: task.type, task, answers }),
-        }).then((r) => r.ok ? r.json() : null)
-      )
-    );
+    const { result: finalRes, unmarkedTaskIds } = await markWithAi(res, aiTasks, answers);
+    setAiChecking(false);
 
-    // Merge AI results into the score
-    const aiByTaskId = new Map();
-    aiTasks.forEach((task, i) => {
-      const aiRes = aiResults[i].status === "fulfilled" ? aiResults[i].value : null;
-      if (aiRes) aiByTaskId.set(task.id, aiRes);
-    });
-    const finalRes = applyAiResults(res, aiByTaskId);
+    // An open task the AI could not mark would be saved as 0, so nothing is
+    // saved: the answers stay on the page and the learner can check again.
+    if (unmarkedTaskIds.length > 0) {
+      setResult(null);
+      setMarkingFailed(true);
+      return;
+    }
 
     setResult(finalRes);
-    setAiChecking(false);
     saveResult(finalRes);
   };
 
@@ -279,6 +273,12 @@ export default function KonkursTest({ config = KURATORYJNY }) {
 
       {!result && (
         <div style={{ textAlign: "center", marginTop: 32 }}>
+          {markingFailed && (
+            <p style={{ color: "#f87171", fontSize: 14, marginBottom: 16 }}>
+              Nie udalo sie sprawdzic zadan otwartych. Twoje odpowiedzi zostaly, a wynik
+              nie zostal zapisany. Kliknij "Sprawdz odpowiedzi", zeby sprobowac jeszcze raz.
+            </p>
+          )}
           <button onClick={handleSubmit} style={styles.submitBtn}>Sprawdz odpowiedzi</button>
         </div>
       )}
