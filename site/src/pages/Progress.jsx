@@ -7,6 +7,7 @@ import { percentageToStars, clampPercentage } from "../lib/questStars";
 import { competitionAttempts, practiceAttempts, loadAttempts } from "../lib/resultsModel";
 import { syncAttempts, clearRemoteAttempts } from "../lib/resultsSync";
 import { OJAJ_ACCENT, isOjajAttempt } from "../lib/ojaj";
+import { isOnlineAttempt, onlineAttemptLabel } from "../lib/ojajOnline";
 
 const STAGE_LABELS = { szkolny: "Etap szkolny", rejonowy: "Etap rejonowy", wojewodzki: "Etap wojewodzki" };
 const STAGE_COLORS = { szkolny: "#50d890", rejonowy: "#42b4f5", wojewodzki: "#a78bfa" };
@@ -481,21 +482,28 @@ export default function Progress() {
                   const stg = attempt.stage;
                   const yr = attempt.year;
                   const isOjaj = isOjajAttempt(attempt);
-                  const color = STAGE_COLORS[stg] || "#50d890";
+                  // An online test is reached only through the draw, so its row
+                  // is not a link, and it has no stage or year to label it by.
+                  const isOnline = isOnlineAttempt(attempt);
+                  const color = isOnline ? OJAJ_ACCENT : STAGE_COLORS[stg] || "#50d890";
                   const pctColor = attempt.percentage >= 70 ? "#50d890" : attempt.percentage >= 40 ? "#f5a623" : "#e05050";
+                  const Row = isOnline ? "div" : Link;
+                  const rowProps = isOnline
+                    ? {}
+                    : { to: attempt.testId ? `/${attempt.testId}` : `/${yr}/${stg}` };
                   return (
-                    <Link
+                    <Row
                       key={attempt.attemptId || i}
-                      to={attempt.testId ? `/${attempt.testId}` : `/${yr}/${stg}`}
+                      {...rowProps}
                       style={{ ...styles.historyRow, textDecoration: "none" }}
                     >
                       <div style={{ flex: 1 }}>
                         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
                           <span style={{ ...styles.stageBadge, background: color + "20", color }}>
-                            {STAGE_LABELS[stg] || stg}
+                            {isOnline ? "Etap I, cz. II online" : STAGE_LABELS[stg] || stg}
                           </span>
                           <span style={{ color: "#c8c8d8", fontSize: 14, fontWeight: 600 }}>
-                            {yr}
+                            {isOnline ? onlineAttemptLabel(attempt) : yr}
                           </span>
                           {isOjaj && (
                             <span style={{
@@ -527,7 +535,7 @@ export default function Progress() {
                           {attempt.score}/{attempt.maxScore} pkt
                         </div>
                       </div>
-                    </Link>
+                    </Row>
                   );
                 })}
               </div>

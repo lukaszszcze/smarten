@@ -13,7 +13,7 @@ smarten/
 │   ├── 2019-2020/ .. 2025-2026/     # Competition tests by year/stage (szkolny, rejonowy, wojewodzki)
 │   ├── practice/                    # 105 practice exercises + index.json
 │   ├── quest/                       # Quest exercises + index.json (branches, levels)
-│   └── ojaj/                        # OJAJ: index.json, {year}/{stage}.json, practice/
+│   └── ojaj/                        # OJAJ: index.json, {year}/{stage}.json, practice/, online/
 ├── site/                            # React app
 │   ├── src/
 │   │   ├── App.jsx                  # Routes, user auth gate, UserContext
@@ -26,7 +26,8 @@ smarten/
 │   │   │   │   ├── QuestHome.jsx    # Quest dashboard — branches, XP bar, exercise list
 │   │   │   │   └── QuestExercise.jsx # Quest exercise player with XP + KV sync
 │   │   │   └── ojaj/
-│   │   │       └── OjajHome.jsx     # OJAJ section: papers + exercises (players are reused)
+│   │   │       ├── OjajHome.jsx     # OJAJ section: online-test draw, papers, exercises
+│   │   │       └── OjajOnlineTest.jsx # Online test player: one question per screen, like the OJAJ platform
 │   │   ├── components/konkursy/     # Task type renderers (one per type)
 │   │   │   ├── TaskRenderer.jsx     # Dispatches to correct component by task.type
 │   │   │   └── taskStyles.js        # Shared inline styles
@@ -36,7 +37,9 @@ smarten/
 │   │       ├── questProgress.js     # Quest progress: load/save, stars, KV sync (fetch/push/merge)
 │   │       ├── questData.js         # Quest branch config, star titles, unlock thresholds
 │   │       ├── questStars.js        # Shared star computation (client + server)
-│   │       └── ojaj.js              # OJAJ paths, stage labels, player configs, isOjajAttempt
+│   │       ├── resultsSync.js       # saveAttempt (local + POST) and the attempts sync
+│   │       ├── ojaj.js              # OJAJ paths, stage labels, player configs, isOjajAttempt
+│   │       └── ojajOnline.js        # Online tests: the draw, screens, clock, player rules, marking
 │   ├── functions/api/               # Cloudflare Pages Functions (serverless)
 │   │   ├── check.js                 # AI grading via Claude API (Haiku/Sonnet)
 │   │   ├── results.js               # KV-backed competition results storage
@@ -98,8 +101,8 @@ code and both players; what differs is the data root each player is pointed at.
 | Level | B1-C1 | B2-C1+ |
 | Stages | szkolny / rejonowy / wojewodzki | szkolny / okregowy / final |
 | Data | `data/{year}/{stage}.json`, `data/practice/` | `data/ojaj/` |
-| Routes | `/:year/:stage`, `/cwiczenia/:type/:id` | `/ojaj`, `/ojaj/:year/:stage`, `/ojaj/cwiczenia/:id` |
-| Attempt testId | `{year}/{stage}`, `practice/{id}` | `ojaj/{year}/{stage}`, `ojaj/practice/{id}` |
+| Routes | `/:year/:stage`, `/cwiczenia/:type/:id` | `/ojaj`, `/ojaj/:year/:stage`, `/ojaj/cwiczenia/:id`, `/ojaj/online/:id` |
+| Attempt testId | `{year}/{stage}`, `practice/{id}` | `ojaj/{year}/{stage}`, `ojaj/practice/{id}`, `ojaj/online/{id}` |
 | Best scores | `stored.rewards.bestScores` | `stored.ojajRewards.bestScores` |
 
 `KonkursTest` and `PracticeExercise` each take a `config` prop that defaults to
@@ -109,19 +112,39 @@ kuratoryjny averages, charts and star ladder — the two are marked on different
 scales, so averaging them together describes neither. The history lists on
 `/postepy` still show every attempt, each labelled and linked to its own paper.
 
-OJAJ holds three timed papers (2022/23 grupa A and B, 2024/25) and 58 practice
-exercises. Five of them (`ojaj_uk_*`) are not from a published paper: they are
-the app's own questions on the 2026/27 UK-culture mind map, and their titles say
-so. A year with two papers of the same stage needs two route slugs
+OJAJ holds three timed papers (2022/23 grupa A and B, 2024/25) and 62 practice
+exercises. Nine of the exercises are not from a published paper, and their
+titles say so: five (`ojaj_uk_*`) are the app's own questions on the 2026/27
+UK-culture mind map, four (`ojaj_own_*`) are own wisielec and transformation
+sets. A year with two papers of the same stage needs two route slugs
 (`szkolny-a`, `szkolny-b`), which are not readable names, so those papers and
 their index entries carry a `label` that `KonkursTest` and `ojajStageTitle()`
 prefer. Exercises may carry a `group`, which is the source paper; `OjajHome`
 puts a heading above each run of them.
 
+Online tests rehearse etap I, czesc II, the 45-question online test the real
+olympiad generates for each student from an unpublished pool (terms in
+`CONTEXT.md`). The vault (`data/ojaj/online/NN.json`, listed under `online` in
+`ojaj/index.json`) holds own items only. The OJAJ page does not list the tests:
+"Losuj test" syncs the attempts and draws one, unseen first, then least done
+(`drawOnlineTest`). `OjajOnlineTest` copies the platform: one question per
+screen, "Nastepne", a panel that jumps to any question, no "Poprzednie",
+"Zatwierdz wszystkie i zakoncz" with a confirmation, and a submit at 0:00. It
+gives each screen its task cut down to one item, so the renderers are reused,
+and keeps every screen mounted so a multiple choice keeps its option order.
+Only the transformations go to `/api/check`; the other tasks are marked on the
+key alone, as the platform marks, and those keys are strict on purpose. Answers
+lock at the submit, and a failed AI marking offers a retry and saves nothing
+until it succeeds. History rows for online tests are not links.
+
 OJAJ data is built by `tmp/_gen_ojaj.py` from the papers published at
 ojaj.wsjo.pl, checked by `tmp/_val_ojaj.mjs` (the answer key must score full
 marks), `tmp/_render_ojaj.sh` (every task renders with its content visible) and
-`tmp/_audit_ojaj.py` (no extraction leftovers, no item served twice).
+`tmp/_audit_ojaj.py` (no extraction leftovers, no item served twice). The online
+tests' items live in `tmp/_ojaj_online.py`, which checks them (level profile,
+blank and keyword rules, nothing already in the app or the vault) and prints a
+review copy; `_gen_ojaj.py` writes them. `tmp/_e2e_online.mjs` clicks through
+the player in a browser with the API mocked.
 `tmp/_peek_ojaj.sh <id>...` prints what a student sees for named exercises. The
 generator's docstring lists the papers not yet converted and why.
 
@@ -143,6 +166,8 @@ the key has all of those but no answers.
 ## Data format
 
 Competition test: `{ year, stage, date, maxPoints, timeMinutes, tasks: [...] }`
+
+OJAJ online test: `{ competition: "ojaj", kind: "online", id, label, maxPoints: 45, timeMinutes: 45, tasks: [...] }`, item ids "1"-"45" (the question numbers), each item of tasks 1-4 tagged with `level` and, for idioms, collocations and phrasal verbs, `focus`
 
 Practice exercise: `{ title, type: "practice", tasks: [{ id, type, points, instruction, items, scoringScheme?, openQuestion? }] }`
 

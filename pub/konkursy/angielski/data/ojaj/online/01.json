@@ -1,0 +1,496 @@
+{
+  "competition": "ojaj",
+  "kind": "online",
+  "id": "01",
+  "label": "Test online 01",
+  "maxPoints": 45,
+  "timeMinutes": 45,
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "W każdą z luk wpisz odpowiednie słowo przekształcając wyraz podany na końcu zdania drukowanymi literami. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: The __________ (SERVE) in this restaurant was absolutely appalling. — prawidłowa odpowiedź: SERVICE",
+      "items": [
+        {
+          "id": "1",
+          "sentence": "After the renovation our old school was almost __________: nobody could believe it was the same building.",
+          "wordBase": "RECOGNISE",
+          "answer": [
+            "unrecognisable",
+            "unrecognizable"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "2",
+          "sentence": "These new shoes are so __________ that I can hardly walk in them.",
+          "wordBase": "COMFORT",
+          "answer": [
+            "uncomfortable"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "3",
+          "sentence": "When the singer walked onto the stage right in front of us, my sister was completely __________: she just stood there with her mouth open.",
+          "wordBase": "SPEAK",
+          "answer": [
+            "speechless"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "4",
+          "sentence": "He went red with __________ when he realised that everyone on the bus had heard him singing.",
+          "wordBase": "EMBARRASS",
+          "answer": [
+            "embarrassment"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "5",
+          "sentence": "The flood caused __________ damage to the old church, and it will never look the same again.",
+          "wordBase": "REPAIR",
+          "answer": [
+            "irreparable"
+          ],
+          "level": "C2"
+        },
+        {
+          "id": "6",
+          "sentence": "Stop being so __________! You are fourteen, not four.",
+          "wordBase": "CHILD",
+          "answer": [
+            "childish"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "7",
+          "sentence": "My brother is the most __________ person I know: it takes him twenty minutes to choose an ice-cream flavour.",
+          "wordBase": "DECIDE",
+          "answer": [
+            "indecisive"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "8",
+          "sentence": "The view from the top of the mountain was __________: I will remember it for the rest of my life.",
+          "wordBase": "FORGET",
+          "answer": [
+            "unforgettable"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "9",
+          "sentence": "Mum shook her head in __________ when she saw the mess in my room.",
+          "wordBase": "APPROVE",
+          "answer": [
+            "disapproval"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "10",
+          "sentence": "I __________ deleted all my holiday photos when I was trying to free up some space on my phone.",
+          "wordBase": "ACCIDENT",
+          "answer": [
+            "accidentally"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Wpisz słowo poprawnie uzupełniające każde ze zdań. Liczba kreseczek odpowiada liczbie liter w słowie. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: She asked for a(n) __ __ e __ __ __ i __ (8) type of flower for her bouquet. — prawidłowa odpowiedź: SPECIFIC",
+      "items": [
+        {
+          "id": "11",
+          "sentence": "I'm feeling a bit under the w __ a __ h __ r (7) today, so I think I'll stay in bed.",
+          "hint": "w __ a __ h __ r (7)",
+          "answer": [
+            "weather"
+          ],
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "12",
+          "sentence": "I'm d __ f __ __ __ t __ l __ (10) coming to your party on Saturday: I wouldn't miss it for anything!",
+          "hint": "d __ f __ __ __ t __ l __ (10)",
+          "answer": [
+            "definitely"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "13",
+          "sentence": "The mosquitoes were a real n __ __ s __ __ c __ (8) on our camping trip: nobody could sleep.",
+          "hint": "n __ __ s __ __ c __ (8)",
+          "answer": [
+            "nuisance"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "14",
+          "sentence": "Don't e __ __ g __ e __ __ t __ (10)! It was only a small spider, not a giant one.",
+          "hint": "e __ __ g __ e __ __ t __ (10)",
+          "answer": [
+            "exaggerate"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "15",
+          "sentence": "After an hour of arguing about which film to watch, my parents finally reached a c __ m __ r __ __ __ s __ (10): we watched half of each.",
+          "hint": "c __ m __ r __ __ __ s __ (10)",
+          "answer": [
+            "compromise"
+          ],
+          "level": "C1",
+          "focus": "collocation"
+        },
+        {
+          "id": "16",
+          "sentence": "The jeweller told us that the ring was not g __ n u __ __ __ (7): the stones were only coloured glass.",
+          "hint": "g __ n u __ __ __ (7)",
+          "answer": [
+            "genuine"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "17",
+          "sentence": "I think I've b __ t t __ __ (6) off more than I can chew: I've joined four clubs and I have no time left for homework.",
+          "hint": "b __ t t __ __ (6)",
+          "answer": [
+            "bitten"
+          ],
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "18",
+          "sentence": "My little brother is so g __ l l __ __ __ e (8) that he believed me when I told him that spaghetti grows on trees.",
+          "hint": "g __ l l __ __ __ e (8)",
+          "answer": [
+            "gullible"
+          ],
+          "level": "C2"
+        },
+        {
+          "id": "19",
+          "sentence": "My grandma paid me a c __ __ __ l i __ __ n __ (10) on my new haircut, which really made my day.",
+          "hint": "c __ __ __ l i __ __ n __ (10)",
+          "answer": [
+            "compliment"
+          ],
+          "level": "B2",
+          "focus": "collocation"
+        },
+        {
+          "id": "20",
+          "sentence": "The comedy we watched last night was absolutely h __ l __ r __ __ __ s (9): we laughed from beginning to end.",
+          "hint": "h __ l __ r __ __ __ s (9)",
+          "answer": [
+            "hilarious"
+          ],
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "sentence_transformation",
+      "points": 10,
+      "instruction": "Wykorzystując podane słowa (wyróżnione pogrubionym drukiem), należy uzupełnić luki w zdaniach tak, aby zachować sens zdania wyjściowego. Można wpisać do sześciu słów, wliczając w to wyraz wymagany. Słów podanych nie wolno w żaden sposób zmieniać. Niedopuszczalne są formy skrócone (isn't, won't, would've itd.). Konieczna jest pełna poprawność gramatyczna i ortograficzna wpisywanych fraz.",
+      "items": [
+        {
+          "id": "21",
+          "original": "I am hungry now because I did not have breakfast.",
+          "keyword": "HAD",
+          "transformed": "I would not be hungry now _________ breakfast.",
+          "answer": "if I had had / if I had eaten",
+          "level": "C1"
+        },
+        {
+          "id": "22",
+          "original": "Everyone expects you to be at school by eight o'clock.",
+          "keyword": "SUPPOSED",
+          "transformed": "You _________ at school by eight o'clock.",
+          "answer": "are supposed to be",
+          "level": "B2"
+        },
+        {
+          "id": "23",
+          "original": "I have two older brothers. They both play in the school band.",
+          "keyword": "BOTH",
+          "transformed": "I have two older brothers, _________ play in the school band.",
+          "answer": "both of whom",
+          "level": "C1"
+        },
+        {
+          "id": "24",
+          "original": "The box was so heavy that I could not lift it.",
+          "keyword": "TOO",
+          "transformed": "The box was _________ lift.",
+          "answer": "too heavy for me to",
+          "level": "B1"
+        },
+        {
+          "id": "25",
+          "original": "I had no idea that my friends were planning a surprise party for me.",
+          "keyword": "LITTLE",
+          "transformed": "_________ my friends were planning a surprise party for me.",
+          "answer": "Little did I know that / Little did I know / Little did I realise that / Little did I realise / Little did I realize that / Little did I realize / Little did I suspect that / Little did I suspect",
+          "level": "C2"
+        },
+        {
+          "id": "26",
+          "original": "'Don't swim too far from the beach,' the lifeguard said to us.",
+          "keyword": "WARNED",
+          "transformed": "The lifeguard _________ too far from the beach.",
+          "answer": "warned us not to swim / warned us against swimming",
+          "level": "B2"
+        },
+        {
+          "id": "27",
+          "original": "It was Kasia's fault that the vase got broken.",
+          "keyword": "BLAME",
+          "transformed": "Kasia _________ the broken vase.",
+          "answer": "was to blame for / was the one to blame for",
+          "level": "C1"
+        },
+        {
+          "id": "28",
+          "original": "I cannot tolerate my brother's loud music any longer.",
+          "keyword": "PUT",
+          "transformed": "I cannot _________ my brother's loud music any longer.",
+          "answer": "put up with",
+          "level": "B2",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "29",
+          "original": "Everyone was surprised when Tom won the race.",
+          "keyword": "MUCH",
+          "transformed": "_________ surprise, Tom won the race.",
+          "answer": "Much to everyone's / Much to everybody's",
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "30",
+          "original": "You can borrow my bike, but only if you bring it back by six.",
+          "keyword": "LONG",
+          "transformed": "You can borrow my bike _________ it back by six.",
+          "answer": "as long as you bring / so long as you bring / as long as you give / so long as you give",
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Uzupełnij lukę w każdym ze zdań, wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "31",
+          "stem": "My bike isn't where I left it. It must __________ while I was in the shop.",
+          "options": [
+            "A) have stolen",
+            "B) have been stolen",
+            "C) be stolen",
+            "D) be stealing"
+          ],
+          "answer": "B",
+          "level": "C1"
+        },
+        {
+          "id": "32",
+          "stem": "I __________ to the zoo since I was a little kid.",
+          "options": [
+            "A) didn't go",
+            "B) wasn't",
+            "C) haven't been",
+            "D) don't go"
+          ],
+          "answer": "C",
+          "level": "B1"
+        },
+        {
+          "id": "33",
+          "stem": "You've hit the __________ on the head: that's exactly what the problem is.",
+          "options": [
+            "A) nail",
+            "B) spot",
+            "C) point",
+            "D) hammer"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "34",
+          "stem": "Our teacher asked us __________ the homework.",
+          "options": [
+            "A) if we had finished",
+            "B) had we finished",
+            "C) did we finish",
+            "D) that we had finished"
+          ],
+          "answer": "A",
+          "level": "B2"
+        },
+        {
+          "id": "35",
+          "stem": "The fire alarm went __________ in the middle of our maths test, so we all had to leave the building.",
+          "options": [
+            "A) out",
+            "B) up",
+            "C) over",
+            "D) off"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "36",
+          "stem": "The new student, __________ we had heard so much, turned out to be really shy.",
+          "options": [
+            "A) who",
+            "B) that",
+            "C) about whom",
+            "D) about which"
+          ],
+          "answer": "C",
+          "level": "C1"
+        },
+        {
+          "id": "37",
+          "stem": "By the time we get to the cinema, the film __________, so we'll miss the beginning.",
+          "options": [
+            "A) will start",
+            "B) will have started",
+            "C) has started",
+            "D) is starting"
+          ],
+          "answer": "B",
+          "level": "B2"
+        },
+        {
+          "id": "38",
+          "stem": "She made a __________ effort to be friendly to the new girl in her class.",
+          "options": [
+            "A) knowing",
+            "B) sensible",
+            "C) aware",
+            "D) conscious"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "focus": "collocation"
+        },
+        {
+          "id": "39",
+          "stem": "When Grandma heard that I had won the competition, she was over the __________.",
+          "options": [
+            "A) sun",
+            "B) moon",
+            "C) stars",
+            "D) rainbow"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "idiom"
+        },
+        {
+          "id": "40",
+          "stem": "__________ you need any help with your project, just give me a call.",
+          "options": [
+            "A) Should",
+            "B) Would",
+            "C) Had",
+            "D) Were"
+          ],
+          "answer": "A",
+          "level": "C1"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "type": "knowledge_questions",
+      "points": 5,
+      "instruction": "Odpowiedz na pytania wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "41",
+          "question": "What nickname is often used for the Conservative Party and its members?",
+          "options": [
+            "A. the Whigs",
+            "B. the Tories",
+            "C. the Roundheads",
+            "D. the Jacobites"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "42",
+          "question": "What is the last step before a bill passed by both Houses of Parliament becomes law?",
+          "options": [
+            "A. Royal Assent",
+            "B. the King's Speech",
+            "C. a referendum",
+            "D. the State Opening of Parliament"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "43",
+          "question": "At which London address did Sherlock Holmes live in Arthur Conan Doyle's stories?",
+          "options": [
+            "A. 10 Downing Street",
+            "B. 32 Windsor Gardens",
+            "C. 221B Baker Street",
+            "D. 17 Cherry Tree Lane"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "44",
+          "question": "Which event took place in Hyde Park in 1851?",
+          "options": [
+            "A. the coronation of Queen Victoria",
+            "B. the first modern Olympic Games",
+            "C. the opening of the first Underground line",
+            "D. the Great Exhibition in the Crystal Palace"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "45",
+          "question": "Which is the oldest part of the Tower of London, begun by William the Conqueror?",
+          "options": [
+            "A. the Bloody Tower",
+            "B. the White Tower",
+            "C. Traitors' Gate",
+            "D. the Jewel House"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

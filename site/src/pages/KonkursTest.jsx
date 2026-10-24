@@ -8,6 +8,7 @@ import { scoreTest } from "../lib/scoring";
 import { markWithAi } from "../lib/aiMarking";
 import { percentageToStars } from "../lib/questStars";
 import { makeAttemptId } from "../lib/resultsModel";
+import { saveAttempt } from "../lib/resultsSync";
 
 const STAGE_LABELS = { szkolny: "Etap szkolny", rejonowy: "Etap rejonowy", wojewodzki: "Etap wojewodzki" };
 
@@ -109,20 +110,7 @@ export default function KonkursTest({ config = KURATORYJNY }) {
         skipped: t.skipped,
       })),
     };
-    try {
-      const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
-      const attempts = stored.attempts || [];
-      attempts.push(entry);
-      stored.attempts = attempts;
-      localStorage.setItem(storageKey, JSON.stringify(stored));
-    } catch (e) {
-      console.error("Failed to save results:", e);
-    }
-    fetch("/api/results", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ user: user?.name, ...entry }),
-    }).catch(() => {});
+    saveAttempt(storageKey, user?.name, entry);
   };
 
   const handleSubmit = async () => {

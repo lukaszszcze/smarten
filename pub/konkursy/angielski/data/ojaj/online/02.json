@@ -1,0 +1,496 @@
+{
+  "competition": "ojaj",
+  "kind": "online",
+  "id": "02",
+  "label": "Test online 02",
+  "maxPoints": 45,
+  "timeMinutes": 45,
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_formation",
+      "points": 10,
+      "instruction": "W każdą z luk wpisz odpowiednie słowo przekształcając wyraz podany na końcu zdania drukowanymi literami. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: The __________ (SERVE) in this restaurant was absolutely appalling. — prawidłowa odpowiedź: SERVICE",
+      "items": [
+        {
+          "id": "1",
+          "sentence": "The __________ between the twins is amazing: even their own parents sometimes mix them up.",
+          "wordBase": "RESEMBLE",
+          "answer": [
+            "resemblance"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "2",
+          "sentence": "I lost three points for __________ mistakes, even though I knew all the answers!",
+          "wordBase": "CARE",
+          "answer": [
+            "careless"
+          ],
+          "level": "B1"
+        },
+        {
+          "id": "3",
+          "sentence": "In winter the mountain village is __________ by car, so food and medicine arrive by helicopter.",
+          "wordBase": "ACCESS",
+          "answer": [
+            "inaccessible"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "4",
+          "sentence": "Her English __________ is excellent: everyone thinks she grew up in London.",
+          "wordBase": "PRONOUNCE",
+          "answer": [
+            "pronunciation"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "5",
+          "sentence": "We have just moved to a quiet __________ with lots of trees and hardly any traffic.",
+          "wordBase": "NEIGHBOUR",
+          "answer": [
+            "neighbourhood",
+            "neighborhood"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "6",
+          "sentence": "The bad weather was a real __________ to the rescue team, who could not use their helicopter.",
+          "wordBase": "HINDER",
+          "answer": [
+            "hindrance"
+          ],
+          "level": "C2"
+        },
+        {
+          "id": "7",
+          "sentence": "The shop assistant became __________ when the boy kept looking around nervously and putting things into his pockets.",
+          "wordBase": "SUSPECT",
+          "answer": [
+            "suspicious"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "8",
+          "sentence": "It was really __________ of you to play loud music while your brother was revising for his exams.",
+          "wordBase": "CONSIDER",
+          "answer": [
+            "inconsiderate"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "9",
+          "sentence": "My brother's __________ is unbelievable: he spent the whole weekend lying on the sofa.",
+          "wordBase": "LAZY",
+          "answer": [
+            "laziness"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "10",
+          "sentence": "Our guide was very __________: she could answer every question we asked about the castle.",
+          "wordBase": "KNOW",
+          "answer": [
+            "knowledgeable"
+          ],
+          "level": "C1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Wpisz słowo poprawnie uzupełniające każde ze zdań. Liczba kreseczek odpowiada liczbie liter w słowie. Wymagana jest pełna poprawność gramatyczna i ortograficzna wpisywanych słów.\n\nPrzykład: She asked for a(n) __ __ e __ __ __ i __ (8) type of flower for her bouquet. — prawidłowa odpowiedź: SPECIFIC",
+      "items": [
+        {
+          "id": "11",
+          "sentence": "I always get b __ t t __ __ f __ i __ s (11) in my stomach before I have to speak in front of the class.",
+          "hint": "b __ t t __ __ f __ i __ s (11)",
+          "answer": [
+            "butterflies"
+          ],
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "12",
+          "sentence": "Can you keep a s __ c __ e __ (6)? I'm planning a surprise party for Mum.",
+          "hint": "s __ c __ e __ (6)",
+          "answer": [
+            "secret"
+          ],
+          "level": "B1",
+          "focus": "collocation"
+        },
+        {
+          "id": "13",
+          "sentence": "The shop gives a two-year g __ a __ a __ __ e __ (9) on all its laptops, so if one breaks, they repair it for free.",
+          "hint": "g __ a __ a __ __ e __ (9)",
+          "answer": [
+            "guarantee"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "14",
+          "sentence": "My little brother is so m __ s __ h __ e __ o __ s (11): yesterday he hid Dad's car keys in the fridge.",
+          "hint": "m __ s __ h __ e __ o __ s (11)",
+          "answer": [
+            "mischievous"
+          ],
+          "level": "C1"
+        },
+        {
+          "id": "15",
+          "sentence": "I can't f __ g __ r __ (6) out how to switch off the alarm on my new watch.",
+          "hint": "f __ g __ r __ (6)",
+          "answer": [
+            "figure"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "16",
+          "sentence": "Kasia is a very c __ n __ c __ __ __ t __ o __ s (13) pupil: she always does her homework carefully and hands it in on time.",
+          "hint": "c __ n __ c __ __ __ t __ o __ s (13)",
+          "answer": [
+            "conscientious"
+          ],
+          "level": "C2"
+        },
+        {
+          "id": "17",
+          "sentence": "There was a long q __ __ u __ (5) outside the cinema, so we waited for half an hour.",
+          "hint": "q __ __ u __ (5)",
+          "answer": [
+            "queue"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "18",
+          "sentence": "Missing the school bus was a blessing in d __ s __ u __ s __ (8): I walked to school instead and found a lost puppy, who is now our dog.",
+          "hint": "d __ s __ u __ s __ (8)",
+          "answer": [
+            "disguise"
+          ],
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "19",
+          "sentence": "Mum keeps her j __ w e __ __ e __ y (9) in a small wooden box: two rings, a necklace and a pair of earrings.",
+          "hint": "j __ w e __ __ e __ y (9)",
+          "answer": [
+            "jewellery"
+          ],
+          "level": "B2"
+        },
+        {
+          "id": "20",
+          "sentence": "She isn't really a friend, just an a __ q __ a __ n __ __ n __ e (12) from my old school.",
+          "hint": "a __ q __ a __ n __ __ n __ e (12)",
+          "answer": [
+            "acquaintance"
+          ],
+          "level": "C1"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "sentence_transformation",
+      "points": 10,
+      "instruction": "Wykorzystując podane słowa (wyróżnione pogrubionym drukiem), należy uzupełnić luki w zdaniach tak, aby zachować sens zdania wyjściowego. Można wpisać do sześciu słów, wliczając w to wyraz wymagany. Słów podanych nie wolno w żaden sposób zmieniać. Niedopuszczalne są formy skrócone (isn't, won't, would've itd.). Konieczna jest pełna poprawność gramatyczna i ortograficzna wpisywanych fraz.",
+      "items": [
+        {
+          "id": "21",
+          "original": "Nobody in my class is taller than Kuba.",
+          "keyword": "TALLEST",
+          "transformed": "Kuba is _________ in my class.",
+          "answer": "the tallest boy / the tallest pupil / the tallest student / the tallest person / the tallest child / the tallest",
+          "level": "B1"
+        },
+        {
+          "id": "22",
+          "original": "When I saw my dad's new haircut, I couldn't stop laughing.",
+          "keyword": "HELP",
+          "transformed": "When I saw my dad's new haircut, I _________.",
+          "answer": "could not help laughing / could not help but laugh",
+          "level": "C1"
+        },
+        {
+          "id": "23",
+          "original": "'Do you like pizza?' my new classmate said to me.",
+          "keyword": "ASKED",
+          "transformed": "My new classmate _________ pizza.",
+          "answer": "asked me if I liked / asked me whether I liked / asked if I liked / asked whether I liked",
+          "level": "B2"
+        },
+        {
+          "id": "24",
+          "original": "The film was not as good as I had expected.",
+          "keyword": "LIVE",
+          "transformed": "The film did not _________ expectations.",
+          "answer": "live up to my / live up to",
+          "level": "C1",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "25",
+          "original": "I don't know how to solve this maths problem.",
+          "keyword": "IDEA",
+          "transformed": "I have _________ this maths problem.",
+          "answer": "no idea how to solve / no idea how I can solve / no idea how I should solve",
+          "level": "B2"
+        },
+        {
+          "id": "26",
+          "original": "Kasia is the only person who can help us.",
+          "keyword": "BUT",
+          "transformed": "Nobody _________ us.",
+          "answer": "but Kasia can help / but Kasia is able to help",
+          "level": "C1"
+        },
+        {
+          "id": "27",
+          "original": "There is no milk left in the fridge.",
+          "keyword": "RUN",
+          "transformed": "We have _________ milk.",
+          "answer": "run out of",
+          "level": "B2",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "28",
+          "original": "You must not open this door under any circumstances.",
+          "keyword": "CIRCUMSTANCES",
+          "transformed": "Under _________ this door.",
+          "answer": "no circumstances must you open / no circumstances should you open / no circumstances are you to open / no circumstances can you open",
+          "level": "C2"
+        },
+        {
+          "id": "29",
+          "original": "Do you think I could borrow your pen for a moment?",
+          "keyword": "WONDER",
+          "transformed": "I _________ borrow your pen for a moment.",
+          "answer": "wonder if I could / wonder whether I could / wonder if I might / wonder whether I might",
+          "level": "B2"
+        },
+        {
+          "id": "30",
+          "original": "Everybody knows that this beach is the cleanest in Poland.",
+          "keyword": "KNOWN",
+          "transformed": "This beach _________ the cleanest in Poland.",
+          "answer": "is known to be",
+          "level": "C1"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "points": 10,
+      "instruction": "Uzupełnij lukę w każdym ze zdań, wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "31",
+          "stem": "__________ it not for your help, I would still be stuck on the first question.",
+          "options": [
+            "A) Had",
+            "B) Were",
+            "C) Should",
+            "D) Did"
+          ],
+          "answer": "B",
+          "level": "C1"
+        },
+        {
+          "id": "32",
+          "stem": "You're coming to Ola's party on Saturday, __________?",
+          "options": [
+            "A) aren't you",
+            "B) isn't it",
+            "C) don't you",
+            "D) won't you"
+          ],
+          "answer": "A",
+          "level": "B1"
+        },
+        {
+          "id": "33",
+          "stem": "I __________ across some old photos of my parents while I was tidying the attic.",
+          "options": [
+            "A) came",
+            "B) took",
+            "C) got",
+            "D) put"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "phrasal verb"
+        },
+        {
+          "id": "34",
+          "stem": "Our teacher turned a __________ eye to our chatting because it was the last day of term.",
+          "options": [
+            "A) deaf",
+            "B) blind",
+            "C) closed",
+            "D) shut"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "focus": "idiom"
+        },
+        {
+          "id": "35",
+          "stem": "I wish I __________ more time to finish this project.",
+          "options": [
+            "A) have",
+            "B) had",
+            "C) would have",
+            "D) will have"
+          ],
+          "answer": "B",
+          "level": "B2"
+        },
+        {
+          "id": "36",
+          "stem": "__________ by the noise, the baby started to cry.",
+          "options": [
+            "A) Waking",
+            "B) Woken",
+            "C) Woke",
+            "D) Having woken"
+          ],
+          "answer": "B",
+          "level": "C1"
+        },
+        {
+          "id": "37",
+          "stem": "The new head teacher is very strict, so we had better be on our best __________.",
+          "options": [
+            "A) behaviour",
+            "B) manners",
+            "C) conduct",
+            "D) attitude"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "idiom"
+        },
+        {
+          "id": "38",
+          "stem": "The football match was called off because of __________ rain.",
+          "options": [
+            "A) strong",
+            "B) thick",
+            "C) torrential",
+            "D) powerful"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "collocation"
+        },
+        {
+          "id": "39",
+          "stem": "I'll never forget __________ the sea for the first time when I was four.",
+          "options": [
+            "A) to see",
+            "B) seeing",
+            "C) see",
+            "D) to have seen"
+          ],
+          "answer": "B",
+          "level": "B2"
+        },
+        {
+          "id": "40",
+          "stem": "__________ as it may seem, the story is completely true.",
+          "options": [
+            "A) Strangely",
+            "B) Stranger",
+            "C) Strange",
+            "D) However strange"
+          ],
+          "answer": "C",
+          "level": "C2"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "type": "knowledge_questions",
+      "points": 5,
+      "instruction": "Odpowiedz na pytania wybierając jedną poprawną odpowiedź z zaproponowanych możliwości A) – D).",
+      "items": [
+        {
+          "id": "41",
+          "question": "In which year was the cross of St Patrick added to the Union Flag?",
+          "options": [
+            "A. 1606",
+            "B. 1707",
+            "C. 1801",
+            "D. 1922"
+          ],
+          "answer": "C"
+        },
+        {
+          "id": "42",
+          "question": "When do people in England celebrate St George's Day?",
+          "options": [
+            "A. on 1 March",
+            "B. on 23 April",
+            "C. on 17 March",
+            "D. on 30 November"
+          ],
+          "answer": "B"
+        },
+        {
+          "id": "43",
+          "question": "Who writes the King's Speech that the King reads at the State Opening of Parliament?",
+          "options": [
+            "A. the King himself",
+            "B. the Speaker of the House of Commons",
+            "C. Black Rod",
+            "D. the government"
+          ],
+          "answer": "D"
+        },
+        {
+          "id": "44",
+          "question": "In which language was the Magna Carta written?",
+          "options": [
+            "A. Latin",
+            "B. English",
+            "C. French",
+            "D. Welsh"
+          ],
+          "answer": "A"
+        },
+        {
+          "id": "45",
+          "question": "On which islands did Charles Darwin notice that the finches and tortoises were slightly different on each island?",
+          "options": [
+            "A. the Canary Islands",
+            "B. the Galápagos Islands",
+            "C. the Falkland Islands",
+            "D. the Isles of Scilly"
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  ]
+}

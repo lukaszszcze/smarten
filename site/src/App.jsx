@@ -11,6 +11,7 @@ import QuestHome from "./pages/quest/QuestHome";
 import QuestExercise from "./pages/quest/QuestExercise";
 import QuestPlacement from "./pages/quest/QuestPlacement";
 import OjajHome from "./pages/ojaj/OjajHome";
+import OjajOnlineTest from "./pages/ojaj/OjajOnlineTest";
 import { OJAJ_PRACTICE_CONFIG, OJAJ_TEST_CONFIG } from "./lib/ojaj";
 
 const USERS = [
@@ -127,6 +128,7 @@ function FullRoutes() {
             OJAJ paper is not mistaken for a kuratoryjny year. */}
         <Route path="/ojaj" element={<OjajHome />} />
         <Route path="/ojaj/cwiczenia/:id" element={<PracticeExercise config={OJAJ_PRACTICE_CONFIG} />} />
+        <Route path="/ojaj/online/:id" element={<OjajOnlineTest />} />
         <Route path="/ojaj/:year/:stage" element={<KonkursTest config={OJAJ_TEST_CONFIG} />} />
         <Route path="/:year/:stage" element={<KonkursTest />} />
         <Route path="*" element={<NotFound />} />

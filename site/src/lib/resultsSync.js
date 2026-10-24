@@ -5,10 +5,38 @@
  * Merge strategy: union attempts by attemptId (no duplicates).
  */
 
-import { normalizeAttempt, loadAttempts } from "./resultsModel";
+// Extension included so this module also loads under plain Node, which the
+// test runner uses; Vite resolves either form.
+import { normalizeAttempt, loadAttempts } from "./resultsModel.js";
 
 // Per-user dedup: only one sync in flight at a time
 const inflightSyncs = new Map();
+
+/**
+ * Save a finished attempt: append it to the user's local attempts, then send
+ * it to the results API without waiting.
+ *
+ * The local copy is the one that counts. A send that fails is not retried
+ * here; the next syncAttempts() pushes every local attempt the server lacks.
+ *
+ * @param {string} storageKey the user's local-storage key, `smarten_konkursy_{name}`
+ * @param {string} username the user the server files the attempt under
+ * @param {object} entry the attempt record
+ */
+export function saveAttempt(storageKey, username, entry) {
+  try {
+    const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
+    stored.attempts = [...(stored.attempts || []), entry];
+    localStorage.setItem(storageKey, JSON.stringify(stored));
+  } catch (e) {
+    console.error("Failed to save results:", e);
+  }
+  fetch("/api/results", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ user: username, ...entry }),
+  }).catch(() => {});
+}
 
 export function mergeAttempts(local, remote) {
   if (!remote || remote.length === 0) return local;

@@ -43,6 +43,26 @@
       ]
     }
   ],
+  "online": [
+    {
+      "id": "01",
+      "label": "Test online 01",
+      "maxPoints": 45,
+      "timeMinutes": 45
+    },
+    {
+      "id": "02",
+      "label": "Test online 02",
+      "maxPoints": 45,
+      "timeMinutes": 45
+    },
+    {
+      "id": "03",
+      "label": "Test online 03",
+      "maxPoints": 45,
+      "timeMinutes": 45
+    }
+  ],
   "exercises": [
     {
       "id": "ojaj_formation_001",

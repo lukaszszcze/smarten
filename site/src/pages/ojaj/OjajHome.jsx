@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDocumentHead } from "../../hooks";
 import { useUser } from "../../App";
 import StarDisplay from "../../components/StarDisplay";
 import { loadRewards, OJAJ_POOL } from "../../lib/practiceRewards";
 import { loadAttempts } from "../../lib/resultsModel";
+import { syncAttempts } from "../../lib/resultsSync";
+import {
+  doneCounts,
+  drawOnlineTest,
+  isOnlineAttempt,
+  onlineAttemptLabel,
+} from "../../lib/ojajOnline";
 import { percentageToStars } from "../../lib/questStars";
 import { aoeUnitForPercentage, usesAoeMarks } from "../../lib/aoeRanks";
 import {
@@ -147,6 +154,83 @@ function TestCard({ edition, stage, bestPct }) {
   );
 }
 
+/**
+ * Etap I, czesc II: the draw and the user's online results.
+ *
+ * The tests are not listed for direct choice; the button draws one, unseen
+ * ones first. Attempts are synced before the draw, or a test done on another
+ * device would count as unseen.
+ */
+function OnlineSection({ vault }) {
+  const user = useUser();
+  const navigate = useNavigate();
+  const storageKey = `smarten_konkursy_${user?.name || "default"}`;
+  const [attempts, setAttempts] = useState(() => loadAttempts(storageKey));
+  const [drawing, setDrawing] = useState(false);
+
+  useEffect(() => {
+    setAttempts(loadAttempts(storageKey));
+  }, [storageKey]);
+
+  const ids = vault.map((t) => t.id);
+  const counts = doneCounts(ids, attempts);
+  const done = ids.filter((id) => counts[id] > 0).length;
+  const results = attempts.filter(isOnlineAttempt).reverse();
+
+  // A failed sync (offline) does not stop the draw: it then counts this
+  // device's attempts only, so a test done elsewhere may come up again, which
+  // beats having no test to write.
+  const draw = async () => {
+    setDrawing(true);
+    const synced = user?.name
+      ? await syncAttempts(user.name, storageKey).catch(() => loadAttempts(storageKey))
+      : loadAttempts(storageKey);
+    navigate(`/ojaj/online/${drawOnlineTest(ids, synced)}`);
+  };
+
+  return (
+    <div style={{ marginBottom: 40 }}>
+      <h2 style={styles.sectionTitle}>Etap I, czesc II - test online</h2>
+      <div style={styles.card}>
+        <p style={{ color: "#9a9ab0", fontSize: 14, lineHeight: 1.6, margin: "0 0 14px" }}>
+          45 pytan w 45 minut, jedno pytanie na ekranie, jak na platformie OJAJ.
+          Zadania wlasne aplikacji. Test jest losowany, najpierw sposrod jeszcze
+          nierozwiazanych.
+        </p>
+        <div style={styles.drawRow}>
+          <span style={{ color: "#c8c8d8", fontSize: 14 }}>
+            Rozwiazane: <strong>{done}</strong> z {ids.length}
+          </span>
+          <button
+            onClick={draw}
+            disabled={drawing}
+            style={{ ...styles.drawBtn, opacity: drawing ? 0.6 : 1 }}
+          >
+            {drawing ? "Losowanie..." : "Losuj test"}
+          </button>
+        </div>
+        {results.length > 0 && (
+          <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 6 }}>
+            {results.map((a) => (
+              <div key={a.attemptId} style={styles.resultRow}>
+                <span style={{ color: "#c8c8d8", fontWeight: 600 }}>{onlineAttemptLabel(a)}</span>
+                <span style={{ color: "#5a5a6a", fontSize: 12, flex: 1 }}>
+                  {new Date(a.date).toLocaleDateString("pl-PL", {
+                    day: "numeric", month: "long", hour: "2-digit", minute: "2-digit",
+                  })}
+                </span>
+                <span style={{ color: scoreColor(a.percentage), fontWeight: 700 }}>
+                  {a.score}/{a.maxScore}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function ExerciseRow({ exercise, bestPct }) {
   const color = TYPE_COLORS[exercise.taskType] || OJAJ_ACCENT;
   const stars = bestPct !== undefined ? percentageToStars(bestPct) : -1;
@@ -259,6 +343,8 @@ export default function OjajHome() {
       </a>
 
       {!index && <p style={{ color: "#7a7a90" }}>Ladowanie...</p>}
+
+      {index?.online?.length > 0 && <OnlineSection vault={index.online} />}
 
       {index?.editions?.map((edition) => (
         <div key={edition.yearPath} style={{ marginBottom: 32 }}>
@@ -385,5 +471,31 @@ const styles = {
     borderRadius: 6,
     fontSize: 13,
     fontWeight: 700,
+  },
+  drawRow: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: 12,
+    flexWrap: "wrap",
+  },
+  drawBtn: {
+    background: `linear-gradient(135deg, ${OJAJ_ACCENT}, #f5a623)`,
+    color: "#0d0d14",
+    border: "none",
+    borderRadius: 10,
+    padding: "10px 28px",
+    fontSize: 15,
+    fontWeight: 700,
+    cursor: "pointer",
+    fontFamily: "'DM Sans', sans-serif",
+  },
+  resultRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: 12,
+    fontSize: 14,
+    padding: "6px 0",
+    borderTop: "1px solid #1e1e2e",
   },
 };
