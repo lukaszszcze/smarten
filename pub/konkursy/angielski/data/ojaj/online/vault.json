@@ -7,12 +7,12 @@
     {
       "key": "negative-prefix",
       "label": "przedrostki przeczace (un-, in-, im-, il-, ir-, dis-)",
-      "link": null
+      "link": "/ojaj_study/negative-prefix"
     },
     {
       "key": "ance-ence",
       "label": "-ance czy -ence",
-      "link": null
+      "link": "/ojaj_study/ance-ence"
     },
     {
       "key": "able-ible",
@@ -22,12 +22,12 @@
     {
       "key": "base-change",
       "label": "zmiana w srodku slowa (pronounce - pronunciation)",
-      "link": null
+      "link": "/ojaj_study/base-change"
     },
     {
       "key": "suffix-spelling",
       "label": "pisownia przy dodawaniu koncowki (e, y - i, -ally)",
-      "link": null
+      "link": "/ojaj_study/suffix-spelling"
     },
     {
       "key": "two-steps",
@@ -42,17 +42,17 @@
     {
       "key": "double-letters",
       "label": "podwojne litery",
-      "link": null
+      "link": "/ojaj_study/double-letters"
     },
     {
       "key": "silent-letters",
       "label": "litery, ktorych nie slychac",
-      "link": null
+      "link": "/ojaj_study/silent-letters"
     },
     {
       "key": "vowels",
       "label": "samogloski, ktorych nie slychac wyraznie",
-      "link": null
+      "link": "/ojaj_study/vowels"
     },
     {
       "key": "idiom",
