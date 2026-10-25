@@ -2,7 +2,8 @@
 //
 // The real etap I, czesc II is a 45-minute online test generated for each
 // student from a pool of tasks. Its pool is not published, so the app keeps a
-// vault of its own online tests and draws one at random, unseen ones first.
+// vault of its own items and puts a test together from it at each draw, aimed
+// at the user's mistakes (ojajDraw.js, ojajRecord.js).
 
 // Extensions included so this module also loads under plain Node, which the
 // test runner uses; Vite resolves either form.
@@ -13,15 +14,15 @@ import { makeAttemptId } from "./resultsModel.js";
 
 const ONLINE_TEST_PREFIX = "ojaj/online/";
 
-/** The testId an online test's attempts are filed under. */
-export function onlineTestId(id) {
-  return `${ONLINE_TEST_PREFIX}${id}`;
-}
+/**
+ * The testId every drawn online test is saved under. The three fixed tests
+ * done before tests were drawn from single items (2026-10-24) were saved under
+ * their number, ojaj/online/01 to 03.
+ */
+export const DRAWN_TEST_ID = `${ONLINE_TEST_PREFIX}drawn`;
 
-/** Where an online test's JSON is served from. */
-export function onlineTestPath(id) {
-  return `${OJAJ_DATA_ROOT}/online/${id}.json`;
-}
+/** Where the vault of own items is served from. */
+export const ONLINE_VAULT_PATH = `${OJAJ_DATA_ROOT}/online/vault.json`;
 
 /**
  * Whether an attempt is at an online test, as opposed to an OJAJ paper or
@@ -32,50 +33,11 @@ export function isOnlineAttempt(attempt) {
   return Boolean(attempt?.testId?.startsWith(ONLINE_TEST_PREFIX));
 }
 
-/** An online attempt's name in the history, e.g. "Test online 07". */
+/** An online attempt's name in the history: "Test online", or "Test online 02"
+ *  for one of the old fixed tests. */
 export function onlineAttemptLabel(attempt) {
+  if (attempt.testId === DRAWN_TEST_ID) return "Test online";
   return `Test online ${attempt.testId.slice(ONLINE_TEST_PREFIX.length)}`;
-}
-
-/**
- * How many submitted attempts each test in the vault has.
- *
- * Attempts are saved only on submit, so every saved attempt counts as done; a
- * test opened and abandoned leaves nothing behind and stays unseen. Attempts
- * at a test no longer in the vault are ignored.
- *
- * @param {string[]} vaultIds the ids of the tests in the vault, e.g. ["01", "02"]
- * @param {object[]} attempts the user's attempts, of any kind
- * @returns {Object<string, number>} id -> number of attempts
- */
-export function doneCounts(vaultIds, attempts) {
-  const counts = Object.fromEntries(vaultIds.map((id) => [id, 0]));
-  for (const a of attempts) {
-    if (!isOnlineAttempt(a)) continue;
-    const id = a.testId.slice(ONLINE_TEST_PREFIX.length);
-    if (id in counts) counts[id] += 1;
-  }
-  return counts;
-}
-
-/**
- * Draw an online test: at random among the unseen ones, and once every test
- * is done, at random among those done least often.
- *
- * Both rules are one rule: pick among the tests with the fewest attempts,
- * which is zero for as long as any test is unseen.
- *
- * @param {string[]} vaultIds the ids of the tests in the vault
- * @param {object[]} attempts the user's attempts, synced first, or a test done
- *   on another device counts as unseen
- * @returns {string} the drawn test's id
- */
-export function drawOnlineTest(vaultIds, attempts) {
-  if (vaultIds.length === 0) throw new Error("the vault is empty");
-  const counts = doneCounts(vaultIds, attempts);
-  const fewest = Math.min(...Object.values(counts));
-  const candidates = vaultIds.filter((id) => counts[id] === fewest);
-  return candidates[Math.floor(Math.random() * candidates.length)];
 }
 
 /**
@@ -86,7 +48,7 @@ export function drawOnlineTest(vaultIds, attempts) {
  * down to the one item, with the task's id, type and instruction unchanged:
  * the instruction repeats on every screen of the task, as on the platform.
  *
- * @param {object} test an online test, as served from online/NN.json
+ * @param {object} test an online test, as drawTest puts it together
  * @returns {{number: number, task: object, item: object, firstOfTask: boolean}[]}
  */
 export function onlineQuestions(test) {
@@ -136,20 +98,34 @@ export function markOnlineTest(test, answers) {
   return markWithAi(scoreTest(test, answers), aiTasks, answers);
 }
 
+// Each question's verdict in a marked result, by question number.
+function verdicts(result) {
+  return new Map(result.tasks.flatMap((t) => t.items.map((r) => [r.id, r.correct === true])));
+}
+
 /**
  * The attempt record saved for a marked online test, in the shape the paper
- * player saves, so the history and the results API take it unchanged.
+ * player saves, so the history and the results API take it unchanged, plus
+ * the vault item behind each question and its verdict, which the mistake
+ * record is worked out from.
  *
- * @param {object} test the online test
- * @param {object} answers the submitted answers, keyed by item id
+ * @param {object} test the drawn test
+ * @param {object} answers the submitted answers, keyed by question number
  * @param {object} result the marked result, with no task left unmarked
+ * @throws when a question has no verdict in `result`, so a record with a
+ *   hole in it is never saved
  */
 export function onlineAttempt(test, answers, result) {
+  const marked = verdicts(result);
+  const items = test.tasks.flatMap((task) => task.items.map((item) => {
+    if (!marked.has(item.id)) throw new Error(`question ${item.id} has no verdict`);
+    return { number: item.id, vaultId: item.vaultId, correct: marked.get(item.id) };
+  }));
   return {
     attemptId: makeAttemptId(),
     kind: "competition",
     competition: OJAJ_COMPETITION,
-    testId: onlineTestId(test.id),
+    testId: DRAWN_TEST_ID,
     date: new Date().toISOString(),
     score: result.earned,
     maxScore: result.max,
@@ -162,7 +138,20 @@ export function onlineAttempt(test, answers, result) {
       max: t.max,
       skipped: t.skipped,
     })),
+    items,
   };
+}
+
+/**
+ * The score on the questions he had not seen before, the type-targeted ones
+ * included; the review shows it next to the total.
+ *
+ * @returns {{earned: number, max: number}} one point a question
+ */
+export function newQuestionScore(test, result) {
+  const marked = verdicts(result);
+  const fresh = test.tasks.flatMap((t) => t.items).filter((item) => !item.seenBefore);
+  return { earned: fresh.filter((item) => marked.get(item.id)).length, max: fresh.length };
 }
 
 /**

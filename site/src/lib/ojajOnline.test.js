@@ -3,119 +3,37 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import {
-  doneCounts,
-  drawOnlineTest,
+  DRAWN_TEST_ID,
+  ONLINE_VAULT_PATH,
   initialPlayerState,
   isAnswered,
   isOnlineAttempt,
   markOnlineTest,
+  newQuestionScore,
   onlineAttempt,
   onlineAttemptLabel,
   onlineQuestions,
-  onlineTestId,
-  onlineTestPath,
   playerReducer,
   secondsLeft,
 } from "./ojajOnline.js";
 
-const VAULT = ["01", "02", "03", "04"];
-
-const attempt = (id) => ({ kind: "competition", competition: "ojaj", testId: `ojaj/online/${id}` });
-
-// Math.random returns a value in [0, 1); fixing it picks a known candidate.
-function fixRandom(t, value) {
-  t.mock.method(Math, "random", () => value);
-}
-
 // --- ids and paths -----------------------------------------------------------
 
-test("an online test files its attempts under ojaj/online/", () => {
-  assert.equal(onlineTestId("03"), "ojaj/online/03");
-  assert.equal(onlineTestPath("03"), "/konkursy/angielski/data/ojaj/online/03.json");
+test("drawn tests are saved under one testId, and the vault has one path", () => {
+  assert.equal(DRAWN_TEST_ID, "ojaj/online/drawn");
+  assert.equal(ONLINE_VAULT_PATH, "/konkursy/angielski/data/ojaj/online/vault.json");
 });
 
 test("an online attempt is told apart from papers and exercises", () => {
-  assert.equal(isOnlineAttempt(attempt("01")), true);
+  assert.equal(isOnlineAttempt({ testId: DRAWN_TEST_ID }), true);
+  // The old fixed tests, done before tests were drawn from single items.
+  assert.equal(isOnlineAttempt({ testId: "ojaj/online/01" }), true);
   assert.equal(isOnlineAttempt({ testId: "ojaj/2024-2025/szkolny" }), false);
   assert.equal(isOnlineAttempt({ testId: "ojaj/practice/ojaj_choice_001" }), false);
   assert.equal(isOnlineAttempt({ testId: "2024-2025/szkolny" }), false);
   for (const a of [null, undefined, {}, { testId: null }]) {
     assert.equal(isOnlineAttempt(a), false);
   }
-});
-
-// --- done counts -------------------------------------------------------------
-
-test("done counts start at zero for every test in the vault", () => {
-  assert.deepEqual(doneCounts(VAULT, []), { "01": 0, "02": 0, "03": 0, "04": 0 });
-});
-
-test("done counts count only online attempts at tests in the vault", () => {
-  const attempts = [
-    attempt("02"),
-    attempt("02"),
-    attempt("04"),
-    { kind: "competition", testId: "ojaj/2024-2025/szkolny" },
-    { kind: "practice", testId: "ojaj/practice/ojaj_choice_001" },
-    { kind: "competition", testId: "2024-2025/szkolny" },
-    // A test taken out of the vault leaves its attempts behind in the history.
-    attempt("99"),
-  ];
-  assert.deepEqual(doneCounts(VAULT, attempts), { "01": 0, "02": 2, "03": 0, "04": 1 });
-});
-
-// --- the draw ----------------------------------------------------------------
-
-test("the draw picks among the unseen tests only", (t) => {
-  const attempts = [attempt("01"), attempt("03")];
-  fixRandom(t, 0);
-  assert.equal(drawOnlineTest(VAULT, attempts), "02");
-  fixRandom(t, 0.999);
-  assert.equal(drawOnlineTest(VAULT, attempts), "04");
-});
-
-test("the last unseen test is always drawn", (t) => {
-  const attempts = [attempt("01"), attempt("02"), attempt("04"), attempt("04")];
-  for (const value of [0, 0.3, 0.6, 0.999]) {
-    fixRandom(t, value);
-    assert.equal(drawOnlineTest(VAULT, attempts), "03");
-  }
-});
-
-test("once every test is done, the draw picks among those done least often", (t) => {
-  const attempts = [
-    attempt("01"), attempt("01"),
-    attempt("02"),
-    attempt("03"), attempt("03"),
-    attempt("04"),
-  ];
-  fixRandom(t, 0);
-  assert.equal(drawOnlineTest(VAULT, attempts), "02");
-  fixRandom(t, 0.999);
-  assert.equal(drawOnlineTest(VAULT, attempts), "04");
-});
-
-test("attempts at papers and exercises do not make a test seen", (t) => {
-  const attempts = [
-    { kind: "competition", testId: "ojaj/2024-2025/szkolny" },
-    { kind: "practice", testId: "ojaj/practice/ojaj_choice_001" },
-    attempt("01"),
-  ];
-  fixRandom(t, 0);
-  assert.equal(drawOnlineTest(VAULT, attempts), "02");
-});
-
-test("every candidate can be drawn", (t) => {
-  const seen = new Set();
-  for (let i = 0; i < 4; i++) {
-    fixRandom(t, i / 4);
-    seen.add(drawOnlineTest(VAULT, []));
-  }
-  assert.deepEqual([...seen].sort(), VAULT);
-});
-
-test("an empty vault is an error, not a silent undefined", () => {
-  assert.throws(() => drawOnlineTest([], []), /empty/);
 });
 
 // --- one question per screen -------------------------------------------------
@@ -290,26 +208,31 @@ test("an unknown action is an error", () => {
 // --- marking -------------------------------------------------------------------
 
 // One item of each kind of marking: a typed word on the key, a transformation
-// only the AI marks, a culture question on its letter.
+// only the AI marks, a culture question on its letter. Drawn: each item keeps
+// its vault id, and the first was in an earlier test.
 const MARKED = {
-  id: "01",
+  label: "Test online",
   tasks: [
     {
       id: "1", type: "word_formation", points: 1, instruction: "",
       items: [{
         id: "1", sentence: "It was __________.", wordBase: "REPAIR", answer: ["irreparable"],
+        vaultId: "01-5", seenBefore: true,
       }],
     },
     {
       id: "3", type: "sentence_transformation", points: 1, instruction: "",
       items: [{
         id: "2", original: "I tolerate it.", keyword: "PUT", transformed: "I _________ it.",
-        answer: "put up with",
+        answer: "put up with", vaultId: "03-23", seenBefore: false,
       }],
     },
     {
       id: "5", type: "knowledge_questions", points: 1, instruction: "",
-      items: [{ id: "3", question: "Q?", options: ["A. a", "B. b", "C. c", "D. d"], answer: "B" }],
+      items: [{
+        id: "3", question: "Q?", options: ["A. a", "B. b", "C. c", "D. d"], answer: "B",
+        vaultId: "02-44", seenBefore: false,
+      }],
     },
   ],
 };
@@ -365,23 +288,17 @@ test("a failed AI marking reports the transformation task as unmarked", async (t
 
 // --- the attempt record ----------------------------------------------------------
 
-test("an online attempt is filed under its test, as an OJAJ competition attempt", (t) => {
-  t.mock.timers.enable({ apis: ["Date"], now: Date.UTC(2026, 10, 2, 9, 45) });
-  const result = {
-    earned: 2, max: 3, percentage: 67,
-    tasks: [
-      {
-        taskId: "1", type: "word_formation", earned: 1, max: 1, skipped: false,
-        items: [{ id: "1" }],
-      },
-      {
-        taskId: "3", type: "sentence_transformation", earned: 1, max: 1, skipped: false,
-        items: [],
-      },
-      { taskId: "5", type: "knowledge_questions", earned: 0, max: 1, skipped: false, items: [] },
-    ],
-  };
+// The AI marks the transformation right; the culture answer is wrong.
+async function marked(t) {
+  mockCheck(t, () => ok({ earned: 1, max: 1, items: [{ id: "2", correct: true }] }));
   const answers = { 1: "irreparable", 2: "put up with", 3: "A" };
+  const { result } = await markOnlineTest(MARKED, answers);
+  return { answers, result };
+}
+
+test("an online attempt is filed as an OJAJ competition attempt at a drawn test", async (t) => {
+  const { answers, result } = await marked(t);
+  t.mock.timers.enable({ apis: ["Date"], now: Date.UTC(2026, 10, 2, 9, 45) });
 
   const entry = onlineAttempt(MARKED, answers, result);
 
@@ -389,7 +306,8 @@ test("an online attempt is filed under its test, as an OJAJ competition attempt"
   assert.ok(entry.attemptId.length > 0);
   assert.equal(entry.kind, "competition");
   assert.equal(entry.competition, "ojaj");
-  assert.equal(entry.testId, "ojaj/online/01");
+  assert.equal(entry.testId, "ojaj/online/drawn");
+  assert.equal(isOnlineAttempt(entry), true);
   assert.equal(entry.date, "2026-11-02T09:45:00.000Z");
   assert.equal(entry.score, 2);
   assert.equal(entry.maxScore, 3);
@@ -400,17 +318,46 @@ test("an online attempt is filed under its test, as an OJAJ competition attempt"
     { taskId: "3", type: "sentence_transformation", earned: 1, max: 1, skipped: false },
     { taskId: "5", type: "knowledge_questions", earned: 0, max: 1, skipped: false },
   ]);
-  // The draw counts it, so the test is no longer unseen.
-  assert.deepEqual(doneCounts(["01", "02"], [entry]), { "01": 1, "02": 0 });
 });
 
-test("two attempts at the same test get different ids", () => {
-  const result = { earned: 0, max: 3, percentage: 0, tasks: [] };
-  const first = onlineAttempt(MARKED, {}, result);
-  const second = onlineAttempt(MARKED, {}, result);
+test("an online attempt saves which vault items it held and the verdict on each", async (t) => {
+  // The transformation's verdict is the AI's, merged into the result.
+  const { answers, result } = await marked(t);
+  assert.deepEqual(onlineAttempt(MARKED, answers, result).items, [
+    { number: "1", vaultId: "01-5", correct: true },
+    { number: "2", vaultId: "03-23", correct: true },
+    { number: "3", vaultId: "02-44", correct: false },
+  ]);
+});
+
+test("an attempt is not saved while a question has no verdict", () => {
+  // As when the AI's reply leaves the transformation task without items.
+  const result = {
+    earned: 1, max: 3, percentage: 33,
+    tasks: [
+      { taskId: "1", earned: 1, max: 1, items: [{ id: "1", correct: true }] },
+      { taskId: "3", earned: 0, max: 1, items: [] },
+      { taskId: "5", earned: 0, max: 1, items: [{ id: "3", correct: false }] },
+    ],
+  };
+  assert.throws(() => onlineAttempt(MARKED, {}, result), /question 2/);
+});
+
+test("two attempts at drawn tests get different ids", async (t) => {
+  const { answers, result } = await marked(t);
+  const first = onlineAttempt(MARKED, answers, result);
+  const second = onlineAttempt(MARKED, answers, result);
   assert.notEqual(first.attemptId, second.attemptId);
 });
 
+test("the score on new questions leaves out the ones seen before", async (t) => {
+  // Question 1, right, was in an earlier test; of the two new ones, one is right.
+  const { result } = await marked(t);
+  assert.deepEqual(newQuestionScore(MARKED, result), { earned: 1, max: 2 });
+});
+
 test("an online attempt names its test in the history", () => {
-  assert.equal(onlineAttemptLabel({ testId: "ojaj/online/07" }), "Test online 07");
+  assert.equal(onlineAttemptLabel({ testId: DRAWN_TEST_ID }), "Test online");
+  // The old fixed tests keep their number.
+  assert.equal(onlineAttemptLabel({ testId: "ojaj/online/02" }), "Test online 02");
 });

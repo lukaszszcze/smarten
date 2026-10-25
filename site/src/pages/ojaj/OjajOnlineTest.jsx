@@ -1,17 +1,21 @@
 import { useEffect, useMemo, useReducer, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDocumentHead } from "../../hooks";
 import { useUser } from "../../App";
 import TaskRenderer from "../../components/konkursy/TaskRenderer";
-import { saveAttempt } from "../../lib/resultsSync";
+import { loadAttempts } from "../../lib/resultsModel";
+import { saveAttempt, syncAttempts } from "../../lib/resultsSync";
 import { OJAJ_ACCENT } from "../../lib/ojaj";
+import { drawTest } from "../../lib/ojajDraw";
+import { mistakeRecord } from "../../lib/ojajRecord";
 import {
+  ONLINE_VAULT_PATH,
   initialPlayerState,
   isAnswered,
   markOnlineTest,
+  newQuestionScore,
   onlineAttempt,
   onlineQuestions,
-  onlineTestPath,
   playerReducer,
   secondsLeft,
 } from "../../lib/ojajOnline";
@@ -21,9 +25,13 @@ import {
 // question, the clock top left, and "Zatwierdz wszystkie i zakoncz" with a
 // confirmation. The test submits itself when the clock reaches 0:00.
 //
+// The test is drawn when the page opens: the attempts are synced, the vault
+// fetched, and drawTest puts a test together aimed at the user's mistakes. A
+// reload draws a new one, as it would lose the answers anyway.
+//
 // The rules (what can change when) are playerReducer's, tested in
-// src/lib/ojajOnline.test.js; this page connects them to the clock, the
-// marking and the renderers.
+// src/lib/ojajOnline.test.js; this page connects them to the draw, the clock,
+// the marking and the renderers.
 
 const TASK_NAMES = {
   word_formation: "Slowotworstwo",
@@ -55,7 +63,6 @@ function scoreColor(pct) {
 }
 
 export default function OjajOnlineTest() {
-  const { id } = useParams();
   const user = useUser();
   const storageKey = `smarten_konkursy_${user?.name || "default"}`;
   const [test, setTest] = useState(null);
@@ -66,15 +73,30 @@ export default function OjajOnlineTest() {
 
   useDocumentHead("Test online OJAJ", "OJAJ etap I, czesc II - test online");
 
+  // A failed sync (offline) does not stop the draw: it then counts this
+  // device's attempts only, which beats having no test to write.
   useEffect(() => {
-    fetch(onlineTestPath(id))
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
+    let cancelled = false;
+    const attempts = user?.name
+      ? syncAttempts(user.name, storageKey).catch(() => loadAttempts(storageKey))
+      : Promise.resolve(loadAttempts(storageKey));
+    const vault = fetch(ONLINE_VAULT_PATH).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    Promise.all([vault, attempts])
+      .then(([v, a]) => {
+        if (!cancelled) setTest(drawTest(v, mistakeRecord(v, a)));
       })
-      .then(setTest)
-      .catch(() => setLoadFailed(true));
-  }, [id]);
+      .catch((e) => {
+        console.error("Online test draw failed:", e);
+        if (!cancelled) setLoadFailed(true);
+      });
+    // Development mode runs every effect twice; the first draw is dropped.
+    return () => {
+      cancelled = true;
+    };
+  }, [storageKey, user?.name]);
 
   const questions = useMemo(() => (test ? onlineQuestions(test) : []), [test]);
   const { phase, current, answers, startedAt, result } = state;
@@ -146,7 +168,9 @@ export default function OjajOnlineTest() {
     return (
       <div style={styles.page}>
         <Link to="/ojaj" style={styles.back}>&larr; Powrot do OJAJ</Link>
-        <p style={{ color: "#7a7a90" }}>Nie ma takiego testu online.</p>
+        <p style={{ color: "#7a7a90" }}>
+          Nie udalo sie wylosowac testu. Sprawdz polaczenie z internetem i sprobuj jeszcze raz.
+        </p>
       </div>
     );
   }
@@ -154,7 +178,7 @@ export default function OjajOnlineTest() {
   if (!test) {
     return (
       <div style={styles.page}>
-        <p style={{ color: "#7a7a90" }}>Ladowanie testu...</p>
+        <p style={{ color: "#7a7a90" }}>Losowanie testu...</p>
       </div>
     );
   }
@@ -248,6 +272,7 @@ export default function OjajOnlineTest() {
                   {done && q.firstOfTask && (
                     <TaskHeading task={q.task} taskResult={taskResult} />
                   )}
+                  {done && q.item.seenBefore && <span style={styles.repeatMark}>powtorka</span>}
                   <TaskRenderer
                     task={task}
                     answers={answers}
@@ -380,7 +405,10 @@ function Intro({ test, onStart }) {
   );
 }
 
+// The total, and beside it the score on the questions he had not seen before;
+// the repeats are marked "powtorka" in the review below.
 function ResultSummary({ test, result }) {
+  const fresh = newQuestionScore(test, result);
   return (
     <div style={{
       ...styles.statusCard,
@@ -388,9 +416,16 @@ function ResultSummary({ test, result }) {
       textAlign: "center",
     }}>
       <div style={styles.resultScore}>{result.earned}/{result.max}</div>
-      <div style={{ color: "#c8c8d8", fontSize: 18, fontWeight: 700, marginBottom: 16 }}>
+      <div style={{ color: "#c8c8d8", fontSize: 18, fontWeight: 700, marginBottom: 4 }}>
         {result.percentage}%
       </div>
+      {fresh.max < result.max && (
+        <div style={{ color: "#9a9ab0", fontSize: 14, marginBottom: 16 }}>
+          Nowe pytania: <strong style={{ color: "#c8c8d8" }}>{fresh.earned}/{fresh.max}</strong>
+          {" "}· powtorki: {result.earned - fresh.earned}/{result.max - fresh.max}
+        </div>
+      )}
+      {fresh.max === result.max && <div style={{ marginBottom: 12 }} />}
       <div style={{
         display: "flex", flexDirection: "column", gap: 6, maxWidth: 360, margin: "0 auto",
       }}>
@@ -535,6 +570,18 @@ const styles = {
     marginBottom: 10,
   },
   sectionTitle: { fontSize: 18, fontWeight: 700, color: "#c8c8d8", marginBottom: 12 },
+  repeatMark: {
+    display: "inline-block",
+    fontSize: 11,
+    fontWeight: 800,
+    letterSpacing: 0.5,
+    color: "#f5a623",
+    background: "#f5a6231f",
+    border: "1px solid #f5a62340",
+    borderRadius: 999,
+    padding: "2px 8px",
+    marginBottom: 4,
+  },
   panel: {
     flex: "0 1 230px",
     background: "#13131a",

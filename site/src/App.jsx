@@ -128,7 +128,9 @@ function FullRoutes() {
             OJAJ paper is not mistaken for a kuratoryjny year. */}
         <Route path="/ojaj" element={<OjajHome />} />
         <Route path="/ojaj/cwiczenia/:id" element={<PracticeExercise config={OJAJ_PRACTICE_CONFIG} />} />
-        <Route path="/ojaj/online/:id" element={<OjajOnlineTest />} />
+        <Route path="/ojaj/online" element={<OjajOnlineTest />} />
+        {/* The three fixed tests had their own address until 2026-10-25. */}
+        <Route path="/ojaj/online/:id" element={<Navigate to="/ojaj" replace />} />
         <Route path="/ojaj/:year/:stage" element={<KonkursTest config={OJAJ_TEST_CONFIG} />} />
         <Route path="/:year/:stage" element={<KonkursTest />} />
         <Route path="*" element={<NotFound />} />

@@ -6,12 +6,8 @@ import StarDisplay from "../../components/StarDisplay";
 import { loadRewards, OJAJ_POOL } from "../../lib/practiceRewards";
 import { loadAttempts } from "../../lib/resultsModel";
 import { syncAttempts } from "../../lib/resultsSync";
-import {
-  doneCounts,
-  drawOnlineTest,
-  isOnlineAttempt,
-  onlineAttemptLabel,
-} from "../../lib/ojajOnline";
+import { ONLINE_VAULT_PATH, isOnlineAttempt, onlineAttemptLabel } from "../../lib/ojajOnline";
+import { mistakeRecord, weakTypes } from "../../lib/ojajRecord";
 import { percentageToStars } from "../../lib/questStars";
 import { aoeUnitForPercentage, usesAoeMarks } from "../../lib/aoeRanks";
 import {
@@ -154,39 +150,60 @@ function TestCard({ edition, stage, bestPct }) {
   );
 }
 
+// How many weak types show before "Pokaz wszystkie".
+const WEAK_SHOWN = 6;
+
 /**
- * Etap I, czesc II: the draw and the user's online results.
+ * Etap I, czesc II: the draw, the weak types and the user's online results.
  *
- * The tests are not listed for direct choice; the button draws one, unseen
- * ones first. Attempts are synced before the draw, or a test done on another
- * device would count as unseen.
+ * The button opens the player, which puts a test together from the vault. This
+ * section shows how many of the vault's questions are still new to him, the
+ * mistake types he misses, weakest first, each with how many of his missed
+ * questions wait to come back (never the words), and his results. Attempts are
+ * synced on opening, so tests done on another device count.
  */
-function OnlineSection({ vault }) {
+function OnlineSection() {
   const user = useUser();
   const navigate = useNavigate();
   const storageKey = `smarten_konkursy_${user?.name || "default"}`;
+  const [vault, setVault] = useState(null);
   const [attempts, setAttempts] = useState(() => loadAttempts(storageKey));
-  const [drawing, setDrawing] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    fetch(ONLINE_VAULT_PATH)
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(setVault)
+      .catch(console.error);
+  }, []);
 
   useEffect(() => {
     setAttempts(loadAttempts(storageKey));
-  }, [storageKey]);
+    if (!user?.name) return undefined;
+    let cancelled = false;
+    syncAttempts(user.name, storageKey)
+      .then((synced) => {
+        if (!cancelled) setAttempts(synced);
+      })
+      // Offline, the section shows this device's attempts, loaded above.
+      .catch((e) => console.error("Attempts sync failed:", e));
+    return () => {
+      cancelled = true;
+    };
+  }, [storageKey, user?.name]);
 
-  const ids = vault.map((t) => t.id);
-  const counts = doneCounts(ids, attempts);
-  const done = ids.filter((id) => counts[id] > 0).length;
+  if (!vault) return null;
+
+  const record = mistakeRecord(vault, attempts);
+  const weak = weakTypes(vault, record);
+  const total = vault.tasks.reduce((n, t) => n + t.items.length, 0);
+  const unseen = total - Object.keys(record.items).length;
+  const waiting = weak.reduce((n, t) => n + t.waiting, 0);
   const results = attempts.filter(isOnlineAttempt).reverse();
-
-  // A failed sync (offline) does not stop the draw: it then counts this
-  // device's attempts only, so a test done elsewhere may come up again, which
-  // beats having no test to write.
-  const draw = async () => {
-    setDrawing(true);
-    const synced = user?.name
-      ? await syncAttempts(user.name, storageKey).catch(() => loadAttempts(storageKey))
-      : loadAttempts(storageKey);
-    navigate(`/ojaj/online/${drawOnlineTest(ids, synced)}`);
-  };
+  const shown = showAll ? weak : weak.slice(0, WEAK_SHOWN);
 
   return (
     <div style={{ marginBottom: 40 }}>
@@ -194,21 +211,61 @@ function OnlineSection({ vault }) {
       <div style={styles.card}>
         <p style={{ color: "#9a9ab0", fontSize: 14, lineHeight: 1.6, margin: "0 0 14px" }}>
           45 pytan w 45 minut, jedno pytanie na ekranie, jak na platformie OJAJ.
-          Zadania wlasne aplikacji. Test jest losowany, najpierw sposrod jeszcze
-          nierozwiazanych.
+          Zadania wlasne aplikacji. Kazdy test jest losowany z bazy pytan: glownie
+          nowe pytania, do tego kilka pytan, na ktore wczesniej odpowiedziales zle,
+          i pytania z rodzajow bledow, ktore robisz najczesciej.
         </p>
         <div style={styles.drawRow}>
           <span style={{ color: "#c8c8d8", fontSize: 14 }}>
-            Rozwiazane: <strong>{done}</strong> z {ids.length}
+            Nowe pytania w bazie: <strong>{unseen}</strong> z {total}
           </span>
-          <button
-            onClick={draw}
-            disabled={drawing}
-            style={{ ...styles.drawBtn, opacity: drawing ? 0.6 : 1 }}
-          >
-            {drawing ? "Losowanie..." : "Losuj test"}
+          <button onClick={() => navigate("/ojaj/online")} style={styles.drawBtn}>
+            Losuj test
           </button>
         </div>
+
+        {weak.length > 0 && (
+          <div style={{ marginTop: 20 }}>
+            <div style={styles.weakHead}>
+              <span style={{ color: "#e8e8f0", fontWeight: 700 }}>Twoje slabe punkty</span>
+              <span style={{ color: "#7a7a90", fontSize: 12 }}>
+                Pytania do powtorki: {waiting}
+              </span>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {shown.map((t) => (
+                <div key={t.key} style={styles.weakRow}>
+                  <span style={{ color: "#c8c8d8", flex: "1 1 200px" }}>
+                    {t.label}
+                    {/* A study page or a notebook section: static pages in
+                        site/public, so a plain link rather than a router Link. */}
+                    {t.link && (
+                      <a href={t.link} style={styles.weakLink}>Czytaj &rarr;</a>
+                    )}
+                  </span>
+                  {/* How strongly the draw aims at this type: its share, damped by
+                      one extra answer so a single miss does not count as 100%. */}
+                  <span
+                    style={styles.weakBar}
+                    title="Im dluzszy pasek, tym czesciej ten rodzaj bledu wraca w testach"
+                  >
+                    <span style={{ ...styles.weakFill, width: `${Math.round(100 * t.share)}%` }} />
+                  </span>
+                  <span style={{ color: "#7a7a90", fontSize: 12, whiteSpace: "nowrap" }}>
+                    bledy {t.wrong} z {t.answered}
+                    {t.waiting > 0 ? ` · ${t.waiting} do powtorki` : ""}
+                  </span>
+                </div>
+              ))}
+            </div>
+            {weak.length > WEAK_SHOWN && (
+              <button onClick={() => setShowAll(!showAll)} style={styles.linkBtn}>
+                {showAll ? "Pokaz mniej" : `Pokaz wszystkie (${weak.length})`}
+              </button>
+            )}
+          </div>
+        )}
+
         {results.length > 0 && (
           <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 6 }}>
             {results.map((a) => (
@@ -344,7 +401,7 @@ export default function OjajHome() {
 
       {!index && <p style={{ color: "#7a7a90" }}>Ladowanie...</p>}
 
-      {index?.online?.length > 0 && <OnlineSection vault={index.online} />}
+      <OnlineSection />
 
       {index?.editions?.map((edition) => (
         <div key={edition.yearPath} style={{ marginBottom: 32 }}>
@@ -489,6 +546,53 @@ const styles = {
     fontWeight: 700,
     cursor: "pointer",
     fontFamily: "'DM Sans', sans-serif",
+  },
+  weakHead: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    gap: 12,
+    flexWrap: "wrap",
+    fontSize: 14,
+    marginBottom: 8,
+  },
+  weakRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: 10,
+    flexWrap: "wrap",
+    fontSize: 13,
+    padding: "4px 0",
+  },
+  weakLink: {
+    color: "#50d890",
+    fontSize: 12,
+    fontWeight: 700,
+    textDecoration: "none",
+    marginLeft: 8,
+    whiteSpace: "nowrap",
+  },
+  weakBar: {
+    flex: "0 0 80px",
+    height: 6,
+    background: "#1e1e2e",
+    borderRadius: 3,
+    overflow: "hidden",
+  },
+  weakFill: {
+    display: "block",
+    height: "100%",
+    background: "#f5a623",
+  },
+  linkBtn: {
+    background: "none",
+    border: "none",
+    padding: "8px 0 0",
+    color: "#7a7a90",
+    fontSize: 13,
+    cursor: "pointer",
+    fontFamily: "'DM Sans', sans-serif",
+    textDecoration: "underline",
   },
   resultRow: {
     display: "flex",
