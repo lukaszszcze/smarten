@@ -18,6 +18,7 @@ import {
 } from "../../lib/ojaj";
 
 const UK_NOTEBOOK_PATH = "/ojaj_uk";
+const STUDY_PAGES_PATH = "/ojaj_study/";
 
 const TYPE_LABELS = {
   word_formation: "Slowotworstwo",
@@ -334,6 +335,37 @@ function ExerciseRow({ exercise, bestPct }) {
   );
 }
 
+// A card for a static page in site/public (the UK notebook, the study pages):
+// a plain link rather than a router Link, because the router does not serve them.
+function StaticPageCard({ href, title, subtitle, marginBottom }) {
+  return (
+    <a
+      href={href}
+      style={{ ...styles.card, textDecoration: "none", color: "inherit", marginBottom }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = "#50d89066";
+        e.currentTarget.style.transform = "translateY(-2px)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = "#1e1e2e";
+        e.currentTarget.style.transform = "translateY(0)";
+      }}
+    >
+      <div
+        style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}
+      >
+        <div style={{ flex: 1 }}>
+          <span style={{ color: "#e8e8f0", fontSize: 15, fontWeight: 600 }}>{title}</span>
+          <div style={{ color: "#5a5a6a", fontSize: 12, marginTop: 2 }}>{subtitle}</div>
+        </div>
+        <span style={{ color: "#50d890", fontSize: 14, fontWeight: 700, whiteSpace: "nowrap" }}>
+          Czytaj &rarr;
+        </span>
+      </div>
+    </a>
+  );
+}
+
 export default function OjajHome() {
   useDocumentHead(
     "OJAJ",
@@ -370,34 +402,24 @@ export default function OjajHome() {
         tych dwoch czesci nie da sie tu cwiczyc.
       </div>
 
-      {/* A static page in site/public, so a plain link rather than a router Link. */}
-      <a
+      <StaticPageCard
         href={UK_NOTEBOOK_PATH}
-        style={{ ...styles.card, textDecoration: "none", color: "inherit", marginBottom: 40 }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = "#50d89066";
-          e.currentTarget.style.transform = "translateY(-2px)";
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = "#1e1e2e";
-          e.currentTarget.style.transform = "translateY(0)";
-        }}
-      >
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
-          <div style={{ flex: 1 }}>
-            <span style={{ color: "#e8e8f0", fontSize: 15, fontWeight: 600 }}>
-              Wielka Brytania - notatki do nauki
-            </span>
-            <div style={{ color: "#5a5a6a", fontSize: 12, marginTop: 2 }}>
-              Wszystkie tematy z mapy mysli OJAJ 2026/27: symbole, parlament, historia,
-              slynni Brytyjczycy, Londyn i parki krolewskie
-            </div>
-          </div>
-          <span style={{ color: "#50d890", fontSize: 14, fontWeight: 700, whiteSpace: "nowrap" }}>
-            Czytaj &rarr;
-          </span>
-        </div>
-      </a>
+        title="Wielka Brytania - notatki do nauki"
+        subtitle={
+          "Wszystkie tematy z mapy mysli OJAJ 2026/27: symbole, parlament, historia, " +
+          "slynni Brytyjczycy, Londyn i parki krolewskie"
+        }
+        marginBottom={12}
+      />
+      <StaticPageCard
+        href={STUDY_PAGES_PATH}
+        title="Strony do nauki - bledy z testow online"
+        subtitle={
+          "Slowotworstwo i wisielec: zasady budowy i pisowni slow, kazda strona z krotkim " +
+          "sprawdzianem"
+        }
+        marginBottom={40}
+      />
 
       {!index && <p style={{ color: "#7a7a90" }}>Ladowanie...</p>}
 

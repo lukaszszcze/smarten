@@ -47,6 +47,8 @@ smarten/
 │   │   ├── results.js               # KV-backed competition results storage
 │   │   └── quest-progress.js        # Quest progress: GET/PUT with server-side merge
 │   ├── public/_routes.json          # Routes /api/* to Functions, rest to static
+│   ├── public/ojaj_uk.html          # UK culture notebook (static page)
+│   ├── public/ojaj_study/           # OJAJ study pages, one per mistake type (static)
 │   ├── wrangler.toml                # Cloudflare config (KV binding: RESULTS)
 │   └── package.json
 ```
@@ -184,6 +186,28 @@ character maps, so extraction drops whole words and every item in
 each paper are needed: the one with the key marks the answers but prints them
 over the blanks and omits the word bank and the base words, and the one without
 the key has all of those but no answers.
+
+### Study pages
+
+`site/public/ojaj_study/` holds static English pages, one per word-formation and
+wisielec mistake type that Tadzio's online tests showed (the page name is the type
+key), and an index. The transformations and grammar pages are written but off the
+site for now: their data has `PUBLISH = False`, and the transformations checklist
+is kept in `tmp/_study_pages/unpublished/`. The pages are served at
+`/ojaj_study/<key>`, the address the weak-points list links to, and the OJAJ page
+reaches the index through a card next to the UK notebook's. Each page has his
+mistakes first, the rule with the full word list in columns (C1-C2 words in an
+"Advanced" box under each list), "Watch out", and typed answers marked letter for
+letter. `study.js` keeps the "I've learnt this" ticks in local
+storage (`ojaj-study-learnt`); nothing else is saved.
+
+Every page except the index is written by `tmp/_gen_study.py`
+from its data in `tmp/_study_pages/<key>.py`, so edit the data, not the HTML. The
+generator stops before writing if a listed word or typed answer is missing from
+the British dictionaries, if anything from online Test 03 (unseen by Tadzio)
+appears, if a word is listed twice, or if a marking or wisielec hint does not fit
+its word. `tmp/_e2e_study.mjs` clicks through every page; run it against
+`vite preview`, because `npm run dev` does not serve the addresses without `.html`.
 
 ## Data format
 

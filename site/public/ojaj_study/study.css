@@ -1,0 +1,368 @@
+/* Shared by every page in /ojaj_study/. The colours, fonts and layout are the
+   UK notebook's (site/public/ojaj_uk.html), so the two read as one set. */
+:root {
+  --bg: #f5f6fb;
+  --paper: #ffffff;
+  --ink: #1c2140;
+  --muted: #5a6082;
+  --line: #dfe2ef;
+  --hub: #d8d5fb;
+  --hub-ink: #3d3699;
+  --yellow: #c99a00;
+  --yellow-soft: #fff6d1;
+  --pink: #cf1f68;
+  --pink-soft: #fde6ef;
+  --orange: #d27a00;
+  --orange-soft: #fff0da;
+  --green: #2f8f2a;
+  --green-soft: #e4f5e1;
+  --shadow: 0 1px 2px rgba(28,33,64,.06), 0 6px 20px rgba(28,33,64,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #12142a; --paper: #1b1e38; --ink: #e8eaf8; --muted: #a2a7c9; --line: #2e3257;
+    --hub: #34307a; --hub-ink: #d8d5fb;
+    --yellow: #f2c94c; --yellow-soft: #2e2a14;
+    --pink: #ff6fa6; --pink-soft: #3a1a2a;
+    --orange: #ffab40; --orange-soft: #36260f;
+    --green: #7bd66f; --green-soft: #17301a;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12142a; --paper: #1b1e38; --ink: #e8eaf8; --muted: #a2a7c9; --line: #2e3257;
+  --hub: #34307a; --hub-ink: #d8d5fb;
+  --yellow: #f2c94c; --yellow-soft: #2e2a14;
+  --pink: #ff6fa6; --pink-soft: #3a1a2a;
+  --orange: #ffab40; --orange-soft: #36260f;
+  --green: #7bd66f; --green-soft: #17301a;
+  --shadow: none;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  font-size: 17px; line-height: 1.6;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 18px; padding-block: 28px 64px; }
+h1, h2, h3 {
+  font-family: "Bricolage Grotesque", "Atkinson Hyperlegible", system-ui, sans-serif;
+  text-wrap: balance;
+  line-height: 1.15;
+}
+h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  margin: 0 0 .4rem;
+  letter-spacing: -.01em;
+}
+h2 { font-size: clamp(1.4rem, 4.2vw, 1.8rem); font-weight: 800; margin: 0; color: var(--c); }
+h3 { font-size: 1.15rem; font-weight: 600; margin: 1.4rem 0 .4rem; }
+p { margin: .5rem 0; max-width: 68ch; }
+a { color: var(--hub-ink); }
+a:focus-visible, summary:focus-visible, input:focus-visible, button:focus-visible {
+  outline: 3px solid var(--hub-ink); outline-offset: 2px; border-radius: 4px;
+}
+.lede { color: var(--muted); max-width: 62ch; }
+.eyebrow {
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+.tip { font-size: .92rem; color: var(--muted); font-style: italic; }
+footer { margin-top: 48px; font-size: .9rem; color: var(--muted); }
+
+/* Page colour: one per group of pages, set on <body>. */
+.grammar { --c: var(--orange); --soft: var(--orange-soft); }
+.wordpage { --c: var(--hub-ink); --soft: var(--hub); }
+.culture { --c: var(--yellow); --soft: var(--yellow-soft); }
+
+/* Title row with the "I've learnt this" tick */
+.page-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.page-head h1 { color: var(--c); }
+.learnt {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .92rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+.learnt input { width: 20px; height: 20px; accent-color: var(--c); }
+
+/* One part of a page: Common mistake, The rule, Watch out, Check yourself */
+section.part { margin-top: 40px; padding-top: 8px; border-top: 4px solid var(--c); }
+section.part > h2 { margin: 14px 0 6px; }
+
+.fact {
+  background: var(--paper);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 4px 18px 12px;
+  margin: 14px 0;
+}
+.fact ul, .fact ol { margin: .3rem 0; padding-left: 1.3rem; }
+.fact li { margin: .3rem 0; }
+
+/* Common mistake / Right */
+.mistakes {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin: 14px 0;
+}
+.mistakes.wide { grid-template-columns: 1fr; }
+.mk {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 10px 16px;
+}
+.mk .task { margin: 0 0 8px; padding-bottom: 8px; border-bottom: 1px dashed var(--line); }
+.mk .task .orig { display: block; }
+.mk .row { margin: 2px 0; }
+.mk .lab {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+/* Wide cards (whole sentences) have room for the label beside the answer. */
+.mistakes.wide .mk .row { display: flex; flex-wrap: wrap; gap: 0 10px; align-items: baseline; }
+.mistakes.wide .mk .lab { min-width: 9.5em; }
+.mk .no { color: var(--pink); text-decoration: line-through; text-decoration-thickness: 2px; }
+.mk .yes { color: var(--green); font-weight: 700; }
+.mk .why { font-size: .92rem; color: var(--muted); margin: 6px 0 0; }
+
+.kw { font-weight: 700; letter-spacing: .04em; color: var(--c); margin-right: 8px; }
+.gap { display: inline-block; min-width: 4.5em; border-bottom: 2px solid var(--muted); }
+
+/* The four checks */
+ol.checks {
+  list-style: none;
+  counter-reset: chk;
+  padding: 0;
+  margin: 14px 0;
+  display: grid;
+  gap: 10px;
+}
+ol.checks > li {
+  counter-increment: chk;
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 10px 16px 10px 62px;
+}
+ol.checks > li::before {
+  content: counter(chk); position: absolute; left: 14px; top: 12px;
+  width: 34px; height: 34px; border-radius: 50%; background: var(--c); color: var(--paper);
+  font: 800 1.1rem/34px "Bricolage Grotesque", sans-serif; text-align: center;
+}
+ol.checks strong { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.08rem; }
+ol.checks p { margin: .25rem 0; }
+
+/* Word lists in columns: base word, arrow, the word built from it */
+.pairs {
+  columns: 3 240px;
+  column-gap: 28px;
+  margin: 8px 0 10px;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 6px 16px;
+}
+.pairs li {
+  break-inside: avoid;
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) auto minmax(0, 1.25fr);
+  gap: 8px;
+  align-items: baseline;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .95rem;
+  line-height: 1.4;
+}
+.pairs li.one { display: block; }
+.pairs i { color: var(--muted); font-size: .88rem; }
+.more { margin: 4px 0 14px; }
+.more summary { cursor: pointer; font-weight: 700; color: var(--c); font-size: .92rem; }
+.more summary::marker { color: var(--c); }
+.more[open] summary { margin-bottom: 4px; }
+.pairs s { color: var(--pink); text-decoration-thickness: 2px; }
+.pairs b { color: var(--green); }
+.arrow { color: var(--muted); padding: 0 2px; }
+
+.watch { background: var(--soft); border-radius: 14px; padding: 12px 18px; margin: 14px 0; }
+.watch ul { margin: .3rem 0; padding-left: 1.2rem; }
+.watch li { margin: .4rem 0; }
+
+/* Check yourself: answers that open on a click */
+.check details {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 14px;
+  margin: 8px 0;
+}
+.check summary { cursor: pointer; }
+.check summary::marker { color: var(--c); }
+.check details > p { margin: .5rem 0 .2rem; }
+/* A line break after the first sentence, keeping it on the marker's line. */
+.check summary .orig::after { content: "\A"; white-space: pre; }
+.check .ans { color: var(--green); font-weight: 700; }
+
+/* Check yourself: typed answers, spelling checked exactly (study.js) */
+ol.typed { padding-left: 1.4rem; margin: 10px 0; }
+ol.typed > li {
+  margin: 10px 0;
+  padding: 8px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+ol.typed > li::marker { color: var(--c); font-weight: 700; }
+ol.typed p { margin: .2rem 0; max-width: none; }
+.gapin {
+  font: inherit; color: var(--ink); background: var(--bg);
+  width: 11em; max-width: 100%; padding: 1px 8px; margin: 2px 0;
+  border: 2px solid var(--line); border-radius: 8px;
+}
+.gapin.ok { border-color: var(--green); background: var(--green-soft); }
+.gapin.bad { border-color: var(--pink); background: var(--pink-soft); }
+.tq-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.tq-actions button {
+  font: inherit; font-size: .92rem; font-weight: 700; cursor: pointer;
+  padding: 4px 14px; border-radius: 999px;
+  border: 2px solid var(--c); background: transparent; color: var(--c);
+}
+.tq-actions button.tq-check { background: var(--c); color: var(--paper); }
+.tq-out { font-size: .95rem; margin: .4rem 0 0; }
+.tq-out:empty { display: none; }
+.tq-out.ok { color: var(--green); }
+.tq-out.bad { color: var(--pink); }
+.tq-out .note { color: var(--muted); }
+.tally { font-weight: 700; color: var(--c); }
+
+.practice { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.quiz {
+  display: inline-block;
+  background: var(--c);
+  color: var(--paper);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+:root[data-theme="dark"] .quiz, :root[data-theme="dark"] .tq-actions button.tq-check {
+  color: #12142a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .quiz,
+  :root:not([data-theme="light"]) .tq-actions button.tq-check { color: #12142a; }
+}
+
+/* Index page */
+.howto {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-top: 18px;
+}
+.howto ol { margin: .4rem 0 0; padding-left: 1.3rem; }
+.group { margin-top: 40px; padding-top: 8px; border-top: 4px solid var(--c); }
+.group > h2 { margin: 14px 0 4px; }
+.group > p { color: var(--muted); }
+.cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 12px 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px solid var(--c);
+  border-radius: 14px;
+  padding: 10px 14px;
+}
+.card strong {
+  color: var(--c);
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.05rem;
+}
+.card span { font-size: .88rem; color: var(--muted); line-height: 1.4; }
+.card .done { font-size: .8rem; color: var(--c); font-weight: 700; }
+.card .done:empty { display: none; }
+a.card:hover { background: var(--soft); }
+.card.later { border-style: dashed; border-color: var(--line); }
+.card.later strong { color: var(--muted); }
+.card .badge {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .mistakes.wide .mk .lab { min-width: 0; width: 100%; }
+  ol.checks > li { padding-left: 56px; }
+}
+.part h4 { font-size: .9rem; font-weight: 700; color: var(--muted); margin: .9rem 0 .1rem; }
+/* Wisielec hints: the letters given and a blank for each missing one */
+.hint {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+/* Tables on the grammar pages */
+.scroll { overflow-x: auto; margin: 10px 0; }
+table.grid {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 560px;
+  background: var(--paper);
+  border-radius: 12px;
+  overflow: hidden;
+}
+table.grid td, table.grid th {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+table.grid th {
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+table.grid td:first-child { font-weight: 700; color: var(--c); }
+.ex { font-style: italic; }
+.legend s { color: var(--pink); text-decoration-thickness: 2px; }
+.legend b { color: var(--green); }
