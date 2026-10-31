@@ -486,6 +486,206 @@
           ],
           "level": "B2",
           "mistakeType": "two-steps"
+        },
+        {
+          "id": "04-1",
+          "sentence": "In the film, a __________ creature climbs out of the lake and terrifies the whole town.",
+          "wordBase": "MONSTER",
+          "answer": [
+            "monstrous"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "04-2",
+          "sentence": "The __________ of the river here is about fifty metres, so nobody tries to swim across.",
+          "wordBase": "WIDE",
+          "answer": [
+            "width"
+          ],
+          "level": "B1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "04-3",
+          "sentence": "The storm left a trail of __________ across the town: trees down, roofs gone and cars crushed.",
+          "wordBase": "DESTROY",
+          "answer": [
+            "destruction"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "04-4",
+          "sentence": "This old photo is __________: it's the only one we have of Great-Grandpa.",
+          "wordBase": "REPLACE",
+          "answer": [
+            "irreplaceable"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "04-5",
+          "sentence": "Being late once is fine, but being late every single day is __________.",
+          "wordBase": "EXCUSE",
+          "answer": [
+            "inexcusable"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "04-6",
+          "sentence": "I am __________ sorry for breaking your favourite mug.",
+          "wordBase": "TRUE",
+          "answer": [
+            "truly"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "04-7",
+          "sentence": "Fifteen pounds for a cheese sandwich? That's __________!",
+          "wordBase": "OUTRAGE",
+          "answer": [
+            "outrageous"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "04-8",
+          "sentence": "Thunderstorms in January are a rare __________ in Poland.",
+          "wordBase": "OCCUR",
+          "answer": [
+            "occurrence"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "04-9",
+          "sentence": "It would be __________ to take an umbrella: the sky is very dark.",
+          "wordBase": "SENSE",
+          "answer": [
+            "sensible"
+          ],
+          "level": "B2",
+          "mistakeType": "able-ible"
+        },
+        {
+          "id": "04-10",
+          "sentence": "We got __________ lost in the forest and had to phone Dad to come and find us.",
+          "wordBase": "HOPE",
+          "answer": [
+            "hopelessly"
+          ],
+          "level": "B2",
+          "mistakeType": "two-steps"
+        },
+        {
+          "id": "05-1",
+          "sentence": "She is very __________: she always notices when I'm upset, even when I try to hide it.",
+          "wordBase": "PERCEIVE",
+          "answer": [
+            "perceptive"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "05-2",
+          "sentence": "The police asked for a __________ of the man who had taken the bike.",
+          "wordBase": "DESCRIBE",
+          "answer": [
+            "description"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "05-3",
+          "sentence": "The __________ of the pool is two metres, so only good swimmers are allowed in.",
+          "wordBase": "DEEP",
+          "answer": [
+            "depth"
+          ],
+          "level": "B1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "05-4",
+          "sentence": "The noise from the building site next door was __________: nobody could work.",
+          "wordBase": "TOLERATE",
+          "answer": [
+            "intolerable"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "05-5",
+          "sentence": "The heavy snow in April was __________: nothing like it had ever happened here before.",
+          "wordBase": "PRECEDENT",
+          "answer": [
+            "unprecedented"
+          ],
+          "level": "C2",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "05-6",
+          "sentence": "At the end of the concert, the singer __________ thanked her fans for their support.",
+          "wordBase": "PUBLIC",
+          "answer": [
+            "publicly"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "05-7",
+          "sentence": "There has been a __________ improvement in your handwriting this term.",
+          "wordBase": "NOTICE",
+          "answer": [
+            "noticeable"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "05-8",
+          "sentence": "The clown was so funny that my little sister laughed __________.",
+          "wordBase": "CONTROL",
+          "answer": [
+            "uncontrollably"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "05-9",
+          "sentence": "Thanks to my teacher's __________, I passed the exam with flying colours.",
+          "wordBase": "GUIDE",
+          "answer": [
+            "guidance"
+          ],
+          "level": "B2",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "05-10",
+          "sentence": "The smell of fresh bread from the bakery was __________: we had to go in and buy some.",
+          "wordBase": "RESIST",
+          "answer": [
+            "irresistible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
         }
       ]
     },
@@ -828,6 +1028,214 @@
           ],
           "level": "C1",
           "mistakeType": "vowels"
+        },
+        {
+          "id": "04-11",
+          "sentence": "After three days lost in the mountains, the climbers were d e s p __ r __ t e (9) for food and water.",
+          "hint": "d e s p __ r __ t e (9)",
+          "answer": [
+            "desperate"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "04-12",
+          "sentence": "The UK p a r l __ __ m e n t (10) meets in the Palace of Westminster, the building with Big Ben.",
+          "hint": "p a r l __ __ m e n t (10)",
+          "answer": [
+            "parliament"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "04-13",
+          "sentence": "I'm in a real d i l e __ __ a (7): my two best friends are having their birthday parties on the same day.",
+          "hint": "d i l e __ __ a (7)",
+          "answer": [
+            "dilemma"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "04-14",
+          "sentence": "Our neighbour's dog is quite a __ __ r e __ __ i v e (10): it barks and growls at everyone who walks past.",
+          "hint": "a __ __ r e __ __ i v e (10)",
+          "answer": [
+            "aggressive"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "04-15",
+          "sentence": "Please keep the white clothes s e p __ r __ t e (8) from the coloured ones when you do the washing.",
+          "hint": "s e p __ r __ t e (8)",
+          "answer": [
+            "separate"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "04-16",
+          "sentence": "It was b __ t __ e r l y (8) cold on the beach, so we went home after ten minutes.",
+          "hint": "b __ t __ e r l y (8)",
+          "answer": [
+            "bitterly"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-17",
+          "sentence": "Ola said sorry, and I don't hold a g __ __ d g __ (6) against her: we're friends again.",
+          "hint": "g __ __ d g __ (6)",
+          "answer": [
+            "grudge"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-18",
+          "sentence": "We missed the train, but every cloud has a silver l __ n __ n g (6): we found a lovely café at the station.",
+          "hint": "l __ n __ n g (6)",
+          "answer": [
+            "lining"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "04-19",
+          "sentence": "While I was tidying my room, I came a __ r o s s (6) some old photos of my grandparents.",
+          "hint": "a __ r o s s (6)",
+          "answer": [
+            "across"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "04-20",
+          "sentence": "It's h y p __ c r __ s y (9) to tell everyone else to save water and then spend an hour in the shower.",
+          "hint": "h y p __ c r __ s y (9)",
+          "answer": [
+            "hypocrisy"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "05-11",
+          "sentence": "The old church has a small c e m __ t __ r y (8) where people from the village have been buried for centuries.",
+          "hint": "c e m __ t __ r y (8)",
+          "answer": [
+            "cemetery"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "05-12",
+          "sentence": "Our film won first prize in the 'Best Animation' c a t __ g __ r y (8).",
+          "hint": "c a t __ g __ r y (8)",
+          "answer": [
+            "category"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "05-13",
+          "sentence": "The school c o __ __ i __ __ e e (9) has decided to hold the summer fair on a Saturday.",
+          "hint": "c o __ __ i __ __ e e (9)",
+          "answer": [
+            "committee"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "05-14",
+          "sentence": "Don't take any u n __ e __ e __ __ a r y (11) risks when you ride your bike in the city.",
+          "hint": "u n __ e __ e __ __ a r y (11)",
+          "answer": [
+            "unnecessary"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "05-15",
+          "sentence": "The two shades of blue are almost the same: the difference between them is very s u __ t l e (6).",
+          "hint": "s u __ t l e (6)",
+          "answer": [
+            "subtle"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "05-16",
+          "sentence": "The v __ s __ (4) majority of pupils in our school walk or cycle to school.",
+          "hint": "v __ s __ (4)",
+          "answer": [
+            "vast"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "05-17",
+          "sentence": "We had a n __ r __ o w (6) escape when a big branch fell just behind our car.",
+          "hint": "n __ r __ o w (6)",
+          "answer": [
+            "narrow"
+          ],
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "05-18",
+          "sentence": "My little brother broke my headphones again, and that was the last s t r __ w (5)!",
+          "hint": "s t r __ w (5)",
+          "answer": [
+            "straw"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "05-19",
+          "sentence": "My grandma b r __ __ g h t (7) up four children on her own after the war.",
+          "hint": "b r __ __ g h t (7)",
+          "answer": [
+            "brought"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "05-20",
+          "sentence": "For no a __ __ a r __ n t (8) reason, our dog started barking at the wall.",
+          "hint": "a __ __ a r __ n t (8)",
+          "answer": [
+            "apparent"
+          ],
+          "level": "C1",
+          "mistakeType": "ance-ence"
         }
       ]
     },
@@ -1122,7 +1530,7 @@
           "original": "Sam is the best football player in our team.",
           "keyword": "ANYONE",
           "transformed": "Sam plays football better _________ our team.",
-          "answer": "than anyone else in / than anyone in",
+          "answer": "than anyone else in / than anyone in / than anyone else on / than anyone on",
           "level": "B2",
           "mistakeType": "comparison"
         },
@@ -1135,6 +1543,191 @@
           "level": "C1",
           "focus": "collocation",
           "mistakeType": "collocation"
+        },
+        {
+          "id": "04-21",
+          "original": "My new bike was much cheaper than I expected.",
+          "keyword": "NEARLY",
+          "transformed": "My new bike was not _________ as I expected.",
+          "answer": "nearly as expensive / nearly as dear / nearly so expensive",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "04-22",
+          "original": "The water was too cold for us to swim in.",
+          "keyword": "WARM",
+          "transformed": "The water was not _________ swim in.",
+          "answer": "warm enough for us to / warm enough to",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "04-23",
+          "original": "It doesn't matter how hard I try, I can't remember her name.",
+          "keyword": "HOWEVER",
+          "transformed": "_________, I cannot remember her name.",
+          "answer": "However hard I try / However much I try",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "04-24",
+          "original": "Nobody listened to what the guide was saying.",
+          "keyword": "ATTENTION",
+          "transformed": "Nobody _________ what the guide was saying.",
+          "answer": "paid attention to / paid any attention to",
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-25",
+          "original": "The new school rules will affect every pupil.",
+          "keyword": "IMPACT",
+          "transformed": "The new school rules will _________ every pupil.",
+          "answer": "have an impact on / make an impact on / have a big impact on / have a great impact on / have a huge impact on / have a real impact on",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-26",
+          "original": "I'm sorry I didn't call you yesterday.",
+          "keyword": "REGRET",
+          "transformed": "I _________ you yesterday.",
+          "answer": "regret not calling / regret not phoning / regret not ringing / regret not having called / regret not having phoned / regret that I did not call / regret I did not call / regret that I did not phone / regret I did not phone",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "04-27",
+          "original": "Without your help, I would have failed the test.",
+          "keyword": "NOT",
+          "transformed": "_________ your help, I would have failed the test.",
+          "answer": "Had it not been for / If it had not been for",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "04-28",
+          "original": "A builder is repairing our roof this week.",
+          "keyword": "HAVING",
+          "transformed": "We _________ this week.",
+          "answer": "are having our roof repaired / are having the roof repaired / are having our roof fixed / are having the roof fixed",
+          "level": "B2",
+          "mistakeType": "passive"
+        },
+        {
+          "id": "04-29",
+          "original": "'Have you finished your project?' the teacher asked me.",
+          "keyword": "WHETHER",
+          "transformed": "The teacher asked me _________ my project.",
+          "answer": "whether I had finished / whether I had already finished / whether or not I had finished",
+          "level": "B2",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "04-30",
+          "original": "I didn't realise I had lost my keys until I got home.",
+          "keyword": "UNTIL",
+          "transformed": "Not _________ realise that I had lost my keys.",
+          "answer": "until I got home did I / until I arrived home did I / until I came home did I / until I got back did I",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "05-21",
+          "original": "Her latest film is not nearly as good as her first one.",
+          "keyword": "FAR",
+          "transformed": "Her first film is _________ her latest one.",
+          "answer": "far better than / a far better film than / a far better one than",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "05-22",
+          "original": "The exam was easier than I had expected.",
+          "keyword": "AS",
+          "transformed": "The exam was not _________ I had expected.",
+          "answer": "as difficult as / as hard as / so difficult as / so hard as / as tough as / so tough as",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "05-23",
+          "original": "Although she felt ill, Ola went to school.",
+          "keyword": "DESPITE",
+          "transformed": "Ola went to school _________ ill.",
+          "answer": "despite feeling / despite being / despite the fact that she felt / despite the fact she felt / despite the fact that she was / despite the fact she was",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "05-24",
+          "original": "Even though the task was difficult, we finished it on time.",
+          "keyword": "THOUGH",
+          "transformed": "Difficult _________, we finished it on time.",
+          "answer": "though the task was / though it was",
+          "level": "C2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "05-25",
+          "original": "Ania didn't keep her promise.",
+          "keyword": "WORD",
+          "transformed": "Ania did not _________.",
+          "answer": "keep her word",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "05-26",
+          "original": "I completely forgot about the dentist appointment.",
+          "keyword": "MIND",
+          "transformed": "The dentist appointment completely _________.",
+          "answer": "slipped my mind",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "05-27",
+          "original": "Don't stop trying: you're nearly there!",
+          "keyword": "GIVE",
+          "transformed": "Do not _________: you are nearly there!",
+          "answer": "give up",
+          "level": "B1",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "05-28",
+          "original": "I would rather walk than take the bus.",
+          "keyword": "PREFER",
+          "transformed": "I _________ the bus.",
+          "answer": "prefer walking to taking / prefer to walk rather than take",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "05-29",
+          "original": "It was wrong of you not to tell me about the party.",
+          "keyword": "OUGHT",
+          "transformed": "You _________ me about the party.",
+          "answer": "ought to have told",
+          "level": "C1",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "05-30",
+          "original": "'Where did you buy your jacket?' Ola asked me.",
+          "keyword": "WHERE",
+          "transformed": "Ola asked me _________ my jacket.",
+          "answer": "where I had bought / where I bought",
+          "level": "B2",
+          "mistakeType": "reported-speech"
         }
       ]
     },
@@ -1567,6 +2160,274 @@
           "answer": "B",
           "level": "C1",
           "mistakeType": "participle-clauses"
+        },
+        {
+          "id": "04-31",
+          "stem": "The storm caused __________ damage to the village: dozens of houses lost their roofs.",
+          "options": [
+            "A) extensive",
+            "B) wide",
+            "C) broad",
+            "D) long"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-32",
+          "stem": "It's __________ unlikely that it will snow in May.",
+          "options": [
+            "A) strongly",
+            "B) highly",
+            "C) deeply",
+            "D) heavily"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "04-33",
+          "stem": "Go on, tell me what happened at the party: I'm all __________!",
+          "options": [
+            "A) eyes",
+            "B) hands",
+            "C) ears",
+            "D) mouth"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "04-34",
+          "stem": "The fire alarm went __________ in the middle of our maths test.",
+          "options": [
+            "A) off",
+            "B) out",
+            "C) up",
+            "D) down"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "04-35",
+          "stem": "Your essay is __________ better than last time: well done!",
+          "options": [
+            "A) very",
+            "B) a great many",
+            "C) too",
+            "D) a great deal"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "04-36",
+          "stem": "She sings __________ than anyone else in the choir.",
+          "options": [
+            "A) more beautifully",
+            "B) most beautifully",
+            "C) beautifully",
+            "D) more beautiful"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "04-37",
+          "stem": "We left home early __________ we wouldn't miss the train.",
+          "options": [
+            "A) in case",
+            "B) so that",
+            "C) as long as",
+            "D) unless"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "04-38",
+          "stem": "__________ you need any help, just give me a call.",
+          "options": [
+            "A) Would",
+            "B) Had",
+            "C) Should",
+            "D) Were"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "04-39",
+          "stem": "The winners of the competition __________ next Monday.",
+          "options": [
+            "A) will be announced",
+            "B) will announce",
+            "C) are announcing",
+            "D) have announced"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "passive"
+        },
+        {
+          "id": "04-40",
+          "stem": "Do you know anyone __________ can fix a broken laptop?",
+          "options": [
+            "A) which",
+            "B) who",
+            "C) whose",
+            "D) whom"
+          ],
+          "answer": "B",
+          "level": "B1",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "05-31",
+          "stem": "My grandpa has a very __________ sense of humour: he tells jokes with a completely serious face.",
+          "options": [
+            "A) dry",
+            "B) wet",
+            "C) flat",
+            "D) thin"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "05-32",
+          "stem": "Please __________ in mind that the museum closes at five o'clock.",
+          "options": [
+            "A) hold",
+            "B) bear",
+            "C) take",
+            "D) carry"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "05-33",
+          "stem": "Stop __________ around the bush and tell me what really happened!",
+          "options": [
+            "A) hitting",
+            "B) running",
+            "C) beating",
+            "D) jumping"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "05-34",
+          "stem": "I can't __________ out what this sign says: the letters are too small.",
+          "options": [
+            "A) make",
+            "B) take",
+            "C) put",
+            "D) give"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "05-35",
+          "stem": "It was the __________ interesting museum I have ever visited: I was bored the whole time.",
+          "options": [
+            "A) less",
+            "B) fewest",
+            "C) little",
+            "D) least"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "05-36",
+          "stem": "Kasia is __________ the cleverest person in our class: nobody else even comes close.",
+          "options": [
+            "A) widely",
+            "B) easily",
+            "C) highly",
+            "D) greatly"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "05-37",
+          "stem": "I'll write your phone number down __________ I forget it.",
+          "options": [
+            "A) in case",
+            "B) unless",
+            "C) so that",
+            "D) as long as"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "05-38",
+          "stem": "Not only __________ the cake, but she also made all the decorations.",
+          "options": [
+            "A) she baked",
+            "B) did she bake",
+            "C) she did bake",
+            "D) she had baked"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "05-39",
+          "stem": "I __________ this book for weeks, and I'm still only on page 50.",
+          "options": [
+            "A) have read",
+            "B) am reading",
+            "C) have been reading",
+            "D) read"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "tenses"
+        },
+        {
+          "id": "05-40",
+          "stem": "I have two older brothers, __________ are at university now.",
+          "options": [
+            "A) both of whom",
+            "B) both of who",
+            "C) both of them",
+            "D) both of which"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "mistakeType": "relative-clauses"
         }
       ]
     },
@@ -1754,6 +2615,126 @@
             "D. King Charles III"
           ],
           "answer": "A",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "04-41",
+          "question": "Which king burst into the House of Commons in 1642 to arrest five MPs, which is why the door is slammed in Black Rod's face at the State Opening?",
+          "options": [
+            "A. James I",
+            "B. Charles I",
+            "C. Charles II",
+            "D. Henry VIII"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "04-42",
+          "question": "Which party was founded in 1900 by trade unions and socialist groups to represent working people?",
+          "options": [
+            "A. the Conservative Party",
+            "B. the Liberal Democrats",
+            "C. the Scottish National Party",
+            "D. the Labour Party"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "04-43",
+          "question": "Why is the Royal Standard never flown at half-mast, even when a monarch dies?",
+          "options": [
+            "A. There is always a monarch: the next one reigns from the moment the last one dies.",
+            "B. It is flown only on the monarch's birthday.",
+            "C. By law, only the Union Flag may be flown at half-mast.",
+            "D. It is too large to be lowered halfway."
+          ],
+          "answer": "A",
+          "mistakeType": "uk-symbols"
+        },
+        {
+          "id": "04-44",
+          "question": "Which Prime Minister resigned in January 1957 after the Suez Crisis?",
+          "options": [
+            "A. Winston Churchill",
+            "B. Anthony Eden",
+            "C. Clement Attlee",
+            "D. Harold Wilson"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "04-45",
+          "question": "Where is Charles Darwin buried?",
+          "options": [
+            "A. in St Paul's Cathedral",
+            "B. on the Galápagos Islands",
+            "C. in Westminster Abbey",
+            "D. in Canterbury Cathedral"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "05-41",
+          "question": "Who was the last monarch to refuse Royal Assent to a bill passed by Parliament?",
+          "options": [
+            "A. Queen Victoria",
+            "B. King George III",
+            "C. Queen Elizabeth I",
+            "D. Queen Anne"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "05-42",
+          "question": "Which Prime Minister's government created the NHS (National Health Service) in 1948?",
+          "options": [
+            "A. Winston Churchill",
+            "B. Margaret Thatcher",
+            "C. Clement Attlee",
+            "D. Tony Blair"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "05-43",
+          "question": "According to a legend, how did the thistle help Scotland?",
+          "options": [
+            "A. St Andrew planted thistles around Edinburgh Castle to keep enemies out.",
+            "B. Barefoot Viking attackers stepped on thistles and cried out, which woke the Scots.",
+            "C. Scottish soldiers ate thistles to survive a long winter siege.",
+            "D. A thistle grew where the first King of Scotland was crowned."
+          ],
+          "answer": "B",
+          "mistakeType": "uk-countries"
+        },
+        {
+          "id": "05-44",
+          "question": "Which queen was beheaded at the Tower of London in 1536?",
+          "options": [
+            "A. Anne Boleyn",
+            "B. Catherine of Aragon",
+            "C. Jane Seymour",
+            "D. Catherine Parr"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-london"
+        },
+        {
+          "id": "05-45",
+          "question": "What does the golden statue of Prince Albert in the Albert Memorial hold?",
+          "options": [
+            "A. a sword",
+            "B. the crown of England",
+            "C. a map of the British Empire",
+            "D. the catalogue of the Great Exhibition"
+          ],
+          "answer": "D",
           "mistakeType": "uk-parks"
         }
       ]
