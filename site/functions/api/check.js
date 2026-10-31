@@ -67,10 +67,14 @@ function countGaps(context) {
   return m ? m.length : 1;
 }
 
-// Several accepted phrasings may be stored as a list. Everything downstream
+// Several accepted phrasings may be stored as a list, or as one string joined
+// with " / " (the OJAJ papers and the online vault). Everything downstream
 // wants either all of them or one readable line.
 function acceptedAnswers(ans) {
-  return (Array.isArray(ans) ? ans : [ans]).filter((a) => String(a || "").trim());
+  return (Array.isArray(ans) ? ans : [ans])
+    .flatMap((a) => String(a || "").split(" / "))
+    .map((a) => a.trim())
+    .filter(Boolean);
 }
 
 function answerText(ans) {
