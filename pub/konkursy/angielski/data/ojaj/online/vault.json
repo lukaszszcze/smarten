@@ -686,6 +686,206 @@
           ],
           "level": "C1",
           "mistakeType": "able-ible"
+        },
+        {
+          "id": "06-1",
+          "sentence": "She is so __________ that she always gets her parents to say yes in the end.",
+          "wordBase": "PERSUADE",
+          "answer": [
+            "persuasive"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "06-2",
+          "sentence": "Marie Curie is one of the most __________ scientists in history: her work changed medicine for ever.",
+          "wordBase": "INFLUENCE",
+          "answer": [
+            "influential"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "06-3",
+          "sentence": "The police had no __________ that he had taken the money, so they let him go.",
+          "wordBase": "PROVE",
+          "answer": [
+            "proof"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "06-4",
+          "sentence": "Her __________ makes it hard for her to talk to people she doesn't know.",
+          "wordBase": "SHY",
+          "answer": [
+            "shyness"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "06-5",
+          "sentence": "The __________ sun burnt our backs as we walked through the desert.",
+          "wordBase": "MERCY",
+          "answer": [
+            "merciless"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "06-6",
+          "sentence": "Learning to play the violin well takes years of hard work and __________.",
+          "wordBase": "COMMIT",
+          "answer": [
+            "commitment"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "06-7",
+          "sentence": "I waited __________ for the bus, looking at my watch every few seconds.",
+          "wordBase": "PATIENT",
+          "answer": [
+            "impatiently"
+          ],
+          "level": "B2",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "06-8",
+          "sentence": "My little sister is very __________: she never stops chatting, even during films.",
+          "wordBase": "TALK",
+          "answer": [
+            "talkative"
+          ],
+          "level": "B2",
+          "mistakeType": "word-ending"
+        },
+        {
+          "id": "06-9",
+          "sentence": "The children clapped __________ when the clown came onto the stage.",
+          "wordBase": "ENTHUSIASM",
+          "answer": [
+            "enthusiastically"
+          ],
+          "level": "C1",
+          "mistakeType": "two-steps"
+        },
+        {
+          "id": "06-10",
+          "sentence": "Do you believe in the __________ of ghosts?",
+          "wordBase": "EXIST",
+          "answer": [
+            "existence"
+          ],
+          "level": "B2",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "07-1",
+          "sentence": "Our __________ to London was two hours late because of a storm.",
+          "wordBase": "FLY",
+          "answer": [
+            "flight"
+          ],
+          "level": "B1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "07-2",
+          "sentence": "In his __________, my grandad was a very good footballer.",
+          "wordBase": "YOUNG",
+          "answer": [
+            "youth"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "07-3",
+          "sentence": "Because of the thick fog, __________ on the motorway was very poor.",
+          "wordBase": "VISIBLE",
+          "answer": [
+            "visibility"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "07-4",
+          "sentence": "There are __________ two ways to get to the castle: by bus or on foot.",
+          "wordBase": "BASIC",
+          "answer": [
+            "basically"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "07-5",
+          "sentence": "Fresh fruit is cheap and __________ in the summer.",
+          "wordBase": "PLENTY",
+          "answer": [
+            "plentiful"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "07-6",
+          "sentence": "After we scored the first goal, our team was __________: we won 6-0.",
+          "wordBase": "STOP",
+          "answer": [
+            "unstoppable"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "07-7",
+          "sentence": "The old map was __________: the bridge it showed had disappeared years ago.",
+          "wordBase": "ACCURATE",
+          "answer": [
+            "inaccurate"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "07-8",
+          "sentence": "My uncle is a __________ who writes books about the castles of Poland.",
+          "wordBase": "HISTORY",
+          "answer": [
+            "historian"
+          ],
+          "level": "B2",
+          "mistakeType": "word-ending"
+        },
+        {
+          "id": "07-9",
+          "sentence": "Our new classmate's __________ is Ukrainian: she comes from Lviv.",
+          "wordBase": "NATION",
+          "answer": [
+            "nationality"
+          ],
+          "level": "B2",
+          "mistakeType": "two-steps"
+        },
+        {
+          "id": "07-10",
+          "sentence": "To my __________, my little brother had eaten all the chocolate biscuits.",
+          "wordBase": "ANNOY",
+          "answer": [
+            "annoyance"
+          ],
+          "level": "C1",
+          "mistakeType": "ance-ence"
         }
       ]
     },
@@ -719,8 +919,8 @@
       "items": [
         {
           "id": "01-11",
-          "sentence": "I'm feeling a bit under the w __ a __ h __ r (7) today, so I think I'll stay in bed.",
-          "hint": "w __ a __ h __ r (7)",
+          "sentence": "I'm feeling a bit under the w __ __ __ h __ __ (7) today, so I think I'll stay in bed.",
+          "hint": "w __ __ __ h __ __ (7)",
           "answer": [
             "weather"
           ],
@@ -730,8 +930,8 @@
         },
         {
           "id": "01-12",
-          "sentence": "I'm d __ f __ __ __ t __ l __ (10) coming to your party on Saturday: I wouldn't miss it for anything!",
-          "hint": "d __ f __ __ __ t __ l __ (10)",
+          "sentence": "I'm d __ f __ __ __ __ __ l __ (10) coming to your party on Saturday: I wouldn't miss it for anything!",
+          "hint": "d __ f __ __ __ __ __ l __ (10)",
           "answer": [
             "definitely"
           ],
@@ -740,8 +940,8 @@
         },
         {
           "id": "01-13",
-          "sentence": "The mosquitoes were a real n __ __ s __ __ c __ (8) on our camping trip: nobody could sleep.",
-          "hint": "n __ __ s __ __ c __ (8)",
+          "sentence": "The mosquitoes were a real n __ __ __ __ __ c __ (8) on our camping trip: nobody could sleep.",
+          "hint": "n __ __ __ __ __ c __ (8)",
           "answer": [
             "nuisance"
           ],
@@ -750,8 +950,8 @@
         },
         {
           "id": "01-14",
-          "sentence": "Don't e __ __ g __ e __ __ t __ (10)! It was only a small spider, not a giant one.",
-          "hint": "e __ __ g __ e __ __ t __ (10)",
+          "sentence": "Don't e __ __ g __ __ __ __ t __ (10)! It was only a small spider, not a giant one.",
+          "hint": "e __ __ g __ __ __ __ t __ (10)",
           "answer": [
             "exaggerate"
           ],
@@ -760,8 +960,8 @@
         },
         {
           "id": "01-15",
-          "sentence": "After an hour of arguing about which film to watch, my parents finally reached a c __ m __ r __ __ __ s __ (10): we watched half of each.",
-          "hint": "c __ m __ r __ __ __ s __ (10)",
+          "sentence": "After an hour of arguing about which film to watch, my parents finally reached a __ __ m __ r __ __ __ s __ (10): we watched half of each.",
+          "hint": "__ __ m __ r __ __ __ s __ (10)",
           "answer": [
             "compromise"
           ],
@@ -771,8 +971,8 @@
         },
         {
           "id": "01-16",
-          "sentence": "The jeweller told us that the ring was not g __ n u __ __ __ (7): the stones were only coloured glass.",
-          "hint": "g __ n u __ __ __ (7)",
+          "sentence": "The jeweller told us that the ring was not g __ __ u __ __ __ (7): the stones were only coloured glass.",
+          "hint": "g __ __ u __ __ __ (7)",
           "answer": [
             "genuine"
           ],
@@ -781,8 +981,8 @@
         },
         {
           "id": "01-17",
-          "sentence": "I think I've b __ t t __ __ (6) off more than I can chew: I've joined four clubs and I have no time left for homework.",
-          "hint": "b __ t t __ __ (6)",
+          "sentence": "I think I've b __ t __ __ __ (6) off more than I can chew: I've joined four clubs and I have no time left for homework.",
+          "hint": "b __ t __ __ __ (6)",
           "answer": [
             "bitten"
           ],
@@ -792,8 +992,8 @@
         },
         {
           "id": "01-18",
-          "sentence": "My little brother is so g __ l l __ __ __ e (8) that he believed me when I told him that spaghetti grows on trees.",
-          "hint": "g __ l l __ __ __ e (8)",
+          "sentence": "My little brother is so g __ l __ __ __ __ __ (8) that he believed me when I told him that spaghetti grows on trees.",
+          "hint": "g __ l __ __ __ __ __ (8)",
           "answer": [
             "gullible"
           ],
@@ -802,8 +1002,8 @@
         },
         {
           "id": "01-19",
-          "sentence": "My grandma paid me a c __ __ __ l i __ __ n __ (10) on my new haircut, which really made my day.",
-          "hint": "c __ __ __ l i __ __ n __ (10)",
+          "sentence": "My grandma paid me a c __ __ __ l i __ __ __ __ (10) on my new haircut, which really made my day.",
+          "hint": "c __ __ __ l i __ __ __ __ (10)",
           "answer": [
             "compliment"
           ],
@@ -813,8 +1013,8 @@
         },
         {
           "id": "01-20",
-          "sentence": "The comedy we watched last night was absolutely h __ l __ r __ __ __ s (9): we laughed from beginning to end.",
-          "hint": "h __ l __ r __ __ __ s (9)",
+          "sentence": "The comedy we watched last night was absolutely h __ l __ r __ __ __ __ (9): we laughed from beginning to end.",
+          "hint": "h __ l __ r __ __ __ __ (9)",
           "answer": [
             "hilarious"
           ],
@@ -823,8 +1023,8 @@
         },
         {
           "id": "02-11",
-          "sentence": "I always get b __ t t __ __ f __ i __ s (11) in my stomach before I have to speak in front of the class.",
-          "hint": "b __ t t __ __ f __ i __ s (11)",
+          "sentence": "I always get b __ __ __ __ __ f __ __ __ s (11) in my stomach before I have to speak in front of the class.",
+          "hint": "b __ __ __ __ __ f __ __ __ s (11)",
           "answer": [
             "butterflies"
           ],
@@ -834,8 +1034,8 @@
         },
         {
           "id": "02-12",
-          "sentence": "Can you keep a s __ c __ e __ (6)? I'm planning a surprise party for Mum.",
-          "hint": "s __ c __ e __ (6)",
+          "sentence": "Can you keep a s __ c __ __ __ (6)? I'm planning a surprise party for Mum.",
+          "hint": "s __ c __ __ __ (6)",
           "answer": [
             "secret"
           ],
@@ -845,8 +1045,8 @@
         },
         {
           "id": "02-13",
-          "sentence": "The shop gives a two-year g __ a __ a __ __ e __ (9) on all its laptops, so if one breaks, they repair it for free.",
-          "hint": "g __ a __ a __ __ e __ (9)",
+          "sentence": "The shop gives a two-year g __ a __ a __ __ __ __ (9) on all its laptops, so if one breaks, they repair it for free.",
+          "hint": "g __ a __ a __ __ __ __ (9)",
           "answer": [
             "guarantee"
           ],
@@ -855,8 +1055,8 @@
         },
         {
           "id": "02-14",
-          "sentence": "My little brother is so m __ s __ h __ e __ o __ s (11): yesterday he hid Dad's car keys in the fridge.",
-          "hint": "m __ s __ h __ e __ o __ s (11)",
+          "sentence": "My little brother is so m __ __ __ h __ __ __ o __ __ (11): yesterday he hid Dad's car keys in the fridge.",
+          "hint": "m __ __ __ h __ __ __ o __ __ (11)",
           "answer": [
             "mischievous"
           ],
@@ -865,8 +1065,8 @@
         },
         {
           "id": "02-15",
-          "sentence": "I can't f __ g __ r __ (6) out how to switch off the alarm on my new watch.",
-          "hint": "f __ g __ r __ (6)",
+          "sentence": "I can't f __ g __ __ __ (6) out how to switch off the alarm on my new watch.",
+          "hint": "f __ g __ __ __ (6)",
           "answer": [
             "figure"
           ],
@@ -876,8 +1076,8 @@
         },
         {
           "id": "02-16",
-          "sentence": "Kasia is a very c __ n __ c __ __ __ t __ o __ s (13) pupil: she always does her homework carefully and hands it in on time.",
-          "hint": "c __ n __ c __ __ __ t __ o __ s (13)",
+          "sentence": "Kasia is a very c __ __ __ c __ __ __ t __ __ __ s (13) pupil: she always does her homework carefully and hands it in on time.",
+          "hint": "c __ __ __ c __ __ __ t __ __ __ s (13)",
           "answer": [
             "conscientious"
           ],
@@ -886,8 +1086,8 @@
         },
         {
           "id": "02-17",
-          "sentence": "There was a long q __ __ u __ (5) outside the cinema, so we waited for half an hour.",
-          "hint": "q __ __ u __ (5)",
+          "sentence": "There was a long q __ __ __ __ (5) outside the cinema, so we waited for half an hour.",
+          "hint": "q __ __ __ __ (5)",
           "answer": [
             "queue"
           ],
@@ -896,8 +1096,8 @@
         },
         {
           "id": "02-18",
-          "sentence": "Missing the school bus was a blessing in d __ s __ u __ s __ (8): I walked to school instead and found a lost puppy, who is now our dog.",
-          "hint": "d __ s __ u __ s __ (8)",
+          "sentence": "Missing the school bus was a blessing in __ __ __ __ u __ s __ (8): I walked to school instead and found a lost puppy, who is now our dog.",
+          "hint": "__ __ __ __ u __ s __ (8)",
           "answer": [
             "disguise"
           ],
@@ -907,8 +1107,8 @@
         },
         {
           "id": "02-19",
-          "sentence": "Mum keeps her j __ w e __ __ e __ y (9) in a small wooden box: two rings, a necklace and a pair of earrings.",
-          "hint": "j __ w e __ __ e __ y (9)",
+          "sentence": "Mum keeps her j __ __ e __ __ __ __ y (9) in a small wooden box: two rings, a necklace and a pair of earrings.",
+          "hint": "j __ __ e __ __ __ __ y (9)",
           "answer": [
             "jewellery"
           ],
@@ -917,8 +1117,8 @@
         },
         {
           "id": "02-20",
-          "sentence": "She isn't really a friend, just an a __ q __ a __ n __ __ n __ e (12) from my old school.",
-          "hint": "a __ q __ a __ n __ __ n __ e (12)",
+          "sentence": "She isn't really a friend, just an a __ __ __ __ __ n __ __ __ __ e (12) from my old school.",
+          "hint": "a __ __ __ __ __ n __ __ __ __ e (12)",
           "answer": [
             "acquaintance"
           ],
@@ -927,8 +1127,8 @@
         },
         {
           "id": "03-11",
-          "sentence": "Clap your hands to the r __ y __ h __ (6) of the music.",
-          "hint": "r __ y __ h __ (6)",
+          "sentence": "Clap your hands to the r __ __ __ h __ (6) of the music.",
+          "hint": "r __ __ __ h __ (6)",
           "answer": [
             "rhythm"
           ],
@@ -937,8 +1137,8 @@
         },
         {
           "id": "03-12",
-          "sentence": "Sorry, Miss Nowak, I didn't mean to call you 'Mum': it was just a slip of the t __ n __ u __ (6).",
-          "hint": "t __ n __ u __ (6)",
+          "sentence": "Sorry, Miss Nowak, I didn't mean to call you 'Mum': it was just a slip of the t __ __ __ u __ (6).",
+          "hint": "t __ __ __ u __ (6)",
           "answer": [
             "tongue"
           ],
@@ -948,8 +1148,8 @@
         },
         {
           "id": "03-13",
-          "sentence": "Our car b __ o __ e (5) down on the motorway, so we had to wait two hours for help.",
-          "hint": "b __ o __ e (5)",
+          "sentence": "Our car __ __ o __ __ (5) down on the motorway, so we had to wait two hours for help.",
+          "hint": "__ __ o __ __ (5)",
           "answer": [
             "broke"
           ],
@@ -959,8 +1159,8 @@
         },
         {
           "id": "03-14",
-          "sentence": "Dad's old mobile phone is completely o __ s __ l __ t __ (8): nobody uses phones like that any more.",
-          "hint": "o __ s __ l __ t __ (8)",
+          "sentence": "Dad's old mobile phone is completely o __ s __ __ __ __ __ (8): nobody uses phones like that any more.",
+          "hint": "o __ s __ __ __ __ __ (8)",
           "answer": [
             "obsolete"
           ],
@@ -969,8 +1169,8 @@
         },
         {
           "id": "03-15",
-          "sentence": "Our teacher asked us to fill in a q __ e __ t __ o __ __ a __ r __ (13) about our eating habits.",
-          "hint": "q __ e __ t __ o __ __ a __ r __ (13)",
+          "sentence": "Our teacher asked us to fill in a q __ e __ t __ __ __ __ a __ __ __ (13) about our eating habits.",
+          "hint": "q __ e __ t __ __ __ __ a __ __ __ (13)",
           "answer": [
             "questionnaire"
           ],
@@ -979,8 +1179,8 @@
         },
         {
           "id": "03-16",
-          "sentence": "Finding my lost phone in the snow was a real s __ r o __ e (6) of luck.",
-          "hint": "s __ r o __ e (6)",
+          "sentence": "Finding my lost phone in the snow was a real s __ __ o __ __ (6) of luck.",
+          "hint": "s __ __ o __ __ (6)",
           "answer": [
             "stroke"
           ],
@@ -990,8 +1190,8 @@
         },
         {
           "id": "03-17",
-          "sentence": "People all over the world celebrated the start of the new m __ l __ e __ __ i __ m (10) on 1 January 2000.",
-          "hint": "m __ l __ e __ __ i __ m (10)",
+          "sentence": "People all over the world celebrated the start of the new m __ __ __ e __ __ __ __ m (10) on 1 January 2000.",
+          "hint": "m __ __ __ e __ __ __ __ m (10)",
           "answer": [
             "millennium"
           ],
@@ -1000,8 +1200,8 @@
         },
         {
           "id": "03-18",
-          "sentence": "My uncle is a real c __ n __ o __ s __ e __ r (11) of cheese: he can tell you which farm each one comes from.",
-          "hint": "c __ n __ o __ s __ e __ r (11)",
+          "sentence": "My uncle is a real c __ __ __ o __ __ __ __ __ r (11) of cheese: he can tell you which farm each one comes from.",
+          "hint": "c __ __ __ o __ __ __ __ __ r (11)",
           "answer": [
             "connoisseur"
           ],
@@ -1010,8 +1210,8 @@
         },
         {
           "id": "03-19",
-          "sentence": "Don't put all your eggs in one b __ s __ e __ (6): apply to more than one secondary school.",
-          "hint": "b __ s __ e __ (6)",
+          "sentence": "Don't put all your eggs in one b __ s __ __ __ (6): apply to more than one secondary school.",
+          "hint": "b __ s __ __ __ (6)",
           "answer": [
             "basket"
           ],
@@ -1021,8 +1221,8 @@
         },
         {
           "id": "03-20",
-          "sentence": "It was a real p __ i __ i __ e __ e (9) to meet the famous writer in person.",
-          "hint": "p __ i __ i __ e __ e (9)",
+          "sentence": "It was a real __ __ i __ __ __ e __ e (9) to meet the famous writer in person.",
+          "hint": "__ __ i __ __ __ e __ e (9)",
           "answer": [
             "privilege"
           ],
@@ -1031,8 +1231,8 @@
         },
         {
           "id": "04-11",
-          "sentence": "After three days lost in the mountains, the climbers were d e s p __ r __ t e (9) for food and water.",
-          "hint": "d e s p __ r __ t e (9)",
+          "sentence": "After three days lost in the mountains, the climbers were __ e __ p __ __ __ t __ (9) for food and water.",
+          "hint": "__ e __ p __ __ __ t __ (9)",
           "answer": [
             "desperate"
           ],
@@ -1041,8 +1241,8 @@
         },
         {
           "id": "04-12",
-          "sentence": "The UK p a r l __ __ m e n t (10) meets in the Palace of Westminster, the building with Big Ben.",
-          "hint": "p a r l __ __ m e n t (10)",
+          "sentence": "The UK p __ __ l __ __ m __ __ __ (10) meets in the Palace of Westminster, the building with Big Ben.",
+          "hint": "p __ __ l __ __ m __ __ __ (10)",
           "answer": [
             "parliament"
           ],
@@ -1051,8 +1251,8 @@
         },
         {
           "id": "04-13",
-          "sentence": "I'm in a real d i l e __ __ a (7): my two best friends are having their birthday parties on the same day.",
-          "hint": "d i l e __ __ a (7)",
+          "sentence": "I'm in a real d __ __ __ __ __ a (7): my two best friends are having their birthday parties on the same day.",
+          "hint": "d __ __ __ __ __ a (7)",
           "answer": [
             "dilemma"
           ],
@@ -1061,8 +1261,8 @@
         },
         {
           "id": "04-14",
-          "sentence": "Our neighbour's dog is quite a __ __ r e __ __ i v e (10): it barks and growls at everyone who walks past.",
-          "hint": "a __ __ r e __ __ i v e (10)",
+          "sentence": "Our neighbour's dog is quite a __ __ __ e __ __ __ v __ (10): it barks and growls at everyone who walks past.",
+          "hint": "a __ __ __ e __ __ __ v __ (10)",
           "answer": [
             "aggressive"
           ],
@@ -1071,8 +1271,8 @@
         },
         {
           "id": "04-15",
-          "sentence": "Please keep the white clothes s e p __ r __ t e (8) from the coloured ones when you do the washing.",
-          "hint": "s e p __ r __ t e (8)",
+          "sentence": "Please keep the white clothes s __ p __ __ __ __ __ (8) from the coloured ones when you do the washing.",
+          "hint": "s __ p __ __ __ __ __ (8)",
           "answer": [
             "separate"
           ],
@@ -1081,8 +1281,8 @@
         },
         {
           "id": "04-16",
-          "sentence": "It was b __ t __ e r l y (8) cold on the beach, so we went home after ten minutes.",
-          "hint": "b __ t __ e r l y (8)",
+          "sentence": "It was b __ t __ __ __ __ __ (8) cold on the beach, so we went home after ten minutes.",
+          "hint": "b __ t __ __ __ __ __ (8)",
           "answer": [
             "bitterly"
           ],
@@ -1092,8 +1292,8 @@
         },
         {
           "id": "04-17",
-          "sentence": "Ola said sorry, and I don't hold a g __ __ d g __ (6) against her: we're friends again.",
-          "hint": "g __ __ d g __ (6)",
+          "sentence": "Ola said sorry, and I don't hold a g __ __ __ g __ (6) against her: we're friends again.",
+          "hint": "g __ __ __ g __ (6)",
           "answer": [
             "grudge"
           ],
@@ -1103,8 +1303,8 @@
         },
         {
           "id": "04-18",
-          "sentence": "We missed the train, but every cloud has a silver l __ n __ n g (6): we found a lovely café at the station.",
-          "hint": "l __ n __ n g (6)",
+          "sentence": "We missed the train, but every cloud has a silver l __ __ __ __ g (6): we found a lovely café at the station.",
+          "hint": "l __ __ __ __ g (6)",
           "answer": [
             "lining"
           ],
@@ -1114,8 +1314,8 @@
         },
         {
           "id": "04-19",
-          "sentence": "While I was tidying my room, I came a __ r o s s (6) some old photos of my grandparents.",
-          "hint": "a __ r o s s (6)",
+          "sentence": "While I was tidying my room, I came __ __ __ __ s s (6) some old photos of my grandparents.",
+          "hint": "__ __ __ __ s s (6)",
           "answer": [
             "across"
           ],
@@ -1125,8 +1325,8 @@
         },
         {
           "id": "04-20",
-          "sentence": "It's h y p __ c r __ s y (9) to tell everyone else to save water and then spend an hour in the shower.",
-          "hint": "h y p __ c r __ s y (9)",
+          "sentence": "It's h __ __ __ c __ __ __ y (9) to tell everyone else to save water and then spend an hour in the shower.",
+          "hint": "h __ __ __ c __ __ __ y (9)",
           "answer": [
             "hypocrisy"
           ],
@@ -1135,8 +1335,8 @@
         },
         {
           "id": "05-11",
-          "sentence": "The old church has a small c e m __ t __ r y (8) where people from the village have been buried for centuries.",
-          "hint": "c e m __ t __ r y (8)",
+          "sentence": "The old church has a small __ __ m __ t __ __ __ (8) where people from the village have been buried for centuries.",
+          "hint": "__ __ m __ t __ __ __ (8)",
           "answer": [
             "cemetery"
           ],
@@ -1145,8 +1345,8 @@
         },
         {
           "id": "05-12",
-          "sentence": "Our film won first prize in the 'Best Animation' c a t __ g __ r y (8).",
-          "hint": "c a t __ g __ r y (8)",
+          "sentence": "Our film won first prize in the 'Best Animation' __ __ t __ g __ __ __ (8).",
+          "hint": "__ __ t __ g __ __ __ (8)",
           "answer": [
             "category"
           ],
@@ -1155,8 +1355,8 @@
         },
         {
           "id": "05-13",
-          "sentence": "The school c o __ __ i __ __ e e (9) has decided to hold the summer fair on a Saturday.",
-          "hint": "c o __ __ i __ __ e e (9)",
+          "sentence": "The school c __ __ __ __ __ __ e e (9) has decided to hold the summer fair on a Saturday.",
+          "hint": "c __ __ __ __ __ __ e e (9)",
           "answer": [
             "committee"
           ],
@@ -1165,8 +1365,8 @@
         },
         {
           "id": "05-14",
-          "sentence": "Don't take any u n __ e __ e __ __ a r y (11) risks when you ride your bike in the city.",
-          "hint": "u n __ e __ e __ __ a r y (11)",
+          "sentence": "Don't take any u __ __ __ __ e __ __ __ r __ (11) risks when you ride your bike in the city.",
+          "hint": "u __ __ __ __ e __ __ __ r __ (11)",
           "answer": [
             "unnecessary"
           ],
@@ -1175,8 +1375,8 @@
         },
         {
           "id": "05-15",
-          "sentence": "The two shades of blue are almost the same: the difference between them is very s u __ t l e (6).",
-          "hint": "s u __ t l e (6)",
+          "sentence": "The two shades of blue are almost the same: the difference between them is very s __ __ t __ __ (6).",
+          "hint": "s __ __ t __ __ (6)",
           "answer": [
             "subtle"
           ],
@@ -1185,8 +1385,8 @@
         },
         {
           "id": "05-16",
-          "sentence": "The v __ s __ (4) majority of pupils in our school walk or cycle to school.",
-          "hint": "v __ s __ (4)",
+          "sentence": "The v __ __ __ (4) majority of pupils in our school walk or cycle to school.",
+          "hint": "v __ __ __ (4)",
           "answer": [
             "vast"
           ],
@@ -1196,8 +1396,8 @@
         },
         {
           "id": "05-17",
-          "sentence": "We had a n __ r __ o w (6) escape when a big branch fell just behind our car.",
-          "hint": "n __ r __ o w (6)",
+          "sentence": "We had a n __ __ __ __ w (6) escape when a big branch fell just behind our car.",
+          "hint": "n __ __ __ __ w (6)",
           "answer": [
             "narrow"
           ],
@@ -1207,8 +1407,8 @@
         },
         {
           "id": "05-18",
-          "sentence": "My little brother broke my headphones again, and that was the last s t r __ w (5)!",
-          "hint": "s t r __ w (5)",
+          "sentence": "My little brother lost my headphones again, and that was the last __ __ __ __ w (5)!",
+          "hint": "__ __ __ __ w (5)",
           "answer": [
             "straw"
           ],
@@ -1218,8 +1418,8 @@
         },
         {
           "id": "05-19",
-          "sentence": "My grandma b r __ __ g h t (7) up four children on her own after the war.",
-          "hint": "b r __ __ g h t (7)",
+          "sentence": "My grandma b __ __ __ __ h __ (7) up four children on her own after the war.",
+          "hint": "b __ __ __ __ h __ (7)",
           "answer": [
             "brought"
           ],
@@ -1229,13 +1429,219 @@
         },
         {
           "id": "05-20",
-          "sentence": "For no a __ __ a r __ n t (8) reason, our dog started barking at the wall.",
-          "hint": "a __ __ a r __ n t (8)",
+          "sentence": "For no a __ __ __ __ __ __ t (8) reason, our dog started barking at the wall.",
+          "hint": "a __ __ __ __ __ __ t (8)",
           "answer": [
             "apparent"
           ],
           "level": "C1",
           "mistakeType": "ance-ence"
+        },
+        {
+          "id": "06-11",
+          "sentence": "I've written the date of the party on the __ __ l __ __ d __ __ (8) in the kitchen.",
+          "hint": "__ __ l __ __ d __ __ (8)",
+          "answer": [
+            "calendar"
+          ],
+          "level": "B1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "06-12",
+          "sentence": "In the park there are m __ __ __ __ __ __ r e (9) copies of famous buildings, small enough to step over.",
+          "hint": "m __ __ __ __ __ __ r e (9)",
+          "answer": [
+            "miniature"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "06-13",
+          "sentence": "Giving up chocolate for a whole month was a real s __ __ __ __ f __ __ e (9) for me.",
+          "hint": "s __ __ __ __ f __ __ e (9)",
+          "answer": [
+            "sacrifice"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "06-14",
+          "sentence": "Our old v __ __ __ __ m (6) cleaner is so loud that we can't hear the TV when Mum is cleaning.",
+          "hint": "v __ __ __ __ m (6)",
+          "answer": [
+            "vacuum"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "06-15",
+          "sentence": "If I were a m __ __ __ __ o __ __ __ r __ (11), I would buy an island and invite all my friends.",
+          "hint": "m __ __ __ __ o __ __ __ r __ (11)",
+          "answer": [
+            "millionaire"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "06-16",
+          "sentence": "The kitchen sink is leaking, so Mum has phoned a p __ __ m __ __ __ (7).",
+          "hint": "p __ __ m __ __ __ (7)",
+          "answer": [
+            "plumber"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "06-17",
+          "sentence": "What a c __ __ n __ __ d __ __ __ __ (11)! We were both wearing exactly the same T-shirt.",
+          "hint": "c __ __ n __ __ d __ __ __ __ (11)",
+          "answer": [
+            "coincidence"
+          ],
+          "level": "C1",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "06-18",
+          "sentence": "It was __ __ __ __ h (5) dark in the cave, so we switched on our torches.",
+          "hint": "__ __ __ __ h (5)",
+          "answer": [
+            "pitch"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-19",
+          "sentence": "By the end of the bedtime story, my little brother was f __ __ __ (4) asleep.",
+          "hint": "f __ __ __ (4)",
+          "answer": [
+            "fast"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-20",
+          "sentence": "Good luck in the competition: I'll keep my fingers c __ __ __ s __ __ (7) for you!",
+          "hint": "c __ __ __ s __ __ (7)",
+          "answer": [
+            "crossed"
+          ],
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "07-11",
+          "sentence": "If you lose something at school, ask the school s __ c __ __ __ __ r __ (9) in the office.",
+          "hint": "s __ c __ __ __ __ r __ (9)",
+          "answer": [
+            "secretary"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "07-12",
+          "sentence": "The fans' __ __ __ __ __ i r (7) turned to joy when our team scored in the last minute.",
+          "hint": "__ __ __ __ __ i r (7)",
+          "answer": [
+            "despair"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "07-13",
+          "sentence": "One __ __ __ __ f __ t (7) of living in the countryside is the fresh air.",
+          "hint": "__ __ __ __ f __ t (7)",
+          "answer": [
+            "benefit"
+          ],
+          "level": "B1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "07-14",
+          "sentence": "Our street runs __ __ __ __ __ __ e l (8) to the railway line, so we hear every train.",
+          "hint": "__ __ __ __ __ __ e l (8)",
+          "answer": [
+            "parallel"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "07-15",
+          "sentence": "My little sister eats everything except __ __ o __ __ __ __ i (8): she says it looks like tiny trees.",
+          "hint": "__ __ o __ __ __ __ i (8)",
+          "answer": [
+            "broccoli"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "07-16",
+          "sentence": "Our school has started a __ __ __ p __ __ __ n (8) to collect old phones for recycling.",
+          "hint": "__ __ __ p __ __ __ n (8)",
+          "answer": [
+            "campaign"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "07-17",
+          "sentence": "Your handwriting is so messy that it's barely l __ __ __ b __ __ (7).",
+          "hint": "l __ __ __ b __ __ (7)",
+          "answer": [
+            "legible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
+        },
+        {
+          "id": "07-18",
+          "sentence": "It's too early to d __ __ __ (4) any conclusions: we need more information first.",
+          "hint": "d __ __ __ (4)",
+          "answer": [
+            "draw"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-19",
+          "sentence": "There is f __ __ __ c __ (6) competition for places in the school football team.",
+          "hint": "f __ __ __ c __ (6)",
+          "answer": [
+            "fierce"
+          ],
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-20",
+          "sentence": "The scientists __ __ __ __ i __ d (7) out hundreds of experiments before they found the answer.",
+          "hint": "__ __ __ __ i __ d (7)",
+          "answer": [
+            "carried"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
         }
       ]
     },
@@ -1728,6 +2134,192 @@
           "answer": "where I had bought / where I bought",
           "level": "B2",
           "mistakeType": "reported-speech"
+        },
+        {
+          "id": "06-21",
+          "original": "There wasn't enough time to finish the test.",
+          "keyword": "TOO",
+          "transformed": "We had _________ the test.",
+          "answer": "too little time to finish / too little time to complete / too little time to do",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "06-22",
+          "original": "Ola is the cleverest girl I know.",
+          "keyword": "CLEVER",
+          "transformed": "I do not know _________ Ola.",
+          "answer": "anyone as clever as / anyone so clever as / anybody as clever as / anybody so clever as / anyone more clever than / anybody more clever than / any girl as clever as / any girl so clever as / any girl more clever than / a girl as clever as / a girl more clever than",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "06-23",
+          "original": "Dad got really angry when he saw the mess in the kitchen.",
+          "keyword": "TEMPER",
+          "transformed": "Dad _________ when he saw the mess in the kitchen.",
+          "answer": "lost his temper / really lost his temper / completely lost his temper / totally lost his temper",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-24",
+          "original": "My sister and I didn't play on the computer at the same time: first she played, then I did.",
+          "keyword": "TURNS",
+          "transformed": "My sister and I _________ on the computer.",
+          "answer": "took turns playing / took turns to play / took it in turns to play / took turns at playing",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-25",
+          "original": "My sister is very tidy, but I'm not.",
+          "keyword": "UNLIKE",
+          "transformed": "_________, I am not tidy at all.",
+          "answer": "Unlike my sister",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "06-26",
+          "original": "We planned to go to the beach, but in the end we stayed at home because of the rain.",
+          "keyword": "ENDED",
+          "transformed": "We planned to go to the beach, but we _________ at home because of the rain.",
+          "answer": "ended up staying / ended up having to stay",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "06-27",
+          "original": "You can go to the party, but you must be home by ten.",
+          "keyword": "CONDITION",
+          "transformed": "You can go to the party _________ home by ten.",
+          "answer": "on condition that you are / on condition you are / on condition that you get / on condition you get / on condition that you come / on condition you come / on the condition that you are / on the condition that you get",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "06-28",
+          "original": "I hate it when people interrupt me.",
+          "keyword": "BEING",
+          "transformed": "I hate _________.",
+          "answer": "being interrupted / being interrupted by people / being interrupted by others",
+          "level": "C1",
+          "mistakeType": "passive"
+        },
+        {
+          "id": "06-29",
+          "original": "'Well done for winning the race, Ola!' said the teacher.",
+          "keyword": "CONGRATULATED",
+          "transformed": "The teacher _________ the race.",
+          "answer": "congratulated Ola on winning / congratulated her on winning",
+          "level": "C1",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "06-30",
+          "original": "I learnt a bit of Italian on holiday without really trying.",
+          "keyword": "UP",
+          "transformed": "I _________ a bit of Italian on holiday.",
+          "answer": "picked up",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "07-21",
+          "original": "My sister's bedroom is twice the size of mine.",
+          "keyword": "TWICE",
+          "transformed": "My sister's bedroom is _________ mine.",
+          "answer": "twice as big as / twice as large as",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "07-22",
+          "original": "The first film was bad, but the second one was worse.",
+          "keyword": "EVEN",
+          "transformed": "The second film was _________ the first one.",
+          "answer": "even worse than",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "07-23",
+          "original": "We should make good use of the sunshine while it lasts.",
+          "keyword": "ADVANTAGE",
+          "transformed": "We should _________ the sunshine while it lasts.",
+          "answer": "take advantage of / take full advantage of",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-24",
+          "original": "Mr Nowak is responsible for the school trip to Gdańsk.",
+          "keyword": "CHARGE",
+          "transformed": "Mr Nowak _________ the school trip to Gdańsk.",
+          "answer": "is in charge of / is the teacher in charge of / is the person in charge of / is the one in charge of",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-25",
+          "original": "I put on a thick coat because I didn't want to catch a cold.",
+          "keyword": "SO",
+          "transformed": "I put on a thick coat _________ a cold.",
+          "answer": "so as not to catch / so that I would not catch / so I would not catch / so that I did not catch / so I did not catch",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "07-26",
+          "original": "Living in a big city was new and strange to me at first.",
+          "keyword": "USED",
+          "transformed": "At first I _________ in a big city.",
+          "answer": "was not used to living / was not used to life / was not yet used to living / was not used to being",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "07-27",
+          "original": "The film will start in a moment.",
+          "keyword": "ABOUT",
+          "transformed": "The film _________ start.",
+          "answer": "is about to / is just about to",
+          "level": "B2",
+          "mistakeType": "tenses"
+        },
+        {
+          "id": "07-28",
+          "original": "'Please, please let me come with you!' my little brother said to me.",
+          "keyword": "BEGGED",
+          "transformed": "My little brother _________ him come with me.",
+          "answer": "begged me to let",
+          "level": "C1",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "07-29",
+          "original": "He didn't say thank you even once.",
+          "keyword": "ONCE",
+          "transformed": "Not _________ thank you.",
+          "answer": "once did he say",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "07-30",
+          "original": "Our school is very close to my house.",
+          "keyword": "THROW",
+          "transformed": "Our school is only _________ my house.",
+          "answer": "a stone's throw from / a stone's throw away from",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
         }
       ]
     },
@@ -2258,12 +2850,12 @@
         },
         {
           "id": "04-38",
-          "stem": "__________ you need any help, just give me a call.",
+          "stem": "__________ for our goalkeeper, we would have lost the match 0-5.",
           "options": [
-            "A) Would",
-            "B) Had",
-            "C) Should",
-            "D) Were"
+            "A) Unless",
+            "B) Apart",
+            "C) But",
+            "D) Without"
           ],
           "answer": "C",
           "level": "C1",
@@ -2428,6 +3020,274 @@
           "answer": "A",
           "level": "C1",
           "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "06-31",
+          "stem": "Can you __________ the table for dinner, please? The plates are in the cupboard.",
+          "options": [
+            "A) lay",
+            "B) put",
+            "C) make",
+            "D) do"
+          ],
+          "answer": "A",
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-32",
+          "stem": "When the last exam was over, we all __________ a sigh of relief.",
+          "options": [
+            "A) took",
+            "B) breathed",
+            "C) made",
+            "D) blew"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "06-33",
+          "stem": "My cousin and I look so alike that people say we're like two __________ in a pod.",
+          "options": [
+            "A) beans",
+            "B) nuts",
+            "C) seeds",
+            "D) peas"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "06-34",
+          "stem": "Let's __________ off early tomorrow so we don't get stuck in traffic.",
+          "options": [
+            "A) set",
+            "B) put",
+            "C) make",
+            "D) give"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "06-35",
+          "stem": "This year's school show was every __________ as good as last year's.",
+          "options": [
+            "A) part",
+            "B) piece",
+            "C) bit",
+            "D) way"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "06-36",
+          "stem": "The film was nearly three hours long. __________, I wasn't bored for a single minute.",
+          "options": [
+            "A) Although",
+            "B) Despite",
+            "C) Nevertheless",
+            "D) Because"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "06-37",
+          "stem": "If you __________ me, I would have helped you with your project.",
+          "options": [
+            "A) asked",
+            "B) had asked",
+            "C) would ask",
+            "D) have asked"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "06-38",
+          "stem": "Nobody phoned while I was out, __________?",
+          "options": [
+            "A) didn't they",
+            "B) did he",
+            "C) did they",
+            "D) do they"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "tenses"
+        },
+        {
+          "id": "06-39",
+          "stem": "My bike, __________ I got for my tenth birthday, is still as good as new.",
+          "options": [
+            "A) that",
+            "B) which",
+            "C) what",
+            "D) whose"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "06-40",
+          "stem": "Not __________ what to say, I just smiled and nodded.",
+          "options": [
+            "A) known",
+            "B) know",
+            "C) to know",
+            "D) knowing"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "mistakeType": "participle-clauses"
+        },
+        {
+          "id": "07-31",
+          "stem": "My uncle __________ a living by repairing old bikes.",
+          "options": [
+            "A) wins",
+            "B) earns",
+            "C) gains",
+            "D) takes"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-32",
+          "stem": "It's __________ to say that our class has the best football team in the school.",
+          "options": [
+            "A) sure",
+            "B) certain",
+            "C) safe",
+            "D) secure"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "07-33",
+          "stem": "I've said I'm sorry, so now the ball is in your __________.",
+          "options": [
+            "A) court",
+            "B) field",
+            "C) hands",
+            "D) goal"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "07-34",
+          "stem": "We need to __________ up with a name for our band before the concert.",
+          "options": [
+            "A) think",
+            "B) make",
+            "C) come",
+            "D) get"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "07-35",
+          "stem": "Kraków is the __________ biggest city in Poland, after Warsaw.",
+          "options": [
+            "A) two",
+            "B) second",
+            "C) twice",
+            "D) double"
+          ],
+          "answer": "B",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "07-36",
+          "stem": "__________ it was raining, we decided to stay at home and play board games.",
+          "options": [
+            "A) Since",
+            "B) Despite",
+            "C) Unless",
+            "D) However"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "07-37",
+          "stem": "I wish it __________ raining: I want to go to the park!",
+          "options": [
+            "A) stops",
+            "B) will stop",
+            "C) has stopped",
+            "D) would stop"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "07-38",
+          "stem": "Everything __________ he told us turned out to be true.",
+          "options": [
+            "A) what",
+            "B) who",
+            "C) whose",
+            "D) that"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "07-39",
+          "stem": "My little brother keeps __________ my pens without asking!",
+          "options": [
+            "A) take",
+            "B) taking",
+            "C) to take",
+            "D) took"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "07-40",
+          "stem": "The shop is closed, so we might as __________ go home.",
+          "options": [
+            "A) good",
+            "B) well",
+            "C) better",
+            "D) soon"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "modals"
         }
       ]
     },
@@ -2735,6 +3595,126 @@
             "D. the catalogue of the Great Exhibition"
           ],
           "answer": "D",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "06-41",
+          "question": "Why do the Yeomen of the Guard search the cellars of the Palace of Westminster before the State Opening of Parliament?",
+          "options": [
+            "A. to find the Mace, which is locked away in the cellars overnight",
+            "B. because of a tradition going back to 1605, when Guy Fawkes tried to blow up Parliament",
+            "C. to check that the King's carriage, which is kept down there, is ready",
+            "D. to make sure that no MP is hiding there to miss the King's Speech"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "06-42",
+          "question": "Which of these is decided by the UK Parliament in Westminster for the whole country, and not by the Scottish Parliament?",
+          "options": [
+            "A. schools",
+            "B. health",
+            "C. transport",
+            "D. defence"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "06-43",
+          "question": "Who described the Great Fire of London in his famous diary, and even buried his cheese to save it from the flames?",
+          "options": [
+            "A. Sir Christopher Wren",
+            "B. Thomas Farriner",
+            "C. Samuel Pepys",
+            "D. Robert Hooke"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "06-44",
+          "question": "In which year did women in the UK get the vote on the same terms as men?",
+          "options": [
+            "A. 1928",
+            "B. 1918",
+            "C. 1903",
+            "D. 1945"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "06-45",
+          "question": "Why is the motto on the Royal Coat of Arms, 'Dieu et mon droit', in French?",
+          "options": [
+            "A. It was a gift to an English king from a king of France.",
+            "B. The first coat of arms was made in Paris.",
+            "C. A French artist designed it for Queen Victoria.",
+            "D. English kings spoke French for centuries after the Norman Conquest of 1066."
+          ],
+          "answer": "D",
+          "mistakeType": "uk-symbols"
+        },
+        {
+          "id": "07-41",
+          "question": "Who runs the debates in the House of Commons and calls 'Order! Order!' when MPs get too noisy?",
+          "options": [
+            "A. the Speaker",
+            "B. Black Rod",
+            "C. the Lord Speaker",
+            "D. the Serjeant at Arms"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "07-42",
+          "question": "Which country of the UK has no parliament or assembly of its own, so its laws are made by the UK Parliament?",
+          "options": [
+            "A. Scotland",
+            "B. Wales",
+            "C. Northern Ireland",
+            "D. England"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "07-43",
+          "question": "Why is the flag of Scotland a white X on a blue background?",
+          "options": [
+            "A. The X stands for ten, the number of the old Scottish kingdoms.",
+            "B. St Andrew was killed on an X-shaped cross.",
+            "C. It shows the two swords of a famous Scottish king.",
+            "D. It was copied from the flag of the Viking attackers."
+          ],
+          "answer": "B",
+          "mistakeType": "uk-countries"
+        },
+        {
+          "id": "07-44",
+          "question": "What is on top of the Monument, the column built to remember the Great Fire of London?",
+          "options": [
+            "A. a statue of Sir Christopher Wren",
+            "B. a stone lion",
+            "C. a golden urn with flames",
+            "D. a golden crown"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-london"
+        },
+        {
+          "id": "07-45",
+          "question": "What is the Serpentine in Hyde Park?",
+          "options": [
+            "A. a glass building from the Great Exhibition",
+            "B. a long lake made in the 18th century",
+            "C. a winding path for horse riders",
+            "D. a very old oak tree"
+          ],
+          "answer": "B",
           "mistakeType": "uk-parks"
         }
       ]

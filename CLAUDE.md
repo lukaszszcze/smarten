@@ -162,8 +162,9 @@ ojaj.wsjo.pl, checked by `tmp/_val_ojaj.mjs` (the answer key must score full
 marks), `tmp/_render_ojaj.sh` (every task renders with its content visible) and
 `tmp/_audit_ojaj.py` (no extraction leftovers, no item served twice). The online
 tests' items live in `tmp/_ojaj_online.py`, in batches of 45, each with its
-mistake type; it checks them (level profile, blank and keyword rules, nothing
-already in the app or the vault), holds the type list with each type's label
+mistake type; it checks them (level profile, blank and keyword rules, a
+wisielec pattern giving as many letters as the papers do for its length,
+nothing already in the app or the vault), holds the type list with each type's label
 and link, and prints a review copy; `_gen_ojaj.py` writes the vault. A link to
 a study page goes into the vault only once the page is in
 `site/public/ojaj_study/`, so re-run `_gen_ojaj.py` after adding study pages.
