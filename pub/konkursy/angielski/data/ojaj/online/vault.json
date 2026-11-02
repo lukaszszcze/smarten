@@ -1086,6 +1086,206 @@
           ],
           "level": "B2",
           "mistakeType": "silent-letters"
+        },
+        {
+          "id": "10-1",
+          "sentence": "We tried for an hour, but nobody could find a __________ to the puzzle.",
+          "wordBase": "SOLVE",
+          "answer": [
+            "solution"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "10-2",
+          "sentence": "In the film, a group of children save the Earth from an alien __________.",
+          "wordBase": "INVADE",
+          "answer": [
+            "invasion"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "10-3",
+          "sentence": "Children under five get free __________ to the zoo.",
+          "wordBase": "ADMIT",
+          "answer": [
+            "admission"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "10-4",
+          "sentence": "A __________ parcel with no name on it was waiting outside our door.",
+          "wordBase": "MYSTERY",
+          "answer": [
+            "mysterious"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "10-5",
+          "sentence": "The museum is open __________ from nine to five, even at weekends.",
+          "wordBase": "DAY",
+          "answer": [
+            "daily"
+          ],
+          "level": "B1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "10-6",
+          "sentence": "The police found the thieves a day after the bank __________.",
+          "wordBase": "ROB",
+          "answer": [
+            "robbery"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "10-7",
+          "sentence": "It is __________ that the old cinema in our town has closed.",
+          "wordBase": "REGRET",
+          "answer": [
+            "regrettable"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "10-8",
+          "sentence": "My fear of spiders is completely __________: they can't hurt me.",
+          "wordBase": "RATIONAL",
+          "answer": [
+            "irrational"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "10-9",
+          "sentence": "After the __________, the actors came back on stage three times to bow.",
+          "wordBase": "PERFORM",
+          "answer": [
+            "performance"
+          ],
+          "level": "B2",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "10-10",
+          "sentence": "Our cousins arrived __________, so we had to cook dinner for six more people.",
+          "wordBase": "EXPECT",
+          "answer": [
+            "unexpectedly"
+          ],
+          "level": "C1",
+          "mistakeType": "two-steps"
+        },
+        {
+          "id": "11-1",
+          "sentence": "Our teacher says that __________ is the best way to learn new words.",
+          "wordBase": "REPEAT",
+          "answer": [
+            "repetition"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "11-2",
+          "sentence": "Don't forget to put an __________ mark after 'What a surprise'.",
+          "wordBase": "EXCLAIM",
+          "answer": [
+            "exclamation"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "11-3",
+          "sentence": "My grandma is full of __________: she always gives the best advice.",
+          "wordBase": "WISE",
+          "answer": [
+            "wisdom"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "11-4",
+          "sentence": "I __________ hope you feel better soon.",
+          "wordBase": "SINCERE",
+          "answer": [
+            "sincerely"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "11-5",
+          "sentence": "Our plants are __________ because nobody has watered them for weeks.",
+          "wordBase": "DIE",
+          "answer": [
+            "dying"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "11-6",
+          "sentence": "The pictures of the flood on the news were very __________.",
+          "wordBase": "UPSET",
+          "answer": [
+            "upsetting"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "11-7",
+          "sentence": "I'm only a __________, so please be patient with me.",
+          "wordBase": "BEGIN",
+          "answer": [
+            "beginner"
+          ],
+          "level": "B1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "11-8",
+          "sentence": "A true friend is never __________: they stay on your side even when things are hard.",
+          "wordBase": "LOYAL",
+          "answer": [
+            "disloyal"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "11-9",
+          "sentence": "I don't mind which film we watch: I have no __________.",
+          "wordBase": "PREFER",
+          "answer": [
+            "preference"
+          ],
+          "level": "C1",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "11-10",
+          "sentence": "My new jacket is __________: it's blue on one side and red on the other.",
+          "wordBase": "REVERSE",
+          "answer": [
+            "reversible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
         }
       ]
     },
@@ -2049,6 +2249,212 @@
           "level": "B1",
           "focus": "collocation",
           "mistakeType": "collocation"
+        },
+        {
+          "id": "10-11",
+          "sentence": "The __ __ __ g __ __ r (7) got in through an open window and took Dad's laptop.",
+          "hint": "__ __ __ g __ __ r (7)",
+          "answer": [
+            "burglar"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "10-12",
+          "sentence": "Put the letter in an __ __ v __ __ __ p __ (8) and write the address on it.",
+          "hint": "__ __ v __ __ __ p __ (8)",
+          "answer": [
+            "envelope"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "10-13",
+          "sentence": "A p __ g __ __ __ (6) landed on our windowsill and ate the breadcrumbs.",
+          "hint": "p __ g __ __ __ (6)",
+          "answer": [
+            "pigeon"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "10-14",
+          "sentence": "Please put your r __ __ __ __ __ h (7) in the bin, not on the floor.",
+          "hint": "r __ __ __ __ __ h (7)",
+          "answer": [
+            "rubbish"
+          ],
+          "level": "B1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "10-15",
+          "sentence": "Can you __ __ __ o __ __ __ n d (9) a good book for the holidays?",
+          "hint": "__ __ __ o __ __ __ n d (9)",
+          "answer": [
+            "recommend"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "10-16",
+          "sentence": "Can you speak any __ __ __ e i __ __ (7) languages?",
+          "hint": "__ __ __ e i __ __ (7)",
+          "answer": [
+            "foreign"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "10-17",
+          "sentence": "It took my parents ten years to pay back the d __ __ __ (4) for our flat.",
+          "hint": "d __ __ __ (4)",
+          "answer": [
+            "debt"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "10-18",
+          "sentence": "My uncle is a real couch __ __ t __ t __ (6): he watches TV all weekend.",
+          "hint": "__ __ t __ t __ (6)",
+          "answer": [
+            "potato"
+          ],
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "10-19",
+          "sentence": "The film was so boring that Grandad d __ __ __ __ (5) off on the sofa.",
+          "hint": "d __ __ __ __ (5)",
+          "answer": [
+            "dozed"
+          ],
+          "level": "C1",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "10-20",
+          "sentence": "We need a __ __ __ f (4) of bread for the sandwiches.",
+          "hint": "__ __ __ f (4)",
+          "answer": [
+            "loaf"
+          ],
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "11-11",
+          "sentence": "Your face looks f __ m __ __ __ __ __ (8): have we met before?",
+          "hint": "f __ m __ __ __ __ __ (8)",
+          "answer": [
+            "familiar"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "11-12",
+          "sentence": "If you're not sure how to spell a word, check it in a d __ __ t __ __ n __ __ __ (10).",
+          "hint": "d __ __ t __ __ n __ __ __ (10)",
+          "answer": [
+            "dictionary"
+          ],
+          "level": "B1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "11-13",
+          "sentence": "She looked very e __ __ g __ __ __ (7) in her long blue dress.",
+          "hint": "e __ __ g __ __ __ (7)",
+          "answer": [
+            "elegant"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "11-14",
+          "sentence": "A __ q __ __ __ __ __ l (8) ran up the tree with a nut in its mouth.",
+          "hint": "__ q __ __ __ __ __ l (8)",
+          "answer": [
+            "squirrel"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "11-15",
+          "sentence": "Grandma's apple pie always smells of c __ __ __ __ __ o __ (8).",
+          "hint": "c __ __ __ __ __ o __ (8)",
+          "answer": [
+            "cinnamon"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "11-16",
+          "sentence": "Grandad always carries a cotton h __ __ __ __ e __ __ __ __ __ f (12) in his pocket.",
+          "hint": "h __ __ __ __ e __ __ __ __ __ f (12)",
+          "answer": [
+            "handkerchief"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "11-17",
+          "sentence": "We had grilled __ __ __ m o __ (6) with rice and salad for dinner.",
+          "hint": "__ __ __ m o __ (6)",
+          "answer": [
+            "salmon"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "11-18",
+          "sentence": "Dad never takes sides when my sister and I argue: he always sits on the f __ __ __ __ (5).",
+          "hint": "f __ __ __ __ (5)",
+          "answer": [
+            "fence"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "11-19",
+          "sentence": "You've made great __ __ o g __ __ __ __ (8) with your English this year!",
+          "hint": "__ __ o g __ __ __ __ (8)",
+          "answer": [
+            "progress"
+          ],
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "11-20",
+          "sentence": "Stop s __ __ w __ __ __ (7) off: nobody cares about your new phone!",
+          "hint": "s __ __ w __ __ __ (7)",
+          "answer": [
+            "showing"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
         }
       ]
     },
@@ -2912,6 +3318,188 @@
           "answer": "is due to arrive at / is due at / is due to get in at",
           "level": "B2",
           "mistakeType": "modals"
+        },
+        {
+          "id": "10-21",
+          "original": "The school's old computers are not as good as the new ones.",
+          "keyword": "SUPERIOR",
+          "transformed": "The new computers _________ the old ones.",
+          "answer": "are superior to / are far superior to / are much superior to",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "10-22",
+          "original": "I am not responsible for this mess at all.",
+          "keyword": "WAY",
+          "transformed": "_________ responsible for this mess.",
+          "answer": "In no way am I",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "10-23",
+          "original": "My parents are thinking about buying a dog.",
+          "keyword": "CONSIDERING",
+          "transformed": "My parents are _________ a dog.",
+          "answer": "considering buying / considering getting / considering having",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "10-24",
+          "original": "Leave now, or you might be late for school.",
+          "keyword": "RISK",
+          "transformed": "If you do not leave now, you _________ late for school.",
+          "answer": "risk being / run the risk of being / will risk being",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "10-25",
+          "original": "Ania plays the piano, and she plays the guitar too.",
+          "keyword": "BOTH",
+          "transformed": "Ania plays _________ the guitar.",
+          "answer": "both the piano and",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "10-26",
+          "original": "It doesn't matter what you say: I'm not going to change my mind.",
+          "keyword": "WHATEVER",
+          "transformed": "_________, I am not going to change my mind.",
+          "answer": "Whatever you say / Whatever you may say",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "10-27",
+          "original": "It's our last sunny day by the sea, so let's enjoy every minute of it.",
+          "keyword": "MOST",
+          "transformed": "It is our last sunny day by the sea, so let's _________ it.",
+          "answer": "make the most of",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "10-28",
+          "original": "'I won't lend you my bike,' Ola said to me.",
+          "keyword": "REFUSED",
+          "transformed": "Ola _________ me her bike.",
+          "answer": "refused to lend",
+          "level": "B2",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "10-29",
+          "original": "We can't play outside because of the rain.",
+          "keyword": "FOR",
+          "transformed": "If it _________ rain, we could play outside.",
+          "answer": "were not for the / was not for the",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "10-30",
+          "original": "I have lots of books, and I have read most of them.",
+          "keyword": "WHICH",
+          "transformed": "I have lots of books, _________ I have read.",
+          "answer": "most of which",
+          "level": "C1",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "11-21",
+          "original": "Please come back as soon as you can.",
+          "keyword": "POSSIBLE",
+          "transformed": "Please come back _________.",
+          "answer": "as soon as possible / as quickly as possible",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "11-22",
+          "original": "I didn't suspect at all that he was lying.",
+          "keyword": "MOMENT",
+          "transformed": "Not for _________ he was lying.",
+          "answer": "a moment did I suspect that / a moment did I think that / a moment did I suspect / a moment did I think",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "11-23",
+          "original": "Mum was cooking dinner, so she couldn't answer the phone.",
+          "keyword": "BUSY",
+          "transformed": "Mum was _________ dinner, so she could not answer the phone.",
+          "answer": "busy cooking / busy making / busy preparing",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "11-24",
+          "original": "Someone should cut the grass in our garden: it's very long.",
+          "keyword": "NEEDS",
+          "transformed": "The grass in our garden _________: it is very long.",
+          "answer": "needs cutting / needs to be cut / needs mowing / needs to be mowed / needs to be mown",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "11-25",
+          "original": "You can have pizza or pasta for dinner, but not both.",
+          "keyword": "EITHER",
+          "transformed": "You can have _________ pasta for dinner.",
+          "answer": "either pizza or",
+          "level": "B1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "11-26",
+          "original": "My brother has left home, so I have my own room at last.",
+          "keyword": "NOW",
+          "transformed": "_________ home, I have my own room at last.",
+          "answer": "Now that my brother has left / Now my brother has left / Now that he has left / Now he has left",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "11-27",
+          "original": "We threw away our old toys before we moved.",
+          "keyword": "RID",
+          "transformed": "We _________ our old toys before we moved.",
+          "answer": "got rid of",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "11-28",
+          "original": "'I didn't eat the last biscuit,' said Tom.",
+          "keyword": "DENIED",
+          "transformed": "Tom _________ the last biscuit.",
+          "answer": "denied eating / denied having eaten / denied that he had eaten / denied he had eaten / denied that he ate / denied he ate",
+          "level": "B2",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "11-29",
+          "original": "It's quite possible that it will snow tonight.",
+          "keyword": "WELL",
+          "transformed": "It _________ tonight.",
+          "answer": "may well snow / might well snow / could well snow",
+          "level": "C1",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "11-30",
+          "original": "If the bus is on time, we'll be home by six.",
+          "keyword": "ASSUMING",
+          "transformed": "_________ on time, we will be home by six.",
+          "answer": "Assuming the bus is / Assuming that the bus is / Assuming the bus will be / Assuming that the bus will be",
+          "level": "C1",
+          "mistakeType": "conditionals"
         }
       ]
     },
@@ -4148,6 +4736,274 @@
           "answer": "B",
           "level": "B2",
           "mistakeType": "passive"
+        },
+        {
+          "id": "10-31",
+          "stem": "I wanted to sing at the school concert, but at the last minute I got cold __________.",
+          "options": [
+            "A) hands",
+            "B) toes",
+            "C) feet",
+            "D) knees"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "10-32",
+          "stem": "If Mum sees this mess, we'll be in hot __________!",
+          "options": [
+            "A) soup",
+            "B) tea",
+            "C) milk",
+            "D) water"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "10-33",
+          "stem": "Could you __________ room for Grandma on the sofa?",
+          "options": [
+            "A) do",
+            "B) take",
+            "C) give",
+            "D) make"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "10-34",
+          "stem": "My alarm clock __________ off at six, but I didn't hear it.",
+          "options": [
+            "A) came",
+            "B) went",
+            "C) got",
+            "D) took"
+          ],
+          "answer": "B",
+          "level": "B1",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "10-35",
+          "stem": "My brother is three years __________ than me.",
+          "options": [
+            "A) elder",
+            "B) eldest",
+            "C) oldest",
+            "D) older"
+          ],
+          "answer": "D",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "10-36",
+          "stem": "I can hardly ride a bike, __________ drive a car!",
+          "options": [
+            "A) as well as",
+            "B) let alone",
+            "C) instead of",
+            "D) apart from"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "10-37",
+          "stem": "When Mum came into the room, my brother pretended __________ asleep.",
+          "options": [
+            "A) being",
+            "B) be",
+            "C) to be",
+            "D) been"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "10-38",
+          "stem": "The reason __________ I'm late is that I missed the bus.",
+          "options": [
+            "A) why",
+            "B) which",
+            "C) what",
+            "D) because"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "10-39",
+          "stem": "__________ to my grandma, there was only one shop in our village when she was little.",
+          "options": [
+            "A) According",
+            "B) Due",
+            "C) Thanks",
+            "D) Owing"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "10-40",
+          "stem": "__________ his surprise that he couldn't say a word.",
+          "options": [
+            "A) So was",
+            "B) Such was",
+            "C) It was",
+            "D) Such were"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "11-31",
+          "stem": "Don't worry about the test: we're all in the same __________.",
+          "options": [
+            "A) boat",
+            "B) ship",
+            "C) car",
+            "D) bus"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "11-32",
+          "stem": "If we go to the bakery on the way to school, we'll kill two __________ with one stone.",
+          "options": [
+            "A) flies",
+            "B) cats",
+            "C) fish",
+            "D) birds"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "11-33",
+          "stem": "Our class is __________ money for the animal shelter.",
+          "options": [
+            "A) rising",
+            "B) raising",
+            "C) lifting",
+            "D) growing"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "11-34",
+          "stem": "Ola and I __________ out last week, but now we're friends again.",
+          "options": [
+            "A) fell",
+            "B) went",
+            "C) got",
+            "D) came"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "11-35",
+          "stem": "My bedroom is only __________ big as yours.",
+          "options": [
+            "A) half",
+            "B) as half",
+            "C) half of",
+            "D) half as"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "11-36",
+          "stem": "It was raining heavily; __________, the match was cancelled.",
+          "options": [
+            "A) however",
+            "B) although",
+            "C) therefore",
+            "D) because"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "11-37",
+          "stem": "I really miss __________ football with my old friends.",
+          "options": [
+            "A) play",
+            "B) to play",
+            "C) playing",
+            "D) played"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "11-38",
+          "stem": "What would you do if you __________ a wallet in the street?",
+          "options": [
+            "A) find",
+            "B) found",
+            "C) will find",
+            "D) would find"
+          ],
+          "answer": "B",
+          "level": "B1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "11-39",
+          "stem": "The man __________ next to me on the bus was reading a newspaper.",
+          "options": [
+            "A) sitting",
+            "B) sit",
+            "C) sits",
+            "D) who sitting"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "participle-clauses"
+        },
+        {
+          "id": "11-40",
+          "stem": "Only by working hard __________ pass the exam.",
+          "options": [
+            "A) you can",
+            "B) you could",
+            "C) can you",
+            "D) you will"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "inversion"
         }
       ]
     },
@@ -4696,6 +5552,126 @@
           ],
           "answer": "A",
           "mistakeType": "uk-history"
+        },
+        {
+          "id": "10-41",
+          "question": "In which year did Scotland, Wales and Northern Ireland start making some of their own laws, after devolution?",
+          "options": [
+            "A. 1945",
+            "B. 1973",
+            "C. 1999",
+            "D. 2014"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "10-42",
+          "question": "How often must a general election take place in the UK?",
+          "options": [
+            "A. every year",
+            "B. at least every five years",
+            "C. every ten years",
+            "D. only when the King decides"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "10-43",
+          "question": "Where did Arthur Conan Doyle make Sherlock Holmes 'die' in 1893?",
+          "options": [
+            "A. at the Reichenbach Falls",
+            "B. on Baker Street",
+            "C. in the River Thames",
+            "D. on a ship to America"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "10-44",
+          "question": "Which king and queen turned a house next to Kensington Gardens into Kensington Palace in 1689?",
+          "options": [
+            "A. Henry VIII and Anne Boleyn",
+            "B. Charles I and Henrietta Maria",
+            "C. George II and Caroline",
+            "D. William III and Mary II"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "10-45",
+          "question": "What is on the national flag of Wales?",
+          "options": [
+            "A. a gold harp",
+            "B. a white X on blue",
+            "C. a red dragon",
+            "D. a red lion"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-symbols"
+        },
+        {
+          "id": "11-41",
+          "question": "What is a constituency?",
+          "options": [
+            "A. a group of laws passed together",
+            "B. the area that one MP is elected to represent",
+            "C. the room where the House of Lords meets",
+            "D. a meeting of all the government ministers"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "11-42",
+          "question": "What can the House of Lords do with a new law that the House of Commons has passed?",
+          "options": [
+            "A. stop it for ever",
+            "B. sign it so that it becomes law",
+            "C. check it, improve it and delay it, but not stop it in the end",
+            "D. replace the Prime Minister who wrote it"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "11-43",
+          "question": "In which city was Emmeline Pankhurst, the leader of the suffragettes, born?",
+          "options": [
+            "A. London",
+            "B. Liverpool",
+            "C. Cardiff",
+            "D. Manchester"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "11-44",
+          "question": "What happened to the Magna Carta a few weeks after King John sealed it?",
+          "options": [
+            "A. The Pope cancelled it.",
+            "B. It burnt in a fire in London.",
+            "C. The barons tore it up.",
+            "D. It was sent to France."
+          ],
+          "answer": "A",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "11-45",
+          "question": "What does a legend say will happen if the ravens ever leave the Tower of London?",
+          "options": [
+            "A. The Thames will flood.",
+            "B. The Crown Jewels will disappear.",
+            "C. The kingdom will fall.",
+            "D. Big Ben will stop."
+          ],
+          "answer": "C",
+          "mistakeType": "uk-london"
         }
       ]
     }
