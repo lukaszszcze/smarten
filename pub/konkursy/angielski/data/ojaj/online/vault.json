@@ -4497,6 +4497,192 @@
           "answer": "which surprised / which was a surprise to / which came as a surprise to",
           "level": "C1",
           "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "30-21",
+          "original": "The puzzle was so difficult that nobody in our class could solve it.",
+          "keyword": "SO",
+          "transformed": "_________ that nobody in our class could solve it.",
+          "answer": "So difficult was the puzzle / So hard was the puzzle / So difficult was that puzzle / So hard was that puzzle",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "30-22",
+          "original": "My brother is really interested in the stars and planets.",
+          "keyword": "INTEREST",
+          "transformed": "My brother _________ the stars and planets.",
+          "answer": "takes a keen interest in / has a keen interest in / takes a great interest in / has a great interest in / takes a real interest in / has a real interest in / has a strong interest in / has a deep interest in / takes a lot of interest in",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "30-23",
+          "original": "Last weekend we went to see our grandparents in Kraków.",
+          "keyword": "PAID",
+          "transformed": "Last weekend we _________ in Kraków.",
+          "answer": "paid our grandparents a visit / paid a visit to our grandparents",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "30-24",
+          "original": "It was a mistake to eat so many sweets before dinner.",
+          "keyword": "OUGHT",
+          "transformed": "I _________ so many sweets before dinner.",
+          "answer": "ought not to have eaten / ought not to have had",
+          "level": "C1",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "30-25",
+          "original": "My cousin from Canada phoned me one evening when I was not expecting it at all.",
+          "keyword": "BLUE",
+          "transformed": "My cousin from Canada phoned me _________ one evening.",
+          "answer": "out of the blue / completely out of the blue / totally out of the blue / right out of the blue / quite out of the blue",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "30-26",
+          "original": "No other mountain in Poland is as high as Rysy.",
+          "keyword": "OTHER",
+          "transformed": "Rysy is higher _________ in Poland.",
+          "answer": "than any other mountain / than all the other mountains / than any other peak / than all the other peaks / than every other mountain / than every other peak / than the other mountains / than the other peaks",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "30-27",
+          "original": "Ola won the school talent show, and years later she became a famous actress.",
+          "keyword": "WENT",
+          "transformed": "After winning the school talent show, Ola _________ a famous actress.",
+          "answer": "went on to become / later went on to become / went on to be",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "30-28",
+          "original": "I don't know the answer now because I wasn't listening in class.",
+          "keyword": "LISTENED",
+          "transformed": "If I _________ in class, I would know the answer now.",
+          "answer": "had listened / had listened carefully / had listened more carefully / had listened properly / had listened to the teacher",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "30-29",
+          "original": "My old bike was much slower than my new one.",
+          "keyword": "LOT",
+          "transformed": "My new bike is _________ my old one.",
+          "answer": "a lot faster than / a lot quicker than",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "30-30",
+          "original": "All visitors to the museum must leave their bags in the cloakroom.",
+          "keyword": "REQUIRED",
+          "transformed": "All visitors to the museum _________ their bags in the cloakroom.",
+          "answer": "are required to leave",
+          "level": "B2",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "31-21",
+          "original": "The last time I laughed so much was on my sixth birthday.",
+          "keyword": "SINCE",
+          "transformed": "Not _________ laughed so much.",
+          "answer": "since my sixth birthday have I / since I was six have I / since I turned six have I",
+          "level": "C2",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "31-22",
+          "original": "This door must not be used except in an emergency.",
+          "keyword": "EMERGENCY",
+          "transformed": "Only _________ this door.",
+          "answer": "in an emergency may you use / in an emergency can you use / in an emergency should you use",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "31-23",
+          "original": "I'm not going to apologise to him: he started the argument!",
+          "keyword": "INTENTION",
+          "transformed": "I have _________ to him: he started the argument!",
+          "answer": "no intention of apologising / no intention of apologizing / no intention of saying sorry / absolutely no intention of apologising / absolutely no intention of apologizing / absolutely no intention of saying sorry",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "31-24",
+          "original": "I couldn't understand the instructions for the new board game at all.",
+          "keyword": "SENSE",
+          "transformed": "I could not _________ the instructions for the new board game at all.",
+          "answer": "make sense of / make any sense of",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "31-25",
+          "original": "Pupils should hand in their homework on Mondays, but Tom always forgets.",
+          "keyword": "MEANT",
+          "transformed": "Pupils _________ their homework on Mondays, but Tom always forgets.",
+          "answer": "are meant to hand in / are meant to give in / are meant to bring in / are meant to bring / are meant to submit",
+          "level": "B2",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "31-26",
+          "original": "I'm slowly learning how to ride my new skateboard.",
+          "keyword": "HANG",
+          "transformed": "I am slowly _________ my new skateboard.",
+          "answer": "getting the hang of riding / getting the hang of / getting the hang of using",
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "31-27",
+          "original": "All the other tasks in the test were harder than this one.",
+          "keyword": "LEAST",
+          "transformed": "This task was _________ all the tasks in the test.",
+          "answer": "the least difficult of / the least hard of / the least challenging of / the least tricky of",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "31-28",
+          "original": "My dad always reads the newspaper at breakfast.",
+          "keyword": "HABIT",
+          "transformed": "My dad _________ the newspaper at breakfast.",
+          "answer": "is in the habit of reading / has a habit of reading / has the habit of reading",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "31-29",
+          "original": "It started to rain, but we didn't stop playing football.",
+          "keyword": "CARRIED",
+          "transformed": "It started to rain, but we _________ football.",
+          "answer": "carried on playing / just carried on playing / still carried on playing",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "31-30",
+          "original": "If we hadn't had the map, we would have got lost in the forest.",
+          "keyword": "BUT",
+          "transformed": "_________, we would have got lost in the forest.",
+          "answer": "But for the map / But for our map / But for that map",
+          "level": "C1",
+          "mistakeType": "conditionals"
         }
       ]
     },
@@ -6268,6 +6454,272 @@
           "answer": "B",
           "level": "C2",
           "mistakeType": "inversion"
+        },
+        {
+          "id": "32-31",
+          "stem": "Ever since he was five, Tom has had a __________ ambition to become a pilot.",
+          "options": [
+            "A) burning",
+            "B) boiling",
+            "C) hot",
+            "D) flaming"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "32-32",
+          "stem": "As the oldest, you should __________ a good example to your little brothers.",
+          "options": [
+            "A) give",
+            "B) set",
+            "C) make",
+            "D) put"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "32-33",
+          "stem": "When my parents said we could get a puppy, I was on cloud __________ for a week.",
+          "options": [
+            "A) seven",
+            "B) nine",
+            "C) ten",
+            "D) one"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "32-34",
+          "stem": "Only recently __________ to enjoy reading.",
+          "options": [
+            "A) I have started",
+            "B) have I started",
+            "C) I did start",
+            "D) I started"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "32-35",
+          "stem": "If I had done my homework yesterday, I __________ it now.",
+          "options": [
+            "A) wouldn't have to do",
+            "B) wouldn't have had to do",
+            "C) won't have to do",
+            "D) hadn't had to do"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "32-36",
+          "stem": "If the bus __________ on time, we wouldn't have missed the first lesson.",
+          "options": [
+            "A) would have come",
+            "B) had come",
+            "C) came",
+            "D) has come"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "32-37",
+          "stem": "__________ playing the piano, Ola plays the guitar in the school band.",
+          "options": [
+            "A) Moreover",
+            "B) In addition to",
+            "C) Furthermore",
+            "D) Also"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "32-38",
+          "stem": "I have three cousins, none of __________ lives in Poland.",
+          "options": [
+            "A) who",
+            "B) whom",
+            "C) which",
+            "D) whose"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "32-39",
+          "stem": "Great-grandma Zofia is the oldest person __________ our family: she is 97.",
+          "options": [
+            "A) of",
+            "B) in",
+            "C) at",
+            "D) on"
+          ],
+          "answer": "B",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "32-40",
+          "stem": "__________ you've finished your homework, you can go out and play.",
+          "options": [
+            "A) Unless",
+            "B) Once",
+            "C) Until",
+            "D) While"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "33-31",
+          "stem": "The school trip to London is a __________ opportunity to practise your English.",
+          "options": [
+            "A) golden",
+            "B) silver",
+            "C) shiny",
+            "D) sunny"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "33-32",
+          "stem": "Dad has a terrible sense of __________: he gets lost even in our own town.",
+          "options": [
+            "A) way",
+            "B) direction",
+            "C) route",
+            "D) road"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "33-33",
+          "stem": "Tom has been grumpy all morning: he must have got out of bed on the wrong __________.",
+          "options": [
+            "A) side",
+            "B) foot",
+            "C) leg",
+            "D) way"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "33-34",
+          "stem": "'I've never tried sushi.' '__________. Shall we try it together?'",
+          "options": [
+            "A) So have I",
+            "B) Neither have I",
+            "C) Neither I have",
+            "D) I have neither"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "33-35",
+          "stem": "No longer __________ to share a room with my brother: we've moved to a bigger flat.",
+          "options": [
+            "A) I have",
+            "B) do I have",
+            "C) I do have",
+            "D) am I having"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "33-36",
+          "stem": "If I __________ my glasses at school, I could read this letter now.",
+          "options": [
+            "A) didn't leave",
+            "B) hadn't left",
+            "C) wouldn't have left",
+            "D) haven't left"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "33-37",
+          "stem": "__________ fire, do not use the lift.",
+          "options": [
+            "A) In case of",
+            "B) In case",
+            "C) If",
+            "D) Unless"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "33-38",
+          "stem": "Grandma always buys the best butter for her cakes, __________ the price.",
+          "options": [
+            "A) regardless of",
+            "B) even though",
+            "C) although",
+            "D) unless"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "33-39",
+          "stem": "The only thing __________ matters is that everyone got home safely.",
+          "options": [
+            "A) what",
+            "B) that",
+            "C) whose",
+            "D) whom"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "33-40",
+          "stem": "Tom isn't so much lazy __________ tired: he goes to bed far too late.",
+          "options": [
+            "A) than",
+            "B) as",
+            "C) but",
+            "D) that"
+          ],
+          "answer": "B",
+          "level": "C2",
+          "mistakeType": "comparison"
         }
       ]
     },
