@@ -521,6 +521,46 @@
       "group": "Etap szkolny 2026/27 - zadania wlasne"
     },
     {
+      "id": "ojaj_own_wisielec_03",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (3) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_wisielec_04",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (4) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_wisielec_05",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (5) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_wisielec_06",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (6) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
+      "id": "ojaj_own_wisielec_07",
+      "title": "OJAJ etap szkolny 2026/27: wisielec (7) (zadania wlasne)",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10,
+      "group": "Etap szkolny 2026/27 - zadania wlasne"
+    },
+    {
       "id": "ojaj_own_transformacje_01",
       "title": "OJAJ etap szkolny 2026/27: transformacje (1) (zadania wlasne)",
       "taskType": "sentence_transformation",

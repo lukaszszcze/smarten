@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (5) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Wpisz slowo poprawnie uzupelniajace kazde ze zdan. Liczba kreseczek odpowiada liczbie liter w slowie. Wymagana jest pelna poprawnosc gramatyczna i ortograficzna wpisywanych slow.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "I hit my __ __ __ m __ (5) with the hammer, and it really hurt.",
+          "hint": "__ __ __ m __ (5)",
+          "answer": [
+            "thumb"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "I really a __ __ __ e __ __ __ t __ (10) your help with my science project.",
+          "hint": "a __ __ __ e __ __ __ t __ (10)",
+          "answer": [
+            "appreciate"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Only pupils under fifteen are __ __ __ g __ b __ __ (8) for the competition.",
+          "hint": "__ __ __ g __ b __ __ (8)",
+          "answer": [
+            "eligible"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "In the Middle Ages, the p __ __ g __ __ (6) killed millions of people in Europe.",
+          "hint": "p __ __ g __ __ (6)",
+          "answer": [
+            "plague"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "Don't forget your swimming g __ __ __ l __ __ (7): the water in the pool stings your eyes.",
+          "hint": "g __ __ __ l __ __ (7)",
+          "answer": [
+            "goggles"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "My favourite subject at school is m __ __ __ __ m __ __ __ c __ (11): I love solving problems with numbers.",
+          "hint": "m __ __ __ __ m __ __ __ c __ (11)",
+          "answer": [
+            "mathematics"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "This cake is made with ground __ __ m __ __ d __ (7) instead of flour.",
+          "hint": "__ __ m __ __ d __ (7)",
+          "answer": [
+            "almonds"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "It's my first week at the new club, so I'm still learning the __ __ p __ __ (5).",
+          "hint": "__ __ p __ __ (5)",
+          "answer": [
+            "ropes"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "We have a very tight __ __ __ __ d __ __ e (8): the bus leaves at seven and we have three museums to see.",
+          "hint": "__ __ __ __ d __ __ e (8)",
+          "answer": [
+            "schedule"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "I b __ __ p __ __ (6) into my old teacher at the supermarket yesterday.",
+          "hint": "b __ __ p __ __ (6)",
+          "answer": [
+            "bumped"
+          ]
+        }
+      ]
+    }
+  ]
+}

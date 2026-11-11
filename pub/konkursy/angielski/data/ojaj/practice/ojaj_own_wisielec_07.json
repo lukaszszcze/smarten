@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (7) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Wpisz slowo poprawnie uzupelniajace kazde ze zdan. Liczba kreseczek odpowiada liczbie liter w slowie. Wymagana jest pelna poprawnosc gramatyczna i ortograficzna wpisywanych slow.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Please __ __ __ s p __ __ (7): the baby is asleep in the next room.",
+          "hint": "__ __ __ s p __ __ (7)",
+          "answer": [
+            "whisper"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "A r __ __ __ __ __ n (7) was looking for food in our dustbin last night.",
+          "hint": "r __ __ __ __ __ n (7)",
+          "answer": [
+            "raccoon"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "Gymnasts have to be strong and very __ __ __ x __ __ __ e (8).",
+          "hint": "__ __ __ x __ __ __ e (8)",
+          "answer": [
+            "flexible"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "Our kitchen table w o __ __ __ __ __ (7) because one leg is shorter than the others.",
+          "hint": "w o __ __ __ __ __ (7)",
+          "answer": [
+            "wobbles"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The m __ __ __ __ __ __ c (8) fixed our car in less than an hour.",
+          "hint": "m __ __ __ __ __ __ c (8)",
+          "answer": [
+            "mechanic"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The river forms the __ __ __ n __ __ __ y (8) between the two countries.",
+          "hint": "__ __ __ n __ __ __ y (8)",
+          "answer": [
+            "boundary"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "At Christmas, people in Britain hang m __ __ __ l e __ __ __ (9) above the door and kiss underneath it.",
+          "hint": "m __ __ __ l e __ __ __ (9)",
+          "answer": [
+            "mistletoe"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "Grandma is eighty, but she's as fit as a f __ __ __ l __ (6): she walks ten kilometres every day.",
+          "hint": "f __ __ __ l __ (6)",
+          "answer": [
+            "fiddle"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "Those new headphones must have cost a f __ __ __ u __ __ (7)!",
+          "hint": "f __ __ __ u __ __ (7)",
+          "answer": [
+            "fortune"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "You can always __ __ u __ __ (5) on me if you need help.",
+          "hint": "__ __ u __ __ (5)",
+          "answer": [
+            "count"
+          ]
+        }
+      ]
+    }
+  ]
+}

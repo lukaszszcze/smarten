@@ -116,12 +116,14 @@ kuratoryjny averages, charts and star ladder — the two are marked on different
 scales, so averaging them together describes neither. The history lists on
 `/postepy` still show every attempt, each labelled and linked to its own paper.
 
-OJAJ holds three timed papers (2022/23 grupa A and B, 2024/25) and 62 practice
-exercises. Nine of the exercises are not from a published paper, and their
+OJAJ holds three timed papers (2022/23 grupa A and B, 2024/25) and 67 practice
+exercises. Fourteen of the exercises are not from a published paper, and their
 titles say so: five (`ojaj_uk_*`) are the app's own questions on the 2026/27
-UK-culture mind map, four (`ojaj_own_*`) are own wisielec and transformation
-sets. A year with two papers of the same stage needs two route slugs
-(`szkolny-a`, `szkolny-b`), which are not readable names, so those papers and
+UK-culture mind map, nine (`ojaj_own_*`) are own sets, seven of wisielec and
+two of transformations. Wisielec (3)-(7) are in the online test's shape and
+keep a vault wisielec task's rules. A year with two papers of the same stage
+needs two route slugs (`szkolny-a`, `szkolny-b`), which are not readable
+names, so those papers and
 their index entries carry a `label` that `KonkursTest` and `ojajStageTitle()`
 prefer. Exercises may carry a `group`, which is the source paper; `OjajHome`
 puts a heading above each run of them.
@@ -130,7 +132,8 @@ Online tests rehearse etap I, czesc II, the 45-question online test the real
 olympiad generates for each student from an unpublished pool (terms in
 `CONTEXT.md`). Like the real one, each test is put together when it is drawn,
 from the vault (`data/ojaj/online/vault.json`), a store of own items written
-in batches of 45. "Losuj test" on the OJAJ page opens `/ojaj/online`, which
+in batches of 45, and since 2026-11-11 also in batches of 10 wisielec items
+alone. "Losuj test" on the OJAJ page opens `/ojaj/online`, which
 syncs the attempts, works out the mistake record (`ojajRecord.js`) and draws
 (`ojajDraw.js`): per task, items he missed come back word for word (at most 2,
 likelier the more often missed; one right answer takes an item off the list),
@@ -161,7 +164,8 @@ OJAJ data is built by `tmp/_gen_ojaj.py` from the papers published at
 ojaj.wsjo.pl, checked by `tmp/_val_ojaj.mjs` (the answer key must score full
 marks), `tmp/_render_ojaj.sh` (every task renders with its content visible) and
 `tmp/_audit_ojaj.py` (no extraction leftovers, no item served twice). The online
-tests' items live in `tmp/_ojaj_online.py`, in batches of 45, each with its
+tests' items live in `tmp/_ojaj_online.py`, in batches of 45 or of 10
+wisielec items (numbered 11-20, as task 2 is in a full batch), each with its
 mistake type; it checks them (level profile, blank and keyword rules, a
 wisielec pattern giving as many letters as the papers do for its length,
 nothing already in the app or the vault), holds the type list with each type's label

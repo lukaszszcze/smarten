@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (3) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Wpisz slowo poprawnie uzupelniajace kazde ze zdan. Liczba kreseczek odpowiada liczbie liter w slowie. Wymagana jest pelna poprawnosc gramatyczna i ortograficzna wpisywanych slow.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "My little brother knows the name of every d __ n __ __ __ __ __ (8) that ever lived.",
+          "hint": "d __ n __ __ __ __ __ (8)",
+          "answer": [
+            "dinosaur"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "Grandad's old watch is his most precious p o __ __ __ __ __ __ o __ (10).",
+          "hint": "p o __ __ __ __ __ __ o __ (10)",
+          "answer": [
+            "possession"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "There were __ __ u m __ __ (6) all over the sofa after the boys had eaten their sandwiches.",
+          "hint": "__ __ u m __ __ (6)",
+          "answer": [
+            "crumbs"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "The police s __ __ g __ __ __ __ (8) asked us a lot of questions about the accident.",
+          "hint": "s __ __ g __ __ __ __ (8)",
+          "answer": [
+            "sergeant"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "The children loved jumping in every p __ __ __ l __ (6) on the way home from school.",
+          "hint": "p __ __ __ l __ (6)",
+          "answer": [
+            "puddle"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "The ceremony was very __ __ l __ m __ (6): nobody laughed or talked.",
+          "hint": "__ __ l __ m __ (6)",
+          "answer": [
+            "solemn"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Be p __ __ s __ __ __ __ __ t (10): if you keep trying, you will get there in the end.",
+          "hint": "p __ __ s __ __ __ __ __ t (10)",
+          "answer": [
+            "persistent"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "When I got the main part in the school play, I was on __ __ __ u __ (5) nine for a week.",
+          "hint": "__ __ __ u __ (5)",
+          "answer": [
+            "cloud"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "I've got a sore __ h __ __ __ t (6), so I can't sing in the concert tonight.",
+          "hint": "__ h __ __ __ t (6)",
+          "answer": [
+            "throat"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "The teacher left the room and told us to __ a __ __ __ (5) on with our work.",
+          "hint": "__ a __ __ __ (5)",
+          "answer": [
+            "carry"
+          ]
+        }
+      ]
+    }
+  ]
+}

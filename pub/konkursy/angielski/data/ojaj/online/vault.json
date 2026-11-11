@@ -2455,6 +2455,521 @@
           "level": "B2",
           "focus": "phrasal verb",
           "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "12-11",
+          "sentence": "I bought a fridge magnet as a __ __ __ v __ __ __ r (8) of our holiday in Kraków.",
+          "hint": "__ __ __ v __ __ __ r (8)",
+          "answer": [
+            "souvenir"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "12-12",
+          "sentence": "My new bed has a soft m __ __ __ r __ __ __ (8), so I sleep really well.",
+          "hint": "m __ __ __ r __ __ __ (8)",
+          "answer": [
+            "mattress"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "12-13",
+          "sentence": "Grandma knocked on the door so hard that she hurt her __ n u __ __ __ __ __ (8).",
+          "hint": "__ n u __ __ __ __ __ (8)",
+          "answer": [
+            "knuckles"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "12-14",
+          "sentence": "In a wolf pack there is a strict __ __ __ r __ r __ __ y (9): every wolf knows who is in charge.",
+          "hint": "__ __ __ r __ r __ __ y (9)",
+          "answer": [
+            "hierarchy"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "12-15",
+          "sentence": "The actress wore a g __ __ m __ __ __ __ s (9) silver dress to the film premiere.",
+          "hint": "g __ __ m __ __ __ __ s (9)",
+          "answer": [
+            "glamorous"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "12-16",
+          "sentence": "Check your essay before you hand it in: it's easy to m __ __ __ p __ __ __ (8) a long word.",
+          "hint": "m __ __ __ p __ __ __ (8)",
+          "answer": [
+            "misspell"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "12-17",
+          "sentence": "A r __ i __ __ c __ __ __ __ (10) has one or two horns on its nose and very thick grey skin.",
+          "hint": "r __ i __ __ c __ __ __ __ (10)",
+          "answer": [
+            "rhinoceros"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "12-18",
+          "sentence": "Wait until the c __ __ __ __ (5) is clear, then we can sneak into the kitchen for some biscuits.",
+          "hint": "c __ __ __ __ (5)",
+          "answer": [
+            "coast"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "12-19",
+          "sentence": "Can you pass me a pair of __ __ i __ __ o __ __ (8)? I need to cut out this picture.",
+          "hint": "__ __ i __ __ o __ __ (8)",
+          "answer": [
+            "scissors"
+          ],
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "12-20",
+          "sentence": "It took the class ten minutes to s __ __ __ l __ (6) down after the break.",
+          "hint": "s __ __ __ l __ (6)",
+          "answer": [
+            "settle"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "13-11",
+          "sentence": "Mum ordered a c __ __ __ u __ __ __ __ o (10) with lots of milky foam on top.",
+          "hint": "c __ __ __ u __ __ __ __ o (10)",
+          "answer": [
+            "cappuccino"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "13-12",
+          "sentence": "When Queen Elizabeth II died in 2022, Charles became the British __ o __ __ r __ __ __ n (9).",
+          "hint": "__ o __ __ r __ __ __ n (9)",
+          "answer": [
+            "sovereign"
+          ],
+          "level": "C2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "13-13",
+          "sentence": "My sister loves reading, so she wants to study English l __ __ __ r __ __ u __ __ (10) at university.",
+          "hint": "l __ __ __ r __ __ u __ __ (10)",
+          "answer": [
+            "literature"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "13-14",
+          "sentence": "We stopped the car to admire the beautiful mountain s __ __ n __ __ __ (7).",
+          "hint": "s __ __ n __ __ __ (7)",
+          "answer": [
+            "scenery"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "13-15",
+          "sentence": "We don't have s __ __ __ i __ __ __ __ t (10) money to buy a new car this year.",
+          "hint": "s __ __ __ i __ __ __ __ t (10)",
+          "answer": [
+            "sufficient"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "13-16",
+          "sentence": "The music was so quiet that it was hardly __ __ d __ b __ __ (7) at the back of the hall.",
+          "hint": "__ __ d __ b __ __ (7)",
+          "answer": [
+            "audible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
+        },
+        {
+          "id": "13-17",
+          "sentence": "The new puppy had to stay in q __ __ __ __ n __ __ __ e (10) for two weeks before it could come home.",
+          "hint": "q __ __ __ __ n __ __ __ e (10)",
+          "answer": [
+            "quarantine"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "13-18",
+          "sentence": "I made the last bus by the skin of my __ __ __ __ h (5): the doors closed right behind me.",
+          "hint": "__ __ __ __ h (5)",
+          "answer": [
+            "teeth"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "13-19",
+          "sentence": "Dad gave Mum a big b __ __ __ __ (5) of flowers for her birthday.",
+          "hint": "b __ __ __ __ (5)",
+          "answer": [
+            "bunch"
+          ],
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "13-20",
+          "sentence": "Please h __ __ __ __ (5) up, or we'll miss the train!",
+          "hint": "h __ __ __ __ (5)",
+          "answer": [
+            "hurry"
+          ],
+          "level": "B1",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "14-11",
+          "sentence": "Leave the butter out of the fridge for an hour to let it s __ f __ __ __ (6).",
+          "hint": "s __ f __ __ __ (6)",
+          "answer": [
+            "soften"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "14-12",
+          "sentence": "I made a salad with tomatoes, onions and fresh l e __ __ __ __ __ (7).",
+          "hint": "l e __ __ __ __ __ (7)",
+          "answer": [
+            "lettuce"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "14-13",
+          "sentence": "There's a w __ __ __ __ (5) smell coming from the fridge: I think the cheese has gone off.",
+          "hint": "w __ __ __ __ (5)",
+          "answer": [
+            "weird"
+          ],
+          "level": "B2",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "14-14",
+          "sentence": "The project looked huge at first, but with Dad's help it was quite m __ __ __ g __ __ __ l __ (10).",
+          "hint": "m __ __ __ g __ __ __ l __ (10)",
+          "answer": [
+            "manageable"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "14-15",
+          "sentence": "The bakery is on the o __ __ o __ __ __ __ (8) side of the street, facing the bank.",
+          "hint": "o __ __ o __ __ __ __ (8)",
+          "answer": [
+            "opposite"
+          ],
+          "level": "B1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "14-16",
+          "sentence": "The __ __ e p __ __ __ __ (8) and his dog led the sheep down from the hills before the storm.",
+          "hint": "__ __ e p __ __ __ __ (8)",
+          "answer": [
+            "shepherd"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "14-17",
+          "sentence": "Aunt Ewa knitted me a h __ d __ __ __ __ (7) jumper with a green reindeer on it, but I said thank you anyway.",
+          "hint": "h __ d __ __ __ __ (7)",
+          "answer": [
+            "hideous"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "14-18",
+          "sentence": "Our class raised fifty zloty for the new playground, but that's just a drop in the o __ __ __ __ (5).",
+          "hint": "o __ __ __ __ (5)",
+          "answer": [
+            "ocean"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "14-19",
+          "sentence": "Can I have another s __ __ __ __ (5) of pizza, please? It's delicious!",
+          "hint": "s __ __ __ __ (5)",
+          "answer": [
+            "slice"
+          ],
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "14-20",
+          "sentence": "Nobody __ w __ __ __ (5) up to breaking the window, so the whole class had to stay after school.",
+          "hint": "__ w __ __ __ (5)",
+          "answer": [
+            "owned"
+          ],
+          "level": "C1",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "15-11",
+          "sentence": "The new statue in the town square is __ __ __ o __ __ __ l (8): it's taller than our school.",
+          "hint": "__ __ __ o __ __ __ l (8)",
+          "answer": [
+            "colossal"
+          ],
+          "level": "C2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "15-12",
+          "sentence": "I told Mum that I had eaten the last biscuit, because I had a guilty __ __ n __ __ __ __ n c __ (10).",
+          "hint": "__ __ n __ __ __ __ n c __ (10)",
+          "answer": [
+            "conscience"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "15-13",
+          "sentence": "I always put some __ __ c __ __ b __ __ (8) in my sandwich because it's cool and crunchy.",
+          "hint": "__ __ c __ __ b __ __ (8)",
+          "answer": [
+            "cucumber"
+          ],
+          "level": "B1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "15-14",
+          "sentence": "We were d __ __ __ l __ __ (7) by the bright lights of the city at night.",
+          "hint": "d __ __ __ l __ __ (7)",
+          "answer": [
+            "dazzled"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "15-15",
+          "sentence": "I bought a d __ __ __ __ __ u __ (8) with jam inside at the bakery.",
+          "hint": "d __ __ __ __ __ u __ (8)",
+          "answer": [
+            "doughnut"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "15-16",
+          "sentence": "The neighbours' dog looks v __ __ __ __ __ s (7), but it's actually very friendly.",
+          "hint": "v __ __ __ __ __ s (7)",
+          "answer": [
+            "vicious"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "15-17",
+          "sentence": "Every December we put a __ __ __ __ t h (6) of holly and pine cones on our front door.",
+          "hint": "__ __ __ __ t h (6)",
+          "answer": [
+            "wreath"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "15-18",
+          "sentence": "Don't worry, making pancakes isn't r __ __ k __ __ (6) science: anyone can do it!",
+          "hint": "r __ __ k __ __ (6)",
+          "answer": [
+            "rocket"
+          ],
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "15-19",
+          "sentence": "I've got a __ p l i __ __ __ __ __ (9) headache, so I'm going to lie down in a dark room.",
+          "hint": "__ p l i __ __ __ __ __ (9)",
+          "answer": [
+            "splitting"
+          ],
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "15-20",
+          "sentence": "Our teacher __ o i __ __ __ __ (7) out three mistakes in my story.",
+          "hint": "__ o i __ __ __ __ (7)",
+          "answer": [
+            "pointed"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "16-11",
+          "sentence": "Prince William is the __ __ __ r (4) to the throne.",
+          "hint": "__ __ __ r (4)",
+          "answer": [
+            "heir"
+          ],
+          "level": "C1",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "16-12",
+          "sentence": "A g __ __ a __ __ __ (7) can reach leaves at the very top of tall trees with its long neck.",
+          "hint": "g __ __ a __ __ __ (7)",
+          "answer": [
+            "giraffe"
+          ],
+          "level": "B1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "16-13",
+          "sentence": "The letter was a __ __ n __ __ __ __ s (9): nobody knew who had written it.",
+          "hint": "a __ __ n __ __ __ __ s (9)",
+          "answer": [
+            "anonymous"
+          ],
+          "level": "C1",
+          "mistakeType": "vowels"
+        },
+        {
+          "id": "16-14",
+          "sentence": "The car began to a __ __ __ __ e __ __ __ e (10) as it went down the hill, so Dad put his foot on the brake.",
+          "hint": "a __ __ __ __ e __ __ __ e (10)",
+          "answer": [
+            "accelerate"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "16-15",
+          "sentence": "The sailors dropped the a __ __ __ o __ (6) and the ship stopped near the beach.",
+          "hint": "a __ __ __ o __ (6)",
+          "answer": [
+            "anchor"
+          ],
+          "level": "B2",
+          "mistakeType": "silent-letters"
+        },
+        {
+          "id": "16-16",
+          "sentence": "The film was __ __ f __ __ (5): we left the cinema after half an hour.",
+          "hint": "__ __ f __ __ (5)",
+          "answer": [
+            "awful"
+          ],
+          "level": "B1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "16-17",
+          "sentence": "Every morning Grandad eats a bowl of hot p __ __ __ i __ __ __ (8) with honey.",
+          "hint": "p __ __ __ i __ __ __ (8)",
+          "answer": [
+            "porridge"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "16-18",
+          "sentence": "You look very quiet today. A p __ __ __ __ (5) for your thoughts?",
+          "hint": "p __ __ __ __ (5)",
+          "answer": [
+            "penny"
+          ],
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "16-19",
+          "sentence": "Our new neighbour is from Glasgow and speaks with a strong Scottish a __ __ __ __ t (6).",
+          "hint": "a __ __ __ __ t (6)",
+          "answer": [
+            "accent"
+          ],
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "16-20",
+          "sentence": "My favourite band s __ __ __ __ (5) up last year, and I'm still sad about it.",
+          "hint": "s __ __ __ __ (5)",
+          "answer": [
+            "split"
+          ],
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
         }
       ]
     },

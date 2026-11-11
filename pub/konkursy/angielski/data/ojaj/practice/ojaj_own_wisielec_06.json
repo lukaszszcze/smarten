@@ -1,0 +1,95 @@
+{
+  "title": "OJAJ etap szkolny 2026/27: wisielec (6) (zadania wlasne)",
+  "type": "practice",
+  "source": "https://ojaj.wsjo.pl/wp-content/uploads/2026/09/Zalacznik-do-Regulaminu-OJAJ-program-OJAJ-edycja-2026-2027.pdf",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Zadania wlasne w formacie etapu szkolnego (nie z arkusza olimpiady). Wpisz slowo poprawnie uzupelniajace kazde ze zdan. Liczba kreseczek odpowiada liczbie liter w slowie. Wymagana jest pelna poprawnosc gramatyczna i ortograficzna wpisywanych slow.",
+      "items": [
+        {
+          "id": "1.1",
+          "sentence": "Workers put up __ c __ __ __ o __ __ __ n __ (11) around the church so they could repair the tower.",
+          "hint": "__ c __ __ __ o __ __ __ n __ (11)",
+          "answer": [
+            "scaffolding"
+          ]
+        },
+        {
+          "id": "1.2",
+          "sentence": "There is a funny garden __ n __ __ __ (5) with a red hat next to our pond.",
+          "hint": "__ n __ __ __ (5)",
+          "answer": [
+            "gnome"
+          ]
+        },
+        {
+          "id": "1.3",
+          "sentence": "This is only a t __ m __ __ __ __ r __ (9) classroom: we'll move back to ours when the painters finish.",
+          "hint": "t __ m __ __ __ __ r __ (9)",
+          "answer": [
+            "temporary"
+          ]
+        },
+        {
+          "id": "1.4",
+          "sentence": "We filled the t __ o __ __ __ __ (7) with food for the whole week.",
+          "hint": "t __ o __ __ __ __ (7)",
+          "answer": [
+            "trolley"
+          ]
+        },
+        {
+          "id": "1.5",
+          "sentence": "After the storm, the beach was covered in d __ __ r __ __ (6) from broken boats.",
+          "hint": "d __ __ r __ __ (6)",
+          "answer": [
+            "debris"
+          ]
+        },
+        {
+          "id": "1.6",
+          "sentence": "Don't worry about the old mug: it's cheap and easily r __ __ l __ __ __ __ b __ __ (11).",
+          "hint": "r __ __ l __ __ __ __ b __ __ (11)",
+          "answer": [
+            "replaceable"
+          ]
+        },
+        {
+          "id": "1.7",
+          "sentence": "Washing your hands before meals is a basic rule of h __ g __ __ __ __ (7).",
+          "hint": "h __ g __ __ __ __ (7)",
+          "answer": [
+            "hygiene"
+          ]
+        },
+        {
+          "id": "1.8",
+          "sentence": "My dog goes __ __ n __ n __ __ (7) every time someone rings the doorbell.",
+          "hint": "__ __ n __ n __ __ (7)",
+          "answer": [
+            "bananas"
+          ]
+        },
+        {
+          "id": "1.9",
+          "sentence": "Could you do me a f __ v __ __ __ (6) and feed my cat while I'm away?",
+          "hint": "f __ v __ __ __ (6)",
+          "answer": [
+            "favour"
+          ]
+        },
+        {
+          "id": "1.10",
+          "sentence": "We bought Ola some flowers to __ h __ __ __ (5) her up after she broke her arm.",
+          "hint": "__ h __ __ __ (5)",
+          "answer": [
+            "cheer"
+          ]
+        }
+      ]
+    }
+  ]
+}
