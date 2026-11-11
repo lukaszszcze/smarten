@@ -1286,6 +1286,306 @@
           ],
           "level": "C1",
           "mistakeType": "able-ible"
+        },
+        {
+          "id": "17-1",
+          "sentence": "When I asked who had eaten my chocolate, my brother got very __________ and started shouting.",
+          "wordBase": "DEFEND",
+          "answer": [
+            "defensive"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "17-2",
+          "sentence": "Our school is very __________: every pupil feels welcome, whatever their background.",
+          "wordBase": "INCLUDE",
+          "answer": [
+            "inclusive"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "17-3",
+          "sentence": "My little brother is still not very good at __________ his shoelaces.",
+          "wordBase": "TIE",
+          "answer": [
+            "tying"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "17-4",
+          "sentence": "The older boys laughed __________ at the new pupil's old trainers, which made her cry.",
+          "wordBase": "CRUEL",
+          "answer": [
+            "cruelly"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "17-5",
+          "sentence": "Laughing at someone whose pet has just died is really __________.",
+          "wordBase": "SENSITIVE",
+          "answer": [
+            "insensitive"
+          ],
+          "level": "B2",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "17-6",
+          "sentence": "Our teacher explains maths with great __________, so everyone understands it.",
+          "wordBase": "CLEAR",
+          "answer": [
+            "clarity"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "17-7",
+          "sentence": "This is __________ the best pizza in town, although some people prefer the one near the station.",
+          "wordBase": "ARGUE",
+          "answer": [
+            "arguably"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "17-8",
+          "sentence": "Mum says my __________ gets me into trouble: I never change my mind, even when I'm wrong.",
+          "wordBase": "STUBBORN",
+          "answer": [
+            "stubbornness"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "17-9",
+          "sentence": "Rice is easily __________, so it is good food when you have a stomach ache.",
+          "wordBase": "DIGEST",
+          "answer": [
+            "digestible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
+        },
+        {
+          "id": "17-10",
+          "sentence": "Our team won the cup thanks to hard work and __________: we never gave up, even when we were losing.",
+          "wordBase": "PERSIST",
+          "answer": [
+            "persistence"
+          ],
+          "level": "C1",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "18-1",
+          "sentence": "They say that money can't buy __________.",
+          "wordBase": "HAPPY",
+          "answer": [
+            "happiness"
+          ],
+          "level": "B1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "18-2",
+          "sentence": "After a lot of __________, my parents finally agreed to let me go to the camp.",
+          "wordBase": "PERSUADE",
+          "answer": [
+            "persuasion"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "18-3",
+          "sentence": "Everyone in the class was __________ of Ola's new bike: it was the best one at school.",
+          "wordBase": "ENVY",
+          "answer": [
+            "envious"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "18-4",
+          "sentence": "The school has bought new sports __________: balls, nets and mats.",
+          "wordBase": "EQUIP",
+          "answer": [
+            "equipment"
+          ],
+          "level": "B2",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "18-5",
+          "sentence": "Our old car is slow, but it's very __________: it starts every time, even on the coldest mornings.",
+          "wordBase": "DEPEND",
+          "answer": [
+            "dependable"
+          ],
+          "level": "B2",
+          "mistakeType": "able-ible"
+        },
+        {
+          "id": "18-6",
+          "sentence": "Despite all his success, the famous footballer is known for his __________: he never boasts about it.",
+          "wordBase": "HUMBLE",
+          "answer": [
+            "humility"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "18-7",
+          "sentence": "Speaking two languages can be very __________ when you look for a job.",
+          "wordBase": "ADVANTAGE",
+          "answer": [
+            "advantageous"
+          ],
+          "level": "C1",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "18-8",
+          "sentence": "Our new drone is easily __________ from a phone app.",
+          "wordBase": "CONTROL",
+          "answer": [
+            "controllable"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "18-9",
+          "sentence": "The referee was so __________ that he didn't see the most obvious foul of the match.",
+          "wordBase": "COMPETENT",
+          "answer": [
+            "incompetent"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "18-10",
+          "sentence": "The village is very __________, with old stone houses and flowers everywhere.",
+          "wordBase": "PICTURE",
+          "answer": [
+            "picturesque"
+          ],
+          "level": "C1",
+          "mistakeType": "word-ending"
+        },
+        {
+          "id": "19-1",
+          "sentence": "The magazine has an __________ interview with the singer: no other magazine has spoken to her.",
+          "wordBase": "EXCLUDE",
+          "answer": [
+            "exclusive"
+          ],
+          "level": "B2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "19-2",
+          "sentence": "The story ended __________: the hero died in the last chapter.",
+          "wordBase": "TRAGIC",
+          "answer": [
+            "tragically"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "19-3",
+          "sentence": "Stop __________! We still have ten minutes to get to the station.",
+          "wordBase": "PANIC",
+          "answer": [
+            "panicking"
+          ],
+          "level": "B2",
+          "mistakeType": "suffix-spelling"
+        },
+        {
+          "id": "19-4",
+          "sentence": "Our school has zero __________ for bullying.",
+          "wordBase": "TOLERATE",
+          "answer": [
+            "tolerance"
+          ],
+          "level": "B2",
+          "mistakeType": "ance-ence"
+        },
+        {
+          "id": "19-5",
+          "sentence": "Every November, people in Britain wear red poppies as a sign of __________.",
+          "wordBase": "REMEMBER",
+          "answer": [
+            "remembrance"
+          ],
+          "level": "C1",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "19-6",
+          "sentence": "Doctors say that half an hour of __________ exercise a day keeps you healthy.",
+          "wordBase": "VIGOUR",
+          "answer": [
+            "vigorous"
+          ],
+          "level": "C2",
+          "mistakeType": "base-change"
+        },
+        {
+          "id": "19-7",
+          "sentence": "The __________ of the storm surprised everyone: one minute the sky was blue, the next it was pouring.",
+          "wordBase": "SUDDEN",
+          "answer": [
+            "suddenness"
+          ],
+          "level": "C1",
+          "mistakeType": "double-letters"
+        },
+        {
+          "id": "19-8",
+          "sentence": "The school sports hall is too small and __________ for 500 pupils.",
+          "wordBase": "ADEQUATE",
+          "answer": [
+            "inadequate"
+          ],
+          "level": "C1",
+          "mistakeType": "negative-prefix"
+        },
+        {
+          "id": "19-9",
+          "sentence": "Tom tried __________ to open the jar, so in the end he gave it to Dad.",
+          "wordBase": "SUCCESS",
+          "answer": [
+            "unsuccessfully"
+          ],
+          "level": "C1",
+          "mistakeType": "two-steps"
+        },
+        {
+          "id": "19-10",
+          "sentence": "The instructions were written in such bad English that they were hardly __________.",
+          "wordBase": "COMPREHEND",
+          "answer": [
+            "comprehensible"
+          ],
+          "level": "C1",
+          "mistakeType": "able-ible"
         }
       ]
     },
@@ -4015,6 +4315,188 @@
           "answer": "Assuming the bus is / Assuming that the bus is / Assuming the bus will be / Assuming that the bus will be",
           "level": "C1",
           "mistakeType": "conditionals"
+        },
+        {
+          "id": "20-21",
+          "original": "My bike and your bike look almost the same.",
+          "keyword": "SIMILAR",
+          "transformed": "My bike looks _________ yours.",
+          "answer": "very similar to / similar to / quite similar to / really similar to / so similar to",
+          "level": "B1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "20-22",
+          "original": "It snowed so much that the match was cancelled.",
+          "keyword": "IF",
+          "transformed": "The match would not have been cancelled _________ so much.",
+          "answer": "if it had not snowed / if it had not been snowing",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "20-23",
+          "original": "My best friend moved to Spain three years ago, and we don't write or talk to each other any more.",
+          "keyword": "TOUCH",
+          "transformed": "Since my best friend moved to Spain three years ago, we _________.",
+          "answer": "have lost touch / have lost touch with each other / have not kept in touch / have not been in touch / have been out of touch / have not stayed in touch",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "20-24",
+          "original": "I asked my brother to fix my bike, and he did.",
+          "keyword": "GOT",
+          "transformed": "I _________ my bike.",
+          "answer": "got my brother to fix / got my brother to repair / got him to fix / got him to repair",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "20-25",
+          "original": "'Have you ever been to London?' Ola asked me.",
+          "keyword": "EVER",
+          "transformed": "Ola asked me _________ to London.",
+          "answer": "if I had ever been / whether I had ever been",
+          "level": "B2",
+          "mistakeType": "reported-speech"
+        },
+        {
+          "id": "20-26",
+          "original": "As soon as we got to the beach, it started to rain.",
+          "keyword": "SCARCELY",
+          "transformed": "_________ to the beach when it started to rain.",
+          "answer": "Scarcely had we got / Scarcely had we come / Scarcely had we gone",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "20-27",
+          "original": "I have never tasted such delicious soup.",
+          "keyword": "NEVER",
+          "transformed": "_________ such delicious soup.",
+          "answer": "Never have I tasted / Never before have I tasted",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "20-28",
+          "original": "If you want to catch the early train, you have to get up at five.",
+          "keyword": "MEANS",
+          "transformed": "Catching the early train _________ at five.",
+          "answer": "means getting up / means having to get up / means you have to get up / means waking up",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "20-29",
+          "original": "Is it possible that they have already left?",
+          "keyword": "COULD",
+          "transformed": "_________ already left?",
+          "answer": "Could they have / Could they possibly have",
+          "level": "C1",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "20-30",
+          "original": "Although I really like pizza, I can't eat it every day.",
+          "keyword": "MUCH",
+          "transformed": "_________ pizza, I cannot eat it every day.",
+          "answer": "Much as I like / Much as I love / Much as I really like / Much as I enjoy",
+          "level": "C2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "21-21",
+          "original": "If you hadn't helped me, I would never have finished my project.",
+          "keyword": "WITHOUT",
+          "transformed": "I would never have finished my project _________.",
+          "answer": "without your help / without you / without you helping me / without you helping",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "21-22",
+          "original": "I really hate waiting for the bus in the rain.",
+          "keyword": "STAND",
+          "transformed": "I _________ for the bus in the rain.",
+          "answer": "cannot stand waiting / really cannot stand waiting / just cannot stand waiting",
+          "level": "B2",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "21-23",
+          "original": "We finally decided where to go on holiday.",
+          "keyword": "DECISION",
+          "transformed": "We finally _________ where to go on holiday.",
+          "answer": "made a decision about / came to a decision about / reached a decision about / took a decision about / made a decision on / came to a decision on / reached a decision on / made our decision about",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "21-24",
+          "original": "I was too scared to tell Mum about my bad mark.",
+          "keyword": "DARE",
+          "transformed": "I _________ Mum about my bad mark.",
+          "answer": "did not dare to tell / did not dare tell",
+          "level": "B2",
+          "mistakeType": "modals"
+        },
+        {
+          "id": "21-25",
+          "original": "I can't swim, and my brother can't swim either.",
+          "keyword": "NOR",
+          "transformed": "I cannot swim, and _________ my brother.",
+          "answer": "nor can",
+          "level": "B2",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "21-26",
+          "original": "Whatever happens, don't tell Ola about the surprise party.",
+          "keyword": "ACCOUNT",
+          "transformed": "On _________ Ola about the surprise party.",
+          "answer": "no account must you tell / no account should you tell / no account are you to tell",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "21-27",
+          "original": "You can watch the film only if you finish your homework first.",
+          "keyword": "ALLOWED",
+          "transformed": "Only if you finish your homework first _________ the film.",
+          "answer": "will you be allowed to watch / are you allowed to watch / will you be allowed to see / are you allowed to see",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "21-28",
+          "original": "I'm not good at maths, so I didn't win the maths competition.",
+          "keyword": "GOOD",
+          "transformed": "If I _________ maths, I would have won the maths competition.",
+          "answer": "were good at / was good at / had been good at / were any good at / was any good at",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "21-29",
+          "original": "The new tablet costs exactly the same as the old one.",
+          "keyword": "NO",
+          "transformed": "The new tablet is _________ than the old one.",
+          "answer": "no more expensive / no cheaper / no dearer",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "21-30",
+          "original": "Tom passed all his exams. This surprised everybody.",
+          "keyword": "WHICH",
+          "transformed": "Tom passed all his exams, _________ everybody.",
+          "answer": "which surprised / which was a surprise to / which came as a surprise to",
+          "level": "C1",
+          "mistakeType": "relative-clauses"
         }
       ]
     },
@@ -5519,6 +6001,273 @@
           "answer": "C",
           "level": "C1",
           "mistakeType": "inversion"
+        },
+        {
+          "id": "22-31",
+          "stem": "Take an umbrella: it's raining cats and __________!",
+          "options": [
+            "A) mice",
+            "B) dogs",
+            "C) birds",
+            "D) horses"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "22-32",
+          "stem": "After the long test, we ran around the playground to let off __________.",
+          "options": [
+            "A) smoke",
+            "B) air",
+            "C) steam",
+            "D) gas"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "22-33",
+          "stem": "The police believe the man __________ the crime on Friday night.",
+          "options": [
+            "A) committed",
+            "B) made",
+            "C) caused",
+            "D) took"
+          ],
+          "answer": "A",
+          "level": "B2",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "22-34",
+          "stem": "Ola was counting on me, and I __________ her down by forgetting her birthday.",
+          "options": [
+            "A) put",
+            "B) turned",
+            "C) took",
+            "D) let"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "focus": "phrasal verb",
+          "mistakeType": "phrasal-verb"
+        },
+        {
+          "id": "22-35",
+          "stem": "All __________ I want for my birthday is a new bike.",
+          "options": [
+            "A) what",
+            "B) that",
+            "C) which",
+            "D) who"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "relative-clauses"
+        },
+        {
+          "id": "22-36",
+          "stem": "For __________ information, please visit the school website.",
+          "options": [
+            "A) farther",
+            "B) farthest",
+            "C) further",
+            "D) furthest"
+          ],
+          "answer": "C",
+          "level": "B2",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "22-37",
+          "stem": "If Tomek weren't so slow, he __________ picked for the relay team last year.",
+          "options": [
+            "A) would have been",
+            "B) would be",
+            "C) will be",
+            "D) had been"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "22-38",
+          "stem": "Never again __________ so much ice cream before a long bus journey!",
+          "options": [
+            "A) I will eat",
+            "B) I am eating",
+            "C) will I eat",
+            "D) I would eat"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "22-39",
+          "stem": "'You must be bored at home all day.' '__________, I'm having a great time!'",
+          "options": [
+            "A) On the other hand",
+            "B) On the contrary",
+            "C) In contrast",
+            "D) Otherwise"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "22-40",
+          "stem": "Dad objects to __________ so much for a cinema ticket.",
+          "options": [
+            "A) pay",
+            "B) be paid",
+            "C) have paid",
+            "D) paying"
+          ],
+          "answer": "D",
+          "level": "C1",
+          "mistakeType": "verb-patterns"
+        },
+        {
+          "id": "23-31",
+          "stem": "At the start of the party nobody was talking, so Ola told a joke to break the __________.",
+          "options": [
+            "A) glass",
+            "B) ice",
+            "C) snow",
+            "D) wall"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "focus": "idiom",
+          "mistakeType": "idiom"
+        },
+        {
+          "id": "23-32",
+          "stem": "Could you __________ a photo of us in front of the castle, please?",
+          "options": [
+            "A) make",
+            "B) do",
+            "C) take",
+            "D) create"
+          ],
+          "answer": "C",
+          "level": "B1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "23-33",
+          "stem": "My little sister has a very __________ imagination: she says a dragon lives under her bed.",
+          "options": [
+            "A) vivid",
+            "B) bright",
+            "C) loud",
+            "D) sharp"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "focus": "collocation",
+          "mistakeType": "collocation"
+        },
+        {
+          "id": "23-34",
+          "stem": "If we had left home ten minutes earlier, we __________ the start of the film.",
+          "options": [
+            "A) might not miss",
+            "B) would not miss",
+            "C) had not missed",
+            "D) might not have missed"
+          ],
+          "answer": "D",
+          "level": "B2",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "23-35",
+          "stem": "The tickets were really expensive. __________, we had a fantastic time at the concert.",
+          "options": [
+            "A) Even though",
+            "B) Even so",
+            "C) Although",
+            "D) Despite"
+          ],
+          "answer": "B",
+          "level": "B2",
+          "mistakeType": "linking-words"
+        },
+        {
+          "id": "23-36",
+          "stem": "If you __________ see a ghost, what would you do?",
+          "options": [
+            "A) were to",
+            "B) are to",
+            "C) will",
+            "D) would"
+          ],
+          "answer": "A",
+          "level": "C1",
+          "mistakeType": "conditionals"
+        },
+        {
+          "id": "23-37",
+          "stem": "Only later __________ that the 'ghost' was my brother in a sheet.",
+          "options": [
+            "A) I found out",
+            "B) I did find out",
+            "C) did I find out",
+            "D) had I found out"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "inversion"
+        },
+        {
+          "id": "23-38",
+          "stem": "Ola and Kasia are twins, but Ola is the __________ of the two.",
+          "options": [
+            "A) tallest",
+            "B) taller",
+            "C) highest",
+            "D) higher"
+          ],
+          "answer": "B",
+          "level": "C1",
+          "mistakeType": "comparison"
+        },
+        {
+          "id": "23-39",
+          "stem": "__________ about the test only the day before, we spent the whole evening revising.",
+          "options": [
+            "A) Having told",
+            "B) To tell",
+            "C) Having been told",
+            "D) Telling"
+          ],
+          "answer": "C",
+          "level": "C1",
+          "mistakeType": "participle-clauses"
+        },
+        {
+          "id": "23-40",
+          "stem": "Barely had the film started __________ the lights went out.",
+          "options": [
+            "A) than",
+            "B) when",
+            "C) then",
+            "D) that"
+          ],
+          "answer": "B",
+          "level": "C2",
+          "mistakeType": "inversion"
         }
       ]
     },
@@ -6187,6 +6936,366 @@
           ],
           "answer": "C",
           "mistakeType": "uk-london"
+        },
+        {
+          "id": "24-41",
+          "question": "What does it mean that the UK is a constitutional monarchy?",
+          "options": [
+            "A. The King makes all the laws himself.",
+            "B. There is no king or queen, only a president.",
+            "C. There is a king, but the country is run by the government and the MPs that people elect.",
+            "D. The King and the Prime Minister take turns to rule the country."
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "24-42",
+          "question": "Who runs the debates in the House of Lords?",
+          "options": [
+            "A. the Lord Speaker",
+            "B. Black Rod",
+            "C. the Prime Minister",
+            "D. the Serjeant at Arms"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "24-43",
+          "question": "How many Royal Parks are there in London?",
+          "options": [
+            "A. two",
+            "B. five",
+            "C. twelve",
+            "D. eight"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "24-44",
+          "question": "Which programming language is named after Ada Lovelace?",
+          "options": [
+            "A. Python",
+            "B. Ada",
+            "C. Java",
+            "D. Byron"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "24-45",
+          "question": "Why did the barons rebel against King John before the Magna Carta?",
+          "options": [
+            "A. He wanted to close all the monasteries.",
+            "B. He had made peace with France without asking them.",
+            "C. He had lost English lands in France, quarrelled with the Pope and made them pay very high taxes.",
+            "D. He wanted to move the capital from London to Winchester."
+          ],
+          "answer": "C",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "25-41",
+          "question": "In which decade did the Conservative Party take its name?",
+          "options": [
+            "A. the 1660s",
+            "B. the 1830s",
+            "C. the 1900s",
+            "D. the 1940s"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "25-42",
+          "question": "Who becomes Prime Minister after a general election?",
+          "options": [
+            "A. the leader of the party with the most MPs",
+            "B. the oldest MP in the House of Commons",
+            "C. the person chosen by the House of Lords",
+            "D. the MP who got the most votes in London"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "25-43",
+          "question": "From whom did Henry VIII take the land of Hyde Park in 1536?",
+          "options": [
+            "A. the Lord Mayor of London",
+            "B. the Duke of Westminster",
+            "C. the monks of Westminster Abbey",
+            "D. the people of Kensington"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "25-44",
+          "question": "Which organisation did Emmeline Pankhurst found in 1903?",
+          "options": [
+            "A. the Labour Party",
+            "B. the Women's Social and Political Union",
+            "C. the National Health Service",
+            "D. the Royal Society"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "25-45",
+          "question": "What did Henry VIII do with the monasteries after the Act of Supremacy?",
+          "options": [
+            "A. He turned them all into schools.",
+            "B. He gave them to the Pope.",
+            "C. He made them pay a new tax.",
+            "D. He closed them and took their land and money."
+          ],
+          "answer": "D",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "26-41",
+          "question": "Why is the senior official of the House of Lords called Black Rod?",
+          "options": [
+            "A. because the first Black Rod was a blacksmith",
+            "B. because of the black ebony rod the official carries",
+            "C. because the official always wears a black wig",
+            "D. because the official guards a black door"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "26-42",
+          "question": "What is the name of the body in Cardiff that makes some of the laws for Wales?",
+          "options": [
+            "A. Holyrood",
+            "B. Stormont",
+            "C. the Senedd",
+            "D. the Woolsack"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "26-43",
+          "question": "Where in Hyde Park is Speakers' Corner?",
+          "options": [
+            "A. on an island in the Serpentine",
+            "B. next to the Albert Memorial",
+            "C. at the gate of Kensington Palace",
+            "D. in the north-east corner, near Marble Arch"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "26-44",
+          "question": "Which book by Arthur Conan Doyle is about dinosaurs surviving in South America?",
+          "options": [
+            "A. The Lost World",
+            "B. The Hound of the Baskervilles",
+            "C. A Study in Scarlet",
+            "D. On the Origin of Species"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "26-45",
+          "question": "About how many houses did the Great Fire of London destroy?",
+          "options": [
+            "A. 130",
+            "B. 1,300",
+            "C. 13,000",
+            "D. 130,000"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "27-41",
+          "question": "Which agreement of 1998 helped to create the Northern Ireland Assembly?",
+          "options": [
+            "A. the Act of Union",
+            "B. the Magna Carta",
+            "C. the Good Friday Agreement",
+            "D. the Act of Supremacy"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "27-42",
+          "question": "What is the symbol of the Labour Party?",
+          "options": [
+            "A. a red rose",
+            "B. a blue lion",
+            "C. a white unicorn",
+            "D. a green shamrock"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "27-43",
+          "question": "What were Kensington Gardens before they became the gardens of Kensington Palace?",
+          "options": [
+            "A. a royal vineyard",
+            "B. the western part of Hyde Park",
+            "C. a lake for royal boats",
+            "D. the garden of Westminster Abbey"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "27-44",
+          "question": "What is Christopher Nolan's film Oppenheimer about?",
+          "options": [
+            "A. the rescue of British soldiers from France in 1940",
+            "B. a detective who lives at 221B Baker Street",
+            "C. a journey through space to find a new home for people",
+            "D. the scientist who led the building of the atomic bomb"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "27-45",
+          "question": "Where can you see the Royal Coat of Arms?",
+          "options": [
+            "A. only on the King's crown",
+            "B. on British passports, in courts and on government documents",
+            "C. only on the flag of England",
+            "D. only inside Buckingham Palace"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-symbols"
+        },
+        {
+          "id": "28-41",
+          "question": "Which Conservative Prime Minister led Britain during World War II?",
+          "options": [
+            "A. Clement Attlee",
+            "B. Anthony Eden",
+            "C. Margaret Thatcher",
+            "D. Winston Churchill"
+          ],
+          "answer": "D",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "28-42",
+          "question": "For about a hundred years, which parties has the Prime Minister come from?",
+          "options": [
+            "A. Labour or the Conservatives",
+            "B. the Liberal Democrats or Labour",
+            "C. the Scottish National Party or the Conservatives",
+            "D. Reform UK or Labour"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-politics"
+        },
+        {
+          "id": "28-43",
+          "question": "Which building does the Albert Memorial face?",
+          "options": [
+            "A. Buckingham Palace",
+            "B. the Royal Albert Hall",
+            "C. Westminster Abbey",
+            "D. the Tower of London"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-parks"
+        },
+        {
+          "id": "28-44",
+          "question": "Why has Christopher Nolan been called 'Sir Christopher' since 2024?",
+          "options": [
+            "A. He became an MP.",
+            "B. He won an Oscar.",
+            "C. He was knighted.",
+            "D. He married into the royal family."
+          ],
+          "answer": "C",
+          "mistakeType": "uk-people"
+        },
+        {
+          "id": "28-45",
+          "question": "Which country planned the attack on Egypt together with Britain and France in 1956?",
+          "options": [
+            "A. the United States",
+            "B. the Soviet Union",
+            "C. Israel",
+            "D. Argentina"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "29-41",
+          "question": "What happened in Argentina after it lost the Falklands War?",
+          "options": [
+            "A. The army took even more power.",
+            "B. The military government fell and democracy returned.",
+            "C. Argentina joined the Commonwealth.",
+            "D. Argentina gave up its claim to the islands for ever."
+          ],
+          "answer": "B",
+          "mistakeType": "uk-history"
+        },
+        {
+          "id": "29-42",
+          "question": "What can you get at the bottom of the Monument after climbing its 311 steps?",
+          "options": [
+            "A. a certificate",
+            "B. a free ticket to the Tower of London",
+            "C. a piece of the old St Paul's Cathedral",
+            "D. a golden urn"
+          ],
+          "answer": "A",
+          "mistakeType": "uk-london"
+        },
+        {
+          "id": "29-43",
+          "question": "How many ravens live at the Tower of London?",
+          "options": [
+            "A. exactly two",
+            "B. at least six",
+            "C. exactly twelve",
+            "D. at least a hundred"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-london"
+        },
+        {
+          "id": "29-44",
+          "question": "What stands for Scotland on the Royal Standard?",
+          "options": [
+            "A. three gold lions",
+            "B. a gold harp",
+            "C. a red lion standing on its back legs",
+            "D. a white unicorn"
+          ],
+          "answer": "C",
+          "mistakeType": "uk-symbols"
+        },
+        {
+          "id": "29-45",
+          "question": "According to a legend, what did St Patrick use the shamrock to explain?",
+          "options": [
+            "A. why Ireland is green",
+            "B. the Holy Trinity",
+            "C. the four seasons",
+            "D. how to find water"
+          ],
+          "answer": "B",
+          "mistakeType": "uk-countries"
         }
       ]
     }
