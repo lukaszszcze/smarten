@@ -192,9 +192,11 @@ the key has all of those but no answers.
 
 `site/public/ojaj_study/` holds static English pages, one per word-formation and
 wisielec mistake type that Tadzio's online tests showed (the page name is the type
-key), and an index. The transformations and grammar pages are written but off the
-site for now: their data has `PUBLISH = False`, and the transformations checklist
-is kept in `tmp/_study_pages/unpublished/`. The pages are served at
+key), one grammar page, inversion (added 2026-11-11, when it was his third weakest
+type), and an index. The other transformations and grammar pages are written but
+off the site for now: their data has `PUBLISH = False`, and the transformations
+checklist is kept in `tmp/_study_pages/unpublished/`. A grammar page has a rule
+with tables instead of word lists. The pages are served at
 `/ojaj_study/<key>`, the address the weak-points list links to, and the OJAJ page
 reaches the index through a card next to the UK notebook's. Each page has his
 mistakes first, the rule with the full word list in columns (C1-C2 words in an
