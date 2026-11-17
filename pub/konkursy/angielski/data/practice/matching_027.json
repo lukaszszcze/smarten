@@ -1,0 +1,86 @@
+{
+  "title": "USA i Kanada: parki narodowe USA (2)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do podanych nazw (1.1.-1.6.) dopasuj zwiazane z nimi opisy (A-J). Cztery opisy zostaly podane dodatkowo i nie odnosza sie do zadnej nazwy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "twisted, spiky trees in the Mojave Desert, threatened by climate change"
+        },
+        {
+          "letter": "B",
+          "text": "a park in Tennessee whose mountains are named after the haze made by fog and the trees"
+        },
+        {
+          "letter": "C",
+          "text": "'moonbows' under the full moon over a famous waterfall in California"
+        },
+        {
+          "letter": "D",
+          "text": "Bass Harbor Head Lighthouse on the coast of Maine"
+        },
+        {
+          "letter": "E",
+          "text": "a mountain range photographed from Schwabacher Landing on the Snake River"
+        },
+        {
+          "letter": "F",
+          "text": "the world's largest International Dark Sky Reserve, in the Chihuahuan Desert"
+        },
+        {
+          "letter": "G",
+          "text": "the lowest point in North America and a world record temperature of 134°F"
+        },
+        {
+          "letter": "H",
+          "text": "the oldest, largest and tallest coast redwoods"
+        },
+        {
+          "letter": "I",
+          "text": "73 miles of coastline with sea stacks and tide pools in Washington State"
+        },
+        {
+          "letter": "J",
+          "text": "red rock spires called hoodoos, seen by over 2.7 million visitors a year"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Death Valley",
+          "answer": "G"
+        },
+        {
+          "id": "1.2",
+          "label": "Great Smoky Mountains",
+          "answer": "B"
+        },
+        {
+          "id": "1.3",
+          "label": "Bryce Canyon",
+          "answer": "J"
+        },
+        {
+          "id": "1.4",
+          "label": "Joshua Tree",
+          "answer": "A"
+        },
+        {
+          "id": "1.5",
+          "label": "Grand Teton",
+          "answer": "E"
+        },
+        {
+          "id": "1.6",
+          "label": "Olympic",
+          "answer": "I"
+        }
+      ]
+    }
+  ]
+}

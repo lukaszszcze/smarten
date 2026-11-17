@@ -1,0 +1,63 @@
+{
+  "title": "USA i Kanada: geografia Kanady",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Rozwiaz zadania (1.1.-1.4.), udzielajac odpowiedzi w jezyku angielskim. Wymagana jest pelna poprawnosc merytoryczna i jezykowa odpowiedzi. W zadaniach za 2 punkty nalezy wpisac dwie odpowiedzi - kazda w osobnym polu.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "What is the highest mountain in Canada, and in which national park is it?",
+          "answer": [
+            "Mount Logan",
+            "Mt Logan",
+            "Mt. Logan",
+            "Logan"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Kluane",
+            "Kluane National Park",
+            "Kluane National Park and Reserve"
+          ]
+        },
+        {
+          "id": "1.2",
+          "question": "Which is the largest lake that lies entirely within Canada?",
+          "answer": [
+            "Great Bear Lake",
+            "the Great Bear Lake"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Which is the longest river (river system) in Canada?",
+          "answer": [
+            "Mackenzie",
+            "the Mackenzie",
+            "Mackenzie River",
+            "the Mackenzie River",
+            "Mackenzie River system",
+            "the Mackenzie River system"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.4",
+          "question": "What is the capital of Canada, and which is Canada's largest city?",
+          "answer": [
+            "Ottawa"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Toronto"
+          ]
+        }
+      ]
+    }
+  ]
+}

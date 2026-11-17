@@ -1051,6 +1051,48 @@
       "points": 6
     },
     {
+      "id": "knowledge_033",
+      "title": "USA i Kanada: rzeki i jeziora USA",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_034",
+      "title": "USA i Kanada: gory i pustynie USA",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_035",
+      "title": "USA i Kanada: stany i regiony USA",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_036",
+      "title": "USA i Kanada: geografia Kanady",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_037",
+      "title": "USA i Kanada: prowincje Kanady",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "knowledge_038",
+      "title": "USA i Kanada: rekordy i symbole",
+      "taskType": "knowledge_questions",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
       "id": "spelling_011",
       "title": "Weather & Seasons",
       "taskType": "word_spelling",
@@ -1401,6 +1443,13 @@
       "points": 10
     },
     {
+      "id": "tfni_037",
+      "title": "USA i Kanada: Yellowstone (czytanie)",
+      "taskType": "true_false_ni",
+      "taskCount": 1,
+      "points": 8
+    },
+    {
       "id": "mc_011",
       "title": "Reported Speech",
       "taskType": "multiple_choice",
@@ -1441,6 +1490,13 @@
       "taskType": "multiple_choice",
       "taskCount": 1,
       "points": 6
+    },
+    {
+      "id": "mc_017",
+      "title": "USA i Kanada: idiomy o pogodzie i przyrodzie",
+      "taskType": "multiple_choice",
+      "taskCount": 1,
+      "points": 12
     },
     {
       "id": "gapfill_011",
@@ -1623,6 +1679,48 @@
       "taskType": "matching",
       "taskCount": 1,
       "points": 5
+    },
+    {
+      "id": "matching_025",
+      "title": "USA i Kanada: stolice stanow USA",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_026",
+      "title": "USA i Kanada: parki narodowe USA (1)",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_027",
+      "title": "USA i Kanada: parki narodowe USA (2)",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_028",
+      "title": "USA i Kanada: stolice prowincji Kanady",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_029",
+      "title": "USA i Kanada: parki narodowe Kanady",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
+    },
+    {
+      "id": "matching_030",
+      "title": "USA i Kanada: zwierzeta Kanady",
+      "taskType": "matching",
+      "taskCount": 1,
+      "points": 6
     },
     {
       "id": "transform_006",
@@ -2050,6 +2148,13 @@
       "taskType": "word_spelling",
       "taskCount": 1,
       "points": 8
+    },
+    {
+      "id": "spelling_033",
+      "title": "USA i Kanada: slownictwo - swiat przyrody",
+      "taskType": "word_spelling",
+      "taskCount": 1,
+      "points": 10
     },
     {
       "id": "formation_027",

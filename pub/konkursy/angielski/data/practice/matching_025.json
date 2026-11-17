@@ -1,0 +1,86 @@
+{
+  "title": "USA i Kanada: stolice stanow USA",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do podanych nazw (1.1.-1.6.) dopasuj zwiazane z nimi stolice (A-J). Cztery stolice zostaly podane dodatkowo i nie odnosza sie do zadnej nazwy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tallahassee"
+        },
+        {
+          "letter": "B",
+          "text": "Harrisburg"
+        },
+        {
+          "letter": "C",
+          "text": "Springfield"
+        },
+        {
+          "letter": "D",
+          "text": "Carson City"
+        },
+        {
+          "letter": "E",
+          "text": "Chicago"
+        },
+        {
+          "letter": "F",
+          "text": "Albany"
+        },
+        {
+          "letter": "G",
+          "text": "Las Vegas"
+        },
+        {
+          "letter": "H",
+          "text": "Olympia"
+        },
+        {
+          "letter": "I",
+          "text": "Seattle"
+        },
+        {
+          "letter": "J",
+          "text": "Miami"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "label": "New York",
+          "answer": "F"
+        },
+        {
+          "id": "1.2",
+          "label": "Florida",
+          "answer": "A"
+        },
+        {
+          "id": "1.3",
+          "label": "Illinois",
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "label": "Pennsylvania",
+          "answer": "B"
+        },
+        {
+          "id": "1.5",
+          "label": "Washington",
+          "answer": "H"
+        },
+        {
+          "id": "1.6",
+          "label": "Nevada",
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}

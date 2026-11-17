@@ -1,0 +1,86 @@
+{
+  "title": "USA i Kanada: parki narodowe USA (1)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do podanych nazw (1.1.-1.6.) dopasuj zwiazane z nimi opisy (A-J). Cztery opisy zostaly podane dodatkowo i nie odnosza sie do zadnej nazwy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "mountains named after the hazy 'smoke' made by fog and the trees"
+        },
+        {
+          "letter": "B",
+          "text": "a park in Oregon with the deepest lake in the USA"
+        },
+        {
+          "letter": "C",
+          "text": "America's first national park, with geysers such as the Great Fountain Geyser"
+        },
+        {
+          "letter": "D",
+          "text": "more than 2,000 natural stone arches shaped by weathering and erosion"
+        },
+        {
+          "letter": "E",
+          "text": "the driest and hottest place in North America"
+        },
+        {
+          "letter": "F",
+          "text": "one of the world's largest tropical wetlands, in Florida"
+        },
+        {
+          "letter": "G",
+          "text": "the home of General Sherman, the largest tree in the world by volume"
+        },
+        {
+          "letter": "H",
+          "text": "more than 400 miles of caves under the hills of Kentucky"
+        },
+        {
+          "letter": "I",
+          "text": "the highest sand dunes in North America, in Colorado"
+        },
+        {
+          "letter": "J",
+          "text": "the only tropical reef in the continental USA, next to a 19th-century fort"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Yellowstone",
+          "answer": "C"
+        },
+        {
+          "id": "1.2",
+          "label": "Sequoia",
+          "answer": "G"
+        },
+        {
+          "id": "1.3",
+          "label": "Crater Lake",
+          "answer": "B"
+        },
+        {
+          "id": "1.4",
+          "label": "Everglades",
+          "answer": "F"
+        },
+        {
+          "id": "1.5",
+          "label": "Arches",
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "label": "Mammoth Cave",
+          "answer": "H"
+        }
+      ]
+    }
+  ]
+}

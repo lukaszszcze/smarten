@@ -1,0 +1,59 @@
+{
+  "title": "USA i Kanada: stany i regiony USA",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Rozwiaz zadania (1.1.-1.4.), udzielajac odpowiedzi w jezyku angielskim. Wymagana jest pelna poprawnosc merytoryczna i jezykowa odpowiedzi. W zadaniach za 2 punkty nalezy wpisac dwie odpowiedzi - kazda w osobnym polu.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "What is the capital of California, and what is the capital of Texas?",
+          "answer": [
+            "Sacramento"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Austin"
+          ]
+        },
+        {
+          "id": "1.2",
+          "question": "What is the capital of Alaska?",
+          "answer": [
+            "Juneau"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Which is the largest US state by area, and which is the smallest?",
+          "answer": [
+            "Alaska"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "Rhode Island"
+          ]
+        },
+        {
+          "id": "1.4",
+          "question": "Texas, Oklahoma, New Mexico and Arizona make up one region of the USA. What is it called?",
+          "answer": [
+            "Southwest",
+            "the Southwest",
+            "South West",
+            "the South West",
+            "Southwest region",
+            "the Southwest region",
+            "American Southwest",
+            "the American Southwest"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

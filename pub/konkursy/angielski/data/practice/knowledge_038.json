@@ -1,0 +1,90 @@
+{
+  "title": "USA i Kanada: rekordy i symbole",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Rozwiaz zadania (1.1.-1.5.), udzielajac odpowiedzi w jezyku angielskim. Wymagana jest pelna poprawnosc merytoryczna i jezykowa odpowiedzi. W zadaniach za 2 punkty nalezy wpisac dwie odpowiedzi - kazda w osobnym polu.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "What is the national animal of the USA, and what is the national animal of Canada?",
+          "answer": [
+            "American bison",
+            "the American bison",
+            "bison",
+            "the bison",
+            "buffalo",
+            "the buffalo",
+            "American buffalo",
+            "the American buffalo"
+          ],
+          "points": 2,
+          "secondAnswer": [
+            "beaver",
+            "the beaver",
+            "North American beaver",
+            "the North American beaver",
+            "Canadian beaver",
+            "the Canadian beaver"
+          ]
+        },
+        {
+          "id": "1.2",
+          "question": "What is the national bird of the USA?",
+          "answer": [
+            "bald eagle",
+            "the bald eagle"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Which is the largest national park in the USA?",
+          "answer": [
+            "Wrangell-St. Elias",
+            "Wrangell-St. Elias National Park",
+            "Wrangell-St Elias",
+            "Wrangell-St Elias National Park",
+            "Wrangell-Saint Elias",
+            "Wrangell-Saint Elias National Park",
+            "Wrangell St. Elias",
+            "Wrangell St. Elias National Park",
+            "Wrangell St Elias",
+            "Wrangell St Elias National Park",
+            "Wrangell – St. Elias",
+            "Wrangell – St. Elias National Park",
+            "Wrangell–St. Elias",
+            "Wrangell–St. Elias National Park"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.4",
+          "question": "What is the name of the lowest point in North America, in Death Valley?",
+          "answer": [
+            "Badwater Basin",
+            "Badwater",
+            "the Badwater Basin"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "What is the name of the Canadian part of Niagara Falls, the most powerful waterfall in North America?",
+          "answer": [
+            "Horseshoe Falls",
+            "the Horseshoe Falls",
+            "Horseshoe Fall",
+            "the Horseshoe Fall",
+            "Canadian Horseshoe Falls",
+            "the Canadian Horseshoe Falls"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

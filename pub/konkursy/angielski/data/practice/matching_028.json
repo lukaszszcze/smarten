@@ -1,0 +1,86 @@
+{
+  "title": "USA i Kanada: stolice prowincji Kanady",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do podanych nazw (1.1.-1.6.) dopasuj zwiazane z nimi stolice (A-J). Cztery stolice zostaly podane dodatkowo i nie odnosza sie do zadnej nazwy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Calgary"
+        },
+        {
+          "letter": "B",
+          "text": "Saskatoon"
+        },
+        {
+          "letter": "C",
+          "text": "Quebec City"
+        },
+        {
+          "letter": "D",
+          "text": "Winnipeg"
+        },
+        {
+          "letter": "E",
+          "text": "Montreal"
+        },
+        {
+          "letter": "F",
+          "text": "Edmonton"
+        },
+        {
+          "letter": "G",
+          "text": "Vancouver"
+        },
+        {
+          "letter": "H",
+          "text": "Iqaluit"
+        },
+        {
+          "letter": "I",
+          "text": "Regina"
+        },
+        {
+          "letter": "J",
+          "text": "Victoria"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Alberta",
+          "answer": "F"
+        },
+        {
+          "id": "1.2",
+          "label": "British Columbia",
+          "answer": "J"
+        },
+        {
+          "id": "1.3",
+          "label": "Saskatchewan",
+          "answer": "I"
+        },
+        {
+          "id": "1.4",
+          "label": "Quebec",
+          "answer": "C"
+        },
+        {
+          "id": "1.5",
+          "label": "Manitoba",
+          "answer": "D"
+        },
+        {
+          "id": "1.6",
+          "label": "Nunavut",
+          "answer": "H"
+        }
+      ]
+    }
+  ]
+}

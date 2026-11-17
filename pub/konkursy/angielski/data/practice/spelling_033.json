@@ -1,0 +1,74 @@
+{
+  "title": "USA i Kanada: slownictwo - swiat przyrody",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "word_spelling",
+      "points": 10,
+      "instruction": "Uzupelnij luki w zdaniach (1.1.-1.10.). Wpisz w kazda luke jeden wyraz, tak aby otrzymac logiczne i gramatycznie poprawne zdania. Podane sa wybrane litery wyrazu. Wymagana jest pelna poprawnosc ortograficzna.",
+      "items": [
+        {
+          "id": "1.1",
+          "stem": "Thousands of years ago a huge _ _ _ c _ _ _ covered this valley, but the ice has slowly melted since.",
+          "hint": "_ _ _ c _ _ _",
+          "answer": "glacier"
+        },
+        {
+          "id": "1.2",
+          "stem": "Over millions of years the river has cut a deep _ _ _ y _ _ with steep red walls.",
+          "hint": "_ _ _ y _ _",
+          "answer": "canyon"
+        },
+        {
+          "id": "1.3",
+          "stem": "About every ninety minutes the _ _ _ s _ _ shoots hot water and steam high into the air.",
+          "hint": "_ _ _ s _ _",
+          "answer": "geyser"
+        },
+        {
+          "id": "1.4",
+          "stem": "After six months without rain, the _ _ _ u _ _ _ destroyed most of the farmers' crops.",
+          "hint": "_ _ _ u _ _ _",
+          "answer": "drought"
+        },
+        {
+          "id": "1.5",
+          "stem": "The _ _ _ _ _ c _ _ _ hit the coast of Florida with winds of over 200 km/h.",
+          "hint": "_ _ _ _ _ c _ _ _",
+          "answer": "hurricane"
+        },
+        {
+          "id": "1.6",
+          "stem": "We couldn't see the road in the _ _ _ _ z _ _ _, so we waited in the car until the snow stopped.",
+          "hint": "_ _ _ _ z _ _ _",
+          "answer": "blizzard"
+        },
+        {
+          "id": "1.7",
+          "stem": "In Saskatchewan the flat _ _ _ _ r _ _ stretches as far as the eye can see.",
+          "hint": "_ _ _ _ r _ _",
+          "answer": "prairie"
+        },
+        {
+          "id": "1.8",
+          "stem": "Skiers must stay on the marked runs because of the risk of an _ _ _ _ _ n _ _ _.",
+          "hint": "_ _ _ _ _ n _ _ _",
+          "answer": "avalanche"
+        },
+        {
+          "id": "1.9",
+          "stem": "Wetlands are the natural _ _ _ _ t _ _ of many birds, frogs and insects.",
+          "hint": "_ _ _ _ t _ _",
+          "answer": "habitat"
+        },
+        {
+          "id": "1.10",
+          "stem": "Only 72 southern resident killer whales are left, so they are an _ _ _ _ _ g _ _ _ _ species.",
+          "hint": "_ _ _ _ _ g _ _ _ _",
+          "answer": "endangered"
+        }
+      ]
+    }
+  ]
+}

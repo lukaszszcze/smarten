@@ -1,0 +1,66 @@
+{
+  "title": "USA i Kanada: prowincje Kanady",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "knowledge_questions",
+      "points": 6,
+      "instruction": "Rozwiaz zadania (1.1.-1.6.), udzielajac odpowiedzi w jezyku angielskim. Wymagana jest pelna poprawnosc merytoryczna i jezykowa odpowiedzi.",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "In which province are Banff and Jasper National Parks?",
+          "answer": [
+            "Alberta"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.2",
+          "question": "Which province is famous for its red sand beaches and is the setting of \"Anne of Green Gables\"?",
+          "answer": [
+            "Prince Edward Island",
+            "PEI",
+            "P.E.I."
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.3",
+          "question": "Which is the only officially bilingual (English and French) province of Canada?",
+          "answer": [
+            "New Brunswick"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.4",
+          "question": "In which province is the Cabot Trail on Cape Breton Island?",
+          "answer": [
+            "Nova Scotia"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.5",
+          "question": "Which Prairie province grows 45% of Canada's grain?",
+          "answer": [
+            "Saskatchewan"
+          ],
+          "points": 1
+        },
+        {
+          "id": "1.6",
+          "question": "Which province has the most easterly point in North America?",
+          "answer": [
+            "Newfoundland and Labrador",
+            "Newfoundland & Labrador",
+            "Newfoundland"
+          ],
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "USA i Kanada: Yellowstone (czytanie)",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "true_false_ni",
+      "points": 8,
+      "instruction": "Przeczytaj ponizszy tekst. Zdecyduj, ktore zdania (1.1.-1.8.) sa zgodne z trescia tekstu (T - True), ktore sa niezgodne (F - False), a ktore zawieraja informacje niepodane w tekscie (NI - No Information).",
+      "text": "YELLOWSTONE: THE PARK ON TOP OF A VOLCANO\n\nIn 1872 President Ulysses S. Grant signed a law that created Yellowstone, the first national park in the United States. Most of the park lies in Wyoming, but small parts of it are in Montana and Idaho. Under the forests and meadows there is a huge volcano, and its heat is what makes Yellowstone so unusual.\n\nThe park has about half of all the active geysers in the world. The most famous of them, Old Faithful, shoots hot water and steam into the air roughly every ninety minutes, and crowds gather on the benches around it to wait. Not far away lies Grand Prismatic Spring, the largest hot spring in the country. Its blue centre is surrounded by rings of yellow, orange and red. These colours are not painted by minerals, as many visitors think, but by billions of tiny living things that love hot water.\n\nYellowstone is also one of the best places in North America to watch wildlife. Bison have lived here without a break since prehistoric times. Wolves were not so lucky: by the 1920s people had killed the last of them, and they only returned in 1995, when scientists brought a group from Canada. Today visitors can also see elk, grizzly bears and, with some luck, a moose.\n\nWatching animals comes with rules. Visitors must stay at least 100 yards from bears and wolves, and at least 25 yards from every other animal, including bison, which can run three times faster than a person. In the geyser areas everyone has to stay on the wooden boardwalks, because the ground can be a thin crust over boiling water. Every year a few people ignore the signs, and some of them pay for it with serious burns.",
+      "items": [
+        {
+          "id": "1.1",
+          "statement": "Yellowstone was the first national park in the United States.",
+          "answer": "T",
+          "explanation": "TRUE - '... created Yellowstone, the first national park in the United States.'"
+        },
+        {
+          "id": "1.2",
+          "statement": "Most of the park lies in Montana.",
+          "answer": "F",
+          "explanation": "FALSE - 'Most of the park lies in Wyoming, but small parts of it are in Montana and Idaho.'"
+        },
+        {
+          "id": "1.3",
+          "statement": "Old Faithful is the tallest geyser in the park.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - the text says it is the most famous, not how tall it is."
+        },
+        {
+          "id": "1.4",
+          "statement": "The colours of Grand Prismatic Spring come from minerals in the water.",
+          "answer": "F",
+          "explanation": "FALSE - 'These colours are not painted by minerals ... but by billions of tiny living things.'"
+        },
+        {
+          "id": "1.5",
+          "statement": "Wolves have lived in Yellowstone without a break since 1872.",
+          "answer": "F",
+          "explanation": "FALSE - 'by the 1920s people had killed the last of them, and they only returned in 1995.'"
+        },
+        {
+          "id": "1.6",
+          "statement": "The wolves brought to the park in 1995 came from Canada.",
+          "answer": "T",
+          "explanation": "TRUE - '... when scientists brought a group from Canada.'"
+        },
+        {
+          "id": "1.7",
+          "statement": "Visitors have to keep further away from bears than from bison.",
+          "answer": "T",
+          "explanation": "TRUE - 100 yards from bears and wolves, 25 yards from every other animal, including bison."
+        },
+        {
+          "id": "1.8",
+          "statement": "Visitors may leave the boardwalks if a park ranger is with them.",
+          "answer": "NI",
+          "explanation": "NO INFORMATION - the text says everyone has to stay on the boardwalks and says nothing about rangers."
+        }
+      ]
+    }
+  ]
+}

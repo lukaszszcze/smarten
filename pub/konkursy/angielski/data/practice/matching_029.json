@@ -1,0 +1,86 @@
+{
+  "title": "USA i Kanada: parki narodowe Kanady",
+  "type": "practice",
+  "tasks": [
+    {
+      "id": "1",
+      "type": "matching",
+      "points": 6,
+      "instruction": "Do podanych nazw (1.1.-1.6.) dopasuj zwiazane z nimi opisy (A-J). Cztery opisy zostaly podane dodatkowo i nie odnosza sie do zadnej nazwy.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "the largest national park in Canada"
+        },
+        {
+          "letter": "B",
+          "text": "Takkakaw Falls, one of the highest waterfalls in Canada"
+        },
+        {
+          "letter": "C",
+          "text": "granite mountains and deep fjords in Newfoundland and Labrador"
+        },
+        {
+          "letter": "D",
+          "text": "the only caribou herd south of the St. Lawrence River"
+        },
+        {
+          "letter": "E",
+          "text": "Canada's oldest national park, visited since 1885"
+        },
+        {
+          "letter": "F",
+          "text": "temperate rainforest and sandy beaches on Vancouver Island, with the West Coast Trail"
+        },
+        {
+          "letter": "G",
+          "text": "a place in Alberta where the prairies meet the Rocky Mountains"
+        },
+        {
+          "letter": "H",
+          "text": "a Dark Sky Preserve in Alberta with icefields, teal lakes, elk and caribou"
+        },
+        {
+          "letter": "I",
+          "text": "one of Canada's smallest national parks, with more than 20 granite islands in Ontario"
+        },
+        {
+          "letter": "J",
+          "text": "Mount Logan, the highest mountain in Canada"
+        }
+      ],
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Banff",
+          "answer": "E"
+        },
+        {
+          "id": "1.2",
+          "label": "Jasper",
+          "answer": "H"
+        },
+        {
+          "id": "1.3",
+          "label": "Gros Morne",
+          "answer": "C"
+        },
+        {
+          "id": "1.4",
+          "label": "Thousand Islands",
+          "answer": "I"
+        },
+        {
+          "id": "1.5",
+          "label": "Pacific Rim",
+          "answer": "F"
+        },
+        {
+          "id": "1.6",
+          "label": "Wood Buffalo",
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}
