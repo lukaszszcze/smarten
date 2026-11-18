@@ -48,6 +48,7 @@ smarten/
 │   │   └── quest-progress.js        # Quest progress: GET/PUT with server-side merge
 │   ├── public/_routes.json          # Routes /api/* to Functions, rest to static
 │   ├── public/ojaj_uk.html          # UK culture notebook (static page)
+│   ├── public/usa_kanada.html       # USA & Canada notebook, kuratoryjny rejonowy (static)
 │   ├── public/ojaj_study/           # OJAJ study pages, one per mistake type (static)
 │   ├── wrangler.toml                # Cloudflare config (KV binding: RESULTS)
 │   └── package.json
@@ -216,6 +217,15 @@ the British dictionaries, if anything from online Test 03 (unseen by Tadzio)
 appears, if a word is listed twice, or if a marking or wisielec hint does not fit
 its word. `tmp/_e2e_study.mjs` clicks through every page; run it against
 `vite preview`, because `npm run dev` does not serve the addresses without `.html`.
+
+### USA & Canada notebook
+
+`site/public/usa_kanada.html` is the reading page for the kuratoryjny 2026/27 etap
+rejonowy, linked from the kuratoryjny home page. It is written by
+`tmp/_gen_usa_canada_notes.py` from the reading list in the official programme
+(copies of the source pages in `tmp/_src/`), so edit the generator, not the HTML. It
+borrows the UK notebook's styles, and before writing it checks that every answer of
+the 15 "USA i Kanada" practice exercises appears on the page.
 
 ## Data format
 

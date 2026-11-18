@@ -526,6 +526,30 @@ export default function Home() {
 
       <QuestSnapshot progress={questProgress} />
 
+      {/* A static page in site/public, so a plain link rather than a router Link. */}
+      <a
+        href="/usa_kanada"
+        style={{
+          display: "block",
+          background: "#13131a",
+          border: "1px solid #1e1e2e",
+          borderRadius: 10,
+          padding: "16px 20px",
+          marginBottom: 12,
+          textDecoration: "none",
+          transition: "border-color 0.2s",
+        }}
+        onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#50d89066"; }}
+        onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#1e1e2e"; }}
+      >
+        <span style={{ color: "#50d890", fontWeight: 700, fontSize: 15 }}>
+          USA i Kanada - notatki do nauki
+        </span>
+        <span style={{ color: "#7a7a90", fontSize: 13, display: "block", marginTop: 4 }}>
+          Etap rejonowy 2026/27: geografia, przyroda, parki narodowe, slownictwo i idiomy &rarr;
+        </span>
+      </a>
+
       <div style={{ display: "flex", gap: 12, marginBottom: 40 }}>
         <Link
           to="/postepy"
