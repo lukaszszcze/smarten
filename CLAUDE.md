@@ -49,6 +49,7 @@ smarten/
 │   ├── public/_routes.json          # Routes /api/* to Functions, rest to static
 │   ├── public/ojaj_uk.html          # UK culture notebook (static page)
 │   ├── public/usa_kanada.html       # USA & Canada notebook, kuratoryjny rejonowy (static)
+│   ├── public/img/usa_kanada/       # the notebook's photos (Wikimedia Commons, credited)
 │   ├── public/ojaj_study/           # OJAJ study pages, one per mistake type (static)
 │   ├── wrangler.toml                # Cloudflare config (KV binding: RESULTS)
 │   └── package.json
@@ -226,6 +227,21 @@ rejonowy, linked from the kuratoryjny home page. It is written by
 (copies of the source pages in `tmp/_src/`), so edit the generator, not the HTML. It
 borrows the UK notebook's styles, and before writing it checks that every answer of
 the 15 "USA i Kanada" practice exercises appears on the page.
+
+Its pictures come from `tmp/_usa_canada_art.py`: 28 maps, charts and timelines drawn as
+inline SVG (colours are CSS variables, so they follow light and dark), photo rows, and
+photo cards for the parks and the WWF animals. The maps are drawn from Natural Earth
+data (public domain), cut down by `tmp/_build_na_geo.py` from `tmp/_src/geo/` to
+`tmp/_src/na_geo.json`; label positions are set by hand in the art module, so check a
+map by eye after moving one. The St. Lawrence below Cornwall is traced by hand, because
+the river data stops there. The 58 photos are listed in the art module's `PHOTOS`;
+`tmp/_photo_prep.py` fetches them from Wikimedia Commons into `site/public/img/usa_kanada/`
+and writes their credits to `tmp/_src/photos/credits.json`, which the footer prints. The
+generator refuses a photo without a credit, a photo on disk that the page does not use,
+and a picture without a text description. Facts the pictures add for scale (Poland,
+Mazowieckie, the oldest trees against history) carry the page's star. `tmp/_e2e_usa_canada.mjs`
+checks the page in a browser (every photo loads, nothing wider than a phone, both themes)
+with `site/public` served on port 5192.
 
 ## Data format
 
