@@ -9,15 +9,15 @@
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
         "BEGIN",
-        "EQUIP",
-        "INVENT",
-        "INCREASE",
-        "RIDE",
         "COMPETE",
+        "EQUIP",
         "HEAVY",
+        "INCREASE",
         "INTRODUCE",
-        "WHEEL",
-        "METAL"
+        "INVENT",
+        "METAL",
+        "RIDE",
+        "WHEEL"
       ],
       "text": "The bicycle has a surprisingly long history. In the 1.1. _________, machines known as 'hobby horses' had no pedals at all, and people simply pushed themselves along with their feet. These early models were not 1.2. _________ with brakes, which made them rather dangerous to use. Several 1.3. _________ across Europe worked to improve the design, and over the following decades bicycles became 1.4. _________ popular. Lighter frames and rubber tyres allowed 1.5. _________ to travel much faster and further than before. Today, professional 1.6. _________ race in famous events such as the Tour de France. The very first bicycles were 1.7. _________ built from solid iron and were exhausting to ride uphill. The 1.8. _________ of air-filled tyres in the 1880s finally made long journeys far more comfortable.",
       "items": [

@@ -8,16 +8,16 @@
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
-        "KNOW",
-        "DISCOVER",
         "COURAGE",
-        "NAVIGATE",
         "DANGER",
-        "SUCCESS",
+        "DISCOVER",
         "EXPLORE",
         "FORTUNE",
+        "KNOW",
+        "MAP",
+        "NAVIGATE",
         "OCEAN",
-        "MAP"
+        "SUCCESS"
       ],
       "text": "1.1. _________ for their bravery, the great seafarers of the fifteenth and sixteenth centuries set out to chart unknown waters. Their 1.2. _________ completely changed how Europeans understood the world. These 1.3. _________ men and women were willing to risk everything for the chance of glory. Skilled 1.4. _________ used the stars and simple instruments to find their way across vast, empty seas. Many voyages were extremely 1.5. _________, and storms or disease could destroy an entire crew. Those who returned 1.6. _________ were rewarded with riches and honour by their rulers. Today, 1.7. _________ such as Columbus and Magellan are still remembered in books and films. Yet the less 1.8. _________ sailors, whose ships were lost at sea, are rarely mentioned at all.",
       "items": [

@@ -8,16 +8,16 @@
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
-        "DRAMATIC",
-        "MANUFACTURE",
-        "ENVIRONMENT",
-        "RELY",
-        "NOISE",
-        "GOVERN",
-        "CHARGE",
         "AFFORD",
+        "CHARGE",
+        "DRAMATIC",
         "DRIVE",
-        "ELECTRIC"
+        "ELECTRIC",
+        "ENVIRONMENT",
+        "GOVERN",
+        "MANUFACTURE",
+        "NOISE",
+        "RELY"
       ],
       "text": "Over the past decade, the number of electric cars on the world's roads has grown 1.1. _________. Major car 1.2. _________ such as Tesla, Volkswagen and BYD now compete to build vehicles that are more 1.3. _________ friendly than traditional ones. For everyday use, drivers want a battery that is 1.4. _________ enough to cover long distances without breaking down. One surprising feature of these cars is that they are almost completely 1.5. _________, gliding through city streets in near silence. Many 1.6. _________ around the world now offer financial incentives to encourage people to switch. As demand rises, public 1.7. _________ are appearing in car parks and along motorways so that batteries can be refilled on long journeys. The dream is to make clean transport 1.8. _________ for ordinary families, not just the wealthy.",
       "items": [

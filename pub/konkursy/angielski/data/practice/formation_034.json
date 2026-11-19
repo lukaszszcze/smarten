@@ -8,16 +8,16 @@
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
-        "ORIGIN",
         "CELEBRATE",
         "COLOUR",
-        "TRADITION",
-        "GENERATE",
-        "SPECTACLE",
-        "PARTICIPATE",
+        "DANCE",
         "FORTUNATE",
+        "GENERATE",
         "MUSIC",
-        "DANCE"
+        "ORIGIN",
+        "PARTICIPATE",
+        "SPECTACLE",
+        "TRADITION"
       ],
       "text": "Festivals play an important part in the life of almost every culture around the world. 1.1. _________, many of them began as ways of marking the changing seasons or a successful harvest. Each year these 1.2. _________ bring whole communities together in the streets. Performers wear bright, 1.3. _________ costumes that have been used for hundreds of years. Special dishes, 1.4. _________ eaten only on these days, are prepared in enormous quantities. Stories, songs and recipes are carefully passed down through the 1.5. _________. The highlight of many events is a 1.6. _________ display of fireworks that lights up the night sky. In some cities, thousands of 1.7. _________ take part in a single parade. 1.8. _________, even in our busy modern world, many of these ancient customs continue to thrive.",
       "items": [

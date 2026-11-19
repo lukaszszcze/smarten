@@ -7,7 +7,7 @@
       "type": "word_formation",
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
-      "wordBank": ["INNOVATE", "MINIATURE", "DISPENSE", "QUESTION", "FORESEE", "REVOLVE", "ACCESS", "AUTOMATE", "CONCEIVE", "PERSEVERE"],
+      "wordBank": ["ACCESS", "AUTOMATE", "CONCEIVE", "DISPENSE", "FORESEE", "INNOVATE", "MINIATURE", "PERSEVERE", "QUESTION", "REVOLVE"],
       "text": "The history of technology is defined by groundbreaking 1.1. _________ (1.1) that have reshaped human civilisation. The 1.2. _________ (1.2) of electronic components made it possible to fit powerful computers into our pockets. Many experts believe that skilled technicians will become 1.3. _________ (1.3) as factories rely more heavily on complex machinery. The 1.4. _________ (1.4) of manufacturing processes has increased efficiency beyond anything previously 1.5. _________ (1.5). Some inventions were initially met with 1.6. _________ (1.6) scepticism, yet their creators showed remarkable 1.7. _________ (1.7) in proving the critics wrong. These 1.8. _________ (1.8) changes have made technology products available to people of all backgrounds worldwide.",
       "items": [
         { "id": "1.1", "baseWord": "INNOVATE", "answer": "innovations" },

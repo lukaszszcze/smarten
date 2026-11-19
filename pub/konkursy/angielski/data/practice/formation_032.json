@@ -8,16 +8,16 @@
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
+        "ANIMAL",
+        "AWARE",
+        "CONSERVE",
         "DRAMATIC",
         "EXTINCT",
-        "CONSERVE",
-        "POACH",
-        "AWARE",
-        "PROTECT",
+        "FOREST",
         "GLOBE",
-        "SUCCESS",
-        "ANIMAL",
-        "FOREST"
+        "POACH",
+        "PROTECT",
+        "SUCCESS"
       ],
       "text": "The populations of many wild species have fallen 1.1. _________ over the last fifty years. Tigers, rhinos and certain gorillas are now facing complete 1.2. _________ in the wild. In response, dozens of 1.3. _________ projects have been set up to save them. One of the biggest threats comes from 1.4. _________, the illegal hunters who kill animals for their skins, horns or tusks. Charities work hard at raising public 1.5. _________ so that ordinary people understand the dangers. Many governments have created large 1.6. _________ areas where hunting is strictly forbidden. Because wildlife crime crosses borders, countries must act 1.7. _________ rather than alone. Encouragingly, a few breeding programmes have proved remarkably 1.8. _________, and some species are slowly recovering.",
       "items": [

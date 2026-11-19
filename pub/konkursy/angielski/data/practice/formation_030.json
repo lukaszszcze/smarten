@@ -8,16 +8,16 @@
       "points": 8,
       "instruction": "Przeczytaj ponizszy tekst. Uzupelnij kazda luke (1.1-1.8), przeksztalcajac wyraz podany w ramce w taka forme, ktora logicznie i gramatycznie pasuje do kontekstu. Wymagana jest calkowita poprawnosc gramatyczna i ortograficzna wpisywanych wyrazow. Dwa wyrazy zostaly podane dodatkowo i nie pasuja do zadnej luki.",
       "wordBank": [
-        "SCIENCE",
-        "RECOMMEND",
-        "TIRE",
-        "CONCENTRATE",
-        "REGULAR",
-        "DEEP",
         "BENEFIT",
-        "SHORT",
+        "CONCENTRATE",
+        "DEEP",
         "DREAM",
-        "NIGHT"
+        "NIGHT",
+        "RECOMMEND",
+        "REGULAR",
+        "SCIENCE",
+        "SHORT",
+        "TIRE"
       ],
       "text": "For centuries, 1.1. _________ have tried to understand why humans spend roughly a third of their lives asleep. The official 1.2. _________ for teenagers is between eight and ten hours every night. When people do not get enough rest, they suffer from constant 1.3. _________ during the day. Studies also show that levels of 1.4. _________ drop sharply after a poor night's sleep, making it harder to learn at school. Going to bed at completely different times each night creates an 1.5. _________ pattern that confuses the body's internal clock. Those who sleep 1.6. _________ and wake refreshed tend to perform better in tests. A short afternoon nap can be surprisingly 1.7. _________ for both memory and mood. Worryingly, researchers warn that years of poor sleep may even lead to 1.8. _________ lifespans.",
       "items": [
