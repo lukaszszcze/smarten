@@ -287,3 +287,6 @@ Quest progress stored in localStorage (`smarten_quest_{username}`) and synced to
 - Quest exercise IDs follow pattern: `quest_{branch}_{NN}` (e.g. `quest_vocab_01`)
 - All data in static JSON under `pub/` — no database for content
 - Scoring schemes use string keys for ranges: `"0-2"`, `"3"`, `"4"`
+- A word bank never lists the answers in the order of the blanks (sort it alphabetically).
+  After adding or editing practice or quest exercises, run `python3 tools/practice/val_all.py`
+  from the root; it checks the practice index and runs `bank_order.py` over every word bank
