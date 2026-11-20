@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, re, glob, os
+import json, re, glob, os, subprocess, sys
 from collections import Counter
 
 BASE = "pub/konkursy/angielski/data/practice"
@@ -56,3 +56,9 @@ for fid in NEW:
             bad += 1
             print("  FAIL", fid, "; ".join(probs))
 print("per-file checks:", "ALL OK" if bad == 0 else "%d FAILED" % bad)
+
+# no word bank may list its answers in gap order (all banks, not only practice)
+bank = subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), "bank_order.py")],
+                      capture_output=True, text=True)
+print(bank.stdout.rstrip())
+print("word-bank order:", "ALL OK" if bank.returncode == 0 else "FAILED")

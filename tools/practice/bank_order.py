@@ -1,12 +1,15 @@
 """Find tasks whose word bank lists the answers in gap order.
 
 Scans every JSON file under pub/ for tasks with a `wordBank` and reports how
-far the bank's order follows the order of the gaps.
+far the bank's order follows the order of the gaps. It fails when a bank lists
+every answer in gap order or has three answers in a row in gap order, since
+either gives the answers away. tools/practice/val_all.py runs it too.
 
     python3 tools/practice/bank_order.py
 """
 import json
 import pathlib
+import sys
 
 ROOT = pathlib.Path("pub/konkursy/angielski/data")
 
@@ -53,3 +56,4 @@ print(f"{len(flag)} with the bank in gap order or a run of 3+ consecutive gaps\n
 for r in flag:
     print(f"{r[0]:55s} task {r[1]!s:4s} {r[2]:22s} gaps={r[3]} found={r[4]} "
           f"run={r[5]} in_order={r[6]}")
+sys.exit(1 if flag else 0)
