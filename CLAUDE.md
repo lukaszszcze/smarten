@@ -53,7 +53,20 @@ smarten/
 │   ├── public/ojaj_study/           # OJAJ study pages, one per mistake type (static)
 │   ├── wrangler.toml                # Cloudflare config (KV binding: RESULTS)
 │   └── package.json
+├── tools/                           # Scripts that build and check the data (run from the root)
+│   ├── ojaj/                        # OJAJ papers, vault items, checks; notes/ = design records
+│   ├── study/                       # Study pages: generator, page data in pages/, browser test
+│   ├── practice/                    # Practice, real tests and quest: checks, quest index builder
+│   └── usa_canada/                  # 2026/27 rejonowy theme: the 15 exercises and the notebook
+└── tmp/                             # Untracked; temporary output only
 ```
+
+`tools/` holds every script that writes or checks tracked files; edit those, not
+copies. `tmp/` is for temporary output only (review printouts, build products,
+screenshots, one-off scripts), and a script that writes something tracked does
+not live there. Source material the tools read is kept beside them and never
+committed: the OJAJ papers and page images in `tools/ojaj/pdfs/` and the
+notebook's downloaded pages, map data and photos in `tools/usa_canada/src/`.
 
 ## Commands
 
@@ -162,35 +175,35 @@ lock at the submit, and a failed AI marking offers a retry and saves nothing
 until it succeeds. A reload draws a new test. History rows for online tests are
 not links.
 
-OJAJ data is built by `tmp/_gen_ojaj.py` from the papers published at
-ojaj.wsjo.pl, checked by `tmp/_val_ojaj.mjs` (the answer key must score full
-marks), `tmp/_render_ojaj.sh` (every task renders with its content visible) and
-`tmp/_audit_ojaj.py` (no extraction leftovers, no item served twice). The online
-tests' items live in `tmp/_ojaj_online.py`, in batches of 45 or of one task
+OJAJ data is built by `tools/ojaj/gen_ojaj.py` from the papers published at
+ojaj.wsjo.pl, checked by `tools/ojaj/val_ojaj.mjs` (the answer key must score full
+marks), `tools/ojaj/render_ojaj.sh` (every task renders with its content visible) and
+`tools/ojaj/audit_ojaj.py` (no extraction leftovers, no item served twice). The online
+tests' items live in `tools/ojaj/ojaj_online.py`, in batches of 45 or of one task
 alone (as many items as a full batch has of it, numbered as there: wisielec
 11-20, culture 41-45), each with its
 mistake type; it checks them (level profile, blank and keyword rules, a
 wisielec pattern giving as many letters as the papers do for its length,
 nothing already in the app or the vault), holds the type list with each type's label
-and link, and prints a review copy; `_gen_ojaj.py` writes the vault. A link to
+and link, and prints a review copy; `gen_ojaj.py` writes the vault. A link to
 a study page goes into the vault only once the page is in
-`site/public/ojaj_study/`, so re-run `_gen_ojaj.py` after adding study pages.
-`tmp/_e2e_online.mjs` clicks through three drawn tests in a browser with the
+`site/public/ojaj_study/`, so re-run `gen_ojaj.py` after adding study pages.
+`tools/ojaj/e2e_online.mjs` clicks through three drawn tests in a browser with the
 API mocked.
-`tmp/_peek_ojaj.sh <id>...` prints what a student sees for named exercises. The
+`tools/ojaj/peek_ojaj.sh <id>...` prints what a student sees for named exercises. The
 generator's docstring lists the papers not yet converted and why.
 
 Two of the papers publish their key only as an underline on the right option,
 which `pdftotext` drops — it is a drawn rectangle, not a font attribute.
-`tmp/_ojaj_underline.py` recovers it from mutool's trace (glyph positions plus
-thin filled rectangles) and `tmp/_ojaj_parse.py` reads the marked text;
-`tmp/_ojaj_extract.py` runs both over the PDFs and writes `tmp/_ojaj_items.json`,
-which `tmp/_ojaj_new.py` turns into tasks. The 2022/23 papers mark their key
-twice, inline and in bold, and `tmp/_ojaj_bold.py` checks the two agree.
+`tools/ojaj/ojaj_underline.py` recovers it from mutool's trace (glyph positions plus
+thin filled rectangles) and `tools/ojaj/ojaj_parse.py` reads the marked text;
+`tools/ojaj/ojaj_extract.py` runs both over the PDFs and writes `tools/ojaj/ojaj_items.json`,
+which `tools/ojaj/ojaj_new.py` turns into tasks. The 2022/23 papers mark their key
+twice, inline and in bold, and `tools/ojaj/ojaj_bold.py` checks the two agree.
 
 The two gramatyczno-leksykalny papers have subsetted fonts with incomplete
 character maps, so extraction drops whole words and every item in
-`tmp/_ojaj_gl.py` was read off `pdftoppm` page images instead. Both versions of
+`tools/ojaj/ojaj_gl.py` was read off `pdftoppm` page images instead. Both versions of
 each paper are needed: the one with the key marks the answers but prints them
 over the blanks and omits the word bank and the base words, and the one without
 the key has all of those but no answers.
@@ -202,7 +215,7 @@ wisielec mistake type that Tadzio's online tests showed (the page name is the ty
 key), one grammar page, inversion (added 2026-11-11, when it was his third weakest
 type), and an index. The other transformations and grammar pages are written but
 off the site for now: their data has `PUBLISH = False`, and the transformations
-checklist is kept in `tmp/_study_pages/unpublished/`. A grammar page has a rule
+checklist is kept in `tools/study/pages/unpublished/`. A grammar page has a rule
 with tables instead of word lists. The pages are served at
 `/ojaj_study/<key>`, the address the weak-points list links to, and the OJAJ page
 reaches the index through a card next to the UK notebook's. Each page has his
@@ -211,35 +224,38 @@ mistakes first, the rule with the full word list in columns (C1-C2 words in an
 letter. `study.js` keeps the "I've learnt this" ticks in local
 storage (`ojaj-study-learnt`); nothing else is saved.
 
-Every page except the index is written by `tmp/_gen_study.py`
-from its data in `tmp/_study_pages/<key>.py`, so edit the data, not the HTML. The
+Every page except the index is written by `tools/study/gen_study.py`
+from its data in `tools/study/pages/<key>.py`, so edit the data, not the HTML. The
 generator stops before writing if a listed word or typed answer is missing from
 the British dictionaries, if anything from online Test 03 (unseen by Tadzio)
 appears, if a word is listed twice, or if a marking or wisielec hint does not fit
-its word. `tmp/_e2e_study.mjs` clicks through every page; run it against
+its word. `tools/study/e2e_study.mjs` clicks through every page; run it against
 `vite preview`, because `npm run dev` does not serve the addresses without `.html`.
 
 ### USA & Canada notebook
 
 `site/public/usa_kanada.html` is the reading page for the kuratoryjny 2026/27 etap
 rejonowy, linked from the kuratoryjny home page. It is written by
-`tmp/_gen_usa_canada_notes.py` from the reading list in the official programme
-(copies of the source pages in `tmp/_src/`), so edit the generator, not the HTML. It
+`tools/usa_canada/gen_usa_canada_notes.py` from the reading list in the official programme
+(copies of the source pages in `tools/usa_canada/src/`), so edit the generator, not the HTML. It
 borrows the UK notebook's styles, and before writing it checks that every answer of
 the 15 "USA i Kanada" practice exercises appears on the page.
 
-Its pictures come from `tmp/_usa_canada_art.py`: 28 maps, charts and timelines drawn as
+Its pictures come from `tools/usa_canada/usa_canada_art.py`: 28 maps, charts and timelines drawn as
 inline SVG (colours are CSS variables, so they follow light and dark), photo rows, and
 photo cards for the parks and the WWF animals. The maps are drawn from Natural Earth
-data (public domain), cut down by `tmp/_build_na_geo.py` from `tmp/_src/geo/` to
-`tmp/_src/na_geo.json`; label positions are set by hand in the art module, so check a
-map by eye after moving one. The St. Lawrence below Cornwall is traced by hand, because
+data (public domain), cut down by `tools/usa_canada/build_na_geo.py` from
+`tools/usa_canada/src/geo/` to `tools/usa_canada/src/na_geo.json`; label positions are
+set by hand in the art module, so check a map by eye after moving one. The St. Lawrence
+below Cornwall is traced by hand, because
 the river data stops there. The 58 photos are listed in the art module's `PHOTOS`;
-`tmp/_photo_prep.py` fetches them from Wikimedia Commons into `site/public/img/usa_kanada/`
-and writes their credits to `tmp/_src/photos/credits.json`, which the footer prints. The
+`tools/usa_canada/photo_prep.py` fetches them from Wikimedia Commons into
+`site/public/img/usa_kanada/` and writes their credits to
+`tools/usa_canada/src/photos/credits.json`, which the footer prints. The
 generator refuses a photo without a credit, a photo on disk that the page does not use,
 and a picture without a text description. Facts the pictures add for scale (Poland,
-Mazowieckie, the oldest trees against history) carry the page's star. `tmp/_e2e_usa_canada.mjs`
+Mazowieckie, the oldest trees against history) carry the page's star.
+`tools/usa_canada/e2e_usa_canada.mjs`
 checks the page in a browser (every photo loads, nothing wider than a phone, both themes)
 with `site/public` served on port 5192.
 

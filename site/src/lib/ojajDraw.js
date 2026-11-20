@@ -9,7 +9,7 @@
 //   3. the rest: unseen items, and once those run out, the least seen.
 // Every step keeps the task's level profile and idiom count reachable, and a
 // repeat that would break them is skipped. Answer words are unique across the
-// vault (tmp/_ojaj_online.py checks it), so no test holds one twice.
+// vault (tools/ojaj/ojaj_online.py checks it), so no test holds one twice.
 
 import { typeShare } from "./ojajRecord.js";
 

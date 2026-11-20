@@ -8,7 +8,7 @@
 // vicious in spelling, which is the pair of complaints this replaces.
 //
 // Levels are within-track, 1-6. L1-3 come from the young-learner quest set,
-// L4-6 from the competition and olympiad practice sets. See tmp/_tag_quest.py.
+// L4-6 from the competition and olympiad practice sets. See tools/practice/tag_quest.py.
 
 export const TRACK_IDS = ["reading", "vocabulary", "grammar", "spelling"];
 

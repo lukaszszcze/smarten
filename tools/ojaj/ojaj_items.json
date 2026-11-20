@@ -1,0 +1,3428 @@
+{
+ "test_2223_a": [
+  {
+   "id": "1.1",
+   "stem": "_________ is a real problem mainly during football matches in some countries.",
+   "options": [
+    "A) criminals",
+    "B) vandalism",
+    "C) nationalists",
+    "D) criminalism"
+   ],
+   "answer": "B",
+   "_src": 1
+  },
+  {
+   "id": "1.2",
+   "stem": "People who _________ crimes are usually given fines or sent to jail.",
+   "options": [
+    "A) make",
+    "B) do",
+    "C) commit",
+    "D) complain"
+   ],
+   "answer": "C",
+   "_src": 2
+  },
+  {
+   "id": "1.3",
+   "stem": "John was cheating during the final exam and as a result was _________ from school.",
+   "options": [
+    "A) expelled",
+    "B) expired",
+    "C) experienced",
+    "D) exposed"
+   ],
+   "answer": "A",
+   "_src": 3
+  },
+  {
+   "id": "1.4",
+   "stem": "_________ at school is strictly forbidden and will be severely punished.",
+   "options": [
+    "A) buying",
+    "B) begging",
+    "C) burning",
+    "D) bullying"
+   ],
+   "answer": "D",
+   "_src": 4
+  },
+  {
+   "id": "1.5",
+   "stem": "I love Harry Potter books and I _________ each of them more than 5 times so far.",
+   "options": [
+    "A) read",
+    "B) have read",
+    "C) have been reading",
+    "D) was reading"
+   ],
+   "answer": "B",
+   "_src": 5
+  },
+  {
+   "id": "1.6",
+   "stem": "Don't worry! She _________ you with your task as soon as she finishes hers.",
+   "options": [
+    "A) will help",
+    "B) won't help",
+    "C) helped",
+    "D) do help"
+   ],
+   "answer": "A",
+   "_src": 6
+  },
+  {
+   "id": "1.7",
+   "stem": "Our group had three PE lessons this morning and everyone _________ extremely tired now.",
+   "options": [
+    "A) are",
+    "B) fell",
+    "C) is",
+    "D) were"
+   ],
+   "answer": "C",
+   "_src": 7
+  },
+  {
+   "id": "1.8",
+   "stem": "Susan got on the bus and only then discovered that she _________ to take her mobile from home.",
+   "options": [
+    "A) forgot",
+    "B) will forget",
+    "C) was to forget",
+    "D) had forgotten"
+   ],
+   "answer": "D",
+   "_src": 8
+  },
+  {
+   "id": "1.9",
+   "stem": "_________ the book _________ by Roald Dahl?",
+   "options": [
+    "A) has ... been written",
+    "B) wrote",
+    "C) did ... write",
+    "D) was ... written"
+   ],
+   "answer": "D",
+   "_src": 9
+  },
+  {
+   "id": "1.10",
+   "stem": "Could you please tell me what time _________",
+   "options": [
+    "A) is it",
+    "B) is",
+    "C) does it",
+    "D) it is"
+   ],
+   "answer": "D",
+   "_src": 10
+  },
+  {
+   "id": "1.11",
+   "stem": "In her bedroom _________ a big bookcase full of her favourite books.",
+   "options": [
+    "A) there is",
+    "B) that is",
+    "C) this is",
+    "D) there are"
+   ],
+   "answer": "A",
+   "_src": 11
+  },
+  {
+   "id": "1.12",
+   "stem": "They are _________ history that's why they are taking part in a history competition next week.",
+   "options": [
+    "A) interested about",
+    "B) interested in",
+    "C) interested of",
+    "D) interested into"
+   ],
+   "answer": "B",
+   "_src": 12
+  },
+  {
+   "id": "1.13",
+   "stem": "She is absent today, _________",
+   "options": [
+    "A) is she",
+    "B) isn't she",
+    "C) aren't they",
+    "D) ain't her"
+   ],
+   "answer": "B",
+   "_src": 13
+  },
+  {
+   "id": "1.14",
+   "stem": "Ron and Hermione are an amazing couple! They really love _________",
+   "options": [
+    "A) one other",
+    "B) together",
+    "C) another",
+    "D) each other"
+   ],
+   "answer": "D",
+   "_src": 14
+  },
+  {
+   "id": "1.15",
+   "stem": "_________ book is it?",
+   "options": [
+    "A) who's",
+    "B) whom",
+    "C) whose",
+    "D) this"
+   ],
+   "answer": "C",
+   "_src": 15
+  },
+  {
+   "id": "1.16",
+   "stem": "I am so proud of Mark! He made the dinner all by _________",
+   "options": [
+    "A) himself",
+    "B) oneself",
+    "C) alone",
+    "D) him own"
+   ],
+   "answer": "A",
+   "_src": 16
+  },
+  {
+   "id": "1.17",
+   "stem": "Who _________ my cake?! I haven't even tried it!",
+   "options": [
+    "A) have eaten",
+    "B) has eaten",
+    "C) did eat",
+    "D) had eaten"
+   ],
+   "answer": "B",
+   "_src": 17
+  },
+  {
+   "id": "1.18",
+   "stem": "Joe _________ his best friend for 10 years now.",
+   "options": [
+    "A) have known",
+    "B) has been knowing",
+    "C) knew",
+    "D) has known"
+   ],
+   "answer": "D",
+   "_src": 18
+  },
+  {
+   "id": "1.19",
+   "stem": "While I _________ my homework yesterday, my computer suddenly broke down.",
+   "options": [
+    "A) was doing",
+    "B) did",
+    "C) have done",
+    "D) had been doing"
+   ],
+   "answer": "A",
+   "_src": 19
+  },
+  {
+   "id": "1.20",
+   "stem": "My sister rode _________ camel in Morocco.",
+   "options": [
+    "A) the",
+    "B) an",
+    "C) a",
+    "D) some"
+   ],
+   "answer": "C",
+   "_src": 20
+  },
+  {
+   "id": "1.21",
+   "stem": "John, _________ you help me, please.",
+   "options": [
+    "A) shall",
+    "B) should",
+    "C) could",
+    "D) wouldn't have"
+   ],
+   "answer": "C",
+   "_src": 21
+  },
+  {
+   "id": "1.22",
+   "stem": "Please be _________ , we don't want to wake the baby up.",
+   "options": [
+    "A) hush",
+    "B) quiet",
+    "C) quite",
+    "D) quit"
+   ],
+   "answer": "B",
+   "_src": 22
+  },
+  {
+   "id": "1.23",
+   "stem": "A: What _________ your mother _________ for a living? B: She's an accountant.",
+   "options": [
+    "A) does ... do",
+    "B) did ... do",
+    "C) has ... done",
+    "D) do ... do"
+   ],
+   "answer": "A",
+   "_src": 23
+  },
+  {
+   "id": "1.24",
+   "stem": "What do you call _________ trees over there?",
+   "options": [
+    "A) these",
+    "B) that",
+    "C) those",
+    "D) which"
+   ],
+   "answer": "C",
+   "_src": 24
+  },
+  {
+   "id": "1.25",
+   "stem": "John looked at _________ in the mirror and got scared. His face was covered in pimples.",
+   "options": [
+    "A) himself",
+    "B) themself",
+    "C) him",
+    "D) another"
+   ],
+   "answer": "A",
+   "_src": 25
+  },
+  {
+   "id": "1.26",
+   "stem": "Look at the people outside. They are all wearing hats, scarves and gloves. It _________ very cold today!",
+   "options": [
+    "A) can be",
+    "B) must be",
+    "C) may have been",
+    "D) can't be"
+   ],
+   "answer": "B",
+   "_src": 26
+  },
+  {
+   "id": "1.27",
+   "stem": "I love eating _________ mussels, shrimps and squid are my absolutely favourite.",
+   "options": [
+    "A) sea life",
+    "B) sea goods",
+    "C) sea meals",
+    "D) sea food"
+   ],
+   "answer": "D",
+   "_src": 27
+  },
+  {
+   "id": "1.28",
+   "stem": "Mary is allergic _________ dairy, so she never adds any milk to her coffee.",
+   "options": [
+    "A) to",
+    "B) with",
+    "C) for",
+    "D) on"
+   ],
+   "answer": "A",
+   "_src": 28
+  },
+  {
+   "id": "1.29",
+   "stem": "I decided to _________ a diary of my secondary school life.",
+   "options": [
+    "A) do",
+    "B) keep",
+    "C) keep on",
+    "D) hold on"
+   ],
+   "answer": "B",
+   "_src": 29
+  },
+  {
+   "id": "1.30",
+   "stem": "FIFA 2023 starts with a _________ on how to play the newest version.",
+   "options": [
+    "A) manual",
+    "B) dictionary",
+    "C) tutorial",
+    "D) glossary"
+   ],
+   "answer": "C",
+   "_src": 30
+  },
+  {
+   "id": "1.31",
+   "stem": "This mural is amazing. I think I'll _________ a photo.",
+   "options": [
+    "A) take",
+    "B) make",
+    "C) click",
+    "D) do"
+   ],
+   "answer": "A",
+   "_src": 31
+  },
+  {
+   "id": "1.32",
+   "stem": "His latest book has twenty _________ ! I don't think I'll read it.",
+   "options": [
+    "A) titles",
+    "B) chapters",
+    "C) episodes",
+    "D) series"
+   ],
+   "answer": "B",
+   "_src": 32
+  },
+  {
+   "id": "1.33",
+   "stem": "I'm coming! _________ the door please!",
+   "options": [
+    "A) keep",
+    "B) leave",
+    "C) hold",
+    "D) stay"
+   ],
+   "answer": "C",
+   "_src": 33
+  },
+  {
+   "id": "1.34",
+   "stem": "Susan hates Star Wars. She's really not _________ the series.",
+   "options": [
+    "A) keen on",
+    "B) about",
+    "C) by",
+    "D) of"
+   ],
+   "answer": "A",
+   "_src": 34
+  },
+  {
+   "id": "1.35",
+   "stem": "A: What _________ your father _________ ? B: He's a lawyer.",
+   "options": [
+    "A) do ... do",
+    "B) does ... do",
+    "C) is ... doing",
+    "D) have ... done"
+   ],
+   "answer": "B",
+   "_src": 35
+  },
+  {
+   "id": "1.36",
+   "stem": "To make a/ an _________ potato take one potato which you would have to bake in the oven.",
+   "options": [
+    "A) fried",
+    "B) roast",
+    "C) stewed",
+    "D) ripe"
+   ],
+   "answer": "B",
+   "_src": 36
+  },
+  {
+   "id": "1.37",
+   "stem": "The Statue of Liberty was designed by Eiffel, the engineer famous _________ the Eiffel Tower in Paris.",
+   "options": [
+    "A) from",
+    "B) with",
+    "C) for",
+    "D) by"
+   ],
+   "answer": "C",
+   "_src": 37
+  },
+  {
+   "id": "1.38",
+   "stem": "Mom I overslept, could you _________ to school please. Otherwise I'll be late.",
+   "options": [
+    "A) pick me up",
+    "B) give me a lift",
+    "C) take me from",
+    "D) take me by"
+   ],
+   "answer": "B",
+   "_src": 38
+  },
+  {
+   "id": "1.39",
+   "stem": "My father _________ his own business for years now. Even pandemic wasn't a threat for him.",
+   "options": [
+    "A) has been running",
+    "B) had been running",
+    "C) was running",
+    "D) have been running"
+   ],
+   "answer": "A",
+   "_src": 39
+  },
+  {
+   "id": "1.40",
+   "stem": "Sue offered _________ me one of her favourite dresses which I will be able to wear tomorrow night.",
+   "options": [
+    "A) on lending",
+    "B) for lending",
+    "C) to lend",
+    "D) on lend"
+   ],
+   "answer": "C",
+   "_src": 40
+  },
+  {
+   "id": "1.41",
+   "stem": "Jack told us he _________ to Paris the following day to visit us. I can't wait to see him.",
+   "options": [
+    "A) came",
+    "B) had come",
+    "C) has been coming",
+    "D) was coming"
+   ],
+   "answer": "D",
+   "_src": 41
+  },
+  {
+   "id": "1.42",
+   "stem": "I _________ eat junk food, but not very often.",
+   "options": [
+    "A) sometimes",
+    "B) never",
+    "C) usually",
+    "D) always"
+   ],
+   "answer": "A",
+   "_src": 42
+  },
+  {
+   "id": "1.43",
+   "stem": "Is Kraków _________ than Wrocław?",
+   "options": [
+    "A) big",
+    "B) biggest",
+    "C) bigger",
+    "D) the biggest"
+   ],
+   "answer": "C",
+   "_src": 43
+  },
+  {
+   "id": "1.44",
+   "stem": "By the time we got to the party they _________ all the birthday cake.",
+   "options": [
+    "A) ate",
+    "B) eaten",
+    "C) have eaten",
+    "D) had eaten"
+   ],
+   "answer": "D",
+   "_src": 44
+  },
+  {
+   "id": "1.45",
+   "stem": "She is the girl _________ won the competition.",
+   "options": [
+    "A) who",
+    "B) which",
+    "C) whom",
+    "D) –"
+   ],
+   "answer": "A",
+   "_src": 45
+  },
+  {
+   "id": "1.46",
+   "stem": "When I was younger I _________ spinach a lot. Now I can't stand it.",
+   "options": [
+    "A) didn't like",
+    "B) used to like",
+    "C) used to hate",
+    "D) like"
+   ],
+   "answer": "B",
+   "_src": 46
+  },
+  {
+   "id": "1.47",
+   "stem": "She will be ready in 10 minutes. She _________ a shower now.",
+   "options": [
+    "A) took",
+    "B) has taken",
+    "C) is taking",
+    "D) will taking"
+   ],
+   "answer": "C",
+   "_src": 47
+  },
+  {
+   "id": "1.48",
+   "stem": "My favourite English food is _________",
+   "options": [
+    "A) chips and fish",
+    "B) fish and chips",
+    "C) chips and potato",
+    "D) fish and chorizo"
+   ],
+   "answer": "B",
+   "_src": 48
+  },
+  {
+   "id": "1.49",
+   "stem": "Walking naked in the streets is _________ in our country. If one does so, they will be fined.",
+   "options": [
+    "A) let",
+    "B) allowed",
+    "C) prolonged",
+    "D) prohibited"
+   ],
+   "answer": "D",
+   "_src": 49
+  },
+  {
+   "id": "1.50",
+   "stem": "She gained popularity after making a portrait of a / an _________ singer Amy Winehouse on her first death day anniversary.",
+   "options": [
+    "A) death",
+    "B) unconscious",
+    "C) late",
+    "D) belated"
+   ],
+   "answer": "C",
+   "_src": 50
+  },
+  {
+   "id": "1.51",
+   "stem": "We were playing hide and seek and not to be heard we had to be very quiet and _________",
+   "options": [
+    "A) tiptoe",
+    "B) tipped toe",
+    "C) walk on a toe",
+    "D) walk on feet"
+   ],
+   "answer": "A",
+   "_src": 51
+  },
+  {
+   "id": "1.52",
+   "stem": "I am not _________ to be able to win the marathon.",
+   "options": [
+    "A) enough fast",
+    "B) fast enough",
+    "C) faster",
+    "D) the faster"
+   ],
+   "answer": "B",
+   "_src": 52
+  },
+  {
+   "id": "1.53",
+   "stem": "Yesterday at 5 p.m. I _________ in the Baltic sea.",
+   "options": [
+    "A) have been swimming",
+    "B) had swum",
+    "C) was swimming",
+    "D) swam"
+   ],
+   "answer": "C",
+   "_src": 53
+  },
+  {
+   "id": "1.54",
+   "stem": "When I came home my brother _________ his homework. That was a surprise.",
+   "options": [
+    "A) was doing",
+    "B) done",
+    "C) had been doing",
+    "D) have done"
+   ],
+   "answer": "A",
+   "_src": 54
+  },
+  {
+   "id": "1.55",
+   "stem": "Look! This tree _________ any minute now. It has already leant.",
+   "options": [
+    "A) falling",
+    "B) is going to fall",
+    "C) is fell",
+    "D) is fallen"
+   ],
+   "answer": "B",
+   "_src": 55
+  },
+  {
+   "id": "1.56",
+   "stem": "Here you are! Where _________ ? I have been waiting for ages!",
+   "options": [
+    "A) has you been",
+    "B) were you",
+    "C) have you been",
+    "D) has he been"
+   ],
+   "answer": "C",
+   "_src": 56
+  },
+  {
+   "id": "1.57",
+   "stem": "If I were you, I _________ to do it.",
+   "options": [
+    "A) will never agree",
+    "B) have never agreed",
+    "C) never agree",
+    "D) would never agree"
+   ],
+   "answer": "D",
+   "_src": 57
+  },
+  {
+   "id": "1.58",
+   "stem": "I _________ my car fixed at the moment, so temporarily I have to cycle to work.",
+   "options": [
+    "A) am having",
+    "B) was having",
+    "C) had",
+    "D) has had"
+   ],
+   "answer": "A",
+   "_src": 58
+  },
+  {
+   "id": "1.59",
+   "stem": "Janice is my wife's mom, she is my _________",
+   "options": [
+    "A) mother",
+    "B) mother – in – law",
+    "C) sibling",
+    "D) colleague"
+   ],
+   "answer": "B",
+   "_src": 59
+  },
+  {
+   "id": "1.60",
+   "stem": "I _________ my homework last night. I didn't send the essay. We had the power cut.",
+   "options": [
+    "A) could do",
+    "B) was to do",
+    "C) couldn't do",
+    "D) wouldn't do"
+   ],
+   "answer": "C",
+   "_src": 60
+  }
+ ],
+ "test_2223_b": [
+  {
+   "id": "1.1",
+   "stem": "My group had to run 10 km yesterday and everyone _________ complaining about it.",
+   "options": [
+    "A) was",
+    "B) were",
+    "C) are",
+    "D) is"
+   ],
+   "answer": "A",
+   "_src": 1
+  },
+  {
+   "id": "1.2",
+   "stem": "Marry got on a bus and only then she realized that she _________ her purse at home.",
+   "options": [
+    "A) leave",
+    "B) left",
+    "C) had left",
+    "D) was leaving"
+   ],
+   "answer": "C",
+   "_src": 2
+  },
+  {
+   "id": "1.3",
+   "stem": "_________ the play _________ by William Shakespeare?",
+   "options": [
+    "A) was ... written",
+    "B) wrote",
+    "C) did ... write",
+    "D) has ... been written"
+   ],
+   "answer": "A",
+   "_src": 3
+  },
+  {
+   "id": "1.4",
+   "stem": "In my room _________ two wooden shelves.",
+   "options": [
+    "A) there is",
+    "B) those are",
+    "C) there are",
+    "D) these are"
+   ],
+   "answer": "C",
+   "_src": 4
+  },
+  {
+   "id": "1.5",
+   "stem": "Mark is _________ chemistry that is why he is taking part in a chemistry competition next week.",
+   "options": [
+    "A) interested in",
+    "B) interested by",
+    "C) interested about",
+    "D) interested of"
+   ],
+   "answer": "A",
+   "_src": 5
+  },
+  {
+   "id": "1.6",
+   "stem": "Susan loves The Hunger Games books and _________ every part more than 3 times so far.",
+   "options": [
+    "A) read",
+    "B) has read",
+    "C) have read",
+    "D) will read"
+   ],
+   "answer": "B",
+   "_src": 6
+  },
+  {
+   "id": "1.7",
+   "stem": "He is absent today, _________",
+   "options": [
+    "A) is he",
+    "B) are he",
+    "C) isn't he",
+    "D) would he"
+   ],
+   "answer": "C",
+   "_src": 7
+  },
+  {
+   "id": "1.8",
+   "stem": "Romeo and Juliette were an amazing couple. They really loved _________",
+   "options": [
+    "A) one other",
+    "B) another",
+    "C) together",
+    "D) each other"
+   ],
+   "answer": "D",
+   "_src": 8
+  },
+  {
+   "id": "1.9",
+   "stem": "I'm so proud of Mary! She made this chocolate cake all by _________",
+   "options": [
+    "A) herself",
+    "B) alone",
+    "C) oneself",
+    "D) her"
+   ],
+   "answer": "A",
+   "_src": 9
+  },
+  {
+   "id": "1.10",
+   "stem": "_________ bike is it?",
+   "options": [
+    "A) who's",
+    "B) whom",
+    "C) of who",
+    "D) whose"
+   ],
+   "answer": "D",
+   "_src": 10
+  },
+  {
+   "id": "1.11",
+   "stem": "Who _________ my strawberry shake?! I haven't even tried it!",
+   "options": [
+    "A) has drunk",
+    "B) drunk",
+    "C) had drunk",
+    "D) did drank"
+   ],
+   "answer": "A",
+   "_src": 11
+  },
+  {
+   "id": "1.12",
+   "stem": "Mia _________ her best friend for 6 years now.",
+   "options": [
+    "A) knew",
+    "B) have known",
+    "C) has known",
+    "D) has been knowing"
+   ],
+   "answer": "C",
+   "_src": 12
+  },
+  {
+   "id": "1.13",
+   "stem": "While I _________ on the phone yesterday, it suddenly stopped working.",
+   "options": [
+    "A) had been talking",
+    "B) was talking",
+    "C) have talked",
+    "D) talked"
+   ],
+   "answer": "B",
+   "_src": 13
+  },
+  {
+   "id": "1.14",
+   "stem": "The Statue of Liberty was designed by Eiffel, the engineer famous _________ the Eiffel Tower in Paris.",
+   "options": [
+    "A) from",
+    "B) with",
+    "C) for",
+    "D) by"
+   ],
+   "answer": "C",
+   "_src": 14
+  },
+  {
+   "id": "1.15",
+   "stem": "My brother rode _________ elephant in India.",
+   "options": [
+    "A) an",
+    "B) a",
+    "C) the",
+    "D) some"
+   ],
+   "answer": "A",
+   "_src": 15
+  },
+  {
+   "id": "1.16",
+   "stem": "Mary, _________ you help me, please.",
+   "options": [
+    "A) should",
+    "B) shall",
+    "C) would have",
+    "D) could"
+   ],
+   "answer": "D",
+   "_src": 16
+  },
+  {
+   "id": "1.17",
+   "stem": "A: What _________ your father _________ for a living? B: He's a male nurse.",
+   "options": [
+    "A) do ... do",
+    "B) did ... do",
+    "C) does ... do",
+    "D) has ... do"
+   ],
+   "answer": "C",
+   "_src": 17
+  },
+  {
+   "id": "1.18",
+   "stem": "What do you call _________ flowers over there?",
+   "options": [
+    "A) these",
+    "B) those",
+    "C) that",
+    "D) some"
+   ],
+   "answer": "B",
+   "_src": 18
+  },
+  {
+   "id": "1.19",
+   "stem": "Look at the people outside. They are all wearing hats, scarves and gloves. It _________ very cold to- day!",
+   "options": [
+    "A) can be",
+    "B) must be",
+    "C) may have been",
+    "D) can't be"
+   ],
+   "answer": "B",
+   "_src": 19
+  },
+  {
+   "id": "1.20",
+   "stem": "Mary loves _________ She usually orders mussels, shrimps and squid which are her absolutely favourite.",
+   "options": [
+    "A) sea life",
+    "B) sea meals",
+    "C) sea food",
+    "D) sea goods"
+   ],
+   "answer": "C",
+   "_src": 20
+  },
+  {
+   "id": "1.21",
+   "stem": "I'm allergic _________ dairy products, so I never add cream to any soups.",
+   "options": [
+    "A) to",
+    "B) for",
+    "C) on",
+    "D) with"
+   ],
+   "answer": "A",
+   "_src": 21
+  },
+  {
+   "id": "1.22",
+   "stem": "We were playing hide and seek and not to be heard we had to be very quiet and _________",
+   "options": [
+    "A) tiptoe",
+    "B) tipped toe",
+    "C) walk on a toe",
+    "D) walk on feet"
+   ],
+   "answer": "A",
+   "_src": 22
+  },
+  {
+   "id": "1.23",
+   "stem": "Susan _________ a diary of her first trip to Australia.",
+   "options": [
+    "A) did",
+    "B) held to",
+    "C) kept",
+    "D) kept on"
+   ],
+   "answer": "C",
+   "_src": 23
+  },
+  {
+   "id": "1.24",
+   "stem": "Could you please tell me what time _________",
+   "options": [
+    "A) is it",
+    "B) is",
+    "C) does it",
+    "D) it is"
+   ],
+   "answer": "D",
+   "_src": 24
+  },
+  {
+   "id": "1.25",
+   "stem": "Please be _________ , we don't want to wake the baby up.",
+   "options": [
+    "A) hush",
+    "B) quite",
+    "C) quiet",
+    "D) quit"
+   ],
+   "answer": "C",
+   "_src": 25
+  },
+  {
+   "id": "1.26",
+   "stem": "SIMS 5 starts with a _________ on how to play the newest version.",
+   "options": [
+    "A) tutorial",
+    "B) manual",
+    "C) dictionary",
+    "D) glossary"
+   ],
+   "answer": "A",
+   "_src": 26
+  },
+  {
+   "id": "1.27",
+   "stem": "Look at this beautiful bridge! I'll _________ a photo.",
+   "options": [
+    "A) take",
+    "B) make",
+    "C) do",
+    "D) click"
+   ],
+   "answer": "A",
+   "_src": 27
+  },
+  {
+   "id": "1.28",
+   "stem": "This book has twenty _________ ! I don't think I'll read it.",
+   "options": [
+    "A) titles",
+    "B) episodes",
+    "C) series",
+    "D) chapters"
+   ],
+   "answer": "D",
+   "_src": 28
+  },
+  {
+   "id": "1.29",
+   "stem": "She's coming! Wait! _________ the door for her, please!",
+   "options": [
+    "A) stay",
+    "B) hold",
+    "C) leave",
+    "D) stick"
+   ],
+   "answer": "B",
+   "_src": 29
+  },
+  {
+   "id": "1.30",
+   "stem": "Look! This tree _________ any minute now. It has already leant.",
+   "options": [
+    "A) falling",
+    "B) is going to fall",
+    "C) is fell",
+    "D) is fallen"
+   ],
+   "answer": "B",
+   "_src": 30
+  },
+  {
+   "id": "1.31",
+   "stem": "Josh can be called an expert on Star Wars. He's really _________ the series.",
+   "options": [
+    "A) about",
+    "B) keen on",
+    "C) of",
+    "D) by"
+   ],
+   "answer": "B",
+   "_src": 31
+  },
+  {
+   "id": "1.32",
+   "stem": "A: What _________ your mother _________ ? B: She's an accountant.",
+   "options": [
+    "A) do ... do",
+    "B) is ... doing",
+    "C) does ... do",
+    "D) has ... done"
+   ],
+   "answer": "C",
+   "_src": 32
+  },
+  {
+   "id": "1.33",
+   "stem": "Mom I overslept, could you _________ to school please. Otherwise I'll be late.",
+   "options": [
+    "A) pick me up",
+    "B) give me a lift",
+    "C) take me from",
+    "D) take me by"
+   ],
+   "answer": "B",
+   "_src": 33
+  },
+  {
+   "id": "1.34",
+   "stem": "Jack promised _________ me his bike so that I can go on a trip tomorrow.",
+   "options": [
+    "A) to lend",
+    "B) lending",
+    "C) on lending",
+    "D) lend"
+   ],
+   "answer": "A",
+   "_src": 34
+  },
+  {
+   "id": "1.35",
+   "stem": "She told me she _________ to visit us the following day. I can't wait to see her!",
+   "options": [
+    "A) came",
+    "B) was coming",
+    "C) has come",
+    "D) will have come"
+   ],
+   "answer": "B",
+   "_src": 35
+  },
+  {
+   "id": "1.36",
+   "stem": "John _________ eats fast food, but not very often.",
+   "options": [
+    "A) never",
+    "B) usually",
+    "C) sometimes",
+    "D) always"
+   ],
+   "answer": "C",
+   "_src": 36
+  },
+  {
+   "id": "1.37",
+   "stem": "She gained popularity after making a portrait of the _________ Princess Margaret on her first death day an- niversary.",
+   "options": [
+    "A) death",
+    "B) unconscious",
+    "C) late",
+    "D) belated"
+   ],
+   "answer": "C",
+   "_src": 37
+  },
+  {
+   "id": "1.38",
+   "stem": "Is Poznań _________ than Warsaw?",
+   "options": [
+    "A) small",
+    "B) smallest",
+    "C) the smallest",
+    "D) smaller"
+   ],
+   "answer": "D",
+   "_src": 38
+  },
+  {
+   "id": "1.39",
+   "stem": "He is the boy _________ brought me the gift.",
+   "options": [
+    "A) whom",
+    "B) which",
+    "C) who",
+    "D) –"
+   ],
+   "answer": "C",
+   "_src": 39
+  },
+  {
+   "id": "1.40",
+   "stem": "When my sister was younger she _________ chocolate. Now, she can't stand it.",
+   "options": [
+    "A) used to love",
+    "B) love",
+    "C) didn't love",
+    "D) is used to love"
+   ],
+   "answer": "A",
+   "_src": 40
+  },
+  {
+   "id": "1.41",
+   "stem": "Mark will be with you in 15 minutes. He _________ a bath now.",
+   "options": [
+    "A) has taken",
+    "B) has having",
+    "C) is having",
+    "D) will having"
+   ],
+   "answer": "C",
+   "_src": 41
+  },
+  {
+   "id": "1.42",
+   "stem": "My favourite typical English food for breakfasts is _________",
+   "options": [
+    "A) bacon and eggs",
+    "B) egg and beacon",
+    "C) egg and yolk",
+    "D) bacon and egg yolk"
+   ],
+   "answer": "A",
+   "_src": 42
+  },
+  {
+   "id": "1.43",
+   "stem": "To make a/ an _________ potato take one potato which you would have to bake in the oven.",
+   "options": [
+    "A) fried",
+    "B) roast",
+    "C) stewed",
+    "D) ripe"
+   ],
+   "answer": "B",
+   "_src": 43
+  },
+  {
+   "id": "1.44",
+   "stem": "Smoking in public buildings is usually strictly _________ If one smokes inside, they will be fined.",
+   "options": [
+    "A) allowed",
+    "B) let",
+    "C) prohibited",
+    "D) prolonged"
+   ],
+   "answer": "C",
+   "_src": 44
+  },
+  {
+   "id": "1.45",
+   "stem": "Susan is not _________ to be able to win the marathon.",
+   "options": [
+    "A) fast enough",
+    "B) enough fast",
+    "C) the faster",
+    "D) fastest"
+   ],
+   "answer": "A",
+   "_src": 45
+  },
+  {
+   "id": "1.46",
+   "stem": "_________ is a real problem mainly during football matches in some countries.",
+   "options": [
+    "A) criminals",
+    "B) nationalists",
+    "C) vandalism",
+    "D) criminalism"
+   ],
+   "answer": "C",
+   "_src": 46
+  },
+  {
+   "id": "1.47",
+   "stem": "People who _________ crimes are usually given fines or sent to jail.",
+   "options": [
+    "A) make",
+    "B) do",
+    "C) complain",
+    "D) commit"
+   ],
+   "answer": "D",
+   "_src": 47
+  },
+  {
+   "id": "1.48",
+   "stem": "John was cheating during the final exam and as a result was _________ from school.",
+   "options": [
+    "A) expelled",
+    "B) expired",
+    "C) experienced",
+    "D) exposed"
+   ],
+   "answer": "A",
+   "_src": 48
+  },
+  {
+   "id": "1.49",
+   "stem": "_________ at school is strictly forbidden and will be severely punished.",
+   "options": [
+    "A) buying",
+    "B) begging",
+    "C) burning",
+    "D) bullying"
+   ],
+   "answer": "D",
+   "_src": 49
+  },
+  {
+   "id": "1.50",
+   "stem": "Yesterday at 7 a.m. I _________ along the river bank.",
+   "options": [
+    "A) was cycling",
+    "B) cycled",
+    "C) had cycled",
+    "D) biked"
+   ],
+   "answer": "A",
+   "_src": 50
+  },
+  {
+   "id": "1.51",
+   "stem": "By the time we got to the party they _________ all the birthday cake.",
+   "options": [
+    "A) ate",
+    "B) eaten",
+    "C) have eaten",
+    "D) had eaten"
+   ],
+   "answer": "D",
+   "_src": 51
+  },
+  {
+   "id": "1.52",
+   "stem": "When I came home my brother _________ his homework. That was a surprise.",
+   "options": [
+    "A) was doing",
+    "B) done",
+    "C) had been doing",
+    "D) have done"
+   ],
+   "answer": "A",
+   "_src": 52
+  },
+  {
+   "id": "1.53",
+   "stem": "John looked at _________ in the mirror and got scared. His face was covered in pimples.",
+   "options": [
+    "A) himself",
+    "B) themself",
+    "C) him",
+    "D) another"
+   ],
+   "answer": "A",
+   "_src": 53
+  },
+  {
+   "id": "1.54",
+   "stem": "Here you are! Where have you been ? I _________ for ages!",
+   "options": [
+    "A) has been waiting",
+    "B) was waiting",
+    "C) have been waiting",
+    "D) have been"
+   ],
+   "answer": "C",
+   "_src": 54
+  },
+  {
+   "id": "1.55",
+   "stem": "If I were you, I _________ to do it.",
+   "options": [
+    "A) will never agree",
+    "B) have never agreed",
+    "C) never agree",
+    "D) would never agree"
+   ],
+   "answer": "D",
+   "_src": 55
+  },
+  {
+   "id": "1.56",
+   "stem": "I _________ my house renovated at the moment. I had to move out.",
+   "options": [
+    "A) am having",
+    "B) have",
+    "C) was having",
+    "D) has"
+   ],
+   "answer": "A",
+   "_src": 56
+  },
+  {
+   "id": "1.57",
+   "stem": "Sam is my wife's father. He's my _________",
+   "options": [
+    "A) uncle",
+    "B) father",
+    "C) father – in – law",
+    "D) colleague"
+   ],
+   "answer": "C",
+   "_src": 57
+  },
+  {
+   "id": "1.58",
+   "stem": "Every creature on Earth depends _________ air, water and food.",
+   "options": [
+    "A) of",
+    "B) to",
+    "C) from",
+    "D) on"
+   ],
+   "answer": "D",
+   "_src": 58
+  },
+  {
+   "id": "1.59",
+   "stem": "I _________ my homework last night. I didn't send the essay. We had the power cut.",
+   "options": [
+    "A) could do",
+    "B) was to do",
+    "C) couldn't do",
+    "D) wouldn't do"
+   ],
+   "answer": "C",
+   "_src": 59
+  },
+  {
+   "id": "1.60",
+   "stem": "Do you know what time _________",
+   "options": [
+    "A) is it",
+    "B) it is",
+    "C) is",
+    "D) shows"
+   ],
+   "answer": "B",
+   "_src": 60
+  }
+ ],
+ "e1c2_verbs": [
+  {
+   "id": "1.1",
+   "stem": "Over thirty million hamburgers _________ by the British each year.",
+   "options": [
+    "A) are eaten",
+    "B) eat",
+    "C) are eating",
+    "D) are being eaten"
+   ],
+   "answer": "A",
+   "_src": 1
+  },
+  {
+   "id": "1.2",
+   "stem": "We were in a very difficult position. We _________ what to do.",
+   "options": [
+    "A) wasn't know",
+    "B) weren't known",
+    "C) didn't know",
+    "D) hadn't know"
+   ],
+   "answer": "C",
+   "_src": 2
+  },
+  {
+   "id": "1.3",
+   "stem": "The river _________ very fast today, much faster than usual.",
+   "options": [
+    "A) is flowing",
+    "B) flows",
+    "C) will be flowing",
+    "D) is following"
+   ],
+   "answer": "A",
+   "_src": 3
+  },
+  {
+   "id": "1.4",
+   "stem": "I can't understand why Sue _________ so selfish. She isn't usually like that.",
+   "options": [
+    "A) is being",
+    "B) was been",
+    "C) were",
+    "D) being"
+   ],
+   "answer": "A",
+   "_src": 4
+  },
+  {
+   "id": "1.5",
+   "stem": "John is on holidays. He _________ Spain.",
+   "options": [
+    "A) has been to",
+    "B) was gone to",
+    "C) was going to",
+    "D) has gone to"
+   ],
+   "answer": "D",
+   "_src": 5
+  },
+  {
+   "id": "1.6",
+   "stem": "In September Susan _________ at this company for 40 years and she's finally retiring on th her 70 birthday.",
+   "options": [
+    "A) will be",
+    "B) will have be",
+    "C) will have been",
+    "D) would have be"
+   ],
+   "answer": "C",
+   "_src": 6
+  },
+  {
+   "id": "1.7",
+   "stem": "_________ I'd read the instructions, I found it easy to assemble the bookcase.",
+   "options": [
+    "A) once",
+    "B) twice",
+    "C) for",
+    "D) from"
+   ],
+   "answer": "A",
+   "_src": 7
+  },
+  {
+   "id": "1.8",
+   "stem": "It was more than a month _________ I realized what had happened.",
+   "options": [
+    "A) until",
+    "B) before",
+    "C) for",
+    "D) till"
+   ],
+   "answer": "B",
+   "_src": 8
+  },
+  {
+   "id": "1.9",
+   "stem": "Sam! What on earth _________ ? You're all covered in mud!",
+   "options": [
+    "A) you did",
+    "B) you've done",
+    "C) you have been doing",
+    "D) have you been doing"
+   ],
+   "answer": "D",
+   "_src": 9
+  },
+  {
+   "id": "1.10",
+   "stem": "Ms Watson has been teaching Maths _________ ten years now.",
+   "options": [
+    "A) since",
+    "B) yet",
+    "C) for",
+    "D) during"
+   ],
+   "answer": "C",
+   "_src": 10
+  },
+  {
+   "id": "1.11",
+   "stem": "It's been five years _________ I last saw my old friend Mark.",
+   "options": [
+    "A) for",
+    "B) yet",
+    "C) since",
+    "D) until"
+   ],
+   "answer": "C",
+   "_src": 11
+  },
+  {
+   "id": "1.12",
+   "stem": "'Was Susan at the party when you arrived?' 'No, she _________ home.'",
+   "options": [
+    "A) already went",
+    "B) had already gone",
+    "C) had already went",
+    "D) was already gone"
+   ],
+   "answer": "B",
+   "_src": 12
+  },
+  {
+   "id": "1.13",
+   "stem": "John can't go out now. He _________ dinner at the moment.",
+   "options": [
+    "A) is having got",
+    "B) is have",
+    "C) is having",
+    "D) will be having"
+   ],
+   "answer": "C",
+   "_src": 13
+  },
+  {
+   "id": "1.14",
+   "stem": "I _________ Sandra was selfish, but now I realise she's a very helpful person.",
+   "options": [
+    "A) thought",
+    "B) have been thinking",
+    "C) use to think",
+    "D) used to think"
+   ],
+   "answer": "D",
+   "_src": 14
+  },
+  {
+   "id": "1.15",
+   "stem": "We _________ by train, but then we decided to go by plane instead as it was cheaper.",
+   "options": [
+    "A) were going to travel",
+    "B) were travelling",
+    "C) had been travelling",
+    "D) were going"
+   ],
+   "answer": "A",
+   "_src": 15
+  },
+  {
+   "id": "1.16",
+   "stem": "'It's so stuffy in here!' ' Indeed. _________ I open the window?'",
+   "options": [
+    "A) shall",
+    "B) will",
+    "C) do",
+    "D) must"
+   ],
+   "answer": "A",
+   "_src": 16
+  },
+  {
+   "id": "1.17",
+   "stem": "_________ I 've phoned mum to tell her I'm ok, we can go to the party.",
+   "options": [
+    "A) while",
+    "B) unless",
+    "C) when",
+    "D) though"
+   ],
+   "answer": "C",
+   "_src": 17
+  },
+  {
+   "id": "1.18",
+   "stem": "The fire spread through the school building very quickly, but fortunately every student _________ escape.",
+   "options": [
+    "A) was able to",
+    "B) could",
+    "C) should",
+    "D) need to"
+   ],
+   "answer": "A",
+   "_src": 18
+  },
+  {
+   "id": "1.19",
+   "stem": "There was a long queue _________ the bus stop.",
+   "options": [
+    "A) on",
+    "B) at",
+    "C) by",
+    "D) along"
+   ],
+   "answer": "B",
+   "_src": 19
+  },
+  {
+   "id": "1.20",
+   "stem": "Over thirty million hamburgers _________ by the British each year.",
+   "options": [
+    "A) are eaten",
+    "B) eat",
+    "C) are eating",
+    "D) are being eaten"
+   ],
+   "answer": "A",
+   "_src": 20
+  }
+ ],
+ "e1c2_vocab_a": [
+  {
+   "id": "1.1",
+   "stem": "_________ John and Mark are the best students in our class.",
+   "options": [
+    "A) all",
+    "B) both",
+    "C) two",
+    "D) every"
+   ],
+   "answer": "B",
+   "_src": 32
+  },
+  {
+   "id": "1.2",
+   "stem": "Hurry up! They'll be arriving _________ , and we're not ready yet.",
+   "options": [
+    "A) any minute now",
+    "B) now",
+    "C) a while",
+    "D) as of today"
+   ],
+   "answer": "A",
+   "_src": 33
+  },
+  {
+   "id": "1.3",
+   "stem": "My football team won the first _________ of the two – match tie.",
+   "options": [
+    "A) arm",
+    "B) leg",
+    "C) wrist",
+    "D) foot"
+   ],
+   "answer": "B",
+   "_src": 34
+  },
+  {
+   "id": "1.4",
+   "stem": "You can't fool Sue, she's an old _________ at this game!",
+   "options": [
+    "A) arm",
+    "B) leg",
+    "C) hand",
+    "D) foot"
+   ],
+   "answer": "C",
+   "_src": 35
+  },
+  {
+   "id": "1.5",
+   "stem": "The villa lies in the _________ of the French countryside.",
+   "options": [
+    "A) heart",
+    "B) mouth",
+    "C) liver",
+    "D) foot"
+   ],
+   "answer": "A",
+   "_src": 36
+  },
+  {
+   "id": "1.6",
+   "stem": "The village lay at the _________ of the mountain beside the lake.",
+   "options": [
+    "A) mouth",
+    "B) hand",
+    "C) knee",
+    "D) foot"
+   ],
+   "answer": "D",
+   "_src": 37
+  },
+  {
+   "id": "1.7",
+   "stem": "My cat is bizarre. He follows me _________ I go. He never leaves my side.",
+   "options": [
+    "A) whenever",
+    "B) where",
+    "C) places",
+    "D) wherever"
+   ],
+   "answer": "D",
+   "_src": 38
+  },
+  {
+   "id": "1.8",
+   "stem": "Look at _________ hot air balloons in the sky! Aren't they spectacular?",
+   "options": [
+    "A) those",
+    "B) these",
+    "C) that",
+    "D) this"
+   ],
+   "answer": "A",
+   "_src": 39
+  },
+  {
+   "id": "1.9",
+   "stem": "During the party I sat on the _________ of the chair because there was nowhere else to sit.",
+   "options": [
+    "A) hand",
+    "B) arm",
+    "C) leg",
+    "D) foot"
+   ],
+   "answer": "B",
+   "_src": 40
+  },
+  {
+   "id": "1.10",
+   "stem": "When summer _________ and the sun appears it's good to use straw hats and sunglasses.",
+   "options": [
+    "A) arrives",
+    "B) brings",
+    "C) comes",
+    "D) come"
+   ],
+   "answer": "C",
+   "_src": 41
+  },
+  {
+   "id": "1.11",
+   "stem": "You don't have to be afraid of this lizard, it's _________",
+   "options": [
+    "A) harmful",
+    "B) harmless",
+    "C) harming",
+    "D) charming"
+   ],
+   "answer": "B",
+   "_src": 42
+  },
+  {
+   "id": "1.12",
+   "stem": "No one can do _________ water for more than two days.",
+   "options": [
+    "A) without",
+    "B) with",
+    "C) to",
+    "D) after"
+   ],
+   "answer": "A",
+   "_src": 43
+  },
+  {
+   "id": "1.13",
+   "stem": "Charlie, can you _________ me a favour and babysit tonight?",
+   "options": [
+    "A) make",
+    "B) create",
+    "C) do",
+    "D) have"
+   ],
+   "answer": "C",
+   "_src": 44
+  },
+  {
+   "id": "1.14",
+   "stem": "The trouble with paperback book is that the _________ often breaks.",
+   "options": [
+    "A) hand",
+    "B) top",
+    "C) leg",
+    "D) spine"
+   ],
+   "answer": "D",
+   "_src": 45
+  },
+  {
+   "id": "1.15",
+   "stem": "You've got a lot of _________ to speak to me like that!",
+   "options": [
+    "A) cheek",
+    "B) chin",
+    "C) mouth",
+    "D) ear"
+   ],
+   "answer": "A",
+   "_src": 46
+  }
+ ],
+ "e1c2_prep": [
+  {
+   "id": "1.1",
+   "stem": "The Smith's must be having a renovation. I saw two ladders leaning _________ the house wall.",
+   "options": [
+    "A) over",
+    "B) on",
+    "C) against",
+    "D) at"
+   ],
+   "answer": "C",
+   "_src": 47
+  },
+  {
+   "id": "1.2",
+   "stem": "I can't get _________ to Sara. I think she's switched off her mobile.",
+   "options": [
+    "A) over",
+    "B) on",
+    "C) throughout",
+    "D) through"
+   ],
+   "answer": "D",
+   "_src": 48
+  },
+  {
+   "id": "1.3",
+   "stem": "It's so unfair! Susan does less and she earns twice _________ me.",
+   "options": [
+    "A) too much as",
+    "B) as much as",
+    "C) so much as",
+    "D) many than"
+   ],
+   "answer": "B",
+   "_src": 49
+  },
+  {
+   "id": "1.4",
+   "stem": "The new management of the company does not allow _________ on the premises.",
+   "options": [
+    "A) to smoking",
+    "B) smoking",
+    "C) to smoke",
+    "D) smoke"
+   ],
+   "answer": "B",
+   "_src": 50
+  },
+  {
+   "id": "1.5",
+   "stem": "The suspect was seen _________ the pub at 3 a.m. and drive away.",
+   "options": [
+    "A) left",
+    "B) leave",
+    "C) to leave",
+    "D) to leaving"
+   ],
+   "answer": "C",
+   "_src": 51
+  },
+  {
+   "id": "1.6",
+   "stem": "Even though the police went _________ the burglars they didn't catch them.",
+   "options": [
+    "A) for",
+    "B) against",
+    "C) away",
+    "D) after"
+   ],
+   "answer": "D",
+   "_src": 52
+  },
+  {
+   "id": "1.7",
+   "stem": "America's national symbol is that great bird which _________ as the bald eagle.",
+   "options": [
+    "A) is know",
+    "B) knew",
+    "C) is knew",
+    "D) is known"
+   ],
+   "answer": "D",
+   "_src": 53
+  },
+  {
+   "id": "1.8",
+   "stem": "The Netherlands _________ to be one of the most beautiful countries in Europe.",
+   "options": [
+    "A) says",
+    "B) is said",
+    "C) is saying",
+    "D) saying"
+   ],
+   "answer": "B",
+   "_src": 54
+  },
+  {
+   "id": "1.9",
+   "stem": "Susan hopes her new house _________ by December 2017.",
+   "options": [
+    "A) will have been built",
+    "B) will be build",
+    "C) would being build",
+    "D) will being built"
+   ],
+   "answer": "A",
+   "_src": 55
+  },
+  {
+   "id": "1.10",
+   "stem": "Brian, if you _________ your homework, you won't be allowed to go out tonight.",
+   "options": [
+    "A) won't do",
+    "B) don't do",
+    "C) wouldn't do",
+    "D) didn't do"
+   ],
+   "answer": "B",
+   "_src": 56
+  }
+ ],
+ "e1c2_vocab_b": [
+  {
+   "id": "1.1",
+   "stem": "Do you like this new _________ I got for peeling apples?",
+   "options": [
+    "A) issue",
+    "B) gadget",
+    "C) electric",
+    "D) gauge"
+   ],
+   "answer": "B",
+   "_src": 67
+  },
+  {
+   "id": "1.2",
+   "stem": "It's unfortunate, but I'm afraid you give me no _________",
+   "options": [
+    "A) matter",
+    "B) wonder",
+    "C) choice",
+    "D) concern"
+   ],
+   "answer": "C",
+   "_src": 68
+  },
+  {
+   "id": "1.3",
+   "stem": "Go home George. There's no _________ in both of us waiting here.",
+   "options": [
+    "A) way",
+    "B) point",
+    "C) means",
+    "D) matter"
+   ],
+   "answer": "B",
+   "_src": 69
+  },
+  {
+   "id": "1.4",
+   "stem": "By the time the police arrived, there was no _________ of the burglars.",
+   "options": [
+    "A) trace",
+    "B) use",
+    "C) way",
+    "D) vision"
+   ],
+   "answer": "A",
+   "_src": 70
+  },
+  {
+   "id": "1.5",
+   "stem": "When Judy saw our new house she was _________ with envy.",
+   "options": [
+    "A) blue",
+    "B) red",
+    "C) pink",
+    "D) green"
+   ],
+   "answer": "D",
+   "_src": 71
+  },
+  {
+   "id": "1.6",
+   "stem": "Martha has made a big _________ this term. She has received best marks and the scholarship.",
+   "options": [
+    "A) effort",
+    "B) try",
+    "C) work",
+    "D) taste"
+   ],
+   "answer": "A",
+   "_src": 72
+  },
+  {
+   "id": "1.7",
+   "stem": "Sue never comes to yoga classes now. We only see her once in a _________ moon.",
+   "options": [
+    "A) blue",
+    "B) red",
+    "C) pink",
+    "D) green"
+   ],
+   "answer": "A",
+   "_src": 73
+  },
+  {
+   "id": "1.8",
+   "stem": "I'm fed up with all the cooking and cleaning and doing the laundry. I feel completely _________ off.",
+   "options": [
+    "A) blued",
+    "B) browned",
+    "C) darkened",
+    "D) blacked"
+   ],
+   "answer": "B",
+   "_src": 74
+  },
+  {
+   "id": "1.9",
+   "stem": "All the pupils who misbehaved have been kept in _________",
+   "options": [
+    "A) prison",
+    "B) jail",
+    "C) detention",
+    "D) arrest"
+   ],
+   "answer": "C",
+   "_src": 75
+  }
+ ],
+ "e2c1_grammar": [
+  {
+   "id": "1.1",
+   "stem": "Wait here, please. We need another quarter of an hour. Your car _________ fixed.",
+   "options": [
+    "A) is",
+    "B) is being",
+    "C) has been",
+    "D) was"
+   ],
+   "answer": "B",
+   "_src": 6
+  },
+  {
+   "id": "1.2",
+   "stem": "The homework _________ corrected by the teacher by next week.",
+   "options": [
+    "A) is going to be",
+    "B) will be",
+    "C) will have been",
+    "D) is being"
+   ],
+   "answer": "C",
+   "_src": 7
+  },
+  {
+   "id": "1.3",
+   "stem": "They _________ to school by their neighbours today. That's why they're in a hurry.",
+   "options": [
+    "A) have been taken",
+    "B) are being taken",
+    "C) will be being taken",
+    "D) were taken"
+   ],
+   "answer": "A",
+   "_src": 8
+  },
+  {
+   "id": "1.4",
+   "stem": "We arrived at the airport on time. However, we found out that our flight _________ due to bad weather conditions.",
+   "options": [
+    "A) is delayed",
+    "B) has been delayed",
+    "C) was delaying",
+    "D) was delayed"
+   ],
+   "answer": "D",
+   "_src": 9
+  },
+  {
+   "id": "1.5",
+   "stem": "This is the first time the show _________ performed by disabled actors.",
+   "options": [
+    "A) will be",
+    "B) is being",
+    "C) has been",
+    "D) Is"
+   ],
+   "answer": "C",
+   "_src": 10
+  },
+  {
+   "id": "1.6",
+   "stem": "When I found my wallet, I discovered that my credit cards _________ stolen.",
+   "options": [
+    "A) had been",
+    "B) have been",
+    "C) are",
+    "D) were being"
+   ],
+   "answer": "A",
+   "_src": 11
+  },
+  {
+   "id": "1.7",
+   "stem": "This room _________ emptied right now. Please leave all your belongings and head towards the door.",
+   "options": [
+    "A) has been",
+    "B) is",
+    "C) must have been",
+    "D) must be"
+   ],
+   "answer": "D",
+   "_src": 12
+  },
+  {
+   "id": "1.8",
+   "stem": "The teacher ordered the students _________ write anything after the bell.",
+   "options": [
+    "A) to not",
+    "B) don't",
+    "C) not to",
+    "D) do not"
+   ],
+   "answer": "C",
+   "_src": 13
+  },
+  {
+   "id": "1.9",
+   "stem": "Since I'm a very independent person, I hate _________ what to do.",
+   "options": [
+    "A) to be",
+    "B) being told",
+    "C) being to tell",
+    "D) telling"
+   ],
+   "answer": "B",
+   "_src": 14
+  },
+  {
+   "id": "1.10",
+   "stem": "He was wondering which film _________ to watch that night.",
+   "options": [
+    "A) was she going",
+    "B) she is going",
+    "C) she was going",
+    "D) is she going"
+   ],
+   "answer": "C",
+   "_src": 15
+  },
+  {
+   "id": "1.11",
+   "stem": "Sue asked Pam where _________ such a lovely necklace.",
+   "options": [
+    "A) she had bought",
+    "B) did she buy",
+    "C) has she bought",
+    "D) had she bought"
+   ],
+   "answer": "A",
+   "_src": 16
+  },
+  {
+   "id": "1.12",
+   "stem": "On their very first date Tony told Samantha that he _________ her.",
+   "options": [
+    "A) has loved",
+    "B) loved",
+    "C) would have loved",
+    "D) must have loved"
+   ],
+   "answer": "B",
+   "_src": 17
+  },
+  {
+   "id": "1.13",
+   "stem": "My cousin used to boast _________ the best optician ever.",
+   "options": [
+    "A) to be",
+    "B) to have been",
+    "C) about being",
+    "D) on being"
+   ],
+   "answer": "C",
+   "_src": 18
+  },
+  {
+   "id": "1.14",
+   "stem": "I intended to leave the party early, but the hosts insisted _________ a bit longer.",
+   "options": [
+    "A) on my staying",
+    "B) on having stayed",
+    "C) with my staying",
+    "D) about my staying"
+   ],
+   "answer": "A",
+   "_src": 19
+  },
+  {
+   "id": "1.15",
+   "stem": "Jane's classmates wrongly accused her _________ rumours about their form teacher.",
+   "options": [
+    "A) for spreading",
+    "B) of having spread",
+    "C) for spreading",
+    "D) on having spread"
+   ],
+   "answer": "B",
+   "_src": 20
+  },
+  {
+   "id": "1.16",
+   "stem": "More and more people _________ these days. It's ever so common!",
+   "options": [
+    "A) have run",
+    "B) run",
+    "C) are running",
+    "D) will have been running"
+   ],
+   "answer": "C",
+   "_src": 21
+  },
+  {
+   "id": "1.17",
+   "stem": "Pete and Barbara _________ new bookshelves in the lounge now. They won't have time for a quick meeting in the cafe.",
+   "options": [
+    "A) are fitting",
+    "B) fit",
+    "C) have been fitting",
+    "D) are fitted"
+   ],
+   "answer": "A",
+   "_src": 22
+  },
+  {
+   "id": "1.18",
+   "stem": "It's only Wednesday and she _________ two exams this week. She still has three to sit.",
+   "options": [
+    "A) will have taken",
+    "B) is taking",
+    "C) has taken",
+    "D) have been taking"
+   ],
+   "answer": "C",
+   "_src": 23
+  },
+  {
+   "id": "1.19",
+   "stem": "Brian's really confused. He _________ to solve this puzzle for hours now!",
+   "options": [
+    "A) has been trying",
+    "B) is trying",
+    "C) tries",
+    "D) has tried"
+   ],
+   "answer": "A",
+   "_src": 24
+  },
+  {
+   "id": "1.20",
+   "stem": "Grace Kelly _________ wonderfully in this musical. I simply love watching her!",
+   "options": [
+    "A) acts",
+    "B) is acting",
+    "C) have been acting",
+    "D) would act"
+   ],
+   "answer": "A",
+   "_src": 25
+  },
+  {
+   "id": "1.21",
+   "stem": "I do hope deforestation _________ a problem of the past, since we've those new regulations now.",
+   "options": [
+    "A) was lately becoming",
+    "B) is just becoming",
+    "C) would recently have become",
+    "D) will soon become"
+   ],
+   "answer": "D",
+   "_src": 26
+  },
+  {
+   "id": "1.22",
+   "stem": "Watch out! You _________ right into this muddy puddle!",
+   "options": [
+    "A) would stepped",
+    "B) have stepped",
+    "C) will step",
+    "D) are going to step"
+   ],
+   "answer": "D",
+   "_src": 27
+  },
+  {
+   "id": "1.23",
+   "stem": "This time on Tuesday we _________ our favourite series!",
+   "options": [
+    "A) will have watched",
+    "B) will be watching",
+    "C) would watch",
+    "D) are watching"
+   ],
+   "answer": "B",
+   "_src": 28
+  },
+  {
+   "id": "1.24",
+   "stem": "Today's fine but you won't be able to use this room tomorrow. They _________ the room.",
+   "options": [
+    "A) will be painting",
+    "B) have been painting",
+    "C) will have painted",
+    "D) Paint"
+   ],
+   "answer": "A",
+   "_src": 29
+  },
+  {
+   "id": "1.25",
+   "stem": "As you _________ by now, they are planning to build a new school in the vicinity of Radom.",
+   "options": [
+    "A) will be hearing",
+    "B) heard",
+    "C) will have heard",
+    "D) have been heating"
+   ],
+   "answer": "C",
+   "_src": 30
+  },
+  {
+   "id": "1.26",
+   "stem": "So this was the uniform I _________ all year round. Well, I had no choice, did I?",
+   "options": [
+    "A) were wearing",
+    "B) was to wear",
+    "C) have worn",
+    "D) will have been wearing"
+   ],
+   "answer": "B",
+   "_src": 31
+  },
+  {
+   "id": "1.27",
+   "stem": "Sarah seemed to be working herself into panic. She _________ her final tests in just two weeks.",
+   "options": [
+    "A) was sitting",
+    "B) would sat",
+    "C) has been sitting",
+    "D) sat"
+   ],
+   "answer": "A",
+   "_src": 32
+  },
+  {
+   "id": "1.28",
+   "stem": "Steven just _________ there for some time, doing absolutely nothing.",
+   "options": [
+    "A) lain",
+    "B) lie",
+    "C) lay",
+    "D) lied"
+   ],
+   "answer": "C",
+   "_src": 33
+  },
+  {
+   "id": "1.29",
+   "stem": "The blackboards, chalk, desks, cupboards _________ idle since the school closed.",
+   "options": [
+    "A) lied",
+    "B) have laid",
+    "C) laid",
+    "D) have lain"
+   ],
+   "answer": "D",
+   "_src": 34
+  },
+  {
+   "id": "1.30",
+   "stem": "The cat _________ back its ears ready to attack.",
+   "options": [
+    "A) laid",
+    "B) lain",
+    "C) lay",
+    "D) lied"
+   ],
+   "answer": "A",
+   "_src": 35
+  }
+ ],
+ "e2c1_vocab": [
+  {
+   "id": "1.1",
+   "stem": "Mr Johnson arrived wearing a suit, but he put on his _________ before going into the workshop .",
+   "options": [
+    "A) overcoat",
+    "B) cardigan",
+    "C) overalls",
+    "D) dressing-gown"
+   ],
+   "answer": "C",
+   "_src": 36
+  },
+  {
+   "id": "1.2",
+   "stem": "Don't go for this suit. The _________ are too wide to my taste.",
+   "options": [
+    "A) lapels",
+    "B) linings",
+    "C) collars",
+    "D) creases"
+   ],
+   "answer": "A",
+   "_src": 37
+  },
+  {
+   "id": "1.3",
+   "stem": "Excuse me, I'm afraid you've got your blazer on _________ .",
+   "options": [
+    "A) in reverse",
+    "B) inside out",
+    "C) upside down",
+    "D) outward"
+   ],
+   "answer": "B",
+   "_src": 38
+  },
+  {
+   "id": "1.4",
+   "stem": "The names of the people who were killed cannot be released until we have informed their next of _________",
+   "options": [
+    "A) family line",
+    "B) blood",
+    "C) relatives",
+    "D) kin"
+   ],
+   "answer": "D",
+   "_src": 39
+  },
+  {
+   "id": "1.5",
+   "stem": "My jet black hair is the most obvious proof that my _________ were Spanish.",
+   "options": [
+    "A) ancestors",
+    "B) predecessors",
+    "C) descendants",
+    "D) Disciples"
+   ],
+   "answer": "A",
+   "_src": 40
+  },
+  {
+   "id": "1.6",
+   "stem": "We do not call ourselves entrepreneurs. What we run is just a _________ business.",
+   "options": [
+    "A) mum - and- dad",
+    "B) mom - and - pop",
+    "C) me - and - you",
+    "D) dad - and – mum"
+   ],
+   "answer": "B",
+   "_src": 41
+  },
+  {
+   "id": "1.7",
+   "stem": "I couldn't find two that matched, so I was forced to wear _________ socks.",
+   "options": [
+    "A) unfit",
+    "B) mixed",
+    "C) uneven",
+    "D) odd"
+   ],
+   "answer": "D",
+   "_src": 42
+  },
+  {
+   "id": "1.8",
+   "stem": "Since they are not married their children are _________ .",
+   "options": [
+    "A) filial",
+    "B) legitimate",
+    "C) illegitimate",
+    "D) unfilial"
+   ],
+   "answer": "C",
+   "_src": 43
+  },
+  {
+   "id": "1.9",
+   "stem": "I didn't cook anything. I was just fiddling _________ in the kitchen.",
+   "options": [
+    "A) on",
+    "B) around",
+    "C) in",
+    "D) over"
+   ],
+   "answer": "B",
+   "_src": 44
+  },
+  {
+   "id": "1.10",
+   "stem": "Sue's joke was so funny that everyone just fell _________ laughing",
+   "options": [
+    "A) about",
+    "B) over",
+    "C) apart",
+    "D) in"
+   ],
+   "answer": "A",
+   "_src": 45
+  },
+  {
+   "id": "1.11",
+   "stem": "Six -year-old girls simply love to boss people _________ .",
+   "options": [
+    "A) out",
+    "B) about",
+    "C) over",
+    "D) through"
+   ],
+   "answer": "B",
+   "_src": 46
+  },
+  {
+   "id": "1.12",
+   "stem": "If you're not satisfied with the situation, why don't you try bringing _________ some changes?",
+   "options": [
+    "A) out",
+    "B) forward",
+    "C) in",
+    "D) about"
+   ],
+   "answer": "D",
+   "_src": 47
+  },
+  {
+   "id": "1.13",
+   "stem": "I'm sure you're right, but I'm afraid it'll take you ages to get your point _________ .",
+   "options": [
+    "A) out with",
+    "B) off with",
+    "C) across",
+    "D) by"
+   ],
+   "answer": "C",
+   "_src": 48
+  },
+  {
+   "id": "1.14",
+   "stem": "They've split up! How did that come _________ ?",
+   "options": [
+    "A) out",
+    "B) about",
+    "C) around",
+    "D) apart"
+   ],
+   "answer": "B",
+   "_src": 49
+  },
+  {
+   "id": "1.15",
+   "stem": "Look at Tony. He really takes _________ his father.",
+   "options": [
+    "A) after",
+    "B) on",
+    "C) along",
+    "D) over"
+   ],
+   "answer": "A",
+   "_src": 50
+  },
+  {
+   "id": "1.16",
+   "stem": "Dan said goodbye and hung _________",
+   "options": [
+    "A) off",
+    "B) in",
+    "C) up",
+    "D) over"
+   ],
+   "answer": "C",
+   "_src": 51
+  },
+  {
+   "id": "1.17",
+   "stem": "You shouldn't be afraid to own _________ to your mistakes as they can teach you more.",
+   "options": [
+    "A) down",
+    "B) up",
+    "C) in",
+    "D) over"
+   ],
+   "answer": "B",
+   "_src": 52
+  },
+  {
+   "id": "1.18",
+   "stem": "Studying has been taking _________ all of my time recently.",
+   "options": [
+    "A) up",
+    "B) over",
+    "C) in",
+    "D) with"
+   ],
+   "answer": "A",
+   "_src": 53
+  },
+  {
+   "id": "1.19",
+   "stem": "It was raining heavily but we didn't have to wait long as the car drew _________ at the front entrance within minutes.",
+   "options": [
+    "A) in",
+    "B) over",
+    "C) down",
+    "D) up"
+   ],
+   "answer": "D",
+   "_src": 54
+  },
+  {
+   "id": "1.20",
+   "stem": "The girl came _________ high fever quite unexpectedly and had to be rushed to the nearest hospital.",
+   "options": [
+    "A) off",
+    "B) down with",
+    "C) in",
+    "D) up with"
+   ],
+   "answer": "B",
+   "_src": 55
+  },
+  {
+   "id": "1.21",
+   "stem": "Aromatherapy may be a controversial treatment but it helped Francis and I'm not going to run it _________",
+   "options": [
+    "A) down",
+    "B) off",
+    "C) over",
+    "D) in"
+   ],
+   "answer": "A",
+   "_src": 56
+  },
+  {
+   "id": "1.22",
+   "stem": "His sudden illness made him stand _________ as a candidate for the committee member.",
+   "options": [
+    "A) off",
+    "B) in to",
+    "C) under",
+    "D) down"
+   ],
+   "answer": "D",
+   "_src": 57
+  },
+  {
+   "id": "1.23",
+   "stem": "'I wish to dye my hair auburn. What do you think?' ' _________ ?! You'd look terrible!'",
+   "options": [
+    "A) Reddish brown",
+    "B) Dark blond",
+    "C) Light grey",
+    "D) Pitch black"
+   ],
+   "answer": "A",
+   "_src": 58
+  },
+  {
+   "id": "1.24",
+   "stem": "I can see you've got a fresh _________ on your eyelid. My granny would say to rub it with a silver ring.",
+   "options": [
+    "A) stye",
+    "B) wart",
+    "C) sore",
+    "D) scar"
+   ],
+   "answer": "A",
+   "_src": 59
+  },
+  {
+   "id": "1.25",
+   "stem": "How many piercings can you have in one _________ Johnny?",
+   "options": [
+    "A) pimple",
+    "B) lobe",
+    "C) gum",
+    "D) mole"
+   ],
+   "answer": "B",
+   "_src": 60
+  },
+  {
+   "id": "1.26",
+   "stem": "While skating I _________ one of my front teeth and now need to visit the dentist.",
+   "options": [
+    "A) scalded",
+    "B) singed",
+    "C) grazed",
+    "D) chipped"
+   ],
+   "answer": "D",
+   "_src": 61
+  },
+  {
+   "id": "1.27",
+   "stem": "Look out Len! Don't _________ yourself with that mug. It's full of hot coffee.",
+   "options": [
+    "A) scald",
+    "B) acute",
+    "C) endure",
+    "D) tumb"
+   ],
+   "answer": "A",
+   "_src": 62
+  },
+  {
+   "id": "1.28",
+   "stem": "Those shoes won't fit. My _________ is just too high and I rather need a pair with shoelaces.",
+   "options": [
+    "A) Sole",
+    "B) shin",
+    "C) instep",
+    "D) tendon"
+   ],
+   "answer": "C",
+   "_src": 63
+  },
+  {
+   "id": "1.29",
+   "stem": "One part of the spine is called a/an _________",
+   "options": [
+    "A) artebra",
+    "B) artebre",
+    "C) vartebra",
+    "D) vertebra"
+   ],
+   "answer": "D",
+   "_src": 64
+  },
+  {
+   "id": "1.30",
+   "stem": "Are you going to the toilet again? Gosh, your _________ is really small!",
+   "options": [
+    "A) pelvis",
+    "B) appendix",
+    "C) intestine",
+    "D) bladder"
+   ],
+   "answer": "D",
+   "_src": 65
+  }
+ ],
+ "e3_vocab": [
+  {
+   "id": "1.1",
+   "stem": "Have you ever thought of _________ your ambition of becoming a translator, Ned?",
+   "options": [
+    "A) completing",
+    "B) following",
+    "C) realising",
+    "D) imposting"
+   ],
+   "answer": "C",
+   "_src": 1
+  },
+  {
+   "id": "1.2",
+   "stem": "When the competition was over the runners took a lap of _________ waving to the crowd.",
+   "options": [
+    "A) victory",
+    "B) honour",
+    "C) winning",
+    "D) success"
+   ],
+   "answer": "B",
+   "_src": 2
+  },
+  {
+   "id": "1.3",
+   "stem": "The local papers _________ the event well and hundreds of people turned up.",
+   "options": [
+    "A) forecasted",
+    "B) publicised",
+    "C) published",
+    "D) broadcasted"
+   ],
+   "answer": "B",
+   "_src": 3
+  },
+  {
+   "id": "1.4",
+   "stem": "Harry's teacher made no _________ to his misbehaviour during the summer camp and the boy was truly grateful for it.",
+   "options": [
+    "A) reference",
+    "B) gesture",
+    "C) implication",
+    "D) menton"
+   ],
+   "answer": "A",
+   "_src": 4
+  },
+  {
+   "id": "1.5",
+   "stem": "_________ love is the feeling we usually remember most from our teenage years.",
+   "options": [
+    "A) misrequited",
+    "B) disrequited",
+    "C) unrequited",
+    "D) irrequited"
+   ],
+   "answer": "C",
+   "_src": 5
+  },
+  {
+   "id": "1.6",
+   "stem": "Having friends depends on _________ time for them, not money.",
+   "options": [
+    "A) have you",
+    "B) that you have",
+    "C) whether you have",
+    "D) if have you"
+   ],
+   "answer": "C",
+   "_src": 6
+  },
+  {
+   "id": "1.7",
+   "stem": "Have you really bought a/an _________ boat? But it could have been stolen!",
+   "options": [
+    "A) nonlicensed",
+    "B) unlicensed",
+    "C) illicensed",
+    "D) dislicensed"
+   ],
+   "answer": "B",
+   "_src": 7
+  },
+  {
+   "id": "1.8",
+   "stem": "The example you gave is a very _________ one. Could you think of another one, maybe?",
+   "options": [
+    "A) atypical",
+    "B) intypical",
+    "C) mistypical",
+    "D) nontypical"
+   ],
+   "answer": "A",
+   "_src": 8
+  },
+  {
+   "id": "1.9",
+   "stem": "More and more teachers _________ smartphones in their lessons.",
+   "options": [
+    "A) would use",
+    "B) use",
+    "C) are using",
+    "D) will have been Rusing"
+   ],
+   "answer": "C",
+   "_src": 9
+  },
+  {
+   "id": "1.10",
+   "stem": "And do you know this one about an old man who _________ to the doctor's and _________ 'Doctor, Doctor'.",
+   "options": [
+    "A) goes / says",
+    "B) is going / is saying",
+    "C) went / have said",
+    "D) has gone / Said"
+   ],
+   "answer": "A",
+   "_src": 10
+  },
+  {
+   "id": "1.11",
+   "stem": "You shouldn't be surprised that I'm limping as I _________ my ankle in the mountains. I'll never go skiing again!",
+   "options": [
+    "A) used to twist",
+    "B) had twisted",
+    "C) twisted",
+    "D) have twisted"
+   ],
+   "answer": "D",
+   "_src": 11
+  },
+  {
+   "id": "1.12",
+   "stem": "Teenagers caught stealing at school _________ their deeds by doing 10 hours of voluntary work.",
+   "options": [
+    "A) have made repaying",
+    "B) is made to repay",
+    "C) are made to repay",
+    "D) make the repay"
+   ],
+   "answer": "C",
+   "_src": 12
+  },
+  {
+   "id": "1.13",
+   "stem": "My father _________ as an excellent science-fiction writer.",
+   "options": [
+    "A) got to be known",
+    "B) was known",
+    "C) had been known",
+    "D) might have known"
+   ],
+   "answer": "B",
+   "_src": 13
+  },
+  {
+   "id": "1.14",
+   "stem": "When reading a book I usually jump straight to the first chapter but the _________ at the beginning of this book was so interesting that I read it twice!",
+   "options": [
+    "A) editorial",
+    "B) output",
+    "C) summary",
+    "D) prefacje"
+   ],
+   "answer": "D",
+   "_src": 14
+  },
+  {
+   "id": "1.15",
+   "stem": "My mum used to be a secretary and she knows how to take notes _________",
+   "options": [
+    "A) in shorthand",
+    "B) illegibly",
+    "C) tuning in",
+    "D) by charakter"
+   ],
+   "answer": "A",
+   "_src": 15
+  },
+  {
+   "id": "1.16",
+   "stem": "Mike _________ another scholarship recently only because of his high educational achievements.",
+   "options": [
+    "A) will be awarded",
+    "B) has been awarded",
+    "C) would have been awarded",
+    "D) is awarded"
+   ],
+   "answer": "B",
+   "_src": 16
+  },
+  {
+   "id": "1.17",
+   "stem": "My cousin _________ the schedule the teacher prepared for him and study hard or he won't pass his exams this year.",
+   "options": [
+    "A) Is to be following",
+    "B) should have followed",
+    "C) had better follow",
+    "D) would better follow"
+   ],
+   "answer": "C",
+   "_src": 17
+  },
+  {
+   "id": "1.18",
+   "stem": "The manager _________ for the whole dinner.",
+   "options": [
+    "A) insisted on paying",
+    "B) insisted to pay",
+    "C) has insisted to have paid",
+    "D) has insisted on being paid"
+   ],
+   "answer": "A",
+   "_src": 18
+  },
+  {
+   "id": "1.19",
+   "stem": "My aunty from New York came to visit us and I couldn't believe how many _________ with her.",
+   "options": [
+    "A) presents did she have",
+    "B) she had presents",
+    "C) presents she had",
+    "D) presents had she"
+   ],
+   "answer": "C",
+   "_src": 19
+  },
+  {
+   "id": "1.20",
+   "stem": "Turn the music down, Len! It's so loud I can hardly hear what _________ to me!",
+   "options": [
+    "A) Greg is saying",
+    "B) is Greg saying",
+    "C) does Greg say",
+    "D) that Greg is saling"
+   ],
+   "answer": "A",
+   "_src": 20
+  },
+  {
+   "id": "1.21",
+   "stem": "There's no need to set the date for the meeting, I guess because we _________ each other in the gym anyway every weekend.",
+   "options": [
+    "A) will have seen",
+    "B) have been seeing",
+    "C) see",
+    "D) will be seeing"
+   ],
+   "answer": "D",
+   "_src": 21
+  },
+  {
+   "id": "1.22",
+   "stem": "If I were you I'd consult a/an _________ before trying to assemble those drawers.",
+   "options": [
+    "A) manual",
+    "B) bulletin",
+    "C) reference book",
+    "D) index"
+   ],
+   "answer": "A",
+   "_src": 22
+  },
+  {
+   "id": "1.23",
+   "stem": "You _________ about the accident by now, I assume.",
+   "options": [
+    "A) aren't going to read",
+    "B) won't read",
+    "C) won't have read",
+    "D) won't be Reading"
+   ],
+   "answer": "C",
+   "_src": 23
+  },
+  {
+   "id": "1.24",
+   "stem": "When Jack _________ in primary school he _________ his maths homework which made his mum furious as she was a maths teacher there.",
+   "options": [
+    "A) has been / has been constantly forgetting",
+    "B) had been / was constantly forgetting",
+    "C) was / constantly forgot",
+    "D) was / was constantly forgetting"
+   ],
+   "answer": "D",
+   "_src": 24
+  },
+  {
+   "id": "1.25",
+   "stem": "I really wanted to pass this exam well so my teacher insisted that _________ me with preparing for it.",
+   "options": [
+    "A) she help",
+    "B) she will help",
+    "C) she helps",
+    "D) she did help"
+   ],
+   "answer": "A",
+   "_src": 25
+  },
+  {
+   "id": "1.26",
+   "stem": "When my pet rabbit died my older sister told me _________ sad and promised to get me a new one for my birthday.",
+   "options": [
+    "A) not be",
+    "B) don't be",
+    "C) to not be",
+    "D) not to be"
+   ],
+   "answer": "D",
+   "_src": 26
+  },
+  {
+   "id": "1.27",
+   "stem": "Mary was looking for the post office but didn't really know _________ she should ask.",
+   "options": [
+    "A) which",
+    "B) whose",
+    "C) who",
+    "D) whom"
+   ],
+   "answer": "D",
+   "_src": 27
+  },
+  {
+   "id": "1.28",
+   "stem": "Tony has been thoroughly _________ in astronomy since the field trip with his class.",
+   "options": [
+    "A) absorbed",
+    "B) disappointed",
+    "C) interested",
+    "D) occupied"
+   ],
+   "answer": "A",
+   "_src": 28
+  },
+  {
+   "id": "1.29",
+   "stem": "_________ happened!",
+   "options": [
+    "A) That we wanted",
+    "B) What we wanted",
+    "C) Which we wanted",
+    "D) What did we want"
+   ],
+   "answer": "B",
+   "_src": 29
+  },
+  {
+   "id": "1.30",
+   "stem": "_________ proper education is important.",
+   "options": [
+    "A) Whether a child gets",
+    "B) Does a child get",
+    "C) If a child gets",
+    "D) Should a child Get"
+   ],
+   "answer": "A",
+   "_src": 30
+  },
+  {
+   "id": "1.31",
+   "stem": "Jane asked him _________ being a well-known pianist.",
+   "options": [
+    "A) if he were enjoying",
+    "B) whether he enjoyed",
+    "C) did he enjoy",
+    "D) of enjoying"
+   ],
+   "answer": "B",
+   "_src": 31
+  },
+  {
+   "id": "1.32",
+   "stem": "Mum suggested that he _________ lemon ice-cream this time.",
+   "options": [
+    "A) mustn't try",
+    "B) tries",
+    "C) try",
+    "D) would try"
+   ],
+   "answer": "C",
+   "_src": 32
+  },
+  {
+   "id": "1.33",
+   "stem": "Brendan _________ too many books to read in the semester.",
+   "options": [
+    "A) complained of having",
+    "B) complained to have had",
+    "C) complained having",
+    "D) complained that he have Has"
+   ],
+   "answer": "A",
+   "_src": 33
+  },
+  {
+   "id": "1.34",
+   "stem": "Are you really going to _________ everything I told you about this school and enroll?",
+   "options": [
+    "A) disregard",
+    "B) irregard",
+    "C) unregard",
+    "D) ilregard"
+   ],
+   "answer": "A",
+   "_src": 34
+  },
+  {
+   "id": "1.35",
+   "stem": "We _________ with my brother's family until we _________ a flat of our own.",
+   "options": [
+    "A) live / buy",
+    "B) are living / buy",
+    "C) are living / will buy",
+    "D) live / will buy"
+   ],
+   "answer": "B",
+   "_src": 35
+  },
+  {
+   "id": "1.36",
+   "stem": "_________ can kill even the strongest feeling, so beware!",
+   "options": [
+    "A) untrust",
+    "B) distrust",
+    "C) iltrust",
+    "D) intrust"
+   ],
+   "answer": "B",
+   "_src": 36
+  },
+  {
+   "id": "1.37",
+   "stem": "Jackson seems completely _________ of working peacefully in a group.",
+   "options": [
+    "A) discapable",
+    "B) noncapable",
+    "C) uncapable",
+    "D) incapable"
+   ],
+   "answer": "D",
+   "_src": 37
+  },
+  {
+   "id": "1.38",
+   "stem": "Many enemy soldiers got caught and _________",
+   "options": [
+    "A) disarmed",
+    "B) unarmed",
+    "C) misarmed",
+    "D) illarmed"
+   ],
+   "answer": "A",
+   "_src": 38
+  },
+  {
+   "id": "1.39",
+   "stem": "The building was known _________ during the last war.",
+   "options": [
+    "A) to had been damaged",
+    "B) to being damaged",
+    "C) to have been damaged",
+    "D) to be damaged"
+   ],
+   "answer": "C",
+   "_src": 39
+  },
+  {
+   "id": "1.40",
+   "stem": "The love letter is believed _________ by Shakespeare himself!",
+   "options": [
+    "A) to have been written",
+    "B) to write",
+    "C) being written",
+    "D) to has been written"
+   ],
+   "answer": "A",
+   "_src": 40
+  },
+  {
+   "id": "1.41",
+   "stem": "'I honestly don't need your _________ advice! Will you please leave me alone?'",
+   "options": [
+    "A) desolicited",
+    "B) irsolicited",
+    "C) imsolicited",
+    "D) unsolicited"
+   ],
+   "answer": "D",
+   "_src": 41
+  },
+  {
+   "id": "1.42",
+   "stem": "Our school volunteer club has recently decided to _________ for animal charity.",
+   "options": [
+    "A) earn",
+    "B) raise",
+    "C) rise",
+    "D) rose"
+   ],
+   "answer": "B",
+   "_src": 42
+  },
+  {
+   "id": "1.43",
+   "stem": "Those types of phone use an optical zoom _________ with a 3X5 range.",
+   "options": [
+    "A) lense",
+    "B) lenses",
+    "C) len",
+    "D) lens"
+   ],
+   "answer": "D",
+   "_src": 43
+  },
+  {
+   "id": "1.44",
+   "stem": "The mechanic reached for a heavy _________ to undo a really tight fitting nut.",
+   "options": [
+    "A) pliers",
+    "B) tongs",
+    "C) spanner",
+    "D) screwdriver"
+   ],
+   "answer": "C",
+   "_src": 44
+  },
+  {
+   "id": "1.45",
+   "stem": "Are you completely _________ !? Stop playing this those matches! .",
+   "options": [
+    "A) imsane",
+    "B) non-sane",
+    "C) insane",
+    "D) unsane"
+   ],
+   "answer": "C",
+   "_src": 45
+  },
+  {
+   "id": "1.46",
+   "stem": "The ending of her story sounded too _________ for all of us and we looked at her with mistrust and disbelief.",
+   "options": [
+    "A) outproven",
+    "B) outright",
+    "C) outlaying",
+    "D) outlandish"
+   ],
+   "answer": "D",
+   "_src": 46
+  },
+  {
+   "id": "1.47",
+   "stem": "The story of a Loch Ness monster has been a/an _________ mystery for years now.",
+   "options": [
+    "A) perilous",
+    "B) baffling",
+    "C) unsetting",
+    "D) trustworthy"
+   ],
+   "answer": "B",
+   "_src": 47
+  },
+  {
+   "id": "1.48",
+   "stem": "The teacher frowned at the _________ of my email. Well, I had no choice but to rewrite it.",
+   "options": [
+    "A) layout",
+    "B) outline",
+    "C) outlooks",
+    "D) lookout"
+   ],
+   "answer": "A",
+   "_src": 48
+  },
+  {
+   "id": "1.49",
+   "stem": "When Nick became the _________ of the zoo his job was to show people around and give talks on endangered species.",
+   "options": [
+    "A) guard",
+    "B) curator",
+    "C) principal",
+    "D) exhibitor"
+   ],
+   "answer": "B",
+   "_src": 49
+  },
+  {
+   "id": "1.50",
+   "stem": "After hearing Keith's _________ reply I felt sorry for him. The boy needed a teacher, and fast.",
+   "options": [
+    "A) disarticulate",
+    "B) inarticulate",
+    "C) unarticulate",
+    "D) nonarticulate"
+   ],
+   "answer": "B",
+   "_src": 50
+  }
+ ]
+}

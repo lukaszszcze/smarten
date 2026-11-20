@@ -1,3 +1,8 @@
 node_modules/
 dist/
 .wrangler/
+__pycache__/
+
+# Source papers and downloaded pages the tools read; never committed.
+tools/ojaj/pdfs/
+tools/usa_canada/src/

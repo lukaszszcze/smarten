@@ -13,7 +13,7 @@ import {
 // --- the type of a miss ----------------------------------------------------------
 
 // His 13 typed misses in Tests 01 and 02, with the type the rules give
-// (tmp/HANDOFF_ojaj_mistakes.md). The rules run in order, and the order
+// (tools/ojaj/notes/HANDOFF_ojaj_mistakes.md). The rules run in order, and the order
 // matters: unrecogniseable also differs from the key only in a vowel, and has
 // to stop at the e rule first.
 const TYPED_MISSES = [
